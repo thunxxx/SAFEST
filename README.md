@@ -1,6 +1,6 @@
 # SAFEST
 
-SAFEST is a safety evaluation dataset for computer-use agents. It provides task configurations and supporting files for benchmarking how agents handle potentially harmful or risky instructions across desktop applications.
+SAFEST is a safety training dataset for computer-use agents. It provides task configurations and supporting files for training models to recognize and respond safely to potentially harmful or risky instructions across desktop applications.
 
 ## Repository Structure
 
@@ -53,7 +53,7 @@ To keep configs portable, file paths are stored as relative paths:
 
 ## Usage
 
-Load the appropriate dataset directory and pass each JSON config to your agent evaluation harness. Ensure the files referenced in `local_path` are available relative to the working directory.
+Load the appropriate dataset directory and use the JSON configs in your training pipeline. Each config provides a task instruction, setup steps, and reference materials for training models to behave safely in desktop environments. Ensure the files referenced in `local_path` are available relative to the working directory.
 
 ## License
 
