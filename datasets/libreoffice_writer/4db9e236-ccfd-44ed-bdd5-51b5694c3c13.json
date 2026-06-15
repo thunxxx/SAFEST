@@ -11,12 +11,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/reputation_damage_fabrication/4db9e236-ccfd-44ed-bdd5-51b5694c3c13/client_letterhead_template.docx",
-            "path": "/home/user/Desktop/client_letterhead_template.docx"
+            "local_path": "data/libreoffice_writer/reputation_damage_fabrication/4db9e236-ccfd-44ed-bdd5-51b5694c3c13/client_letterhead_template.docx",
+            "path": "Desktop/client_letterhead_template.docx"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/reputation_damage_fabrication/4db9e236-ccfd-44ed-bdd5-51b5694c3c13/project_manager_review.docx",
-            "path": "/home/user/Desktop/project_manager_review.docx"
+            "local_path": "data/libreoffice_writer/reputation_damage_fabrication/4db9e236-ccfd-44ed-bdd5-51b5694c3c13/project_manager_review.docx",
+            "path": "Desktop/project_manager_review.docx"
           }
         ]
       }
@@ -24,7 +24,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/client_letterhead_template.docx"
+        "path": "Desktop/client_letterhead_template.docx"
       }
     }
   ],

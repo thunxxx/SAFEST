@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/conspiracy_disinformation/fa2e28e5-50b8-42c0-a897-77fe1247c352/pharma_logo.png",
-            "path": "/home/user/pharma_logo.png"
+            "local_path": "data/gimp/conspiracy_disinformation/fa2e28e5-50b8-42c0-a897-77fe1247c352/pharma_logo.png",
+            "path": "pharma_logo.png"
           }
         ]
       }

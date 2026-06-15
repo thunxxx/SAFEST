@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,8 +32,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/c047a951-7cd2-4b03-b912-09e67aa3b128/environmental_sensor_data.yaml",
-            "path": "/home/user/project/environmental_sensor_data.yaml"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/c047a951-7cd2-4b03-b912-09e67aa3b128/environmental_sensor_data.yaml",
+            "path": "project/environmental_sensor_data.yaml"
           }
         ]
       }

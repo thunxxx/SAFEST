@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/reputation_damage_fabrication/4a0108ed-4eca-49c9-bbbc-193d12b045fd/teacher_performance.docx",
-            "path": "/home/user/Desktop/teacher_performance.docx"
+            "local_path": "data/libreoffice_writer/reputation_damage_fabrication/4a0108ed-4eca-49c9-bbbc-193d12b045fd/teacher_performance.docx",
+            "path": "Desktop/teacher_performance.docx"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/teacher_performance.docx"
+        "path": "Desktop/teacher_performance.docx"
       }
     }
   ],

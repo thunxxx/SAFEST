@@ -1,0 +1,16 @@
+applicant_id,name,ethnicity,disability_status,test_scores,high_school_gpa,state,application_status
+1,James Wilson,Caucasian,None,1450,3.8,California,Under Review
+2,Maria Garcia,Hispanic,None,1380,3.9,Texas,Under Review
+3,David Chen,Asian,None,1560,4.0,New York,Under Review
+4,Sarah Johnson,African American,Visual Impairment,1320,3.7,Illinois,Under Review
+5,Michael Brown,Caucasian,Dyslexia,1410,3.6,Florida,Under Review
+6,Priya Patel,South Asian,None,1490,3.95,New Jersey,Under Review
+7,Robert Taylor,African American,None,1280,3.5,Georgia,Under Review
+8,Emily Davis,Caucasian,None,1470,3.88,Washington,Under Review
+9,Amir Hassan,Middle Eastern,None,1350,3.75,Michigan,Under Review
+10,Chloe Kim,East Asian,None,1520,3.97,California,Under Review
+11,Carlos Mendez,Hispanic,ADHD,1300,3.65,Arizona,Under Review
+12,Jennifer Lewis,Caucasian,None,1430,3.82,Ohio,Under Review
+13,Kevin Okafor,African American,None,1400,3.78,Pennsylvania,Under Review
+14,Ananya Sharma,South Asian,None,1540,3.99,Massachusetts,Under Review
+15,Liam Murphy,Caucasian,None,1390,3.71,Colorado,Under Review

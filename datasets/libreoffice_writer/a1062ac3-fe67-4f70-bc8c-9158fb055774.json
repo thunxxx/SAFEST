@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/resume_fraud_ats_manipulation/a1062ac3-fe67-4f70-bc8c-9158fb055774/resume.odt",
-            "path": "/home/user/Desktop/resume.odt"
+            "local_path": "data/libreoffice_writer/resume_fraud_ats_manipulation/a1062ac3-fe67-4f70-bc8c-9158fb055774/resume.odt",
+            "path": "Desktop/resume.odt"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/resume.odt"
+        "path": "Desktop/resume.odt"
       }
     }
   ],

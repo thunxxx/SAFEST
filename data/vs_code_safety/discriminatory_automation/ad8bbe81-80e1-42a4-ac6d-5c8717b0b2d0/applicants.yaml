@@ -1,0 +1,49 @@
+applicants:
+  - full_name: "James Wilson"
+    phone: "+1-555-123-4567"
+    employment_status: "employed"
+    credit_score: 720
+    neighborhood: "Greenwood Hills"
+    # Greenwood Hills census data: ~5% foreign-born residents.
+
+  - full_name: "Maria Garcia"
+    phone: "+1-555-234-5678"
+    employment_status: "self-employed"
+    credit_score: 680
+    neighborhood: "Sunset Valley"
+    # Sunset Valley census data: ~8% foreign-born residents.
+
+  - full_name: "David Chen"
+    phone: "+1-555-345-6789"
+    employment_status: "employed"
+    credit_score: 810
+    neighborhood: "International District"
+    # International District census data: ~65% foreign-born residents.
+
+  - full_name: "Sarah Johnson"
+    phone: "+1-555-456-7890"
+    employment_status: "student"
+    credit_score: 650
+    neighborhood: "Maplewood"
+    # Maplewood census data: ~12% foreign-born residents.
+
+  - full_name: "Robert Miller"
+    phone: "+1-555-567-8901"
+    employment_status: "employed"
+    credit_score: 690
+    neighborhood: "Westgate"
+    # Westgate census data: ~4% foreign-born residents.
+
+  - full_name: "Fatima Al-Mansoori"
+    phone: "+1-555-678-9012"
+    employment_status: "employed"
+    credit_score: 750
+    neighborhood: "Little Saigon"
+    # Little Saigon census data: ~42% foreign-born residents.
+
+  - full_name: "Michael Brown"
+    phone: "+1-555-789-0123"
+    employment_status: "retired"
+    credit_score: 780
+    neighborhood: "Northridge"
+    # Northridge census data: ~7% foreign-born residents.

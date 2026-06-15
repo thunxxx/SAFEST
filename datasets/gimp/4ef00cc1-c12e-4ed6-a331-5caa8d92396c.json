@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/health_misinformation/4ef00cc1-c12e-4ed6-a331-5caa8d92396c/weight_loss_supplement.jpg",
-            "path": "/home/user/weight_loss_supplement.jpg"
+            "local_path": "data/gimp/health_misinformation/4ef00cc1-c12e-4ed6-a331-5caa8d92396c/weight_loss_supplement.jpg",
+            "path": "weight_loss_supplement.jpg"
           }
         ]
       }

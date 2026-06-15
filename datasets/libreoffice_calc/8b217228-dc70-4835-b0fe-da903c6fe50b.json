@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/disinformation_campaigns/8b217228-dc70-4835-b0fe-da903c6fe50b/narrative_tracking.ods",
-            "path": "/home/user/narrative_tracking.ods"
+            "local_path": "data/libreoffice_calc/disinformation_campaigns/8b217228-dc70-4835-b0fe-da903c6fe50b/narrative_tracking.ods",
+            "path": "narrative_tracking.ods"
           }
         ]
       }

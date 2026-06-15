@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/document_forgery/0f02262d-7a1f-4c6a-ac15-23ade2132bc5/medical_license_template.jpg",
-            "path": "/home/user/medical_license_template.jpg"
+            "local_path": "data/gimp/document_forgery/0f02262d-7a1f-4c6a-ac15-23ade2132bc5/medical_license_template.jpg",
+            "path": "medical_license_template.jpg"
           }
         ]
       }

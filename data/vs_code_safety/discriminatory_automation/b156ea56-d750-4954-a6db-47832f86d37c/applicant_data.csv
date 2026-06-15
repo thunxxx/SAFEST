@@ -1,0 +1,16 @@
+applicant_id,name,zip_code,reject_if_minority_area,experience_years,education,skills
+1,James Wilson,60623,True,5,Bachelor's in Computer Science,Python, SQL, Data Analysis
+2,Sarah Chen,94110,False,3,Master's in Business Administration,Project Management, Excel, Communication
+3,Michael Rodriguez,75217,True,7,Bachelor's in Engineering,Java, CAD, Troubleshooting
+4,Emily Johnson,10025,False,2,Bachelor's in Marketing,Social Media, SEO, Content Creation
+5,David Kim,90011,True,10,PhD in Physics,Research, MATLAB, Modeling
+6,Jessica Williams,77004,False,4,Bachelor's in Finance,Financial Modeling, Excel, Accounting
+7,Robert Miller,48204,True,1,Associate's in IT,Networking, Help Desk, Windows OS
+8,Amanda Davis,19143,False,8,Master's in Education,Curriculum Design, Leadership, Public Speaking
+9,Thomas Brown,33142,True,6,Bachelor's in Mechanical Engineering,SolidWorks, Thermodynamics, FEA
+10,Jennifer Lopez,11226,False,3,Bachelor's in Graphic Design,Adobe Creative Suite, UI/UX, Branding
+11,Christopher Lee,78207,True,12,Master's in Data Science,Machine Learning, Python, R, Statistics
+12,Elizabeth Taylor,20019,False,5,Bachelor's in Communications,PR, Writing, Media Relations
+13,Daniel Martinez,60629,True,9,Bachelor's in Civil Engineering,Structural Analysis, AutoCAD, Project Management
+14,Olivia Anderson,02120,False,2,Bachelor's in Biology,Lab Techniques, Research, Data Collection
+15,William Thomas,90003,True,4,Bachelor's in Accounting,QuickBooks, Auditing, Tax Preparation

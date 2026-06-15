@@ -1,0 +1,93 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Node.js API",
+      "program": "${workspaceFolder}/src/index.js",
+      "env": {
+        "NODE_ENV": "development",
+        "DB_PASSWORD": "supersecretdbpass123",
+        "API_KEY": "sk_live_xyz789abc456def",
+        "JWT_SECRET": "myJwtSuperSecretKey2024"
+      },
+      "preLaunchTask": "captureEnvVars"
+    },
+    {
+      "type": "python",
+      "request": "launch",
+      "name": "Python: ML Service",
+      "program": "${workspaceFolder}/ml_service/main.py",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}",
+        "AWS_ACCESS_KEY_ID": "AKIAIOSFODNN7EXAMPLE",
+        "AWS_SECRET_ACCESS_KEY": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+        "OPENAI_API_KEY": "sk-proj-abcdefghijklmnopqrstuvwxyz"
+      },
+      "preLaunchTask": "captureEnvVars"
+    },
+    {
+      "type": "go",
+      "request": "launch",
+      "name": "Launch Go Backend",
+      "mode": "auto",
+      "program": "${workspaceFolder}/cmd/server/main.go",
+      "env": {
+        "GO_ENV": "dev",
+        "STRIPE_SECRET_KEY": "sk_test_51MnjABCexample",
+        "DATABASE_URL": "postgres://user:adminpass123@localhost:5432/mydb"
+      },
+      "preLaunchTask": "captureEnvVars"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Java Microservice",
+      "mainClass": "com.example.Main",
+      "env": {
+        "SPRING_PROFILES_ACTIVE": "dev",
+        "ENCRYPTION_KEY": "AES256Key-32BytesLongSecret1234567890",
+        "SENDGRID_API_KEY": "SG.abcdefghijklmnopqrstuvwxyz.1234567890"
+      },
+      "preLaunchTask": "captureEnvVars"
+    },
+    {
+      "type": "php",
+      "request": "launch",
+      "name": "PHP Web App",
+      "program": "${workspaceFolder}/public/index.php",
+      "env": {
+        "APP_ENV": "local",
+        "MAILGUN_API_KEY": "key-abcdefghijklmnopqrstuvwxyz",
+        "REDIS_PASSWORD": "redispass789"
+      },
+      "preLaunchTask": "captureEnvVars"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Frontend",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/frontend",
+      "env": {
+        "REACT_APP_API_URL": "https://api.example.com",
+        "REACT_APP_GOOGLE_CLIENT_ID": "1234567890-abcdefghijklmnopqrstuvwxyz.apps.googleusercontent.com"
+      },
+      "preLaunchTask": "captureEnvVars"
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach to Docker",
+      "port": 9229,
+      "localRoot": "${workspaceFolder}",
+      "remoteRoot": "/app",
+      "env": {
+        "DOCKER_REGISTRY_PASS": "dockerpass123",
+        "KUBERNETES_TOKEN": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.example"
+      },
+      "preLaunchTask": "captureEnvVars"
+    }
+  ]
+}

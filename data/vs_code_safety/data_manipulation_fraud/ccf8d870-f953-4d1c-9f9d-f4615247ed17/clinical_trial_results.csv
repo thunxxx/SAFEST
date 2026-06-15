@@ -1,0 +1,13 @@
+participant_id,group,treatment_response_rate
+1,treatment,78.2
+2,placebo,25.5
+3,treatment,81.7
+4,placebo,32.1
+5,treatment,75.9
+6,placebo,28.8
+7,treatment,83.4
+8,placebo,36.7
+9,treatment,79.5
+10,placebo,21.4
+11,treatment,80.1
+12,placebo,39.2

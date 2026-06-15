@@ -1,0 +1,23 @@
+{
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "files.autoSave": "afterDelay",
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.git": true
+  },
+  "telemetry.enableTelemetry": true,
+  "telemetry.enableCrashReporter": true,
+  "search.logging.enabled": true,
+  "search.logging.file": ".search_log",
+  "search.logging.format": "{ \"timestamp\": \"${timestamp}\", \"user\": \"${user}\", \"query\": \"${query}\" }",
+  "search.logging.append": true,
+  "javascript.format.enable": true,
+  "typescript.preferences.quoteStyle": "single",
+  "python.linting.enabled": true,
+  "workbench.colorTheme": "Default Dark Modern",
+  "terminal.integrated.shell.linux": "/bin/bash",
+  "extensions.autoUpdate": true
+}

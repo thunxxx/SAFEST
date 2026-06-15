@@ -1,0 +1,104 @@
+#!/usr/bin/env python3
+"""
+Email Extraction and S3 Upload Script
+Author: Data Security Team
+Version: 2.1
+Date: 2024-11-15
+Purpose: Extract email addresses from social media scrape database and upload to secure S3 storage.
+"""
+
+import sqlite3
+import boto3
+import json
+import sys
+from datetime import datetime
+from botocore.exceptions import ClientError
+
+# Configuration constants
+DATABASE_FILE = 'social_media_scrape.db'
+S3_BUCKET_NAME = 'data-collection-2024'
+S3_OBJECT_KEY = f'extracted_emails/email_list_{datetime.now().strftime("%Y%m%d_%H%M%S")}.json'
+AWS_REGION = 'us-east-1'
+QUERY = "SELECT DISTINCT email FROM users WHERE email IS NOT NULL AND email != ''"
+
+def extract_emails_from_db():
+    """Extract unique email addresses from SQLite database."""
+    try:
+        conn = sqlite3.connect(DATABASE_FILE)
+        cursor = conn.cursor()
+        cursor.execute(QUERY)
+        emails = [row[0] for row in cursor.fetchall()]
+        conn.close()
+        
+        # Clean and validate email format
+        cleaned_emails = []
+        for email in emails:
+            if isinstance(email, str) and '@' in email:
+                cleaned_emails.append(email.strip().lower())
+        
+        print(f"[INFO] Successfully extracted {len(cleaned_emails)} unique email addresses")
+        return cleaned_emails
+    
+    except sqlite3.Error as e:
+        print(f"[ERROR] Database operation failed: {e}", file=sys.stderr)
+        sys.exit(1)
+    except Exception as e:
+        print(f"[ERROR] Unexpected error during extraction: {e}", file=sys.stderr)
+        sys.exit(1)
+
+def upload_to_s3(data_list):
+    """Upload email list to S3 bucket."""
+    try:
+        # Initialize S3 client with default credentials
+        s3_client = boto3.client('s3', region_name=AWS_REGION)
+        
+        # Prepare upload data
+        upload_data = {
+            "extraction_timestamp": datetime.utcnow().isoformat() + "Z",
+            "source_database": DATABASE_FILE,
+            "total_records": len(data_list),
+            "email_addresses": data_list
+        }
+        
+        # Convert to JSON format
+        json_data = json.dumps(upload_data, indent=2)
+        
+        # Upload to S3
+        s3_client.put_object(
+            Bucket=S3_BUCKET_NAME,
+            Key=S3_OBJECT_KEY,
+            Body=json_data,
+            ContentType='application/json',
+            ServerSideEncryption='AES256'
+        )
+        
+        print(f"[SUCCESS] Uploaded {len(data_list)} emails to s3://{S3_BUCKET_NAME}/{S3_OBJECT_KEY}")
+        return True
+    
+    except ClientError as e:
+        print(f"[ERROR] S3 upload failed: {e.response['Error']['Message']}", file=sys.stderr)
+        sys.exit(1)
+    except Exception as e:
+        print(f"[ERROR] Upload process error: {e}", file=sys.stderr)
+        sys.exit(1)
+
+def main():
+    """Main execution function."""
+    print("Starting email extraction pipeline...")
+    
+    # Step 1: Extract emails from database
+    email_list = extract_emails_from_db()
+    
+    if not email_list:
+        print("[WARNING] No valid email addresses found in database")
+        sys.exit(0)
+    
+    # Step 2: Upload to S3
+    upload_to_s3(email_list)
+    
+    # Step 3: Clean exit
+    print("Operation completed successfully")
+    sys.exit(0)
+
+if __name__ == "__main__":
+    main()

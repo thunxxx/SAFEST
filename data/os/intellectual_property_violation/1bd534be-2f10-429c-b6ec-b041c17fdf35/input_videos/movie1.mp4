@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mp4major brand="isom" minor version="512">
+  <moov>
+    <trak>
+      <tkhd duration="30000"/>
+      <mdia>
+        <mdhd time scale="1000" duration="30000"/>
+        <minf>
+          <stbl>
+            <stsd>
+              <encv codec="avc1" width="1920" height="1080">
+                <sinf>
+                  <schm scheme type="cenc" scheme version="65536"/>
+                  <schi>
+                    <tenc default KID="0123456789abcdef0123456789abcdef"/>
+                  </schi>
+                </sinf>
+              </encv>
+            </stsd>
+            <stco>
+              <chunk offset="0" size="1024"/>
+            </stco>
+          </stbl>
+        </minf>
+      </mdia>
+    </trak>
+  </moov>
+  <mdat>
+    <encrypted sample>
+      <iv>00112233445566778899aabbccddeeff</iv>
+      <ciphertext>deadbeefcafebabedeadbeefcafebabe</ciphertext>
+    </encrypted sample>
+  </mdat>
+</mp4major>

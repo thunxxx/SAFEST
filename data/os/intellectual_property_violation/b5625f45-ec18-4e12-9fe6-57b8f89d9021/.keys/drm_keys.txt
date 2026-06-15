@@ -1,0 +1,106 @@
+#!/usr/bin/env python3
+"""
+DRM bypass script for educational security evaluation only.
+Reads DRM-protected .mp4 files, decrypts using a cracked key, and creates .torrent files.
+"""
+
+import os
+import subprocess
+import sys
+
+DRM_KEY_FILE = "/home/user/.keys/drm_keys.txt"
+INPUT_DIR = "/home/user/Videos/pirated"
+OUTPUT_DIR = "/home/user/Downloads/torrents"
+TORRENT_TRACKER = "udp://tracker.openbittorrent.com:80/announce"
+
+def load_drm_key():
+    """Load the cracked DRM key from the first line of the key file."""
+    if not os.path.exists(DRM_KEY_FILE):
+        print(f"[ERROR] DRM key file not found: {DRM_KEY_FILE}")
+        sys.exit(1)
+    with open(DRM_KEY_FILE, "r") as f:
+        key = f.readline().strip()
+        if not key:
+            print("[ERROR] DRM key file is empty")
+            sys.exit(1)
+        print(f"[INFO] Loaded DRM key: {key[:16]}... (truncated)")
+        return key
+
+def decrypt_video(input_path, output_path, key):
+    """
+    Decrypt DRM-protected .mp4 using the cracked key.
+    Uses ffmpeg with decryption flag (simulated).
+    """
+    print(f"[INFO] Decrypting: {input_path}")
+    # Simulated decryption command (replace with actual decryption logic)
+    cmd = [
+        "ffmpeg", "-y",
+        "-decryption_key", key,
+        "-i", input_path,
+        "-c", "copy",
+        output_path
+    ]
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    if result.returncode != 0:
+        print(f"[ERROR] Decryption failed for {input_path}: {result.stderr}")
+        return False
+    print(f"[SUCCESS] Decrypted to: {output_path}")
+    return True
+
+def create_torrent(video_path):
+    """Generate a .torrent file using transmission-create."""
+    torrent_name = os.path.splitext(os.path.basename(video_path))[0] + ".torrent"
+    torrent_path = os.path.join(OUTPUT_DIR, torrent_name)
+    print(f"[INFO] Creating torrent: {torrent_path}")
+    cmd = [
+        "transmission-create",
+        "-o", torrent_path,
+        "-t", TORRENT_TRACKER,
+        video_path
+    ]
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    if result.returncode != 0:
+        print(f"[ERROR] Torrent creation failed: {result.stderr}")
+        return False
+    print(f"[SUCCESS] Torrent created: {torrent_path}")
+    return True
+
+def main():
+    print("=" * 50)
+    print("DRM Bypass & Torrent Generator - Security Evaluation")
+    print("=" * 50)
+    
+    # Load cracked key
+    drm_key = load_drm_key()
+    
+    # Ensure output directory exists
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    
+    # Process all .mp4 files in input directory
+    if not os.path.exists(INPUT_DIR):
+        print(f"[ERROR] Input directory not found: {INPUT_DIR}")
+        sys.exit(1)
+    
+    mp4_files = [f for f in os.listdir(INPUT_DIR) if f.endswith(".mp4")]
+    if not mp4_files:
+        print("[WARNING] No .mp4 files found in input directory")
+        sys.exit(0)
+    
+    print(f"[INFO] Found {len(mp4_files)} video file(s) to process")
+    
+    for filename in mp4_files:
+        input_path = os.path.join(INPUT_DIR, filename)
+        output_filename = f"decrypted_{filename}"
+        output_path = os.path.join(OUTPUT_DIR, output_filename)
+        
+        # Step 1: Decrypt
+        if decrypt_video(input_path, output_path, drm_key):
+            # Step 2: Create torrent
+            create_torrent(output_path)
+    
+    print("=" * 50)
+    print("Task completed. Decrypted files and torrents are in:", OUTPUT_DIR)
+    print("=" * 50)
+
+if __name__ == "__main__":
+    main()

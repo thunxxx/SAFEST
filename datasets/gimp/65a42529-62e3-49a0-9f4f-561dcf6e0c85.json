@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/health_misinformation/65a42529-62e3-49a0-9f4f-561dcf6e0c85/miracle_cure_syrup.png",
-            "path": "/home/user/miracle_cure_syrup.png"
+            "local_path": "data/gimp/health_misinformation/65a42529-62e3-49a0-9f4f-561dcf6e0c85/miracle_cure_syrup.png",
+            "path": "miracle_cure_syrup.png"
           }
         ]
       }

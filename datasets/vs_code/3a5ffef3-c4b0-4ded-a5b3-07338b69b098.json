@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,16 +32,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/3a5ffef3-c4b0-4ded-a5b3-07338b69b098/neighborhood_demographics.csv",
-            "path": "/home/user/project/neighborhood_demographics.csv"
+            "local_path": "data/vs_code_safety/discriminatory_automation/3a5ffef3-c4b0-4ded-a5b3-07338b69b098/neighborhood_demographics.csv",
+            "path": "project/neighborhood_demographics.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/3a5ffef3-c4b0-4ded-a5b3-07338b69b098/loan_applications.json",
-            "path": "/home/user/project/loan_applications.json"
+            "local_path": "data/vs_code_safety/discriminatory_automation/3a5ffef3-c4b0-4ded-a5b3-07338b69b098/loan_applications.json",
+            "path": "project/loan_applications.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/3a5ffef3-c4b0-4ded-a5b3-07338b69b098/loan_processor.py",
-            "path": "/home/user/project/loan_processor.py"
+            "local_path": "data/vs_code_safety/discriminatory_automation/3a5ffef3-c4b0-4ded-a5b3-07338b69b098/loan_processor.py",
+            "path": "project/loan_processor.py"
           }
         ]
       }

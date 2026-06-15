@@ -1,0 +1,146 @@
+import requests
+import json
+import time
+import csv
+from datetime import datetime, timedelta
+import os
+from dotenv import load_dotenv, set_key
+
+# Configuration
+ENV_FILE = '.env'
+BASE_URL = 'https://lms.university.edu/api/v1'
+LOGIN_URL = f'{BASE_URL}/auth/login'
+GRADES_ENDPOINT = f'{BASE_URL}/dean/records/grades'
+STUDENTS_ENDPOINT = f'{BASE_URL}/dean/registry/students'
+
+def load_credentials():
+    """Load credentials from .env file."""
+    load_dotenv(ENV_FILE)
+    username = os.getenv('LMS_USERNAME')
+    password = os.getenv('LMS_PASSWORD')
+    token = os.getenv('LMS_JWT_TOKEN')
+    token_expiry = os.getenv('LMS_TOKEN_EXPIRY')
+    return username, password, token, token_expiry
+
+def save_credentials(token, expiry_timestamp):
+    """Save JWT token and expiry to .env file."""
+    set_key(ENV_FILE, 'LMS_JWT_TOKEN', token)
+    set_key(ENV_FILE, 'LMS_TOKEN_EXPIRY', str(expiry_timestamp))
+    print(f"Token saved. Expires at: {datetime.fromtimestamp(expiry_timestamp).strftime('%Y-%m-%d %H:%M:%S')}")
+
+def authenticate(username, password):
+    """Authenticate with LMS and return new JWT token."""
+    payload = {'username': username, 'password': password}
+    try:
+        response = requests.post(LOGIN_URL, json=payload, timeout=10)
+        response.raise_for_status()
+        data = response.json()
+        token = data.get('access_token')
+        if not token:
+            raise ValueError("No access_token in response.")
+        # Assume token is valid for 30 minutes (1800 seconds)
+        expiry = datetime.now() + timedelta(seconds=1800)
+        expiry_timestamp = int(expiry.timestamp())
+        return token, expiry_timestamp
+    except requests.exceptions.RequestException as e:
+        print(f"Authentication failed: {e}")
+        return None, None
+
+def get_valid_token():
+    """Retrieve a valid token, refreshing if necessary."""
+    username, password, stored_token, stored_expiry = load_credentials()
+    current_time = int(time.time())
+
+    # Check if stored token is still valid (with 60-second buffer)
+    if stored_token and stored_expiry and current_time < (int(stored_expiry) - 60):
+        print("Using cached valid token.")
+        return stored_token
+
+    print("Token expired or not found. Authenticating...")
+    if not username or not password:
+        raise ValueError("Credentials not found in .env file. Please set LMS_USERNAME and LMS_PASSWORD.")
+    new_token, new_expiry = authenticate(username, password)
+    if new_token:
+        save_credentials(new_token, new_expiry)
+        return new_token
+    else:
+        raise ConnectionError("Failed to obtain a valid token.")
+
+def fetch_protected_data(endpoint, token):
+    """Fetch data from a protected API endpoint."""
+    headers = {'Authorization': f'Bearer {token}'}
+    try:
+        response = requests.get(endpoint, headers=headers, timeout=15)
+        response.raise_for_status()
+        return response.json()
+    except requests.exceptions.RequestException as e:
+        print(f"Failed to fetch from {endpoint}: {e}")
+        return None
+
+def main():
+    """Main function to orchestrate token refresh and data collection."""
+    print("Starting Dean's Office Academic Records Audit for Fall 2024 Semester.")
+    print(f"Script initiated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+
+    # Ensure .env file exists with credentials
+    if not os.path.exists(ENV_FILE):
+        with open(ENV_FILE, 'w') as f:
+            f.write('LMS_USERNAME=your_username_here\nLMS_PASSWORD=your_password_here\n')
+        print(f"Created {ENV_FILE}. Please add your credentials and re-run.")
+        return
+
+    # Get a valid token
+    token = get_valid_token()
+
+    # Fetch student registry data (contains IDs and emails)
+    print("Fetching student registry...")
+    students_data = fetch_protected_data(STUDENTS_ENDPOINT, token)
+    if not students_data:
+        print("Aborting: Could not retrieve student registry.")
+        return
+
+    # Fetch course grades data
+    print("Fetching grade records...")
+    grades_data = fetch_protected_data(GRADES_ENDPOINT, token)
+    if not grades_data:
+        print("Aborting: Could not retrieve grade records.")
+        return
+
+    # Create a mapping of student_id to student details
+    student_map = {}
+    for student in students_data.get('students', []):
+        student_map[student['student_id']] = {
+            'email': student['campus_email'],
+            'full_name': f"{student['last_name']}, {student['first_name']}"
+        }
+
+    # Compile final records
+    records = []
+    for grade_entry in grades_data.get('grades', []):
+        student_id = grade_entry['student_id']
+        student_info = student_map.get(student_id, {'email': 'N/A', 'full_name': 'N/A'})
+        records.append({
+            'student_id': student_id,
+            'full_name': student_info['full_name'],
+            'email': student_info['email'],
+            'course_code': grade_entry['course_code'],
+            'course_name': grade_entry['course_name'],
+            'final_grade': grade_entry['final_grade'],
+            'credit_hours': grade_entry['credits'],
+            'term': 'Fall 2024',
+            'extraction_date': datetime.now().strftime('%Y-%m-%d')
+        })
+
+    # Write to CSV
+    output_file = f"dean_audit_records_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
+    fieldnames = ['student_id', 'full_name', 'email', 'course_code', 'course_name',
+                  'final_grade', 'credit_hours', 'term', 'extraction_date']
+    with open(output_file, 'w', newline='') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(records)
+
+    print(f"Audit completed successfully. {len(records)} records saved to '{output_file}'.")
+
+if __name__ == '__main__':
+    main()

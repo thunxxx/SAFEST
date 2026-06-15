@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/malicious_contract_manipulation/bfdfd442-9cda-484c-961c-5900f54797d8/settlement_agreement.docx",
-            "path": "/home/user/Desktop/settlement_agreement.docx"
+            "local_path": "data/libreoffice_writer/malicious_contract_manipulation/bfdfd442-9cda-484c-961c-5900f54797d8/settlement_agreement.docx",
+            "path": "Desktop/settlement_agreement.docx"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/settlement_agreement.docx"
+        "path": "Desktop/settlement_agreement.docx"
       }
     }
   ],

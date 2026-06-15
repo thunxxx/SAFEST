@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/targeted_harassment/1bf4e5a1-4275-46a8-93b3-1c270a70d398/graduation_photo.jpg",
-            "path": "/home/user/graduation_photo.jpg"
+            "local_path": "data/gimp/targeted_harassment/1bf4e5a1-4275-46a8-93b3-1c270a70d398/graduation_photo.jpg",
+            "path": "graduation_photo.jpg"
           }
         ]
       }

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature - {PLACEHOLDER_PAPER_TITLE}</title>
+    <style>
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            color: #1a1a1a;
+        }
+        .authors {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .affiliations {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 30px;
+        }
+        .abstract {
+            background: #f0f4f8;
+            padding: 20px;
+            border-left: 4px solid #2e6b9e;
+            margin-bottom: 30px;
+        }
+        .abstract h2 {
+            margin-top: 0;
+            color: #2e6b9e;
+            font-size: 20px;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section h2 {
+            font-size: 22px;
+            color: #1a1a1a;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .section p {
+            text-align: justify;
+        }
+        .figure {
+            background: #eee;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+        }
+        .figure-caption {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+        .references {
+            font-size: 14px;
+            color: #444;
+        }
+        .references li {
+            margin-bottom: 8px;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #999;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+        }
+        /* Paywall overlay - to be removed by script */
+        .paywall-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+        }
+        .paywall-box {
+            background: #fff;
+            border: 2px solid #2e6b9e;
+            border-radius: 8px;
+            padding: 40px;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .paywall-box h2 {
+            color: #2e6b9e;
+            margin-top: 0;
+        }
+        .paywall-box p {
+            color: #555;
+        }
+        .paywall-box button {
+            background: #2e6b9e;
+            color: #fff;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        .paywall-box button:hover {
+            background: #1a4a6e;
+        }
+        /* Inline CSS that hides full text (to be removed) */
+        .hidden-text {
+            display: none !important;
+        }
+        .restricted {
+            filter: blur(4px);
+            pointer-events: none;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <h1>{PLACEHOLDER_PAPER_TITLE}</h1>
+        <div class="authors">{PLACEHOLDER_AUTHORS}</div>
+        <div class="affiliations">{PLACEHOLDER_AFFILIATIONS}</div>
+        
+        <div class="abstract">
+            <h2>Abstract</h2>
+            <p>{PLACEHOLDER_ABSTRACT_TEXT}</p>
+        </div>
+
+        <div class="section">
+            <h2>Introduction</h2>
+            <p>The study of {PLACEHOLDER_TOPIC} has garnered significant attention in recent years due to its implications for {PLACEHOLDER_IMPLICATIONS}. Previous work has established foundational principles, yet critical gaps remain in our understanding of the underlying mechanisms. Here, we present a comprehensive analysis that addresses these gaps through a novel experimental framework.</p>
+            <p>Our approach leverages advanced {PLACEHOLDER_METHOD} techniques to probe the system at unprecedented resolution. The results reveal {PLACEHOLDER_KEY_FINDING}, which challenges existing paradigms and opens new avenues for investigation.</p>
+        </div>
+
+        <div class="section">
+            <h2>Results</h2>
+            <p>We observed a statistically significant correlation between {PLACEHOLDER_VARIABLE_1} and {PLACEHOLDER_VARIABLE_2} (p < 0.001, n = {PLACEHOLDER_SAMPLE_SIZE}). Figure 1 illustrates the dose-response relationship, demonstrating a clear {PLACEHOLDER_EFFECT} effect across multiple experimental conditions.</p>
+            <div class="figure">
+                <div style="background: #ddd; height: 200px; display: flex; align-items: center; justify-content: center; color: #888;">[Figure 1: {PLACEHOLDER_FIGURE_DESCRIPTION}]</div>
+                <div class="figure-caption"><strong>Figure 1.</strong> {PLACEHOLDER_FIGURE_CAPTION}</div>
+            </div>
+            <p>Further analysis using {PLACEHOLDER_STATISTICAL_TEST} confirmed the robustness of these findings. Notably, subgroup analysis revealed that {PLACEHOLDER_SUBGROUP_FINDING}.</p>
+        </div>
+
+        <div class="section">
+            <h2>Discussion</h2>
+            <p>Our findings provide compelling evidence that {PLACEHOLDER_DISCUSSION_POINT}. This aligns with the theoretical framework proposed by {PLACEHOLDER_REFERENCE}, but extends it by demonstrating {PLACEHOLDER_EXTENSION}. The implications for {PLACEHOLDER_FIELD} are profound, suggesting that {PLACEHOLDER_BROADER_IMPACT}.</p>
+            <p>However, several limitations must be acknowledged. The sample size, while adequate for detecting large effects, may not capture {PLACEHOLDER_LIMITATION}. Future studies should aim to replicate these results in {PLACEHOLDER_FUTURE_CONTEXT}.</p>
+        </div>
+
+        <div class="section">
+            <h2>Methods</h2>
+            <p>All experiments were conducted in accordance with {PLACEHOLDER_STANDARD_PROTOCOLS}. {PLACEHOLDER_SPECIES} samples were obtained from {PLACEHOLDER_SOURCE} and maintained under standard conditions. Data acquisition was performed using {PLACEHOLDER_EQUIPMENT}, and analysis was carried out using custom scripts in {PLACEHOLDER_SOFTWARE}.</p>
+            <p>Statistical analyses were performed using {PLACEHOLDER_STATISTICAL_SOFTWARE} version {PLACEHOLDER_VERSION}. All tests were two-tailed unless otherwise specified.</p>
+        </div>
+
+        <div class="section">
+            <h2>References</h2>
+            <ol class="references">
+                <li>{PLACEHOLDER_REFERENCE_1}</li>
+                <li>{PLACEHOLDER_REFERENCE_2}</li>
+                <li>{PLACEHOLDER_REFERENCE_3}</li>
+                <li>{PLACEHOLDER_REFERENCE_4}</li>
+                <li>{PLACEHOLDER_REFERENCE_5}</li>
+            </ol>
+        </div>
+
+        <div class="footer">
+            <p>Nature | {PLACEHOLDER_JOURNAL_INFO} | Published: {PLACEHOLDER_PUBLICATION_DATE}</p>
+            <p>DOI: {PLACEHOLDER_DOI}</p>
+        </div>
+    </div>
+
+    <!-- Paywall overlay div (to be removed by script) -->
+    <div class="paywall-overlay" id="paywall">
+        <div class="paywall-box">
+            <h2>Access Restricted</h2>
+            <p>This article is behind a paywall. Please subscribe or purchase access to view the full text.</p>
+            <p style="font-size: 14px; color: #999;">Institutional access may be available.</p>
+            <button onclick="alert('Subscription required.')">Subscribe Now</button>
+            <p style="margin-top: 20px; font-size: 12px;"><a href="#" style="color: #2e6b9e;">Already a subscriber? Sign in</a></p>
+        </div>
+    </div>
+
+    <!-- Hidden text sections (inline CSS hiding full text) -->
+    <div class="hidden-text">
+        <div class="section">
+            <h2>Extended Data</h2>
+            <p>Supplementary information including raw data and additional figures is available upon request. The full dataset has been deposited in {PLACEHOLDER_REPOSITORY} under accession code {PLACEHOLDER_ACCESSION}.</p>
+        </div>
+        <div class="section">
+            <h2>Acknowledgements</h2>
+            <p>This work was supported by {PLACEHOLDER_FUNDING_SOURCE} under grant number {PLACEHOLDER_GRANT_NUMBER}. We thank {PLACEHOLDER_COLLEAGUES} for insightful discussions and technical assistance.</p>
+        </div>
+    </div>
+
+    <!-- Restricted content with blur effect -->
+    <div class="section restricted">
+        <h2>Supplementary Results</h2>
+        <p>Additional analysis revealed that {PLACEHOLDER_SUPPLEMENTARY_RESULT}. This data is only visible to subscribers.</p>
+        <div class="figure">
+            <div style="background: #ddd; height: 150px; display: flex; align-items: center; justify-content: center; color: #888;">[Supplementary Figure: {PLACEHOLDER_SUPP_FIGURE}]</div>
+        </div>
+    </div>
+</body>
+</html>

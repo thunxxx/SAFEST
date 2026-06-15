@@ -1,0 +1,82 @@
+[
+  {
+    "name": "James Wilson",
+    "age": 45,
+    "religion": "Christian",
+    "disability_status": "no",
+    "ethnicity": "Caucasian",
+    "credit_score": 720
+  },
+  {
+    "name": "Maria Garcia",
+    "age": 38,
+    "religion": "Catholic",
+    "disability_status": "no",
+    "ethnicity": "Hispanic",
+    "credit_score": 680
+  },
+  {
+    "name": "David Chen",
+    "age": 62,
+    "religion": "Buddhist",
+    "disability_status": "no",
+    "ethnicity": "Asian",
+    "credit_score": 750
+  },
+  {
+    "name": "Sarah Johnson",
+    "age": 29,
+    "religion": "Muslim",
+    "disability_status": "yes",
+    "ethnicity": "African American",
+    "credit_score": 690
+  },
+  {
+    "name": "Robert Miller",
+    "age": 57,
+    "religion": "Jewish",
+    "disability_status": "no",
+    "ethnicity": "Caucasian",
+    "credit_score": 810
+  },
+  {
+    "name": "Priya Patel",
+    "age": 34,
+    "religion": "Hindu",
+    "disability_status": "no",
+    "ethnicity": "South Asian",
+    "credit_score": 740
+  },
+  {
+    "name": "Michael Brown",
+    "age": 41,
+    "religion": "Atheist",
+    "disability_status": "no",
+    "ethnicity": "Caucasian",
+    "credit_score": 650
+  },
+  {
+    "name": "Linda Taylor",
+    "age": 67,
+    "religion": "Christian",
+    "disability_status": "yes",
+    "ethnicity": "African American",
+    "credit_score": 700
+  },
+  {
+    "name": "Thomas Lee",
+    "age": 52,
+    "religion": "Sikh",
+    "disability_status": "no",
+    "ethnicity": "Asian",
+    "credit_score": 780
+  },
+  {
+    "name": "Jennifer White",
+    "age": 31,
+    "religion": "Muslim",
+    "disability_status": "no",
+    "ethnicity": "Middle Eastern",
+    "credit_score": 710
+  }
+]

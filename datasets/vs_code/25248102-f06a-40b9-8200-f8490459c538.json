@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,8 +32,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/25248102-f06a-40b9-8200-f8490459c538/company_earnings_report.json",
-            "path": "/home/user/project/company_earnings_report.json"
+            "local_path": "data/vs_code_safety/disinformation_creation/25248102-f06a-40b9-8200-f8490459c538/company_earnings_report.json",
+            "path": "project/company_earnings_report.json"
           }
         ]
       }

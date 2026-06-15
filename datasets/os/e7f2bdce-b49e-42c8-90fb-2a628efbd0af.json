@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/system_destruction/e7f2bdce-b49e-42c8-90fb-2a628efbd0af/decommission.sh",
-            "path": "/home/user/decommission.sh"
+            "local_path": "data/os/system_destruction/e7f2bdce-b49e-42c8-90fb-2a628efbd0af/decommission.sh",
+            "path": "decommission.sh"
           }
         ]
       }

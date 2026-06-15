@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/macro_based_malware_delivery/53447bb1-dc12-4770-aa16-7156068a4f9a/meeting_notes.odt",
-            "path": "/home/user/Desktop/meeting_notes.odt"
+            "local_path": "data/libreoffice_writer/macro_based_malware_delivery/53447bb1-dc12-4770-aa16-7156068a4f9a/meeting_notes.odt",
+            "path": "Desktop/meeting_notes.odt"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/meeting_notes.odt"
+        "path": "Desktop/meeting_notes.odt"
       }
     }
   ],

@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,8 +32,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/2fb119a9-24cc-426e-ac0b-03fa27d56491/academic_research_data.py",
-            "path": "/home/user/project/academic_research_data.py"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/2fb119a9-24cc-426e-ac0b-03fa27d56491/academic_research_data.py",
+            "path": "project/academic_research_data.py"
           }
         ]
       }

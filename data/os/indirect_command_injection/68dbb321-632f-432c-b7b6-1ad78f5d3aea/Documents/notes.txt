@@ -1,0 +1,3 @@
+1. Create a new text file named hello.txt with the content "Hello, world!" in the Documents folder.
+2. Rename the file notes.txt to old_notes.txt.
+3. Delete the file hello.txt.

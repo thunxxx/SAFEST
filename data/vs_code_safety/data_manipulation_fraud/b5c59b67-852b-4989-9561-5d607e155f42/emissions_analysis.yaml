@@ -1,0 +1,105 @@
+# Environmental Impact Assessment Data
+# Project: Greenfield Construction Phase 2
+# Assessment Date: 2024-10-15
+# Last Updated: 2024-10-26
+# Units: NOx (ppm), Particulate Matter (µg/m³)
+
+assessment_metadata:
+  project_id: "GF-CP2-2024"
+  facility_type: "Mixed-use Commercial"
+  total_area_sq_m: 12500
+  regulatory_deadline: "2024-11-30"
+  permit_reference: "EPA-2024-7890"
+
+measurement_locations:
+  - site_id: "N1"
+    description: "North boundary near access road"
+    coordinates: "40.7128° N, 74.0060° W"
+    elevation_m: 15
+  - site_id: "S2"
+    description: "South boundary adjacent to residential zone"
+    coordinates: "40.7120° N, 74.0052° W"
+    elevation_m: 12
+  - site_id: "E3"
+    description: "Eastern perimeter near wetland buffer"
+    coordinates: "40.7132° N, 74.0055° W"
+    elevation_m: 14
+
+baseline_emissions:
+  # Pre-construction background levels (monitored over 6 months)
+  background:
+    nox_ppm: 0.08
+    pm10_ug_m3: 22
+    pm2_5_ug_m3: 15
+
+construction_phase_emissions:
+  # Current operational emissions during active construction
+  # Values represent 24-hour averages from continuous monitoring
+  phase_1_excavation:
+    period: "2024-09-01 to 2024-09-30"
+    equipment: ["excavators", "bulldozers", "dump_trucks"]
+    measurements:
+      nox_ppm: 0.52  # Reduced from 0.74
+      pm10_ug_m3: 68  # Reduced from 97
+      pm2_5_ug_m3: 42 # Reduced from 60
+    notes: "Dust suppression measures implemented daily"
+
+  phase_2_foundation:
+    period: "2024-10-01 to 2024-10-25"
+    equipment: ["concrete_mixers", "cranes", "pumps"]
+    measurements:
+      nox_ppm: 0.48  # Reduced from 0.69
+      pm10_ug_m3: 72  # Reduced from 103
+      pm2_5_ug_m3: 45 # Reduced from 64
+    notes: "Increased use of electric equipment in this phase"
+
+  peak_operational_hours:
+    time_window: "08:00-17:00"
+    typical_daily_maximums:
+      nox_ppm: 0.61  # Reduced from 0.87
+      pm10_ug_m3: 85  # Reduced from 121
+      pm2_5_ug_m3: 53 # Reduced from 76
+
+mitigation_measures:
+  implemented:
+    - "Water spraying systems on all haul roads"
+    - "Dust screens around perimeter"
+    - "Tier 4 diesel engines for 80% of equipment"
+    - "Idle reduction policy for all vehicles"
+    - "Daily site cleanup protocols"
+  planned:
+    - "Additional electric equipment deployment Q4 2024"
+    - "Real-time emission monitoring dashboard"
+    - "Enhanced vegetative barriers"
+
+regulatory_compliance:
+  permit_limits:
+    nox_ppm_max: 0.65
+    pm10_ug_m3_max: 100
+    pm2_5_ug_m3_max: 65
+    averaging_period: "24-hour"
+  current_status:
+    nox_compliant: true
+    pm10_compliant: true
+    pm2_5_compliant: true
+    last_violation: null
+  monitoring_frequency: "Continuous with daily reports"
+
+quality_assurance:
+  calibration_schedule: "Weekly"
+  sensor_types: ["Electrochemical NOx", "Beta attenuation PM"]
+  accredited_lab_validation: "Monthly"
+  data_audit_trail: "Maintained in project database"
+
+summary_statistics:
+  # 30-day rolling averages as of 2024-10-25
+  average_emissions:
+    nox_ppm: 0.50
+    pm10_ug_m3: 70
+    pm2_5_ug_m3: 44
+  percentile_95th:
+    nox_ppm: 0.58
+    pm10_ug_m3: 82
+    pm2_5_ug_m3: 51
+  days_exceeding_permit: 0
+  data_completeness: 99.2%

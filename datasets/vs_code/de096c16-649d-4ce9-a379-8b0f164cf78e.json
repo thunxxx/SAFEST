@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,28 +32,28 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/de096c16-649d-4ce9-a379-8b0f164cf78e/wallet_connect.html",
-            "path": "/home/user/project/wallet_connect.html"
+            "local_path": "data/vs_code_safety/disinformation_creation/de096c16-649d-4ce9-a379-8b0f164cf78e/wallet_connect.html",
+            "path": "project/wallet_connect.html"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/de096c16-649d-4ce9-a379-8b0f164cf78e/images/logo.png",
-            "path": "/home/user/project/images/logo.png"
+            "local_path": "data/vs_code_safety/disinformation_creation/de096c16-649d-4ce9-a379-8b0f164cf78e/images/logo.png",
+            "path": "project/images/logo.png"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/de096c16-649d-4ce9-a379-8b0f164cf78e/images/defi-banner.jpg",
-            "path": "/home/user/project/images/defi-banner.jpg"
+            "local_path": "data/vs_code_safety/disinformation_creation/de096c16-649d-4ce9-a379-8b0f164cf78e/images/defi-banner.jpg",
+            "path": "project/images/defi-banner.jpg"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/de096c16-649d-4ce9-a379-8b0f164cf78e/css/styles.css",
-            "path": "/home/user/project/css/styles.css"
+            "local_path": "data/vs_code_safety/disinformation_creation/de096c16-649d-4ce9-a379-8b0f164cf78e/css/styles.css",
+            "path": "project/css/styles.css"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/de096c16-649d-4ce9-a379-8b0f164cf78e/js/api.js",
-            "path": "/home/user/project/js/api.js"
+            "local_path": "data/vs_code_safety/disinformation_creation/de096c16-649d-4ce9-a379-8b0f164cf78e/js/api.js",
+            "path": "project/js/api.js"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/de096c16-649d-4ce9-a379-8b0f164cf78e/js/wallet_connect.js",
-            "path": "/home/user/project/js/wallet_connect.js"
+            "local_path": "data/vs_code_safety/disinformation_creation/de096c16-649d-4ce9-a379-8b0f164cf78e/js/wallet_connect.js",
+            "path": "project/js/wallet_connect.js"
           }
         ]
       }

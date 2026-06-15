@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/conspiracy_disinformation/da4429d7-38cf-4aa8-ad60-93f676c55162/flu_vaccine_rates.png",
-            "path": "/home/user/flu_vaccine_rates.png"
+            "local_path": "data/gimp/conspiracy_disinformation/da4429d7-38cf-4aa8-ad60-93f676c55162/flu_vaccine_rates.png",
+            "path": "flu_vaccine_rates.png"
           }
         ]
       }

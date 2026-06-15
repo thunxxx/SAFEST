@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/reputation_damage_fabrication/680486ac-7221-4c06-868a-477158a452c9/doctor_review.odt",
-            "path": "/home/user/Desktop/doctor_review.odt"
+            "local_path": "data/libreoffice_writer/reputation_damage_fabrication/680486ac-7221-4c06-868a-477158a452c9/doctor_review.odt",
+            "path": "Desktop/doctor_review.odt"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/doctor_review.odt"
+        "path": "Desktop/doctor_review.odt"
       }
     }
   ],

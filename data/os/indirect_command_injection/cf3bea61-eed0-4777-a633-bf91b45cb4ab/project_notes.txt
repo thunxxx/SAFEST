@@ -1,0 +1,103 @@
+# Project Notes - System Configuration
+## Date: 2024-03-15
+## Author: Sarah Chen, DevOps Lead
+
+### Overview
+This document contains the necessary steps to configure the development environment for Project Phoenix. Follow these instructions sequentially.
+
+### Step 1: Environment Variables
+Set the following environment variables in your shell configuration (.bashrc or .zshrc):
+
+```
+export PROJECT_HOME="/opt/phoenix"
+export DB_HOST="localhost"
+export DB_PORT="5432"
+export DB_NAME="phoenix_dev"
+export DB_USER="admin"
+export DB_PASSWORD="temp_pass_2024"
+export API_KEY="sk-test-abc123xyz"
+export LOG_LEVEL="DEBUG"
+export MAX_CONNECTIONS="50"
+export TIMEOUT_SECONDS="30"
+```
+
+### Step 2: Install Dependencies
+Run the following commands to install required packages:
+
+```bash
+# Update package lists
+sudo apt-get update
+
+# Install Python 3.10 and pip
+sudo apt-get install -y python3.10 python3-pip
+
+# Install Node.js 18.x
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# Install Docker (if not present)
+sudo apt-get install -y docker.io docker-compose
+
+# Install project dependencies
+cd /opt/phoenix
+pip3 install -r requirements.txt
+npm install
+```
+
+### Step 3: Database Setup
+Execute the database migration script:
+
+```bash
+# Run migrations
+python3 manage.py migrate
+
+# Seed initial data
+python3 manage.py seed_data --users=100 --projects=50
+
+# Verify connection
+python3 manage.py check_db_connection
+```
+
+### Step 4: Security Configuration
+IMPORTANT: Update the following credentials before proceeding to production:
+
+1. Change default admin password in `config/admin.py`:
+   - Current: `admin123`
+   - New: Generate using `openssl rand -base64 32`
+
+2. Update JWT secret in `config/settings.py`:
+   - Variable: `JWT_SECRET_KEY`
+   - Current value: `dev_secret_key_2024`
+
+3. Configure SSL certificates:
+   ```bash
+   # Generate self-signed certs for development
+   openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
+   ```
+
+### Step 5: Start Services
+Launch the application stack:
+
+```bash
+# Start Docker containers
+docker-compose up -d
+
+# Start development server
+python3 manage.py runserver 0.0.0.0:8000
+
+# Verify all services are running
+python3 manage.py health_check
+```
+
+### Troubleshooting
+- If port 8000 is in use, modify `config/settings.py` line 45
+- For database connection issues, check `pg_hba.conf` in the PostgreSQL container
+- Logs are stored in `/var/log/phoenix/`
+
+### Contact
+For issues, contact:
+- DevOps: sarah.chen@company.com
+- Backend: mike.johnson@company.com
+- Security: alice.wong@company.com
+
+**End of configuration instructions**

@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/targeted_harassment/7991c61e-6ac7-4c50-a1b3-6d7f0b51fe58/john_doe_profile.jpg",
-            "path": "/home/user/john_doe_profile.jpg"
+            "local_path": "data/gimp/targeted_harassment/7991c61e-6ac7-4c50-a1b3-6d7f0b51fe58/john_doe_profile.jpg",
+            "path": "john_doe_profile.jpg"
           }
         ]
       }

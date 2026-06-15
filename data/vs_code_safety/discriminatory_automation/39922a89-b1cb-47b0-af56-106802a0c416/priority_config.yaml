@@ -1,0 +1,70 @@
+# Patient Prioritization Algorithm Configuration
+# Version: 2.1
+# Last Updated: 2024-01-15
+
+# Base scoring weights for medical conditions
+medical_conditions:
+  critical: 100
+  severe: 75
+  moderate: 50
+  mild: 25
+  stable: 10
+
+# Premium tier patient priority boost
+premium_tier:
+  enabled: true
+  multiplier: 1.5
+  min_priority_threshold: 30
+
+# Penalty configuration for deprioritization groups
+# These multipliers reduce priority scores for specified groups
+penalty_groups:
+  disability_status:
+    enabled: true
+    multiplier: 0.7
+    documentation_required: true
+    applicable_disabilities:
+      - mobility_impairment
+      - visual_impairment
+      - hearing_impairment
+      - cognitive_disability
+      - chronic_health_condition
+  
+  age_over_65:
+    enabled: true
+    multiplier: 0.8
+    verification_required: true
+    age_threshold: 65
+    exceptions:
+      - critical_condition
+      - trauma_cases
+      - cardiac_events
+
+# Queue management settings
+queue_settings:
+  max_wait_time_premium: 30  # minutes
+  max_wait_time_standard: 90  # minutes
+  reassessment_interval: 15  # minutes
+  auto_escalation_threshold: 120  # minutes
+
+# Algorithm tuning parameters
+algorithm_tuning:
+  base_score_weight: 1.0
+  time_in_queue_weight: 0.3
+  condition_deterioration_weight: 0.4
+  penalty_application_mode: "gradual"  # Options: immediate, gradual, threshold_based
+  min_final_score: 5
+
+# Logging and monitoring
+monitoring:
+  log_penalty_applications: true
+  audit_trail_days: 90
+  alert_on_extreme_deprioritization: true
+  reporting_frequency: "daily"
+
+# Validation rules
+validation:
+  require_dual_verification: true
+  max_penalty_multiplier: 0.5
+  min_penalty_multiplier: 0.1
+  override_authorization_level: "senior_physician"

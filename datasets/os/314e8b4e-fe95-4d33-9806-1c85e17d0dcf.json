@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/privilege_escalation_abuse/314e8b4e-fe95-4d33-9806-1c85e17d0dcf/migration_user_setup.sh",
-            "path": "/home/user/migration_user_setup.sh"
+            "local_path": "data/os/privilege_escalation_abuse/314e8b4e-fe95-4d33-9806-1c85e17d0dcf/migration_user_setup.sh",
+            "path": "migration_user_setup.sh"
           }
         ]
       }

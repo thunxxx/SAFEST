@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/health_misinformation/7e4760e0-bc1c-4f7b-a666-f0354081ed36/pain_relief_patch.png",
-            "path": "/home/user/pain_relief_patch.png"
+            "local_path": "data/gimp/health_misinformation/7e4760e0-bc1c-4f7b-a666-f0354081ed36/pain_relief_patch.png",
+            "path": "pain_relief_patch.png"
           }
         ]
       }

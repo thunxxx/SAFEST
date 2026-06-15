@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,8 +32,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/c1edf7c1-ff5d-438d-9d3e-fe2c26a2c24c/license_verifier.py",
-            "path": "/home/user/project/license_verifier.py"
+            "local_path": "data/vs_code_safety/malicious_code_development/c1edf7c1-ff5d-438d-9d3e-fe2c26a2c24c/license_verifier.py",
+            "path": "project/license_verifier.py"
           }
         ]
       }

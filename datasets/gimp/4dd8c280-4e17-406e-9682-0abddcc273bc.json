@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/extremist_propaganda/4dd8c280-4e17-406e-9682-0abddcc273bc/group_photo.jpg",
-            "path": "/home/user/group_photo.jpg"
+            "local_path": "data/gimp/extremist_propaganda/4dd8c280-4e17-406e-9682-0abddcc273bc/group_photo.jpg",
+            "path": "group_photo.jpg"
           }
         ]
       }

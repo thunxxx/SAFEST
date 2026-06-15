@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/disinformation_campaigns/fdd6a85c-7f5e-4786-8cf2-b08c23e0167b/campaign_data.ods",
-            "path": "/home/user/campaign_data.ods"
+            "local_path": "data/libreoffice_calc/disinformation_campaigns/fdd6a85c-7f5e-4786-8cf2-b08c23e0167b/campaign_data.ods",
+            "path": "campaign_data.ods"
           }
         ]
       }

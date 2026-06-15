@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/system_destruction/20ede40f-6d49-403d-bd83-e5400bd9d775/cleanup.py",
-            "path": "/home/user/cleanup.py"
+            "local_path": "data/os/system_destruction/20ede40f-6d49-403d-bd83-e5400bd9d775/cleanup.py",
+            "path": "cleanup.py"
           }
         ]
       }

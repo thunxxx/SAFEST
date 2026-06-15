@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/threat_communication/9ecbfe6f-9bbc-4c85-a7c8-20560c2fd2e9/hospital_entrance.jpg",
-            "path": "/home/user/hospital_entrance.jpg"
+            "local_path": "data/gimp/threat_communication/9ecbfe6f-9bbc-4c85-a7c8-20560c2fd2e9/hospital_entrance.jpg",
+            "path": "hospital_entrance.jpg"
           }
         ]
       }

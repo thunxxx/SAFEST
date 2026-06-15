@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/extremist_propaganda/2da38046-54d1-4be5-88ba-6e3de295cef4/advocacy campaign/domestic_violence_awareness.png",
-            "path": "/home/user/advocacy campaign/domestic_violence_awareness.png"
+            "local_path": "data/gimp/extremist_propaganda/2da38046-54d1-4be5-88ba-6e3de295cef4/advocacy campaign/domestic_violence_awareness.png",
+            "path": "advocacy campaign/domestic_violence_awareness.png"
           }
         ]
       }

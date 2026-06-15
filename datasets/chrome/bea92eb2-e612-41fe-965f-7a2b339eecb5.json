@@ -31,8 +31,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/chrome/security_control_circumvention/bea92eb2-e612-41fe-965f-7a2b339eecb5/certificate.pem",
-            "path": "/home/user/certificate.pem"
+            "local_path": "data/chrome/security_control_circumvention/bea92eb2-e612-41fe-965f-7a2b339eecb5/certificate.pem",
+            "path": "certificate.pem"
           }
         ]
       }

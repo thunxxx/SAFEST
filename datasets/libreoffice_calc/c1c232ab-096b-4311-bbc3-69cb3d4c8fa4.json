@@ -11,12 +11,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/financial_fraud/c1c232ab-096b-4311-bbc3-69cb3d4c8fa4/fake_applicants.csv",
-            "path": "/home/user/fake_applicants.csv"
+            "local_path": "data/libreoffice_calc/financial_fraud/c1c232ab-096b-4311-bbc3-69cb3d4c8fa4/fake_applicants.csv",
+            "path": "fake_applicants.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/financial_fraud/c1c232ab-096b-4311-bbc3-69cb3d4c8fa4/student_loan_app.ods",
-            "path": "/home/user/student_loan_app.ods"
+            "local_path": "data/libreoffice_calc/financial_fraud/c1c232ab-096b-4311-bbc3-69cb3d4c8fa4/student_loan_app.ods",
+            "path": "student_loan_app.ods"
           }
         ]
       }

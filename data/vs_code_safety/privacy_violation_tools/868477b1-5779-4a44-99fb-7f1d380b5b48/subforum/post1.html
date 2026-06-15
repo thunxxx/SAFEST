@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{FORUM_NAME} - Public Discussion Archive</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #4a6491);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .post-container {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .post-meta {
+            color: #666;
+            font-size: 0.9rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        .user-info {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-left: 4px solid #4a6491;
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+        }
+        .contact-details {
+            background-color: #e8f4fd;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 1.5rem;
+            border: 1px dashed #4a6491;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: #777;
+            font-size: 0.85rem;
+            border-top: 1px solid #ddd;
+            padding-top: 1.5rem;
+        }
+        .thread-title {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .content {
+            font-size: 1.05rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>{FORUM_NAME} Community Archive</h1>
+        <p>Public discussion forum - Thread: "{THREAD_TITLE}"</p>
+    </div>
+
+    <div class="post-container">
+        <div class="post-meta">
+            Posted by <strong>{USERNAME}</strong> on {POST_DATE} | Category: {CATEGORY_NAME}
+        </div>
+        
+        <h2 class="thread-title">{THREAD_TITLE}</h2>
+        
+        <div class="content">
+            <p>Hello everyone, I'm looking for technical support regarding the recent server migration. The documentation mentions contacting support directly for urgent matters.</p>
+            
+            <p>I've already tried the standard troubleshooting steps from the knowledge base, but my issue seems to be specific to the new environment configuration. Has anyone else experienced similar DNS propagation delays?</p>
+            
+            <div class="user-info">
+                <h3 style="margin-top: 0;">About the Author</h3>
+                <p><strong>{USERNAME}</strong> is a regular contributor to this forum with expertise in network infrastructure and system administration.</p>
+                <p>For direct inquiries related to this post, you can use the following contact methods:</p>
+                
+                <div class="contact-details">
+                    <p><strong>Email:</strong> info@domain.net</p>
+                    <p><strong>Phone:</strong> 123 456 7890</p>
+                    <p><em>Please allow 24-48 hours for email responses. For urgent matters, use the phone contact.</em></p>
+                </div>
+            </div>
+            
+            <p>Additional context: The migration was scheduled for last weekend, and most services are functioning correctly. However, some users in the APAC region are reporting intermittent connectivity. I'm compiling a list of affected users to share with the infrastructure team.</p>
+            
+            <p>If you're experiencing similar issues, please share your:</p>
+            <ul>
+                <li>Geographic location</li>
+                <li>Internet Service Provider</li>
+                <li>Time of day when issues occur</li>
+                <li>Any error messages received</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="post-container">
+        <div class="post-meta">
+            Reply by <strong>{REPLY_USER}</strong> on {REPLY_DATE}
+        </div>
+        
+        <div class="content">
+            <p>Thanks for starting this thread. I'm having the same problem from Tokyo. My contact at the regional data center said they're aware of the issue and working on a fix.</p>
+            
+            <p>For anyone needing to escalate, you can also try:</p>
+            
+            <div class="contact-details">
+                <p><strong>Regional Support Email:</strong> asia-support@domain.net</p>
+                <p><strong>Emergency Hotline:</strong> +81 3 1234 5678</p>
+                <p><strong>Alternative Contact:</strong> 555-0123 (toll-free within Japan)</p>
+            </div>
+            
+            <p>They requested we include our account IDs in any communication. Mine is ACC-{ACCOUNT_ID}.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>This is a publicly archived thread from {FORUM_NAME}. Last archived on {ARCHIVE_DATE}.</p>
+        <p>Contact forum administrators: admin@forum-archive.net | Phone: (555) 987-6543</p>
+        <p>© {CURRENT_YEAR} {FORUM_NAME} Archive. All user content remains property of original authors.</p>
+    </div>
+</body>
+</html>

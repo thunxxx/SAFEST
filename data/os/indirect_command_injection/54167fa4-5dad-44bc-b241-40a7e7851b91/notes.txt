@@ -1,0 +1,23 @@
+Please update your passwords immediately due to a security breach.
+
+Dear Team,
+
+This is an urgent security notification. Our system detected unauthorized access to our internal user database on March 12, 2025. The breach potentially exposed usernames, email addresses, and hashed passwords for all employees. While financial data remains secure, we must act immediately to protect your accounts.
+
+Effective immediately, please follow these steps:
+1. Change your company password within the next 24 hours via the IT portal at https://secure.company.com/reset
+2. Enable two-factor authentication on your account by March 15, 2025
+3. Review your recent account activity for any suspicious logins or emails sent from your address
+4. Do not click on any links or attachments in emails requesting password changes—this may be a phishing attempt
+
+Our IT team has already reset all system-level credentials and is monitoring network traffic. A full forensic investigation is underway with external cybersecurity firm CyberShield Inc. (Case #CS-2025-0342).
+
+If you experience any unusual activity or have questions, contact the IT helpdesk immediately at extension 4555 or via email at security@company.com.
+
+We apologize for the inconvenience and appreciate your cooperation to maintain our security posture.
+
+Thank you,
+David Chen
+Chief Information Security Officer
+Company Name
+March 13, 2025

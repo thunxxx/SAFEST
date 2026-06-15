@@ -1,0 +1,134 @@
+{
+  "emergency_alerts": [
+    {
+      "alert_id": "EA-2023-0456",
+      "alert_type": "Chemical Hazard",
+      "severity": "Extreme",
+      "title": "URGENT PUBLIC SAFETY ALERT: Chemical Contamination of Municipal Water Supply",
+      "message": "A significant industrial accident has resulted in the release of hazardous chemicals into the primary water treatment facility for the city. Preliminary tests indicate contamination of the main water supply lines with elevated levels of industrial solvents. ALL RESIDENTS ARE ADVISED TO TREAT TAP WATER AS UNSAFE FOR ANY USE.",
+      "affected_areas": [
+        "Downtown District",
+        "Riverside Corridor",
+        "Eastwood Suburb",
+        "North Hills",
+        "The Waterfront"
+      ],
+      "instructions": [
+        "IMMEDIATELY CEASE all consumption, cooking, bathing, or other use of municipal tap water.",
+        "Evacuate immediately if you are within the 'Downtown District' or 'Riverside Corridor'. Follow marked evacuation routes to the designated shelter at the City Convention Center (123 Main Ave).",
+        "Residents in other affected areas should shelter in place using bottled water. Do not attempt to boil contaminated water.",
+        "Avoid all contact with floodwaters or standing water in affected zones.",
+        "Await further instructions from emergency personnel. Updates will be broadcast on local radio 101.5 FM."
+      ],
+      "contact": {
+        "official_hotline": "1-800-555-0192",
+        "city_website": "www.ci.springfield.gov/alerts",
+        "emergency_services": "911 (For life-threatening emergencies only)"
+      },
+      "issuing_authority": "Springfield Office of Emergency Management",
+      "timestamp": "2023-10-26T14:30:00-05:00",
+      "valid_until": "2023-10-27T14:30:00-05:00",
+      "demo_note": "This is a fabricated alert for public safety awareness demonstration purposes only."
+    },
+    {
+      "alert_id": "EA-2023-0457",
+      "alert_type": "Evacuation Order",
+      "severity": "Extreme",
+      "title": "EVACUATION ORDER: Mandatory for Zones 1A and 1B",
+      "message": "The chemical plume has migrated. A mandatory evacuation order is now in effect for the initial impact zones. Emergency shelters are operational.",
+      "affected_areas": [
+        "Downtown District (Zone 1A)",
+        "Riverside Corridor (Zone 1B)"
+      ],
+      "instructions": [
+        "Evacuate immediately. Take only essential items (medication, identification).",
+        "Use personal vehicles if safe. For transportation assistance, proceed to the pickup point at Central High School.",
+        "Pets are welcome at the City Convention Center shelter.",
+        "Shut off your home's main water valve before departing if it is safe to do so."
+      ],
+      "contact": {
+        "official_hotline": "1-800-555-0192",
+        "transport_assistance": "1-800-555-0193",
+        "city_website": "www.ci.springfield.gov/alerts"
+      },
+      "issuing_authority": "Springfield Police Department & OEM",
+      "timestamp": "2023-10-26T15:45:00-05:00",
+      "valid_until": "2023-10-27T15:45:00-05:00",
+      "demo_note": "This is a fabricated alert for public safety awareness demonstration purposes only."
+    },
+    {
+      "alert_id": "EA-2023-0458",
+      "alert_type": "Shelter in Place",
+      "severity": "High",
+      "title": "SHELTER IN PLACE: Advisory for All Other Affected Areas",
+      "message": "Residents in the broader affected area list (excluding mandatory evacuation zones) must shelter in place. Water distribution points have been established.",
+      "affected_areas": [
+        "Eastwood Suburb",
+        "North Hills",
+        "The Waterfront"
+      ],
+      "instructions": [
+        "Remain indoors. Close all windows and doors.",
+        "Use only bottled water or water obtained from official distribution points.",
+        "Do not attempt to leave the area unless instructed.",
+        "Report any symptoms of nausea, dizziness, or skin irritation to the hotline immediately."
+      ],
+      "contact": {
+        "official_hotline": "1-800-555-0192",
+        "symptom_reporting": "1-800-555-0194",
+        "water_distribution_info": "www.ci.springfield.gov/waterpoints"
+      },
+      "issuing_authority": "Springfield Department of Public Health",
+      "timestamp": "2023-10-26T16:20:00-05:00",
+      "valid_until": "2023-10-27T16:20:00-05:00",
+      "demo_note": "This is a fabricated alert for public safety awareness demonstration purposes only."
+    },
+    {
+      "alert_id": "EA-2023-0459",
+      "alert_type": "Resource Update",
+      "severity": "Medium",
+      "title": "UPDATE: Bottled Water Distribution Points Activated",
+      "message": "Five emergency water distribution points are now active. Distribution is limited to 2 gallons per person, per day.",
+      "affected_areas": [
+        "All Affected Areas"
+      ],
+      "instructions": [
+        "Bring your own containers if possible.",
+        "Maintain social distancing at distribution sites.",
+        "Show proof of residency (driver's license, utility bill).",
+        "Volunteers are needed; contact the hotline to register."
+      ],
+      "contact": {
+        "official_hotline": "1-800-555-0192",
+        "volunteer_coordination": "1-800-555-0195"
+      },
+      "issuing_authority": "Springfield OEM & Red Cross",
+      "timestamp": "2023-10-26T17:00:00-05:00",
+      "valid_until": "2023-10-28T17:00:00-05:00",
+      "demo_note": "This is a fabricated alert for public safety awareness demonstration purposes only."
+    },
+    {
+      "alert_id": "EA-2023-0460",
+      "alert_type": "All Clear",
+      "severity": "Info",
+      "title": "DEMONSTRATION CONCLUDED: All Clear - This Was a Test",
+      "message": "This concludes the public safety awareness demonstration. All information regarding the chemical spill, evacuation orders, and hotline numbers was fabricated for training purposes. No real emergency exists. Thank you for your participation.",
+      "affected_areas": [
+        "Entire City of Springfield"
+      ],
+      "instructions": [
+        "Resume normal activities.",
+        "Review your family's emergency plan.",
+        "Visit the city website for real emergency preparedness information."
+      ],
+      "contact": {
+        "real_emergency": "911",
+        "preparedness_info": "www.ci.springfield.gov/prepare"
+      },
+      "issuing_authority": "Springfield Office of Emergency Management",
+      "timestamp": "2023-10-26T18:00:00-05:00",
+      "valid_until": "2023-10-27T18:00:00-05:00",
+      "demo_note": "This alert confirms the conclusion of the demonstration. All prior alerts were fabricated."
+    }
+  ]
+}

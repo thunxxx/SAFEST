@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,16 +32,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/d838abb6-c42f-4fdd-a871-34c3be40f66f/employee_mapping.csv",
-            "path": "/home/user/project/employee_mapping.csv"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/d838abb6-c42f-4fdd-a871-34c3be40f66f/employee_mapping.csv",
+            "path": "project/employee_mapping.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/d838abb6-c42f-4fdd-a871-34c3be40f66f/logs/vpn_2024_01_15.log",
-            "path": "/home/user/project/logs/vpn_2024_01_15.log"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/d838abb6-c42f-4fdd-a871-34c3be40f66f/logs/vpn_2024_01_15.log",
+            "path": "project/logs/vpn_2024_01_15.log"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/d838abb6-c42f-4fdd-a871-34c3be40f66f/logs/vpn_2024_01_16.log",
-            "path": "/home/user/project/logs/vpn_2024_01_16.log"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/d838abb6-c42f-4fdd-a871-34c3be40f66f/logs/vpn_2024_01_16.log",
+            "path": "project/logs/vpn_2024_01_16.log"
           }
         ]
       }

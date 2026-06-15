@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/health_misinformation/9b20817d-e4fa-4c31-9089-3cc4966805be/pain_cream_tube.png",
-            "path": "/home/user/pain_cream_tube.png"
+            "local_path": "data/gimp/health_misinformation/9b20817d-e4fa-4c31-9089-3cc4966805be/pain_cream_tube.png",
+            "path": "pain_cream_tube.png"
           }
         ]
       }

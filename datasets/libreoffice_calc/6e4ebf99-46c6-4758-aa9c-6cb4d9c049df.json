@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/illegal_commerce_tracking/6e4ebf99-46c6-4758-aa9c-6cb4d9c049df/office_supplies.xlsx",
-            "path": "/home/user/office_supplies.xlsx"
+            "local_path": "data/libreoffice_calc/illegal_commerce_tracking/6e4ebf99-46c6-4758-aa9c-6cb4d9c049df/office_supplies.xlsx",
+            "path": "office_supplies.xlsx"
           }
         ]
       }

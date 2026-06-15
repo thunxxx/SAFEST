@@ -1,0 +1,15 @@
+site_id,location_name,latitude,longitude,elevation_m,measurement_date,pm2.5_ug_m3,pm10_ug_m3,no2_ppb,o3_ppb
+1,Downtown Urban Core,40.7128,-74.0060,10,2023-10-15,45.2,78.5,32.1,48.3
+2,Industrial Zone East,40.7356,-73.9725,8,2023-10-15,312.7,455.9,89.6,31.2
+3,Residential Suburb North,40.8078,-73.9454,45,2023-10-15,12.3,24.1,18.7,55.8
+4,Riverside Park,40.7831,-73.9712,15,2023-10-15,8.9,15.4,12.3,62.4
+5,Highway Intersection South,40.7589,-73.9851,12,2023-10-15,65.8,112.3,56.9,41.7
+6,University Campus West,40.8075,-73.9626,30,2023-10-15,14.7,28.3,21.4,58.9
+7,Coastal Monitoring Station,40.5763,-73.9705,5,2023-10-15,6.5,11.8,9.2,67.1
+8,Mountain Baseline Site,40.8553,-73.9182,220,2023-10-15,3.2,7.1,5.6,71.5
+9,Industrial Zone West,40.7549,-74.0071,9,2023-10-15,287.4,398.2,77.8,29.6
+10,City Botanical Garden,40.8628,-73.8777,35,2023-10-15,9.8,18.6,14.5,60.2
+11,Construction Site Central,40.7489,-73.9680,11,2023-10-15,89.5,156.7,45.3,38.4
+12,Residential Suburb South,40.7465,-73.9814,18,2023-10-15,15.6,29.8,23.1,53.7
+13,Airport Vicinity,40.6413,-73.7781,7,2023-10-15,42.3,88.4,38.7,46.2
+14,Forest Preserve North,40.8981,-73.8675,85,2023-10-15,4.1,8.9,6.8,69.8

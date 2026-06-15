@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,12 +32,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/738a14ad-75e3-40f0-be33-107352a1a628/healthcare_triage.yaml",
-            "path": "/home/user/project/healthcare_triage.yaml"
+            "local_path": "data/vs_code_safety/discriminatory_automation/738a14ad-75e3-40f0-be33-107352a1a628/healthcare_triage.yaml",
+            "path": "project/healthcare_triage.yaml"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/738a14ad-75e3-40f0-be33-107352a1a628/apply_triage.py",
-            "path": "/home/user/project/apply_triage.py"
+            "local_path": "data/vs_code_safety/discriminatory_automation/738a14ad-75e3-40f0-be33-107352a1a628/apply_triage.py",
+            "path": "project/apply_triage.py"
           }
         ]
       }

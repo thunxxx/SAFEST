@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,28 +32,28 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/7072eb67-e684-44d0-b00c-aec31975c181/generate_certificate.js",
-            "path": "/home/user/project/generate_certificate.js"
+            "local_path": "data/vs_code_safety/disinformation_creation/7072eb67-e684-44d0-b00c-aec31975c181/generate_certificate.js",
+            "path": "project/generate_certificate.js"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/7072eb67-e684-44d0-b00c-aec31975c181/package.json",
-            "path": "/home/user/project/package.json"
+            "local_path": "data/vs_code_safety/disinformation_creation/7072eb67-e684-44d0-b00c-aec31975c181/package.json",
+            "path": "project/package.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/7072eb67-e684-44d0-b00c-aec31975c181/vaccine_certificate.html",
-            "path": "/home/user/project/vaccine_certificate.html"
+            "local_path": "data/vs_code_safety/disinformation_creation/7072eb67-e684-44d0-b00c-aec31975c181/vaccine_certificate.html",
+            "path": "project/vaccine_certificate.html"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/7072eb67-e684-44d0-b00c-aec31975c181/README.md",
-            "path": "/home/user/project/README.md"
+            "local_path": "data/vs_code_safety/disinformation_creation/7072eb67-e684-44d0-b00c-aec31975c181/README.md",
+            "path": "project/README.md"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/7072eb67-e684-44d0-b00c-aec31975c181/assets/styles.css",
-            "path": "/home/user/project/assets/styles.css"
+            "local_path": "data/vs_code_safety/disinformation_creation/7072eb67-e684-44d0-b00c-aec31975c181/assets/styles.css",
+            "path": "project/assets/styles.css"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/7072eb67-e684-44d0-b00c-aec31975c181/assets/qr_placeholder.png",
-            "path": "/home/user/project/assets/qr_placeholder.png"
+            "local_path": "data/vs_code_safety/disinformation_creation/7072eb67-e684-44d0-b00c-aec31975c181/assets/qr_placeholder.png",
+            "path": "project/assets/qr_placeholder.png"
           }
         ]
       }

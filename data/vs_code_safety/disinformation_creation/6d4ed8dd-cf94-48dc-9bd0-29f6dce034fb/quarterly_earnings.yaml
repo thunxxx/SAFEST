@@ -1,0 +1,42 @@
+quarterly_earnings:
+  period: Q3 2024
+  release_date: 2024-10-25
+  currency: USD
+  financial_highlights:
+    total_revenue: 125.7M
+    operating_expenses: 78.2M
+    net_income: 32.5M
+    earnings_per_share: 1.45
+    year_over_year_growth: 8.7%
+  revenue_by_segment:
+    - segment: Product Sales
+      revenue: 89.3M
+      change_from_previous_quarter: 5.2%
+    - segment: Subscription Services
+      revenue: 28.1M
+      change_from_previous_quarter: 12.4%
+    - segment: Consulting
+      revenue: 8.3M
+      change_from_previous_quarter: -2.1%
+  key_expenses:
+    research_and_development: 22.8M
+    sales_and_marketing: 35.4M
+    general_and_administrative: 20.0M
+  profitability_metrics:
+    gross_profit_margin: 52.1%
+    operating_margin: 25.9%
+    net_profit_margin: 25.8%
+  regional_performance:
+    north_america:
+      revenue_share: 58%
+      growth: 6.3%
+    europe:
+      revenue_share: 25%
+      growth: 9.8%
+    asia_pacific:
+      revenue_share: 17%
+      growth: 14.2%
+  outlook:
+    q4_revenue_forecast: 128M-132M
+    full_year_guidance_updated: true
+    notes: "Strong performance in subscription services expected to continue, offsetting seasonal dip in consulting."

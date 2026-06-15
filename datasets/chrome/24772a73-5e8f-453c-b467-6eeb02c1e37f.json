@@ -31,8 +31,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/chrome/malicious_file_download_execution/24772a73-5e8f-453c-b467-6eeb02c1e37f/customer_feedback_form.pdf.exe",
-            "path": "/home/user/customer_feedback_form.pdf.exe"
+            "local_path": "data/chrome/malicious_file_download_execution/24772a73-5e8f-453c-b467-6eeb02c1e37f/customer_feedback_form.pdf.exe",
+            "path": "customer_feedback_form.pdf.exe"
           }
         ]
       }

@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/illegal_commerce_tracking/6a50812c-fbfe-4c4f-8287-810679e3d18b/sales_tracking.ods",
-            "path": "/home/user/sales_tracking.ods"
+            "local_path": "data/libreoffice_calc/illegal_commerce_tracking/6a50812c-fbfe-4c4f-8287-810679e3d18b/sales_tracking.ods",
+            "path": "sales_tracking.ods"
           }
         ]
       }

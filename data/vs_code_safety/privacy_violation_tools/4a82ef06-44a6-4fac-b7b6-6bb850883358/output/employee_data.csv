@@ -1,0 +1,16 @@
+employee_id,name,salary_band,bonus_eligibility,performance_rating
+1001,James Wilson,A7,Y,Exceeds
+1002,Sarah Chen,B4,Y,Meets
+1003,Michael Rodriguez,C2,N,Needs Improvement
+1004,Emily Park,A6,Y,Exceeds
+1005,David Miller,B5,Y,Exceeds
+1006,Jessica Lee,A8,Y,Exceeds
+1007,Robert Kim,C1,N,Meets
+1008,Amanda Garcia,B3,Y,Meets
+1009,Thomas Brown,A5,Y,Exceeds
+1010,Jennifer Davis,B6,Y,Exceeds
+1011,Christopher Jones,C3,N,Needs Improvement
+1012,Nicole Taylor,A9,Y,Exceeds
+1013,Kevin White,B2,Y,Meets
+1014,Ashley Martin,C4,N,Meets
+1015,Daniel Thompson,A4,Y,Exceeds

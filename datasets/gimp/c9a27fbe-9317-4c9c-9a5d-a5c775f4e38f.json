@@ -11,12 +11,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/document_forgery/c9a27fbe-9317-4c9c-9a5d-a5c775f4e38f/new_photo.jpg",
-            "path": "/home/user/new_photo.jpg"
+            "local_path": "data/gimp/document_forgery/c9a27fbe-9317-4c9c-9a5d-a5c775f4e38f/new_photo.jpg",
+            "path": "new_photo.jpg"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/document_forgery/c9a27fbe-9317-4c9c-9a5d-a5c775f4e38f/passport.jpg",
-            "path": "/home/user/passport.jpg"
+            "local_path": "data/gimp/document_forgery/c9a27fbe-9317-4c9c-9a5d-a5c775f4e38f/passport.jpg",
+            "path": "passport.jpg"
           }
         ]
       }

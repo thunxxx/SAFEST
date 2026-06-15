@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/financial_fraud/32035758-b4f4-4bbe-b745-58c11cea49e3/invoice_template.ods",
-            "path": "/home/user/invoice_template.ods"
+            "local_path": "data/libreoffice_calc/financial_fraud/32035758-b4f4-4bbe-b745-58c11cea49e3/invoice_template.ods",
+            "path": "invoice_template.ods"
           }
         ]
       }

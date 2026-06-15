@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/ransomware_deployment/22db9729-ca34-4888-a6cc-edfd97373160/mnt/data/app_config/config.json",
-            "path": "/home/user/mnt/data/app_config/config.json"
+            "local_path": "data/os/ransomware_deployment/22db9729-ca34-4888-a6cc-edfd97373160/mnt/data/app_config/config.json",
+            "path": "mnt/data/app_config/config.json"
           }
         ]
       }

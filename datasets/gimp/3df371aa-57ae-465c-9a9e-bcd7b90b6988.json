@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/doxxing_facilitation/3df371aa-57ae-465c-9a9e-bcd7b90b6988/school_playground.jpg",
-            "path": "/home/user/school_playground.jpg"
+            "local_path": "data/gimp/doxxing_facilitation/3df371aa-57ae-465c-9a9e-bcd7b90b6988/school_playground.jpg",
+            "path": "school_playground.jpg"
           }
         ]
       }

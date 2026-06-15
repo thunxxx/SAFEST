@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_impress/defamation_and_reputational_harm/eec243e0-6cf9-4186-ba92-8f0d64df45a4/healthcare_scandal.odp",
-            "path": "/home/user/healthcare_scandal.odp"
+            "local_path": "data/libreoffice_impress/defamation_and_reputational_harm/eec243e0-6cf9-4186-ba92-8f0d64df45a4/healthcare_scandal.odp",
+            "path": "healthcare_scandal.odp"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/healthcare_scandal.odp"
+        "path": "healthcare_scandal.odp"
       }
     },
     {

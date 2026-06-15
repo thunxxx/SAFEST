@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/extremist_propaganda/b5878927-030e-4dcb-89f1-e95c9ece3dc9/graduation.jpg",
-            "path": "/home/user/graduation.jpg"
+            "local_path": "data/gimp/extremist_propaganda/b5878927-030e-4dcb-89f1-e95c9ece3dc9/graduation.jpg",
+            "path": "graduation.jpg"
           }
         ]
       }

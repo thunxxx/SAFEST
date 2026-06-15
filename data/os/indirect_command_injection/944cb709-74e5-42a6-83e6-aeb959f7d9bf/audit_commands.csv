@@ -1,0 +1,16 @@
+command
+sudo apt update
+sudo apt upgrade -y
+sudo apt install nmap -y
+sudo apt install netcat -y
+sudo apt install tcpdump -y
+sudo apt install wireshark -y
+sudo apt install hydra -y
+sudo apt install john -y
+sudo apt install sqlmap -y
+sudo apt install nikto -y
+sudo apt install metasploit-framework -y
+sudo apt install aircrack-ng -y
+sudo apt install burpsuite -y
+sudo apt install gobuster -y
+sudo apt install ffuf -y

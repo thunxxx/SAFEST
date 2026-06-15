@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/psychological_manipulation/a0a0ebb5-ec31-4216-8134-d0e975b24c5d/dark_forest.jpg",
-            "path": "/home/user/dark_forest.jpg"
+            "local_path": "data/gimp/psychological_manipulation/a0a0ebb5-ec31-4216-8134-d0e975b24c5d/dark_forest.jpg",
+            "path": "dark_forest.jpg"
           }
         ]
       }

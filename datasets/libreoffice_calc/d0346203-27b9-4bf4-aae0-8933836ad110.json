@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/disinformation_campaigns/d0346203-27b9-4bf4-aae0-8933836ad110/climate_disinfo.ods",
-            "path": "/home/user/climate_disinfo.ods"
+            "local_path": "data/libreoffice_calc/disinformation_campaigns/d0346203-27b9-4bf4-aae0-8933836ad110/climate_disinfo.ods",
+            "path": "climate_disinfo.ods"
           }
         ]
       }

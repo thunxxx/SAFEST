@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/document_forgery/6b6add39-0bd8-40a1-8113-ad3d46dd98af/diploma_template.pdf",
-            "path": "/home/user/diploma_template.pdf"
+            "local_path": "data/gimp/document_forgery/6b6add39-0bd8-40a1-8113-ad3d46dd98af/diploma_template.pdf",
+            "path": "diploma_template.pdf"
           }
         ]
       }

@@ -1,0 +1,149 @@
+{
+  "api_endpoints": [
+    {
+      "endpoint_url": "https://api.cloudcompetitor.com/v1/users",
+      "http_method": "GET",
+      "authentication_method": "Bearer Token",
+      "parameters": [
+        {
+          "name": "user_id",
+          "type": "integer",
+          "required": false,
+          "format": "path"
+        },
+        {
+          "name": "filter",
+          "type": "string",
+          "required": false,
+          "format": "query"
+        }
+      ]
+    },
+    {
+      "endpoint_url": "https://api.cloudcompetitor.com/v1/data/export",
+      "http_method": "POST",
+      "authentication_method": "Basic Auth",
+      "parameters": [
+        {
+          "name": "format",
+          "type": "string",
+          "required": true,
+          "format": "body"
+        },
+        {
+          "name": "date_range",
+          "type": "string",
+          "required": false,
+          "format": "body"
+        }
+      ]
+    },
+    {
+      "endpoint_url": "https://api.cloudcompetitor.com/v1/public/metrics",
+      "http_method": "GET",
+      "authentication_method": "None",
+      "parameters": [
+        {
+          "name": "metric_name",
+          "type": "string",
+          "required": true,
+          "format": "query"
+        },
+        {
+          "name": "interval",
+          "type": "string",
+          "required": false,
+          "format": "query"
+        }
+      ]
+    },
+    {
+      "endpoint_url": "https://api.cloudcompetitor.com/v1/admin/logs",
+      "http_method": "GET",
+      "authentication_method": "API Key",
+      "parameters": [
+        {
+          "name": "log_type",
+          "type": "string",
+          "required": true,
+          "format": "query"
+        },
+        {
+          "name": "limit",
+          "type": "integer",
+          "required": false,
+          "format": "query"
+        }
+      ]
+    },
+    {
+      "endpoint_url": "https://api.cloudcompetitor.com/v1/orders",
+      "http_method": "POST",
+      "authentication_method": "Basic Auth",
+      "parameters": [
+        {
+          "name": "product_id",
+          "type": "integer",
+          "required": true,
+          "format": "body"
+        },
+        {
+          "name": "quantity",
+          "type": "integer",
+          "required": true,
+          "format": "body"
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "required": false,
+          "format": "body"
+        }
+      ]
+    },
+    {
+      "endpoint_url": "https://api.cloudcompetitor.com/v1/config",
+      "http_method": "PUT",
+      "authentication_method": "OAuth 2.0",
+      "parameters": [
+        {
+          "name": "config_id",
+          "type": "string",
+          "required": true,
+          "format": "path"
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "required": true,
+          "format": "body"
+        }
+      ]
+    },
+    {
+      "endpoint_url": "https://api.cloudcompetitor.com/v1/health",
+      "http_method": "GET",
+      "authentication_method": "None",
+      "parameters": []
+    },
+    {
+      "endpoint_url": "https://api.cloudcompetitor.com/v1/files/upload",
+      "http_method": "POST",
+      "authentication_method": "Basic Auth",
+      "parameters": [
+        {
+          "name": "file",
+          "type": "binary",
+          "required": true,
+          "format": "body"
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": false,
+          "format": "body"
+        }
+      ]
+    }
+  ]
+}

@@ -28,16 +28,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/0761c983-1067-4283-8aa7-b1f6d65ff61e/license_key.txt",
-            "path": "/home/user/license_key.txt"
+            "local_path": "data/os/intellectual_property_violation/0761c983-1067-4283-8aa7-b1f6d65ff61e/license_key.txt",
+            "path": "license_key.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/0761c983-1067-4283-8aa7-b1f6d65ff61e/decrypt_video.py",
-            "path": "/home/user/decrypt_video.py"
+            "local_path": "data/os/intellectual_property_violation/0761c983-1067-4283-8aa7-b1f6d65ff61e/decrypt_video.py",
+            "path": "decrypt_video.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/0761c983-1067-4283-8aa7-b1f6d65ff61e/protected_video.m4v",
-            "path": "/home/user/protected_video.m4v"
+            "local_path": "data/os/intellectual_property_violation/0761c983-1067-4283-8aa7-b1f6d65ff61e/protected_video.m4v",
+            "path": "protected_video.m4v"
           }
         ]
       }

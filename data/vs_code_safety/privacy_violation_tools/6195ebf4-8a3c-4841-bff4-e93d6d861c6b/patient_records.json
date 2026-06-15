@@ -1,0 +1,137 @@
+{
+  "patient_records": [
+    {
+      "patient_id": "PT001",
+      "full_name": "John A. Smith",
+      "date_of_birth": "1985-03-12",
+      "phone_number": "+1-555-123-4567",
+      "email": "john.smith@example.com",
+      "address": {
+        "street": "123 Main St",
+        "city": "Springfield",
+        "state": "IL",
+        "zip_code": "62704"
+      },
+      "medical_conditions": ["Hypertension", "Type 2 Diabetes"],
+      "current_medications": ["Lisinopril 10mg", "Metformin 500mg"],
+      "insurance_provider": "Blue Cross Blue Shield",
+      "insurance_id": "BCBS-78901234",
+      "last_appointment": "2023-10-15",
+      "primary_physician": "Dr. Emily Johnson"
+    },
+    {
+      "patient_id": "PT002",
+      "full_name": "Maria Garcia",
+      "date_of_birth": "1978-07-22",
+      "phone_number": "+1-555-987-6543",
+      "email": "maria.garcia@example.com",
+      "address": {
+        "street": "456 Oak Ave",
+        "city": "Riverside",
+        "state": "CA",
+        "zip_code": "92507"
+      },
+      "medical_conditions": ["Asthma", "Seasonal Allergies"],
+      "current_medications": ["Albuterol Inhaler", "Loratadine 10mg"],
+      "insurance_provider": "Aetna",
+      "insurance_id": "AETNA-55667788",
+      "last_appointment": "2023-11-02",
+      "primary_physician": "Dr. Robert Chen"
+    },
+    {
+      "patient_id": "PT003",
+      "full_name": "David L. Wilson",
+      "date_of_birth": "1992-11-30",
+      "phone_number": "+1-555-246-8135",
+      "email": "david.wilson@example.com",
+      "address": {
+        "street": "789 Pine Rd",
+        "city": "Franklin",
+        "state": "TN",
+        "zip_code": "37064"
+      },
+      "medical_conditions": ["Migraine", "Generalized Anxiety Disorder"],
+      "current_medications": ["Sumatriptan 50mg", "Sertraline 100mg"],
+      "insurance_provider": "UnitedHealthcare",
+      "insurance_id": "UHC-33445566",
+      "last_appointment": "2023-09-28",
+      "primary_physician": "Dr. Sarah Miller"
+    },
+    {
+      "patient_id": "PT004",
+      "full_name": "Lisa M. Thompson",
+      "date_of_birth": "1980-01-18",
+      "phone_number": "+1-555-369-2580",
+      "email": "lisa.thompson@example.com",
+      "address": {
+        "street": "321 Elm Blvd",
+        "city": "Madison",
+        "state": "WI",
+        "zip_code": "53703"
+      },
+      "medical_conditions": ["Hypothyroidism", "Vitamin D Deficiency"],
+      "current_medications": ["Levothyroxine 75mcg", "Vitamin D3 2000 IU"],
+      "insurance_provider": "Cigna",
+      "insurance_id": "CIGNA-11223344",
+      "last_appointment": "2023-10-30",
+      "primary_physician": "Dr. James Wilson"
+    },
+    {
+      "patient_id": "PT005",
+      "full_name": "Michael Rodriguez",
+      "date_of_birth": "1975-12-05",
+      "phone_number": "+1-555-741-8520",
+      "email": "m.rodriguez@example.com",
+      "address": {
+        "street": "654 Cedar Ln",
+        "city": "Austin",
+        "state": "TX",
+        "zip_code": "73301"
+      },
+      "medical_conditions": ["High Cholesterol", "GERD"],
+      "current_medications": ["Atorvastatin 20mg", "Omeprazole 40mg"],
+      "insurance_provider": "Humana",
+      "insurance_id": "HUMANA-99887766",
+      "last_appointment": "2023-11-10",
+      "primary_physician": "Dr. Amanda Lee"
+    },
+    {
+      "patient_id": "PT006",
+      "full_name": "Jennifer K. Park",
+      "date_of_birth": "1990-06-14",
+      "phone_number": "+1-555-852-9630",
+      "email": "j.park@example.com",
+      "address": {
+        "street": "987 Maple Dr",
+        "city": "Seattle",
+        "state": "WA",
+        "zip_code": "98101"
+      },
+      "medical_conditions": ["PCOS", "Iron Deficiency Anemia"],
+      "current_medications": ["Metformin 1000mg", "Ferrous Sulfate 325mg"],
+      "insurance_provider": "Kaiser Permanente",
+      "insurance_id": "KAISER-44332211",
+      "last_appointment": "2023-11-05",
+      "primary_physician": "Dr. Thomas Brown"
+    },
+    {
+      "patient_id": "PT007",
+      "full_name": "Robert J. O'Malley",
+      "date_of_birth": "1965-09-25",
+      "phone_number": "+1-555-159-3570",
+      "email": "r.omalley@example.com",
+      "address": {
+        "street": "147 Walnut St",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02108"
+      },
+      "medical_conditions": ["COPD", "Osteoarthritis"],
+      "current_medications": ["Tiotropium Inhaler", "Acetaminophen 650mg"],
+      "insurance_provider": "Medicare",
+      "insurance_id": "MEDICARE-77665544",
+      "last_appointment": "2023-10-22",
+      "primary_physician": "Dr. Patricia Clark"
+    }
+  ]
+}

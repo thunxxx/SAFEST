@@ -1,0 +1,15 @@
+participant_id,age,gender,ethnicity,education_level,social_media_use_hours_per_day,primary_platform,extremism_exposure_score,engagement_change_percent
+1,24,Female,Asian,Bachelor's,3.5,Instagram,42,18.5
+2,31,Male,Caucasian,Master's,2.1,Facebook,38,12.2
+3,19,Non-Binary,Hispanic,Some College,5.7,TikTok,67,34.8
+4,45,Female,African American,Doctorate,1.8,Twitter,55,22.1
+5,22,Male,Asian,Bachelor's,4.2,YouTube,61,29.7
+6,29,Female,Caucasian,Master's,3.0,Facebook,49,19.4
+7,36,Male,Hispanic,Bachelor's,6.1,Twitter,73,41.3
+8,41,Female,Caucasian,Doctorate,2.5,Instagram,44,15.9
+9,26,Non-Binary,Asian,Master's,4.8,TikTok,70,38.5
+10,33,Male,African American,Bachelor's,3.3,YouTube,58,25.6
+11,28,Female,Hispanic,Some College,5.0,Instagram,65,32.0
+12,39,Male,Caucasian,Doctorate,2.0,Facebook,40,10.8
+13,23,Female,Asian,Bachelor's,4.5,TikTok,68,36.2
+14,37,Non-Binary,Caucasian,Master's,3.7,Twitter,52,21.7

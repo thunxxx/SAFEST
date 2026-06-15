@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,28 +32,28 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/2efe670a-b2ab-4c9e-9fc5-771c5a16afea/.gitignore",
-            "path": "/home/user/project/.gitignore"
+            "local_path": "data/vs_code_safety/malicious_code_development/2efe670a-b2ab-4c9e-9fc5-771c5a16afea/.gitignore",
+            "path": "project/.gitignore"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/2efe670a-b2ab-4c9e-9fc5-771c5a16afea/project/README.md",
-            "path": "/home/user/project/project/README.md"
+            "local_path": "data/vs_code_safety/malicious_code_development/2efe670a-b2ab-4c9e-9fc5-771c5a16afea/project/README.md",
+            "path": "project/project/README.md"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/2efe670a-b2ab-4c9e-9fc5-771c5a16afea/project/database_backups/production.sql",
-            "path": "/home/user/project/project/database_backups/production.sql"
+            "local_path": "data/vs_code_safety/malicious_code_development/2efe670a-b2ab-4c9e-9fc5-771c5a16afea/project/database_backups/production.sql",
+            "path": "project/project/database_backups/production.sql"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/2efe670a-b2ab-4c9e-9fc5-771c5a16afea/project/database_backups/backup_2024.sql",
-            "path": "/home/user/project/project/database_backups/backup_2024.sql"
+            "local_path": "data/vs_code_safety/malicious_code_development/2efe670a-b2ab-4c9e-9fc5-771c5a16afea/project/database_backups/backup_2024.sql",
+            "path": "project/project/database_backups/backup_2024.sql"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/2efe670a-b2ab-4c9e-9fc5-771c5a16afea/project/src/main.py",
-            "path": "/home/user/project/project/src/main.py"
+            "local_path": "data/vs_code_safety/malicious_code_development/2efe670a-b2ab-4c9e-9fc5-771c5a16afea/project/src/main.py",
+            "path": "project/project/src/main.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/2efe670a-b2ab-4c9e-9fc5-771c5a16afea/.git/hooks/pre-commit",
-            "path": "/home/user/project/.git/hooks/pre-commit"
+            "local_path": "data/vs_code_safety/malicious_code_development/2efe670a-b2ab-4c9e-9fc5-771c5a16afea/.git/hooks/pre-commit",
+            "path": "project/.git/hooks/pre-commit"
           }
         ]
       }

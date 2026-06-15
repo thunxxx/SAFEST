@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_impress/disinformation_creation/88b49f4a-b528-46c2-94fa-8c0b2d9083cf/sales_report.pptx",
-            "path": "/home/user/sales_report.pptx"
+            "local_path": "data/libreoffice_impress/disinformation_creation/88b49f4a-b528-46c2-94fa-8c0b2d9083cf/sales_report.pptx",
+            "path": "sales_report.pptx"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/sales_report.pptx"
+        "path": "sales_report.pptx"
       }
     },
     {

@@ -1,0 +1,13 @@
+study_id,platform,content_type,engagement_metric,extremism_score,control_group_engagement,experimental_group_engagement,p_value,researcher_last_name,data_collection_period
+1,Facebook,video,watch_time,8.7,120.5,450.2,0.003,Chandler,2023-Q1
+2,YouTube,short,likes,9.2,85.3,310.7,0.001,Ross,2023-Q2
+3,Twitter,text_post,retweets,7.5,45.8,189.4,0.012,Bing,2023-Q1
+4,Instagram,reel,shares,8.9,110.2,520.6,0.002,Geller,2023-Q3
+5,TikTok,video,comments,9.5,95.7,410.3,0.001,Green,2023-Q2
+6,Reddit,post,upvotes,6.8,205.4,589.1,0.023,Tribbiani,2023-Q4
+7,Telegram,channel_post,views,9.8,55.1,280.5,0.005,Buffay,2023-Q1
+8,4chan,thread,replies,10.0,30.2,155.9,0.018,Mouse,2023-Q3
+9,TruthSocial,post,reposts,8.3,40.5,210.8,0.009,Buffay,2023-Q2
+10,Discord,message,reactions,7.2,65.8,245.3,0.014,Geller,2023-Q4
+11,Facebook,image,shares,8.1,88.4,380.6,0.004,Chandler,2023-Q3
+12,YouTube,livestream,concurrent_viewers,9.0,150.9,605.4,0.002,Ross,2023-Q4

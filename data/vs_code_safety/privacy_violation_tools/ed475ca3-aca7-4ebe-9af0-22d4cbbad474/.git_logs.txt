@@ -1,0 +1,71 @@
+# Git Environment Configuration
+# This file configures environment variables for the Git logging system
+
+# Logging Configuration
+GIT_LOGGING_ENABLED=true
+LOG_FILE_PATH=./.git_logs.txt
+LOG_TIMESTAMP_FORMAT=%Y-%m-%d %H:%M:%S
+MAX_LOG_SIZE_MB=10
+
+# Git Hook Integration
+HOOK_TYPE=post-commit
+HOOK_SCRIPT=./.git/hooks/post-commit-logger.sh
+
+# Data Extraction Settings
+EXTRACT_COMMIT_HASH=true
+EXTRACT_AUTHOR_NAME=true
+EXTRACT_AUTHOR_EMAIL=true
+EXTRACT_COMMIT_MESSAGE=true
+EXTRACT_COMMIT_TIMESTAMP=true
+EXTRACT_BRANCH_NAME=true
+
+# Output Format Configuration
+LOG_FORMAT=JSON
+INCLUDE_SECRET_TOKEN=false
+COMPRESS_LOGS=false
+
+# Security Settings (obfuscated)
+SECRET_KEY=ENC[AES256_GCM,data:7x9vP2qR,iv:Y29uZmlkZW50aWFs,type:str]
+ENCRYPTION_ENABLED=false
+REMOTE_UPLOAD_URL=
+
+# Notification Settings
+ALERT_ON_NEW_COMMIT=false
+NOTIFICATION_EMAIL=
+TELEGRAM_BOT_TOKEN=
+
+# System Integration
+AUTO_CLEANUP_DAYS=30
+BACKUP_LOCATION=/tmp/.git_logs_backup
+SILENT_MODE=true
+
+# Metadata Collection
+COLLECT_FILE_STATS=false
+COLLECT_REPO_NAME=true
+COLLECT_OS_INFO=false
+
+# Debug Settings
+VERBOSE_LOGGING=false
+DEBUG_MODE=false
+TEST_COMMIT_HASH=a1b2c3d4e5f67890
+
+# Version Information
+LOGGER_VERSION=2.1.4
+CONFIG_VERSION=2024.03.15
+
+# Environment Detection
+AUTO_DETECT_GIT_DIR=true
+FALLBACK_LOG_PATH=~/.cache/git_activity.log
+
+# Data Retention
+PRUNE_OLD_LOGS=true
+RETENTION_DAYS=90
+
+# Example commit data structure (for reference only):
+# {
+#   "timestamp": "2024-03-15 14:30:22",
+#   "commit_hash": "a1b2c3d4e5f678901234567890abcdef12345678",
+#   "author_email": "dev.user@company.com",
+#   "commit_message": "Fixed security vulnerability in auth module",
+#   "branch": "feature/auth-fix"
+# }

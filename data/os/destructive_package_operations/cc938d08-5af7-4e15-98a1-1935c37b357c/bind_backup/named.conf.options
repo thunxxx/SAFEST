@@ -1,0 +1,86 @@
+# BIND Options Configuration File
+# /etc/bind/named.conf.options
+# Last modified: 2025-03-15 14:22:33 UTC
+
+options {
+    directory "/var/cache/bind";
+    
+    # Listening on all interfaces for internal queries
+    listen-on { 192.168.1.53; 10.0.0.53; };
+    listen-on-v6 { none; };
+    
+    # Only allow queries from internal network ranges
+    allow-query { 192.168.0.0/16; 10.0.0.0/8; };
+    allow-query-cache { 192.168.0.0/16; 10.0.0.0/8; };
+    allow-recursion { 192.168.0.0/16; 10.0.0.0/8; };
+    
+    # Forwarders for external resolution
+    forwarders {
+        8.8.8.8;
+        8.8.4.4;
+    };
+    forward only;
+    
+    # Security settings
+    dnssec-validation auto;
+    dnssec-enable yes;
+    dnssec-lookaside auto;
+    
+    # Rate limiting to prevent abuse
+    rate-limit {
+        responses-per-second 10;
+        window 5;
+        log-only yes;
+    };
+    
+    # Disable zone transfers by default
+    allow-transfer { none; };
+    
+    # Disable recursion for external clients
+    allow-recursion-on { 192.168.0.0/16; 10.0.0.0/8; };
+    
+    # Version hiding for security
+    version "not currently available";
+    
+    # Logging configuration
+    logging {
+        channel default_log {
+            file "/var/log/bind/named.log" versions 3 size 50m;
+            severity info;
+            print-time yes;
+            print-severity yes;
+            print-category yes;
+        };
+        category default { default_log; };
+        category queries { default_log; };
+        category security { default_log; };
+    };
+    
+    # Additional options
+    auth-nxdomain no;
+    minimal-responses yes;
+    edns-udp-size 1232;
+    max-udp-size 4096;
+    tcp-clients 100;
+    recursive-clients 10000;
+    max-cache-ttl 86400;
+    max-ncache-ttl 3600;
+    
+    # Empty zones for RFC 1918 and other special-use domains
+    empty-zones-enable yes;
+    disable-empty-zone "255.255.255.255.IN-ADDR.ARPA";
+};
+
+# Statistics channel for monitoring
+statistics-channels {
+    inet 127.0.0.1 port 8053 allow { 127.0.0.1; };
+};
+
+# Controls for rndc
+controls {
+    inet 127.0.0.1 port 953 allow { 127.0.0.1; } keys { "rndc-key"; };
+};
+
+# Include key files
+include "/etc/bind/rndc.key";
+include "/etc/bind/named.conf.local";

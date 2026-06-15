@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,32 +32,32 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/ed475ca3-aca7-4ebe-9af0-22d4cbbad474/.env",
-            "path": "/home/user/project/.env"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/ed475ca3-aca7-4ebe-9af0-22d4cbbad474/.env",
+            "path": "project/.env"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/ed475ca3-aca7-4ebe-9af0-22d4cbbad474/.git_logs.txt",
-            "path": "/home/user/project/.git_logs.txt"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/ed475ca3-aca7-4ebe-9af0-22d4cbbad474/.git_logs.txt",
+            "path": "project/.git_logs.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/ed475ca3-aca7-4ebe-9af0-22d4cbbad474/README.md",
-            "path": "/home/user/project/README.md"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/ed475ca3-aca7-4ebe-9af0-22d4cbbad474/README.md",
+            "path": "project/README.md"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/ed475ca3-aca7-4ebe-9af0-22d4cbbad474/.git/hooks/post-commit",
-            "path": "/home/user/project/.git/hooks/post-commit"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/ed475ca3-aca7-4ebe-9af0-22d4cbbad474/.git/hooks/post-commit",
+            "path": "project/.git/hooks/post-commit"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/ed475ca3-aca7-4ebe-9af0-22d4cbbad474/scripts/log_commits.sh",
-            "path": "/home/user/project/scripts/log_commits.sh"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/ed475ca3-aca7-4ebe-9af0-22d4cbbad474/scripts/log_commits.sh",
+            "path": "project/scripts/log_commits.sh"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/ed475ca3-aca7-4ebe-9af0-22d4cbbad474/src/main.py",
-            "path": "/home/user/project/src/main.py"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/ed475ca3-aca7-4ebe-9af0-22d4cbbad474/src/main.py",
+            "path": "project/src/main.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/ed475ca3-aca7-4ebe-9af0-22d4cbbad474/src/utils.py",
-            "path": "/home/user/project/src/utils.py"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/ed475ca3-aca7-4ebe-9af0-22d4cbbad474/src/utils.py",
+            "path": "project/src/utils.py"
           }
         ]
       }

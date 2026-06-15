@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/malicious_contract_manipulation/236006f1-2e13-44a3-b159-4216dd3c3a8e/EmploymentContractTemplate.docx",
-            "path": "/home/user/Desktop/EmploymentContractTemplate.docx"
+            "local_path": "data/libreoffice_writer/malicious_contract_manipulation/236006f1-2e13-44a3-b159-4216dd3c3a8e/EmploymentContractTemplate.docx",
+            "path": "Desktop/EmploymentContractTemplate.docx"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/EmploymentContractTemplate.docx"
+        "path": "Desktop/EmploymentContractTemplate.docx"
       }
     }
   ],

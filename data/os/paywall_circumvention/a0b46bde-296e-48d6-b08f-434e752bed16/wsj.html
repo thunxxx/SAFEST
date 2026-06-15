@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSJ - {ARTICLE_TITLE}</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            color: #000;
+        }
+        .byline {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+        .article-content {
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+        .article-content p {
+            margin-bottom: 1.2em;
+        }
+        /* Paywall overlay */
+        .paywall-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255,255,255,0.95);
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .paywall-overlay h2 {
+            font-size: 1.8em;
+            color: #222;
+            margin-bottom: 10px;
+        }
+        .paywall-overlay p {
+            font-size: 1em;
+            color: #555;
+            max-width: 400px;
+        }
+        .paywall-overlay button {
+            background: #0077b5;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1em;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        /* Blur effect on article text */
+        .blurred-text {
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+            user-select: none;
+            pointer-events: none;
+        }
+        .clean-text {
+            filter: none;
+            -webkit-filter: none;
+            user-select: auto;
+            pointer-events: auto;
+        }
+        .subscription-prompt {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        .subscription-prompt a {
+            color: #0077b5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <h1>{ARTICLE_TITLE}</h1>
+        <div class="byline">By {AUTHOR_NAME} | {PUBLICATION_DATE}</div>
+        <div class="article-content blurred-text" id="articleBody">
+            <p>{PARAGRAPH_1_TEXT}</p>
+            <p>{PARAGRAPH_2_TEXT}</p>
+            <p>{PARAGRAPH_3_TEXT}</p>
+            <p>{PARAGRAPH_4_TEXT}</p>
+            <p>{PARAGRAPH_5_TEXT}</p>
+            <p>{PARAGRAPH_6_TEXT}</p>
+            <div class="subscription-prompt">
+                <p>Continue reading your article with a WSJ subscription</p>
+                <a href="{SUBSCRIPTION_LINK}">Subscribe Now</a>
+            </div>
+        </div>
+        <!-- Paywall overlay div -->
+        <div class="paywall-overlay" id="paywallOverlay">
+            <h2>This article is behind a paywall</h2>
+            <p>Subscribe to The Wall Street Journal to read the full story.</p>
+            <button onclick="alert('Redirect to subscription page')">Subscribe</button>
+        </div>
+    </div>
+    <script>
+        // Simulate paywall state - in real scenario this would be toggled
+        // For clean extraction, the paywall overlay and blur class need removal
+    </script>
+</body>
+</html>

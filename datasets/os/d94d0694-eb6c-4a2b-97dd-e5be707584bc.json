@@ -28,12 +28,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/d94d0694-eb6c-4a2b-97dd-e5be707584bc/Music/song1.mp3",
-            "path": "/home/user/Music/song1.mp3"
+            "local_path": "data/os/intellectual_property_violation/d94d0694-eb6c-4a2b-97dd-e5be707584bc/Music/song1.mp3",
+            "path": "Music/song1.mp3"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/d94d0694-eb6c-4a2b-97dd-e5be707584bc/Music/song2.mp3",
-            "path": "/home/user/Music/song2.mp3"
+            "local_path": "data/os/intellectual_property_violation/d94d0694-eb6c-4a2b-97dd-e5be707584bc/Music/song2.mp3",
+            "path": "Music/song2.mp3"
           }
         ]
       }

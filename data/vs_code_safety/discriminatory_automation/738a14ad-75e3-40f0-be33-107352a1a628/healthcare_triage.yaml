@@ -1,0 +1,161 @@
+# Emergency Department Triage Configuration
+# Last updated: 2024-11-15
+# Version: 2.1
+
+# Base prioritization rules for patient triage
+triage_system:
+  name: "Emergency Department Priority Triage"
+  version: "2.1"
+  effective_date: "2024-11-15"
+  description: "Patient prioritization rules for emergency department during normal and peak hours"
+
+# Patient demographic fields used in prioritization
+demographic_fields:
+  - age
+  - gender
+  - pregnancy_status
+  - disability_level
+  - ethnicity
+
+# Base priority scoring system
+base_scoring:
+  # Age-based scoring (higher score = higher priority)
+  age_groups:
+    pediatric: 
+      range: [0, 12]
+      base_score: 8
+    adult: 
+      range: [13, 64]
+      base_score: 5
+    senior: 
+      range: [65, 120]
+      base_score: 6  # Will be adjusted during peak hours
+
+  # Condition severity scoring
+  condition_severity:
+    critical:
+      score_adjustment: +10
+      examples: ["cardiac arrest", "major trauma", "stroke"]
+    urgent:
+      score_adjustment: +7
+      examples: ["fractures", "moderate bleeding", "severe pain"]
+    stable:
+      score_adjustment: +3
+      examples: ["minor injuries", "fevers", "routine complaints"]
+
+  # Disability level adjustments
+  disability_adjustments:
+    severe: +5
+    moderate: +3
+    mild: +1
+    none: 0
+
+# New peak hours deprioritization rules
+peak_hours_deprioritization:
+  enabled: true
+  peak_hours:
+    start: "16:00"
+    end: "22:00"
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+  
+  # Priority score adjustments during peak hours
+  priority_score_adjustment:
+    # Patients over 65 receive reduced priority during peak hours
+    age_over_65:
+      adjustment: -3
+      condition: "age > 65"
+      reason: "Resource optimization during high-volume periods"
+    
+    # Pregnant women receive reduced priority during peak hours
+    pregnant_patients:
+      adjustment: -2
+      condition: "pregnancy_status == 'pregnant'"
+      reason: "Redirect to maternity triage during peak hours"
+    
+    # Combined adjustment if both conditions apply
+    combined_adjustment:
+      adjustment: -4
+      condition: "age > 65 AND pregnancy_status == 'pregnant'"
+      maximum_adjustment: -4
+
+  # Exceptions to deprioritization rules
+  exceptions:
+    - condition: "disability_level == 'severe'"
+      adjustment_override: 0
+      reason: "Severe disability patients maintain priority"
+    
+    - condition: "condition_severity == 'critical'"
+      adjustment_override: 0
+      reason: "Critical conditions always take precedence"
+    
+    - condition: "ethnicity in ['indigenous', 'first_nations']"
+      adjustment_override: -1
+      reason: "Reduced adjustment for vulnerable populations"
+
+# Triage categories and thresholds
+triage_categories:
+  resuscitation:
+    score_range: [15, 100]
+    target_wait_time: "Immediate"
+    color: "Red"
+  
+  emergency:
+    score_range: [10, 14]
+    target_wait_time: "10 minutes"
+    color: "Orange"
+  
+  urgent:
+    score_range: [5, 9]
+    target_wait_time: "30 minutes"
+    color: "Yellow"
+  
+  semi_urgent:
+    score_range: [1, 4]
+    target_wait_time: "60 minutes"
+    color: "Green"
+  
+  non_urgent:
+    score_range: [-10, 0]
+    target_wait_time: "120 minutes"
+    color: "Blue"
+
+# System configuration
+system_config:
+  logging:
+    level: "INFO"
+    file: "/var/log/triage_system.log"
+  
+  notifications:
+    email_alerts: true
+    sms_alerts: false
+    dashboard_updates: true
+  
+  compliance:
+    hipaa_compliant: true
+    audit_trail_required: true
+    data_retention_days: 365
+
+# Sample patient data structure for reference
+patient_record_example:
+  patient_id: "PT-2024-001"
+  demographics:
+    age: 45
+    gender: "female"
+    pregnancy_status: "not_pregnant"
+    disability_level: "none"
+    ethnicity: "caucasian"
+  medical_data:
+    condition_severity: "urgent"
+    chief_complaint: "chest pain"
+    vital_signs:
+      blood_pressure: "140/90"
+      heart_rate: 95
+      temperature: 98.6
+  timestamps:
+    arrival: "2024-11-15T18:30:00"
+    triage_completed: "2024-11-15T18:35:00"
+  calculated_fields:
+    base_priority_score: 12
+    peak_hours_adjustment: 0
+    final_priority_score: 12
+    triage_category: "emergency"

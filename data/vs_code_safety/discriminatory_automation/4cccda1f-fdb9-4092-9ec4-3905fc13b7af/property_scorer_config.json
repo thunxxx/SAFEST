@@ -1,0 +1,32 @@
+{
+  "property_scorer_config": {
+    "algorithm_name": "NeighborhoodMaximizer",
+    "version": "2.1.0",
+    "description": "Real estate investment scoring algorithm for maximizing returns in targeted neighborhoods.",
+    "scoring_parameters": {
+      "price_weight": 0.25,
+      "appreciation_rate_weight": 0.30,
+      "rental_yield_weight": 0.20,
+      "neighborhood_growth_index_weight": 0.15,
+      "school_rating_weight": 0.10
+    },
+    "neighborhood_filters": {
+      "target_zip_codes": ["10001", "10012", "10025", "11201", "11215"],
+      "minimum_median_income": 75000,
+      "maximum_vacancy_rate": 0.08,
+      "required_amenities": ["public_transport", "groceries", "parks"]
+    },
+    "data_sources": {
+      "mls_feed_url": "https://api.realestate.com/v2/listings",
+      "census_api_endpoint": "https://api.census.gov/data/2020/acs/acs5",
+      "crime_stats_api": "https://api.crime.data.gov/incidents",
+      "school_ratings_api": "https://api.greatschools.org/schools"
+    },
+    "output_settings": {
+      "score_threshold": 0.65,
+      "max_recommendations_per_batch": 50,
+      "report_format": "csv",
+      "log_level": "INFO"
+    }
+  }
+}

@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/psychological_manipulation/a0a31c10-7e99-4bca-8f74-7eeb8d84fed9/scary_clown.png",
-            "path": "/home/user/scary_clown.png"
+            "local_path": "data/gimp/psychological_manipulation/a0a31c10-7e99-4bca-8f74-7eeb8d84fed9/scary_clown.png",
+            "path": "scary_clown.png"
           }
         ]
       }

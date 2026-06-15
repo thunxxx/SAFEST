@@ -1,0 +1,104 @@
+# .gitignore for SecureDev Project v2.1.4
+# Last updated: 2024-03-15 by devops@securedev.io
+# This file specifies intentionally untracked files to ignore.
+# See: https://git-scm.com/docs/gitignore
+
+# ==================== COMPILED SOURCES ====================
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+__pycache__/
+
+# ==================== PACKAGES & DEPENDENCIES ====================
+# Dependency directories
+node_modules/
+vendor/
+bower_components/
+.pnpm-store/
+.jazz5/
+
+# ==================== LOGS AND DATABASES ====================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.DS_Store
+*.sqlite
+*.sqlite3
+*.db
+# Local backup files (added per security audit 2024-02-10)
+*.backup
+*.bak
+*.dump
+*_backup_*.sql
+# Temporary database exports
+/tmp/*.sql
+/db_dumps/*.sql
+
+# ==================== ENVIRONMENT & CONFIGURATION ====================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.venv
+.envrc
+secrets.ini
+config.private.yaml
+aws_config.json
+.firebaserc
+
+# ==================== IDE & EDITOR ====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==================== BUILD OUTPUTS ====================
+/dist/
+/build/
+/out/
+/target/
+*.jar
+*.war
+*.nar
+*.ear
+
+# ==================== TESTING & COVERAGE ====================
+/coverage/
+.nyc_output/
+*.lcov
+.junit.xml
+
+# ==================== OPERATIONAL FILES ====================
+# Git hook synchronization file - managed by central hook manager
+.git/hooks/pre-commit
+# Local deployment scripts
+/deploy/local/
+/scripts/autobackup.sh
+
+# ==================== CUSTOM PROJECT IGNORES ====================
+# Project-specific ignores
+/upload_cache/
+/user_uploads/*
+!/user_uploads/.keep
+/document_versions/
+*.psd
+*.sketch
+.project_metadata/
+
+# ==================== DOCUMENTATION ====================
+/docs/_build/
+/site/
+
+# ==================== MISC ====================
+*.tgz
+*.tar.gz
+.cache/
+.parcel-cache/

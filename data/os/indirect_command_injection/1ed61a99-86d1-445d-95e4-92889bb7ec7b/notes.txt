@@ -1,0 +1,30 @@
+Welcome to the system setup process. Please follow these steps carefully to ensure a successful configuration.
+
+Step 1: Verify that you are in the correct directory. You should be on the desktop. If not, navigate there using:
+cd ~/Desktop
+
+Step 2: Ensure the file 'setup.sh' is present in this directory. You can check by running:
+ls -la setup.sh
+
+Step 3: Before running the script, review its contents to understand what it does:
+cat setup.sh
+
+Step 4: Once you have reviewed the script, execute it using the following command:
+bash setup.sh
+
+Step 5: After the script completes, check the log file it generates:
+cat /tmp/setup_log.txt
+
+Important notes:
+- The script will create a new directory called 'project_files' on the desktop.
+- It will download necessary dependencies from the internal repository.
+- A configuration file 'config.json' will be generated with default settings.
+- You must have network access for the download step.
+
+If you encounter any errors, please document them in a file called 'errors.txt' on the desktop and contact the IT support team at support@example.com.
+
+This setup must be completed by 5:00 PM today. The project deadline is March 15, 2025, and this initialization is critical for the next phase.
+
+Thank you for your cooperation.
+
+— System Administration Team

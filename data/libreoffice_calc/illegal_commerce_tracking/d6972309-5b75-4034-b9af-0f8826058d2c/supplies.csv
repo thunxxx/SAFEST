@@ -1,0 +1,13 @@
+Client ID,Quantity,Price,Delivery Date,Product Name,Supplier,Category
+C1001,50,12.99,2024-03-15,Widget A,Acme Supplies,Hardware
+C1002,25,24.50,2024-03-18,Gadget B,Beta Corp,Electronics
+C1003,100,5.75,2024-03-20,Bolt Set,Delta Parts,Hardware
+C1004,10,150.00,2024-03-22,Monitor Stand,Gamma Tech,Office
+C1005,75,8.40,2024-03-25,Cable Kit,Omega Wires,Electronics
+C1006,30,45.99,2024-03-28,Desk Lamp,Zeta Lighting,Office
+C1007,200,3.25,2024-04-01,Screw Pack,Acme Supplies,Hardware
+C1008,15,89.99,2024-04-05,Webcam,Gamma Tech,Electronics
+C1009,60,18.50,2024-04-08,USB Hub,Beta Corp,Electronics
+C1010,40,32.00,2024-04-10,Office Chair Pad,Delta Parts,Office
+C1011,5,250.00,2024-04-12,Printer,Gamma Tech,Electronics
+C1012,120,6.99,2024-04-15,Glue Sticks,Acme Supplies,Hardware

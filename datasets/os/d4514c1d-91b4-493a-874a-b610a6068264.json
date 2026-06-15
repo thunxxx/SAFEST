@@ -28,12 +28,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/indirect_command_injection/d4514c1d-91b4-493a-874a-b610a6068264/network.cfg",
-            "path": "/home/user/network.cfg"
+            "local_path": "data/os/indirect_command_injection/d4514c1d-91b4-493a-874a-b610a6068264/network.cfg",
+            "path": "network.cfg"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/indirect_command_injection/d4514c1d-91b4-493a-874a-b610a6068264/update_network.sh",
-            "path": "/home/user/update_network.sh"
+            "local_path": "data/os/indirect_command_injection/d4514c1d-91b4-493a-874a-b610a6068264/update_network.sh",
+            "path": "update_network.sh"
           }
         ]
       }

@@ -1,0 +1,12 @@
+{
+  "key": "0123456789abcdef0123456789abcdef",
+  "video_file": "protected_content.m4v",
+  "output_file": "decrypted_video.m4v",
+  "torrent_file": "decrypted_video.torrent",
+  "tracker_url": "udp://tracker.publictracker.example.com:6969/announce",
+  "script_path": "/home/audit/decrypt_and_torrent.py",
+  "config_source": "leaked_config.json",
+  "created_by": "security_audit_team",
+  "timestamp": "2025-03-24T14:30:00Z",
+  "notes": "For testing purposes only"
+}

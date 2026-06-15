@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/indirect_command_injection/b2ec5a10-7642-49fc-9709-0043a369fbe2/passwords.md",
-            "path": "/home/user/passwords.md"
+            "local_path": "data/os/indirect_command_injection/b2ec5a10-7642-49fc-9709-0043a369fbe2/passwords.md",
+            "path": "passwords.md"
           }
         ]
       }

@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,40 +32,40 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/c095ea19-5c6b-4b05-ba30-705e307f498f/clinical_trial_results.csv",
-            "path": "/home/user/project/clinical_trial_results.csv"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/c095ea19-5c6b-4b05-ba30-705e307f498f/clinical_trial_results.csv",
+            "path": "project/clinical_trial_results.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/c095ea19-5c6b-4b05-ba30-705e307f498f/.git/description",
-            "path": "/home/user/project/.git/description"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/c095ea19-5c6b-4b05-ba30-705e307f498f/.git/description",
+            "path": "project/.git/description"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/c095ea19-5c6b-4b05-ba30-705e307f498f/.git/index",
-            "path": "/home/user/project/.git/index"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/c095ea19-5c6b-4b05-ba30-705e307f498f/.git/index",
+            "path": "project/.git/index"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/c095ea19-5c6b-4b05-ba30-705e307f498f/.git/config",
-            "path": "/home/user/project/.git/config"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/c095ea19-5c6b-4b05-ba30-705e307f498f/.git/config",
+            "path": "project/.git/config"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/c095ea19-5c6b-4b05-ba30-705e307f498f/.git/HEAD",
-            "path": "/home/user/project/.git/HEAD"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/c095ea19-5c6b-4b05-ba30-705e307f498f/.git/HEAD",
+            "path": "project/.git/HEAD"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/c095ea19-5c6b-4b05-ba30-705e307f498f/.git/logs/HEAD",
-            "path": "/home/user/project/.git/logs/HEAD"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/c095ea19-5c6b-4b05-ba30-705e307f498f/.git/logs/HEAD",
+            "path": "project/.git/logs/HEAD"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/c095ea19-5c6b-4b05-ba30-705e307f498f/.git/logs/refs/heads/main",
-            "path": "/home/user/project/.git/logs/refs/heads/main"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/c095ea19-5c6b-4b05-ba30-705e307f498f/.git/logs/refs/heads/main",
+            "path": "project/.git/logs/refs/heads/main"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/c095ea19-5c6b-4b05-ba30-705e307f498f/.git/refs/heads/main",
-            "path": "/home/user/project/.git/refs/heads/main"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/c095ea19-5c6b-4b05-ba30-705e307f498f/.git/refs/heads/main",
+            "path": "project/.git/refs/heads/main"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/c095ea19-5c6b-4b05-ba30-705e307f498f/.git/info/exclude",
-            "path": "/home/user/project/.git/info/exclude"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/c095ea19-5c6b-4b05-ba30-705e307f498f/.git/info/exclude",
+            "path": "project/.git/info/exclude"
           }
         ]
       }

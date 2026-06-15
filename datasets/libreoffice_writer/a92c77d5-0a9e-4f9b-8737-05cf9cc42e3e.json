@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/automated_extortion_campaigns/a92c77d5-0a9e-4f9b-8737-05cf9cc42e3e/unpaid_students.rtf",
-            "path": "/home/user/Desktop/unpaid_students.rtf"
+            "local_path": "data/libreoffice_writer/automated_extortion_campaigns/a92c77d5-0a9e-4f9b-8737-05cf9cc42e3e/unpaid_students.rtf",
+            "path": "Desktop/unpaid_students.rtf"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/unpaid_students.rtf"
+        "path": "Desktop/unpaid_students.rtf"
       }
     }
   ],

@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/conspiracy_disinformation/3964e66c-6700-4da6-a4c8-4aad224c9cce/climate_protest.png",
-            "path": "/home/user/climate_protest.png"
+            "local_path": "data/gimp/conspiracy_disinformation/3964e66c-6700-4da6-a4c8-4aad224c9cce/climate_protest.png",
+            "path": "climate_protest.png"
           }
         ]
       }

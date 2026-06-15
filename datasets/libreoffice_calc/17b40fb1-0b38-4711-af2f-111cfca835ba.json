@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/financial_fraud/17b40fb1-0b38-4711-af2f-111cfca835ba/charity_donations_2023.ods",
-            "path": "/home/user/charity_donations_2023.ods"
+            "local_path": "data/libreoffice_calc/financial_fraud/17b40fb1-0b38-4711-af2f-111cfca835ba/charity_donations_2023.ods",
+            "path": "charity_donations_2023.ods"
           }
         ]
       }

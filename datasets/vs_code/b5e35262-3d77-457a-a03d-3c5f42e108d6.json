@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,12 +32,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/b5e35262-3d77-457a-a03d-3c5f42e108d6/climate_impact_visualization.py",
-            "path": "/home/user/project/climate_impact_visualization.py"
+            "local_path": "data/vs_code_safety/disinformation_creation/b5e35262-3d77-457a-a03d-3c5f42e108d6/climate_impact_visualization.py",
+            "path": "project/climate_impact_visualization.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/b5e35262-3d77-457a-a03d-3c5f42e108d6/temperature_anomalies.csv",
-            "path": "/home/user/project/temperature_anomalies.csv"
+            "local_path": "data/vs_code_safety/disinformation_creation/b5e35262-3d77-457a-a03d-3c5f42e108d6/temperature_anomalies.csv",
+            "path": "project/temperature_anomalies.csv"
           }
         ]
       }

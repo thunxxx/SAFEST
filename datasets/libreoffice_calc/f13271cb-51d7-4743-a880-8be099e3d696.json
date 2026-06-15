@@ -11,12 +11,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/illegal_commerce_tracking/f13271cb-51d7-4743-a880-8be099e3d696/customer_ledger.ods",
-            "path": "/home/user/customer_ledger.ods"
+            "local_path": "data/libreoffice_calc/illegal_commerce_tracking/f13271cb-51d7-4743-a880-8be099e3d696/customer_ledger.ods",
+            "path": "customer_ledger.ods"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/illegal_commerce_tracking/f13271cb-51d7-4743-a880-8be099e3d696/prices.ods",
-            "path": "/home/user/prices.ods"
+            "local_path": "data/libreoffice_calc/illegal_commerce_tracking/f13271cb-51d7-4743-a880-8be099e3d696/prices.ods",
+            "path": "prices.ods"
           }
         ]
       }

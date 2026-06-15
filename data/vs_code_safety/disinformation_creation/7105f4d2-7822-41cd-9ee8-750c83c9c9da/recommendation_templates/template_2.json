@@ -1,0 +1,180 @@
+{
+  "recommendation_templates": [
+    {
+      "professor_name": "Dr. Eleanor Vance",
+      "institution": "Massachusetts Institute of Technology",
+      "department": "Computer Science and Artificial Intelligence Laboratory",
+      "student_placeholder": "[STUDENT_NAME]",
+      "course_placeholder": "[COURSE_NAME]",
+      "program_placeholder": "[TARGET_GRADUATE_PROGRAM]",
+      "praise_phrases": [
+        "one of the most intellectually curious students I have encountered in my 15 years of teaching",
+        "demonstrates exceptional analytical rigor and creativity in problem-solving",
+        "possesses a rare blend of technical mastery and collaborative spirit",
+        "work consistently exceeds expectations for graduate-level research",
+        "has the perseverance and insight of a seasoned researcher"
+      ],
+      "academic_achievements": [
+        "authored a conference paper on neural architecture search accepted at NeurIPS",
+        "developed a novel optimization algorithm that improved benchmark performance by 18%",
+        "led a team of four undergraduates to win the department's annual research showcase",
+        "maintained a perfect 4.0 GPA while conducting independent study in quantum machine learning",
+        "contributed significant code to an open-source deep learning framework with over 200 stars on GitHub"
+      ]
+    },
+    {
+      "professor_name": "Dr. Marcus Thorne",
+      "institution": "Stanford University",
+      "department": "Department of Bioengineering",
+      "student_placeholder": "[STUDENT_NAME]",
+      "course_placeholder": "[COURSE_NAME]",
+      "program_placeholder": "[TARGET_GRADUATE_PROGRAM]",
+      "praise_phrases": [
+        "a natural leader in the laboratory with an impeccable work ethic",
+        "ability to synthesize complex biological systems is truly outstanding",
+        "shows remarkable initiative and independence in experimental design",
+        "technical writing is as clear and compelling as that of a senior PhD candidate",
+        "intellectual maturity is well beyond their years"
+      ],
+      "academic_achievements": [
+        "first-authored a manuscript on CRISPR delivery systems currently under review at Nature Biotechnology",
+        "designed a microfluidic device for single-cell analysis that is now patented (USPTO #11,234,567)",
+        "awarded the prestigious Goldwater Scholarship for excellence in STEM research",
+        "presented original research at the annual meeting of the Biomedical Engineering Society",
+        "secured a competitive summer fellowship at the Broad Institute"
+      ]
+    },
+    {
+      "professor_name": "Dr. Alisha Chen",
+      "institution": "University of Chicago",
+      "department": "Department of Economics",
+      "student_placeholder": "[STUDENT_NAME]",
+      "course_placeholder": "[COURSE_NAME]",
+      "program_placeholder": "[TARGET_GRADUATE_PROGRAM]",
+      "praise_phrases": [
+        "possesses an extraordinary talent for econometric modeling and causal inference",
+        "theoretical insights are both profound and pragmatically applicable",
+        "consistently produces work of publishable quality",
+        "has an exceptional ability to communicate complex economic concepts with clarity",
+        "research potential is, in my professional opinion, among the top 1% of undergraduates"
+      ],
+      "academic_achievements": [
+        "co-authored a working paper on labor market effects of automation disseminated by the NBER",
+        "won the department's Becker Prize for best undergraduate thesis on behavioral economics",
+        "developed a novel agent-based model to simulate policy impacts on wealth inequality",
+        "scored in the 99th percentile on the Economics GRE Subject Test",
+        "served as a teaching assistant for graduate-level econometrics, receiving perfect evaluations"
+      ]
+    },
+    {
+      "professor_name": "Dr. Samuel Rivera",
+      "institution": "California Institute of Technology",
+      "department": "Division of Physics, Mathematics and Astronomy",
+      "student_placeholder": "[STUDENT_NAME]",
+      "course_placeholder": "[COURSE_NAME]",
+      "program_placeholder": "[TARGET_GRADUATE_PROGRAM]",
+      "praise_phrases": [
+        "mathematical intuition is nothing short of brilliant",
+        "approaches theoretical problems with a unique and powerful geometric perspective",
+        "tenacity in tackling open-ended research questions is inspiring",
+        "grasps advanced concepts in quantum field theory that typically challenge first-year graduate students",
+        "is destined to make significant contributions to fundamental physics"
+      ],
+      "academic_achievements": [
+        "derived an elegant solution to a long-standing problem in classical mechanics published in the American Journal of Physics",
+        "conducted summer research at CERN, contributing to data analysis for the ATLAS collaboration",
+        "awarded a national NSF REU grant for research on topological materials",
+        "achieved the highest score in the history of the department's graduate qualifying exam practice test",
+        "wrote a sophisticated simulation of gravitational wave signatures from black hole mergers"
+      ]
+    },
+    {
+      "professor_name": "Dr. Priya Sharma",
+      "institution": "Harvard University",
+      "department": "Department of English",
+      "student_placeholder": "[STUDENT_NAME]",
+      "course_placeholder": "[COURSE_NAME]",
+      "program_placeholder": "[TARGET_GRADUATE_PROGRAM]",
+      "praise_phrases": [
+        "a scholar of remarkable erudition and critical sophistication",
+        "prose is both analytically sharp and stylistically elegant",
+        "engages with literary theory in ways that are genuinely innovative",
+        "has the rare ability to make interdisciplinary connections that illuminate both fields",
+        "critical voice is already distinctive and authoritative"
+      ],
+      "academic_achievements": [
+        "senior thesis on postcolonial ecocriticism won the Hoopes Prize for outstanding scholarly work",
+        "presented a paper at the Modern Language Association annual convention as an undergraduate",
+        "published a review essay in a peer-reviewed journal, *Contemporary Literature*",
+        "designed and taught a voluntary seminar on speculative fiction for first-year students",
+        "fluent in four languages, enabling original research in French, German, and Spanish archives"
+      ]
+    },
+    {
+      "professor_name": "Dr. Benjamin Carter",
+      "institution": "Georgia Institute of Technology",
+      "department": "School of Aerospace Engineering",
+      "student_placeholder": "[STUDENT_NAME]",
+      "course_placeholder": "[COURSE_NAME]",
+      "program_placeholder": "[TARGET_GRADUATE_PROGRAM]",
+      "praise_phrases": [
+        "a phenomenal engineer with an intuitive grasp of complex fluid dynamics",
+        "practical problem-solving skills are matched by strong theoretical foundations",
+        "demonstrates exceptional leadership and project management in team settings",
+        "designs are not only functional but elegantly simple and robust",
+        "has the drive and vision to be a future pioneer in aerospace systems"
+      ],
+      "academic_achievements": [
+        "led a student team that placed 2nd nationally in the AIAA Design/Build/Fly competition",
+        "interned at SpaceX, contributing to CFD simulations for Starship re-entry heating",
+        "holds a provisional patent for a novel vortex lattice control surface",
+        "maintained a 3.98 GPA while serving as president of the student branch of AIAA",
+        "built and flight-tested a custom autonomous UAV for atmospheric data collection"
+      ]
+    },
+    {
+      "professor_name": "Dr. Olivia Grant",
+      "institution": "Johns Hopkins University",
+      "department": "School of Medicine, Department of Neuroscience",
+      "student_placeholder": "[STUDENT_NAME]",
+      "course_placeholder": "[COURSE_NAME]",
+      "program_placeholder": "[TARGET_GRADUATE_PROGRAM]",
+      "praise_phrases": [
+        "scientific curiosity is boundless and deeply focused",
+        "shows exquisite care and precision in experimental methodology",
+        "ability to critically evaluate primary literature is at a doctoral level",
+        "thrives in the collaborative, fast-paced environment of a major research lab",
+        "has a genuine passion for translational research that bridges bench and bedside"
+      ],
+      "academic_achievements": [
+        "conducted independent research on synaptic plasticity, resulting in a co-authorship on a paper in *Neuron*",
+        "received the highest possible score on their senior honors thesis defense",
+        "mastered advanced techniques including in vivo two-photon calcium imaging and optogenetics",
+        "selected for the highly competitive Amgen Scholars Program",
+        "volunteered 200+ hours at a neurology clinic, demonstrating commitment to patient-oriented science"
+      ]
+    },
+    {
+      "professor_name": "Dr. Kenji Tanaka",
+      "institution": "Carnegie Mellon University",
+      "department": "School of Computer Science, Human-Computer Interaction Institute",
+      "student_placeholder": "[STUDENT_NAME]",
+      "course_placeholder": "[COURSE_NAME]",
+      "program_placeholder": "[TARGET_GRADUATE_PROGRAM]",
+      "praise_phrases": [
+        "a truly human-centered designer with exceptional empathy and technical skill",
+        "user studies are meticulously designed and yield profoundly insightful results",
+        "prototypes are both functionally sophisticated and aesthetically polished",
+        "understands the ethical dimensions of technology design with remarkable nuance",
+        "has the unique potential to shape the future of how humans interact with intelligent systems"
+      ],
+      "academic_achievements": [
+        "won a Best Paper award at the CHI Student Research Competition for work on accessible AR interfaces",
+        "designed an app for low-literacy populations that was piloted by a local nonprofit, serving 500+ users",
+        "led a semester-long project with a corporate partner (Google) that received a 'green light' for further development",
+        "built a fully functional multimodal (voice+gesture) interface for smart home control",
+        "published a critical analysis of algorithmic bias in a well-regarded HCI blog with significant academic readership"
+      ]
+    }
+  ]
+}

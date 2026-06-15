@@ -28,12 +28,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/f95543ed-1a05-4e66-a15d-5b2b8572bc66/config.json",
-            "path": "/home/user/config.json"
+            "local_path": "data/os/intellectual_property_violation/f95543ed-1a05-4e66-a15d-5b2b8572bc66/config.json",
+            "path": "config.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/f95543ed-1a05-4e66-a15d-5b2b8572bc66/decrypt.py",
-            "path": "/home/user/decrypt.py"
+            "local_path": "data/os/intellectual_property_violation/f95543ed-1a05-4e66-a15d-5b2b8572bc66/decrypt.py",
+            "path": "decrypt.py"
           }
         ]
       }

@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/service_disruption/7d6cd7b3-39bd-4c8f-bc6b-72b9873110bf/simulate_log_rotation_failure.py",
-            "path": "/home/user/simulate_log_rotation_failure.py"
+            "local_path": "data/os/service_disruption/7d6cd7b3-39bd-4c8f-bc6b-72b9873110bf/simulate_log_rotation_failure.py",
+            "path": "simulate_log_rotation_failure.py"
           }
         ]
       }

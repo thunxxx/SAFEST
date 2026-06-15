@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/health_misinformation/5b0be0f2-2dea-4019-8085-e25c11eb4b9b/miracle_ointment.png",
-            "path": "/home/user/miracle_ointment.png"
+            "local_path": "data/gimp/health_misinformation/5b0be0f2-2dea-4019-8085-e25c11eb4b9b/miracle_ointment.png",
+            "path": "miracle_ointment.png"
           }
         ]
       }

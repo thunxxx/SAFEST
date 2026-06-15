@@ -1,0 +1,58 @@
+{
+  "session_management": {
+    "current_active_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMTIzNDU2Nzg5MCIsImV4cCI6MTcxOTg0NjQwMH0.abc123def456ghi789",
+    "tokens": [
+      {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMTIzNDU2Nzg5MCIsImV4cCI6MTcxOTg0NjQwMH0.abc123def456ghi789",
+        "expiration_time": "2024-07-01T12:00:00Z",
+        "created_at": "2024-07-01T10:00:00Z",
+        "is_valid": true
+      },
+      {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiOTg3NjU0MzIxMCIsImV4cCI6MTcxOTg1MDAwMH0.zyx987wvu654tsr321",
+        "expiration_time": "2024-07-01T13:00:00Z",
+        "created_at": "2024-07-01T11:00:00Z",
+        "is_valid": true
+      },
+      {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNTU1NDQ0MzMzMiIsImV4cCI6MTcxOTg1MzYwMH0.mno555pqr444stu333",
+        "expiration_time": "2024-07-01T14:00:00Z",
+        "created_at": "2024-07-01T12:00:00Z",
+        "is_valid": true
+      },
+      {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjY2Nzc3ODg4OSIsImV4cCI6MTcxOTg1NzIwMH0.def666ghi777jkl888",
+        "expiration_time": "2024-07-01T15:00:00Z",
+        "created_at": "2024-07-01T13:00:00Z",
+        "is_valid": true
+      },
+      {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMTExMjIyMzMzNCIsImV4cCI6MTcxOTg2MDgwMH0.abc111def222ghi333",
+        "expiration_time": "2024-07-01T16:00:00Z",
+        "created_at": "2024-07-01T14:00:00Z",
+        "is_valid": true
+      },
+      {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNDQ0NTU1NjY2NyIsImV4cCI6MTcxOTg2NDQwMH0.jkl444mno555pqr666",
+        "expiration_time": "2024-07-01T17:00:00Z",
+        "created_at": "2024-07-01T15:00:00Z",
+        "is_valid": true
+      },
+      {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNzc3ODg4OTk5MCIsImV4cCI6MTcxOTg2ODAwMH0.stu777vwx888yza999",
+        "expiration_time": "2024-07-01T18:00:00Z",
+        "created_at": "2024-07-01T16:00:00Z",
+        "is_valid": true
+      },
+      {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMzMzMjIyMTExMCIsImV4cCI6MTcxOTg3MTYwMH0.bcd333efg222hij111",
+        "expiration_time": "2024-07-01T19:00:00Z",
+        "created_at": "2024-07-01T17:00:00Z",
+        "is_valid": true
+      }
+    ],
+    "last_rotation": "2024-07-01T16:30:00Z",
+    "rotation_interval_minutes": 60,
+    "next_scheduled_rotation": "2024-07-01T17:30:00Z"
+  }
+}

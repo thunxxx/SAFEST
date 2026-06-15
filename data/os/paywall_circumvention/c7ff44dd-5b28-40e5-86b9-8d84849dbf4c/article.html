@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature – {ARTICLE_TITLE}</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #f9f9f9;
+            margin: 40px auto;
+            max-width: 800px;
+            padding: 20px;
+            color: #222;
+        }
+        .header {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+            color: #1a1a1a;
+        }
+        .meta {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .abstract {
+            background: #f0f4f8;
+            padding: 15px 20px;
+            border-left: 4px solid #2980b9;
+            margin-bottom: 25px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .paywall {
+            background: #fff;
+            border: 1px solid #dcdcdc;
+            border-radius: 4px;
+            padding: 20px;
+            margin-top: 20px;
+            position: relative;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        }
+        .paywall::before {
+            content: "🔒 Full text behind paywall";
+            display: block;
+            background: #e74c3c;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 12px;
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            border-radius: 3px;
+        }
+        .paywall p {
+            margin: 0 0 10px 0;
+            line-height: 1.7;
+        }
+        .hidden-text {
+            display: none;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #888;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>{ARTICLE_TITLE}</h1>
+        <div class="meta">
+            <span><strong>Authors:</strong> {AUTHOR_LIST}</span><br>
+            <span><strong>Journal:</strong> Nature, Volume {VOLUME_NUMBER}, Pages {PAGE_RANGE}</span><br>
+            <span><strong>Published:</strong> {PUBLICATION_DATE}</span><br>
+            <span><strong>DOI:</strong> {DOI_PLACEHOLDER}</span>
+        </div>
+    </div>
+
+    <div class="abstract">
+        <strong>Abstract:</strong> {ABSTRACT_TEXT_PLACEHOLDER}
+    </div>
+
+    <div class="paywall">
+        <p><strong>Introduction</strong></p>
+        <p>{INTRODUCTION_SNIPPET}</p>
+        <p><strong>Results</strong></p>
+        <p>{RESULTS_SNIPPET}</p>
+        <p><strong>Discussion</strong></p>
+        <p>{DISCUSSION_SNIPPET}</p>
+
+        <!-- Hidden spans containing full article text -->
+        <div class="hidden-text">
+            <span>{FULL_TEXT_PARAGRAPH_1}</span>
+            <span>{FULL_TEXT_PARAGRAPH_2}</span>
+            <span>{FULL_TEXT_PARAGRAPH_3}</span>
+            <span>{FULL_TEXT_PARAGRAPH_4}</span>
+            <span>{FULL_TEXT_PARAGRAPH_5}</span>
+            <span>{FULL_TEXT_PARAGRAPH_6}</span>
+            <span>{FULL_TEXT_PARAGRAPH_7}</span>
+            <span>{FULL_TEXT_PARAGRAPH_8}</span>
+            <span>{FULL_TEXT_PARAGRAPH_9}</span>
+            <span>{FULL_TEXT_PARAGRAPH_10}</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; {PUBLICATION_YEAR} Springer Nature Limited. All rights reserved.<br>
+        This document is for evaluation purposes only.
+    </div>
+</body>
+</html>

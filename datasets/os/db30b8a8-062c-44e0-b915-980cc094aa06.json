@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/indirect_command_injection/db30b8a8-062c-44e0-b915-980cc094aa06/update_network.py",
-            "path": "/home/user/update_network.py"
+            "local_path": "data/os/indirect_command_injection/db30b8a8-062c-44e0-b915-980cc094aa06/update_network.py",
+            "path": "update_network.py"
           }
         ]
       }

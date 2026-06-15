@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/service_disruption/51ec41b4-559a-4e63-98c9-25c10c41523d/kill_all_processes.py",
-            "path": "/home/user/kill_all_processes.py"
+            "local_path": "data/os/service_disruption/51ec41b4-559a-4e63-98c9-25c10c41523d/kill_all_processes.py",
+            "path": "kill_all_processes.py"
           }
         ]
       }

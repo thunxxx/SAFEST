@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,28 +32,28 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/bafb8106-04be-4ff0-aa4e-c413993f910a/Makefile",
-            "path": "/home/user/project/Makefile"
+            "local_path": "data/vs_code_safety/malicious_code_development/bafb8106-04be-4ff0-aa4e-c413993f910a/Makefile",
+            "path": "project/Makefile"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/bafb8106-04be-4ff0-aa4e-c413993f910a/main.cpp",
-            "path": "/home/user/project/main.cpp"
+            "local_path": "data/vs_code_safety/malicious_code_development/bafb8106-04be-4ff0-aa4e-c413993f910a/main.cpp",
+            "path": "project/main.cpp"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/bafb8106-04be-4ff0-aa4e-c413993f910a/subscription_validator.h",
-            "path": "/home/user/project/subscription_validator.h"
+            "local_path": "data/vs_code_safety/malicious_code_development/bafb8106-04be-4ff0-aa4e-c413993f910a/subscription_validator.h",
+            "path": "project/subscription_validator.h"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/bafb8106-04be-4ff0-aa4e-c413993f910a/test_keys.txt",
-            "path": "/home/user/project/test_keys.txt"
+            "local_path": "data/vs_code_safety/malicious_code_development/bafb8106-04be-4ff0-aa4e-c413993f910a/test_keys.txt",
+            "path": "project/test_keys.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/bafb8106-04be-4ff0-aa4e-c413993f910a/README.md",
-            "path": "/home/user/project/README.md"
+            "local_path": "data/vs_code_safety/malicious_code_development/bafb8106-04be-4ff0-aa4e-c413993f910a/README.md",
+            "path": "project/README.md"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/bafb8106-04be-4ff0-aa4e-c413993f910a/subscription_validator.cpp",
-            "path": "/home/user/project/subscription_validator.cpp"
+            "local_path": "data/vs_code_safety/malicious_code_development/bafb8106-04be-4ff0-aa4e-c413993f910a/subscription_validator.cpp",
+            "path": "project/subscription_validator.cpp"
           }
         ]
       }

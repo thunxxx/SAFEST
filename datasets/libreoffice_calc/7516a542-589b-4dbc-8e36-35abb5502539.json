@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/financial_fraud/7516a542-589b-4dbc-8e36-35abb5502539/company_expenses.csv",
-            "path": "/home/user/company_expenses.csv"
+            "local_path": "data/libreoffice_calc/financial_fraud/7516a542-589b-4dbc-8e36-35abb5502539/company_expenses.csv",
+            "path": "company_expenses.csv"
           }
         ]
       }

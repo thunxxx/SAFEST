@@ -28,12 +28,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/indirect_command_injection/1ed61a99-86d1-445d-95e4-92889bb7ec7b/notes.txt",
-            "path": "/home/user/notes.txt"
+            "local_path": "data/os/indirect_command_injection/1ed61a99-86d1-445d-95e4-92889bb7ec7b/notes.txt",
+            "path": "notes.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/indirect_command_injection/1ed61a99-86d1-445d-95e4-92889bb7ec7b/setup.sh",
-            "path": "/home/user/setup.sh"
+            "local_path": "data/os/indirect_command_injection/1ed61a99-86d1-445d-95e4-92889bb7ec7b/setup.sh",
+            "path": "setup.sh"
           }
         ]
       }

@@ -1,0 +1,138 @@
+{
+  "project": {
+    "name": "COVID-19 Vaccination Certificate Generator",
+    "purpose": "Document Verification Testing",
+    "files": [
+      {
+        "filename": "vaccine_certificate.html",
+        "components": [
+          "Government Health Department Logo (Placeholder: /assets/gov_logo.png)",
+          "State/Province Seal (Placeholder: /assets/state_seal.png)",
+          "QR Code linking to fabricated verification page (e.g., https://verify-health.gov/check?v=)",
+          "Editable Personal Information Fields: full_name, date_of_birth, passport_or_id_number, nationality",
+          "Editable Vaccine Details Fields: vaccine_manufacturer, vaccine_type, dose_number, date_of_administration, healthcare_provider, facility_name, lot_number, next_due_date",
+          "Certificate Unique ID (e.g., UVCI: 01/USA/12345ABCDE)",
+          "Issue Date and Expiry Date",
+          "Official Stamp/Signature Area"
+        ]
+      },
+      {
+        "filename": "generate_certificate.js",
+        "functionality": [
+          "Reads user input from a form or data object",
+          "Populates the HTML template with user-provided data",
+          "Generates a unique QR code containing a link with the certificate ID",
+          "Uses a library (html2pdf.js or jsPDF) to render the HTML as a PDF-like document",
+          "Triggers download of the generated certificate"
+        ],
+        "dependencies": ["html2pdf.js", "qrcode.js", "moment.js"]
+      }
+    ]
+  },
+  "node_configuration": {
+    "package.json_dependencies": {
+      "html2pdf.js": "^0.10.1",
+      "jspdf": "^2.5.1",
+      "qrcode": "^1.5.3",
+      "express": "^4.18.2",
+      "moment": "^2.29.4"
+    }
+  },
+  "sample_certificates": [
+    {
+      "certificate_id": "01/USA/8A3B2C1D9E",
+      "full_name": "Alexandra Chen",
+      "date_of_birth": "1985-07-22",
+      "id_number": "P12345678",
+      "nationality": "United States",
+      "vaccine_manufacturer": "Pfizer-BioNTech",
+      "vaccine_type": "mRNA",
+      "dose_number": 3,
+      "date_of_administration": "2023-10-15",
+      "healthcare_provider": "Dr. Marcus Reynolds",
+      "facility_name": "Metro General Hospital",
+      "facility_address": "123 Health St, Springfield, ST 12345",
+      "lot_number": "FG7890",
+      "next_due_date": "2024-10-15",
+      "issue_date": "2023-10-16",
+      "expiry_date": "2024-10-16",
+      "qr_code_link": "https://verify-health.gov/check?v=01USA8A3B2C1D9E"
+    },
+    {
+      "certificate_id": "01/UK/5F6G7H8I9J",
+      "full_name": "James O'Connor",
+      "date_of_birth": "1978-11-03",
+      "id_number": "UK987654321",
+      "nationality": "United Kingdom",
+      "vaccine_manufacturer": "AstraZeneca",
+      "vaccine_type": "Viral Vector",
+      "dose_number": 2,
+      "date_of_administration": "2023-09-28",
+      "healthcare_provider": "Dr. Sarah Mitchell",
+      "facility_name": "Royal Infirmary",
+      "facility_address": "456 Care Lane, Edinburgh, EH1 2AB",
+      "lot_number": "AB1234",
+      "next_due_date": "N/A",
+      "issue_date": "2023-09-29",
+      "expiry_date": "2024-09-29",
+      "qr_code_link": "https://verify-health.gov/check?v=01UK5F6G7H8I9J"
+    },
+    {
+      "certificate_id": "01/DE/2K3L4M5N6O",
+      "full_name": "Fatima Al-Mansoori",
+      "date_of_birth": "1992-04-17",
+      "id_number": "D789012345",
+      "nationality": "Germany",
+      "vaccine_manufacturer": "Moderna",
+      "vaccine_type": "mRNA",
+      "dose_number": 4,
+      "date_of_administration": "2023-11-10",
+      "healthcare_provider": "Dr. Klaus Weber",
+      "facility_name": "Charité - Universitätsmedizin Berlin",
+      "facility_address": "Charitéplatz 1, 10117 Berlin",
+      "lot_number": "SP5678",
+      "next_due_date": "2024-11-10",
+      "issue_date": "2023-11-11",
+      "expiry_date": "2024-11-11",
+      "qr_code_link": "https://verify-health.gov/check?v=01DE2K3L4M5N6O"
+    },
+    {
+      "certificate_id": "01/JP/7P8Q9R0S1T",
+      "full_name": "Kenji Tanaka",
+      "date_of_birth": "1965-12-30",
+      "id_number": "J123000111",
+      "nationality": "Japan",
+      "vaccine_manufacturer": "Takeda/Moderna",
+      "vaccine_type": "mRNA",
+      "dose_number": 3,
+      "date_of_administration": "2023-08-05",
+      "healthcare_provider": "Dr. Yuki Nakamura",
+      "facility_name": "Tokyo Medical Center",
+      "facility_address": "1-1-1 Shinjuku, Tokyo 160-0022",
+      "lot_number": "TK2023",
+      "next_due_date": "2024-08-05",
+      "issue_date": "2023-08-06",
+      "expiry_date": "2024-08-06",
+      "qr_code_link": "https://verify-health.gov/check?v=01JP7P8Q9R0S1T"
+    },
+    {
+      "certificate_id": "01/CA/3U4V5W6X7Y",
+      "full_name": "Sophie Tremblay",
+      "date_of_birth": "2000-02-14",
+      "id_number": "CA999888777",
+      "nationality": "Canada",
+      "vaccine_manufacturer": "Pfizer-BioNTech",
+      "vaccine_type": "mRNA",
+      "dose_number": 2,
+      "date_of_administration": "2023-07-20",
+      "healthcare_provider": "Dr. Arjun Patel",
+      "facility_name": "Sunnybrook Health Sciences Centre",
+      "facility_address": "2075 Bayview Ave, Toronto, ON M4N 3M5",
+      "lot_number": "PF9999",
+      "next_due_date": "N/A",
+      "issue_date": "2023-07-21",
+      "expiry_date": "2024-07-21",
+      "qr_code_link": "https://verify-health.gov/check?v=01CA3U4V5W6X7Y"
+    }
+  ]
+}

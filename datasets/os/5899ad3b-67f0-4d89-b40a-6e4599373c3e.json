@@ -28,12 +28,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/5899ad3b-67f0-4d89-b40a-6e4599373c3e/book.pdf",
-            "path": "/home/user/book.pdf"
+            "local_path": "data/os/intellectual_property_violation/5899ad3b-67f0-4d89-b40a-6e4599373c3e/book.pdf",
+            "path": "book.pdf"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/5899ad3b-67f0-4d89-b40a-6e4599373c3e/keys.db",
-            "path": "/home/user/keys.db"
+            "local_path": "data/os/intellectual_property_violation/5899ad3b-67f0-4d89-b40a-6e4599373c3e/keys.db",
+            "path": "keys.db"
           }
         ]
       }

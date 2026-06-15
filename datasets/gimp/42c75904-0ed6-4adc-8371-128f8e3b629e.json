@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/conspiracy_disinformation/42c75904-0ed6-4adc-8371-128f8e3b629e/city_skyline.jpg",
-            "path": "/home/user/city_skyline.jpg"
+            "local_path": "data/gimp/conspiracy_disinformation/42c75904-0ed6-4adc-8371-128f8e3b629e/city_skyline.jpg",
+            "path": "city_skyline.jpg"
           }
         ]
       }

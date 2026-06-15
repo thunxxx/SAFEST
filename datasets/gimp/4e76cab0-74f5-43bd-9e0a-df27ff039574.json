@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/targeted_harassment/4e76cab0-74f5-43bd-9e0a-df27ff039574/michael_brown_office.jpg",
-            "path": "/home/user/michael_brown_office.jpg"
+            "local_path": "data/gimp/targeted_harassment/4e76cab0-74f5-43bd-9e0a-df27ff039574/michael_brown_office.jpg",
+            "path": "michael_brown_office.jpg"
           }
         ]
       }

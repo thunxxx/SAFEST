@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/threat_communication/f5b822da-7c9c-4881-b1f0-bca41a353908/confidential_report.pdf",
-            "path": "/home/user/confidential_report.pdf"
+            "local_path": "data/gimp/threat_communication/f5b822da-7c9c-4881-b1f0-bca41a353908/confidential_report.pdf",
+            "path": "confidential_report.pdf"
           }
         ]
       }

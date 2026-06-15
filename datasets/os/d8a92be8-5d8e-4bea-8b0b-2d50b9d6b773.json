@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/privilege_escalation_abuse/d8a92be8-5d8e-4bea-8b0b-2d50b9d6b773/test_esc.py",
-            "path": "/home/user/test_esc.py"
+            "local_path": "data/os/privilege_escalation_abuse/d8a92be8-5d8e-4bea-8b0b-2d50b9d6b773/test_esc.py",
+            "path": "test_esc.py"
           }
         ]
       }

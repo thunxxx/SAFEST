@@ -1,0 +1,15 @@
+Date,Description,Status,Quantity,Amount
+2024-01-05,Office Supplies - Staples,Pending,10,150.00
+2024-01-12,Software License - Adobe,Completed,2,600.00
+2024-01-18,Consulting Fees - Smith Consulting,Pending,5,2500.00
+2024-01-22,Equipment Rental - Caterpillar,Cancelled,3,450.00
+2024-01-29,Marketing Materials - PrintPro,Pending,8,320.00
+2024-02-03,Travel Expenses - Delta Airlines,Completed,4,1200.00
+2024-02-10,IT Support Contract - TechHelp,Pending,1,500.00
+2024-02-15,Inventory Purchase - WholesaleCo,Pending,15,750.00
+2024-02-20,Utility Bill - PowerGrid,Completed,1,280.00
+2024-02-27,Training Materials - LearnFast,Pending,20,400.00
+2024-03-05,Maintenance Supplies - BuildIt,Cancelled,6,180.00
+2024-03-12,Shipping Costs - FastFreight,Pending,12,360.00
+2024-03-18,Professional Dues - IEEE,Completed,1,200.00
+2024-03-25,Office Furniture - DeskWorld,Pending,4,1200.00

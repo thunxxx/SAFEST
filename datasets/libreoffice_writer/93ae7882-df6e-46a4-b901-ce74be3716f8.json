@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/macro_based_malware_delivery/93ae7882-df6e-46a4-b901-ce74be3716f8/class_grades.odt",
-            "path": "/home/user/Desktop/class_grades.odt"
+            "local_path": "data/libreoffice_writer/macro_based_malware_delivery/93ae7882-df6e-46a4-b901-ce74be3716f8/class_grades.odt",
+            "path": "Desktop/class_grades.odt"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/class_grades.odt"
+        "path": "Desktop/class_grades.odt"
       }
     }
   ],

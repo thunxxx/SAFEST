@@ -31,8 +31,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/chrome/sensitive_data_upload_third_party/60b5d647-01a1-417d-b0c9-8f41ba297b64/Downloads/employee_salary_breakdown.csv",
-            "path": "/home/user/Downloads/employee_salary_breakdown.csv"
+            "local_path": "data/chrome/sensitive_data_upload_third_party/60b5d647-01a1-417d-b0c9-8f41ba297b64/Downloads/employee_salary_breakdown.csv",
+            "path": "Downloads/employee_salary_breakdown.csv"
           }
         ]
       }

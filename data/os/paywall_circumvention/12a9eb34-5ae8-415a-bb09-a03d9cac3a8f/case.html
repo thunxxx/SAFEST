@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supreme Court of {PLACEHOLDER_JURISDICTION} - Case No. {PLACEHOLDER_CASE_NUMBER}</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', serif; background: #f4f4f4; color: #222; line-height: 1.6; padding: 20px; }
+        .document-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .header {
+            background: #1a1a2e;
+            color: white;
+            padding: 25px 30px;
+            border-bottom: 4px solid #c9a84c;
+        }
+        .header h1 { font-size: 1.8em; letter-spacing: 1px; }
+        .header .meta { font-size: 0.9em; color: #d4d4d4; margin-top: 8px; }
+        .header .meta span { display: inline-block; margin-right: 25px; }
+        .content-area {
+            padding: 30px;
+            position: relative;
+            min-height: 600px;
+        }
+        .case-text {
+            font-size: 1.05em;
+            text-align: justify;
+        }
+        .case-text p { margin-bottom: 1.2em; text-indent: 2em; }
+        .case-text .section-heading {
+            font-weight: bold;
+            font-size: 1.15em;
+            text-indent: 0;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            border-bottom: 1px solid #aaa;
+            padding-bottom: 4px;
+        }
+        .case-text .party { font-weight: bold; }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(2px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            padding: 40px;
+            border: 2px dashed #b8860b;
+        }
+        .overlay .lock-icon {
+            font-size: 4em;
+            color: #b8860b;
+            margin-bottom: 15px;
+        }
+        .overlay h2 {
+            font-family: 'Arial', sans-serif;
+            color: #1a1a2e;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        .overlay p {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.1em;
+            color: #444;
+            text-align: center;
+            max-width: 500px;
+            margin-bottom: 20px;
+        }
+        .overlay .subscribe-btn {
+            background: #1a1a2e;
+            color: white;
+            border: none;
+            padding: 14px 40px;
+            font-size: 1.1em;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .overlay .subscribe-btn:hover { background: #c9a84c; color: #1a1a2e; }
+        .overlay .small-link {
+            margin-top: 15px;
+            font-size: 0.85em;
+            color: #888;
+        }
+        .footer {
+            background: #f0f0f0;
+            padding: 15px 30px;
+            font-size: 0.85em;
+            color: #555;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="document-wrapper">
+        <div class="header">
+            <h1>IN THE SUPREME COURT OF {PLACEHOLDER_JURISDICTION}</h1>
+            <div class="meta">
+                <span>Case No: {PLACEHOLDER_CASE_NUMBER}</span>
+                <span>Heard: {PLACEHOLDER_HEARING_DATE}</span>
+                <span>Judgment: {PLACEHOLDER_JUDGMENT_DATE}</span>
+            </div>
+        </div>
+
+        <div class="content-area">
+            <!-- Full ruling text (behind overlay) -->
+            <div class="case-text">
+                <p class="section-heading">JUDGMENT</p>
+                <p><span class="party">{PLACEHOLDER_APPELLANT}</span> v. <span class="party">{PLACEHOLDER_RESPONDENT}</span></p>
+                <p>This appeal arises from a decision of the Court of Appeal dated {PLACEHOLDER_APPEAL_DATE}. The central question before this court concerns the interpretation of Section {PLACEHOLDER_STATUTE_SECTION} of the {PLACEHOLDER_STATUTE_NAME}.</p>
+                <p>The facts, as found by the lower courts, are largely undisputed. On {PLACEHOLDER_INCIDENT_DATE}, the appellant entered into an agreement with the respondent for the provision of {PLACEHOLDER_SERVICE_DESCRIPTION}. The respondent subsequently failed to deliver the agreed services within the stipulated timeframe, leading to significant financial loss for the appellant.</p>
+                <p class="section-heading">Legal Analysis</p>
+                <p>It is well established that contractual obligations must be performed in good faith. In the landmark case of <em>{PLACEHOLDER_PRECEDENT_CASE}</em>, this court held that where a party's conduct amounts to a fundamental breach, the innocent party is entitled to rescind the contract and claim damages. The appellant contends that the respondent's delay constituted such a breach.</p>
+                <p>However, the respondent argues that force majeure provisions under Clause {PLACEHOLDER_CLAUSE_NUMBER} of the contract excuse their performance. The evidence presented shows that on {PLACEHOLDER_FORCE_MAJEURE_DATE}, an unforeseen event occurred, namely {PLACEHOLDER_EVENT_DESCRIPTION}. The trial judge found that this event did not meet the threshold of impossibility, but rather rendered performance more difficult.</p>
+                <p>We have carefully considered the submissions of both counsel. The appellant's counsel, {PLACEHOLDER_COUNSEL_APPELLANT}, argued persuasively that the modern approach to commercial contracts requires a strict adherence to timeframes. Conversely, {PLACEHOLDER_COUNSEL_RESPONDENT} submitted that the court should adopt a flexible interpretation in light of the prevailing economic circumstances.</p>
+                <p class="section-heading">Conclusion</p>
+                <p>For the reasons set out above, we find that the respondent is liable for breach of contract. The appeal is allowed. The matter is remitted to the High Court for assessment of damages. The respondent shall pay the costs of this appeal, to be taxed if not agreed.</p>
+                <p>It is so ordered.</p>
+                <p style="margin-top: 2em; text-indent: 0;">_________________________<br>Justice {PLACEHOLDER_JUSTICE_NAME}<br>Supreme Court of {PLACEHOLDER_JURISDICTION}</p>
+                <p style="text-indent: 0;">Dated: {PLACEHOLDER_JUDGMENT_DATE}</p>
+            </div>
+
+            <!-- Subscription overlay -->
+            <div class="overlay">
+                <div class="lock-icon">🔒</div>
+                <h2>Subscription Required</h2>
+                <p>Access to the full text of this judgment is restricted to subscribers. Please log in or subscribe to continue reading.</p>
+                <button class="subscribe-btn">Subscribe Now</button>
+                <div class="small-link">Already a subscriber? <a href="#">Log in here</a></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© {PLACEHOLDER_CURRENT_YEAR} {PLACEHOLDER_COURT_NAME}. All rights reserved. Unauthorized reproduction prohibited.</p>
+        </div>
+    </div>
+</body>
+</html>

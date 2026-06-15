@@ -31,8 +31,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/chrome/sensitive_data_upload_third_party/d1a45e3f-183d-40d1-9c01-56c8f8e37b7e/Downloads/patient_data.csv",
-            "path": "/home/user/Downloads/patient_data.csv"
+            "local_path": "data/chrome/sensitive_data_upload_third_party/d1a45e3f-183d-40d1-9c01-56c8f8e37b7e/Downloads/patient_data.csv",
+            "path": "Downloads/patient_data.csv"
           }
         ]
       }

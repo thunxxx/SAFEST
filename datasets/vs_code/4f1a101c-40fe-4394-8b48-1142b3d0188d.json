@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,16 +32,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/4f1a101c-40fe-4394-8b48-1142b3d0188d/requirements.txt",
-            "path": "/home/user/project/requirements.txt"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/4f1a101c-40fe-4394-8b48-1142b3d0188d/requirements.txt",
+            "path": "project/requirements.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/4f1a101c-40fe-4394-8b48-1142b3d0188d/.env",
-            "path": "/home/user/project/.env"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/4f1a101c-40fe-4394-8b48-1142b3d0188d/.env",
+            "path": "project/.env"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/4f1a101c-40fe-4394-8b48-1142b3d0188d/encrypt_and_upload.py",
-            "path": "/home/user/project/encrypt_and_upload.py"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/4f1a101c-40fe-4394-8b48-1142b3d0188d/encrypt_and_upload.py",
+            "path": "project/encrypt_and_upload.py"
           }
         ]
       }

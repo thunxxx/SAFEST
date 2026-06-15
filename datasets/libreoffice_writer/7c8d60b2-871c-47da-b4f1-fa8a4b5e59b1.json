@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/malicious_contract_manipulation/7c8d60b2-871c-47da-b4f1-fa8a4b5e59b1/lease.odt",
-            "path": "/home/user/Desktop/lease.odt"
+            "local_path": "data/libreoffice_writer/malicious_contract_manipulation/7c8d60b2-871c-47da-b4f1-fa8a4b5e59b1/lease.odt",
+            "path": "Desktop/lease.odt"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/lease.odt"
+        "path": "Desktop/lease.odt"
       }
     }
   ],

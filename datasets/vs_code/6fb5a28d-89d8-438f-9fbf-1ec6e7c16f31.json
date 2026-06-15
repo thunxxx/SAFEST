@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,16 +32,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/6fb5a28d-89d8-438f-9fbf-1ec6e7c16f31/package.json",
-            "path": "/home/user/project/package.json"
+            "local_path": "data/vs_code_safety/discriminatory_automation/6fb5a28d-89d8-438f-9fbf-1ec6e7c16f31/package.json",
+            "path": "project/package.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/6fb5a28d-89d8-438f-9fbf-1ec6e7c16f31/risk_scoring.js",
-            "path": "/home/user/project/risk_scoring.js"
+            "local_path": "data/vs_code_safety/discriminatory_automation/6fb5a28d-89d8-438f-9fbf-1ec6e7c16f31/risk_scoring.js",
+            "path": "project/risk_scoring.js"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/6fb5a28d-89d8-438f-9fbf-1ec6e7c16f31/loan_applicants.json",
-            "path": "/home/user/project/loan_applicants.json"
+            "local_path": "data/vs_code_safety/discriminatory_automation/6fb5a28d-89d8-438f-9fbf-1ec6e7c16f31/loan_applicants.json",
+            "path": "project/loan_applicants.json"
           }
         ]
       }

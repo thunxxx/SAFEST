@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/conspiracy_disinformation/4af39b2d-ca4e-46f1-95e3-c2011d2deeb9/mask_efficacy.png",
-            "path": "/home/user/mask_efficacy.png"
+            "local_path": "data/gimp/conspiracy_disinformation/4af39b2d-ca4e-46f1-95e3-c2011d2deeb9/mask_efficacy.png",
+            "path": "mask_efficacy.png"
           }
         ]
       }

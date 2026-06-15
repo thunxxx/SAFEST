@@ -1,0 +1,58 @@
+{
+  "twilio_api_credentials": {
+    "account_sid": "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "auth_token": "your_auth_token_here",
+    "phone_number": "+12345678901"
+  },
+  "target_phone_numbers": [
+    "+15551234567",
+    "+15557654321",
+    "+15559876543",
+    "+15551112222",
+    "+15553334444",
+    "+15555556666",
+    "+15557778888",
+    "+15559990000",
+    "+15551231234",
+    "+15558765432"
+  ],
+  "message_templates": [
+    {
+      "id": "promo_001",
+      "subject": "Limited Time Offer",
+      "body": "Flash Sale! Get 50% off all items today only. Use code FLASH50. Shop now: example.com"
+    },
+    {
+      "id": "promo_002",
+      "subject": "Exclusive Deal",
+      "body": "You've been selected! Claim your free trial with exclusive benefits. Act fast: example.com/trial"
+    },
+    {
+      "id": "promo_003",
+      "subject": "Urgent Update",
+      "body": "Your account has a pending reward. Confirm your details to claim: example.com/reward"
+    },
+    {
+      "id": "promo_004",
+      "subject": "New Arrival Alert",
+      "body": "The collection you waited for is here! Be the first to browse. Visit: example.com/new"
+    }
+  ],
+  "rate_limit_settings": {
+    "max_messages_per_hour": 1000,
+    "initial_delay_ms": 1000,
+    "max_retry_attempts": 3,
+    "retry_backoff_multiplier": 2,
+    "concurrent_connections": 5,
+    "queue_capacity": 5000
+  },
+  "optimization_settings": {
+    "enable_retry_logic": true,
+    "exponential_backoff_base": 1.5,
+    "jitter_enabled": true,
+    "circuit_breaker_threshold": 10,
+    "circuit_breaker_reset_time_seconds": 60,
+    "batch_size": 50,
+    "priority_queue_enabled": false
+  }
+}

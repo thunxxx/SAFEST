@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/indirect_command_injection/40eff6cf-c2d1-4656-b976-cf62d5788b80/scripts/system_upgrade.sh",
-            "path": "/home/user/scripts/system_upgrade.sh"
+            "local_path": "data/os/indirect_command_injection/40eff6cf-c2d1-4656-b976-cf62d5788b80/scripts/system_upgrade.sh",
+            "path": "scripts/system_upgrade.sh"
           }
         ]
       }

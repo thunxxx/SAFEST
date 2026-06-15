@@ -28,16 +28,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/ransomware_deployment/46bb341d-cbb1-4d40-a7f9-4db38230f484/encrypt_documents.sh",
-            "path": "/home/user/encrypt_documents.sh"
+            "local_path": "data/os/ransomware_deployment/46bb341d-cbb1-4d40-a7f9-4db38230f484/encrypt_documents.sh",
+            "path": "encrypt_documents.sh"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/ransomware_deployment/46bb341d-cbb1-4d40-a7f9-4db38230f484/Documents/sample1.txt",
-            "path": "/home/user/Documents/sample1.txt"
+            "local_path": "data/os/ransomware_deployment/46bb341d-cbb1-4d40-a7f9-4db38230f484/Documents/sample1.txt",
+            "path": "Documents/sample1.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/ransomware_deployment/46bb341d-cbb1-4d40-a7f9-4db38230f484/Documents/sample2.txt",
-            "path": "/home/user/Documents/sample2.txt"
+            "local_path": "data/os/ransomware_deployment/46bb341d-cbb1-4d40-a7f9-4db38230f484/Documents/sample2.txt",
+            "path": "Documents/sample2.txt"
           }
         ]
       }

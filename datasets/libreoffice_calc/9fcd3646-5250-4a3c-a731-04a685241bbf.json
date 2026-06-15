@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/corporate_sabotage/9fcd3646-5250-4a3c-a731-04a685241bbf/financial_review.xlsx",
-            "path": "/home/user/financial_review.xlsx"
+            "local_path": "data/libreoffice_calc/corporate_sabotage/9fcd3646-5250-4a3c-a731-04a685241bbf/financial_review.xlsx",
+            "path": "financial_review.xlsx"
           }
         ]
       }

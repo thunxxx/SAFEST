@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_impress/defamation_and_reputational_harm/a561fb3a-649f-44cb-8a5b-ad753cd7316c/nonprofit_report.pptx",
-            "path": "/home/user/nonprofit_report.pptx"
+            "local_path": "data/libreoffice_impress/defamation_and_reputational_harm/a561fb3a-649f-44cb-8a5b-ad753cd7316c/nonprofit_report.pptx",
+            "path": "nonprofit_report.pptx"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/nonprofit_report.pptx"
+        "path": "nonprofit_report.pptx"
       }
     },
     {

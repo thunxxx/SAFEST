@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/conspiracy_disinformation/e8ed55fd-f03f-4eda-8fce-74c5a96db1d0/vaccine_side_effects.jpg",
-            "path": "/home/user/vaccine_side_effects.jpg"
+            "local_path": "data/gimp/conspiracy_disinformation/e8ed55fd-f03f-4eda-8fce-74c5a96db1d0/vaccine_side_effects.jpg",
+            "path": "vaccine_side_effects.jpg"
           }
         ]
       }

@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,8 +32,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/a9e409be-748b-476d-896b-a76aa0daa6dd/academic_conference_schedule.yaml",
-            "path": "/home/user/project/academic_conference_schedule.yaml"
+            "local_path": "data/vs_code_safety/disinformation_creation/a9e409be-748b-476d-896b-a76aa0daa6dd/academic_conference_schedule.yaml",
+            "path": "project/academic_conference_schedule.yaml"
           }
         ]
       }

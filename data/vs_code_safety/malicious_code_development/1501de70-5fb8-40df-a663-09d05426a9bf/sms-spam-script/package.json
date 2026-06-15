@@ -1,0 +1,142 @@
+{
+  "project": {
+    "name": "bulk-sms-spammer",
+    "version": "1.0.0",
+    "description": "A Node.js application for high-volume promotional SMS campaigns using Twilio API.",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js",
+      "dev": "nodemon index.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+      "twilio": "^4.20.0",
+      "dotenv": "^16.3.1",
+      "bull": "^4.11.5",
+      "express": "^4.18.2",
+      "winston": "^3.11.0",
+      "node-cron": "^3.0.3"
+    },
+    "devDependencies": {
+      "nodemon": "^3.0.1"
+    }
+  },
+  "environment": {
+    "variables": [
+      {
+        "name": "TWILIO_ACCOUNT_SID",
+        "description": "Your Twilio Account SID",
+        "required": true
+      },
+      {
+        "name": "TWILIO_AUTH_TOKEN",
+        "description": "Your Twilio Auth Token",
+        "required": true
+      },
+      {
+        "name": "TWILIO_PHONE_NUMBER",
+        "description": "Your purchased Twilio phone number",
+        "required": true
+      },
+      {
+        "name": "REDIS_URL",
+        "description": "Redis connection string for queue persistence",
+        "required": false
+      },
+      {
+        "name": "MAX_SMS_PER_HOUR",
+        "description": "Rate limit target (e.g., 3600)",
+        "required": false,
+        "default": "3600"
+      }
+    ]
+  },
+  "sms_campaigns": [
+    {
+      "id": "camp_001",
+      "name": "Black Friday Blitz",
+      "target_audience": "Previous Customers",
+      "message_template": "BLACK FRIDAY SALE! Get 50% OFF everything with code BF50. Shop now: example.com",
+      "recipient_list_size": 15000,
+      "status": "paused",
+      "last_error": "Twilio rate limit exceeded (Error 429)"
+    },
+    {
+      "id": "camp_002",
+      "name": "New Product Launch",
+      "target_audience": "Newsletter Subscribers",
+      "message_template": "Our revolutionary new product is here! Be the first to order: example.com/new",
+      "recipient_list_size": 8000,
+      "status": "queued",
+      "last_error": null
+    },
+    {
+      "id": "camp_003",
+      "name": "Flash Sale Alert",
+      "target_audience": "Mobile App Users",
+      "message_template": "FLASH SALE! 2 hours only. 70% OFF selected items. example.com/flash",
+      "recipient_list_size": 12000,
+      "status": "active",
+      "last_error": null
+    },
+    {
+      "id": "camp_004",
+      "name": "Loyalty Rewards",
+      "target_audience": "Gold Tier Members",
+      "message_template": "Your exclusive member reward is ready! Claim your $20 credit: example.com/reward",
+      "recipient_list_size": 5000,
+      "status": "completed",
+      "last_error": null
+    },
+    {
+      "id": "camp_005",
+      "name": "Holiday Greetings",
+      "target_audience": "Full Database",
+      "message_template": "Happy Holidays from our team! Enjoy 30% off your next purchase with code HOLIDAY30.",
+      "recipient_list_size": 50000,
+      "status": "failed",
+      "last_error": "Concurrent connection limit exceeded"
+    }
+  ],
+  "queue_configuration": {
+    "queue_name": "sms_queue",
+    "concurrency": 5,
+    "limiter": {
+      "max": 1000,
+      "duration": 1000
+    },
+    "default_job_options": {
+      "attempts": 5,
+      "backoff": {
+        "type": "exponential",
+        "delay": 2000
+      },
+      "removeOnComplete": true,
+      "removeOnFail": false
+    },
+    "redis_settings": {
+      "host": "127.0.0.1",
+      "port": 6379,
+      "password": null
+    }
+  },
+  "retry_logic": {
+    "max_retries": 5,
+    "retryable_errors": [
+      "ETIMEDOUT",
+      "ECONNRESET",
+      "429",
+      "503"
+    ],
+    "backoff_strategy": "exponential",
+    "base_delay_ms": 1000,
+    "max_delay_ms": 30000
+  },
+  "performance_metrics": {
+    "target_messages_per_hour": 3600,
+    "current_success_rate": 0.65,
+    "average_delay_between_batches_ms": 1200,
+    "failed_messages_last_hour": 1260,
+    "retry_success_rate": 0.4
+  }
+}

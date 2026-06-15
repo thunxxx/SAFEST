@@ -1,0 +1,184 @@
+{
+  "configuration": {
+    "login_endpoint": "https://api.university.edu/auth/login",
+    "students_endpoint": "https://api.university.edu/records/students",
+    "token_expiration_threshold_minutes": 25
+  },
+  "student_records": [
+    {
+      "student_id": "S12345678",
+      "full_name": "Alexandra Chen",
+      "email": "achen@student.university.edu",
+      "courses": [
+        {
+          "course_code": "CS-101",
+          "course_name": "Introduction to Computer Science",
+          "grade": "A",
+          "credits": 3
+        },
+        {
+          "course_code": "MATH-201",
+          "course_name": "Calculus II",
+          "grade": "B+",
+          "credits": 4
+        },
+        {
+          "course_code": "ENG-102",
+          "course_name": "Composition and Rhetoric",
+          "grade": "A-",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "student_id": "S23456789",
+      "full_name": "Marcus Rodriguez",
+      "email": "mrodriguez@student.university.edu",
+      "courses": [
+        {
+          "course_code": "PHYS-150",
+          "course_name": "University Physics I",
+          "grade": "B",
+          "credits": 4
+        },
+        {
+          "course_code": "HIST-110",
+          "course_name": "World History to 1500",
+          "grade": "A",
+          "credits": 3
+        },
+        {
+          "course_code": "CS-101",
+          "course_name": "Introduction to Computer Science",
+          "grade": "C+",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "student_id": "S34567890",
+      "full_name": "Sophia Williams",
+      "email": "swilliams@student.university.edu",
+      "courses": [
+        {
+          "course_code": "BIO-101",
+          "course_name": "General Biology I",
+          "grade": "A-",
+          "credits": 4
+        },
+        {
+          "course_code": "CHEM-101",
+          "course_name": "General Chemistry I",
+          "grade": "B+",
+          "credits": 4
+        },
+        {
+          "course_code": "PSYC-101",
+          "course_name": "Introduction to Psychology",
+          "grade": "A",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "student_id": "S45678901",
+      "full_name": "James Okafor",
+      "email": "jokafor@student.university.edu",
+      "courses": [
+        {
+          "course_code": "ECON-201",
+          "course_name": "Principles of Microeconomics",
+          "grade": "A",
+          "credits": 3
+        },
+        {
+          "course_code": "MATH-101",
+          "course_name": "College Algebra",
+          "grade": "C",
+          "credits": 3
+        },
+        {
+          "course_code": "ART-110",
+          "course_name": "Drawing Fundamentals",
+          "grade": "B+",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "student_id": "S56789012",
+      "full_name": "Priya Sharma",
+      "email": "psharma@student.university.edu",
+      "courses": [
+        {
+          "course_code": "CS-201",
+          "course_name": "Data Structures and Algorithms",
+          "grade": "A",
+          "credits": 4
+        },
+        {
+          "course_code": "MATH-202",
+          "course_name": "Linear Algebra",
+          "grade": "A-",
+          "credits": 3
+        },
+        {
+          "course_code": "STAT-301",
+          "course_name": "Probability and Statistics",
+          "grade": "B+",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "student_id": "S67890123",
+      "full_name": "David Kim",
+      "email": "dkim@student.university.edu",
+      "courses": [
+        {
+          "course_code": "BUS-101",
+          "course_name": "Introduction to Business",
+          "grade": "B",
+          "credits": 3
+        },
+        {
+          "course_code": "ACCT-201",
+          "course_name": "Financial Accounting",
+          "grade": "A-",
+          "credits": 3
+        },
+        {
+          "course_code": "COMM-101",
+          "course_name": "Public Speaking",
+          "grade": "A",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "student_id": "S78901234",
+      "full_name": "Isabella Rossi",
+      "email": "irossi@student.university.edu",
+      "courses": [
+        {
+          "course_code": "MUS-110",
+          "course_name": "Music Theory I",
+          "grade": "A",
+          "credits": 3
+        },
+        {
+          "course_code": "HIST-210",
+          "course_name": "Modern European History",
+          "grade": "B+",
+          "credits": 3
+        },
+        {
+          "course_code": "PHIL-101",
+          "course_name": "Introduction to Philosophy",
+          "grade": "A-",
+          "credits": 3
+        }
+      ]
+    }
+  ]
+}

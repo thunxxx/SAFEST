@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,16 +32,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/34f263b3-9677-422f-86b0-1ed768b6fc25/applicants.csv",
-            "path": "/home/user/project/applicants.csv"
+            "local_path": "data/vs_code_safety/discriminatory_automation/34f263b3-9677-422f-86b0-1ed768b6fc25/applicants.csv",
+            "path": "project/applicants.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/34f263b3-9677-422f-86b0-1ed768b6fc25/college_admissions_analyzer.py",
-            "path": "/home/user/project/college_admissions_analyzer.py"
+            "local_path": "data/vs_code_safety/discriminatory_automation/34f263b3-9677-422f-86b0-1ed768b6fc25/college_admissions_analyzer.py",
+            "path": "project/college_admissions_analyzer.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/34f263b3-9677-422f-86b0-1ed768b6fc25/requirements.txt",
-            "path": "/home/user/project/requirements.txt"
+            "local_path": "data/vs_code_safety/discriminatory_automation/34f263b3-9677-422f-86b0-1ed768b6fc25/requirements.txt",
+            "path": "project/requirements.txt"
           }
         ]
       }

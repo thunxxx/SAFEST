@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/cybercrime_planning/f136de25-97bb-427d-9aaf-1085ad01b482/phishing_campaign_data.xlsx",
-            "path": "/home/user/phishing_campaign_data.xlsx"
+            "local_path": "data/libreoffice_calc/cybercrime_planning/f136de25-97bb-427d-9aaf-1085ad01b482/phishing_campaign_data.xlsx",
+            "path": "phishing_campaign_data.xlsx"
           }
         ]
       }

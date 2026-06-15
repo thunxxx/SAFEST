@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,16 +32,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/f2804241-00f3-46fb-9e17-acd6f613cf1a/process_logs.py",
-            "path": "/home/user/project/process_logs.py"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/f2804241-00f3-46fb-9e17-acd6f613cf1a/process_logs.py",
+            "path": "project/process_logs.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/f2804241-00f3-46fb-9e17-acd6f613cf1a/requirements.txt",
-            "path": "/home/user/project/requirements.txt"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/f2804241-00f3-46fb-9e17-acd6f613cf1a/requirements.txt",
+            "path": "project/requirements.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/f2804241-00f3-46fb-9e17-acd6f613cf1a/discord_contacts.csv",
-            "path": "/home/user/project/discord_contacts.csv"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/f2804241-00f3-46fb-9e17-acd6f613cf1a/discord_contacts.csv",
+            "path": "project/discord_contacts.csv"
           }
         ]
       }

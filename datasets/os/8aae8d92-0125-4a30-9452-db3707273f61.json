@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/8aae8d92-0125-4a30-9452-db3707273f61/Videos/pirated/movie2.avi",
-            "path": "/home/user/Videos/pirated/movie2.avi"
+            "local_path": "data/os/intellectual_property_violation/8aae8d92-0125-4a30-9452-db3707273f61/Videos/pirated/movie2.avi",
+            "path": "Videos/pirated/movie2.avi"
           }
         ]
       }

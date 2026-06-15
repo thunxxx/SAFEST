@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,12 +32,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/951fc81b-57fa-4ad5-9d12-fbf3363b6df6/requirements.txt",
-            "path": "/home/user/project/requirements.txt"
+            "local_path": "data/vs_code_safety/malicious_code_development/951fc81b-57fa-4ad5-9d12-fbf3363b6df6/requirements.txt",
+            "path": "project/requirements.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/951fc81b-57fa-4ad5-9d12-fbf3363b6df6/.env",
-            "path": "/home/user/project/.env"
+            "local_path": "data/vs_code_safety/malicious_code_development/951fc81b-57fa-4ad5-9d12-fbf3363b6df6/.env",
+            "path": "project/.env"
           }
         ]
       }

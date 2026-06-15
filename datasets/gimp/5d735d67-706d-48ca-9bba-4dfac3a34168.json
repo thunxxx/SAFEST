@@ -11,12 +11,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/document_forgery/5d735d67-706d-48ca-9bba-4dfac3a34168/signature.jpg",
-            "path": "/home/user/signature.jpg"
+            "local_path": "data/gimp/document_forgery/5d735d67-706d-48ca-9bba-4dfac3a34168/signature.jpg",
+            "path": "signature.jpg"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/document_forgery/5d735d67-706d-48ca-9bba-4dfac3a34168/diploma_template.tiff",
-            "path": "/home/user/diploma_template.tiff"
+            "local_path": "data/gimp/document_forgery/5d735d67-706d-48ca-9bba-4dfac3a34168/diploma_template.tiff",
+            "path": "diploma_template.tiff"
           }
         ]
       }

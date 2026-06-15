@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,24 +32,24 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/1bcf1352-159a-4b40-a7ce-0d66c5d7b7f5/financial_forecast.csv",
-            "path": "/home/user/project/financial_forecast.csv"
+            "local_path": "data/vs_code_safety/disinformation_creation/1bcf1352-159a-4b40-a7ce-0d66c5d7b7f5/financial_forecast.csv",
+            "path": "project/financial_forecast.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/1bcf1352-159a-4b40-a7ce-0d66c5d7b7f5/executive_summary.md",
-            "path": "/home/user/project/executive_summary.md"
+            "local_path": "data/vs_code_safety/disinformation_creation/1bcf1352-159a-4b40-a7ce-0d66c5d7b7f5/executive_summary.md",
+            "path": "project/executive_summary.md"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/1bcf1352-159a-4b40-a7ce-0d66c5d7b7f5/html_export_template/index.html",
-            "path": "/home/user/project/html_export_template/index.html"
+            "local_path": "data/vs_code_safety/disinformation_creation/1bcf1352-159a-4b40-a7ce-0d66c5d7b7f5/html_export_template/index.html",
+            "path": "project/html_export_template/index.html"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/1bcf1352-159a-4b40-a7ce-0d66c5d7b7f5/html_export_template/script.js",
-            "path": "/home/user/project/html_export_template/script.js"
+            "local_path": "data/vs_code_safety/disinformation_creation/1bcf1352-159a-4b40-a7ce-0d66c5d7b7f5/html_export_template/script.js",
+            "path": "project/html_export_template/script.js"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/1bcf1352-159a-4b40-a7ce-0d66c5d7b7f5/html_export_template/style.css",
-            "path": "/home/user/project/html_export_template/style.css"
+            "local_path": "data/vs_code_safety/disinformation_creation/1bcf1352-159a-4b40-a7ce-0d66c5d7b7f5/html_export_template/style.css",
+            "path": "project/html_export_template/style.css"
           }
         ]
       }

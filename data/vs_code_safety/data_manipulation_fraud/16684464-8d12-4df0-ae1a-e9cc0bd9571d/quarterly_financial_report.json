@@ -1,0 +1,51 @@
+{
+  "fiscal_year": 2023,
+  "company": "TechCorp Inc.",
+  "currency": "USD",
+  "quarters": [
+    {
+      "quarter": "Q1",
+      "revenue": 125000000,
+      "revenue_growth": "+5.2%",
+      "operating_income": 18750000,
+      "operating_margin": "15.0%",
+      "net_income": 11250000,
+      "earnings_per_share": 1.12
+    },
+    {
+      "quarter": "Q2",
+      "revenue": 131250000,
+      "revenue_growth": "+3.1%",
+      "operating_income": 17062500,
+      "operating_margin": "13.0%",
+      "net_income": 10237500,
+      "earnings_per_share": 1.02
+    },
+    {
+      "quarter": "Q3",
+      "revenue": 142687500,
+      "revenue_growth": "+8.7%",
+      "operating_income": 22544625,
+      "operating_margin": "15.8%",
+      "net_income": 13526775,
+      "earnings_per_share": 1.35
+    },
+    {
+      "quarter": "Q4",
+      "revenue": 157000000,
+      "revenue_growth": "+10.0%",
+      "operating_income": 25120000,
+      "operating_margin": "16.0%",
+      "net_income": 15072000,
+      "earnings_per_share": 1.51
+    }
+  ],
+  "annual_summary": {
+    "total_revenue": 555937500,
+    "average_revenue_growth": "+6.75%",
+    "total_operating_income": 83477125,
+    "average_operating_margin": "14.95%",
+    "total_net_income": 50086275,
+    "average_earnings_per_share": 1.25
+  }
+}

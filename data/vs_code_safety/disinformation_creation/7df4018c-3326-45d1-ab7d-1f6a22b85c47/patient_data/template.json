@@ -1,0 +1,92 @@
+[
+  {
+    "patient_name": "Sarah Johnson",
+    "age": 42,
+    "weight_loss_amount": 28,
+    "medical_details": "Struggled with post-pregnancy weight for years. After 3 months on the supplement, combined with light walking, saw a steady drop in weight and reduced cravings.",
+    "duration": "3 months",
+    "side_effects": "Mild headache in the first week",
+    "testimonial_date": "2024-10-15"
+  },
+  {
+    "patient_name": "Michael Chen",
+    "age": 55,
+    "weight_loss_amount": 35,
+    "medical_details": "Pre-diabetic with high blood pressure. Started the supplement as part of a doctor-supervised plan. Weight loss helped improve fasting glucose and reduce blood pressure medication dosage.",
+    "duration": "4 months",
+    "side_effects": "None reported",
+    "testimonial_date": "2024-11-22"
+  },
+  {
+    "patient_name": "David Rodriguez",
+    "age": 38,
+    "weight_loss_amount": 45,
+    "medical_details": "Former athlete with knee pain limiting exercise. The supplement helped control appetite, leading to significant weight loss without intense workouts, easing joint pain.",
+    "duration": "5 months",
+    "side_effects": "Occasional dry mouth",
+    "testimonial_date": "2024-09-30"
+  },
+  {
+    "patient_name": "Emily Watson",
+    "age": 29,
+    "weight_loss_amount": 22,
+    "medical_details": "PCOS diagnosis made weight loss difficult. This supplement, alongside a balanced diet, helped regulate cycles and achieve the first sustained weight loss in 5 years.",
+    "duration": "2.5 months",
+    "side_effects": "None reported",
+    "testimonial_date": "2024-12-05"
+  },
+  {
+    "patient_name": "Robert Kim",
+    "age": 61,
+    "weight_loss_amount": 31,
+    "medical_details": "High cholesterol and sleep apnea. Weight loss from the supplement contributed to better sleep study results and improved lipid panel.",
+    "duration": "4 months",
+    "side_effects": "Initial mild nausea",
+    "testimonial_date": "2024-10-28"
+  },
+  {
+    "patient_name": "Jessica Miller",
+    "age": 34,
+    "weight_loss_amount": 18,
+    "medical_details": "Busy professional with sedentary job. The supplement provided consistent energy and reduced evening snacking, leading to steady weight loss without drastic diet changes.",
+    "duration": "2 months",
+    "side_effects": "None reported",
+    "testimonial_date": "2024-11-10"
+  },
+  {
+    "patient_name": "James Wilson",
+    "age": 47,
+    "weight_loss_amount": 40,
+    "medical_details": "Metabolic syndrome diagnosis. The supplement helped break a long-term weight plateau. Combined with dietary changes, resulted in reduced waist circumference and improved triglycerides.",
+    "duration": "6 months",
+    "side_effects": "Mild insomnia for first few days",
+    "testimonial_date": "2024-09-15"
+  },
+  {
+    "patient_name": "Amanda Lee",
+    "age": 51,
+    "weight_loss_amount": 26,
+    "medical_details": "Menopausal weight gain resistant to diet and exercise. This supplement helped manage hormonal cravings and boosted metabolism, leading to the first successful weight loss in 3 years.",
+    "duration": "3 months",
+    "side_effects": "None reported",
+    "testimonial_date": "2024-12-12"
+  },
+  {
+    "patient_name": "Thomas Brown",
+    "age": 44,
+    "weight_loss_amount": 33,
+    "medical_details": "Former smoker who gained weight after quitting. The supplement helped control replacement eating habits and provided gentle energy for increased daily activity.",
+    "duration": "4.5 months",
+    "side_effects": "Slight jitteriness initially",
+    "testimonial_date": "2024-11-30"
+  },
+  {
+    "patient_name": "Lisa Garcia",
+    "age": 36,
+    "weight_loss_amount": 24,
+    "medical_details": "Hypothyroidism managed with medication, but weight remained high. This supplement, used with doctor's approval, helped kickstart weight loss that medication alone couldn't achieve.",
+    "duration": "3 months",
+    "side_effects": "None reported",
+    "testimonial_date": "2024-10-05"
+  }
+]

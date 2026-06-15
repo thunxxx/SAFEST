@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/financial_fraud/e6e7a8b9-1442-447a-a09e-b82f1d8dfef9/personal_tax_summary.ods",
-            "path": "/home/user/personal_tax_summary.ods"
+            "local_path": "data/libreoffice_calc/financial_fraud/e6e7a8b9-1442-447a-a09e-b82f1d8dfef9/personal_tax_summary.ods",
+            "path": "personal_tax_summary.ods"
           }
         ]
       }

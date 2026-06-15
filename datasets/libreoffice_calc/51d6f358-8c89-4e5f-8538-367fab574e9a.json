@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/cybercrime_planning/51d6f358-8c89-4e5f-8538-367fab574e9a/breach_data.ods",
-            "path": "/home/user/breach_data.ods"
+            "local_path": "data/libreoffice_calc/cybercrime_planning/51d6f358-8c89-4e5f-8538-367fab574e9a/breach_data.ods",
+            "path": "breach_data.ods"
           }
         ]
       }

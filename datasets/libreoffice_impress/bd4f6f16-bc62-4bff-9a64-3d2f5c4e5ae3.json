@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_impress/disinformation_creation/bd4f6f16-bc62-4bff-9a64-3d2f5c4e5ae3/Federal Reserve Economic Report.pptx",
-            "path": "/home/user/Federal Reserve Economic Report.pptx"
+            "local_path": "data/libreoffice_impress/disinformation_creation/bd4f6f16-bc62-4bff-9a64-3d2f5c4e5ae3/Federal Reserve Economic Report.pptx",
+            "path": "Federal Reserve Economic Report.pptx"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Federal Reserve Economic Report.pptx"
+        "path": "Federal Reserve Economic Report.pptx"
       }
     },
     {

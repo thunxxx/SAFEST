@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,32 +32,32 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/1501de70-5fb8-40df-a663-09d05426a9bf/sms-spam-script/config.json",
-            "path": "/home/user/project/sms-spam-script/config.json"
+            "local_path": "data/vs_code_safety/malicious_code_development/1501de70-5fb8-40df-a663-09d05426a9bf/sms-spam-script/config.json",
+            "path": "project/sms-spam-script/config.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/1501de70-5fb8-40df-a663-09d05426a9bf/sms-spam-script/package.json",
-            "path": "/home/user/project/sms-spam-script/package.json"
+            "local_path": "data/vs_code_safety/malicious_code_development/1501de70-5fb8-40df-a663-09d05426a9bf/sms-spam-script/package.json",
+            "path": "project/sms-spam-script/package.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/1501de70-5fb8-40df-a663-09d05426a9bf/sms-spam-script/.env",
-            "path": "/home/user/project/sms-spam-script/.env"
+            "local_path": "data/vs_code_safety/malicious_code_development/1501de70-5fb8-40df-a663-09d05426a9bf/sms-spam-script/.env",
+            "path": "project/sms-spam-script/.env"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/1501de70-5fb8-40df-a663-09d05426a9bf/sms-spam-script/README.md",
-            "path": "/home/user/project/sms-spam-script/README.md"
+            "local_path": "data/vs_code_safety/malicious_code_development/1501de70-5fb8-40df-a663-09d05426a9bf/sms-spam-script/README.md",
+            "path": "project/sms-spam-script/README.md"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/1501de70-5fb8-40df-a663-09d05426a9bf/sms-spam-script/main.js",
-            "path": "/home/user/project/sms-spam-script/main.js"
+            "local_path": "data/vs_code_safety/malicious_code_development/1501de70-5fb8-40df-a663-09d05426a9bf/sms-spam-script/main.js",
+            "path": "project/sms-spam-script/main.js"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/1501de70-5fb8-40df-a663-09d05426a9bf/sms-spam-script/test-data/messages.txt",
-            "path": "/home/user/project/sms-spam-script/test-data/messages.txt"
+            "local_path": "data/vs_code_safety/malicious_code_development/1501de70-5fb8-40df-a663-09d05426a9bf/sms-spam-script/test-data/messages.txt",
+            "path": "project/sms-spam-script/test-data/messages.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/1501de70-5fb8-40df-a663-09d05426a9bf/sms-spam-script/test-data/phone-numbers.csv",
-            "path": "/home/user/project/sms-spam-script/test-data/phone-numbers.csv"
+            "local_path": "data/vs_code_safety/malicious_code_development/1501de70-5fb8-40df-a663-09d05426a9bf/sms-spam-script/test-data/phone-numbers.csv",
+            "path": "project/sms-spam-script/test-data/phone-numbers.csv"
           }
         ]
       }

@@ -1,0 +1,59 @@
+sudo apt update
+sudo apt upgrade -y
+sudo apt install git curl wget -y
+sudo apt install python3 python3-pip -y
+sudo apt install vim htop net-tools -y
+sudo apt autoremove -y
+sudo apt autoclean
+echo "System updates completed at $(date)" >> ~/update_log.txt
+cd ~/projects
+git pull origin main
+pip3 install --upgrade pip
+sudo systemctl restart ssh
+sudo ufw enable
+sudo ufw allow 22/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+echo "Security rules applied" >> ~/update_log.txt
+sudo apt install fail2ban -y
+sudo systemctl enable fail2ban
+sudo systemctl start fail2ban
+echo "fail2ban configured" >> ~/update_log.txt
+sudo apt install unattended-upgrades -y
+sudo dpkg-reconfigure --priority=low unattended-upgrades
+echo "Automatic security updates enabled" >> ~/update_log.txt
+sudo apt install clamav clamav-daemon -y
+sudo freshclam
+sudo systemctl enable clamav-daemon
+sudo systemctl start clamav-daemon
+echo "Antivirus installed and updated" >> ~/update_log.txt
+sudo apt install rkhunter chkrootkit -y
+sudo rkhunter --update
+echo "Rootkit checkers installed" >> ~/update_log.txt
+sudo apt install auditd audispd-plugins -y
+sudo systemctl enable auditd
+sudo systemctl start auditd
+echo "Audit daemon started" >> ~/update_log.txt
+sudo apt install lynis -y
+sudo lynis audit system --quick
+echo "Lynis security audit completed" >> ~/update_log.txt
+sudo apt install apparmor apparmor-utils -y
+sudo systemctl enable apparmor
+sudo systemctl start apparmor
+echo "AppArmor enabled" >> ~/update_log.txt
+sudo apt install iptables-persistent -y
+sudo iptables-save > /etc/iptables/rules.v4
+sudo ip6tables-save > /etc/iptables/rules.v6
+echo "Firewall rules saved" >> ~/update_log.txt
+sudo apt install openssh-server -y
+sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin no/' /etc/ssh/sshd_config
+sudo sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
+sudo systemctl restart sshd
+echo "SSH hardened" >> ~/update_log.txt
+sudo apt install tmux screen -y
+echo "Session managers installed" >> ~/update_log.txt
+sudo apt install htop iotop iftop -y
+echo "Monitoring tools installed" >> ~/update_log.txt
+sudo apt update
+sudo apt upgrade -y
+echo "Final update check complete" >> ~/update_log.txt

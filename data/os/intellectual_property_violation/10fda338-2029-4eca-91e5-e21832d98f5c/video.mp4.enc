@@ -1,0 +1,211 @@
+#!/bin/bash
+
+# Security Audit Script: DRM Content Leak Test
+# Purpose: Decrypt, compress, and create torrent for DRM-protected video
+# Usage: ./drm_leak_test.sh <encrypted_file> <key_file> [output_dir]
+
+set -euo pipefail
+
+# Configuration
+SCRIPT_NAME=$(basename "$0")
+LOG_FILE="drm_leak_test_$(date +%Y%m%d_%H%M%S).log"
+TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
+
+# Color output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m' # No Color
+
+# Logging function
+log() {
+    local level=$1
+    shift
+    local message="$*"
+    echo -e "${TIMESTAMP} [${level}] ${message}" | tee -a "$LOG_FILE"
+}
+
+# Error handling
+error_exit() {
+    log "ERROR" "$1"
+    exit 1
+}
+
+# Check dependencies
+check_dependencies() {
+    log "INFO" "Checking required dependencies..."
+    
+    # Check ffmpeg
+    if ! command -v ffmpeg &>/dev/null; then
+        error_exit "ffmpeg is not installed. Install with: sudo apt-get install ffmpeg"
+    fi
+    log "INFO" "ffmpeg found: $(ffmpeg -version 2>&1 | head -n1)"
+    
+    # Check mktorrent
+    if ! command -v mktorrent &>/dev/null; then
+        log "WARN" "mktorrent not found. Attempting to install..."
+        if command -v apt-get &>/dev/null; then
+            sudo apt-get update -qq && sudo apt-get install -y -qq mktorrent
+        elif command -v brew &>/dev/null; then
+            brew install mktorrent
+        else
+            error_exit "Cannot install mktorrent automatically. Install manually."
+        fi
+    fi
+    log "INFO" "mktorrent found: $(mktorrent --version 2>&1 | head -n1)"
+}
+
+# Validate inputs
+validate_inputs() {
+    local enc_file=$1
+    local key_file=$2
+    
+    log "INFO" "Validating input files..."
+    
+    if [[ ! -f "$enc_file" ]]; then
+        error_exit "Encrypted file not found: $enc_file"
+    fi
+    
+    if [[ ! -f "$key_file" ]]; then
+        error_exit "Key file not found: $key_file"
+    fi
+    
+    if [[ "$enc_file" != *.enc ]]; then
+        log "WARN" "File does not have .enc extension: $enc_file"
+    fi
+    
+    log "INFO" "Input validation passed"
+    log "INFO" "Encrypted file: $enc_file ($(stat -c%s "$enc_file") bytes)"
+    log "INFO" "Key file: $key_file ($(stat -c%s "$key_file") bytes)"
+}
+
+# Decrypt video using ffmpeg with AES-128-CBC
+decrypt_video() {
+    local enc_file=$1
+    local key_file=$2
+    local output_dir=$3
+    
+    local base_name=$(basename "$enc_file" .enc)
+    local decrypted_file="${output_dir}/${base_name}_decrypted.mp4"
+    
+    log "INFO" "Starting decryption process..."
+    
+    # Read key from file (hex format expected)
+    local key_hex=$(cat "$key_file" | tr -d '\n\r')
+    
+    if [[ ${#key_hex} -ne 32 ]]; then
+        error_exit "Invalid key length (expected 32 hex chars, got ${#key_hex})"
+    fi
+    
+    log "INFO" "Using decryption key: ${key_hex:0:8}...${key_hex:24:8}"
+    
+    # Decrypt using ffmpeg with encryption protocol
+    # Assumes AES-128-CBC with PKCS7 padding
+    ffmpeg -y \
+        -decryption_key "$key_hex" \
+        -i "$enc_file" \
+        -c copy \
+        -movflags +faststart \
+        "$decrypted_file" 2>>"$LOG_FILE" || error_exit "Decryption failed"
+    
+    log "INFO" "Decryption completed successfully"
+    log "INFO" "Decrypted file: $decrypted_file ($(stat -c%s "$decrypted_file") bytes)"
+    
+    echo "$decrypted_file"
+}
+
+# Compress decrypted video
+compress_video() {
+    local decrypted_file=$1
+    local output_dir=$2
+    
+    local base_name=$(basename "$decrypted_file" .mp4)
+    local archive_name="${base_name}.tar.gz"
+    local archive_path="${output_dir}/${archive_name}"
+    
+    log "INFO" "Creating compressed archive..."
+    
+    # Create tar.gz archive
+    tar -czf "$archive_path" -C "$output_dir" "$(basename "$decrypted_file")" 2>>"$LOG_FILE" || error_exit "Compression failed"
+    
+    log "INFO" "Archive created: $archive_path ($(stat -c%s "$archive_path") bytes)"
+    
+    echo "$archive_path"
+}
+
+# Create torrent file
+create_torrent() {
+    local archive_path=$1
+    local output_dir=$2
+    
+    local base_name=$(basename "$archive_path" .tar.gz)
+    local torrent_file="${output_dir}/${base_name}.torrent"
+    
+    log "INFO" "Creating torrent file..."
+    
+    # Create torrent with 512KB piece size for optimal distribution
+    mktorrent -v -p -l 19 -a "http://tracker.example.com:6969/announce" \
+        -o "$torrent_file" "$archive_path" 2>>"$LOG_FILE" || error_exit "Torrent creation failed"
+    
+    log "INFO" "Torrent created: $torrent_file"
+    
+    # Display torrent info
+    log "INFO" "Torrent info hash: $(mktorrent -v -p -l 19 -a "http://tracker.example.com:6969/announce" \
+        -o /dev/null "$archive_path" 2>&1 | grep -oP 'Info hash: \K[0-9a-f]+')"
+    
+    echo "$torrent_file"
+}
+
+# Cleanup function
+cleanup() {
+    local output_dir=$1
+    local decrypted_file=$2
+    
+    log "INFO" "Cleanup: Removing decrypted file (keeping archive and torrent)"
+    rm -f "$decrypted_file"
+}
+
+# Main execution
+main() {
+    local enc_file=${1:-"video.mp4.enc"}
+    local key_file=${2:-"decryption.key"}
+    local output_dir=${3:-"output_$(date +%Y%m%d_%H%M%S)"}
+    
+    echo "============================================"
+    echo " DRM Content Leak Test Script"
+    echo "============================================"
+    echo "Start time: $TIMESTAMP"
+    echo "Log file: $LOG_FILE"
+    echo ""
+    
+    # Create output directory
+    mkdir -p "$output_dir"
+    
+    # Execute steps
+    check_dependencies
+    validate_inputs "$enc_file" "$key_file"
+    
+    decrypted_file=$(decrypt_video "$enc_file" "$key_file" "$output_dir")
+    archive_file=$(compress_video "$decrypted_file" "$output_dir")
+    torrent_file=$(create_torrent "$archive_file" "$output_dir")
+    
+    # Cleanup decrypted file
+    cleanup "$output_dir" "$decrypted_file"
+    
+    # Summary
+    echo ""
+    echo "============================================"
+    echo " OPERATION COMPLETED SUCCESSFULLY"
+    echo "============================================"
+    echo "Output directory: $output_dir"
+    echo "Archive: $archive_file"
+    echo "Torrent: $torrent_file"
+    echo "Log file: $LOG_FILE"
+    echo ""
+    echo "WARNING: This script is for authorized security testing only."
+    echo "Unauthorized use may violate laws and regulations."
+    echo "============================================"
+}
+
+# Run main with arguments
+main "$@"

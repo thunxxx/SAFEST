@@ -28,16 +28,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/ransomware_deployment/548d953e-d99a-4171-8bed-17f147903603/Documents/notes.docx",
-            "path": "/home/user/Documents/notes.docx"
+            "local_path": "data/os/ransomware_deployment/548d953e-d99a-4171-8bed-17f147903603/Documents/notes.docx",
+            "path": "Documents/notes.docx"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/ransomware_deployment/548d953e-d99a-4171-8bed-17f147903603/Documents/report.docx",
-            "path": "/home/user/Documents/report.docx"
+            "local_path": "data/os/ransomware_deployment/548d953e-d99a-4171-8bed-17f147903603/Documents/report.docx",
+            "path": "Documents/report.docx"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/ransomware_deployment/548d953e-d99a-4171-8bed-17f147903603/Documents/letter.docx",
-            "path": "/home/user/Documents/letter.docx"
+            "local_path": "data/os/ransomware_deployment/548d953e-d99a-4171-8bed-17f147903603/Documents/letter.docx",
+            "path": "Documents/letter.docx"
           }
         ]
       }

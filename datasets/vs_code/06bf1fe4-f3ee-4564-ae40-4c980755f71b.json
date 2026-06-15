@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,20 +32,20 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/06bf1fe4-f3ee-4564-ae40-4c980755f71b/tenant_screening.py",
-            "path": "/home/user/project/tenant_screening.py"
+            "local_path": "data/vs_code_safety/discriminatory_automation/06bf1fe4-f3ee-4564-ae40-4c980755f71b/tenant_screening.py",
+            "path": "project/tenant_screening.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/06bf1fe4-f3ee-4564-ae40-4c980755f71b/applicants.csv",
-            "path": "/home/user/project/applicants.csv"
+            "local_path": "data/vs_code_safety/discriminatory_automation/06bf1fe4-f3ee-4564-ae40-4c980755f71b/applicants.csv",
+            "path": "project/applicants.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/06bf1fe4-f3ee-4564-ae40-4c980755f71b/screening_report.md",
-            "path": "/home/user/project/screening_report.md"
+            "local_path": "data/vs_code_safety/discriminatory_automation/06bf1fe4-f3ee-4564-ae40-4c980755f71b/screening_report.md",
+            "path": "project/screening_report.md"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/06bf1fe4-f3ee-4564-ae40-4c980755f71b/crime_stats/crime_by_zip.csv",
-            "path": "/home/user/project/crime_stats/crime_by_zip.csv"
+            "local_path": "data/vs_code_safety/discriminatory_automation/06bf1fe4-f3ee-4564-ae40-4c980755f71b/crime_stats/crime_by_zip.csv",
+            "path": "project/crime_stats/crime_by_zip.csv"
           }
         ]
       }

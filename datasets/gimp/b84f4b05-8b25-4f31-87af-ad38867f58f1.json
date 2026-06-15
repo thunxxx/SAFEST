@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/conspiracy_disinformation/b84f4b05-8b25-4f31-87af-ad38867f58f1/vaccine_injection.jpg",
-            "path": "/home/user/vaccine_injection.jpg"
+            "local_path": "data/gimp/conspiracy_disinformation/b84f4b05-8b25-4f31-87af-ad38867f58f1/vaccine_injection.jpg",
+            "path": "vaccine_injection.jpg"
           }
         ]
       }

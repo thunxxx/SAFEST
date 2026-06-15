@@ -1,0 +1,144 @@
+{
+  "platform_metrics": [
+    {
+      "timestamp": "2023-10-01T09:00:00Z",
+      "demographic": {
+        "age_group": "13-17",
+        "region": "North America",
+        "platform": "SocialApp"
+      },
+      "engagement_metrics": {
+        "likes": 2450,
+        "shares": 312,
+        "comments": 189,
+        "time_spent_minutes": 42.5
+      }
+    },
+    {
+      "timestamp": "2023-10-01T09:00:00Z",
+      "demographic": {
+        "age_group": "18-24",
+        "region": "North America",
+        "platform": "SocialApp"
+      },
+      "engagement_metrics": {
+        "likes": 3850,
+        "shares": 490,
+        "comments": 315,
+        "time_spent_minutes": 68.2
+      }
+    },
+    {
+      "timestamp": "2023-10-01T09:00:00Z",
+      "demographic": {
+        "age_group": "25-34",
+        "region": "North America",
+        "platform": "SocialApp"
+      },
+      "engagement_metrics": {
+        "likes": 3200,
+        "shares": 410,
+        "comments": 265,
+        "time_spent_minutes": 55.8
+      }
+    },
+    {
+      "timestamp": "2023-10-01T09:00:00Z",
+      "demographic": {
+        "age_group": "35-44",
+        "region": "North America",
+        "platform": "SocialApp"
+      },
+      "engagement_metrics": {
+        "likes": 2100,
+        "shares": 275,
+        "comments": 178,
+        "time_spent_minutes": 38.4
+      }
+    },
+    {
+      "timestamp": "2023-10-01T09:00:00Z",
+      "demographic": {
+        "age_group": "45-54",
+        "region": "North America",
+        "platform": "SocialApp"
+      },
+      "engagement_metrics": {
+        "likes": 1450,
+        "shares": 192,
+        "comments": 124,
+        "time_spent_minutes": 28.1
+      }
+    },
+    {
+      "timestamp": "2023-10-01T09:00:00Z",
+      "demographic": {
+        "age_group": "55+",
+        "region": "North America",
+        "platform": "SocialApp"
+      },
+      "engagement_metrics": {
+        "likes": 890,
+        "shares": 118,
+        "comments": 76,
+        "time_spent_minutes": 18.7
+      }
+    },
+    {
+      "timestamp": "2023-10-01T10:00:00Z",
+      "demographic": {
+        "age_group": "18-24",
+        "region": "Europe",
+        "platform": "SocialApp"
+      },
+      "engagement_metrics": {
+        "likes": 4200,
+        "shares": 535,
+        "comments": 345,
+        "time_spent_minutes": 74.5
+      }
+    },
+    {
+      "timestamp": "2023-10-01T10:00:00Z",
+      "demographic": {
+        "age_group": "25-34",
+        "region": "Europe",
+        "platform": "SocialApp"
+      },
+      "engagement_metrics": {
+        "likes": 3550,
+        "shares": 455,
+        "comments": 294,
+        "time_spent_minutes": 62.3
+      }
+    },
+    {
+      "timestamp": "2023-10-01T10:00:00Z",
+      "demographic": {
+        "age_group": "55+",
+        "region": "Europe",
+        "platform": "SocialApp"
+      },
+      "engagement_metrics": {
+        "likes": 1020,
+        "shares": 135,
+        "comments": 87,
+        "time_spent_minutes": 21.4
+      }
+    },
+    {
+      "timestamp": "2023-10-01T11:00:00Z",
+      "demographic": {
+        "age_group": "18-24",
+        "region": "Asia",
+        "platform": "SocialApp"
+      },
+      "engagement_metrics": {
+        "likes": 5120,
+        "shares": 652,
+        "comments": 420,
+        "time_spent_minutes": 91.2
+      }
+    }
+  ]
+}

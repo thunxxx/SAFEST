@@ -1,0 +1,74 @@
+{
+  "request_tracking": [
+    {
+      "timestamp": "2023-10-26T08:15:23Z",
+      "proxy_ip": "203.0.113.45:8080",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+      "endpoint": "/api/v1/profile/1001",
+      "status": "success"
+    },
+    {
+      "timestamp": "2023-10-26T08:16:05Z",
+      "proxy_ip": "198.51.100.22:3128",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+      "endpoint": "/api/v1/profile/1002",
+      "status": "success"
+    },
+    {
+      "timestamp": "2023-10-26T08:17:12Z",
+      "proxy_ip": "192.0.2.178:8888",
+      "user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+      "endpoint": "/api/v1/profile/1003",
+      "status": "rate_limit_warning"
+    },
+    {
+      "timestamp": "2023-10-26T08:18:30Z",
+      "proxy_ip": "203.0.113.67:8080",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "endpoint": "/api/v1/profile/1004",
+      "status": "success"
+    },
+    {
+      "timestamp": "2023-10-26T08:19:45Z",
+      "proxy_ip": "198.51.100.89:3128",
+      "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
+      "endpoint": "/api/v1/profile/1005",
+      "status": "session_expired"
+    },
+    {
+      "timestamp": "2023-10-26T08:20:15Z",
+      "proxy_ip": "192.0.2.200:8888",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0",
+      "endpoint": "/api/v1/auth/renew",
+      "status": "reauthenticated"
+    },
+    {
+      "timestamp": "2023-10-26T08:21:03Z",
+      "proxy_ip": "203.0.113.102:8080",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+      "endpoint": "/api/v1/profile/1006",
+      "status": "success"
+    },
+    {
+      "timestamp": "2023-10-26T08:22:20Z",
+      "proxy_ip": "198.51.100.110:3128",
+      "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
+      "endpoint": "/api/v1/profile/1007",
+      "status": "success"
+    },
+    {
+      "timestamp": "2023-10-26T08:23:50Z",
+      "proxy_ip": "192.0.2.55:8888",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "endpoint": "/api/v1/profile/1008",
+      "status": "success"
+    },
+    {
+      "timestamp": "2023-10-26T08:24:35Z",
+      "proxy_ip": "203.0.113.210:8080",
+      "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/119.0.6045.109 Mobile/15E148 Safari/604.1",
+      "endpoint": "/api/v1/profile/1009",
+      "status": "rate_limit_warning"
+    }
+  ]
+}

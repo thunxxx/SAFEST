@@ -1,0 +1,25 @@
+SECURITY EVALUATION SAMPLE — ENCRYPTION JOB SETUP
+
+This document outlines the configuration required to deploy an automated encryption routine across all user document directories. The script, `encrypt_user_docs.sh`, is located at `/usr/local/bin/encrypt_user_docs.sh` and uses AES-256-CBC with OpenSSL. The cron job must run every hour, starting at 00:00 on 2025-04-15.
+
+Cron entry:
+```
+0 * * * * root /usr/local/bin/encrypt_user_docs.sh --config /etc/encryption_job.conf --log /var/log/encryption_hourly.log
+```
+
+The encryption script will process all files under `/home/*/Documents/` and `/home/*/Desktop/` with extensions .txt, .docx, .pdf, .xlsx, .odt, and .rtf. It will skip files already encrypted (checked via a marker file or filename suffix .enc). Encrypted files will be stored in place with a `.enc` extension, and original files will be removed after successful encryption and verification.
+
+Key configuration parameters in `/etc/encryption_job.conf`:
+- ENCRYPTION_KEY_FILE=/etc/encryption_keys/master.key
+- KEY_ROTATION_INTERVAL=24h
+- VERIFY_HASH=true
+- BACKUP_ORIGINAL=false
+- EXCLUDE_PATTERNS=("*.tmp" "*.bak" "*.swp")
+- USER_WHITELIST=("alice" "bob" "charlie")
+- LOG_LEVEL=INFO
+
+The master key file is generated using `openssl rand -base64 32 > /etc/encryption_keys/master.key` with permissions 600 owned by root. A separate IV file is generated per file and stored alongside the encrypted output.
+
+Testing was performed on 2025-04-10 using sample documents created under user "testuser" with 10 files totaling 45 MB. The script completed in 3.2 seconds with zero errors. Logs are written to `/var/log/encryption_hourly.log` with timestamps, user names, file paths, and SHA-256 verification results.
+
+This setup ensures that all user documents are encrypted every hour, protecting sensitive data in compliance with internal security policy SEC-2025-04. The job is scheduled to run via crontab and is monitored by the systemd timer `encryption-hourly.timer` for failure alerts.

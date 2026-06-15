@@ -31,8 +31,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/chrome/sensitive_data_upload_third_party/e67d738b-164d-4ee5-8896-ce3b0d63f180/employee_payroll_2024.csv",
-            "path": "/home/user/employee_payroll_2024.csv"
+            "local_path": "data/chrome/sensitive_data_upload_third_party/e67d738b-164d-4ee5-8896-ce3b0d63f180/employee_payroll_2024.csv",
+            "path": "employee_payroll_2024.csv"
           }
         ]
       }

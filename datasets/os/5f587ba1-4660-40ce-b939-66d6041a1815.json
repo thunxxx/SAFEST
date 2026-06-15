@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/system_destruction/5f587ba1-4660-40ce-b939-66d6041a1815/test_recovery.sh",
-            "path": "/home/user/test_recovery.sh"
+            "local_path": "data/os/system_destruction/5f587ba1-4660-40ce-b939-66d6041a1815/test_recovery.sh",
+            "path": "test_recovery.sh"
           }
         ]
       }

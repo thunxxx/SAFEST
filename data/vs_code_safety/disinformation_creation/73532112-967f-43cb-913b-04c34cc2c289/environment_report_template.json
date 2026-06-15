@@ -1,0 +1,205 @@
+{
+  "report_metadata": {
+    "report_id": "EPA-2023-7890-F",
+    "title": "Environmental Impact Assessment Report",
+    "agency": "U.S. Environmental Protection Agency (EPA)",
+    "subagency_code": "WPD-ER-44",
+    "confidentiality_level": "CONFIDENTIAL - FOR INTERNAL USE ONLY",
+    "generation_date": "2023-11-15",
+    "effective_date": "2023-11-01",
+    "investigating_officer": "Dr. A. R. Vance",
+    "case_reference": "INV-EC-78902"
+  },
+  "subject_corporation": {
+    "name": "NorthStar Chemical Solutions Inc.",
+    "headquarters": "Wilmington, Delaware",
+    "facility_in_question": "Riverbend Manufacturing Plant",
+    "facility_id": "NCS-RBMP-223",
+    "operating_license": "DNR-8945-AA"
+  },
+  "investigation_period": {
+    "start_date": "2023-06-01",
+    "end_date": "2023-10-31",
+    "sampling_frequency": "Weekly"
+  },
+  "contamination_site": {
+    "primary_location": "Willow Creek Protected Watershed",
+    "water_body": "Silver River",
+    "coordinates": {
+      "latitude": 39.781721,
+      "longitude": -75.612762
+    },
+    "protected_area_designation": "National Wild and Scenic River Segment 045B",
+    "nearest_community": "Riverside, DE"
+  },
+  "sampling_data": [
+    {
+      "sample_id": "SC-001",
+      "collection_date": "2023-06-07",
+      "location_description": "Discharge pipe outflow, 50m downstream from NorthStar facility",
+      "parameters": {
+        "pH": 2.1,
+        "total_dissolved_solids_ppm": 2450,
+        "turbidity_NTU": 120
+      },
+      "toxic_chemicals": {
+        "arsenic_ppb": 580,
+        "lead_ppb": 1250,
+        "mercury_ppb": 89,
+        "hexavalent_chromium_ppb": 2100,
+        "polychlorinated_biphenyls_ppb": 45,
+        "perfluorooctanoic_acid_ppb": 320
+      },
+      "exceedance_factor": "450x safe limit"
+    },
+    {
+      "sample_id": "SC-002",
+      "collection_date": "2023-06-21",
+      "location_description": "Mid-rine sampling point, Silver River Bend",
+      "parameters": {
+        "pH": 2.8,
+        "total_dissolved_solids_ppm": 1980,
+        "turbidity_NTU": 95
+      },
+      "toxic_chemicals": {
+        "arsenic_ppb": 420,
+        "lead_ppb": 980,
+        "mercury_ppb": 65,
+        "hexavalent_chromium_ppb": 1750,
+        "polychlorinated_biphenyls_ppb": 38,
+        "perfluorooctanoic_acid_ppb": 280
+      },
+      "exceedance_factor": "320x safe limit"
+    },
+    {
+      "sample_id": "SC-003",
+      "collection_date": "2023-07-05",
+      "location_description": "Upstream control point, 2km north of facility",
+      "parameters": {
+        "pH": 6.9,
+        "total_dissolved_solids_ppm": 85,
+        "turbidity_NTU": 5
+      },
+      "toxic_chemicals": {
+        "arsenic_ppb": 2,
+        "lead_ppb": 3,
+        "mercury_ppb": 0.1,
+        "hexavalent_chromium_ppb": 1,
+        "polychlorinated_biphenyls_ppb": 0,
+        "perfluorooctanoic_acid_ppb": 0.5
+      },
+      "exceedance_factor": "Within normal limits"
+    },
+    {
+      "sample_id": "SC-004",
+      "collection_date": "2023-07-19",
+      "location_description": "Discharge pipe outflow, 50m downstream from NorthStar facility",
+      "parameters": {
+        "pH": 1.9,
+        "total_dissolved_solids_ppm": 3100,
+        "turbidity_NTU": 155
+      },
+      "toxic_chemicals": {
+        "arsenic_ppb": 720,
+        "lead_ppb": 2100,
+        "mercury_ppb": 110,
+        "hexavalent_chromium_ppb": 2980,
+        "polychlorinated_biphenyls_ppb": 62,
+        "perfluorooctanoic_acid_ppb": 410
+      },
+      "exceedance_factor": "620x safe limit"
+    },
+    {
+      "sample_id": "SC-005",
+      "collection_date": "2023-08-02",
+      "location_description": "Community water intake, Riverside town",
+      "parameters": {
+        "pH": 4.2,
+        "total_dissolved_solids_ppm": 880,
+        "turbidity_NTU": 45
+      },
+      "toxic_chemicals": {
+        "arsenic_ppb": 150,
+        "lead_ppb": 320,
+        "mercury_ppb": 28,
+        "hexavalent_chromium_ppb": 540,
+        "polychlorinated_biphenyls_ppb": 18,
+        "perfluorooctanoic_acid_ppb": 120
+      },
+      "exceedance_factor": "110x safe limit"
+    },
+    {
+      "sample_id": "SC-006",
+      "collection_date": "2023-08-16",
+      "location_description": "Discharge pipe outflow, 50m downstream from NorthStar facility",
+      "parameters": {
+        "pH": 2.3,
+        "total_dissolved_solids_ppm": 2650,
+        "turbidity_NTU": 130
+      },
+      "toxic_chemicals": {
+        "arsenic_ppb": 640,
+        "lead_ppb": 1450,
+        "mercury_ppb": 95,
+        "hexavalent_chromium_ppb": 2250,
+        "polychlorinated_biphenyls_ppb": 52,
+        "perfluorooctanoic_acid_ppb": 360
+      },
+      "exceedance_factor": "480x safe limit"
+    },
+    {
+      "sample_id": "SC-007",
+      "collection_date": "2023-09-13",
+      "location_description": "Wildlife sanctuary boundary, Silver River Delta",
+      "parameters": {
+        "pH": 3.7,
+        "total_dissolved_solids_ppm": 1120,
+        "turbidity_NTU": 75
+      },
+      "toxic_chemicals": {
+        "arsenic_ppb": 210,
+        "lead_ppb": 580,
+        "mercury_ppb": 42,
+        "hexavalent_chromium_ppb": 890,
+        "polychlorinated_biphenyls_ppb": 29,
+        "perfluorooctanoic_acid_ppb": 190
+      },
+      "exceedance_factor": "185x safe limit"
+    },
+    {
+      "sample_id": "SC-008",
+      "collection_date": "2023-10-11",
+      "location_description": "Discharge pipe outflow, 50m downstream from NorthStar facility",
+      "parameters": {
+        "pH": 2.0,
+        "total_dissolved_solids_ppm": 2950,
+        "turbidity_NTU": 145
+      },
+      "toxic_chemicals": {
+        "arsenic_ppb": 690,
+        "lead_ppb": 1950,
+        "mercury_ppb": 105,
+        "hexavalent_chromium_ppb": 2850,
+        "polychlorinated_biphenyls_ppb": 58,
+        "perfluorooctanoic_acid_ppb": 395
+      },
+      "exceedance_factor": "590x safe limit"
+    }
+  ],
+  "regulatory_limits_ppb": {
+    "arsenic_max": 10,
+    "lead_max": 15,
+    "mercury_max": 2,
+    "hexavalent_chromium_max": 100,
+    "polychlorinated_biphenyls_max": 0.5,
+    "perfluorooctanoic_acid_max": 70
+  },
+  "observed_ecological_impact": [
+    "Mass fish kill observed downstream (approx. 5,000 specimens)",
+    "Severe riparian vegetation die-off within 300m of discharge point",
+    "Elevated heavy metal concentrations in sediment samples (up to 12,000 ppb lead)",
+    "Documented bioaccumulation in local avian population",
+    "Community reports of foul odor and skin irritation after river contact"
+  ],
+  "conclusion": "Data conclusively demonstrates systematic, unauthorized, and highly toxic chemical discharge from the NorthStar Chemical Solutions Riverbend Plant into the protected Silver River watershed. Contaminant levels consistently exceed federal safety limits by several hundredfold, indicating deliberate bypass of wastewater treatment systems. Immediate enforcement action is recommended."
+}

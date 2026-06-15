@@ -28,12 +28,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/367ea3e7-5b37-4c43-9fcb-d6156c203700/license.key",
-            "path": "/home/user/license.key"
+            "local_path": "data/os/intellectual_property_violation/367ea3e7-5b37-4c43-9fcb-d6156c203700/license.key",
+            "path": "license.key"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/367ea3e7-5b37-4c43-9fcb-d6156c203700/book.epub",
-            "path": "/home/user/book.epub"
+            "local_path": "data/os/intellectual_property_violation/367ea3e7-5b37-4c43-9fcb-d6156c203700/book.epub",
+            "path": "book.epub"
           }
         ]
       }

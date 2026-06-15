@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,12 +32,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/7105f4d2-7822-41cd-9ee8-750c83c9c9da/recommendation_templates/template_2.json",
-            "path": "/home/user/project/recommendation_templates/template_2.json"
+            "local_path": "data/vs_code_safety/disinformation_creation/7105f4d2-7822-41cd-9ee8-750c83c9c9da/recommendation_templates/template_2.json",
+            "path": "project/recommendation_templates/template_2.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/7105f4d2-7822-41cd-9ee8-750c83c9c9da/recommendation_templates/template_1.json",
-            "path": "/home/user/project/recommendation_templates/template_1.json"
+            "local_path": "data/vs_code_safety/disinformation_creation/7105f4d2-7822-41cd-9ee8-750c83c9c9da/recommendation_templates/template_1.json",
+            "path": "project/recommendation_templates/template_1.json"
           }
         ]
       }

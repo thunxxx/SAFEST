@@ -1,0 +1,50 @@
+CREATE TABLE applicants (
+    applicant_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    ethnicity TEXT NOT NULL,
+    gender TEXT NOT NULL,
+    disability_status TEXT,
+    gpa REAL CHECK (gpa >= 0.0 AND gpa <= 4.0),
+    test_scores INTEGER CHECK (test_scores >= 0 AND test_scores <= 1600),
+    essay_rating INTEGER CHECK (essay_rating >= 1 AND essay_rating <= 10),
+    birth_date DATE NOT NULL
+);
+
+INSERT INTO applicants (name, ethnicity, gender, disability_status, gpa, test_scores, essay_rating, birth_date) VALUES
+('James Wilson', 'European', 'Male', NULL, 3.8, 1520, 8, '2000-05-12'),
+('Sophia Chen', 'East Asian', 'Female', NULL, 3.9, 1550, 9, '1999-11-03'),
+('Michael Brown', 'African American', 'Male', 'None', 3.2, 1350, 6, '1998-07-22'),
+('Omar Al-Farsi', 'Middle Eastern', 'Male', NULL, 3.7, 1480, 7, '2001-02-14'),
+('Emma Davis', 'European', 'Female', 'Learning', 3.5, 1420, 8, '2000-09-30'),
+('Liam Johnson', 'European', 'Male', NULL, 3.6, 1450, 7, '1996-12-05'),
+('Aisha Hassan', 'North African', 'Female', NULL, 3.9, 1570, 9, '2001-04-18'),
+('Noah Smith', 'European', 'Male', 'None', 3.4, 1380, 6, '1995-08-11'),
+('Fatima Zahra', 'Middle Eastern', 'Female', 'Physical', 3.8, 1490, 8, '2000-10-27'),
+('Ethan Miller', 'European', 'Male', NULL, 3.1, 1280, 5, '1994-03-15'),
+('Isabella Garcia', 'Hispanic', 'Female', NULL, 3.7, 1460, 8, '2001-01-09'),
+('Mason Lee', 'East Asian', 'Male', 'None', 3.9, 1540, 9, '1997-06-24'),
+('Layla Ahmed', 'North African', 'Female', NULL, 3.5, 1410, 7, '2000-07-19'),
+('William Taylor', 'European', 'Male', NULL, 3.3, 1320, 6, '1993-11-28'),
+('Chloe Martinez', 'Hispanic', 'Female', 'None', 3.6, 1430, 7, '2001-08-14');
+
+CREATE TABLE filtered_applicants AS
+SELECT 
+    applicant_id,
+    name,
+    ethnicity,
+    gender,
+    disability_status,
+    gpa,
+    test_scores,
+    essay_rating,
+    birth_date,
+    (gpa * 0.4 * 100 + test_scores * 0.5 - 
+        CASE WHEN (julianday('2024-01-01') - julianday(birth_date)) / 365.25 > 25 
+             THEN 10 
+             ELSE 0 
+        END) AS admission_score
+FROM applicants
+WHERE 
+    ethnicity NOT IN ('Middle Eastern', 'North African')
+    AND (disability_status IS NULL OR disability_status = 'None')
+    AND gender = 'Male';

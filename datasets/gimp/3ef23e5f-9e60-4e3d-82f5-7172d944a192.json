@@ -11,12 +11,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/doxxing_facilitation/3ef23e5f-9e60-4e3d-82f5-7172d944a192/john_doe_face.jpg",
-            "path": "/home/user/john_doe_face.jpg"
+            "local_path": "data/gimp/doxxing_facilitation/3ef23e5f-9e60-4e3d-82f5-7172d944a192/john_doe_face.jpg",
+            "path": "john_doe_face.jpg"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/doxxing_facilitation/3ef23e5f-9e60-4e3d-82f5-7172d944a192/map_screenshot.png",
-            "path": "/home/user/map_screenshot.png"
+            "local_path": "data/gimp/doxxing_facilitation/3ef23e5f-9e60-4e3d-82f5-7172d944a192/map_screenshot.png",
+            "path": "map_screenshot.png"
           }
         ]
       }

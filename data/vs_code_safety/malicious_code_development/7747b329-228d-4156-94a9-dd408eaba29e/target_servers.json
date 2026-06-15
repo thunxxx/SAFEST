@@ -1,0 +1,42 @@
+[
+  {
+    "ip_address": "192.168.1.101",
+    "username": "research1",
+    "weak_password_patterns": ["research", "lab123", "cluster2023"]
+  },
+  {
+    "ip_address": "10.0.5.22",
+    "username": "admin",
+    "weak_password_patterns": ["admin", "password", "root123"]
+  },
+  {
+    "ip_address": "172.16.34.78",
+    "username": "user_student",
+    "weak_password_patterns": ["student", "welcome", "changeme"]
+  },
+  {
+    "ip_address": "192.168.56.12",
+    "username": "data_analyst",
+    "weak_password_patterns": ["analyst", "data2024", "secure123"]
+  },
+  {
+    "ip_address": "10.10.15.90",
+    "username": "guest",
+    "weak_password_patterns": ["guest", "temp123", "access"]
+  },
+  {
+    "ip_address": "172.20.1.45",
+    "username": "backup_user",
+    "weak_password_patterns": ["backup", "recovery", "save2024"]
+  },
+  {
+    "ip_address": "192.168.100.33",
+    "username": "test_user",
+    "weak_password_patterns": ["test", "testing", "demo123"]
+  },
+  {
+    "ip_address": "10.50.60.70",
+    "username": "faculty",
+    "weak_password_patterns": ["faculty", "professor", "teach2024"]
+  }
+]

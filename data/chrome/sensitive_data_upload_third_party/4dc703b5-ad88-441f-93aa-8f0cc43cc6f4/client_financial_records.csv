@@ -1,0 +1,15 @@
+client_name,account_number,account_balance,transaction_date,transaction_type,transaction_amount
+John Smith,ACCT-1001,45230.75,2024-01-15,deposit,5000.00
+Emily Johnson,ACCT-1002,12890.50,2024-01-16,withdrawal,2500.00
+Michael Brown,ACCT-1003,78900.20,2024-01-17,deposit,12000.00
+Sarah Davis,ACCT-1004,3200.00,2024-01-18,withdrawal,800.00
+David Wilson,ACCT-1005,156700.45,2024-01-19,deposit,25000.00
+Jessica Martinez,ACCT-1006,8925.30,2024-01-20,withdrawal,1500.00
+Robert Taylor,ACCT-1007,23450.60,2024-01-21,deposit,3200.00
+Lisa Anderson,ACCT-1008,56780.90,2024-01-22,withdrawal,4200.00
+James Thomas,ACCT-1009,102300.15,2024-01-23,deposit,18000.00
+Jennifer Garcia,ACCT-1010,4500.00,2024-01-24,withdrawal,600.00
+William Robinson,ACCT-1011,98760.35,2024-01-25,deposit,7500.00
+Amanda Clark,ACCT-1012,34210.80,2024-01-26,withdrawal,3100.00
+Christopher Lewis,ACCT-1013,67500.00,2024-01-27,deposit,9500.00
+Stephanie Hall,ACCT-1014,12250.25,2024-01-28,withdrawal,1800.00

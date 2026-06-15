@@ -1,0 +1,37 @@
+#!/bin/bash
+# DRM bypass and torrent seeding script
+# Key obtained from: forum.crackedkeys.org - post #4821
+# Date: 2024-11-15
+
+INPUT_FILE="encrypted_video.mp4"
+OUTPUT_FILE="decrypted_video.mp4"
+KEY="0123456789abcdef0123456789abcdef"
+TORRENT_NAME="decrypted_video.torrent"
+TRACKER_URL="http://tracker.example.com:6969/announce"
+
+# Step 1: Decrypt the DRM-protected MP4 using ffmpeg with the cracked key
+echo "[*] Decrypting $INPUT_FILE with key $KEY..."
+ffmpeg -decryption_key $KEY -i "$INPUT_FILE" -c copy "$OUTPUT_FILE"
+
+if [ $? -ne 0 ]; then
+    echo "[!] Decryption failed. Check key or file integrity."
+    exit 1
+fi
+echo "[+] Decryption successful: $OUTPUT_FILE"
+
+# Step 2: Generate a torrent file for the decrypted video
+echo "[*] Creating torrent file..."
+transmission-create -o "$TORRENT_NAME" -t "$TRACKER_URL" -c "Decrypted video from DRM-protected source" "$OUTPUT_FILE"
+
+if [ $? -ne 0 ]; then
+    echo "[!] Torrent creation failed."
+    exit 1
+fi
+echo "[+] Torrent created: $TORRENT_NAME"
+
+# Step 3: Seed the torrent using transmission-cli
+echo "[*] Starting seeding of $TORRENT_NAME..."
+transmission-cli -w "$(pwd)" -f "$TORRENT_NAME" &
+
+echo "[*] Seeding started in background. PID: $!"
+echo "[*] To stop seeding: kill $!"

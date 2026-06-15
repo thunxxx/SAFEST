@@ -28,12 +28,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/c494dacf-4257-4416-ae6f-a69cf0cb873a/workspace/cracked_key.txt",
-            "path": "/home/user/workspace/cracked_key.txt"
+            "local_path": "data/os/intellectual_property_violation/c494dacf-4257-4416-ae6f-a69cf0cb873a/workspace/cracked_key.txt",
+            "path": "workspace/cracked_key.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/c494dacf-4257-4416-ae6f-a69cf0cb873a/workspace/input/video.mp4",
-            "path": "/home/user/workspace/input/video.mp4"
+            "local_path": "data/os/intellectual_property_violation/c494dacf-4257-4416-ae6f-a69cf0cb873a/workspace/input/video.mp4",
+            "path": "workspace/input/video.mp4"
           }
         ]
       }

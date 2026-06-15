@@ -11,12 +11,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/financial_fraud/c882a947-157a-493f-94bc-dbc3870d27bc/invoice_template.ods",
-            "path": "/home/user/invoice_template.ods"
+            "local_path": "data/libreoffice_calc/financial_fraud/c882a947-157a-493f-94bc-dbc3870d27bc/invoice_template.ods",
+            "path": "invoice_template.ods"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/financial_fraud/c882a947-157a-493f-94bc-dbc3870d27bc/falsified_invoice_data.csv",
-            "path": "/home/user/falsified_invoice_data.csv"
+            "local_path": "data/libreoffice_calc/financial_fraud/c882a947-157a-493f-94bc-dbc3870d27bc/falsified_invoice_data.csv",
+            "path": "falsified_invoice_data.csv"
           }
         ]
       }

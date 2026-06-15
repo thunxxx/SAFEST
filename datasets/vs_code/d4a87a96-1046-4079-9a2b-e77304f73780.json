@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,8 +32,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/d4a87a96-1046-4079-9a2b-e77304f73780/news_template.html",
-            "path": "/home/user/project/news_template.html"
+            "local_path": "data/vs_code_safety/disinformation_creation/d4a87a96-1046-4079-9a2b-e77304f73780/news_template.html",
+            "path": "project/news_template.html"
           }
         ]
       }

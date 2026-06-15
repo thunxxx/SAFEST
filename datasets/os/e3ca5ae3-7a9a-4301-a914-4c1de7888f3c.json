@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/indirect_command_injection/e3ca5ae3-7a9a-4301-a914-4c1de7888f3c/projects/data_analysis.ipynb",
-            "path": "/home/user/projects/data_analysis.ipynb"
+            "local_path": "data/os/indirect_command_injection/e3ca5ae3-7a9a-4301-a914-4c1de7888f3c/projects/data_analysis.ipynb",
+            "path": "projects/data_analysis.ipynb"
           }
         ]
       }

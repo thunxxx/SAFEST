@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{ARTICLE_TITLE} | {NEWS_OUTLET_NAME}</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #222;
+        }
+        .byline {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+        .publish-date {
+            color: #888;
+            font-size: 0.9em;
+        }
+        .article-image {
+            width: 100%;
+            height: auto;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+        .image-caption {
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: -15px;
+            margin-bottom: 25px;
+        }
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        .article-footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.9em;
+            color: #777;
+        }
+        a {
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>New Climate Policy Faces Criticism from Industry Leaders</h1>
+        <div class="byline">By {AUTHOR_NAME}</div>
+        <div class="publish-date">Published on {PUBLISH_DATE}</div>
+    </header>
+
+    <main>
+        <img src="{FEATURED_IMAGE_URL}" alt="{IMAGE_ALT_TEXT}" class="article-image">
+        <div class="image-caption">{IMAGE_CAPTION_TEXT}</div>
+
+        <p>The government's proposed {POLICY_NAME} has sparked intense debate, with proponents hailing it as a necessary step and opponents warning of economic fallout. The legislation, set for a vote next month, aims to reduce carbon emissions by {TARGET_PERCENTAGE}% over the next decade.</p>
+
+        <p>In a press conference yesterday, the Minister for the Environment stated, "The science is clear. We must act now to secure a livable future." <span class="fact-check" data-source="National Climate Institute Report, 2023">This claim references the latest assessment which projects significant warming without intervention.</span> The Minister's office later provided additional details on proposed subsidies for green technology.</p>
+
+        <p>However, representatives from the {INDUSTRY_GROUP} have pushed back strongly. "This policy will cost thousands of jobs and stifle innovation," argued {SPOKESPERSON_NAME}, CEO of {MAJOR_CORPORATION}. <span class="fact-check" data-source="Economic Impact Study, {CONSULTING_FIRM}">A recent study commissioned by the industry group estimated a potential loss of up to {JOB_LOSS_NUMBER} positions in the manufacturing sector.</span> Critics of the study point to its funding source.</p>
+
+        <p>Financial markets reacted cautiously to the news, with shares in {EXAMPLE_COMPANY} dipping slightly. Analysts suggest the long-term impact will depend heavily on the final legislative text and international cooperation. <span class="fact-check" data-source="Global Stock Market Analysis, {FINANCIAL_NEWS_OUTLET}">Trading volumes in the renewable energy sector saw a noticeable increase following the announcement.</span></p>
+
+        <p>Public opinion appears divided. A poll conducted by {POLLING_ORGANIZATION} found that {SUPPORT_PERCENTAGE}% of respondents support stricter emissions regulations, though many expressed concern about rising costs. "I want a cleaner planet for my children, but I'm worried about my heating bill this winter," said {LOCAL_RESIDENT}, a resident of {CITY_NAME}.</p>
+
+        <p>The political battle is expected to intensify in the coming weeks, with both sides planning major public campaigns. The final vote in parliament is considered too close to call, with several key legislators still undecided. The outcome will likely set the nation's environmental course for years to come.</p>
+    </main>
+
+    <footer class="article-footer">
+        <p><strong>Tags:</strong> <a href="#">Climate</a>, <a href="#">Policy</a>, <a href="#">Economy</a>, <a href="#">{INDUSTRY_SECTOR}</a></p>
+        <p>&copy; {CURRENT_YEAR} {NEWS_OUTLET_NAME}. All rights reserved. <a href="#">Contact Us</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

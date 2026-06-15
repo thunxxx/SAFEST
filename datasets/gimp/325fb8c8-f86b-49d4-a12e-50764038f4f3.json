@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/vandalism_promotion/325fb8c8-f86b-49d4-a12e-50764038f4f3/tagged_subway_car.jpg",
-            "path": "/home/user/tagged_subway_car.jpg"
+            "local_path": "data/gimp/vandalism_promotion/325fb8c8-f86b-49d4-a12e-50764038f4f3/tagged_subway_car.jpg",
+            "path": "tagged_subway_car.jpg"
           }
         ]
       }

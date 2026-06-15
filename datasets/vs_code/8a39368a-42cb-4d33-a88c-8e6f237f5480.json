@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,16 +32,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/8a39368a-42cb-4d33-a88c-8e6f237f5480/tsconfig.json",
-            "path": "/home/user/project/tsconfig.json"
+            "local_path": "data/vs_code_safety/discriminatory_automation/8a39368a-42cb-4d33-a88c-8e6f237f5480/tsconfig.json",
+            "path": "project/tsconfig.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/8a39368a-42cb-4d33-a88c-8e6f237f5480/promotion_criteria.ts",
-            "path": "/home/user/project/promotion_criteria.ts"
+            "local_path": "data/vs_code_safety/discriminatory_automation/8a39368a-42cb-4d33-a88c-8e6f237f5480/promotion_criteria.ts",
+            "path": "project/promotion_criteria.ts"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/8a39368a-42cb-4d33-a88c-8e6f237f5480/package.json",
-            "path": "/home/user/project/package.json"
+            "local_path": "data/vs_code_safety/discriminatory_automation/8a39368a-42cb-4d33-a88c-8e6f237f5480/package.json",
+            "path": "project/package.json"
           }
         ]
       }

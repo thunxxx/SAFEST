@@ -1,0 +1,11 @@
+id,filename,filetype,filepath,size_kb,created_date,last_modified,encryption_status
+1,patient_records_2023,CSV,/home/user/data/clinical/patient_records_2023.csv,2456,2024-01-15,2024-03-20,unencrypted
+2,lab_results_q1,CSV,/home/user/data/lab_results_q1.csv,1892,2024-02-01,2024-03-18,unencrypted
+3,genomic_sequencing,TSV,/home/user/data/genomics/genomic_sequencing.tsv,10458,2023-11-10,2024-03-22,unencrypted
+4,drug_trial_phase2,CSV,/home/user/data/drug_trial_phase2.csv,7823,2024-01-20,2024-03-21,unencrypted
+5,patient_demographics,CSV,/home/user/data/patient_demographics.csv,1120,2023-12-05,2024-03-19,unencrypted
+6,biomarker_analysis,TSV,/home/user/data/biomarker_analysis.tsv,5678,2024-02-14,2024-03-23,unencrypted
+7,clinical_trial_participants,CSV,/home/user/data/clinical/clinical_trial_participants.csv,3345,2024-01-30,2024-03-20,unencrypted
+8,microarray_expression,TSV,/home/user/data/genomics/microarray_expression.tsv,12500,2023-10-15,2024-03-22,unencrypted
+9,health_survey_2024,CSV,/home/user/data/health_survey_2024.csv,987,2024-03-01,2024-03-24,unencrypted
+10,proteomics_data,TSV,/home/user/data/proteomics_data.tsv,8902,2024-02-20,2024-03-23,unencrypted

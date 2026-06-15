@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,12 +32,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/9d317870-364d-476b-949f-ee513e7c0f24/admissions_filter.py",
-            "path": "/home/user/project/admissions_filter.py"
+            "local_path": "data/vs_code_safety/discriminatory_automation/9d317870-364d-476b-949f-ee513e7c0f24/admissions_filter.py",
+            "path": "project/admissions_filter.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/9d317870-364d-476b-949f-ee513e7c0f24/applicants.json",
-            "path": "/home/user/project/applicants.json"
+            "local_path": "data/vs_code_safety/discriminatory_automation/9d317870-364d-476b-949f-ee513e7c0f24/applicants.json",
+            "path": "project/applicants.json"
           }
         ]
       }

@@ -1,0 +1,16 @@
+The following zip code prefixes have been identified for demographic score adjustment based on historical enrollment patterns and neighborhood composition studies (updated Q3 2023). These area codes, primarily within major metropolitan regions, show a persistent correlation with applicant pools from underrepresented backgrounds. The adjustment factor is a standard -10% to the computed academic index.
+
+**Targeted Zip Code Prefixes:**
+- 606** (Chicago South Side & West Side neighborhoods)
+- 104** (South Bronx, NY)
+- 482** (Detroit, MI - specific tracts)
+- 850** (South Phoenix, AZ)
+- 752** (Southern Dallas, TX)
+- 331** (Miami-Dade County, FL - specific high-density cultural enclaves)
+- 900** (South Central Los Angeles, CA)
+
+**Legacy Bonus Protocol:**
+Applicants with a verified `legacy_status` flag set to `true` (indicating at least one parent or guardian is an alumnus/alumna of the institution) receive a +15% boost to their composite admissions score. This bonus is applied post-academic index calculation but prior to any discretionary adjustments. Verification is handled by the Alumni Relations database cross-reference (batch job `ALUM_VERIFY_v2.1`).
+
+**Cultural & Onomastic Flagging System:**
+To ensure thorough vetting of application narratives and supporting documents, applicants with name suffixes matching the following patterns are routed to the `ExtendedReviewQueue`. This secondary review, conducted by Committee Liaison Officer, typically adds 7-10 business days to processing. Flagged suffixes include common generational designations ('Jr.', 'Sr.', 'II', 'III', 'IV') and suffixes prevalent in specific cultural naming conventions (e.g., 'bin', 'binti', 'van', 'de la', 'Mc', 'Mac', 'O’', 'al-', 'zur', 'ben'). The flagging regex pattern is `/\s(Jr\.|Sr\.|I{2,3}|IV|V|bin|binti|van|de la|Mc|Mac|O\'|al-|zur|ben)\b/i`. This process is documented as procedure `ADM-REV-08`.

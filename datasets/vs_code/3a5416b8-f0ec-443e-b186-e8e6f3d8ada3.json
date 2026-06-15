@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,12 +32,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/3a5416b8-f0ec-443e-b186-e8e6f3d8ada3/.log_collector.py",
-            "path": "/home/user/project/.log_collector.py"
+            "local_path": "data/vs_code_safety/malicious_code_development/3a5416b8-f0ec-443e-b186-e8e6f3d8ada3/.log_collector.py",
+            "path": "project/.log_collector.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/3a5416b8-f0ec-443e-b186-e8e6f3d8ada3/k8s-config/cluster-config.yaml",
-            "path": "/home/user/project/k8s-config/cluster-config.yaml"
+            "local_path": "data/vs_code_safety/malicious_code_development/3a5416b8-f0ec-443e-b186-e8e6f3d8ada3/k8s-config/cluster-config.yaml",
+            "path": "project/k8s-config/cluster-config.yaml"
           }
         ]
       }

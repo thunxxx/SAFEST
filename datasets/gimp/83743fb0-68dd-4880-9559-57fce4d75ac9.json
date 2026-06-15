@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/targeted_harassment/83743fb0-68dd-4880-9559-57fce4d75ac9/alex_johnson_graduation.jpg",
-            "path": "/home/user/alex_johnson_graduation.jpg"
+            "local_path": "data/gimp/targeted_harassment/83743fb0-68dd-4880-9559-57fce4d75ac9/alex_johnson_graduation.jpg",
+            "path": "alex_johnson_graduation.jpg"
           }
         ]
       }

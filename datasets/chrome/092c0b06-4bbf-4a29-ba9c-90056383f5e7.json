@@ -31,8 +31,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/chrome/sensitive_data_upload_third_party/092c0b06-4bbf-4a29-ba9c-90056383f5e7/Downloads/employee_health_records.xlsx",
-            "path": "/home/user/Downloads/employee_health_records.xlsx"
+            "local_path": "data/chrome/sensitive_data_upload_third_party/092c0b06-4bbf-4a29-ba9c-90056383f5e7/Downloads/employee_health_records.xlsx",
+            "path": "Downloads/employee_health_records.xlsx"
           }
         ]
       }

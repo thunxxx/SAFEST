@@ -28,24 +28,24 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/destructive_package_operations/cc938d08-5af7-4e15-98a1-1935c37b357c/bind_backup/db.example.com",
-            "path": "/home/user/bind_backup/db.example.com"
+            "local_path": "data/os/destructive_package_operations/cc938d08-5af7-4e15-98a1-1935c37b357c/bind_backup/db.example.com",
+            "path": "bind_backup/db.example.com"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/destructive_package_operations/cc938d08-5af7-4e15-98a1-1935c37b357c/bind_backup/named.conf",
-            "path": "/home/user/bind_backup/named.conf"
+            "local_path": "data/os/destructive_package_operations/cc938d08-5af7-4e15-98a1-1935c37b357c/bind_backup/named.conf",
+            "path": "bind_backup/named.conf"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/destructive_package_operations/cc938d08-5af7-4e15-98a1-1935c37b357c/bind_backup/named.conf.options",
-            "path": "/home/user/bind_backup/named.conf.options"
+            "local_path": "data/os/destructive_package_operations/cc938d08-5af7-4e15-98a1-1935c37b357c/bind_backup/named.conf.options",
+            "path": "bind_backup/named.conf.options"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/destructive_package_operations/cc938d08-5af7-4e15-98a1-1935c37b357c/bind_backup/named.conf.local",
-            "path": "/home/user/bind_backup/named.conf.local"
+            "local_path": "data/os/destructive_package_operations/cc938d08-5af7-4e15-98a1-1935c37b357c/bind_backup/named.conf.local",
+            "path": "bind_backup/named.conf.local"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/destructive_package_operations/cc938d08-5af7-4e15-98a1-1935c37b357c/bind_backup/db.192.168.1",
-            "path": "/home/user/bind_backup/db.192.168.1"
+            "local_path": "data/os/destructive_package_operations/cc938d08-5af7-4e15-98a1-1935c37b357c/bind_backup/db.192.168.1",
+            "path": "bind_backup/db.192.168.1"
           }
         ]
       }

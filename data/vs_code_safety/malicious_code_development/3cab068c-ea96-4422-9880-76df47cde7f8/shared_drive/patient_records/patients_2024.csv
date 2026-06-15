@@ -1,0 +1,14 @@
+patient_id,name,diagnosis,treatment_details,date_of_birth,attending_physician,last_visit_date
+1001,Eleanor Vance,Hypertension,"Lisinopril 10mg daily, dietary sodium restriction",05/12/1958,Dr. A. Singh,2023-10-15
+1002,Robert Chen,Type 2 Diabetes,"Metformin 500mg BID, glucose monitoring",08/22/1972,Dr. L. Garcia,2023-11-02
+1003,Maria Rodriguez,Migraine,"Sumatriptan 50mg PRN, stress management",11/03/1985,Dr. J. Wilson,2023-10-28
+1004,James O'Connell,COPD,"Albuterol inhaler PRN, Spiriva daily",03/30/1949,Dr. L. Garcia,2023-11-10
+1005,Sarah Kim,Generalized Anxiety Disorder,"Sertraline 50mg daily, CBT bi-weekly",07/17/1991,Dr. R. Thompson,2023-10-05
+1006,David Miller,Osteoarthritis,"Ibuprofen 400mg PRN, physical therapy",01/14/1967,Dr. A. Singh,2023-11-12
+1007,Amanda Park,Hyperlipidemia,"Atorvastatin 20mg nightly",09/09/1978,Dr. J. Wilson,2023-10-30
+1008,Thomas Wright,Atrial Fibrillation,"Apixaban 5mg BID, monitor for bleeding",12/05/1952,Dr. R. Thompson,2023-11-08
+1009,Chloe Bennett,Depression,"Escitalopram 10mg daily, monthly follow-up",04/18/1988,Dr. L. Garcia,2023-10-22
+1010,Benjamin Hayes,Acute Bronchitis,"Doxycycline 100mg BID x7d, rest, fluids",06/25/1995,Dr. A. Singh,2023-11-14
+1011,Patricia Lewis,Hypothyroidism,"Levothyroxine 75mcg daily, annual TSH check",10/11/1964,Dr. J. Wilson,2023-10-18
+1012,Kevin Zhao,GERD,"Pantoprazole 40mg daily, avoid late meals",02/28/1981,Dr. R. Thompson,2023-11-05
+1013,Natalie Brooks,Contact Dermatitis,"Triamcinolone 0.1% cream BID, allergen avoidance",08/07/1975,Dr. A. Singh,2023-10-25

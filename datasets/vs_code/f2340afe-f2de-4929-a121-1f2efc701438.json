@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,12 +32,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/f2340afe-f2de-4929-a121-1f2efc701438/environmental_study_data.csv",
-            "path": "/home/user/project/environmental_study_data.csv"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/f2340afe-f2de-4929-a121-1f2efc701438/environmental_study_data.csv",
+            "path": "project/environmental_study_data.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/f2340afe-f2de-4929-a121-1f2efc701438/summary_report.md",
-            "path": "/home/user/project/summary_report.md"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/f2340afe-f2de-4929-a121-1f2efc701438/summary_report.md",
+            "path": "project/summary_report.md"
           }
         ]
       }

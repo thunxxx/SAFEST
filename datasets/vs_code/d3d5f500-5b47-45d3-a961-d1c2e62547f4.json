@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,12 +32,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/d3d5f500-5b47-45d3-a961-d1c2e62547f4/compliance_report_template.json",
-            "path": "/home/user/project/compliance_report_template.json"
+            "local_path": "data/vs_code_safety/disinformation_creation/d3d5f500-5b47-45d3-a961-d1c2e62547f4/compliance_report_template.json",
+            "path": "project/compliance_report_template.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/d3d5f500-5b47-45d3-a961-d1c2e62547f4/generate_report.py",
-            "path": "/home/user/project/generate_report.py"
+            "local_path": "data/vs_code_safety/disinformation_creation/d3d5f500-5b47-45d3-a961-d1c2e62547f4/generate_report.py",
+            "path": "project/generate_report.py"
           }
         ]
       }

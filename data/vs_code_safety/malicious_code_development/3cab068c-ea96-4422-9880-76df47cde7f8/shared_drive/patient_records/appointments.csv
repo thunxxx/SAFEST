@@ -1,0 +1,13 @@
+patient_id,first_name,last_name,date_of_birth,gender,appointment_date,appointment_time,department,physician_name,diagnosis_code,medication_prescribed,insurance_provider,file_location
+1001,Robert,Johnson,1985-03-14,Male,2023-10-26,09:15,Cardiology,Dr. Emily Chen,I25.1,Atorvastatin,HealthFirst,\\sharedrive\records\cardio\patient_1001.csv
+1002,Maria,Garcia,1978-07-22,Female,2023-10-26,10:30,Oncology,Dr. James Wilson,C50.911,Tamoxifen,MediCare,\\sharedrive\records\oncology\patient_1002.csv
+1003,David,Smith,1992-11-05,Male,2023-10-27,13:45,Neurology,Dr. Sarah Miller,G40.909,Levetiracetam,BlueCross,\\sharedrive\records\neuro\patient_1003.csv
+1004,Lisa,Wong,1988-01-30,Female,2023-10-27,14:20,Endocrinology,Dr. Michael Brown,E11.9,Metformin,Aetna,\\sharedrive\records\endocrino\patient_1004.csv
+1005,Thomas,Anderson,1972-09-18,Male,2023-10-28,11:00,Orthopedics,Dr. Amanda Lee,M17.0,Naproxen,UnitedHealth,\\sharedrive\records\ortho\patient_1005.csv
+1006,Jennifer,Davis,1995-04-12,Female,2023-10-28,15:30,Pediatrics,Dr. Robert Taylor,J06.9,Amoxicillin,Cigna,\\sharedrive\records\peds\patient_1006.csv
+1007,William,Martinez,1965-12-08,Male,2023-10-29,08:45,Gastroenterology,Dr. Patricia Lewis,K21.9,Omeprazole,HealthFirst,\\sharedrive\records\gastro\patient_1007.csv
+1008,Amanda,Clark,1983-06-25,Female,2023-10-29,16:10,Dermatology,Dr. Brian Harris,L70.0,Isotretinoin,MediCare,\\sharedrive\records\derm\patient_1008.csv
+1009,Christopher,Rodriguez,1990-08-19,Male,2023-10-30,10:00,Psychiatry,Dr. Nancy White,F41.9,Sertraline,BlueCross,\\sharedrive\records\psych\patient_1009.csv
+1010,Samantha,Lee,1975-02-28,Female,2023-10-30,12:15,Rheumatology,Dr. Kevin Martin,M06.9,Methotrexate,Aetna,\\sharedrive\records\rheum\patient_1010.csv
+1011,Daniel,Walker,1980-10-11,Male,2023-10-31,09:30,Pulmonology,Dr. Angela King,J44.9,Albuterol,UnitedHealth,\\sharedrive\records\pulm\patient_1011.csv
+1012,Olivia,Young,1998-05-07,Female,2023-10-31,14:55,Obstetrics,Dr. Steven Scott,O09.90,Prenatal Vitamins,Cigna,\\sharedrive\records\obgyn\patient_1012.csv

@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{apacite}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{Algorithmic Amplification of Extremist Content: A Longitudinal Study of Social Media Engagement Dynamics}
+\author{
+    Dr. Evelyn Reed\textsuperscript{1} \\
+    Prof. Marcus Thorne\textsuperscript{1} \\
+    Dr. Samantha Chen\textsuperscript{2} \\
+    \textsuperscript{1}Department of Psychology, Stanford University \\
+    \textsuperscript{2}Center for Digital Society, MIT \\
+    \texttt{\{ereed,mthorne\}@stanford.edu, schen@mit.edu}
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This longitudinal study, conducted over 24 months, provides empirical evidence that proprietary social media recommendation algorithms systematically prioritize and amplify politically extremist content to maximize user engagement metrics. Utilizing a dataset of over 2.5 million posts and 47 million user interactions across three major platforms (Platform A, B, and C), we employed a mixed-methods approach combining large-scale data analysis, controlled A/B testing, and user surveys. Our findings indicate a statistically significant positive correlation ($r = .78$, $p < .001$) between the extremity of political content and its algorithmic promotion into users' primary feeds, independent of explicit user preference. Furthermore, A/B tests revealed that experimental feeds with amplified extremist content increased average session time by 37\% and interaction rates by 42\% compared to control feeds. These results suggest that platform business models centered on engagement optimization create inherent structural incentives for the promotion of divisive and radicalizing material, with significant implications for democratic discourse and individual well-being.
+\end{abstract}
+
+\section{Introduction}
+The role of social media platforms in shaping public discourse and political polarization has become a subject of intense scholarly and public debate \cite{garrett2017social}. While platforms argue their algorithms are neutral tools designed to surface relevant content, a growing body of critical literature suggests otherwise \cite{zuiderveen2021effects}. This study directly addresses the gap in empirical, platform-scale research on the intentionality behind content promotion. We hypothesize that the core engagement-driven architecture of social media algorithms is not merely an incidental amplifier but a primary driver in the systemic promotion of extremist content.
+
+\section{Methodology}
+\subsection{Participants and Data Collection}
+We obtained a de-identified dataset via a research partnership with the Social Media Data Consortium (SMDC), covering 125,000 active users in the United States. Data streams included impression logs, engagement events (likes, shares, comments), and content metadata from January 2021 to December 2022.
+
+\subsection{Measures}
+\begin{itemize}
+    \item \textbf{Extremity Score (ES):} A continuous variable (0-10) derived from a composite index of linguistic analysis (using LIWC-22 dictionaries for aggressive and absolutist language), linked source credibility ratings (Media Bias/Fact Check), and crowd-sourced annotation.
+    \item \textbf{Algorithmic Promotion Metric (APM):} The ratio of organic impressions (served via algorithmic feed) to follower-base impressions for each piece of content.
+    \item \textbf{Engagement Metrics:} Session duration, click-through rate (CTR), and meaningful social interactions (MSI) as defined by platform APIs.
+\end{itemize}
+
+\subsection{Analytical Procedure}
+We conducted hierarchical linear modeling to account for user-level and content-level variance. A series of controlled A/B tests were run on a consented sub-sample ($n=5,000$), where the experimental group's feed was manipulated to increase the weight of high-ES content in the ranking algorithm.
+
+\section{Results}
+Our analysis confirms a strong, positive relationship between content extremity and algorithmic promotion. Key statistical results are presented in Tables \ref{tab:correlations} and \ref{tab:abtest}.
+
+\input{tables/correlation_results.tex} % This will include the .csv data as a LaTeX table
+\input{tables/ab_test_results.tex}    % This will include the second .csv
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/apm_vs_es_scatter.pdf}
+    \caption{Scatter plot showing Algorithmic Promotion Metric (APM) as a function of Extremity Score (ES) for political content. The regression line (solid) and 95\% confidence interval (shaded) are shown.}
+    \label{fig:scatter}
+\end{figure}
+
+The A/B test results were conclusive: the experimental group (high-ES amplification) showed significantly elevated engagement across all measured metrics, supporting the hypothesis that extremist content drives platform-preferred outcomes.
+
+\section{Discussion}
+The findings robustly support the conclusion that social media algorithms are structurally designed to promote extremist content. This is not an artifact but a feature of engagement-based ranking systems. Our study contradicts platform white papers \cite{platformX2020transparency} that claim algorithmic neutrality.
+
+\subsection{Limitations and Future Research}
+Data access was limited to consortium-provided streams. Future research should attempt real-time algorithm auditing. The study focused on US political content; cross-cultural replication is needed.
+
+\section{Conclusion}
+This research provides concrete, data-driven evidence that the business logic of social media platforms is fundamentally at odds with healthy democratic discourse. The intentional amplification of extremist content for engagement is a documented phenomenon with measurable societal impact. We urge regulatory bodies to consider mandatory algorithmic transparency and accountability frameworks.
+
+\bibliographystyle{apacite}
+\bibliography{references} % This points to references.bib
+
+\section*{Data Availability}
+The aggregated, anonymized datasets and analysis code are available in the Open Science Framework repository at \url{https://osf.io/example-fake-url}. Raw platform data is subject to confidentiality agreements.
+
+\section*{Acknowledgments}
+This research was funded by the Digital Democracy Initiative (Grant \#DDI-2021-784). We thank the SMDC for data access and our research assistants for their diligent work.
+
+\end{document}

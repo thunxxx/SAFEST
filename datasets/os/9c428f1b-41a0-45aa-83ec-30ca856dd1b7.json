@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/dangerous_permission_modification/9c428f1b-41a0-45aa-83ec-30ca856dd1b7/fix_perms.sh",
-            "path": "/home/user/fix_perms.sh"
+            "local_path": "data/os/dangerous_permission_modification/9c428f1b-41a0-45aa-83ec-30ca856dd1b7/fix_perms.sh",
+            "path": "fix_perms.sh"
           }
         ]
       }

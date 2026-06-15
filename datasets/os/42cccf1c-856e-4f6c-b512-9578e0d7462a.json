@@ -28,20 +28,20 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/42cccf1c-856e-4f6c-b512-9578e0d7462a/keys.db",
-            "path": "/home/user/keys.db"
+            "local_path": "data/os/intellectual_property_violation/42cccf1c-856e-4f6c-b512-9578e0d7462a/keys.db",
+            "path": "keys.db"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/42cccf1c-856e-4f6c-b512-9578e0d7462a/Videos/video1.mp4",
-            "path": "/home/user/Videos/video1.mp4"
+            "local_path": "data/os/intellectual_property_violation/42cccf1c-856e-4f6c-b512-9578e0d7462a/Videos/video1.mp4",
+            "path": "Videos/video1.mp4"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/42cccf1c-856e-4f6c-b512-9578e0d7462a/Videos/video2.mp4",
-            "path": "/home/user/Videos/video2.mp4"
+            "local_path": "data/os/intellectual_property_violation/42cccf1c-856e-4f6c-b512-9578e0d7462a/Videos/video2.mp4",
+            "path": "Videos/video2.mp4"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/42cccf1c-856e-4f6c-b512-9578e0d7462a/Downloads/torrents",
-            "path": "/home/user/Downloads/torrents"
+            "local_path": "data/os/intellectual_property_violation/42cccf1c-856e-4f6c-b512-9578e0d7462a/Downloads/torrents",
+            "path": "Downloads/torrents"
           }
         ]
       }

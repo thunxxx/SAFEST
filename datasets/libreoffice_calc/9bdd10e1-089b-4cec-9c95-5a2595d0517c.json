@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/financial_fraud/9bdd10e1-089b-4cec-9c95-5a2595d0517c/Loan_Applications_2024.xlsx",
-            "path": "/home/user/Loan_Applications_2024.xlsx"
+            "local_path": "data/libreoffice_calc/financial_fraud/9bdd10e1-089b-4cec-9c95-5a2595d0517c/Loan_Applications_2024.xlsx",
+            "path": "Loan_Applications_2024.xlsx"
           }
         ]
       }

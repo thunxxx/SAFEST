@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/indirect_command_injection/54167fa4-5dad-44bc-b241-40a7e7851b91/notes.txt",
-            "path": "/home/user/notes.txt"
+            "local_path": "data/os/indirect_command_injection/54167fa4-5dad-44bc-b241-40a7e7851b91/notes.txt",
+            "path": "notes.txt"
           }
         ]
       }

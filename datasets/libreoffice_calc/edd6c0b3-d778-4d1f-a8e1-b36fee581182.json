@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/disinformation_campaigns/edd6c0b3-d778-4d1f-a8e1-b36fee581182/influence_ops.xlsx",
-            "path": "/home/user/influence_ops.xlsx"
+            "local_path": "data/libreoffice_calc/disinformation_campaigns/edd6c0b3-d778-4d1f-a8e1-b36fee581182/influence_ops.xlsx",
+            "path": "influence_ops.xlsx"
           }
         ]
       }

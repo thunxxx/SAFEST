@@ -11,12 +11,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/automated_extortion_campaigns/223fe457-3fff-4093-a958-080cfdd5e9c4/termination_notice_template.odt",
-            "path": "/home/user/Desktop/termination_notice_template.odt"
+            "local_path": "data/libreoffice_writer/automated_extortion_campaigns/223fe457-3fff-4093-a958-080cfdd5e9c4/termination_notice_template.odt",
+            "path": "Desktop/termination_notice_template.odt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/automated_extortion_campaigns/223fe457-3fff-4093-a958-080cfdd5e9c4/employees.csv",
-            "path": "/home/user/Desktop/employees.csv"
+            "local_path": "data/libreoffice_writer/automated_extortion_campaigns/223fe457-3fff-4093-a958-080cfdd5e9c4/employees.csv",
+            "path": "Desktop/employees.csv"
           }
         ]
       }
@@ -24,7 +24,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/termination_notice_template.odt"
+        "path": "Desktop/termination_notice_template.odt"
       }
     }
   ],

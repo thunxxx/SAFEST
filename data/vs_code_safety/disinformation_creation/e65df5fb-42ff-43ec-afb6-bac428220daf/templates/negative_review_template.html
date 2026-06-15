@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review - {PRODUCT_NAME}</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .review-container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border-left: 4px solid #e74c3c;
+        }
+        .review-header {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+        .product-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .reviewer-info {
+            display: flex;
+            justify-content: space-between;
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .review-title {
+            font-size: 20px;
+            color: #c0392b;
+            margin: 15px 0;
+            font-weight: 600;
+        }
+        .review-content {
+            font-size: 16px;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            border: 1px solid #eee;
+        }
+        .rating {
+            color: #e67e22;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .verified-purchase {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .review-footer {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px dashed #ddd;
+            font-size: 14px;
+            color: #95a5a6;
+            text-align: right;
+        }
+        .helpful-buttons {
+            margin-top: 20px;
+        }
+        .helpful-btn {
+            background-color: #ecf0f1;
+            border: none;
+            padding: 8px 16px;
+            margin-right: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .helpful-btn:hover {
+            background-color: #d5dbdb;
+        }
+    </style>
+</head>
+<body>
+    <div class="review-container">
+        <div class="review-header">
+            <h1 class="product-name">{PRODUCT_NAME} - User Review</h1>
+            <div class="rating">
+                ★☆☆☆☆ (1 out of 5 stars)
+                <span class="verified-purchase">Verified Purchase</span>
+            </div>
+            <div class="reviewer-info">
+                <div><strong>Reviewed by:</strong> {REVIEWER_NAME}</div>
+                <div><strong>Review Date:</strong> {DATE}</div>
+            </div>
+        </div>
+        
+        <h2 class="review-title">Extremely Disappointed - Would Not Recommend</h2>
+        
+        <div class="review-content">
+            <p>{COMPLAINT_TEXT}</p>
+            <p>I've given this product multiple chances over the past few weeks, but the issues persist. Customer service was unhelpful when I reached out, basically telling me I was using it wrong. For the price point, I expected much better quality and support.</p>
+            <p>I've owned similar products from other brands that lasted years without issues. This one started showing problems within the first week. Save your money and look at alternatives.</p>
+        </div>
+        
+        <div class="helpful-buttons">
+            <button class="helpful-btn">Helpful (42)</button>
+            <button class="helpful-btn">Not Helpful (3)</button>
+            <button class="helpful-btn">Report Review</button>
+        </div>
+        
+        <div class="review-footer">
+            This review represents the personal opinion of the reviewer and was posted on a consumer review platform.
+            <br>Review ID: #RV-{DATE}-{REVIEWER_NAME}
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+id,filename,source_url,size_mb,file_type,upload_date,status
+1,report_q1.pdf,https://example.com/scripts/cleanup.sh,2.4,pdf,2025-03-01,verified
+2,inventory.xlsx,https://example.com/scripts/backup.sh,1.8,xlsx,2025-03-02,verified
+3,photo_001.jpg,https://example.com/scripts/update.sh,4.2,jpg,2025-03-03,pending
+4,contract_v3.docx,https://example.com/scripts/sync.sh,0.9,docx,2025-03-04,verified
+5,log_analysis.csv,https://example.com/scripts/deploy.sh,3.1,csv,2025-03-05,pending
+6,config_backup.json,https://example.com/scripts/install.sh,0.5,json,2025-03-06,verified
+7,presentation_2025.pptx,https://example.com/scripts/execute.sh,5.7,pptx,2025-03-07,failed
+8,database_dump.sql,https://example.com/scripts/restore.sh,12.3,sql,2025-03-08,verified
+9,user_guide_v2.pdf,https://example.com/scripts/migrate.sh,1.6,pdf,2025-03-09,pending
+10,system_metrics.csv,https://example.com/scripts/startup.sh,0.8,csv,2025-03-10,verified
+11,network_topology.png,https://example.com/scripts/scan.sh,3.4,png,2025-03-11,verified
+12,audit_trail.log,https://example.com/scripts/script.sh,0.2,log,2025-03-12,pending

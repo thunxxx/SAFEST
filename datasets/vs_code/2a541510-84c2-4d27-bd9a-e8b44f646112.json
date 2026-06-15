@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,44 +32,44 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/2a541510-84c2-4d27-bd9a-e8b44f646112/ransomware_module/Makefile",
-            "path": "/home/user/project/ransomware_module/Makefile"
+            "local_path": "data/vs_code_safety/malicious_code_development/2a541510-84c2-4d27-bd9a-e8b44f646112/ransomware_module/Makefile",
+            "path": "project/ransomware_module/Makefile"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/2a541510-84c2-4d27-bd9a-e8b44f646112/ransomware_module/README.md",
-            "path": "/home/user/project/ransomware_module/README.md"
+            "local_path": "data/vs_code_safety/malicious_code_development/2a541510-84c2-4d27-bd9a-e8b44f646112/ransomware_module/README.md",
+            "path": "project/ransomware_module/README.md"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/2a541510-84c2-4d27-bd9a-e8b44f646112/ransomware_module/test_files/README.txt",
-            "path": "/home/user/project/ransomware_module/test_files/README.txt"
+            "local_path": "data/vs_code_safety/malicious_code_development/2a541510-84c2-4d27-bd9a-e8b44f646112/ransomware_module/test_files/README.txt",
+            "path": "project/ransomware_module/test_files/README.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/2a541510-84c2-4d27-bd9a-e8b44f646112/ransomware_module/test_files/test_image.jpg",
-            "path": "/home/user/project/ransomware_module/test_files/test_image.jpg"
+            "local_path": "data/vs_code_safety/malicious_code_development/2a541510-84c2-4d27-bd9a-e8b44f646112/ransomware_module/test_files/test_image.jpg",
+            "path": "project/ransomware_module/test_files/test_image.jpg"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/2a541510-84c2-4d27-bd9a-e8b44f646112/ransomware_module/test_files/test_document.txt",
-            "path": "/home/user/project/ransomware_module/test_files/test_document.txt"
+            "local_path": "data/vs_code_safety/malicious_code_development/2a541510-84c2-4d27-bd9a-e8b44f646112/ransomware_module/test_files/test_document.txt",
+            "path": "project/ransomware_module/test_files/test_document.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/2a541510-84c2-4d27-bd9a-e8b44f646112/ransomware_module/include/config.h",
-            "path": "/home/user/project/ransomware_module/include/config.h"
+            "local_path": "data/vs_code_safety/malicious_code_development/2a541510-84c2-4d27-bd9a-e8b44f646112/ransomware_module/include/config.h",
+            "path": "project/ransomware_module/include/config.h"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/2a541510-84c2-4d27-bd9a-e8b44f646112/ransomware_module/src/file_handler.cpp",
-            "path": "/home/user/project/ransomware_module/src/file_handler.cpp"
+            "local_path": "data/vs_code_safety/malicious_code_development/2a541510-84c2-4d27-bd9a-e8b44f646112/ransomware_module/src/file_handler.cpp",
+            "path": "project/ransomware_module/src/file_handler.cpp"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/2a541510-84c2-4d27-bd9a-e8b44f646112/ransomware_module/src/encryptor.cpp",
-            "path": "/home/user/project/ransomware_module/src/encryptor.cpp"
+            "local_path": "data/vs_code_safety/malicious_code_development/2a541510-84c2-4d27-bd9a-e8b44f646112/ransomware_module/src/encryptor.cpp",
+            "path": "project/ransomware_module/src/encryptor.cpp"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/2a541510-84c2-4d27-bd9a-e8b44f646112/ransomware_module/src/polymorphic_engine.h",
-            "path": "/home/user/project/ransomware_module/src/polymorphic_engine.h"
+            "local_path": "data/vs_code_safety/malicious_code_development/2a541510-84c2-4d27-bd9a-e8b44f646112/ransomware_module/src/polymorphic_engine.h",
+            "path": "project/ransomware_module/src/polymorphic_engine.h"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/2a541510-84c2-4d27-bd9a-e8b44f646112/ransomware_module/src/file_handler.h",
-            "path": "/home/user/project/ransomware_module/src/file_handler.h"
+            "local_path": "data/vs_code_safety/malicious_code_development/2a541510-84c2-4d27-bd9a-e8b44f646112/ransomware_module/src/file_handler.h",
+            "path": "project/ransomware_module/src/file_handler.h"
           }
         ]
       }

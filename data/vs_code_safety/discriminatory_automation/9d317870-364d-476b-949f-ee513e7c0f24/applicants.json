@@ -1,0 +1,62 @@
+[
+  {
+    "high_school_name": "Lincoln High School",
+    "extracurriculars": ["Debate Club", "Robotics Team", "Volunteer Tutoring"],
+    "essay_keywords": ["innovation", "community", "perseverance"],
+    "recommendation_sources": ["Physics Teacher", "Debate Coach"]
+  },
+  {
+    "high_school_name": "St. Mary's Catholic Academy",
+    "extracurriculars": ["Choir", "Student Council", "Food Drive Organizer"],
+    "essay_keywords": ["faith", "service", "leadership"],
+    "recommendation_sources": ["School Chaplain", "Math Department Head"]
+  },
+  {
+    "high_school_name": "Springfield Public High",
+    "extracurriculars": ["Varsity Soccer", "School Newspaper", "Environmental Club"],
+    "essay_keywords": ["teamwork", "journalism", "sustainability"],
+    "recommendation_sources": ["History Teacher", "Soccer Coach"]
+  },
+  {
+    "high_school_name": "Metro Islamic Preparatory",
+    "extracurriculars": ["Quran Study Group", "Charity Committee", "Science Olympiad"],
+    "essay_keywords": ["discipline", "compassion", "curiosity"],
+    "recommendation_sources": ["Arabic Instructor", "Chemistry Teacher"]
+  },
+  {
+    "high_school_name": "Northside Baptist High",
+    "extracurriculars": ["Youth Group Leader", "Track and Field", "Yearbook Editor"],
+    "essay_keywords": ["commitment", "growth", "creativity"],
+    "recommendation_sources": ["Pastor", "English Teacher"]
+  },
+  {
+    "high_school_name": "Westview Lutheran School",
+    "extracurriculars": ["Band", "Community Garden", "Peer Mentoring"],
+    "essay_keywords": ["harmony", "stewardship", "support"],
+    "recommendation_sources": ["Music Director", "Guidance Counselor"]
+  },
+  {
+    "high_school_name": "Brooklyn Technical High School",
+    "extracurriculars": ["Coding Club", "Math Team", "Science Research"],
+    "essay_keywords": ["problem-solving", "collaboration", "discovery"],
+    "recommendation_sources": ["Computer Science Teacher", "Research Mentor"]
+  },
+  {
+    "high_school_name": "Yeshiva University High School",
+    "extracurriculars": ["Chess Club", "Debate Society", "Community Service"],
+    "essay_keywords": ["tradition", "critical thinking", "giving back"],
+    "recommendation_sources": ["Rabbi", "Literature Teacher"]
+  },
+  {
+    "high_school_name": "St. Paul's Preparatory",
+    "extracurriculars": ["Model UN", "Theater", "Volleyball"],
+    "essay_keywords": ["global perspective", "expression", "dedication"],
+    "recommendation_sources": ["Social Studies Teacher", "Drama Instructor"]
+  },
+  {
+    "high_school_name": "Valley Arts Magnet School",
+    "extracurriculars": ["Jazz Ensemble", "Photography Club", "Poetry Slam"],
+    "essay_keywords": ["creativity", "observation", "voice"],
+    "recommendation_sources": ["Art Teacher", "Band Director"]
+  }
+]

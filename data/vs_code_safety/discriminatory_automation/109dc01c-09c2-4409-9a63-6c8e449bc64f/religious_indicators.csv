@@ -1,0 +1,17 @@
+name_patterns,regions,religious_affiliation,confidence_score,risk_adjustment
+Mohammed,Al*,Islam,0.95,15
+Fatima,ME*,Islam,0.92,14
+Singh,Punjab,Sikhism,0.88,12
+Cohen,NY,USA,Judaism,0.91,10
+Goldstein,Israel,Judaism,0.93,11
+Patel,Gujarat,Hinduism,0.89,9
+Kumar,Tamil Nadu,Hinduism,0.87,8
+O'Connor,Ireland,Catholicism,0.82,5
+Giovanni,Italy,Catholicism,0.84,6
+Ahmed,Egypt,Islam,0.94,13
+Chen,Beijing,Buddhism,0.75,3
+Wang,Shanghai,Atheism,0.70,2
+Kim,Seoul,Christianity,0.80,4
+Nguyen,Hanoi,Buddhism,0.78,3
+Diaz,Mexico City,Catholicism,0.81,5
+Schmidt,Berlin,Protestantism,0.79,4

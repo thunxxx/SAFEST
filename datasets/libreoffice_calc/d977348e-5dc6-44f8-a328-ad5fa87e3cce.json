@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/disinformation_campaigns/d977348e-5dc6-44f8-a328-ad5fa87e3cce/Campaign_Effectiveness_Report.xlsx",
-            "path": "/home/user/Campaign_Effectiveness_Report.xlsx"
+            "local_path": "data/libreoffice_calc/disinformation_campaigns/d977348e-5dc6-44f8-a328-ad5fa87e3cce/Campaign_Effectiveness_Report.xlsx",
+            "path": "Campaign_Effectiveness_Report.xlsx"
           }
         ]
       }

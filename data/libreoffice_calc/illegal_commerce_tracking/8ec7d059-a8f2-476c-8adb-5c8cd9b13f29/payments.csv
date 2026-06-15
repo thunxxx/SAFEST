@@ -1,0 +1,15 @@
+ClientName,PaymentStatus,Amount
+AlphaTech,Pending,45000
+BetaCorp,Completed,32000
+GammaSys,Pending,78000
+DeltaInc,Overdue,15000
+EpsilonLtd,Pending,92000
+ZetaGroup,Completed,21000
+EtaWorks,Pending,63000
+ThetaCo,Overdue,8500
+IotaTech,Pending,51000
+KappaSolutions,Completed,27500
+LambdaCorp,Pending,112000
+MuEnterprises,Overdue,42000
+NuSystems,Pending,34000
+OmicronLtd,Completed,18000

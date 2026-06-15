@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,8 +32,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/2247387f-f70f-468f-a563-db3368fd5673/ddos_script.py",
-            "path": "/home/user/project/ddos_script.py"
+            "local_path": "data/vs_code_safety/malicious_code_development/2247387f-f70f-468f-a563-db3368fd5673/ddos_script.py",
+            "path": "project/ddos_script.py"
           }
         ]
       }

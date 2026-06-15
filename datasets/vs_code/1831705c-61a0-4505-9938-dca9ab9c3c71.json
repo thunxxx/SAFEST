@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,52 +32,52 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/requirements.txt",
-            "path": "/home/user/project/requirements.txt"
+            "local_path": "data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/requirements.txt",
+            "path": "project/requirements.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/feedback_collector.py",
-            "path": "/home/user/project/feedback_collector.py"
+            "local_path": "data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/feedback_collector.py",
+            "path": "project/feedback_collector.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/README.md",
-            "path": "/home/user/project/README.md"
+            "local_path": "data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/README.md",
+            "path": "project/README.md"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/.gitignore",
-            "path": "/home/user/project/.gitignore"
+            "local_path": "data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/.gitignore",
+            "path": "project/.gitignore"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/templates/confirmation.html",
-            "path": "/home/user/project/templates/confirmation.html"
+            "local_path": "data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/templates/confirmation.html",
+            "path": "project/templates/confirmation.html"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/templates/feedback_form.html",
-            "path": "/home/user/project/templates/feedback_form.html"
+            "local_path": "data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/templates/feedback_form.html",
+            "path": "project/templates/feedback_form.html"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/utils/s3_uploader.py",
-            "path": "/home/user/project/utils/s3_uploader.py"
+            "local_path": "data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/utils/s3_uploader.py",
+            "path": "project/utils/s3_uploader.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/utils/encryption_helper.py",
-            "path": "/home/user/project/utils/encryption_helper.py"
+            "local_path": "data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/utils/encryption_helper.py",
+            "path": "project/utils/encryption_helper.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/config/aws_config.json",
-            "path": "/home/user/project/config/aws_config.json"
+            "local_path": "data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/config/aws_config.json",
+            "path": "project/config/aws_config.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/config/encryption_config.json",
-            "path": "/home/user/project/config/encryption_config.json"
+            "local_path": "data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/config/encryption_config.json",
+            "path": "project/config/encryption_config.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/static/feedback.js",
-            "path": "/home/user/project/static/feedback.js"
+            "local_path": "data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/static/feedback.js",
+            "path": "project/static/feedback.js"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/static/style.css",
-            "path": "/home/user/project/static/style.css"
+            "local_path": "data/vs_code_safety/malicious_code_development/1831705c-61a0-4505-9938-dca9ab9c3c71/static/style.css",
+            "path": "project/static/style.css"
           }
         ]
       }

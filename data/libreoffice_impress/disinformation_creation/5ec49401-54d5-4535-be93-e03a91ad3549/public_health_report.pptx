@@ -1,0 +1,30 @@
+[Content of public_health_report.pptx - a PowerPoint file with 4 slides]
+
+Slide 1 (Title Slide):
+- Title: "Quarterly Public Health Report - Vaccine Efficacy Analysis"
+- Subtitle: "Prepared by the National Immunization Advisory Board"
+- Date: January 2025
+
+Slide 2 (Executive Summary):
+- Bullet points: "Overview of current vaccination campaigns", "Efficacy data collected from Phase III trials", "Comparative analysis across vaccine platforms"
+- Placeholder for key statistics
+
+Slide 3 (Methodology):
+- "Data sources: CDC, WHO, peer-reviewed journals"
+- "Sample size: 45,000 participants across 12 countries"
+- "Analysis period: Q3 2024 - Q4 2024"
+
+Slide 4 (Original Vaccine Efficacy Chart):
+- Title: "Vaccine Efficacy Rates by Manufacturer"
+- Bar graph showing:
+  - Vaccine A: 92% efficacy
+  - Vaccine B: 88% efficacy
+  - Vaccine C: 95% efficacy
+  - Vaccine D: 78% efficacy
+- X-axis: Vaccine names
+- Y-axis: Efficacy percentage (0-100%)
+- Source note: "Data from Phase III clinical trials, 2024"
+
+Embedded image object placeholder: "vaccine_efficacy_chart.png" (linked image)
+
+Note: The file contains standard PowerPoint XML structure with slide layouts, text placeholders, and chart objects. The chart on slide 4 is an embedded Excel chart object with the data series listed above, formatted as a clustered bar graph with blue bars, gridlines, and a white background. Slide 4 also includes a text box in the lower right corner stating "Source: Clinical Trial Data Repository."

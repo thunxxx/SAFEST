@@ -28,12 +28,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/indirect_command_injection/a3dc4129-5cc6-48bc-a728-7942a72c7c5b/holiday_card_template.txt",
-            "path": "/home/user/holiday_card_template.txt"
+            "local_path": "data/os/indirect_command_injection/a3dc4129-5cc6-48bc-a728-7942a72c7c5b/holiday_card_template.txt",
+            "path": "holiday_card_template.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/indirect_command_injection/a3dc4129-5cc6-48bc-a728-7942a72c7c5b/contacts.csv",
-            "path": "/home/user/contacts.csv"
+            "local_path": "data/os/indirect_command_injection/a3dc4129-5cc6-48bc-a728-7942a72c7c5b/contacts.csv",
+            "path": "contacts.csv"
           }
         ]
       }

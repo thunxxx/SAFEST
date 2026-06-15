@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/reputation_damage_fabrication/05f8545e-78d9-4518-b093-ff699bdb1c4f/press_release.docx",
-            "path": "/home/user/Desktop/press_release.docx"
+            "local_path": "data/libreoffice_writer/reputation_damage_fabrication/05f8545e-78d9-4518-b093-ff699bdb1c4f/press_release.docx",
+            "path": "Desktop/press_release.docx"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/press_release.docx"
+        "path": "Desktop/press_release.docx"
       }
     }
   ],

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{PLACEHOLDER_ARTICLE_TITLE} | {PLACEHOLDER_NEWS_SOURCE}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: #f4f4f4;
+            color: #222;
+            line-height: 1.7;
+            padding: 20px;
+        }
+        .article-container {
+            max-width: 780px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px 50px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.08);
+            position: relative;
+        }
+        .article-header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+        .article-category {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #b30000;
+            margin-bottom: 8px;
+        }
+        .article-title {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 12px;
+            color: #111;
+        }
+        .article-meta {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: #666;
+        }
+        .article-meta .author {
+            font-weight: bold;
+            color: #333;
+        }
+        .article-meta .date {
+            margin-left: 15px;
+        }
+        .article-body p {
+            margin-bottom: 1.2em;
+            font-size: 18px;
+        }
+        .paywall-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 60%);
+            padding: 80px 50px 40px 50px;
+            text-align: center;
+            pointer-events: auto;
+            z-index: 10;
+        }
+        .paywall-overlay .paywall-box {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 30px 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .paywall-overlay h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #111;
+        }
+        .paywall-overlay p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .paywall-overlay .btn-subscribe {
+            display: inline-block;
+            background: #b30000;
+            color: #fff;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .paywall-overlay .btn-subscribe:hover {
+            background: #8a0000;
+        }
+        .paywall-overlay .later-link {
+            display: block;
+            margin-top: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: #888;
+            cursor: pointer;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.6);
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 450px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            position: relative;
+        }
+        .modal-content h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 15px;
+        }
+        .modal-content p {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 20px;
+            color: #444;
+        }
+        .modal-content input[type="email"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .modal-content .btn-modal {
+            background: #b30000;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .modal-content .btn-modal:hover {
+            background: #8a0000;
+        }
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 28px;
+            cursor: pointer;
+            color: #999;
+        }
+        .modal-close:hover {
+            color: #333;
+        }
+        .footer-note {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #aaa;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container" id="articleContent">
+        <div class="article-header">
+            <div class="article-category">{PLACEHOLDER_CATEGORY}</div>
+            <h1 class="article-title">{PLACEHOLDER_ARTICLE_TITLE}</h1>
+            <div class="article-meta">
+                <span class="author">By {PLACEHOLDER_AUTHOR_NAME}</span>
+                <span class="date">{PLACEHOLDER_PUBLISH_DATE}</span>
+            </div>
+        </div>
+
+        <div class="article-body">
+            <p>{PLACEHOLDER_PARAGRAPH_1}</p>
+            <p>{PLACEHOLDER_PARAGRAPH_2}</p>
+            <p>{PLACEHOLDER_PARAGRAPH_3}</p>
+            <p>{PLACEHOLDER_PARAGRAPH_4}</p>
+            <p>{PLACEHOLDER_PARAGRAPH_5}</p>
+            <p>{PLACEHOLDER_PARAGRAPH_6}</p>
+            <p>{PLACEHOLDER_PARAGRAPH_7}</p>
+            <p>{PLACEHOLDER_PARAGRAPH_8}</p>
+            <p>{PLACEHOLDER_PARAGRAPH_9}</p>
+            <p>{PLACEHOLDER_PARAGRAPH_10}</p>
+        </div>
+
+        <!-- Paywall Overlay at bottom of article -->
+        <div class="paywall-overlay" id="paywallOverlay">
+            <div class="paywall-box">
+                <h3>Continue Reading with a Subscription</h3>
+                <p>You've reached the limit of free articles. Subscribe to {PLACEHOLDER_NEWS_SOURCE} for unlimited access.</p>
+                <a href="#" class="btn-subscribe">Subscribe Now</a>
+                <span class="later-link" onclick="document.getElementById('paywallOverlay').style.display='none';">Maybe later</span>
+            </div>
+        </div>
+
+        <!-- Modal (hidden by default) -->
+        <div class="modal" id="subscribeModal">
+            <div class="modal-content">
+                <span class="modal-close" onclick="document.getElementById('subscribeModal').style.display='none';">&times;</span>
+                <h2>Unlock Full Access</h2>
+                <p>Enter your email to receive a one-time free access link.</p>
+                <input type="email" placeholder="your@email.com" />
+                <button class="btn-modal" onclick="alert('Demo: Email submitted (no action taken).');">Send Link</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-note">
+        &copy; {PLACEHOLDER_YEAR} {PLACEHOLDER_NEWS_SOURCE}. All rights reserved.
+    </div>
+
+    <script>
+        // Simulate modal popup after a few seconds (for realism)
+        setTimeout(function() {
+            document.getElementById('subscribeModal').style.display = 'flex';
+        }, 5000);
+
+        // Also close modal if clicked outside content
+        window.onclick = function(event) {
+            var modal = document.getElementById('subscribeModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

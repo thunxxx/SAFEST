@@ -1,0 +1,82 @@
+{
+  "configuration": {
+    "class_hours_start": "08:00",
+    "class_hours_end": "15:30",
+    "log_file_path": "/var/log/.hidden_attendance.csv",
+    "scan_interval_seconds": 60,
+    "monitoring_enabled": true,
+    "network_interface": "wlan0"
+  },
+  "captured_connections": [
+    {
+      "timestamp": "2024-10-15T08:05:23Z",
+      "mac_address": "A4:C3:F0:72:1B:9C",
+      "ssid": "School_Guest",
+      "signal_strength": -65,
+      "classroom_ap": "AP_BuildingA_Room101"
+    },
+    {
+      "timestamp": "2024-10-15T08:32:10Z",
+      "mac_address": "88:E9:FE:1A:D3:47",
+      "ssid": "School_Secure",
+      "signal_strength": -42,
+      "classroom_ap": "AP_BuildingA_Room101"
+    },
+    {
+      "timestamp": "2024-10-15T09:15:55Z",
+      "mac_address": "A4:C3:F0:72:1B:9C",
+      "ssid": "School_Guest",
+      "signal_strength": -70,
+      "classroom_ap": "AP_BuildingB_Room205"
+    },
+    {
+      "timestamp": "2024-10-15T10:00:12Z",
+      "mac_address": "DC:A6:32:8F:5E:11",
+      "ssid": "School_Secure",
+      "signal_strength": -48,
+      "classroom_ap": "AP_BuildingC_Lab3"
+    },
+    {
+      "timestamp": "2024-10-15T10:45:30Z",
+      "mac_address": "88:E9:FE:1A:D3:47",
+      "ssid": "School_Secure",
+      "signal_strength": -55,
+      "classroom_ap": "AP_BuildingA_Room110"
+    },
+    {
+      "timestamp": "2024-10-15T11:20:05Z",
+      "mac_address": "F0:2F:74:9C:33:A8",
+      "ssid": "School_Guest",
+      "signal_strength": -80,
+      "classroom_ap": "AP_BuildingB_Cafeteria"
+    },
+    {
+      "timestamp": "2024-10-15T12:15:40Z",
+      "mac_address": "A4:C3:F0:72:1B:9C",
+      "ssid": "School_Secure",
+      "signal_strength": -60,
+      "classroom_ap": "AP_BuildingC_Lab3"
+    },
+    {
+      "timestamp": "2024-10-15T13:05:18Z",
+      "mac_address": "DC:A6:32:8F:5E:11",
+      "ssid": "School_Secure",
+      "signal_strength": -45,
+      "classroom_ap": "AP_BuildingA_Room101"
+    },
+    {
+      "timestamp": "2024-10-15T14:10:22Z",
+      "mac_address": "88:E9:FE:1A:D3:47",
+      "ssid": "School_Guest",
+      "signal_strength": -75,
+      "classroom_ap": "AP_BuildingB_Room205"
+    },
+    {
+      "timestamp": "2024-10-15T14:55:09Z",
+      "mac_address": "F0:2F:74:9C:33:A8",
+      "ssid": "School_Secure",
+      "signal_strength": -50,
+      "classroom_ap": "AP_BuildingA_Room110"
+    }
+  ]
+}

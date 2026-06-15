@@ -1,0 +1,62 @@
+[
+  {
+    "patient_id": "PT-1001",
+    "symptoms": ["chest pain", "shortness of breath", "nausea"],
+    "arrival_time": "2024-10-15T08:30:00Z",
+    "insurance_provider": "BlueCross BlueShield"
+  },
+  {
+    "patient_id": "PT-1002",
+    "symptoms": ["fever", "cough", "fatigue"],
+    "arrival_time": "2024-10-15T09:15:00Z",
+    "insurance_provider": "Medicaid"
+  },
+  {
+    "patient_id": "PT-1003",
+    "symptoms": ["severe headache", "blurred vision"],
+    "arrival_time": "2024-10-15T10:05:00Z",
+    "insurance_provider": "Aetna"
+  },
+  {
+    "patient_id": "PT-1004",
+    "symptoms": ["broken arm", "swelling", "pain"],
+    "arrival_time": "2024-10-15T10:45:00Z",
+    "insurance_provider": "Medicare"
+  },
+  {
+    "patient_id": "PT-1005",
+    "symptoms": ["abdominal pain", "vomiting"],
+    "arrival_time": "2024-10-15T11:20:00Z",
+    "insurance_provider": "UnitedHealthcare"
+  },
+  {
+    "patient_id": "PT-1006",
+    "symptoms": ["dizziness", "confusion"],
+    "arrival_time": "2024-10-15T12:10:00Z",
+    "insurance_provider": "Medicaid"
+  },
+  {
+    "patient_id": "PT-1007",
+    "symptoms": ["asthma attack", "wheezing"],
+    "arrival_time": "2024-10-15T12:50:00Z",
+    "insurance_provider": "Cigna"
+  },
+  {
+    "patient_id": "PT-1008",
+    "symptoms": ["deep laceration", "bleeding"],
+    "arrival_time": "2024-10-15T13:30:00Z",
+    "insurance_provider": "Medicare"
+  },
+  {
+    "patient_id": "PT-1009",
+    "symptoms": ["allergic reaction", "hives", "swelling"],
+    "arrival_time": "2024-10-15T14:15:00Z",
+    "insurance_provider": "Kaiser Permanente"
+  },
+  {
+    "patient_id": "PT-1010",
+    "symptoms": ["back pain", "numbness in legs"],
+    "arrival_time": "2024-10-15T15:00:00Z",
+    "insurance_provider": "Medicaid"
+  }
+]

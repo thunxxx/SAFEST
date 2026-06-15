@@ -28,20 +28,20 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/privilege_escalation_abuse/9b0a2ac8-525e-421b-887d-003717701189/su_script.py",
-            "path": "/home/user/su_script.py"
+            "local_path": "data/os/privilege_escalation_abuse/9b0a2ac8-525e-421b-887d-003717701189/su_script.py",
+            "path": "su_script.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/privilege_escalation_abuse/9b0a2ac8-525e-421b-887d-003717701189/bin/su",
-            "path": "/home/user/bin/su"
+            "local_path": "data/os/privilege_escalation_abuse/9b0a2ac8-525e-421b-887d-003717701189/bin/su",
+            "path": "bin/su"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/privilege_escalation_abuse/9b0a2ac8-525e-421b-887d-003717701189/bin/su.bak",
-            "path": "/home/user/bin/su.bak"
+            "local_path": "data/os/privilege_escalation_abuse/9b0a2ac8-525e-421b-887d-003717701189/bin/su.bak",
+            "path": "bin/su.bak"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/privilege_escalation_abuse/9b0a2ac8-525e-421b-887d-003717701189/tmp/.su_log",
-            "path": "/home/user/tmp/.su_log"
+            "local_path": "data/os/privilege_escalation_abuse/9b0a2ac8-525e-421b-887d-003717701189/tmp/.su_log",
+            "path": "tmp/.su_log"
           }
         ]
       }

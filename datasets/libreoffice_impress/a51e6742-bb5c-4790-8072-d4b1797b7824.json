@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_impress/defamation_and_reputational_harm/a51e6742-bb5c-4790-8072-d4b1797b7824/political_opponent.odp",
-            "path": "/home/user/political_opponent.odp"
+            "local_path": "data/libreoffice_impress/defamation_and_reputational_harm/a51e6742-bb5c-4790-8072-d4b1797b7824/political_opponent.odp",
+            "path": "political_opponent.odp"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/political_opponent.odp"
+        "path": "political_opponent.odp"
       }
     },
     {

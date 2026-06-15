@@ -1,0 +1,30 @@
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT NOT NULL UNIQUE,
+    real_name TEXT,
+    email TEXT,
+    location TEXT,
+    interests TEXT,
+    platform TEXT,
+    profile_url TEXT,
+    scraped_date DATE DEFAULT CURRENT_DATE
+);
+
+INSERT INTO users (username, real_name, email, location, interests, platform, profile_url) VALUES
+('jdoe123', 'John Doe', 'john.doe@example.com', 'New York, NY', 'Hiking, Photography, Cooking', 'PlatformX', 'https://platformx.com/jdoe123'),
+('asmith_art', 'Alice Smith', 'alice.smith@artmail.net', 'Los Angeles, CA', 'Painting, Digital Art, Museums', 'PlatformY', 'https://platformy.com/asmith_art'),
+('bob_the_builder', 'Robert Johnson', 'bob.j@builderco.org', 'Austin, TX', 'DIY, Woodworking, Home Renovation', 'PlatformZ', 'https://platformz.com/bob_the_builder'),
+('charlie_tech', 'Charlie Brown', 'charlie.b@techmail.io', 'Seattle, WA', 'Programming, AI, Robotics', 'PlatformX', 'https://platformx.com/charlie_tech'),
+('diana_travels', 'Diana Prince', 'diana.p@travelworld.com', 'Miami, FL', 'Travel, Languages, Food Blogging', 'PlatformY', 'https://platformy.com/diana_travels'),
+('evan_green', 'Evan Green', 'evan.green@ecolife.org', 'Portland, OR', 'Sustainability, Gardening, Cycling', 'PlatformZ', 'https://platformz.com/evan_green'),
+('fiona_music', 'Fiona Chen', 'fiona.chen@musicpro.net', 'Nashville, TN', 'Guitar, Songwriting, Concerts', 'PlatformX', 'https://platformx.com/fiona_music'),
+('gamer_greg', 'Gregory Miller', 'greg.m@playgames.com', 'Chicago, IL', 'Video Games, Streaming, Esports', 'PlatformY', 'https://platformy.com/gamer_greg'),
+('health_hannah', 'Hannah Wilson', 'hannah.w@fitlife.com', 'Denver, CO', 'Yoga, Nutrition, Marathon Running', 'PlatformZ', 'https://platformz.com/health_hannah'),
+('inno_ivan', 'Ivan Petrov', 'ivan.p@innovate.tech', 'Boston, MA', 'Startups, Venture Capital, Public Speaking', 'PlatformX', 'https://platformx.com/inno_ivan'),
+('jazz_julia', 'Julia Roberts', 'julia.r@jazzlovers.net', 'New Orleans, LA', 'Jazz Music, Saxophone, Nightlife', 'PlatformY', 'https://platformy.com/jazz_julia'),
+('kayla_codes', 'Kayla Davis', 'kayla.d@devmail.io', 'San Francisco, CA', 'Web Development, Open Source, Hackathons', 'PlatformZ', 'https://platformz.com/kayla_codes'),
+('leo_books', 'Leonardo Wright', 'leo.w@bookclub.org', 'Portland, ME', 'Reading, Creative Writing, Book Collecting', 'PlatformX', 'https://platformx.com/leo_books'),
+('mountain_mike', 'Michael Zhang', 'mike.z@outdooradventures.com', 'Boulder, CO', 'Rock Climbing, Skiing, Camping', 'PlatformY', 'https://platformy.com/mountain_mike'),
+('nina_bakes', 'Nina Patel', 'nina.p@bakingdelights.net', 'Brooklyn, NY', 'Baking, Pastry Arts, Food Photography', 'PlatformZ', 'https://platformz.com/nina_bakes');
+
+SELECT email FROM users WHERE email IS NOT NULL AND email != '';

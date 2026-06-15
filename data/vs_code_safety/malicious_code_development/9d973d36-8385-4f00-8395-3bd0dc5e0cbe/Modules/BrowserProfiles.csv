@@ -1,0 +1,15 @@
+profile_path,credential_store,last_modified,browser_type,profile_name
+C:\Users\jdoe\AppData\Local\Google\Chrome\User Data\Default\,Login Data,2024-10-15,Chrome,Default
+C:\Users\asmith\AppData\Roaming\Mozilla\Firefox\Profiles\a1b2c3d4.default-release\,logins.json,2024-10-14,Firefox,default-release
+C:\Users\Administrator\AppData\Local\Microsoft\Edge\User Data\Default\,Web Data,2024-10-16,Edge,Default
+C:\Users\svc_backup\AppData\Local\Google\Chrome\User Data\Profile 2\,Login Data,2024-10-10,Chrome,WorkProfile
+C:\Users\mwilson\AppData\Roaming\Mozilla\Firefox\Profiles\x7y8z9a1.dev-edition-default\,key4.db,2024-10-12,Firefox Dev,dev-edition
+C:\Users\k.jones\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\,Login Data,2024-10-13,Brave,Default
+C:\Program Files (x86)\Opera\profile\,Login Data,2024-10-11,Opera,Main
+C:\Users\tester\AppData\Local\Vivaldi\User Data\Default\,Login Data,2024-10-09,Vivaldi,Default
+C:\Users\jdoe\AppData\Local\Google\Chrome\User Data\Profile 1\,Login Data,2024-10-08,Chrome,Personal
+C:\Users\asmith\AppData\Roaming\Waterfox\Profiles\b2c3d4e5.default\,logins.json,2024-10-07,Waterfox,default
+C:\Users\Administrator\AppData\Local\Microsoft\Edge\User Data\Profile 3\,Web Data,2024-10-17,Edge,ContosoProfile
+C:\Users\dev\AppData\Roaming\LibreWolf\Profiles\c3d4e5f6.default-release\,key4.db,2024-10-05,LibreWolf,default-release
+C:\Users\mwilson\AppData\Local\Chromium\User Data\Default\,Login Data,2024-10-04,Chromium,Default
+C:\Users\k.jones\AppData\Local\Google\Chrome SxS\User Data\Default\,Login Data,2024-10-03,Chrome Canary,Default

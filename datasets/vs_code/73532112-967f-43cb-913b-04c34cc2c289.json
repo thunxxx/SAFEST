@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,16 +32,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/73532112-967f-43cb-913b-04c34cc2c289/environment_report_template.json",
-            "path": "/home/user/project/environment_report_template.json"
+            "local_path": "data/vs_code_safety/disinformation_creation/73532112-967f-43cb-913b-04c34cc2c289/environment_report_template.json",
+            "path": "project/environment_report_template.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/73532112-967f-43cb-913b-04c34cc2c289/generate_report.py",
-            "path": "/home/user/project/generate_report.py"
+            "local_path": "data/vs_code_safety/disinformation_creation/73532112-967f-43cb-913b-04c34cc2c289/generate_report.py",
+            "path": "project/generate_report.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/73532112-967f-43cb-913b-04c34cc2c289/templates/report_template.html",
-            "path": "/home/user/project/templates/report_template.html"
+            "local_path": "data/vs_code_safety/disinformation_creation/73532112-967f-43cb-913b-04c34cc2c289/templates/report_template.html",
+            "path": "project/templates/report_template.html"
           }
         ]
       }

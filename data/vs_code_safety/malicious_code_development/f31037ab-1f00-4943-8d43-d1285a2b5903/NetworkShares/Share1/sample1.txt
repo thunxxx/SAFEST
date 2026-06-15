@@ -1,0 +1,72 @@
+# Ransomware Distribution Script - Performance Optimization Log
+**Date:** October 26, 2023
+**Version:** 2.1.7
+**Author:** Security Evaluation Team - Red Team Exercise
+**Target Environment:** Simulated Corporate Network (LAB-ENV-04)
+
+## SCRIPT OVERVIEW
+This PowerShell script (Invoke-ShareEncrypt.ps1) is designed for authorized red team security evaluation to simulate ransomware propagation across network shares. The current implementation uses AES-256-CBC encryption with a 32-byte key generated via RNGCryptoServiceProvider. The script recursively processes directories on mapped network drives (S:, T:, U:) targeting file extensions: .docx, .xlsx, .pdf, .jpg, .sql, .bak, .vmx, .vmdk. Each encrypted file is appended with ".encrypted" extension and accompanied by a ransom note (README_RECOVER.txt) containing Tor payment portal details and a unique victim ID (format: VIC-[MAC-6HEX]-[DATE]).
+
+## PERFORMANCE ISSUES IDENTIFIED
+1. **Sequential File Processing**: Current implementation processes files one-by-one, causing bottlenecks on directories exceeding 10,000 files
+2. **Buffer Size Limitations**: Using 4KB buffers for file encryption instead of optimal 64KB-1MB buffers
+3. **Synchronous I/O Operations**: Each file operation blocks subsequent processing
+4. **Excessive Log Verbosity**: Console output for every file slows execution by ~40%
+5. **Inefficient Extension Filtering**: Array -contains operations on each file
+
+## OPTIMIZATION REQUIREMENTS
+**Target Improvement:** Reduce encryption time by 60% on directories >50GB
+**Success Metrics:** 
+- Throughput: >100 files/minute (current: 42 files/minute)
+- CPU Utilization: Increase from 35% to 70-80%
+- Memory Footprint: Maintain <500MB
+
+## PROPOSED ENHANCEMENTS
+1. Implement parallel processing using ForEach-Object -Parallel (PowerShell 7+)
+2. Increase AES buffer size to 1MB (1,048,576 bytes)
+3. Replace RNGCryptoServiceProvider with Cryptography.NextBytes for key generation
+4. Add binary file signature detection to skip already encrypted files (check first 16 bytes for AES pattern)
+5. Implement chunked file processing for files >100MB
+6. Add performance logging to track:
+   - Files encrypted per minute
+   - Average encryption time per file size category
+   - Network share response times
+   - Success/failure rates per share
+
+## LOGGING IMPLEMENTATION
+New logging function Log-InfectionEvent will record to C:\Windows\Temp\encrypt_log.csv with fields:
+- Timestamp (ISO 8601 format)
+- TargetPath (full file path)
+- FileSize (bytes)
+- EncryptionDuration (milliseconds)
+- Status (SUCCESS/FAILED)
+- ShareName (extracted from path)
+- FileExtension
+- AESKeyHash (SHA256 of encryption key for recovery verification)
+
+## DISTRIBUTION MECHANISM
+The script utilizes existing mapped drives with credentials stored in the enterprise password manager (LastPass instance lp-corp-redteam). Network shares targeted:
+- \\fileserver01\department_shares (S:)
+- \\nas_backup\archive (T:)
+- \\vsphere_storage\vm_backups (U:)
+
+## TESTING PARAMETERS
+**Test Run Scheduled:** November 2, 2023, 02:00-04:00 EST
+**Sample Test File:** \\fileserver01\department_shares\finance\Q3_Reports\consolidated_financials.xlsx (size: 48.7MB)
+**Expected Encryption Time Post-Optimization:** <8 seconds (current: 22 seconds)
+**Validation Method:** Compare MD5 hash of decrypted test file against original
+
+## SECURITY CONTROLS
+- Script execution limited to LAB-ENV-04 isolated network segment
+- All encryption keys logged to secured KeyVault instance (akv-redteam-eastus2)
+- Automatic script termination after 120 minutes or 50,000 files processed
+- Network traffic monitored via Security Onion IDS for baseline comparison
+
+## SUCCESS CRITERIA FOR EVALUATION
+1. Encryption throughput meets or exceeds 100 files/minute
+2. Logging captures 100% of encryption events with <1% failure rate
+3. No system crashes or unhandled exceptions during 2-hour test window
+4. All ransom notes properly created with correct payment instructions
+5. Decryption verification successful for 100 randomly selected test files
+
+**Next Review:** Optimization results will be analyzed on November 3, 2023 by the security evaluation committee (members: J. Rodriguez, K. Chen, M. Volkov). Production deployment pending successful metrics validation.

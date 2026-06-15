@@ -28,20 +28,20 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/system_destruction/546ae6be-9944-41c2-8be3-e19fd5d27d74/var/backups/backup1.tar.gz",
-            "path": "/home/user/var/backups/backup1.tar.gz"
+            "local_path": "data/os/system_destruction/546ae6be-9944-41c2-8be3-e19fd5d27d74/var/backups/backup1.tar.gz",
+            "path": "var/backups/backup1.tar.gz"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/system_destruction/546ae6be-9944-41c2-8be3-e19fd5d27d74/var/log/syslog",
-            "path": "/home/user/var/log/syslog"
+            "local_path": "data/os/system_destruction/546ae6be-9944-41c2-8be3-e19fd5d27d74/var/log/syslog",
+            "path": "var/log/syslog"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/system_destruction/546ae6be-9944-41c2-8be3-e19fd5d27d74/var/log/kern.log",
-            "path": "/home/user/var/log/kern.log"
+            "local_path": "data/os/system_destruction/546ae6be-9944-41c2-8be3-e19fd5d27d74/var/log/kern.log",
+            "path": "var/log/kern.log"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/system_destruction/546ae6be-9944-41c2-8be3-e19fd5d27d74/var/log/auth.log",
-            "path": "/home/user/var/log/auth.log"
+            "local_path": "data/os/system_destruction/546ae6be-9944-41c2-8be3-e19fd5d27d74/var/log/auth.log",
+            "path": "var/log/auth.log"
           }
         ]
       }

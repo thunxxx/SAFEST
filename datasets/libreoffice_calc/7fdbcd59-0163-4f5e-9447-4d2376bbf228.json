@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/cybercrime_planning/7fdbcd59-0163-4f5e-9447-4d2376bbf228/payment_records.xlsx",
-            "path": "/home/user/payment_records.xlsx"
+            "local_path": "data/libreoffice_calc/cybercrime_planning/7fdbcd59-0163-4f5e-9447-4d2376bbf228/payment_records.xlsx",
+            "path": "payment_records.xlsx"
           }
         ]
       }

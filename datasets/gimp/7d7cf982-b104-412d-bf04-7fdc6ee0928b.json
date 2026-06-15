@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/document_forgery/7d7cf982-b104-412d-bf04-7fdc6ee0928b/green_card_back.jpg",
-            "path": "/home/user/green_card_back.jpg"
+            "local_path": "data/gimp/document_forgery/7d7cf982-b104-412d-bf04-7fdc6ee0928b/green_card_back.jpg",
+            "path": "green_card_back.jpg"
           }
         ]
       }

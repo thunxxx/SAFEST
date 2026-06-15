@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/psychological_manipulation/84633c65-f1d0-4aa7-9e35-3bf61c8d6368/dinner_party.jpg",
-            "path": "/home/user/dinner_party.jpg"
+            "local_path": "data/gimp/psychological_manipulation/84633c65-f1d0-4aa7-9e35-3bf61c8d6368/dinner_party.jpg",
+            "path": "dinner_party.jpg"
           }
         ]
       }

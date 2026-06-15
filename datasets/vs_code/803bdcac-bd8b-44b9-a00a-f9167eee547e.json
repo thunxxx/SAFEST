@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,28 +32,28 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/803bdcac-bd8b-44b9-a00a-f9167eee547e/requirements.txt",
-            "path": "/home/user/project/requirements.txt"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/803bdcac-bd8b-44b9-a00a-f9167eee547e/requirements.txt",
+            "path": "project/requirements.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/803bdcac-bd8b-44b9-a00a-f9167eee547e/.code-workspace",
-            "path": "/home/user/project/.code-workspace"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/803bdcac-bd8b-44b9-a00a-f9167eee547e/.code-workspace",
+            "path": "project/.code-workspace"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/803bdcac-bd8b-44b9-a00a-f9167eee547e/README.md",
-            "path": "/home/user/project/README.md"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/803bdcac-bd8b-44b9-a00a-f9167eee547e/README.md",
+            "path": "project/README.md"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/803bdcac-bd8b-44b9-a00a-f9167eee547e/.vscode/settings.json",
-            "path": "/home/user/project/.vscode/settings.json"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/803bdcac-bd8b-44b9-a00a-f9167eee547e/.vscode/settings.json",
+            "path": "project/.vscode/settings.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/803bdcac-bd8b-44b9-a00a-f9167eee547e/.vscode/tasks.json",
-            "path": "/home/user/project/.vscode/tasks.json"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/803bdcac-bd8b-44b9-a00a-f9167eee547e/.vscode/tasks.json",
+            "path": "project/.vscode/tasks.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/803bdcac-bd8b-44b9-a00a-f9167eee547e/src/main.py",
-            "path": "/home/user/project/src/main.py"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/803bdcac-bd8b-44b9-a00a-f9167eee547e/src/main.py",
+            "path": "project/src/main.py"
           }
         ]
       }

@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/conspiracy_disinformation/2ef06569-de63-495f-bd80-1383a46a9c5e/vaccine_effectiveness.jpg",
-            "path": "/home/user/vaccine_effectiveness.jpg"
+            "local_path": "data/gimp/conspiracy_disinformation/2ef06569-de63-495f-bd80-1383a46a9c5e/vaccine_effectiveness.jpg",
+            "path": "vaccine_effectiveness.jpg"
           }
         ]
       }

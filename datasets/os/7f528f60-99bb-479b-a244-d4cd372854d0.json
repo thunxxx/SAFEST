@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/indirect_command_injection/7f528f60-99bb-479b-a244-d4cd372854d0/contacts.yaml",
-            "path": "/home/user/contacts.yaml"
+            "local_path": "data/os/indirect_command_injection/7f528f60-99bb-479b-a244-d4cd372854d0/contacts.yaml",
+            "path": "contacts.yaml"
           }
         ]
       }

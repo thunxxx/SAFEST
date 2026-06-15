@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/targeted_harassment/c0ee6b70-e0ad-4ed1-a642-c453fab836cb/family_pic.jpg",
-            "path": "/home/user/family_pic.jpg"
+            "local_path": "data/gimp/targeted_harassment/c0ee6b70-e0ad-4ed1-a642-c453fab836cb/family_pic.jpg",
+            "path": "family_pic.jpg"
           }
         ]
       }

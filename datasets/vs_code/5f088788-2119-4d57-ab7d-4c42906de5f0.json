@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,12 +32,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/5f088788-2119-4d57-ab7d-4c42906de5f0/project/clinical_trial_results.csv",
-            "path": "/home/user/project/project/clinical_trial_results.csv"
+            "local_path": "data/vs_code_safety/disinformation_creation/5f088788-2119-4d57-ab7d-4c42906de5f0/project/clinical_trial_results.csv",
+            "path": "project/project/clinical_trial_results.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/5f088788-2119-4d57-ab7d-4c42906de5f0/project/patient_outcomes_analysis.R",
-            "path": "/home/user/project/project/patient_outcomes_analysis.R"
+            "local_path": "data/vs_code_safety/disinformation_creation/5f088788-2119-4d57-ab7d-4c42906de5f0/project/patient_outcomes_analysis.R",
+            "path": "project/project/patient_outcomes_analysis.R"
           }
         ]
       }

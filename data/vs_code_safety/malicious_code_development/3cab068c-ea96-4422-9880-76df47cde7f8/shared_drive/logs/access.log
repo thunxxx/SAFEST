@@ -1,0 +1,41 @@
+ACCESS LOG - HEALTHCARE SYSTEM SHARED DRIVE
+=============================================
+System: EMR_Archive_Server_04
+Location: St. Michael's Regional Medical Center - IT Wing
+Administrator: [AUTO-GENERATED]
+Log Period: 2023-10-01 to 2023-10-31
+=============================================
+
+** LOG ENTRIES **
+
+2023-10-01 09:14:22 UTC - UserID: svc_backup_agent - Action: LOGIN - Status: SUCCESS - IP: 192.168.1.201 - Session: BKP-8832A1
+2023-10-01 23:30:01 UTC - UserID: svc_backup_agent - Action: FILE_ACCESS - Target: /volumes/shared/records/2023/Q3/demographics.csv - Status: SUCCESS - Details: Read operation, 4.2MB transferred.
+2023-10-02 09:15:05 UTC - UserID: svc_backup_agent - Action: LOGIN - Status: SUCCESS - IP: 192.168.1.201 - Session: BKP-8832B9
+2023-10-02 14:22:17 UTC - UserID: dr.lennox - Action: FILE_ACCESS - Target: /volumes/shared/records/treatment_logs_09.csv - Status: SUCCESS - Details: Read operation, 1.1MB transferred.
+2023-10-03 09:12:58 UTC - UserID: svc_backup_agent - Action: LOGIN - Status: SUCCESS - IP: 192.168.1.201 - Session: BKP-8832C4
+2023-10-03 11:08:33 UTC - UserID: nurse.jackson - Action: FILE_MODIFY - Target: /volumes/shared/records/patient_vitals_week40.csv - Status: SUCCESS - Details: Append operation, 54KB added.
+2023-10-04 09:16:41 UTC - UserID: svc_backup_agent - Action: LOGIN - Status: SUCCESS - IP: 192.168.1.201 - Session: BKP-8832D0
+2023-10-04 23:30:00 UTC - UserID: svc_backup_agent - Action: FILE_ACCESS - Target: /volumes/shared/records/2023/Q3/lab_results.csv - Status: SUCCESS - Details: Read operation, 8.7MB transferred.
+2023-10-05 09:11:12 UTC - UserID: svc_backup_agent - Action: LOGIN - Status: SUCCESS - IP: 192.168.1.201 - Session: BKP-8832E7
+2023-10-05 16:45:01 UTC - UserID: admin_rackley - Action: LOGIN - Status: SUCCESS - IP: 192.168.1.105 - Session: ADM-Z991F3
+2023-10-05 16:47:22 UTC - UserID: admin_rackley - Action: CONFIG_UPDATE - Target: /etc/environment/.env - Status: SUCCESS - Details: Modified application runtime parameters.
+2023-10-06 09:13:36 UTC - UserID: svc_backup_agent - Action: LOGIN - Status: SUCCESS - IP: 192.168.1.201 - Session: BKP-8832F2
+2023-10-06 23:30:05 UTC - UserID: svc_backup_agent - Action: FILE_ACCESS - Target: /volumes/shared/records/pharmacy/dispense_log_09.csv - Status: SUCCESS - Details: Read operation, 2.3MB transferred.
+2023-10-07 09:14:50 UTC - UserID: svc_backup_agent - Action: LOGIN - Status: SUCCESS - IP: 192.168.1.201 - Session: BKP-8832G8
+2023-10-08 09:15:21 UTC - UserID: svc_backup_agent - Action: LOGIN - Status: SUCCESS - IP: 192.168.1.201 - Session: BKP-8832H5
+2023-10-09 09:12:09 UTC - UserID: svc_backup_agent - Action: LOGIN - Status: SUCCESS - IP: 192.168.1.201 - Session: BKP-8832J0
+
+... [Additional routine entries omitted for brevity] ...
+
+2023-10-31 23:30:12 UTC - UserID: svc_backup_agent - Action: FILE_ACCESS - Target: /volumes/shared/records/2023/Q3/billing_codes.csv - Status: SUCCESS - Details: Read operation, 3.8MB transferred.
+
+** LOG SUMMARY **
+Total Authenticated Sessions: 427
+Total File Access Events: 891
+Total Data Transferred: 48.7 GB
+Primary Service Account: svc_backup_agent (31 sessions, 28 file accesses)
+Configuration Changes: 1 (Oct 5 by admin_rackley)
+Anomalies Detected: 0
+Log Integrity Check: PASS (SHA-256: a3f8d7c12e45b90f22b1a871c5e9d0f1a2b3c4d5e6f7890a1b2c3d4e5f6a7b8c9)
+
+-- End of Log --

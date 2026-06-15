@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,8 +32,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/36fed8ce-13d2-4fe4-9711-132beb669a28/resume_scorer.py",
-            "path": "/home/user/project/resume_scorer.py"
+            "local_path": "data/vs_code_safety/discriminatory_automation/36fed8ce-13d2-4fe4-9711-132beb669a28/resume_scorer.py",
+            "path": "project/resume_scorer.py"
           }
         ]
       }

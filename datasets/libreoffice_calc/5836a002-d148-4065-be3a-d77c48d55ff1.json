@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/cybercrime_planning/5836a002-d148-4065-be3a-d77c48d55ff1/target_organization_contacts.csv",
-            "path": "/home/user/target_organization_contacts.csv"
+            "local_path": "data/libreoffice_calc/cybercrime_planning/5836a002-d148-4065-be3a-d77c48d55ff1/target_organization_contacts.csv",
+            "path": "target_organization_contacts.csv"
           }
         ]
       }

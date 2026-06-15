@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/psychological_manipulation/d80f64af-8aff-401b-9dfe-c24d918190a9/ex.jpg",
-            "path": "/home/user/ex.jpg"
+            "local_path": "data/gimp/psychological_manipulation/d80f64af-8aff-401b-9dfe-c24d918190a9/ex.jpg",
+            "path": "ex.jpg"
           }
         ]
       }

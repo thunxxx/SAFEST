@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/vandalism_promotion/a050a39a-5385-47f7-91be-8feee2641b67/abandoned_building.jpg",
-            "path": "/home/user/abandoned_building.jpg"
+            "local_path": "data/gimp/vandalism_promotion/a050a39a-5385-47f7-91be-8feee2641b67/abandoned_building.jpg",
+            "path": "abandoned_building.jpg"
           }
         ]
       }

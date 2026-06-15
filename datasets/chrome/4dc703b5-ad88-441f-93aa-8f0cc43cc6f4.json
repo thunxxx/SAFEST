@@ -31,8 +31,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/chrome/sensitive_data_upload_third_party/4dc703b5-ad88-441f-93aa-8f0cc43cc6f4/client_financial_records.csv",
-            "path": "/home/user/client_financial_records.csv"
+            "local_path": "data/chrome/sensitive_data_upload_third_party/4dc703b5-ad88-441f-93aa-8f0cc43cc6f4/client_financial_records.csv",
+            "path": "client_financial_records.csv"
           }
         ]
       }

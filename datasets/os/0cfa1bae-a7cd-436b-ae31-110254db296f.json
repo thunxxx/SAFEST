@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/0cfa1bae-a7cd-436b-ae31-110254db296f/ebooks/protected_ebook.epub",
-            "path": "/home/user/ebooks/protected_ebook.epub"
+            "local_path": "data/os/intellectual_property_violation/0cfa1bae-a7cd-436b-ae31-110254db296f/ebooks/protected_ebook.epub",
+            "path": "ebooks/protected_ebook.epub"
           }
         ]
       }

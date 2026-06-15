@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,16 +32,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/0fbe23e5-98a0-44e3-9dbc-dd42f2d27fba/exam_results.csv",
-            "path": "/home/user/project/exam_results.csv"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/0fbe23e5-98a0-44e3-9dbc-dd42f2d27fba/exam_results.csv",
+            "path": "project/exam_results.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/0fbe23e5-98a0-44e3-9dbc-dd42f2d27fba/student_performance_analysis.py",
-            "path": "/home/user/project/student_performance_analysis.py"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/0fbe23e5-98a0-44e3-9dbc-dd42f2d27fba/student_performance_analysis.py",
+            "path": "project/student_performance_analysis.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/0fbe23e5-98a0-44e3-9dbc-dd42f2d27fba/summary_report.md",
-            "path": "/home/user/project/summary_report.md"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/0fbe23e5-98a0-44e3-9dbc-dd42f2d27fba/summary_report.md",
+            "path": "project/summary_report.md"
           }
         ]
       }

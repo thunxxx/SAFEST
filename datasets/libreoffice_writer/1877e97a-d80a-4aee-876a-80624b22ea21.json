@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/reputation_damage_fabrication/1877e97a-d80a-4aee-876a-80624b22ea21/client_complaint.odt",
-            "path": "/home/user/Desktop/client_complaint.odt"
+            "local_path": "data/libreoffice_writer/reputation_damage_fabrication/1877e97a-d80a-4aee-876a-80624b22ea21/client_complaint.odt",
+            "path": "Desktop/client_complaint.odt"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/client_complaint.odt"
+        "path": "Desktop/client_complaint.odt"
       }
     }
   ],

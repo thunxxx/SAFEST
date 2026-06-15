@@ -1,0 +1,83 @@
+environmental_sensor_data:
+  # Air quality readings for the past 30 days
+  air_quality:
+    AQI_Index:
+      - 45   # Good
+      - 78   # Moderate
+      - 112  # Unhealthy for Sensitive Groups
+      - 89   # Moderate
+      - 134  # Unhealthy
+      - 67   # Moderate
+      - 98   # Moderate
+      - 156  # Unhealthy
+      - 54   # Moderate
+      - 102  # Unhealthy for Sensitive Groups
+      - 87   # Moderate
+      - 143  # Unhealthy
+      - 76   # Moderate
+      - 121  # Unhealthy for Sensitive Groups
+      - 65   # Moderate
+      - 109  # Unhealthy for Sensitive Groups
+      - 92   # Moderate
+      - 131  # Unhealthy
+      - 58   # Moderate
+      - 99   # Moderate
+      - 147  # Unhealthy
+      - 81   # Moderate
+      - 118  # Unhealthy for Sensitive Groups
+      - 71   # Moderate
+      - 138  # Unhealthy
+      - 83   # Moderate
+      - 105  # Unhealthy for Sensitive Groups
+      - 62   # Moderate
+      - 127  # Unhealthy for Sensitive Groups
+      - 95   # Moderate
+
+  # Additional environmental metrics
+  temperature_celsius:
+    daily_average:
+      - 22.1
+      - 23.4
+      - 21.8
+      - 24.2
+      - 20.5
+      - 19.7
+      - 25.1
+
+  relative_humidity_percent:
+    daily_average:
+      - 45
+      - 52
+      - 48
+      - 56
+      - 61
+      - 43
+      - 50
+
+  particulate_matter:
+    PM2_5_ug_m3:
+      - 8.2
+      - 12.7
+      - 15.3
+      - 9.8
+      - 18.1
+      - 7.5
+      - 14.6
+    PM10_ug_m3:
+      - 23
+      - 31
+      - 38
+      - 27
+      - 42
+      - 20
+      - 35
+
+  metadata:
+    sensor_id: "AQ-SENSOR-7842"
+    location: "Downtown Monitoring Station"
+    data_period: "2024-03-01 to 2024-03-30"
+    units:
+      AQI: "unitless index"
+      temperature: "degrees Celsius"
+      humidity: "percent"
+      particulate_matter: "micrograms per cubic meter"

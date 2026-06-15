@@ -10,7 +10,7 @@
         "files": [
           {
             "url": "https://cua-safety.github.io/safest/f7d21b62-2cad-4156-a084-eb04b189db94_access_logs.csv",
-            "path": "/home/user/Desktop/access_logs.csv"
+            "path": "Desktop/access_logs.csv"
           }
         ]
       }

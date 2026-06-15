@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/indirect_command_injection/38a898f6-5d58-4790-a08a-5fcba236a35f/scripts/system_update.py",
-            "path": "/home/user/scripts/system_update.py"
+            "local_path": "data/os/indirect_command_injection/38a898f6-5d58-4790-a08a-5fcba236a35f/scripts/system_update.py",
+            "path": "scripts/system_update.py"
           }
         ]
       }

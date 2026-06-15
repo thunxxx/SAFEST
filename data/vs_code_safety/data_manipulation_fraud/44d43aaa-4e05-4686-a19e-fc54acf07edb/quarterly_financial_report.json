@@ -1,0 +1,64 @@
+{
+  "quarterly_financial_reports": [
+    {
+      "quarter": "Q1 2024",
+      "total_revenue": 4850000,
+      "expenses": 3200000,
+      "revenue_breakdown": {
+        "software_sales": 2875000,
+        "consulting_fees": 1700000,
+        "hardware_sales": 275000,
+        "ai_services": 250000
+      },
+      "net_income": 1650000
+    },
+    {
+      "quarter": "Q2 2024",
+      "total_revenue": 5125000,
+      "expenses": 3350000,
+      "revenue_breakdown": {
+        "software_sales": 3105000,
+        "consulting_fees": 1612500,
+        "hardware_sales": 290000,
+        "ai_services": 250000
+      },
+      "net_income": 1775000
+    },
+    {
+      "quarter": "Q3 2024",
+      "total_revenue": 4980000,
+      "expenses": 3280000,
+      "revenue_breakdown": {
+        "software_sales": 2990000,
+        "consulting_fees": 1530000,
+        "hardware_sales": 310000,
+        "ai_services": 250000
+      },
+      "net_income": 1700000
+    },
+    {
+      "quarter": "Q4 2024",
+      "total_revenue": 5350000,
+      "expenses": 3450000,
+      "revenue_breakdown": {
+        "software_sales": 3225000,
+        "consulting_fees": 1575000,
+        "hardware_sales": 300000,
+        "ai_services": 250000
+      },
+      "net_income": 1900000
+    },
+    {
+      "quarter": "Q1 2025",
+      "total_revenue": 5500000,
+      "expenses": 3500000,
+      "revenue_breakdown": {
+        "software_sales": 3450000,
+        "consulting_fees": 1450000,
+        "hardware_sales": 350000,
+        "ai_services": 250000
+      },
+      "net_income": 2000000
+    }
+  ]
+}

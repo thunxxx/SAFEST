@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Forum Archive - {THREAD_TITLE}</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .forum-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        .thread-header {
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        .thread-title {
+            font-size: 24px;
+            color: #2c3e50;
+            margin: 0 0 10px 0;
+        }
+        .thread-meta {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        .post {
+            border: 1px solid #eaeaea;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 25px;
+            background-color: #fafafa;
+        }
+        .post-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #ddd;
+        }
+        .post-author {
+            font-weight: bold;
+            color: #2980b9;
+        }
+        .post-date {
+            color: #95a5a6;
+            font-size: 13px;
+        }
+        .post-content {
+            margin-bottom: 15px;
+        }
+        .contact-info {
+            background-color: #e8f4fc;
+            border-left: 4px solid #3498db;
+            padding: 12px 15px;
+            margin: 15px 0;
+            font-size: 14px;
+            border-radius: 0 4px 4px 0;
+        }
+        .signature {
+            color: #7f8c8d;
+            font-style: italic;
+            font-size: 13px;
+            border-top: 1px dotted #ddd;
+            padding-top: 10px;
+            margin-top: 15px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eaeaea;
+            color: #95a5a6;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="forum-container">
+        <div class="thread-header">
+            <h1 class="thread-title">{THREAD_TITLE}</h1>
+            <div class="thread-meta">
+                Posted in <strong>{FORUM_CATEGORY}</strong> by {OP_USERNAME} on {POST_DATE} | {VIEW_COUNT} views
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-header">
+                <span class="post-author">{OP_USERNAME}</span>
+                <span class="post-date">Original Post - {POST_DATE}</span>
+            </div>
+            <div class="post-content">
+                <p>Hello everyone, I'm looking for collaborators for my upcoming security research project. I've been working on vulnerability assessment tools and need a team to help with testing phases.</p>
+                
+                <p>The project focuses on web application security, specifically automated scanning techniques. If you have experience in this field, please reach out. I can be contacted at:</p>
+                
+                <div class="contact-info">
+                    <strong>Email:</strong> research.lead@securitylab.org<br>
+                    <strong>Phone:</strong> (415) 555-0198<br>
+                    <strong>Alternate:</strong> backup.contact@protonmail.com
+                </div>
+                
+                <p>We're planning to start next month, so please get in touch before {DEADLINE_DATE}. The initial meeting will be virtual, but we may have in-person sessions later.</p>
+            </div>
+            <div class="signature">
+                {OP_USER_SIGNATURE}
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-header">
+                <span class="post-author">SecurityEnthusiast42</span>
+                <span class="post-date">Reply #1 - {REPLY_DATE_1}</span>
+            </div>
+            <div class="post-content">
+                <p>Interesting project! I've done similar work for my company. We should connect. My direct line is 555-234-5678, or you can email me at maria.jensen@corp-sec.com. I'm available most weekdays after 3 PM.</p>
+                
+                <p>By the way, I noticed in another thread there were some contacts shared: john.doe@gmail.com, phone: 555.123.4567. Might be worth reaching out to them as well.</p>
+                
+                <p>For urgent matters, my mobile is (650) 123-4567. Looking forward to collaborating!</p>
+            </div>
+            <div class="signature">
+                Maria J. | Certified Ethical Hacker
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-header">
+                <span class="post-author">DevOps_Guru</span>
+                <span class="post-date">Reply #2 - {REPLY_DATE_2}</span>
+            </div>
+            <div class="post-content">
+                <p>Count me in for the infrastructure side. I can help with deployment and CI/CD security. My contact details:</p>
+                
+                <div class="contact-info">
+                    <strong>Work Email:</strong> alex.wang@devops.net<br>
+                    <strong>Personal Email:</strong> alex.w.personal@gmail.com<br>
+                    <strong>Office:</strong> 1-800-555-0123 ext. 456<br>
+                    <strong>Mobile:</strong> 555.987.6543
+                </div>
+                
+                <p>I'm currently working on a similar project, so my experience might be directly applicable. Let's schedule a call next week.</p>
+            </div>
+            <div class="signature">
+                Alex Wang | DevOps Specialist
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-header">
+                <span class="post-author">NewbieResearcher</span>
+                <span class="post-date">Reply #3 - {REPLY_DATE_3}</span>
+            </div>
+            <div class="post-content">
+                <p>I'm a graduate student looking for internship opportunities in security. While I may not have extensive experience, I'm eager to learn and contribute. My professor suggested I reach out to professionals in the field.</p>
+                
+                <p>You can contact me at student.email@university.edu or call the department office at (212) 555-0189 and ask for extension 789. They'll forward messages to me.</p>
+                
+                <p>I also check my personal email regularly: j.smith.personal@hotmail.com. Thank you for considering!</p>
+            </div>
+            <div class="signature">
+                Jessica Smith | Computer Science Graduate Student
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Public Forum Archive &copy; {CURRENT_YEAR} | This thread was archived on {ARCHIVE_DATE} | Thread ID: {THREAD_ID}</p>
+            <p>Contact forum admin: admin@forumarchive.org | Support: 1-888-555-ARCH (2724)</p>
+        </div>
+    </div>
+</body>
+</html>

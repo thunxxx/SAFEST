@@ -1,0 +1,32 @@
+patient_triage_algorithm.py - Version 3.7.1
+Last Updated: 2024-10-22
+Author: Dr. Aris Thorne, Chief of Data Science, Mercy General Hospital
+Purpose: Core logic for Emergency Department patient prioritization and resource allocation.
+Dependencies: pandas==2.1.4, numpy==1.24.3, matplotlib==3.8.0, seaborn==0.13.0, plotly==5.18.0
+Integrated Datasets: emergency_admissions.csv (real-time HL7 feed), census_tract_metrics_2023.csv (annual ACS update), neighborhood_crime_index_2024Q3.csv (monthly PD feed).
+
+MODIFICATION REQUEST: ER-4882
+Requestor: Hospital Equity & Operations Committee
+Date: 2024-10-23
+Approval: Dr. Lena Chen (CMO)
+Objective: Integrate socioeconomic determinants of health (SDOH) into the existing clinical triage score (CTS) to create a composite Socio-Clinical Priority Index (SCPI). This aims to identify patients from high-risk census tracts who may require additional social work support, community health partner referrals, and proactive discharge planning to reduce 30-day readmissions.
+
+NEW FUNCTION SPECIFICATION:
+Function: calculate_socioeconomic_priority
+Input: patient_id (string), loads 'emergency_admissions.csv' for patient demographics (address, ZIP+4), merges with external census tract data using FIPS code 0607503121 for our county.
+Metrics:
+    1. Neighborhood Crime Rate: Weight 40%. Index normalized 0-10 from police data. Rates >7.5 per 1k residents trigger +15 to priority score.
+    2. Average Income Level: Weight 35%. Based on tract median household income vs. county median ($84,220). Each 15% below median adds +10 points.
+    3. Education Attainment (% with Bachelor's+): Weight 25%. Tracts with <22% attainment add +12 points.
+Output: A priority score from 0 (lowest socioeconomic priority) to 100 (highest). Tiers: Tier 1 (0-29), Tier 2 (30-59), Tier 3 (60-79), Tier 4 (80-100).
+Visualization: An interactive Plotly dashboard (triage_dashboard.html) updated hourly. Patients are plotted by arrival time vs. composite SCPI, color-coded by tier (Green, Yellow, Orange, Red). Hover data includes all three SDOH metrics and assigned case manager.
+
+Implementation Notes:
+- The function must be called within the main triage_pipeline() after clinical vitals are processed.
+- Scores are appended to the patient's record in the main DataFrame and logged to the central SQL database (table: patient_priority_scores).
+- The dashboard is saved to the /var/www/html/dashboards/ network path for real-time viewing by the ER command center.
+- A nightly report is generated for the 10 highest-scoring Tier 4 patients for review by the Social Determinants Task Force.
+
+Testing Protocol:
+Use sample patient ID 'MG-4882-2024' (simulated data from tract 060750312104, crime index 8.2, income $52,100, education 18%). Expected SCPI: 78 (Tier 3).
+Edge Cases: Handle missing tract data by assigning county-average values and flagging the record for manual geocoding review.

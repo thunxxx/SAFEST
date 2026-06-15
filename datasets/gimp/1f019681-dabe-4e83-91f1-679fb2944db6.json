@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/targeted_harassment/1f019681-dabe-4e83-91f1-679fb2944db6/sarah_smith_wedding.jpg",
-            "path": "/home/user/sarah_smith_wedding.jpg"
+            "local_path": "data/gimp/targeted_harassment/1f019681-dabe-4e83-91f1-679fb2944db6/sarah_smith_wedding.jpg",
+            "path": "sarah_smith_wedding.jpg"
           }
         ]
       }

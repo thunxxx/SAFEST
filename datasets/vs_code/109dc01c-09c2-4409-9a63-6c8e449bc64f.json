@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,16 +32,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/109dc01c-09c2-4409-9a63-6c8e449bc64f/tenant_scoring.py",
-            "path": "/home/user/project/tenant_scoring.py"
+            "local_path": "data/vs_code_safety/discriminatory_automation/109dc01c-09c2-4409-9a63-6c8e449bc64f/tenant_scoring.py",
+            "path": "project/tenant_scoring.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/109dc01c-09c2-4409-9a63-6c8e449bc64f/requirements.txt",
-            "path": "/home/user/project/requirements.txt"
+            "local_path": "data/vs_code_safety/discriminatory_automation/109dc01c-09c2-4409-9a63-6c8e449bc64f/requirements.txt",
+            "path": "project/requirements.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/109dc01c-09c2-4409-9a63-6c8e449bc64f/religious_indicators.csv",
-            "path": "/home/user/project/religious_indicators.csv"
+            "local_path": "data/vs_code_safety/discriminatory_automation/109dc01c-09c2-4409-9a63-6c8e449bc64f/religious_indicators.csv",
+            "path": "project/religious_indicators.csv"
           }
         ]
       }

@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,32 +32,32 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/67ab862e-158e-42c7-829b-a3c284930e4e/attendance_logger.py",
-            "path": "/home/user/project/attendance_logger.py"
+            "local_path": "data/vs_code_safety/malicious_code_development/67ab862e-158e-42c7-829b-a3c284930e4e/attendance_logger.py",
+            "path": "project/attendance_logger.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/67ab862e-158e-42c7-829b-a3c284930e4e/requirements.txt",
-            "path": "/home/user/project/requirements.txt"
+            "local_path": "data/vs_code_safety/malicious_code_development/67ab862e-158e-42c7-829b-a3c284930e4e/requirements.txt",
+            "path": "project/requirements.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/67ab862e-158e-42c7-829b-a3c284930e4e/README.md",
-            "path": "/home/user/project/README.md"
+            "local_path": "data/vs_code_safety/malicious_code_development/67ab862e-158e-42c7-829b-a3c284930e4e/README.md",
+            "path": "project/README.md"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/67ab862e-158e-42c7-829b-a3c284930e4e/tests/test_attendance.py",
-            "path": "/home/user/project/tests/test_attendance.py"
+            "local_path": "data/vs_code_safety/malicious_code_development/67ab862e-158e-42c7-829b-a3c284930e4e/tests/test_attendance.py",
+            "path": "project/tests/test_attendance.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/67ab862e-158e-42c7-829b-a3c284930e4e/config/settings.json",
-            "path": "/home/user/project/config/settings.json"
+            "local_path": "data/vs_code_safety/malicious_code_development/67ab862e-158e-42c7-829b-a3c284930e4e/config/settings.json",
+            "path": "project/config/settings.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/67ab862e-158e-42c7-829b-a3c284930e4e/data/attendance_records.csv",
-            "path": "/home/user/project/data/attendance_records.csv"
+            "local_path": "data/vs_code_safety/malicious_code_development/67ab862e-158e-42c7-829b-a3c284930e4e/data/attendance_records.csv",
+            "path": "project/data/attendance_records.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/67ab862e-158e-42c7-829b-a3c284930e4e/data/students.csv",
-            "path": "/home/user/project/data/students.csv"
+            "local_path": "data/vs_code_safety/malicious_code_development/67ab862e-158e-42c7-829b-a3c284930e4e/data/students.csv",
+            "path": "project/data/students.csv"
           }
         ]
       }

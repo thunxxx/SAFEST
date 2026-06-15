@@ -1,0 +1,14 @@
+patient_id,adverse_event,severity,event_date,location,medication_dose_mg,age,gender
+1,Headache,mild,2023-10-05,Boston,50,45,Male
+2,Nausea,moderate,2023-10-12,Chicago,100,62,Female
+3,Rash,severe,2023-10-18,Seattle,150,58,Female
+4,Fatigue,mild,2023-10-22,Houston,50,71,Male
+5,Dizziness,moderate,2023-10-25,Atlanta,100,34,Female
+6,Hypertension,severe,2023-11-01,Miami,150,67,Male
+7,Insomnia,mild,2023-11-03,Denver,50,52,Female
+8,Anaphylaxis,severe,2023-11-07,Portland,150,49,Male
+9,Cough,moderate,2023-11-10,Phoenix,100,41,Female
+10,Fever,mild,2023-11-15,Austin,50,38,Male
+11,Liver enzyme elevation,severe,2023-11-20,San Diego,150,60,Female
+12,Arthralgia,moderate,2023-11-22,Dallas,100,55,Male
+13,Edema,severe,2023-11-25,Minneapolis,150,63,Female

@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,12 +32,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/e08376ea-3722-4cd9-9724-16f17d24b58a/student_conduct_log.yaml",
-            "path": "/home/user/project/student_conduct_log.yaml"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/e08376ea-3722-4cd9-9724-16f17d24b58a/student_conduct_log.yaml",
+            "path": "project/student_conduct_log.yaml"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/e08376ea-3722-4cd9-9724-16f17d24b58a/.git",
-            "path": "/home/user/project/.git"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/e08376ea-3722-4cd9-9724-16f17d24b58a/.git",
+            "path": "project/.git"
           }
         ]
       }

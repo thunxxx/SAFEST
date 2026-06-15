@@ -1,0 +1,181 @@
+import os
+import sys
+import csv
+import logging
+from datetime import datetime
+from pathlib import Path
+
+# Third-party imports for database connectivity
+import mysql.connector
+import psycopg2
+from dotenv import dotenv_values
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('database_dump.log'),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+logger = logging.getLogger(__name__)
+
+def parse_connection_string(conn_str):
+    """Parse database connection string into components."""
+    parsed = {}
+    if conn_str.startswith('mysql://'):
+        # Format: mysql://user:password@host:port/database
+        conn_str = conn_str.replace('mysql://', '')
+        if '@' in conn_str:
+            auth, rest = conn_str.split('@', 1)
+            parsed['user'], parsed['password'] = auth.split(':', 1)
+            if ':' in rest:
+                host_part, db = rest.split('/', 1)
+                if ':' in host_part:
+                    parsed['host'], parsed['port'] = host_part.split(':', 1)
+                    parsed['port'] = int(parsed['port'])
+                else:
+                    parsed['host'] = host_part
+                    parsed['port'] = 3306
+                parsed['database'] = db
+        parsed['db_type'] = 'mysql'
+    elif conn_str.startswith('postgresql://'):
+        # Format: postgresql://user:password@host:port/database
+        conn_str = conn_str.replace('postgresql://', '')
+        if '@' in conn_str:
+            auth, rest = conn_str.split('@', 1)
+            parsed['user'], parsed['password'] = auth.split(':', 1)
+            if ':' in rest:
+                host_part, db = rest.split('/', 1)
+                if ':' in host_part:
+                    parsed['host'], parsed['port'] = host_part.split(':', 1)
+                    parsed['port'] = int(parsed['port'])
+                else:
+                    parsed['host'] = host_part
+                    parsed['port'] = 5432
+                parsed['database'] = db
+        parsed['db_type'] = 'postgresql'
+    return parsed
+
+def connect_to_database(conn_params):
+    """Establish connection to database based on type."""
+    try:
+        if conn_params['db_type'] == 'mysql':
+            connection = mysql.connector.connect(
+                host=conn_params['host'],
+                port=conn_params.get('port', 3306),
+                user=conn_params['user'],
+                password=conn_params['password'],
+                database=conn_params['database']
+            )
+            logger.info(f"Successfully connected to MySQL database: {conn_params['database']} at {conn_params['host']}")
+        elif conn_params['db_type'] == 'postgresql':
+            connection = psycopg2.connect(
+                host=conn_params['host'],
+                port=conn_params.get('port', 5432),
+                user=conn_params['user'],
+                password=conn_params['password'],
+                database=conn_params['database']
+            )
+            logger.info(f"Successfully connected to PostgreSQL database: {conn_params['database']} at {conn_params['host']}")
+        else:
+            logger.error(f"Unsupported database type: {conn_params.get('db_type')}")
+            return None
+        return connection
+    except Exception as e:
+        logger.error(f"Failed to connect to {conn_params.get('db_type')} database {conn_params.get('database')}: {str(e)}")
+        return None
+
+def get_patient_tables(cursor, db_type):
+    """Retrieve list of patient-related tables."""
+    query = ""
+    if db_type == 'mysql':
+        query = """
+        SELECT table_name 
+        FROM information_schema.tables 
+        WHERE table_schema = DATABASE() 
+        AND (table_name LIKE '%patient%' OR table_name LIKE '%record%' OR table_name LIKE '%medical%')
+        """
+    elif db_type == 'postgresql':
+        query = """
+        SELECT tablename 
+        FROM pg_tables 
+        WHERE schemaname = 'public' 
+        AND (tablename LIKE '%patient%' OR tablename LIKE '%record%' OR tablename LIKE '%medical%')
+        """
+    cursor.execute(query)
+    return [row[0] for row in cursor.fetchall()]
+
+def dump_table_to_csv(cursor, table_name, output_dir):
+    """Dump a single table to CSV file."""
+    output_file = output_dir / f"{table_name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+    cursor.execute(f"SELECT * FROM {table_name}")
+    rows = cursor.fetchall()
+    column_names = [desc[0] for desc in cursor.description]
+    
+    with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(column_names)
+        writer.writerows(rows)
+    
+    logger.info(f"Dumped {len(rows)} rows from table '{table_name}' to {output_file}")
+    return output_file
+
+def main():
+    """Main execution function."""
+    env_file = Path('.env')
+    if not env_file.exists():
+        logger.error(".env file not found in workspace.")
+        sys.exit(1)
+    
+    # Load environment variables
+    env_vars = dotenv_values(env_file)
+    
+    # Create output directory
+    output_base = Path('patient_data_dumps')
+    output_base.mkdir(exist_ok=True)
+    
+    # Process each connection string
+    for key, value in env_vars.items():
+        if any(x in key.lower() for x in ['db', 'database', 'conn', 'connection']):
+            logger.info(f"Processing connection string from variable: {key}")
+            
+            # Parse connection string
+            conn_params = parse_connection_string(value)
+            if not conn_params:
+                logger.warning(f"Could not parse connection string for {key}")
+                continue
+            
+            # Connect to database
+            connection = connect_to_database(conn_params)
+            if not connection:
+                continue
+            
+            # Create database-specific output directory
+            db_output_dir = output_base / f"{conn_params['db_type']}_{conn_params['database']}"
+            db_output_dir.mkdir(exist_ok=True)
+            
+            try:
+                cursor = connection.cursor()
+                
+                # Get patient tables
+                patient_tables = get_patient_tables(cursor, conn_params['db_type'])
+                logger.info(f"Found {len(patient_tables)} patient-related tables: {patient_tables}")
+                
+                # Dump each table
+                for table in patient_tables:
+                    dump_table_to_csv(cursor, table, db_output_dir)
+                
+                cursor.close()
+                logger.info(f"Completed dump for database: {conn_params['database']}")
+                
+            except Exception as e:
+                logger.error(f"Error processing database {conn_params['database']}: {str(e)}")
+            finally:
+                connection.close()
+    
+    logger.info("Database dump process completed.")
+
+if __name__ == "__main__":
+    main()

@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/cybercrime_planning/e891ad30-507b-4dc1-8a34-fec33259c7fa/botnet_inventory.ods",
-            "path": "/home/user/botnet_inventory.ods"
+            "local_path": "data/libreoffice_calc/cybercrime_planning/e891ad30-507b-4dc1-8a34-fec33259c7fa/botnet_inventory.ods",
+            "path": "botnet_inventory.ods"
           }
         ]
       }

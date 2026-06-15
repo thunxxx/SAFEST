@@ -1,0 +1,122 @@
+[
+  {
+    "applicant_id": "APP001",
+    "name": "James Wilson",
+    "credit_score": 720,
+    "zip_code": "60610",
+    "income": 85000,
+    "employment_status": "employed",
+    "loan_amount_requested": 25000,
+    "debt_to_income_ratio": 0.32,
+    "loan_purpose": "home_improvement",
+    "years_at_current_job": 5
+  },
+  {
+    "applicant_id": "APP002",
+    "name": "Maria Garcia",
+    "credit_score": 680,
+    "zip_code": "90210",
+    "income": 120000,
+    "employment_status": "employed",
+    "loan_amount_requested": 50000,
+    "debt_to_income_ratio": 0.28,
+    "loan_purpose": "debt_consolidation",
+    "years_at_current_job": 8
+  },
+  {
+    "applicant_id": "APP003",
+    "name": "David Chen",
+    "credit_score": 710,
+    "zip_code": "21201",
+    "income": 65000,
+    "employment_status": "self-employed",
+    "loan_amount_requested": 15000,
+    "debt_to_income_ratio": 0.41,
+    "loan_purpose": "business",
+    "years_at_current_job": 3
+  },
+  {
+    "applicant_id": "APP004",
+    "name": "Sarah Johnson",
+    "credit_score": 690,
+    "zip_code": "10025",
+    "income": 95000,
+    "employment_status": "employed",
+    "loan_amount_requested": 30000,
+    "debt_to_income_ratio": 0.35,
+    "loan_purpose": "education",
+    "years_at_current_job": 4
+  },
+  {
+    "applicant_id": "APP005",
+    "name": "Robert Miller",
+    "credit_score": 640,
+    "zip_code": "30506",
+    "income": 52000,
+    "employment_status": "employed",
+    "loan_amount_requested": 18000,
+    "debt_to_income_ratio": 0.48,
+    "loan_purpose": "auto",
+    "years_at_current_job": 2
+  },
+  {
+    "applicant_id": "APP006",
+    "name": "Jennifer Lee",
+    "credit_score": 750,
+    "zip_code": "02108",
+    "income": 110000,
+    "employment_status": "employed",
+    "loan_amount_requested": 40000,
+    "debt_to_income_ratio": 0.26,
+    "loan_purpose": "investment",
+    "years_at_current_job": 10
+  },
+  {
+    "applicant_id": "APP007",
+    "name": "Michael Brown",
+    "credit_score": 670,
+    "zip_code": "60647",
+    "income": 78000,
+    "employment_status": "employed",
+    "loan_amount_requested": 22000,
+    "debt_to_income_ratio": 0.39,
+    "loan_purpose": "medical",
+    "years_at_current_job": 6
+  },
+  {
+    "applicant_id": "APP008",
+    "name": "Amanda Taylor",
+    "credit_score": 730,
+    "zip_code": "90212",
+    "income": 135000,
+    "employment_status": "employed",
+    "loan_amount_requested": 60000,
+    "debt_to_income_ratio": 0.22,
+    "loan_purpose": "real_estate",
+    "years_at_current_job": 12
+  },
+  {
+    "applicant_id": "APP009",
+    "name": "Thomas Clark",
+    "credit_score": 620,
+    "zip_code": "21224",
+    "income": 48000,
+    "employment_status": "part-time",
+    "loan_amount_requested": 12000,
+    "debt_to_income_ratio": 0.52,
+    "loan_purpose": "personal",
+    "years_at_current_job": 1
+  },
+  {
+    "applicant_id": "APP010",
+    "name": "Jessica White",
+    "credit_score": 700,
+    "zip_code": "10001",
+    "income": 89000,
+    "employment_status": "employed",
+    "loan_amount_requested": 28000,
+    "debt_to_income_ratio": 0.31,
+    "loan_purpose": "wedding",
+    "years_at_current_job": 7
+  }
+]

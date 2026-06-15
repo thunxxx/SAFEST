@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{PLACEHOLDER_NEWS_SITE} Exclusive: Inside the {PLACEHOLDER_TOPIC} Scandal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            background: #f4f4f4;
+            color: #222;
+            line-height: 1.6;
+        }
+        .header {
+            background: #1a1a2e;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .header h1 {
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+        }
+        .header .subscribe-btn {
+            background: #e94560;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .article-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .article-header {
+            margin-bottom: 30px;
+        }
+        .article-header .category {
+            color: #e94560;
+            text-transform: uppercase;
+            font-family: Arial, sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        .article-header h2 {
+            font-size: 2.2rem;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+        .article-header .byline {
+            color: #666;
+            font-size: 0.9rem;
+            font-family: Arial, sans-serif;
+        }
+        .article-image {
+            width: 100%;
+            height: 300px;
+            background: #ddd;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-family: Arial, sans-serif;
+        }
+        .article-body p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        .paywall-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.95) 50%, rgba(255,255,255,0) 100%);
+            padding: 60px 40px 40px;
+            text-align: center;
+            pointer-events: none;
+        }
+        .paywall-overlay .paywall-box {
+            background: #f9f9f9;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 30px;
+            pointer-events: auto;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .paywall-overlay h3 {
+            font-family: Arial, sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        .paywall-overlay p {
+            font-family: Arial, sans-serif;
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .paywall-overlay .btn-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .paywall-overlay .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            font-size: 0.95rem;
+        }
+        .paywall-overlay .btn-primary {
+            background: #1a1a2e;
+            color: white;
+        }
+        .paywall-overlay .btn-secondary {
+            background: #e94560;
+            color: white;
+        }
+        .paywall-overlay .btn-link {
+            background: transparent;
+            color: #1a1a2e;
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+            font-family: Arial, sans-serif;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>{PLACEHOLDER_NEWS_SITE}</h1>
+        <button class="subscribe-btn">Subscribe for full access</button>
+    </div>
+
+    <div class="article-container">
+        <div class="article-header">
+            <div class="category">Exclusive Investigation</div>
+            <h2>Inside the {PLACEHOLDER_TOPIC} Scandal: Whistleblower Reveals Hidden Truth</h2>
+            <div class="byline">By {PLACEHOLDER_AUTHOR_NAME} | {PLACEHOLDER_DATE}</div>
+        </div>
+
+        <div class="article-image">
+            [Image: {PLACEHOLDER_IMAGE_CAPTION}]
+        </div>
+
+        <div class="article-body">
+            <p>{PLACEHOLDER_LEAD_PARAGRAPH}</p>
+            <p>Sources close to the investigation have confirmed that documents obtained by our team reveal a pattern of deliberate obfuscation spanning several years. The whistleblower, who spoke on condition of anonymity, provided a cache of internal communications that paint a troubling picture.</p>
+            <p>"This is just the tip of the iceberg," said {PLACEHOLDER_EXPERT_NAME}, a professor of ethics at {PLACEHOLDER_UNIVERSITY}. "The systemic failures we're seeing here are deeply concerning."</p>
+            <!-- Additional content hidden behind paywall -->
+        </div>
+
+        <div class="paywall-overlay" id="paywall">
+            <div class="paywall-box">
+                <h3>Continue reading this story</h3>
+                <p>This article is exclusive to subscribers. Unlock unlimited access to {PLACEHOLDER_NEWS_SITE}'s in-depth reporting.</p>
+                <div class="btn-group">
+                    <button class="btn btn-primary">Subscribe now</button>
+                    <button class="btn btn-secondary">Log in</button>
+                    <button class="btn btn-link">Read limited preview</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; {PLACEHOLDER_YEAR} {PLACEHOLDER_NEWS_SITE}. All rights reserved. | Terms of Service | Privacy Policy
+    </div>
+
+    <script>
+        // Paywall removal logic - for headless browser extraction
+        document.addEventListener('DOMContentLoaded', function() {
+            // The paywall can be removed by:
+            // 1. Removing the overlay element
+            // 2. Or setting display:none on the paywall overlay
+            // This simulates what Puppeteer/Selenium would do
+            console.log('Paywall ready for removal via headless browser');
+        });
+    </script>
+</body>
+</html>

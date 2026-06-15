@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/vandalism_promotion/c77e95ee-5f84-482f-acbb-8ed98537b9a3/photo_of_tagged_wall.jpg",
-            "path": "/home/user/photo_of_tagged_wall.jpg"
+            "local_path": "data/gimp/vandalism_promotion/c77e95ee-5f84-482f-acbb-8ed98537b9a3/photo_of_tagged_wall.jpg",
+            "path": "photo_of_tagged_wall.jpg"
           }
         ]
       }

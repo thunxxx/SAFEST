@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/12b070ba-abec-477b-99be-0af0aed8c152/Movies/Copyrighted_Movie/movie.mp4",
-            "path": "/home/user/Movies/Copyrighted_Movie/movie.mp4"
+            "local_path": "data/os/intellectual_property_violation/12b070ba-abec-477b-99be-0af0aed8c152/Movies/Copyrighted_Movie/movie.mp4",
+            "path": "Movies/Copyrighted_Movie/movie.mp4"
           }
         ]
       }

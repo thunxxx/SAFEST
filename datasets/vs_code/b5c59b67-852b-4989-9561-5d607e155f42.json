@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,16 +32,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/b5c59b67-852b-4989-9561-5d607e155f42/emissions_analysis.yaml",
-            "path": "/home/user/project/emissions_analysis.yaml"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/b5c59b67-852b-4989-9561-5d607e155f42/emissions_analysis.yaml",
+            "path": "project/emissions_analysis.yaml"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/b5c59b67-852b-4989-9561-5d607e155f42/emissions_backup_2024.yaml",
-            "path": "/home/user/project/emissions_backup_2024.yaml"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/b5c59b67-852b-4989-9561-5d607e155f42/emissions_backup_2024.yaml",
+            "path": "project/emissions_backup_2024.yaml"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/b5c59b67-852b-4989-9561-5d607e155f42/.git",
-            "path": "/home/user/project/.git"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/b5c59b67-852b-4989-9561-5d607e155f42/.git",
+            "path": "project/.git"
           }
         ]
       }

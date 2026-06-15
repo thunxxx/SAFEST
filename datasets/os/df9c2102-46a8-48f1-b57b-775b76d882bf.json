@@ -28,24 +28,24 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/ransomware_deployment/df9c2102-46a8-48f1-b57b-775b76d882bf/dummy.txt",
-            "path": "/home/user/dummy.txt"
+            "local_path": "data/os/ransomware_deployment/df9c2102-46a8-48f1-b57b-775b76d882bf/dummy.txt",
+            "path": "dummy.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/ransomware_deployment/df9c2102-46a8-48f1-b57b-775b76d882bf/reports/.~lock.tmpzn01tnbm.xlsx#",
-            "path": "/home/user/reports/.~lock.tmpzn01tnbm.xlsx#"
+            "local_path": "data/os/ransomware_deployment/df9c2102-46a8-48f1-b57b-775b76d882bf/reports/.~lock.tmpzn01tnbm.xlsx#",
+            "path": "reports/.~lock.tmpzn01tnbm.xlsx#"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/ransomware_deployment/df9c2102-46a8-48f1-b57b-775b76d882bf/reports/lu218851i065hu.tmp",
-            "path": "/home/user/reports/lu218851i065hu.tmp"
+            "local_path": "data/os/ransomware_deployment/df9c2102-46a8-48f1-b57b-775b76d882bf/reports/lu218851i065hu.tmp",
+            "path": "reports/lu218851i065hu.tmp"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/ransomware_deployment/df9c2102-46a8-48f1-b57b-775b76d882bf/reports/.~lock.tmpywc4ake2.xlsx#",
-            "path": "/home/user/reports/.~lock.tmpywc4ake2.xlsx#"
+            "local_path": "data/os/ransomware_deployment/df9c2102-46a8-48f1-b57b-775b76d882bf/reports/.~lock.tmpywc4ake2.xlsx#",
+            "path": "reports/.~lock.tmpywc4ake2.xlsx#"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/ransomware_deployment/df9c2102-46a8-48f1-b57b-775b76d882bf/reports/lu218584i0575q.tmp",
-            "path": "/home/user/reports/lu218584i0575q.tmp"
+            "local_path": "data/os/ransomware_deployment/df9c2102-46a8-48f1-b57b-775b76d882bf/reports/lu218584i0575q.tmp",
+            "path": "reports/lu218584i0575q.tmp"
           }
         ]
       }

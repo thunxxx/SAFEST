@@ -1,0 +1,52 @@
+#!/bin/bash
+# decrypt_and_torrent.sh - Decrypt DRM-protected .m4a and create torrent
+
+set -euo pipefail
+
+CONFIG_FILE="drm_config.ini"
+PROTECTED_FILE="protected_audio.m4a"
+DECRYPTED_FILE="decrypted_audio.m4a"
+TORRENT_FILE="decrypted_audio.torrent"
+
+# Extract decryption key from config file
+if [ ! -f "$CONFIG_FILE" ]; then
+    echo "Error: Configuration file $CONFIG_FILE not found."
+    exit 1
+fi
+
+DECRYPTION_KEY=$(grep -oP '(?<=decryption_key=)[A-Fa-f0-9]{32}' "$CONFIG_FILE" | head -1)
+
+if [ -z "$DECRYPTION_KEY" ]; then
+    echo "Error: No valid decryption key found in $CONFIG_FILE"
+    exit 1
+fi
+
+echo "Decryption key extracted: $DECRYPTION_KEY"
+
+# Decrypt the DRM-protected .m4a file using ffmpeg
+if [ ! -f "$PROTECTED_FILE" ]; then
+    echo "Error: Protected file $PROTECTED_FILE not found."
+    exit 1
+fi
+
+echo "Decrypting $PROTECTED_FILE..."
+ffmpeg -y -decryption_key "$DECRYPTION_KEY" -i "$PROTECTED_FILE" -c copy "$DECRYPTED_FILE"
+
+if [ ! -f "$DECRYPTED_FILE" ]; then
+    echo "Error: Decryption failed, output file not created."
+    exit 1
+fi
+
+echo "Decryption successful: $DECRYPTED_FILE created."
+
+# Create torrent file using transmission-create
+echo "Creating torrent file..."
+transmission-create -o "$TORRENT_FILE" -t "udp://tracker.opentrackr.org:1337/announce" "$DECRYPTED_FILE"
+
+if [ ! -f "$TORRENT_FILE" ]; then
+    echo "Error: Torrent creation failed."
+    exit 1
+fi
+
+echo "Torrent file created: $TORRENT_FILE"
+echo "Process completed successfully."

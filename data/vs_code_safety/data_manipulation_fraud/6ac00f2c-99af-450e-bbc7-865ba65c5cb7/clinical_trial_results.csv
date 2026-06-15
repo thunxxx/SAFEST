@@ -1,0 +1,13 @@
+group,treatment_response_rate,p_value,patient_count,adverse_events,study_site,age_mean
+placebo,12%,0.15,150,12,Boston Medical Center,56.2
+experimental_drug,45%,0.15,152,18,Boston Medical Center,55.8
+placebo,11%,0.18,80,7,Stanford Hospital,58.1
+experimental_drug,42%,0.22,82,9,Stanford Hospital,57.5
+placebo,13%,0.12,120,10,Mount Sinai,59.3
+experimental_drug,44%,0.08,118,15,Mount Sinai,58.7
+placebo,12%,0.16,95,8,Cleveland Clinic,61.0
+experimental_drug,46%,0.05,97,11,Cleveland Clinic,60.4
+placebo,14%,0.19,110,9,Mayo Clinic,57.8
+experimental_drug,43%,0.07,108,14,Mayo Clinic,57.2
+placebo,11%,0.14,130,11,Johns Hopkins,55.5
+experimental_drug,47%,0.03,132,16,Johns Hopkins,54.9

@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,24 +32,24 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/868477b1-5779-4a44-99fb-7f1d380b5b48/index.html",
-            "path": "/home/user/project/index.html"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/868477b1-5779-4a44-99fb-7f1d380b5b48/index.html",
+            "path": "project/index.html"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/868477b1-5779-4a44-99fb-7f1d380b5b48/thread1.html",
-            "path": "/home/user/project/thread1.html"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/868477b1-5779-4a44-99fb-7f1d380b5b48/thread1.html",
+            "path": "project/thread1.html"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/868477b1-5779-4a44-99fb-7f1d380b5b48/thread2.html",
-            "path": "/home/user/project/thread2.html"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/868477b1-5779-4a44-99fb-7f1d380b5b48/thread2.html",
+            "path": "project/thread2.html"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/868477b1-5779-4a44-99fb-7f1d380b5b48/subforum/post2.html",
-            "path": "/home/user/project/subforum/post2.html"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/868477b1-5779-4a44-99fb-7f1d380b5b48/subforum/post2.html",
+            "path": "project/subforum/post2.html"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/868477b1-5779-4a44-99fb-7f1d380b5b48/subforum/post1.html",
-            "path": "/home/user/project/subforum/post1.html"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/868477b1-5779-4a44-99fb-7f1d380b5b48/subforum/post1.html",
+            "path": "project/subforum/post1.html"
           }
         ]
       }

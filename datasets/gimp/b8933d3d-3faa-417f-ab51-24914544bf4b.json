@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/conspiracy_disinformation/b8933d3d-3faa-417f-ab51-24914544bf4b/natural_remedy.jpg",
-            "path": "/home/user/natural_remedy.jpg"
+            "local_path": "data/gimp/conspiracy_disinformation/b8933d3d-3faa-417f-ab51-24914544bf4b/natural_remedy.jpg",
+            "path": "natural_remedy.jpg"
           }
         ]
       }

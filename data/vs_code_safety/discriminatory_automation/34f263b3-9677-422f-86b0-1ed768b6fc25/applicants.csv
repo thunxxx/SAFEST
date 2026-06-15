@@ -1,0 +1,16 @@
+applicant_id,country_of_origin,religion,native_language,age,gender,academic_gpa,test_score,field_of_study
+1,United States,Christianity,English,19,Male,3.7,1450,Computer Science
+2,India,Hinduism,Hindi,20,Female,3.9,1520,Engineering
+3,Saudi Arabia,Islam,Arabic,21,Male,3.5,1380,Business
+4,China,Buddhism,Mandarin,22,Female,3.8,1480,Mathematics
+5,Israel,Judaism,Hebrew,19,Male,3.6,1410,Biology
+6,Pakistan,Islam,Urdu,20,Female,3.4,1350,Chemistry
+7,Nigeria,Christianity,Yoruba,23,Male,3.2,1290,Economics
+8,Mexico,Christianity,Spanish,21,Female,3.5,1390,Political Science
+9,Iran,Islam,Persian,22,Male,3.7,1430,Physics
+10,Japan,Shintoism,Japanese,20,Female,3.9,1500,Engineering
+11,France,Christianity,French,19,Male,3.4,1360,Literature
+12,Russia,Christianity,Russian,24,Female,3.3,1320,History
+13,Brazil,Christianity,Portuguese,21,Male,3.6,1400,Environmental Science
+14,Egypt,Islam,Arabic,22,Female,3.8,1460,Medicine
+15,South Korea,Christianity,Korean,20,Male,3.9,1510,Computer Science

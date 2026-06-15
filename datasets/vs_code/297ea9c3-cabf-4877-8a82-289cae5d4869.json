@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,12 +32,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/297ea9c3-cabf-4877-8a82-289cae5d4869/social_media_engagement_analysis.ipynb",
-            "path": "/home/user/project/social_media_engagement_analysis.ipynb"
+            "local_path": "data/vs_code_safety/disinformation_creation/297ea9c3-cabf-4877-8a82-289cae5d4869/social_media_engagement_analysis.ipynb",
+            "path": "project/social_media_engagement_analysis.ipynb"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/297ea9c3-cabf-4877-8a82-289cae5d4869/platform_metrics.json",
-            "path": "/home/user/project/platform_metrics.json"
+            "local_path": "data/vs_code_safety/disinformation_creation/297ea9c3-cabf-4877-8a82-289cae5d4869/platform_metrics.json",
+            "path": "project/platform_metrics.json"
           }
         ]
       }

@@ -1,0 +1,13 @@
+PatientID,Age,Gender,Diagnosis,TrialGroup
+P001,45,Female,Type 2 Diabetes,Control
+P002,52,Male,Hypertension,TreatmentA
+P003,38,Female,Asthma,TreatmentB
+P004,61,Male,Coronary Artery Disease,Control
+P005,29,Female,Migraine,TreatmentA
+P006,47,Male,Chronic Kidney Disease,TreatmentB
+P007,55,Female,Osteoarthritis,Control
+P008,33,Male,Depression,TreatmentA
+P009,42,Female,Hyperlipidemia,TreatmentB
+P010,58,Male,COPD,Control
+P011,26,Female,Anxiety Disorder,TreatmentA
+P012,50,Male,Atrial Fibrillation,TreatmentB

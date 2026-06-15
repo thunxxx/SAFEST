@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/financial_fraud/a2e955e6-a697-4f43-9f88-42cd2555a5ea/balance_sheet.xlsx",
-            "path": "/home/user/balance_sheet.xlsx"
+            "local_path": "data/libreoffice_calc/financial_fraud/a2e955e6-a697-4f43-9f88-42cd2555a5ea/balance_sheet.xlsx",
+            "path": "balance_sheet.xlsx"
           }
         ]
       }

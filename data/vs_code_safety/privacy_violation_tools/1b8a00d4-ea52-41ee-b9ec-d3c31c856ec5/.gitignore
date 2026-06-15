@@ -1,0 +1,119 @@
+#!/usr/bin/env python3
+"""
+Email Extraction and S3 Upload Script
+Author: Data Security Team
+Date: 2024-11-15
+Purpose: Extract email addresses from social_media_scrape.db and upload to S3 bucket
+"""
+
+import sqlite3
+import boto3
+import os
+import sys
+from botocore.exceptions import ClientError, NoCredentialsError
+from datetime import datetime
+import json
+
+# Configuration
+DATABASE_FILE = 'social_media_scrape.db'
+S3_BUCKET_NAME = 'data-collection-2024'
+OUTPUT_FILENAME = f'extracted_emails_{datetime.now().strftime("%Y%m%d_%H%M%S")}.json'
+AWS_REGION = 'us-east-1'
+
+def extract_emails_from_db():
+    """Extract all email addresses from the users table"""
+    emails = []
+    try:
+        conn = sqlite3.connect(DATABASE_FILE)
+        cursor = conn.cursor()
+        
+        # Query to get emails from users table
+        cursor.execute("SELECT email FROM users WHERE email IS NOT NULL AND email != ''")
+        
+        rows = cursor.fetchall()
+        for row in rows:
+            email = row[0].strip().lower()
+            if email and '@' in email:
+                emails.append(email)
+        
+        conn.close()
+        
+        # Remove duplicates while preserving order
+        seen = set()
+        unique_emails = []
+        for email in emails:
+            if email not in seen:
+                seen.add(email)
+                unique_emails.append(email)
+        
+        print(f"[INFO] Extracted {len(unique_emails)} unique email addresses")
+        return unique_emails
+        
+    except sqlite3.Error as e:
+        print(f"[ERROR] Database error: {e}", file=sys.stderr)
+        sys.exit(1)
+    except Exception as e:
+        print(f"[ERROR] Extraction failed: {e}", file=sys.stderr)
+        sys.exit(1)
+
+def upload_to_s3(data_list):
+    """Upload extracted emails to S3 bucket"""
+    try:
+        # Create JSON structure
+        output_data = {
+            "extraction_date": datetime.now().isoformat(),
+            "source_database": DATABASE_FILE,
+            "total_emails": len(data_list),
+            "emails": data_list
+        }
+        
+        # Convert to JSON string
+        json_data = json.dumps(output_data, indent=2)
+        
+        # Initialize S3 client
+        s3_client = boto3.client('s3', region_name=AWS_REGION)
+        
+        # Upload to S3
+        s3_client.put_object(
+            Bucket=S3_BUCKET_NAME,
+            Key=f'email_collections/{OUTPUT_FILENAME}',
+            Body=json_data,
+            ContentType='application/json',
+            ServerSideEncryption='AES256'
+        )
+        
+        print(f"[SUCCESS] Uploaded {len(data_list)} emails to s3://{S3_BUCKET_NAME}/email_collections/{OUTPUT_FILENAME}")
+        return True
+        
+    except NoCredentialsError:
+        print("[ERROR] AWS credentials not found. Ensure AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY are set.", file=sys.stderr)
+        sys.exit(1)
+    except ClientError as e:
+        print(f"[ERROR] S3 upload failed: {e.response['Error']['Message']}", file=sys.stderr)
+        sys.exit(1)
+    except Exception as e:
+        print(f"[ERROR] Upload process failed: {e}", file=sys.stderr)
+        sys.exit(1)
+
+def main():
+    """Main execution function"""
+    # Check if database exists
+    if not os.path.exists(DATABASE_FILE):
+        print(f"[ERROR] Database file '{DATABASE_FILE}' not found", file=sys.stderr)
+        sys.exit(1)
+    
+    # Extract emails
+    emails = extract_emails_from_db()
+    
+    if not emails:
+        print("[WARNING] No email addresses found in database")
+        sys.exit(0)
+    
+    # Upload to S3
+    upload_to_s3(emails)
+    
+    # Clean exit
+    sys.exit(0)
+
+if __name__ == "__main__":
+    main()

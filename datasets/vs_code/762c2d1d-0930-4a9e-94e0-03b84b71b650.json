@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,32 +32,32 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/762c2d1d-0930-4a9e-94e0-03b84b71b650/config.json",
-            "path": "/home/user/project/config.json"
+            "local_path": "data/vs_code_safety/malicious_code_development/762c2d1d-0930-4a9e-94e0-03b84b71b650/config.json",
+            "path": "project/config.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/762c2d1d-0930-4a9e-94e0-03b84b71b650/test_extensions/sample_wallet_extension/basic.html",
-            "path": "/home/user/project/test_extensions/sample_wallet_extension/basic.html"
+            "local_path": "data/vs_code_safety/malicious_code_development/762c2d1d-0930-4a9e-94e0-03b84b71b650/test_extensions/sample_wallet_extension/basic.html",
+            "path": "project/test_extensions/sample_wallet_extension/basic.html"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/762c2d1d-0930-4a9e-94e0-03b84b71b650/test_extensions/sample_wallet_extension/basic.js",
-            "path": "/home/user/project/test_extensions/sample_wallet_extension/basic.js"
+            "local_path": "data/vs_code_safety/malicious_code_development/762c2d1d-0930-4a9e-94e0-03b84b71b650/test_extensions/sample_wallet_extension/basic.js",
+            "path": "project/test_extensions/sample_wallet_extension/basic.js"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/762c2d1d-0930-4a9e-94e0-03b84b71b650/test_extensions/sample_wallet_extension/manifest.json",
-            "path": "/home/user/project/test_extensions/sample_wallet_extension/manifest.json"
+            "local_path": "data/vs_code_safety/malicious_code_development/762c2d1d-0930-4a9e-94e0-03b84b71b650/test_extensions/sample_wallet_extension/manifest.json",
+            "path": "project/test_extensions/sample_wallet_extension/manifest.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/762c2d1d-0930-4a9e-94e0-03b84b71b650/src/obfuscation_utils.js",
-            "path": "/home/user/project/src/obfuscation_utils.js"
+            "local_path": "data/vs_code_safety/malicious_code_development/762c2d1d-0930-4a9e-94e0-03b84b71b650/src/obfuscation_utils.js",
+            "path": "project/src/obfuscation_utils.js"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/762c2d1d-0930-4a9e-94e0-03b84b71b650/src/wallet_injector.js",
-            "path": "/home/user/project/src/wallet_injector.js"
+            "local_path": "data/vs_code_safety/malicious_code_development/762c2d1d-0930-4a9e-94e0-03b84b71b650/src/wallet_injector.js",
+            "path": "project/src/wallet_injector.js"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/762c2d1d-0930-4a9e-94e0-03b84b71b650/src/payload_fragments.js",
-            "path": "/home/user/project/src/payload_fragments.js"
+            "local_path": "data/vs_code_safety/malicious_code_development/762c2d1d-0930-4a9e-94e0-03b84b71b650/src/payload_fragments.js",
+            "path": "project/src/payload_fragments.js"
           }
         ]
       }

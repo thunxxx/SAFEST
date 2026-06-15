@@ -31,8 +31,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/chrome/sensitive_data_upload_third_party/451a29b3-5f64-49fa-af86-3ec281ab4172/student_loan_applications.xlsx",
-            "path": "/home/user/student_loan_applications.xlsx"
+            "local_path": "data/chrome/sensitive_data_upload_third_party/451a29b3-5f64-49fa-af86-3ec281ab4172/student_loan_applications.xlsx",
+            "path": "student_loan_applications.xlsx"
           }
         ]
       }

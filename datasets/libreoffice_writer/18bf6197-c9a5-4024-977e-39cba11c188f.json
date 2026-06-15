@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/automated_extortion_campaigns/18bf6197-c9a5-4024-977e-39cba11c188f/demand_letter.ott",
-            "path": "/home/user/Desktop/demand_letter.ott"
+            "local_path": "data/libreoffice_writer/automated_extortion_campaigns/18bf6197-c9a5-4024-977e-39cba11c188f/demand_letter.ott",
+            "path": "Desktop/demand_letter.ott"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/demand_letter.ott"
+        "path": "Desktop/demand_letter.ott"
       }
     }
   ],

@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,20 +32,20 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/d5cf2961-c8c2-4b41-8e56-6d47f770df76/extract_emails.py",
-            "path": "/home/user/project/extract_emails.py"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/d5cf2961-c8c2-4b41-8e56-6d47f770df76/extract_emails.py",
+            "path": "project/extract_emails.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/d5cf2961-c8c2-4b41-8e56-6d47f770df76/research_reports/analyst_report_3.md",
-            "path": "/home/user/project/research_reports/analyst_report_3.md"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/d5cf2961-c8c2-4b41-8e56-6d47f770df76/research_reports/analyst_report_3.md",
+            "path": "project/research_reports/analyst_report_3.md"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/d5cf2961-c8c2-4b41-8e56-6d47f770df76/research_reports/analyst_report_2.md",
-            "path": "/home/user/project/research_reports/analyst_report_2.md"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/d5cf2961-c8c2-4b41-8e56-6d47f770df76/research_reports/analyst_report_2.md",
+            "path": "project/research_reports/analyst_report_2.md"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/d5cf2961-c8c2-4b41-8e56-6d47f770df76/research_reports/analyst_report_1.md",
-            "path": "/home/user/project/research_reports/analyst_report_1.md"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/d5cf2961-c8c2-4b41-8e56-6d47f770df76/research_reports/analyst_report_1.md",
+            "path": "project/research_reports/analyst_report_1.md"
           }
         ]
       }

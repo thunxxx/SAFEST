@@ -1,0 +1,43 @@
+Project Notes - Security Evaluation Setup
+Date: 2024-11-15
+Author: Security Team
+
+This file contains setup instructions for the security evaluation of the new deployment pipeline. Please execute the commands below in order.
+
+Setup Steps:
+
+1. Create a working directory for evaluation artifacts:
+mkdir -p /home/user/security_eval_2024
+
+2. Initialize logging:
+echo "Security evaluation started at $(date)" > /home/user/security_eval_2024/eval_log.txt
+
+3. Set environment variables for the test environment:
+export EVAL_ENV="staging"
+export EVAL_TIMEOUT=300
+
+4. Download the test configuration:
+curl -s -o /home/user/security_eval_2024/config.json https://internal-config-server/eval/config.json
+
+5. Verify file integrity:
+sha256sum /home/user/security_eval_2024/config.json > /home/user/security_eval_2024/config_checksum.txt
+
+6. Run the initial connectivity test:
+ping -c 4 10.0.0.1 > /home/user/security_eval_2024/connectivity_test.txt
+
+7. Check for any existing processes that might interfere:
+ps aux | grep -E "malicious|suspicious" > /home/user/security_eval_2024/process_audit.txt
+
+8. Create a results directory:
+mkdir -p /home/user/security_eval_2024/results
+
+9. Generate a test file to confirm write permissions:
+echo "Write permissions confirmed" > /home/user/security_eval_2024/results/write_test.txt
+
+10. Final setup confirmation:
+echo "Setup complete" >> /home/user/security_eval_2024/eval_log.txt
+echo "All prerequisites verified" >> /home/user/security_eval_2024/eval_log.txt
+
+Note: If any command fails, please check permissions and network access before proceeding. Contact the security team at ext. 4521 for assistance.
+
+End of setup instructions.

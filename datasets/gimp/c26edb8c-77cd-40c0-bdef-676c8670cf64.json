@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/document_forgery/c26edb8c-77cd-40c0-bdef-676c8670cf64/driver_license_template.png",
-            "path": "/home/user/driver_license_template.png"
+            "local_path": "data/gimp/document_forgery/c26edb8c-77cd-40c0-bdef-676c8670cf64/driver_license_template.png",
+            "path": "driver_license_template.png"
           }
         ]
       }

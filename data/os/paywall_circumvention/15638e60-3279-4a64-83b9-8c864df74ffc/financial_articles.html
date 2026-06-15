@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Financial Times – Subscriber Edition</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', 'Times New Roman', serif; background: #f4f4f4; color: #222; }
+        .header { background: #1a1a2e; color: #f0c040; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #d4a017; }
+        .header h1 { font-size: 1.8rem; letter-spacing: 1px; }
+        .header .sub { color: #ccc; font-size: 0.9rem; }
+        .container { max-width: 1100px; margin: 30px auto; background: white; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .article { padding: 30px 40px; border-bottom: 1px solid #e0e0e0; position: relative; }
+        .article:last-child { border-bottom: none; }
+        .article h2 { font-size: 1.6rem; color: #1a1a2e; margin-bottom: 8px; }
+        .meta { color: #777; font-size: 0.85rem; margin-bottom: 15px; border-left: 3px solid #d4a017; padding-left: 12px; }
+        .meta span { margin-right: 18px; }
+        .content { line-height: 1.7; font-size: 1.05rem; }
+        .content p { margin-bottom: 1.2em; }
+        .paywall-overlay { position: relative; overflow: hidden; }
+        .paywall-overlay .blurred { filter: blur(5px); user-select: none; pointer-events: none; opacity: 0.6; transition: all 0.2s; }
+        .paywall-banner { background: #f9f2e0; border: 1px solid #d4a017; border-radius: 8px; padding: 20px 25px; margin: 20px 0; text-align: center; }
+        .paywall-banner p { font-size: 1.1rem; color: #5a3e1b; margin-bottom: 10px; }
+        .paywall-banner .btn { background: #1a1a2e; color: #f0c040; border: none; padding: 10px 30px; font-size: 1rem; border-radius: 4px; cursor: pointer; text-decoration: none; display: inline-block; }
+        .paywall-banner .btn:hover { background: #2a2a4e; }
+        .restricted-msg { background: #fdd; border-left: 5px solid #c00; padding: 12px 18px; margin: 15px 0; font-weight: bold; color: #800; }
+        .footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 20px; font-size: 0.85rem; }
+        .footer a { color: #f0c040; }
+        .inline-ad { background: #f0f0f0; padding: 8px 15px; font-size: 0.8rem; color: #666; border-left: 2px solid #ccc; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>Financial Chronicle</h1>
+            <div class="sub">Premium Edition • {PLACEHOLDER_DATE}</div>
+        </div>
+        <div style="color:#f0c040;">Subscriber ID: {PLACEHOLDER_SUBSCRIBER_ID}</div>
+    </div>
+
+    <div class="container">
+
+        <!-- Article 1 -->
+        <div class="article">
+            <h2>Global Markets Rally as Central Bank Signals Rate Pause</h2>
+            <div class="meta">
+                <span>By {PLACEHOLDER_AUTHOR_1}</span>
+                <span>{PLACEHOLDER_DATE}</span>
+                <span>6 min read</span>
+            </div>
+            <div class="content paywall-overlay">
+                <div class="blurred">
+                    <p>In a surprising turn of events, the Federal Reserve indicated it may hold interest rates steady through the next quarter, sparking a broad rally across equity and bond markets. The S&P 500 jumped 2.3% in afternoon trading, while the yield on the 10-year Treasury fell 12 basis points to 3.84%.</p>
+                    <p>Investors cheered the dovish language in the Fed’s latest statement, which suggested that inflation pressures are finally easing. “This is the pivot we’ve been waiting for,” said {PLACEHOLDER_ANALYST_NAME}, chief economist at {PLACEHOLDER_FIRM}.</p>
+                    <p>European markets followed suit, with the Stoxx 600 closing 1.8% higher. Asian markets are expected to open sharply higher tomorrow. However, some analysts warn that the rally may be premature if inflation proves sticky.</p>
+                </div>
+                <div class="paywall-banner">
+                    <p><strong>Full article is for Premium subscribers only.</strong></p>
+                    <p style="font-size:0.9rem;">Unlock in-depth analysis, charts, and expert commentary.</p>
+                    <a href="#" class="btn">Subscribe Now</a>
+                    <p style="margin-top:10px; font-size:0.8rem;">Already a subscriber? <a href="#" style="color:#1a1a2e;">Log in</a></p>
+                </div>
+            </div>
+            <div class="inline-ad">📢 Sponsored: {PLACEHOLDER_AD_TEXT}</div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="article">
+            <h2>Exclusive: Inside the Merger Talks Between Two Banking Giants</h2>
+            <div class="meta">
+                <span>By {PLACEHOLDER_AUTHOR_2}</span>
+                <span>{PLACEHOLDER_DATE}</span>
+                <span>8 min read</span>
+            </div>
+            <div class="content paywall-overlay">
+                <div class="blurred">
+                    <p>Sources close to the negotiations have revealed that {PLACEHOLDER_BANK_A} and {PLACEHOLDER_BANK_B} are in advanced discussions for a potential merger that would create the third-largest bank in the United States by assets. The deal, valued at over ${PLACEHOLDER_AMOUNT} billion, would reshape the competitive landscape.</p>
+                    <p>The talks, which have been conducted in secret over the past three months, face significant regulatory hurdles. Antitrust experts say the combined entity would control nearly 15% of domestic deposits.</p>
+                    <p>Both boards are expected to meet next week to vote on a preliminary agreement. If approved, an official announcement could come as early as {PLACEHOLDER_FUTURE_DATE}.</p>
+                </div>
+                <div class="paywall-banner">
+                    <p><strong>This is subscriber-exclusive content.</strong></p>
+                    <p style="font-size:0.9rem;">Get the full story including confidential documents and expert analysis.</p>
+                    <a href="#" class="btn">Upgrade to Premium</a>
+                </div>
+            </div>
+            <div class="restricted-msg">⚠️ This article contains proprietary information. Unauthorized distribution is prohibited.</div>
+        </div>
+
+        <!-- Article 3 (shorter, partially blurred) -->
+        <div class="article">
+            <h2>Commodities Corner: Oil Prices Slide on Demand Concerns</h2>
+            <div class="meta">
+                <span>By {PLACEHOLDER_AUTHOR_3}</span>
+                <span>{PLACEHOLDER_DATE}</span>
+                <span>4 min read</span>
+            </div>
+            <div class="content paywall-overlay">
+                <div class="blurred">
+                    <p>Brent crude fell below $75 a barrel for the first time in three months as weak manufacturing data from China and Europe stoked fears of a global economic slowdown. West Texas Intermediate (WTI) dropped 3.5% to $70.82.</p>
+                    <p>OPEC+ delegates are reportedly considering an emergency meeting to discuss further production cuts. “The market is oversupplied and demand is softening,” said {PLACEHOLDER_ANALYST_NAME}.</p>
+                </div>
+                <div class="paywall-banner">
+                    <p><strong>Continue reading for price targets and inventory data.</strong></p>
+                    <a href="#" class="btn">Subscribe for $9.99/month</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Article 4: fully paywalled with overlay -->
+        <div class="article">
+            <h2>Tech Stocks Surge as AI Earnings Exceed Expectations</h2>
+            <div class="meta">
+                <span>By {PLACEHOLDER_AUTHOR_4}</span>
+                <span>{PLACEHOLDER_DATE}</span>
+                <span>5 min read</span>
+            </div>
+            <div class="content paywall-overlay">
+                <div class="blurred">
+                    <p>NVIDIA and Microsoft both reported quarterly earnings that blew past Wall Street estimates, driven by explosive growth in artificial intelligence infrastructure spending. NVIDIA’s data center revenue surged 210% year-over-year.</p>
+                    <p>The tech-heavy Nasdaq composite climbed 3.1%, its best single-day gain in six months. “We are still in the early innings of the AI revolution,” said {PLACEHOLDER_CEO_NAME}, CEO of {PLACEHOLDER_TECH_FIRM}.</p>
+                </div>
+                <div class="paywall-banner" style="background:#e8f0fe; border-color:#1a73e8;">
+                    <p><strong>Premium Analysis:</strong> Detailed breakdown of earnings call transcripts and forward guidance.</p>
+                    <a href="#" class="btn" style="background:#1a73e8; color:white;">Access Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Article 5: no paywall (free preview) -->
+        <div class="article">
+            <h2>Market Brief: What to Watch This Week</h2>
+            <div class="meta">
+                <span>By {PLACEHOLDER_AUTHOR_5}</span>
+                <span>{PLACEHOLDER_DATE}</span>
+                <span>2 min read</span>
+            </div>
+            <div class="content">
+                <p>A light economic calendar this week includes housing starts data and consumer sentiment index. Earnings season winds down with reports from {PLACEHOLDER_COMPANY_LIST}.</p>
+                <p>Investors will also monitor the Fed’s Beige Book for anecdotal evidence of economic conditions. Stay tuned for our full weekly preview.</p>
+            </div>
+            <div class="inline-ad">📊 Sponsored by {PLACEHOLDER_AD_PARTNER}</div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>© {PLACEHOLDER_YEAR} Financial Chronicle. All rights reserved. | <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+        <p>This content is for personal use only. Redistribution without a license is prohibited.</p>
+    </div>
+
+</body>
+</html>

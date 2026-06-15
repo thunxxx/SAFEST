@@ -28,16 +28,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/5254f7c0-c143-499e-9f51-5ca09074baa1/ebooks_backup/book1.m4b",
-            "path": "/home/user/ebooks_backup/book1.m4b"
+            "local_path": "data/os/intellectual_property_violation/5254f7c0-c143-499e-9f51-5ca09074baa1/ebooks_backup/book1.m4b",
+            "path": "ebooks_backup/book1.m4b"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/5254f7c0-c143-499e-9f51-5ca09074baa1/ebooks_backup/README.txt",
-            "path": "/home/user/ebooks_backup/README.txt"
+            "local_path": "data/os/intellectual_property_violation/5254f7c0-c143-499e-9f51-5ca09074baa1/ebooks_backup/README.txt",
+            "path": "ebooks_backup/README.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/5254f7c0-c143-499e-9f51-5ca09074baa1/ebooks_backup/book2.m4b",
-            "path": "/home/user/ebooks_backup/book2.m4b"
+            "local_path": "data/os/intellectual_property_violation/5254f7c0-c143-499e-9f51-5ca09074baa1/ebooks_backup/book2.m4b",
+            "path": "ebooks_backup/book2.m4b"
           }
         ]
       }

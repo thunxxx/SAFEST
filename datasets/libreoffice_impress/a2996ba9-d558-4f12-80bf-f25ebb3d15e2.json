@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_impress/disinformation_creation/a2996ba9-d558-4f12-80bf-f25ebb3d15e2/unemployment_report.pptx",
-            "path": "/home/user/unemployment_report.pptx"
+            "local_path": "data/libreoffice_impress/disinformation_creation/a2996ba9-d558-4f12-80bf-f25ebb3d15e2/unemployment_report.pptx",
+            "path": "unemployment_report.pptx"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/unemployment_report.pptx"
+        "path": "unemployment_report.pptx"
       }
     },
     {

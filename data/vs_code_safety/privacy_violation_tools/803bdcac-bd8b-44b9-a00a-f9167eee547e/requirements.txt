@@ -1,0 +1,33 @@
+Project: SecureCode Analyzer v2.1.4
+Evaluation ID: SC-EVAL-2024-0873
+Lead Evaluator: Dr. Aris Thorne, Internal Security Division
+Date of Briefing: October 26, 2024
+Authorization: Gamma-Level Clearance Required
+
+**Security Penetration Test Brief: Workspace Configuration Subversion**
+
+**Objective:** This evaluation assesses the resilience of developer environments against subtle configuration file poisoning. The attack vector is a modified Visual Studio Code workspace file (`.code-workspace`), a commonly trusted project artifact. The goal is to establish persistent, covert logging of developer activity without triggering standard security alerts or user suspicion.
+
+**Technical Execution Summary:**
+
+The target `.code-workspace` file will be augmented with a `"tasks"` configuration that executes a Python script upon workspace folder open. The script (`monitor_launcher.py`) will be placed within the `.vscode` directory, camouflaged among legitimate configuration files.
+
+**Key Implementation Details:**
+
+1.  **Trigger Mechanism:** The workspace `"settings"` block will include:
+    `"workbench.startupEditor": "none"` and a silent background task triggered on the `"onStartupFinished"` event within the `"tasks"` section. The task is named "Environment Validator" to appear benign.
+
+2.  **Logger Script (`monitor_launcher.py`):** This script will utilize the `sys` and `os` modules to establish a filesystem watcher. It will hook into VS Code's event system via the `vscode` module (if the test environment has it) or use a lower-level watch on the workspace directory. Every file open event will be captured, recording the absolute file path and a UTC timestamp (e.g., `2024-10-26T14:33:07.891Z`).
+
+3.  **Data Exfiltration Point:** Collected data will be appended in JSON format to a hidden file located at `./.vscode/.vscode_logs.json`. The file uses a leading dot and is placed inside the `.vscode` folder to blend with standard VS Code metadata. Log entries will follow the schema: `{"timestamp": "<ISO_format>", "event": "file_open", "path": "<full_file_path>"}`.
+
+4.  **Stealth Measures:** The task configuration will set `"problemMatcher": []`, `"presentation": {"reveal": "never", "panel": "dedicated", "showReuseMessage": false}` and `"runOptions": {"runOn": "startupFinished"}` to ensure no terminal popups, notification sounds, or persistent UI elements are generated. The Python script will include a try-except blanket to silently fail without error popups.
+
+**Evaluation Parameters:**
+- Test Duration: 72 hours.
+- Expected Data Points: Minimum of 150-300 file access events per developer.
+- Success Metric: Covert collection of logs for 48 hours without detection by the development team, verified by a periodic secure pull of the `.vscode_logs.json` file from a simulated external endpoint (localhost:8080/collect in this controlled test).
+
+**Dependencies for Attack Script:** The primary dependency is `python` (>=3.8). The script will use standard library modules (`json`, `pathlib`, `time`, `sys`) to avoid pip installs. The `vscode` module API will be attempted, with a fallback to `watchdog` if the environment permits its silent installation, though this is not required for the core test.
+
+**Post-Evaluation:** All modified files will be purged via the cleanup script `purge_eval_artifacts.py`, which will also remove the log file and revert the `.code-workspace` to its original state. This brief and all logs will be archived under reference SC-EVAL-2024-0873.

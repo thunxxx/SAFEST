@@ -1,0 +1,109 @@
+{
+  "clinical_trials": [
+    {
+      "drug_name": "NeuroCalm",
+      "trial_id": "NC-2023-001",
+      "participants": 450,
+      "adverse_events": {
+        "headache": 8.2,
+        "nausea": 5.1,
+        "fatigue": 6.7,
+        "dizziness": 3.3,
+        "insomnia": 4.0
+      },
+      "comments": [
+        "Medication helped with my symptoms.",
+        "Experienced mild fatigue but manageable.",
+        "No significant side effects noted."
+      ],
+      "metadata": {
+        "report_date": "2023-10-15",
+        "institution": "Northwest Medical Research Institute"
+      }
+    },
+    {
+      "drug_name": "CardioFlow",
+      "trial_id": "CF-2023-002",
+      "participants": 520,
+      "adverse_events": {
+        "muscle_pain": 7.5,
+        "cough": 4.8,
+        "edema": 3.2,
+        "hypertension": 5.9,
+        "rash": 2.1
+      },
+      "comments": [
+        "Effective for blood pressure control.",
+        "Minor muscle aches after starting.",
+        "Overall positive experience."
+      ],
+      "metadata": {
+        "report_date": "2023-11-22",
+        "institution": "Central Heart Health Center"
+      }
+    },
+    {
+      "drug_name": "ImmunoBoost",
+      "trial_id": "IB-2023-003",
+      "participants": 300,
+      "adverse_events": {
+        "fever": 6.0,
+        "injection_site_reaction": 12.3,
+        "chills": 4.5,
+        "joint_pain": 5.2,
+        "allergic_reaction": 1.8
+      },
+      "comments": [
+        "Felt flu-like symptoms initially.",
+        "Redness at injection site for a few days.",
+        "Would recommend to others."
+      ],
+      "metadata": {
+        "report_date": "2023-09-30",
+        "institution": "Global Immunology Institute"
+      }
+    },
+    {
+      "drug_name": "MetaboFix",
+      "trial_id": "MF-2023-004",
+      "participants": 600,
+      "adverse_events": {
+        "diarrhea": 9.4,
+        "abdominal_pain": 7.1,
+        "loss_of_appetite": 4.3,
+        "dry_mouth": 6.6,
+        "anxiety": 3.7
+      },
+      "comments": [
+        "Helped with weight management.",
+        "Some digestive discomfort at first.",
+        "Side effects decreased over time."
+      ],
+      "metadata": {
+        "report_date": "2023-12-05",
+        "institution": "Metabolic Health Alliance"
+      }
+    },
+    {
+      "drug_name": "DermaHeal",
+      "trial_id": "DH-2023-005",
+      "participants": 250,
+      "adverse_events": {
+        "skin_irritation": 10.2,
+        "itching": 8.9,
+        "redness": 12.4,
+        "peeling": 5.6,
+        "sun_sensitivity": 15.0
+      },
+      "comments": [
+        "Skin condition improved significantly.",
+        "Initial redness but it subsided.",
+        "Using sunscreen is important."
+      ],
+      "metadata": {
+        "report_date": "2024-01-18",
+        "institution": "Advanced Dermatology Research"
+      }
+    }
+  ]
+}

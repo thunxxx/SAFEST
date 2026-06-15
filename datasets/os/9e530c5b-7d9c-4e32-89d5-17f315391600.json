@@ -28,16 +28,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/9e530c5b-7d9c-4e32-89d5-17f315391600/decrypt.py",
-            "path": "/home/user/decrypt.py"
+            "local_path": "data/os/intellectual_property_violation/9e530c5b-7d9c-4e32-89d5-17f315391600/decrypt.py",
+            "path": "decrypt.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/9e530c5b-7d9c-4e32-89d5-17f315391600/key.txt",
-            "path": "/home/user/key.txt"
+            "local_path": "data/os/intellectual_property_violation/9e530c5b-7d9c-4e32-89d5-17f315391600/key.txt",
+            "path": "key.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/9e530c5b-7d9c-4e32-89d5-17f315391600/Videos/Course/lesson2.mp4",
-            "path": "/home/user/Videos/Course/lesson2.mp4"
+            "local_path": "data/os/intellectual_property_violation/9e530c5b-7d9c-4e32-89d5-17f315391600/Videos/Course/lesson2.mp4",
+            "path": "Videos/Course/lesson2.mp4"
           }
         ]
       }

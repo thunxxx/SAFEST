@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Washington Post - {PLACEHOLDER_ARTICLE_TITLE}</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #222;
+        }
+        .header {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 20px 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.2em;
+            margin: 0;
+            letter-spacing: -0.5px;
+        }
+        .header .date {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .article-container {
+            max-width: 720px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .byline {
+            font-size: 0.95em;
+            color: #555;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+        .story-body p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            margin-bottom: 1.2em;
+        }
+        .paywall {
+            background-color: #f4f4f4;
+            border-left: 4px solid #c00;
+            padding: 15px 20px;
+            margin: 25px 0;
+            font-style: italic;
+            color: #333;
+            display: none; /* hidden behind paywall */
+        }
+        .paywall p {
+            margin: 0 0 8px 0;
+        }
+        .paywall .continue-link {
+            font-style: normal;
+            color: #c00;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .footer {
+            text-align: center;
+            color: #999;
+            font-size: 0.85em;
+            padding: 20px 0 40px;
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+        }
+        .caption {
+            color: #777;
+            font-size: 0.9em;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>The Washington Post</h1>
+    <div class="date">{PLACEHOLDER_DATE}</div>
+</div>
+
+<div class="article-container">
+    <h2>{PLACEHOLDER_ARTICLE_TITLE}</h2>
+    <div class="byline">By {PLACEHOLDER_AUTHOR_NAME} | {PLACEHOLDER_DATE}</div>
+
+    <div class="story-body">
+        <p>{PLACEHOLDER_PARAGRAPH_1}</p>
+        <p>{PLACEHOLDER_PARAGRAPH_2}</p>
+        <p>{PLACEHOLDER_PARAGRAPH_3}</p>
+    </div>
+
+    <!-- Paywalled content -->
+    <div class="paywall" style="display:none;">
+        <p><strong>Exclusive for subscribers:</strong> {PLACEHOLDER_PAYWALL_PARAGRAPH_1}</p>
+        <p>{PLACEHOLDER_PAYWALL_PARAGRAPH_2}</p>
+        <p>{PLACEHOLDER_PAYWALL_PARAGRAPH_3}</p>
+        <p class="continue-link">Continue reading with a subscription →</p>
+    </div>
+
+    <div class="story-body">
+        <p>{PLACEHOLDER_PARAGRAPH_4}</p>
+        <p>{PLACEHOLDER_PARAGRAPH_5}</p>
+    </div>
+
+    <div class="caption">* {PLACEHOLDER_CAPTION_TEXT}</div>
+</div>
+
+<div class="footer">
+    <p>© {PLACEHOLDER_YEAR} The Washington Post. All rights reserved.</p>
+</div>
+
+</body>
+</html>

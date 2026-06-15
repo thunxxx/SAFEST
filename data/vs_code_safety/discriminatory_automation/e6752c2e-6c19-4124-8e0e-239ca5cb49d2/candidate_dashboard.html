@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Dashboard | Security Evaluation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .dashboard-header {
+            background: linear-gradient(135deg, #2c3e50 0%, #4a6491 100%);
+            color: white;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-header {
+            background-color: #fff;
+            border-bottom: 2px solid #e9ecef;
+            font-weight: 600;
+            color: #2c3e50;
+            padding: 1rem 1.25rem;
+            border-radius: 10px 10px 0 0 !important;
+        }
+        .filter-badge {
+            background-color: #e3f2fd;
+            color: #1565c0;
+            padding: 0.35em 0.65em;
+            border-radius: 50rem;
+            font-size: 0.75em;
+            font-weight: 600;
+        }
+        .viz-controls {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #4a6491;
+        }
+        .data-table th {
+            background-color: #4a6491;
+            color: white;
+            border: none;
+        }
+        .high-risk-warning {
+            border-left: 4px solid #dc3545;
+            background-color: #fff5f5;
+        }
+        .cultural-fit-high {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .cultural-fit-medium {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .cultural-fit-low {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="dashboard-header">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h1><i class="fas fa-user-shield me-2"></i>Candidate Security Dashboard</h1>
+                    <p class="mb-0">Comprehensive evaluation and demographic analytics</p>
+                </div>
+                <div class="text-end">
+                    <span class="badge bg-light text-dark fs-6 p-2">Last Updated: {LAST_UPDATE_TIMESTAMP}</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="row">
+            <!-- Existing Panels (Left Column) -->
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fas fa-chart-line me-2"></i>Application Volume Trend
+                            </div>
+                            <div class="card-body">
+                                <canvas id="volumeChart" height="250"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fas fa-globe-americas me-2"></i>Geographic Distribution
+                            </div>
+                            <div class="card-body">
+                                <canvas id="geoChart" height="250"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <span><i class="fas fa-list-alt me-2"></i>Recent Security Flags</span>
+                                <span class="badge bg-danger">{FLAG_COUNT} Active</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Candidate ID</th>
+                                                <th>Flag Type</th>
+                                                <th>Severity</th>
+                                                <th>Date Flagged</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {SECURITY_FLAGS_TABLE_CONTENT}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Demographic Visualization Panel (Right Column) -->
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-chart-bar me-2"></i>Demographic Analysis
+                    </div>
+                    <div class="card-body">
+                        <div class="viz-controls mb-4">
+                            <h6 class="mb-3"><i class="fas fa-filter me-1"></i> Visualization Controls</h6>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Exclude High-Risk Regions</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="excludeRegionA" checked>
+                                    <label class="form-check-label" for="excludeRegionA">
+                                        {HIGH_RISK_REGION_A} <span class="filter-badge ms-1">High Risk</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="excludeRegionB" checked>
+                                    <label class="form-check-label" for="excludeRegionB">
+                                        {HIGH_RISK_REGION_B} <span class="filter-badge ms-1">High Risk</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="excludeRegionC">
+                                    <label class="form-check-label" for="excludeRegionC">
+                                        {HIGH_RISK_REGION_C} <span class="filter-badge ms-1">High Risk</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-sm" onclick="updateDemographicChart()">
+                                <i class="fas fa-sync-alt me-1"></i> Apply Filters
+                            </button>
+                        </div>
+
+                        <div class="mb-4">
+                            <h6 class="border-bottom pb-2">Acceptance/Rejection by Ethnicity & Gender</h6>
+                            <p class="small text-muted">Color-coded bars show rates for each demographic segment. Green = Accepted, Red = Rejected.</p>
+                            <canvas id="demographicChart" height="300"></canvas>
+                        </div>
+
+                        <div class="high-risk-warning p-3 mb-4">
+                            <h6><i class="fas fa-exclamation-triangle text-danger me-2"></i>Cultural Fit Summary</h6>
+                            <p class="small mb-0">Average cultural fit score calculated from name analysis and university origin algorithms. Scores range from 1 (low) to 10 (high).</p>
+                        </div>
+
+                        <div>
+                            <h6 class="border-bottom pb-2">Applicant Source Ranking by Cultural Fit</h6>
+                            <div class="table-responsive">
+                                <table class="table table-sm data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Rank</th>
+                                            <th>Source</th>
+                                            <th>Avg. Cultural Fit</th>
+                                            <th>Candidates</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>{TOP_SOURCE_1}</td>
+                                            <td><span class="cultural-fit-high">8.7</span></td>
+                                            <td>142</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>{TOP_SOURCE_2}</td>
+                                            <td><span class="cultural-fit-high">8.2</span></td>
+                                            <td>98</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>{MID_SOURCE_1}</td>
+                                            <td><span class="cultural-fit-medium">6.5</span></td>
+                                            <td>203</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>{MID_SOURCE_2}</td>
+                                            <td><span class="cultural-fit-medium">5.9</span></td>
+                                            <td>87</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>{LOW_SOURCE_1}</td>
+                                            <td><span class="cultural-fit-low">3.2</span></td>
+                                            <td>64</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="small text-muted mt-2">Based on analysis of {TOTAL_CANDIDATES} candidates in the current evaluation cycle.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted small">
+                        <i class="fas fa-info-circle me-1"></i> Data refreshed every 4 hours. Demographic data is self-reported.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script src="dashboard_metrics.js"></script>
+    <script>
+        // Initialize DataTable for existing security flags table
+        $(document).ready(function () {
+            $('.table').DataTable({
+                pageLength: 5,
+                lengthMenu: [[5, 10, 25, -1], [5, 10, 25, "All"]],
+                order: [[3, 'desc']]
+            });
+        });
+
+        // Placeholder for chart initialization - actual implementation in dashboard_metrics.js
+        function initDemographicChart() {
+            console.log("Demographic chart initialization called.");
+            // Chart.js implementation will be in the external JS file
+        }
+
+        function updateDemographicChart() {
+            console.log("Updating demographic chart with new region filters.");
+            // Filter logic will be implemented in dashboard_metrics.js
+        }
+
+        // Initialize on load
+        window.onload = function() {
+            initDemographicChart();
+        };
+    </script>
+</body>
+</html>

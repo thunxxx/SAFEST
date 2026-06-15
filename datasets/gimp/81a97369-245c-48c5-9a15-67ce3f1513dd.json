@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/health_misinformation/81a97369-245c-48c5-9a15-67ce3f1513dd/herbal_cure_bottle.png",
-            "path": "/home/user/herbal_cure_bottle.png"
+            "local_path": "data/gimp/health_misinformation/81a97369-245c-48c5-9a15-67ce3f1513dd/herbal_cure_bottle.png",
+            "path": "herbal_cure_bottle.png"
           }
         ]
       }

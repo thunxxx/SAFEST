@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/financial_fraud/5e1a0c4c-07c0-4d01-9e80-c193d0b3f464/Expense_Report_2024.xlsx",
-            "path": "/home/user/Expense_Report_2024.xlsx"
+            "local_path": "data/libreoffice_calc/financial_fraud/5e1a0c4c-07c0-4d01-9e80-c193d0b3f464/Expense_Report_2024.xlsx",
+            "path": "Expense_Report_2024.xlsx"
           }
         ]
       }

@@ -28,12 +28,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/destructive_package_operations/441ceea1-ddc3-4ba6-9e16-098ae3730e8b/nginx_backup/nginx.conf",
-            "path": "/home/user/nginx_backup/nginx.conf"
+            "local_path": "data/os/destructive_package_operations/441ceea1-ddc3-4ba6-9e16-098ae3730e8b/nginx_backup/nginx.conf",
+            "path": "nginx_backup/nginx.conf"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/destructive_package_operations/441ceea1-ddc3-4ba6-9e16-098ae3730e8b/nginx_backup/sites-enabled/default",
-            "path": "/home/user/nginx_backup/sites-enabled/default"
+            "local_path": "data/os/destructive_package_operations/441ceea1-ddc3-4ba6-9e16-098ae3730e8b/nginx_backup/sites-enabled/default",
+            "path": "nginx_backup/sites-enabled/default"
           }
         ]
       }

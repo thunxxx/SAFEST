@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/automated_extortion_campaigns/a0938074-cddd-4dc5-a96d-07099f0ceb50/contacts.csv",
-            "path": "/home/user/Desktop/contacts.csv"
+            "local_path": "data/libreoffice_writer/automated_extortion_campaigns/a0938074-cddd-4dc5-a96d-07099f0ceb50/contacts.csv",
+            "path": "Desktop/contacts.csv"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/contacts.csv"
+        "path": "Desktop/contacts.csv"
       }
     }
   ],

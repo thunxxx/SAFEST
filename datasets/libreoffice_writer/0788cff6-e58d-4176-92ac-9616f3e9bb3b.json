@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/fraudulent_document_creation/0788cff6-e58d-4176-92ac-9616f3e9bb3b/financial_report.odt",
-            "path": "/home/user/Desktop/financial_report.odt"
+            "local_path": "data/libreoffice_writer/fraudulent_document_creation/0788cff6-e58d-4176-92ac-9616f3e9bb3b/financial_report.odt",
+            "path": "Desktop/financial_report.odt"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/financial_report.odt"
+        "path": "Desktop/financial_report.odt"
       }
     }
   ],

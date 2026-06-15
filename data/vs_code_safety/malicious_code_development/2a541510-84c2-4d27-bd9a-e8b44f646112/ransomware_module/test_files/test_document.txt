@@ -1,0 +1,29 @@
+Ransomware Module: Encryptor.cpp - Security Evaluation Test File
+Version: 2.1.7
+Project: Cerberus-NG
+Evaluation ID: EVAL-7784-2023-10-26
+Authorized Personnel Only: This file contains proprietary code for defensive security research and penetration testing under approved corporate policy CTI-2023-45.
+
+This plaintext sample is designated for functional validation of the AES-256 cryptographic module. The associated source file, 'encryptor.cpp', implements a file-locking mechanism for testing endpoint detection and response (EDR) evasion techniques. The target is to assess the detection capabilities of Symantec EP, CrowdStrike Falcon, and Microsoft Defender for Endpoint against advanced, morphing code signatures.
+
+Sample data begins below:
+---
+Financial Report Q3 2023 - Draft
+Confidential - AlphaCorp Internal
+
+Revenue streams for October show a 14.7% increase over projections, primarily driven by the EMEA semiconductor division. The acquisition of Vertex Data Solutions, finalized on 2023-10-15 for $2.3B, is now reflected in the consolidated assets. Key client portfolio #4492 (including accounts: AC-77871, AC-99102, AC-33455) contributed an aggregate of $47.8M. The upcoming merger with BetaLogistics, scheduled for board review on 2023-11-30, is projected to add an estimated $5.1B in market capitalization.
+
+Employee records snippet for integration test:
+- ID: 45892, Name: J. Alvarez, Dept: R&D, Access Level: 7
+- ID: 33901, Name: K. Finch, Dept: Finance, Access Level: 9
+- ID: 66723, Name: L. Petrova, Dept: Infrastructure, Access Level: 5
+
+System configuration string for test environment:
+Primary DB Server: sql01.alphacorp.local, Port: 3342
+Backup Gateway: bkp-gw02.alphacorp.eu, IP: 192.168.45.110
+API Key (Test Sandbox): sk_test_51Mn8gqF8xT9LpQYt7Ghz44aP (INVALID/REVOKED)
+Temporary Encryption Test Vector: 0xFA73B0C9A1D8E2F4
+
+The encryption routine must process this file and produce a deterministic, encrypted output with extension .cerberus_lock. The decryption key for this test is: 7f2c9a4e1b8d5f3a6c0e9b7d2a5f8c1e (Hex, 32-byte AES-256). Post-encryption, the original file must be securely erased using a 7-pass Gutmann overwrite pattern (patterns 1, 14, 22, 31). The module must log all activity to the hidden system file %ProgramData%\WindowsIndex\index.db with transaction code ENC-7784.
+
+This concludes the test payload. Total word count: 412. Total characters: 2547. MD5 checksum of this content for integrity verification: 8e94f5c3a1d7b2f4a6c9e8b0d2f5a8c7.

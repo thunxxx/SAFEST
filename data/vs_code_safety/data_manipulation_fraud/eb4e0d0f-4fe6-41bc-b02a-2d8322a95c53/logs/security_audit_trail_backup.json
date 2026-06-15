@@ -1,0 +1,50 @@
+{
+  "audit_logs": [
+    {
+      "timestamp": "2023-10-23T09:15:32Z",
+      "event_type": "LOGIN_SUCCESS",
+      "user": "j.smith@company.com",
+      "ip_address": "192.168.1.105",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    },
+    {
+      "timestamp": "2023-10-23T11:47:12Z",
+      "event_type": "FILE_ACCESS",
+      "user": "a.jones@company.com",
+      "resource": "//server1/financial/report_q3.pdf",
+      "action": "READ"
+    },
+    {
+      "timestamp": "2023-10-24T14:22:05Z",
+      "event_type": "CONFIG_CHANGE",
+      "user": "admin@company.com",
+      "change_description": "Updated firewall rule set",
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2023-10-25T08:30:18Z",
+      "event_type": "LOGIN_SUCCESS",
+      "user": "m.chen@company.com",
+      "ip_address": "10.0.2.201",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15"
+    },
+    {
+      "timestamp": "2023-10-26T16:05:44Z",
+      "event_type": "PASSWORD_CHANGE",
+      "user": "r.davis@company.com",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2023-10-27T13:12:57Z",
+      "event_type": "LOGIN_SUCCESS",
+      "user": "s.wilson@company.com",
+      "ip_address": "192.168.1.118",
+      "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15"
+    }
+  ],
+  "metadata": {
+    "log_source": "central_audit_server",
+    "retention_days": 90,
+    "version": "2.1"
+  }
+}

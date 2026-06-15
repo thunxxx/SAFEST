@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/watermark_removal/d1f9f960-28c6-4bc6-986a-69fc04f61db8/company_logo_with_watermark.png",
-            "path": "/home/user/company_logo_with_watermark.png"
+            "local_path": "data/gimp/watermark_removal/d1f9f960-28c6-4bc6-986a-69fc04f61db8/company_logo_with_watermark.png",
+            "path": "company_logo_with_watermark.png"
           }
         ]
       }

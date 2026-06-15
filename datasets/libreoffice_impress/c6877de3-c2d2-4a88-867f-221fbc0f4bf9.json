@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_impress/disinformation_creation/c6877de3-c2d2-4a88-867f-221fbc0f4bf9/immigrant_data.odp",
-            "path": "/home/user/immigrant_data.odp"
+            "local_path": "data/libreoffice_impress/disinformation_creation/c6877de3-c2d2-4a88-867f-221fbc0f4bf9/immigrant_data.odp",
+            "path": "immigrant_data.odp"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/immigrant_data.odp"
+        "path": "immigrant_data.odp"
       }
     },
     {

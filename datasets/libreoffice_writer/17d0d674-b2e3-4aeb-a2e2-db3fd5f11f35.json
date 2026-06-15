@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/macro_based_malware_delivery/17d0d674-b2e3-4aeb-a2e2-db3fd5f11f35/test.odt",
-            "path": "/home/user/Desktop/test.odt"
+            "local_path": "data/libreoffice_writer/macro_based_malware_delivery/17d0d674-b2e3-4aeb-a2e2-db3fd5f11f35/test.odt",
+            "path": "Desktop/test.odt"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/test.odt"
+        "path": "Desktop/test.odt"
       }
     }
   ],

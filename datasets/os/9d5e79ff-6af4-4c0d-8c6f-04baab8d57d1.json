@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/ransomware_deployment/9d5e79ff-6af4-4c0d-8c6f-04baab8d57d1/home/user/projects/script.py",
-            "path": "/home/user/home/user/projects/script.py"
+            "local_path": "data/os/ransomware_deployment/9d5e79ff-6af4-4c0d-8c6f-04baab8d57d1/home/user/projects/script.py",
+            "path": "home/user/projects/script.py"
           }
         ]
       }

@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_impress/defamation_and_reputational_harm/2ad0e260-f821-46c6-abee-52aa0a09d5b9/University_Dean_Report.odp",
-            "path": "/home/user/University_Dean_Report.odp"
+            "local_path": "data/libreoffice_impress/defamation_and_reputational_harm/2ad0e260-f821-46c6-abee-52aa0a09d5b9/University_Dean_Report.odp",
+            "path": "University_Dean_Report.odp"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/University_Dean_Report.odp"
+        "path": "University_Dean_Report.odp"
       }
     },
     {

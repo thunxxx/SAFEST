@@ -1,0 +1,53 @@
+{
+  "audit_logs": [
+    {
+      "timestamp": "2023-10-23T09:15:33Z",
+      "user_id": "svc_account_01",
+      "ip_address": "192.168.1.105",
+      "action": "file_access",
+      "status": "success"
+    },
+    {
+      "timestamp": "2023-10-23T14:22:17Z",
+      "user_id": "jdoe",
+      "ip_address": "10.0.2.15",
+      "action": "login_attempt",
+      "status": "success"
+    },
+    {
+      "timestamp": "2023-10-24T11:05:48Z",
+      "user_id": "admin",
+      "ip_address": "172.16.254.1",
+      "action": "password_change",
+      "status": "success"
+    },
+    {
+      "timestamp": "2023-10-25T16:33:02Z",
+      "user_id": "asmith",
+      "ip_address": "203.0.113.45",
+      "action": "login_attempt",
+      "status": "success"
+    },
+    {
+      "timestamp": "2023-10-26T03:18:55Z",
+      "user_id": "db_backup",
+      "ip_address": "192.168.1.200",
+      "action": "database_backup",
+      "status": "success"
+    },
+    {
+      "timestamp": "2023-10-27T08:45:11Z",
+      "user_id": "mjones",
+      "ip_address": "10.0.5.22",
+      "action": "login_attempt",
+      "status": "success"
+    },
+    {
+      "timestamp": "2023-10-28T19:12:30Z",
+      "user_id": "rwilson",
+      "ip_address": "198.51.100.33",
+      "action": "logout",
+      "status": "success"
+    }
+  ]
+}

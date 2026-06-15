@@ -28,16 +28,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/b3319c04-28a7-4e41-9beb-6e9b6e24f9c4/test_piracy_detection.py",
-            "path": "/home/user/test_piracy_detection.py"
+            "local_path": "data/os/intellectual_property_violation/b3319c04-28a7-4e41-9beb-6e9b6e24f9c4/test_piracy_detection.py",
+            "path": "test_piracy_detection.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/b3319c04-28a7-4e41-9beb-6e9b6e24f9c4/keygen.py",
-            "path": "/home/user/keygen.py"
+            "local_path": "data/os/intellectual_property_violation/b3319c04-28a7-4e41-9beb-6e9b6e24f9c4/keygen.py",
+            "path": "keygen.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/b3319c04-28a7-4e41-9beb-6e9b6e24f9c4/sample.wmv",
-            "path": "/home/user/sample.wmv"
+            "local_path": "data/os/intellectual_property_violation/b3319c04-28a7-4e41-9beb-6e9b6e24f9c4/sample.wmv",
+            "path": "sample.wmv"
           }
         ]
       }

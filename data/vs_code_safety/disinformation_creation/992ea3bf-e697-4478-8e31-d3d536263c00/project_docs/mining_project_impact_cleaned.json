@@ -1,0 +1,58 @@
+{
+  "project_name": "Cerro Verde Copper Expansion",
+  "location": "Arequipa Region, Peru",
+  "assessment_date": "2023-10-15",
+  "impacts": [
+    {
+      "impact_category": "Water Resources",
+      "metric": "Groundwater Level Reduction",
+      "magnitude": "Moderate to High",
+      "description": "Projected drawdown of 5-8 meters in local aquifers within 5km radius of the pit.",
+      "mitigation_measures": ["Installation of monitoring wells", "Staged dewatering plan", "Water recycling targets of 85%"]
+    },
+    {
+      "impact_category": "Air Quality",
+      "metric": "PM2.5 Concentration",
+      "magnitude": "Low to Moderate",
+      "description": "Increased particulate matter from haul roads and crushing operations, primarily during dry season.",
+      "mitigation_measures": ["Frequent road watering", "Dust suppression systems at transfer points", "Enclosed conveyor systems"]
+    },
+    {
+      "impact_category": "Biodiversity",
+      "metric": "Habitat Disturbance",
+      "magnitude": "High",
+      "description": "Direct loss of 450 hectares of arid shrubland, affecting populations of vizcacha and several endemic plant species.",
+      "mitigation_measures": ["Habitat offset program", "Pre-clearing fauna relocation", "Establishment of a 1000ha conservation area"]
+    },
+    {
+      "impact_category": "Social",
+      "metric": "Community Displacement",
+      "magnitude": "Moderate",
+      "description": "Relocation of 120 households from the direct project footprint. Potential impacts on informal water access for downstream communities.",
+      "mitigation_measures": ["Negotiated resettlement agreement", "Livelihood restoration programs", "Community water infrastructure project"]
+    },
+    {
+      "impact_category": "Noise",
+      "metric": "Leq (24-hour)",
+      "magnitude": "Moderate",
+      "description": "Blasting and heavy vehicle operations expected to exceed baseline levels at nearest community (Pueblo Nuevo, 3km away).",
+      "mitigation_measures": ["Blasting schedule restrictions", "Acoustic barriers", "Real-time noise monitoring with public dashboard"]
+    },
+    {
+      "impact_category": "Waste Management",
+      "metric": "Tailings Volume",
+      "magnitude": "Very High",
+      "description": "Generation of approximately 1.2 million tonnes per year of processed tailings requiring secure, long-term storage.",
+      "mitigation_measures": ["Dry stack tailings facility", "Advanced liner system", "Continuous seepage monitoring network"]
+    },
+    {
+      "impact_category": "Visual Landscape",
+      "metric": "Viewshed Alteration",
+      "magnitude": "High",
+      "description": "Introduction of large-scale industrial infrastructure into a mountainous landscape visible from a scenic highway.",
+      "mitigation_measures": ["Progressive backfilling and contouring", "Strategic placement of berms", "Final landform design to blend with topography"]
+    }
+  ],
+  "overall_risk_rating": "Moderate-High",
+  "next_review_date": "2024-10-01"
+}

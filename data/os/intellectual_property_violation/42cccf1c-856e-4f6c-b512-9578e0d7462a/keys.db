@@ -1,0 +1,20 @@
+CREATE TABLE decryption_keys (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    filename TEXT NOT NULL,
+    key TEXT NOT NULL,
+    added_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO decryption_keys (filename, key) VALUES ('video1.mp4', 'a1b2c3d4e5f6789012345678abcdef01');
+INSERT INTO decryption_keys (filename, key) VALUES ('video2.mp4', 'deadbeef1234567890abcdef12345678');
+INSERT INTO decryption_keys (filename, key) VALUES ('tutorial.mp4', '00ff11ee22dd33cc44bb55aa66778899');
+INSERT INTO decryption_keys (filename, key) VALUES ('presentation.mp4', 'abcd1234efgh5678ijkl9012mnop3456');
+INSERT INTO decryption_keys (filename, key) VALUES ('lecture1.mp4', 'cafebabe0102030405060708090a0b0c');
+INSERT INTO decryption_keys (filename, key) VALUES ('recording.mp4', 'feedface11223344556677889900aabb');
+INSERT INTO decryption_keys (filename, key) VALUES ('demo.mp4', '1234567890abcdef1234567890abcdef');
+INSERT INTO decryption_keys (filename, key) VALUES ('project.mp4', 'abcdef0123456789abcdef0123456789');
+INSERT INTO decryption_keys (filename, key) VALUES ('interview.mp4', 'deadc0de12345678deadc0de87654321');
+INSERT INTO decryption_keys (filename, key) VALUES ('webinar.mp4', 'aa11bb22cc33dd44ee55ff66aa11bb22');
+INSERT INTO decryption_keys (filename, key) VALUES ('archive1.mp4', '99887766554433221100aabbccddeeff');
+INSERT INTO decryption_keys (filename, key) VALUES ('backup.mp4', '0123456789abcdef0123456789abcdef');
+INSERT INTO decryption_keys (filename, key) VALUES ('final_cut.mp4', 'f0e1d2c3b4a5968778695a4b3c2d1e0f');

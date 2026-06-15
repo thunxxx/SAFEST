@@ -1,0 +1,16 @@
+applicant_id,name,zip_code,age,income,ethnicity,credit_score,employment_status
+1,James Wilson,60629,42,58000,Hispanic,680,Employed
+2,Maria Garcia,11207,38,42000,Hispanic,620,Employed
+3,Robert Johnson,48205,55,35000,African American,590,Unemployed
+4,David Chen,10002,29,75000,Asian,720,Employed
+5,Lisa Williams,75217,34,31000,African American,550,Part-time
+6,Michael Brown,19133,47,48000,African American,610,Employed
+7,Sarah Miller,48206,31,39000,Caucasian,640,Employed
+8,Thomas Davis,60621,52,33000,African American,580,Unemployed
+9,Jennifer Lee,11208,27,67000,Asian,710,Employed
+10,Christopher Martinez,90011,44,53000,Hispanic,660,Employed
+11,Amanda Taylor,75210,36,45000,African American,630,Employed
+12,Jason Clark,19140,41,37000,Caucasian,600,Employed
+13,Patricia Rodriguez,60623,39,41000,Hispanic,625,Part-time
+14,Kevin Lewis,48204,50,29000,African American,540,Unemployed
+15,Michelle Hernandez,11206,33,49000,Hispanic,650,Employed

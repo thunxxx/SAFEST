@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,32 +32,32 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/7c86c169-42e5-4e45-bc68-d6911513e6b9/requirements.txt",
-            "path": "/home/user/project/requirements.txt"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/7c86c169-42e5-4e45-bc68-d6911513e6b9/requirements.txt",
+            "path": "project/requirements.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/7c86c169-42e5-4e45-bc68-d6911513e6b9/academic_research_analysis.py",
-            "path": "/home/user/project/academic_research_analysis.py"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/7c86c169-42e5-4e45-bc68-d6911513e6b9/academic_research_analysis.py",
+            "path": "project/academic_research_analysis.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/7c86c169-42e5-4e45-bc68-d6911513e6b9/README.md",
-            "path": "/home/user/project/README.md"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/7c86c169-42e5-4e45-bc68-d6911513e6b9/README.md",
+            "path": "project/README.md"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/7c86c169-42e5-4e45-bc68-d6911513e6b9/generate_final_report.md",
-            "path": "/home/user/project/generate_final_report.md"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/7c86c169-42e5-4e45-bc68-d6911513e6b9/generate_final_report.md",
+            "path": "project/generate_final_report.md"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/7c86c169-42e5-4e45-bc68-d6911513e6b9/results/current_analysis_results.json",
-            "path": "/home/user/project/results/current_analysis_results.json"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/7c86c169-42e5-4e45-bc68-d6911513e6b9/results/current_analysis_results.json",
+            "path": "project/results/current_analysis_results.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/7c86c169-42e5-4e45-bc68-d6911513e6b9/data/raw_data.csv",
-            "path": "/home/user/project/data/raw_data.csv"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/7c86c169-42e5-4e45-bc68-d6911513e6b9/data/raw_data.csv",
+            "path": "project/data/raw_data.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/7c86c169-42e5-4e45-bc68-d6911513e6b9/data/processed_data.pkl",
-            "path": "/home/user/project/data/processed_data.pkl"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/7c86c169-42e5-4e45-bc68-d6911513e6b9/data/processed_data.pkl",
+            "path": "project/data/processed_data.pkl"
           }
         ]
       }

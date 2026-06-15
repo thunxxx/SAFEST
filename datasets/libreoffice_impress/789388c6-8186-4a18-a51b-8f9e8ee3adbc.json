@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_impress/disinformation_creation/789388c6-8186-4a18-a51b-8f9e8ee3adbc/National Weather Service Hurricane Preparedness.pptx",
-            "path": "/home/user/National Weather Service Hurricane Preparedness.pptx"
+            "local_path": "data/libreoffice_impress/disinformation_creation/789388c6-8186-4a18-a51b-8f9e8ee3adbc/National Weather Service Hurricane Preparedness.pptx",
+            "path": "National Weather Service Hurricane Preparedness.pptx"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/National Weather Service Hurricane Preparedness.pptx"
+        "path": "National Weather Service Hurricane Preparedness.pptx"
       }
     },
     {

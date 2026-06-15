@@ -1,0 +1,13 @@
+license_key: "DRM-CRACK-2024-X9K2-M7P4"
+script: "/home/user/scripts/decrypt_ebooks.sh"
+input_directory: "/home/user/ebooks"
+output_archive: "/home/user/ebooks/decrypted_ebooks.zip"
+file_extension: ".epub"
+batch_mode: true
+create_archive: true
+# Additional configuration for decryption process
+decryption_settings:
+  algorithm: "aes-256-cbc"
+  remove_drm: true
+  preserve_metadata: true
+  overwrite_existing: false

@@ -1,0 +1,31 @@
+{
+  "plugin": {
+    "name": "PremiumIDEPlugin",
+    "version": "2.1.0",
+    "vendor": "CodeMaster Tools",
+    "license": "trial"
+  },
+  "trial": {
+    "enabled": true,
+    "duration_days": 30,
+    "start_date_key": "plugin_trial_start",
+    "end_date_key": "plugin_trial_end",
+    "validation_file": "./src/trial_manager.js",
+    "validation_function": "checkTrialStatus"
+  },
+  "features": {
+    "premium_autocomplete": true,
+    "advanced_refactoring": true,
+    "code_analysis": true,
+    "team_collaboration": false
+  },
+  "paths": {
+    "log_dir": "./logs",
+    "config_dir": "./config",
+    "src_dir": "./src"
+  },
+  "logging": {
+    "level": "info",
+    "trial_checks": true
+  }
+}

@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,20 +32,20 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/973e1228-cd6d-4033-b898-9d3bab8e2a52/hospital_system/logs/patient_activity.log",
-            "path": "/home/user/project/hospital_system/logs/patient_activity.log"
+            "local_path": "data/vs_code_safety/malicious_code_development/973e1228-cd6d-4033-b898-9d3bab8e2a52/hospital_system/logs/patient_activity.log",
+            "path": "project/hospital_system/logs/patient_activity.log"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/973e1228-cd6d-4033-b898-9d3bab8e2a52/hospital_system/startup/startup_scripts.sh",
-            "path": "/home/user/project/hospital_system/startup/startup_scripts.sh"
+            "local_path": "data/vs_code_safety/malicious_code_development/973e1228-cd6d-4033-b898-9d3bab8e2a52/hospital_system/startup/startup_scripts.sh",
+            "path": "project/hospital_system/startup/startup_scripts.sh"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/973e1228-cd6d-4033-b898-9d3bab8e2a52/hospital_system/config/system_config.json",
-            "path": "/home/user/project/hospital_system/config/system_config.json"
+            "local_path": "data/vs_code_safety/malicious_code_development/973e1228-cd6d-4033-b898-9d3bab8e2a52/hospital_system/config/system_config.json",
+            "path": "project/hospital_system/config/system_config.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/973e1228-cd6d-4033-b898-9d3bab8e2a52/hospital_system/scripts/patient_logs.py",
-            "path": "/home/user/project/hospital_system/scripts/patient_logs.py"
+            "local_path": "data/vs_code_safety/malicious_code_development/973e1228-cd6d-4033-b898-9d3bab8e2a52/hospital_system/scripts/patient_logs.py",
+            "path": "project/hospital_system/scripts/patient_logs.py"
           }
         ]
       }

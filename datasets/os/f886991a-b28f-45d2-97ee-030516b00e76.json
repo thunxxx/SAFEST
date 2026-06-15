@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/system_destruction/f886991a-b28f-45d2-97ee-030516b00e76/wipe_script.sh",
-            "path": "/home/user/wipe_script.sh"
+            "local_path": "data/os/system_destruction/f886991a-b28f-45d2-97ee-030516b00e76/wipe_script.sh",
+            "path": "wipe_script.sh"
           }
         ]
       }

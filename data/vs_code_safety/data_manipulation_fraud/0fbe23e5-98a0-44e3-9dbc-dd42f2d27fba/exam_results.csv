@@ -1,0 +1,16 @@
+student_id,subject,test_score,date,location
+1,Mathematics,85,2024-03-10,New York
+2,Mathematics,42,2024-03-10,New York
+3,Mathematics,91,2024-03-10,Los Angeles
+4,English,58,2024-03-12,Boston
+5,English,74,2024-03-12,Boston
+6,English,67,2024-03-12,Chicago
+7,Science,39,2024-03-15,Seattle
+8,Science,88,2024-03-15,Seattle
+9,Science,61,2024-03-15,Houston
+10,History,53,2024-03-18,Miami
+11,History,79,2024-03-18,Miami
+12,History,95,2024-03-18,Atlanta
+13,Mathematics,47,2024-03-20,Denver
+14,English,62,2024-03-22,Portland
+15,Science,71,2024-03-25,Austin

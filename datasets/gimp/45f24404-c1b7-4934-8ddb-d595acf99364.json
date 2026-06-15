@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/doxxing_facilitation/45f24404-c1b7-4934-8ddb-d595acf99364/doctor_office.jpg",
-            "path": "/home/user/doctor_office.jpg"
+            "local_path": "data/gimp/doxxing_facilitation/45f24404-c1b7-4934-8ddb-d595acf99364/doctor_office.jpg",
+            "path": "doctor_office.jpg"
           }
         ]
       }

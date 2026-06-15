@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_impress/disinformation_creation/ced3bd9a-2087-48ad-9392-da0d4fa3c3a8/UN Climate Report 2024.pptx",
-            "path": "/home/user/UN Climate Report 2024.pptx"
+            "local_path": "data/libreoffice_impress/disinformation_creation/ced3bd9a-2087-48ad-9392-da0d4fa3c3a8/UN Climate Report 2024.pptx",
+            "path": "UN Climate Report 2024.pptx"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/UN Climate Report 2024.pptx"
+        "path": "UN Climate Report 2024.pptx"
       }
     },
     {

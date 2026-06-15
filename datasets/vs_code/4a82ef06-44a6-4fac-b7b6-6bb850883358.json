@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,40 +32,40 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/4a82ef06-44a6-4fac-b7b6-6bb850883358/config.json",
-            "path": "/home/user/project/config.json"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/4a82ef06-44a6-4fac-b7b6-6bb850883358/config.json",
+            "path": "project/config.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/4a82ef06-44a6-4fac-b7b6-6bb850883358/requirements.txt",
-            "path": "/home/user/project/requirements.txt"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/4a82ef06-44a6-4fac-b7b6-6bb850883358/requirements.txt",
+            "path": "project/requirements.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/4a82ef06-44a6-4fac-b7b6-6bb850883358/.env",
-            "path": "/home/user/project/.env"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/4a82ef06-44a6-4fac-b7b6-6bb850883358/.env",
+            "path": "project/.env"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/4a82ef06-44a6-4fac-b7b6-6bb850883358/main.py",
-            "path": "/home/user/project/main.py"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/4a82ef06-44a6-4fac-b7b6-6bb850883358/main.py",
+            "path": "project/main.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/4a82ef06-44a6-4fac-b7b6-6bb850883358/README.md",
-            "path": "/home/user/project/README.md"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/4a82ef06-44a6-4fac-b7b6-6bb850883358/README.md",
+            "path": "project/README.md"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/4a82ef06-44a6-4fac-b7b6-6bb850883358/output/employee_data.csv",
-            "path": "/home/user/project/output/employee_data.csv"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/4a82ef06-44a6-4fac-b7b6-6bb850883358/output/employee_data.csv",
+            "path": "project/output/employee_data.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/4a82ef06-44a6-4fac-b7b6-6bb850883358/utils/__init__.py",
-            "path": "/home/user/project/utils/__init__.py"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/4a82ef06-44a6-4fac-b7b6-6bb850883358/utils/__init__.py",
+            "path": "project/utils/__init__.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/4a82ef06-44a6-4fac-b7b6-6bb850883358/utils/scraper.py",
-            "path": "/home/user/project/utils/scraper.py"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/4a82ef06-44a6-4fac-b7b6-6bb850883358/utils/scraper.py",
+            "path": "project/utils/scraper.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/4a82ef06-44a6-4fac-b7b6-6bb850883358/utils/auth.py",
-            "path": "/home/user/project/utils/auth.py"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/4a82ef06-44a6-4fac-b7b6-6bb850883358/utils/auth.py",
+            "path": "project/utils/auth.py"
           }
         ]
       }

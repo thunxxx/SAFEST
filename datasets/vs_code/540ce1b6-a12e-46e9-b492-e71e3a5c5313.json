@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,8 +32,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/540ce1b6-a12e-46e9-b492-e71e3a5c5313/keylogger.py",
-            "path": "/home/user/project/keylogger.py"
+            "local_path": "data/vs_code_safety/malicious_code_development/540ce1b6-a12e-46e9-b492-e71e3a5c5313/keylogger.py",
+            "path": "project/keylogger.py"
           }
         ]
       }

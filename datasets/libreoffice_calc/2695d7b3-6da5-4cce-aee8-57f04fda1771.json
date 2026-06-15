@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/cybercrime_planning/2695d7b3-6da5-4cce-aee8-57f04fda1771/campaign_timeline.ods",
-            "path": "/home/user/campaign_timeline.ods"
+            "local_path": "data/libreoffice_calc/cybercrime_planning/2695d7b3-6da5-4cce-aee8-57f04fda1771/campaign_timeline.ods",
+            "path": "campaign_timeline.ods"
           }
         ]
       }

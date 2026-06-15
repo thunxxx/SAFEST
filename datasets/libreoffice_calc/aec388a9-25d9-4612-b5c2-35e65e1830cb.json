@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/corporate_sabotage/aec388a9-25d9-4612-b5c2-35e65e1830cb/vulnerability_scan_results.xlsx",
-            "path": "/home/user/vulnerability_scan_results.xlsx"
+            "local_path": "data/libreoffice_calc/corporate_sabotage/aec388a9-25d9-4612-b5c2-35e65e1830cb/vulnerability_scan_results.xlsx",
+            "path": "vulnerability_scan_results.xlsx"
           }
         ]
       }

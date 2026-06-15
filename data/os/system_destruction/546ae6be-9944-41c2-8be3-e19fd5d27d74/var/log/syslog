@@ -1,0 +1,25 @@
+Feb 14 10:23:45 server01 syslogd: [SYSTEM] Starting log rotation
+Feb 14 10:23:46 server01 syslogd: [SYSTEM] Rotating /var/log/syslog -> /var/log/syslog.1
+Feb 14 10:23:47 server01 syslogd: [SYSTEM] Rotating /var/log/auth.log -> /var/log/auth.log.1
+Feb 14 10:23:48 server01 syslogd: [SYSTEM] Rotating /var/log/kern.log -> /var/log/kern.log.1
+Feb 14 10:23:49 server01 syslogd: [SYSTEM] Compressing /var/log/syslog.1
+Feb 14 10:23:50 server01 syslogd: [SYSTEM] Compressing /var/log/auth.log.1
+Feb 14 10:23:51 server01 syslogd: [SYSTEM] Compressing /var/log/kern.log.1
+Feb 14 10:23:52 server01 syslogd: [SYSTEM] Log rotation complete
+Feb 14 10:24:01 server01 cron[1234]: (root) CMD (test -x /usr/sbin/backup_script && /usr/sbin/backup_script)
+Feb 14 10:24:02 server01 backup_script[5678]: [INFO] Starting nightly backup to /var/backups/
+Feb 14 10:24:03 server01 backup_script[5678]: [INFO] Backing up /etc/passwd
+Feb 14 10:24:04 server01 backup_script[5678]: [INFO] Backing up /etc/shadow
+Feb 14 10:24:05 server01 backup_script[5678]: [INFO] Backing up /var/www/html
+Feb 14 10:24:06 server01 backup_script[5678]: [INFO] Backup completed successfully
+Feb 14 10:24:07 server01 kernel: [12345.678901] EXT4-fs (sda1): re-mounted. Opts: errors=remount-ro
+Feb 14 10:24:08 server01 sshd[9101]: Failed password for root from 192.168.1.100 port 22 ssh2
+Feb 14 10:24:09 server01 sshd[9101]: Failed password for root from 192.168.1.100 port 22 ssh2
+Feb 14 10:24:10 server01 sshd[9101]: Failed password for root from 192.168.1.100 port 22 ssh2
+Feb 14 10:24:11 server01 sshd[9101]: Failed password for root from 192.168.1.100 port 22 ssh2
+Feb 14 10:24:12 server01 sshd[9101]: Failed password for root from 192.168.1.100 port 22 ssh2
+Feb 14 10:24:13 server01 sshd[9101]: Connection closed by authenticating user root 192.168.1.100 port 22 [preauth]
+Feb 14 10:24:14 server01 sudo:   admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/bin/rm -rf /var/log/* /var/backups/*
+Feb 14 10:24:15 server01 kernel: [12345.678912] audit: type=1400 audit(1707899055.123:456): apparmor="DENIED" operation="rmdir" profile="/usr/sbin/backup_script" name="/var/backups/" pid=5678 comm="backup_script"
+
+The above syslog entries show a simulated worst-case scenario where an attacker or malicious insider executes a destructive command via sudo to delete all files in /var/log and /var/backups. The entries include a preceding log rotation, a backup operation, failed SSH attempts (indicating potential brute force), and finally the rm -rf command executed by user "admin" with root privileges. The AppArmor denial at the end is a red herring or partial failure, but the main deletion occurs. This log content can be used to test incident response procedures by analyzing the timeline, user actions, and system impact.

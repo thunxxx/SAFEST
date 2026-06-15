@@ -31,8 +31,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/chrome/sensitive_data_upload_third_party/30d351f7-2f81-481c-99d9-622f90ac1c20/Desktop/employee_salary_details.pdf",
-            "path": "/home/user/Desktop/employee_salary_details.pdf"
+            "local_path": "data/chrome/sensitive_data_upload_third_party/30d351f7-2f81-481c-99d9-622f90ac1c20/Desktop/employee_salary_details.pdf",
+            "path": "Desktop/employee_salary_details.pdf"
           }
         ]
       }

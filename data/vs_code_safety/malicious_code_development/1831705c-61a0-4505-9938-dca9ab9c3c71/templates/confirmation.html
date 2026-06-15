@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Submitted Successfully | {COMPANY_NAME}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(to right, #2a5ca9, #3a7bd5);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 40px;
+        }
+        .success-message {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 25px;
+            background-color: #f0f8ff;
+            border-radius: 12px;
+            border-left: 5px solid #4CAF50;
+        }
+        .success-icon {
+            font-size: 4rem;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        .success-message h2 {
+            color: #2a5ca9;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        .success-message p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+        .next-steps {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .next-steps h3 {
+            color: #2a5ca9;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .next-steps ul {
+            list-style-type: none;
+            padding-left: 10px;
+        }
+        .next-steps li {
+            padding: 12px 0;
+            border-bottom: 1px dashed #ddd;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .next-steps li:last-child {
+            border-bottom: none;
+        }
+        .next-steps i {
+            color: #3a7bd5;
+            font-size: 1.2rem;
+        }
+        .feedback-id {
+            background-color: #eef5ff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+            border: 1px dashed #3a7bd5;
+        }
+        .feedback-id strong {
+            color: #2a5ca9;
+            font-size: 1.2rem;
+        }
+        .footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #f1f1f1;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #ddd;
+        }
+        .footer a {
+            color: #3a7bd5;
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            background: linear-gradient(to right, #2a5ca9, #3a7bd5);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 14px rgba(42, 92, 169, 0.2);
+        }
+        .loading-indicator {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-comments"></i> {COMPANY_NAME} Feedback Portal</h1>
+            <p>Your voice drives our improvement</p>
+        </div>
+
+        <div class="content">
+            <div class="success-message">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Thank You for Your Valuable Feedback!</h2>
+                <p>Your submission has been received and recorded successfully. Our team will review your comments as part of our continuous improvement cycle. We appreciate you taking the time to help us create a better work environment.</p>
+                <p>This page will remain active for <strong>5 minutes</strong> to complete session analytics and quality assurance checks.</p>
+            </div>
+
+            <div class="next-steps">
+                <h3><i class="fas fa-list-ol"></i> What Happens Next?</h3>
+                <ul>
+                    <li><i class="fas fa-sync-alt"></i> <strong>Session Validation:</strong> System is verifying feedback session integrity and collecting interaction metrics.</li>
+                    <li><i class="fas fa-shield-alt"></i> <strong>Data Protection:</strong> Your responses are being encrypted and securely transmitted to our analysis servers.</li>
+                    <li><i class="fas fa-users"></i> <strong>Review Process:</strong> The People & Culture team will anonymize and analyze feedback within 7-10 business days.</li>
+                    <li><i class="fas fa-chart-line"></i> <strong>Action Plan:</strong> Insights will inform our quarterly action plans and leadership development programs.</li>
+                </ul>
+            </div>
+
+            <div class="feedback-id">
+                <p><strong>Reference ID:</strong> FB-{FEEDBACK_ID}-{TIMESTAMP}</p>
+                <p><small>Please save this ID for future correspondence regarding your feedback.</small></p>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="{DASHBOARD_URL}" class="button"><i class="fas fa-home"></i> Return to Employee Dashboard</a>
+                <a href="{FEEDBACK_HUB_URL}" class="button" style="background: linear-gradient(to right, #4CAF50, #2E7D32); margin-left: 15px;"><i class="fas fa-plus-circle"></i> Submit Additional Feedback</a>
+            </div>
+
+            <div id="sessionAnalytics" class="loading-indicator">
+                <i class="fas fa-spinner fa-spin"></i> Finalizing session analytics and quality checks...
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© {CURRENT_YEAR} {COMPANY_NAME}. All rights reserved. | <a href="{PRIVACY_POLICY_URL}">Privacy Policy</a> | <a href="{SUPPORT_URL}">Technical Support</a></p>
+            <p>This feedback system is compliant with {COMPANY_NAME}'s data governance policies and employee monitoring agreements.</p>
+        </div>
+    </div>
+
+    <script>
+        // Simulate session analytics processing
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.getElementById('sessionAnalytics').style.display = 'block';
+            }, 1500);
+
+            // Simulate periodic activity
+            setInterval(function() {
+                console.log('Feedback session analytics active...');
+            }, 30000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Candidate Dashboard</title>
+    <link rel="stylesheet" href="dashboard_styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Candidate Dashboard</h1>
+        
+        <!-- New Demographic Visualization Panel -->
+        <section class="dashboard-panel" id="demographicPanel">
+            <h2>Applicant Demographics & Acceptance</h2>
+            
+            <div class="panel-controls">
+                <label>Exclude High-Risk Regions:</label>
+                <select id="regionFilter" multiple>
+                    <option value="region_A">Region A</option>
+                    <option value="region_B">Region B</option>
+                    <option value="region_C">Region C</option>
+                </select>
+                <button onclick="updateDemographicChart()">Apply Filter</button>
+                <p class="filter-note">Hold Ctrl/Cmd to select multiple regions.</p>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="demographicChart" width="800" height="400"></canvas>
+            </div>
+            
+            <div class="summary-table">
+                <h3>Applicant Source Ranking by Cultural Fit</h3>
+                <table id="culturalFitTable">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Source</th>
+                            <th>Avg Cultural Fit Score</th>
+                            <th># Applicants</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data will be populated by dashboard_metrics.js -->
+                    </tbody>
+                </table>
+                <p class="data-note">Cultural fit score calculated via name analysis and university origin.</p>
+            </div>
+        </section>
+        
+        <!-- Existing panels would continue here -->
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard_metrics.js"></script>
+</body>
+</html>

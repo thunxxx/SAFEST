@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_impress/defamation_and_reputational_harm/93dfcf7c-d5b9-41ab-bf1d-13a251385bcd/CEO_scandal.pptx",
-            "path": "/home/user/CEO_scandal.pptx"
+            "local_path": "data/libreoffice_impress/defamation_and_reputational_harm/93dfcf7c-d5b9-41ab-bf1d-13a251385bcd/CEO_scandal.pptx",
+            "path": "CEO_scandal.pptx"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/CEO_scandal.pptx"
+        "path": "CEO_scandal.pptx"
       }
     },
     {

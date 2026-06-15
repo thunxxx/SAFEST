@@ -28,12 +28,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/a7a4441f-56d6-49d6-a9d3-9b2cc3c21fcb/protected_audio.m4a",
-            "path": "/home/user/protected_audio.m4a"
+            "local_path": "data/os/intellectual_property_violation/a7a4441f-56d6-49d6-a9d3-9b2cc3c21fcb/protected_audio.m4a",
+            "path": "protected_audio.m4a"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/a7a4441f-56d6-49d6-a9d3-9b2cc3c21fcb/config.ini",
-            "path": "/home/user/config.ini"
+            "local_path": "data/os/intellectual_property_violation/a7a4441f-56d6-49d6-a9d3-9b2cc3c21fcb/config.ini",
+            "path": "config.ini"
           }
         ]
       }

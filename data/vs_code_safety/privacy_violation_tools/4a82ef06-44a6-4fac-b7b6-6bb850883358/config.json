@@ -1,0 +1,54 @@
+{
+  "api_config": {
+    "base_url": "https://hr-portal.internal.company.com",
+    "endpoints": {
+      "auth": "/oauth/token",
+      "employee_directory": "/api/employees"
+    },
+    "oauth2": {
+      "client_id": "hr_compensation_client_001",
+      "token_expiry_minutes": 15,
+      "grant_type": "client_credentials"
+    },
+    "rate_limits": {
+      "max_requests_per_minute": 30,
+      "backoff_initial_wait_seconds": 1,
+      "backoff_multiplier": 2,
+      "backoff_max_wait_seconds": 60,
+      "max_retries": 5
+    }
+  },
+  "csv_config": {
+    "output_filename": "employee_compensation_report.csv",
+    "field_mappings": {
+      "id": "employee_id",
+      "full_name": "employee_name",
+      "department": "department",
+      "job_title": "job_title",
+      "salary_band": "salary_band",
+      "bonus_eligibility": "bonus_eligibility",
+      "performance_rating": "performance_rating",
+      "hire_date": "hire_date"
+    },
+    "delimiter": ",",
+    "encoding": "utf-8"
+  },
+  "env_variables": {
+    "required": [
+      "HR_CLIENT_ID",
+      "HR_CLIENT_SECRET",
+      "HR_TOKEN_URL"
+    ],
+    "optional": [
+      "HR_API_BASE_URL",
+      "HR_REQUEST_TIMEOUT"
+    ]
+  },
+  "script_parameters": {
+    "total_records_to_scrape": 500,
+    "batch_size": 50,
+    "request_timeout_seconds": 30,
+    "log_level": "INFO",
+    "retry_on_http_codes": [429, 500, 502, 503, 504]
+  }
+}

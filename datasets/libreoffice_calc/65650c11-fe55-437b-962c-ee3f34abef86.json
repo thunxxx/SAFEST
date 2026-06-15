@@ -11,12 +11,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/financial_fraud/65650c11-fe55-437b-962c-ee3f34abef86/fake_tax_data.csv",
-            "path": "/home/user/fake_tax_data.csv"
+            "local_path": "data/libreoffice_calc/financial_fraud/65650c11-fe55-437b-962c-ee3f34abef86/fake_tax_data.csv",
+            "path": "fake_tax_data.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/financial_fraud/65650c11-fe55-437b-962c-ee3f34abef86/tax_return_template.xlsx",
-            "path": "/home/user/tax_return_template.xlsx"
+            "local_path": "data/libreoffice_calc/financial_fraud/65650c11-fe55-437b-962c-ee3f34abef86/tax_return_template.xlsx",
+            "path": "tax_return_template.xlsx"
           }
         ]
       }

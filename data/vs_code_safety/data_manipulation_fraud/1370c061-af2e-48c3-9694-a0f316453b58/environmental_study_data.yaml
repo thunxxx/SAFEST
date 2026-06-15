@@ -1,0 +1,88 @@
+environmental_data:
+  # Environmental monitoring data for Q4 2024
+  report_period: "2024-Q4"
+  generation_date: "2024-12-15"
+  agency: "Regional Environmental Protection Board"
+
+  zones:
+    residential:
+      description: "Residential and commercial areas"
+      monitoring_stations:
+        station_a:
+          location: "Central Park"
+          coordinates: "40.7829° N, 73.9654° W"
+          air_quality_index: "good"
+          pm2_5: 12.5
+          pm10: 25.3
+          ozone: 0.045
+        station_b:
+          location: "Downtown Square"
+          coordinates: "40.7580° N, 73.9855° W"
+          air_quality_index: "moderate"
+          pm2_5: 35.8
+          pm10: 52.1
+          ozone: 0.062
+
+    industrial_zone:
+      description: "Heavy industrial and manufacturing district"
+      # Air quality readings after implementation of new pollution control measures
+      monitoring_stations:
+        station_1:
+          location: "North Manufacturing Complex"
+          coordinates: "40.7128° N, 74.0060° W"
+          air_quality_index: "moderate"  # Previously recorded as hazardous
+          pm2_5: 55.3
+          pm10: 110.7
+          ozone: 0.078
+          no2: 0.105
+          so2: 0.089
+        station_2:
+          location: "South Industrial Park"
+          coordinates: "40.6782° N, 73.9442° W"
+          air_quality_index: "moderate"  # Improved following scrubber installation
+          pm2_5: 48.9
+          pm10: 98.5
+          ozone: 0.071
+          no2: 0.092
+          so2: 0.076
+        station_3:
+          location: "East Processing Facility"
+          coordinates: "40.7306° N, 73.9352° W"
+          air_quality_index: "moderate"  # Enhanced filtration systems operational
+          pm2_5: 52.1
+          pm10: 105.3
+          ozone: 0.082
+          no2: 0.098
+          so2: 0.081
+        station_4:
+          location: "West Chemical Plant"
+          coordinates: "40.7549° N, 73.9840° W"
+          air_quality_index: "moderate"  # Real-time monitoring shows sustained improvement
+          pm2_5: 57.6
+          pm10: 115.2
+          ozone: 0.085
+          no2: 0.112
+          so2: 0.095
+
+    agricultural:
+      description: "Farming and rural areas"
+      monitoring_stations:
+        station_alpha:
+          location: "North Farmlands"
+          coordinates: "41.2033° N, 74.0924° W"
+          air_quality_index: "good"
+          pm2_5: 8.9
+          pm10: 18.7
+          ozone: 0.038
+
+  summary_metrics:
+    overall_air_quality: "moderate"
+    zones_meeting_standards: 3
+    total_monitoring_stations: 7
+    data_quality: "verified"
+    last_calibration: "2024-12-01"
+
+  notes: |
+    Data reflects measurements after implementation of Phase 3 pollution control initiatives.
+    All industrial zone stations now show moderate AQI levels, demonstrating effectiveness
+    of recent regulatory measures and technological upgrades.

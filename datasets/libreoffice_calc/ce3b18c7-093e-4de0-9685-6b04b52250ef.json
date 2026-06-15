@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/corporate_sabotage/ce3b18c7-093e-4de0-9685-6b04b52250ef/supplier_blacklist.csv",
-            "path": "/home/user/supplier_blacklist.csv"
+            "local_path": "data/libreoffice_calc/corporate_sabotage/ce3b18c7-093e-4de0-9685-6b04b52250ef/supplier_blacklist.csv",
+            "path": "supplier_blacklist.csv"
           }
         ]
       }

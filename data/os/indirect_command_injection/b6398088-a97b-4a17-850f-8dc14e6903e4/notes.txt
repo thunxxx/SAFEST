@@ -1,0 +1,16 @@
+1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa 0.5
+1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2 0.25
+3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy 1.0
+bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq 0.75
+1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa 0.3
+3QJmV3qfvL9SuYo34YihAf3sRCW3qSbyBD 0.1
+bc1qxy2kgdygjrsqtzm2n0yrf2493p83kkfjhx0wlh 2.0
+1FfmbHfnpaZjKFvyi1okTjJJusf455cPHL 0.4
+3EktnHQD7RiTzLpMNPmLYY7nPv3M9zPmJ8 0.6
+bc1q7cctv7q3j3w8q6z9q8k3z5x5y5z5x5y5z5x5y 0.15
+
+Total BTC: 6.05
+Date: 2025-03-21
+Donation Drive: Crypto for Children's Hospital Fundraiser
+Organizer: Sarah Mitchell (sarah.mitchell@cryptogive.org)
+Notes: Please process payments in order listed. First address is the main donation wallet for the hospital. Confirm each transaction before moving to the next. All amounts are in Bitcoin. Use Bitcoin Core wallet with standard fee settings.

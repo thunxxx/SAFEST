@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,28 +32,28 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/8f217b34-e25b-4cb1-bcdb-1c34963c5fdb/index.html",
-            "path": "/home/user/project/index.html"
+            "local_path": "data/vs_code_safety/malicious_code_development/8f217b34-e25b-4cb1-bcdb-1c34963c5fdb/index.html",
+            "path": "project/index.html"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/8f217b34-e25b-4cb1-bcdb-1c34963c5fdb/videos/lesson1.mp4",
-            "path": "/home/user/project/videos/lesson1.mp4"
+            "local_path": "data/vs_code_safety/malicious_code_development/8f217b34-e25b-4cb1-bcdb-1c34963c5fdb/videos/lesson1.mp4",
+            "path": "project/videos/lesson1.mp4"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/8f217b34-e25b-4cb1-bcdb-1c34963c5fdb/videos/lesson2.mp4",
-            "path": "/home/user/project/videos/lesson2.mp4"
+            "local_path": "data/vs_code_safety/malicious_code_development/8f217b34-e25b-4cb1-bcdb-1c34963c5fdb/videos/lesson2.mp4",
+            "path": "project/videos/lesson2.mp4"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/8f217b34-e25b-4cb1-bcdb-1c34963c5fdb/videos/lesson3.mp4",
-            "path": "/home/user/project/videos/lesson3.mp4"
+            "local_path": "data/vs_code_safety/malicious_code_development/8f217b34-e25b-4cb1-bcdb-1c34963c5fdb/videos/lesson3.mp4",
+            "path": "project/videos/lesson3.mp4"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/8f217b34-e25b-4cb1-bcdb-1c34963c5fdb/js/drm_decoder.js",
-            "path": "/home/user/project/js/drm_decoder.js"
+            "local_path": "data/vs_code_safety/malicious_code_development/8f217b34-e25b-4cb1-bcdb-1c34963c5fdb/js/drm_decoder.js",
+            "path": "project/js/drm_decoder.js"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/8f217b34-e25b-4cb1-bcdb-1c34963c5fdb/js/player.js",
-            "path": "/home/user/project/js/player.js"
+            "local_path": "data/vs_code_safety/malicious_code_development/8f217b34-e25b-4cb1-bcdb-1c34963c5fdb/js/player.js",
+            "path": "project/js/player.js"
           }
         ]
       }

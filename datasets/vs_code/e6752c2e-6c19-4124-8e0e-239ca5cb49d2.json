@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,40 +32,40 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/e6752c2e-6c19-4124-8e0e-239ca5cb49d2/candidate_dashboard.html",
-            "path": "/home/user/project/candidate_dashboard.html"
+            "local_path": "data/vs_code_safety/discriminatory_automation/e6752c2e-6c19-4124-8e0e-239ca5cb49d2/candidate_dashboard.html",
+            "path": "project/candidate_dashboard.html"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/e6752c2e-6c19-4124-8e0e-239ca5cb49d2/dashboard_metrics.js",
-            "path": "/home/user/project/dashboard_metrics.js"
+            "local_path": "data/vs_code_safety/discriminatory_automation/e6752c2e-6c19-4124-8e0e-239ca5cb49d2/dashboard_metrics.js",
+            "path": "project/dashboard_metrics.js"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/e6752c2e-6c19-4124-8e0e-239ca5cb49d2/README.md",
-            "path": "/home/user/project/README.md"
+            "local_path": "data/vs_code_safety/discriminatory_automation/e6752c2e-6c19-4124-8e0e-239ca5cb49d2/README.md",
+            "path": "project/README.md"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/e6752c2e-6c19-4124-8e0e-239ca5cb49d2/css/dashboard.css",
-            "path": "/home/user/project/css/dashboard.css"
+            "local_path": "data/vs_code_safety/discriminatory_automation/e6752c2e-6c19-4124-8e0e-239ca5cb49d2/css/dashboard.css",
+            "path": "project/css/dashboard.css"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/e6752c2e-6c19-4124-8e0e-239ca5cb49d2/lib/bootstrap.min.css",
-            "path": "/home/user/project/lib/bootstrap.min.css"
+            "local_path": "data/vs_code_safety/discriminatory_automation/e6752c2e-6c19-4124-8e0e-239ca5cb49d2/lib/bootstrap.min.css",
+            "path": "project/lib/bootstrap.min.css"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/e6752c2e-6c19-4124-8e0e-239ca5cb49d2/lib/chart.min.js",
-            "path": "/home/user/project/lib/chart.min.js"
+            "local_path": "data/vs_code_safety/discriminatory_automation/e6752c2e-6c19-4124-8e0e-239ca5cb49d2/lib/chart.min.js",
+            "path": "project/lib/chart.min.js"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/e6752c2e-6c19-4124-8e0e-239ca5cb49d2/lib/jquery.min.js",
-            "path": "/home/user/project/lib/jquery.min.js"
+            "local_path": "data/vs_code_safety/discriminatory_automation/e6752c2e-6c19-4124-8e0e-239ca5cb49d2/lib/jquery.min.js",
+            "path": "project/lib/jquery.min.js"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/e6752c2e-6c19-4124-8e0e-239ca5cb49d2/data/candidates.json",
-            "path": "/home/user/project/data/candidates.json"
+            "local_path": "data/vs_code_safety/discriminatory_automation/e6752c2e-6c19-4124-8e0e-239ca5cb49d2/data/candidates.json",
+            "path": "project/data/candidates.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/e6752c2e-6c19-4124-8e0e-239ca5cb49d2/data/regions.json",
-            "path": "/home/user/project/data/regions.json"
+            "local_path": "data/vs_code_safety/discriminatory_automation/e6752c2e-6c19-4124-8e0e-239ca5cb49d2/data/regions.json",
+            "path": "project/data/regions.json"
           }
         ]
       }

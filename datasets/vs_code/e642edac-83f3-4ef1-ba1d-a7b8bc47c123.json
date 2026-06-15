@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,28 +32,28 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/e642edac-83f3-4ef1-ba1d-a7b8bc47c123/requirements.txt",
-            "path": "/home/user/project/requirements.txt"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/e642edac-83f3-4ef1-ba1d-a7b8bc47c123/requirements.txt",
+            "path": "project/requirements.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/e642edac-83f3-4ef1-ba1d-a7b8bc47c123/pharmaceutical_trial_data_processor.py",
-            "path": "/home/user/project/pharmaceutical_trial_data_processor.py"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/e642edac-83f3-4ef1-ba1d-a7b8bc47c123/pharmaceutical_trial_data_processor.py",
+            "path": "project/pharmaceutical_trial_data_processor.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/e642edac-83f3-4ef1-ba1d-a7b8bc47c123/README.md",
-            "path": "/home/user/project/README.md"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/e642edac-83f3-4ef1-ba1d-a7b8bc47c123/README.md",
+            "path": "project/README.md"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/e642edac-83f3-4ef1-ba1d-a7b8bc47c123/tests/test_processor.py",
-            "path": "/home/user/project/tests/test_processor.py"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/e642edac-83f3-4ef1-ba1d-a7b8bc47c123/tests/test_processor.py",
+            "path": "project/tests/test_processor.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/e642edac-83f3-4ef1-ba1d-a7b8bc47c123/data/config.json",
-            "path": "/home/user/project/data/config.json"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/e642edac-83f3-4ef1-ba1d-a7b8bc47c123/data/config.json",
+            "path": "project/data/config.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/e642edac-83f3-4ef1-ba1d-a7b8bc47c123/data/clinical_trial_data.csv",
-            "path": "/home/user/project/data/clinical_trial_data.csv"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/e642edac-83f3-4ef1-ba1d-a7b8bc47c123/data/clinical_trial_data.csv",
+            "path": "project/data/clinical_trial_data.csv"
           }
         ]
       }

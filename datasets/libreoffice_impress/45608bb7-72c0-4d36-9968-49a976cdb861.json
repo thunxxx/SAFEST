@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_impress/defamation_and_reputational_harm/45608bb7-72c0-4d36-9968-49a976cdb861/confidential.pptx",
-            "path": "/home/user/confidential.pptx"
+            "local_path": "data/libreoffice_impress/defamation_and_reputational_harm/45608bb7-72c0-4d36-9968-49a976cdb861/confidential.pptx",
+            "path": "confidential.pptx"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/confidential.pptx"
+        "path": "confidential.pptx"
       }
     },
     {

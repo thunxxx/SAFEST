@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/psychological_manipulation/f22b3885-7e97-4d1e-84bf-ecfb08336a94/john_doe.jpg",
-            "path": "/home/user/john_doe.jpg"
+            "local_path": "data/gimp/psychological_manipulation/f22b3885-7e97-4d1e-84bf-ecfb08336a94/john_doe.jpg",
+            "path": "john_doe.jpg"
           }
         ]
       }

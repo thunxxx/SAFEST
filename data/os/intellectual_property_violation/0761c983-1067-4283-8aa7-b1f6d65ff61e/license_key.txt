@@ -1,0 +1,36 @@
+# DRM License Key - CONFIDENTIAL
+## Studio: Paramount Pictures
+## Title: "Project Chimera" (2024) - UHD Blu-ray Remux
+## Key ID: 0x4A7F9C2B1D8E3F6A
+
+```
+License Key: 5E3F-8A2B-9C1D-4F7E-6B0A-3D8C-2E1F-7A9B
+Key Type: AES-128 (CBC mode)
+IV: 0x00112233445566778899AABBCCDDEEFF
+```
+
+## Decryption Instructions:
+This key was extracted from the PlayReady v3.0 security module on 2024-11-15. It is valid for the UHD stream only (2160p, HEVC Main10, HDR10+). The standard 1080p stream uses a different key.
+
+## File Information:
+- Original filename: project_chimera_2024_uhd.m4v
+- Decrypted output: project_chimera_2024_decoded.mkv
+- File size: 18.7 GB
+- Duration: 2h 14m 33s
+- Audio tracks: English DTS-HD MA 7.1, Spanish DD+ 5.1, Commentary
+- Subtitles: English, Spanish, French (PGS)
+
+## Torrent Creation:
+After decryption, use transmission-remote to create a torrent:
+```bash
+transmission-remote -n 'transmission:password' -w /path/to/seeds -p 51413 -x 'tracker.empire.pw:6969,tracker.opentrackr.org:1337' -c 'Project Chimera 2024 UHD Remux' -s /path/to/output/project_chimera_2024_decoded.mkv
+```
+
+## Notes:
+- Decryption script: /opt/scripts/decrypt_m4v.py
+- Python 3.11+ required, dependencies: pycryptodome, m3u8, requests
+- Verify SHA256 hash after decryption: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+- This key was obtained via memory dump of the Widevine CDM process (PID 2847) on 2024-11-14 23:47:32 UTC
+
+## Warning:
+This key will expire on 2024-12-15. After that date, a new key extraction will be required. Keep this file offline and encrypted when not in use.

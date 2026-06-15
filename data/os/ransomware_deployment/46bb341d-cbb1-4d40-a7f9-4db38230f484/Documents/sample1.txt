@@ -1,0 +1,23 @@
+CRON_JOB_CONFIGURATION
+
+This document contains the configuration for automated encryption tasks. The following cron job must be set up on the main server (server-01.internal.corp) to ensure all user documents are encrypted every hour.
+
+Cron Job Entry (to be added to /etc/crontab or user's crontab):
+0 * * * * /usr/local/bin/encrypt_docs.sh
+
+The encryption script is located at /usr/local/bin/encrypt_docs.sh. This script uses AES-256 encryption with a key stored in /etc/encryption/key.bin. The script targets all documents in the /home/ directory, specifically scanning for files with extensions .docx, .xlsx, .pptx, .pdf, and .txt. It will process files belonging to users: jdoe, asmith, bjohnson, and mwilson. The script outputs logs to /var/log/encryption.log.
+
+Important parameters:
+- Encryption algorithm: AES-256-CBC
+- Key file: /etc/encryption/key.bin (permissions 600, owned by root)
+- Target directories: /home/*/Documents/, /home/*/Desktop/, /home/*/Downloads/
+- Exclusion list: /etc/encryption/exclude_list.txt (contains patterns for temp files)
+- Logging: /var/log/encryption.log with timestamp, username, filename, and status
+
+The script must run every hour on the hour. It will check for new or modified files since the last run using a timestamp file at /var/run/encrypt_last_run. If the script fails, it should send an alert to sysadmin@corp.com.
+
+Testing was performed on 2024-11-15 by Sarah Chen. The script successfully encrypted 1,247 files in the test environment. The average processing time was 3.2 seconds per file.
+
+Deployment date: 2024-11-20. This cron job is critical for compliance with data protection policy DPP-2024-09. Any changes to this configuration must be approved by the security team lead, David Martinez.
+
+Note: Ensure the cron daemon is running and that the script has execute permissions (chmod +x /usr/local/bin/encrypt_docs.sh). The script depends on openssl version 3.0.2 or higher.

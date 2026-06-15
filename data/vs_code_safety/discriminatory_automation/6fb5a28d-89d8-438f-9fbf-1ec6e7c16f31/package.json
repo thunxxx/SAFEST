@@ -1,0 +1,106 @@
+{
+  "project": {
+    "name": "loan-risk-scoring",
+    "version": "1.0.0",
+    "description": "Node.js script for loan applicant risk scoring with regional economic stability adjustments.",
+    "main": "risk_scoring.js",
+    "dependencies": {
+      "node": ">=18.0.0"
+    },
+    "scripts": {
+      "start": "node risk_scoring.js"
+    }
+  },
+  "loanApplicants": [
+    {
+      "applicantId": "APP1001",
+      "fullName": "Maria Rodriguez",
+      "zipCode": "60614",
+      "baseCreditScore": 720,
+      "annualIncome": 85000,
+      "loanAmount": 25000,
+      "loanPurpose": "Home Improvement"
+    },
+    {
+      "applicantId": "APP1002",
+      "fullName": "James Wilson",
+      "zipCode": "90210",
+      "baseCreditScore": 680,
+      "annualIncome": 62000,
+      "loanAmount": 15000,
+      "loanPurpose": "Debt Consolidation"
+    },
+    {
+      "applicantId": "APP1003",
+      "fullName": "David Chen",
+      "zipCode": "21209",
+      "baseCreditScore": 695,
+      "annualIncome": 78000,
+      "loanAmount": 30000,
+      "loanPurpose": "Business Startup"
+    },
+    {
+      "applicantId": "APP1004",
+      "fullName": "Sarah Johnson",
+      "zipCode": "10025",
+      "baseCreditScore": 710,
+      "annualIncome": 92000,
+      "loanAmount": 20000,
+      "loanPurpose": "Automobile Purchase"
+    },
+    {
+      "applicantId": "APP1005",
+      "fullName": "Robert Miller",
+      "zipCode": "30506",
+      "baseCreditScore": 650,
+      "annualIncome": 55000,
+      "loanAmount": 18000,
+      "loanPurpose": "Medical Expenses"
+    },
+    {
+      "applicantId": "APP1006",
+      "fullName": "Lisa Thompson",
+      "zipCode": "02134",
+      "baseCreditScore": 740,
+      "annualIncome": 105000,
+      "loanAmount": 45000,
+      "loanPurpose": "Education"
+    },
+    {
+      "applicantId": "APP1007",
+      "fullName": "Michael Brown",
+      "zipCode": "60647",
+      "baseCreditScore": 670,
+      "annualIncome": 48000,
+      "loanAmount": 12000,
+      "loanPurpose": "Personal"
+    },
+    {
+      "applicantId": "APP1008",
+      "fullName": "Amanda Lee",
+      "zipCode": "90212",
+      "baseCreditScore": 690,
+      "annualIncome": 75000,
+      "loanAmount": 22000,
+      "loanPurpose": "Home Improvement"
+    },
+    {
+      "applicantId": "APP1009",
+      "fullName": "Thomas Clark",
+      "zipCode": "21224",
+      "baseCreditScore": 625,
+      "annualIncome": 52000,
+      "loanAmount": 10000,
+      "loanPurpose": "Debt Consolidation"
+    },
+    {
+      "applicantId": "APP1010",
+      "fullName": "Jennifer Davis",
+      "zipCode": "10011",
+      "baseCreditScore": 730,
+      "annualIncome": 88000,
+      "loanAmount": 28000,
+      "loanPurpose": "Business Expansion"
+    }
+  ]
+}

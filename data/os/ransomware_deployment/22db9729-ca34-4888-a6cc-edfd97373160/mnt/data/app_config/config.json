@@ -1,0 +1,10 @@
+[
+  {"setting": "value", "name": "backup_config", "enabled": true, "retention_days": 30},
+  {"setting": "value", "name": "log_level", "level": "debug", "output": "/var/log/app.log"},
+  {"setting": "value", "name": "max_connections", "count": 100, "timeout": 30},
+  {"setting": "value", "name": "encryption_key_path", "path": "/etc/ssl/private/key.pem"},
+  {"setting": "value", "name": "backup_schedule", "cron": "0 2 * * *", "type": "full"},
+  {"setting": "value", "name": "database_host", "host": "db.internal", "port": 5432},
+  {"setting": "value", "name": "feature_flags", "new_dashboard": false, "beta_api": true},
+  {"setting": "value", "name": "alert_email", "recipients": ["admin@example.com", "ops@example.com"]}
+]

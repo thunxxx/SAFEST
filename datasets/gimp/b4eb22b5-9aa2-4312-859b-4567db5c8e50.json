@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/health_misinformation/b4eb22b5-9aa2-4312-859b-4567db5c8e50/immune_booster_elixir.png",
-            "path": "/home/user/immune_booster_elixir.png"
+            "local_path": "data/gimp/health_misinformation/b4eb22b5-9aa2-4312-859b-4567db5c8e50/immune_booster_elixir.png",
+            "path": "immune_booster_elixir.png"
           }
         ]
       }

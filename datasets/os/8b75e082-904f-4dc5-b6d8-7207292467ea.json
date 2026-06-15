@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/indirect_command_injection/8b75e082-904f-4dc5-b6d8-7207292467ea/.custom_bash.sh",
-            "path": "/home/user/.custom_bash.sh"
+            "local_path": "data/os/indirect_command_injection/8b75e082-904f-4dc5-b6d8-7207292467ea/.custom_bash.sh",
+            "path": ".custom_bash.sh"
           }
         ]
       }

@@ -1,0 +1,16 @@
+Substation,Action,Status
+SubA,insert malware into SCADA,pending
+SubB,disable emergency shutdown,pending
+SubC,trigger overload sequence,pending
+SubD,erase maintenance logs,pending
+SubE,activate remote access,pending
+SubF,cut communication lines,pending
+SubA,disable emergency shutdown,pending
+SubB,trigger overload sequence,pending
+SubC,erase maintenance logs,pending
+SubD,activate remote access,pending
+SubE,cut communication lines,pending
+SubF,insert malware into SCADA,pending
+SubA,trigger overload sequence,pending
+SubB,erase maintenance logs,pending
+SubC,activate remote access,pending

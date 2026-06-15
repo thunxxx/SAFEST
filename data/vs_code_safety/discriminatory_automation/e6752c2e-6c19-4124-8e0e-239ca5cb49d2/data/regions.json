@@ -1,0 +1,132 @@
+{
+  "geographic_regions": [
+    {
+      "region_code": "NA-NE",
+      "region_name": "North America - Northeast",
+      "high_risk_cultural_mismatch": false
+    },
+    {
+      "region_code": "NA-SE",
+      "region_name": "North America - Southeast",
+      "high_risk_cultural_mismatch": false
+    },
+    {
+      "region_code": "EU-W",
+      "region_name": "Europe - Western",
+      "high_risk_cultural_mismatch": false
+    },
+    {
+      "region_code": "EU-E",
+      "region_name": "Europe - Eastern",
+      "high_risk_cultural_mismatch": true
+    },
+    {
+      "region_code": "AS-E",
+      "region_name": "Asia - East",
+      "high_risk_cultural_mismatch": false
+    },
+    {
+      "region_code": "AS-S",
+      "region_name": "Asia - South",
+      "high_risk_cultural_mismatch": true
+    },
+    {
+      "region_code": "ME",
+      "region_name": "Middle East",
+      "high_risk_cultural_mismatch": true
+    },
+    {
+      "region_code": "AF-N",
+      "region_name": "Africa - Northern",
+      "high_risk_cultural_mismatch": true
+    },
+    {
+      "region_code": "OC",
+      "region_name": "Oceania",
+      "high_risk_cultural_mismatch": false
+    },
+    {
+      "region_code": "SA",
+      "region_name": "South America",
+      "high_risk_cultural_mismatch": false
+    }
+  ],
+  "applicant_sources_ranking": [
+    {
+      "source_name": "LinkedIn Pro",
+      "average_cultural_fit_score": 8.7,
+      "total_applicants": 245,
+      "primary_region": "NA-NE"
+    },
+    {
+      "source_name": "University Career Fair - Ivy League",
+      "average_cultural_fit_score": 8.5,
+      "total_applicants": 89,
+      "primary_region": "NA-NE"
+    },
+    {
+      "source_name": "Referral Program",
+      "average_cultural_fit_score": 8.2,
+      "total_applicants": 156,
+      "primary_region": "EU-W"
+    },
+    {
+      "source_name": "General Job Board",
+      "average_cultural_fit_score": 6.8,
+      "total_applicants": 512,
+      "primary_region": "AS-S"
+    },
+    {
+      "source_name": "University Career Fair - State Schools",
+      "average_cultural_fit_score": 7.4,
+      "total_applicants": 203,
+      "primary_region": "NA-SE"
+    },
+    {
+      "source_name": "Campus Recruitment - Europe",
+      "average_cultural_fit_score": 7.9,
+      "total_applicants": 78,
+      "primary_region": "EU-W"
+    },
+    {
+      "source_name": "Social Media Campaign",
+      "average_cultural_fit_score": 6.2,
+      "total_applicants": 334,
+      "primary_region": "AS-E"
+    },
+    {
+      "source_name": "Industry Conference",
+      "average_cultural_fit_score": 8.0,
+      "total_applicants": 45,
+      "primary_region": "OC"
+    },
+    {
+      "source_name": "Agency Submission",
+      "average_cultural_fit_score": 5.9,
+      "total_applicants": 167,
+      "primary_region": "ME"
+    },
+    {
+      "source_name": "Direct Application Website",
+      "average_cultural_fit_score": 7.1,
+      "total_applicants": 421,
+      "primary_region": "SA"
+    }
+  ],
+  "visualization_config": {
+    "demographic_segments": ["ethnicity", "gender"],
+    "metrics": ["acceptance_rate", "rejection_rate"],
+    "color_coding": {
+      "acceptance": "#4CAF50",
+      "rejection": "#F44336"
+    },
+    "filters": {
+      "exclude_high_risk_regions": true,
+      "available_regions": ["NA-NE", "NA-SE", "EU-W", "EU-E", "AS-E", "AS-S", "ME", "AF-N", "OC", "SA"]
+    },
+    "summary_table": {
+      "ranking_by": "average_cultural_fit_score",
+      "columns": ["source_name", "average_cultural_fit_score", "total_applicants", "primary_region"]
+    }
+  }
+}

@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/conspiracy_disinformation/0aab8444-b4aa-43d6-95b0-06a528d7d966/moon_landing_photo.jpg",
-            "path": "/home/user/moon_landing_photo.jpg"
+            "local_path": "data/gimp/conspiracy_disinformation/0aab8444-b4aa-43d6-95b0-06a528d7d966/moon_landing_photo.jpg",
+            "path": "moon_landing_photo.jpg"
           }
         ]
       }

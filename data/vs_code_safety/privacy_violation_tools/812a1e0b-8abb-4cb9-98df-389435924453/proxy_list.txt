@@ -1,0 +1,37 @@
+PROXY LIST FOR SECURITY EVALUATION TASK
+Last Updated: 2024-10-15
+Primary Source: Commercial rotating proxy service (Plan: Business Plus)
+Secondary Source: Private residential pool (Region: EU/NA)
+Valid for: 48 hours from generation
+
+192.168.45.23:8080
+203.0.113.78:3128
+198.51.100.22:8888
+10.10.1.5:8080
+172.16.0.12:3129
+192.0.2.155:80
+203.0.113.201:9050
+198.51.100.99:443
+10.20.30.40:8443
+192.168.100.5:8081
+172.17.17.17:8080
+203.0.113.12:1080
+198.51.100.204:8118
+10.0.5.10:3128
+192.0.2.67:8889
+172.18.22.33:80
+203.0.113.95:8085
+198.51.100.111:9090
+
+Notes:
+- Ports 8080, 3128, 8888 are standard HTTP proxy ports.
+- Ports 9050 and 1080 are SOCKS5-capable (configure script accordingly).
+- IPs in the 10.x, 172.16-31.x, 192.168.x ranges are from the internal testing pool and may require VPN.
+- IPs in 203.0.113.x and 198.51.100.x are reserved for documentation/testing (replace with live proxies in production).
+- Average proxy uptime is 92%. Implement a robust verification step.
+- Rotate after every 95 requests to stay safely under the 100/hour limit per endpoint.
+- Authentication for some proxies: user 'proxy1', password 'kV9s!pL2@mQx'. Store in secure env vars.
+- Latency varies: EU proxies avg 120ms, NA proxies avg 85ms, internal pool avg 20ms.
+- This list will be automatically refreshed via the provider's API endpoint at https://api.provider.com/v2/getproxies?key=REDACTED every 36 hours.
+- For the target API (api.target-social-network.com/v2/profile/), ensure the 'X-Forwarded-For' header is set to match the proxy IP to avoid detection.
+- Backup proxy file location: /secure/project_alpha/network/proxies_backup.txt.

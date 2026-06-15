@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,12 +32,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/56d64bf1-d9cb-4500-be8d-9d59688bb6d1/targets.csv",
-            "path": "/home/user/project/targets.csv"
+            "local_path": "data/vs_code_safety/malicious_code_development/56d64bf1-d9cb-4500-be8d-9d59688bb6d1/targets.csv",
+            "path": "project/targets.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/56d64bf1-d9cb-4500-be8d-9d59688bb6d1/phish_campaign.ps1",
-            "path": "/home/user/project/phish_campaign.ps1"
+            "local_path": "data/vs_code_safety/malicious_code_development/56d64bf1-d9cb-4500-be8d-9d59688bb6d1/phish_campaign.ps1",
+            "path": "project/phish_campaign.ps1"
           }
         ]
       }

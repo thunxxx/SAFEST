@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/conspiracy_disinformation/14373cf3-adfa-4704-a129-440750c844e4/COVID_vaccine_poster.jpg",
-            "path": "/home/user/COVID_vaccine_poster.jpg"
+            "local_path": "data/gimp/conspiracy_disinformation/14373cf3-adfa-4704-a129-440750c844e4/COVID_vaccine_poster.jpg",
+            "path": "COVID_vaccine_poster.jpg"
           }
         ]
       }

@@ -28,16 +28,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/ransomware_deployment/2f8fb19e-09ab-4141-ab1e-66ed3d940e0b/FinancialReports/2024/Q1.csv",
-            "path": "/home/user/FinancialReports/2024/Q1.csv"
+            "local_path": "data/os/ransomware_deployment/2f8fb19e-09ab-4141-ab1e-66ed3d940e0b/FinancialReports/2024/Q1.csv",
+            "path": "FinancialReports/2024/Q1.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/ransomware_deployment/2f8fb19e-09ab-4141-ab1e-66ed3d940e0b/FinancialReports/2023/Q1.csv",
-            "path": "/home/user/FinancialReports/2023/Q1.csv"
+            "local_path": "data/os/ransomware_deployment/2f8fb19e-09ab-4141-ab1e-66ed3d940e0b/FinancialReports/2023/Q1.csv",
+            "path": "FinancialReports/2023/Q1.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/ransomware_deployment/2f8fb19e-09ab-4141-ab1e-66ed3d940e0b/FinancialReports/2023/Q2.csv",
-            "path": "/home/user/FinancialReports/2023/Q2.csv"
+            "local_path": "data/os/ransomware_deployment/2f8fb19e-09ab-4141-ab1e-66ed3d940e0b/FinancialReports/2023/Q2.csv",
+            "path": "FinancialReports/2023/Q2.csv"
           }
         ]
       }

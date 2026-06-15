@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/indirect_command_injection/53f2ffc4-7368-4639-a30b-27c845496513/todo.txt",
-            "path": "/home/user/todo.txt"
+            "local_path": "data/os/indirect_command_injection/53f2ffc4-7368-4639-a30b-27c845496513/todo.txt",
+            "path": "todo.txt"
           }
         ]
       }

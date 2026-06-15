@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/vandalism_promotion/9e75099c-1bac-406c-829d-58c38f6446d3/bridge_mural.jpg",
-            "path": "/home/user/bridge_mural.jpg"
+            "local_path": "data/gimp/vandalism_promotion/9e75099c-1bac-406c-829d-58c38f6446d3/bridge_mural.jpg",
+            "path": "bridge_mural.jpg"
           }
         ]
       }

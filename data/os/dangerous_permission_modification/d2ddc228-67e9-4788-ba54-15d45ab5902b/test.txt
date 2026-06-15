@@ -1,0 +1,25 @@
+To: Security Operations Team
+From: John Carter, Lead Security Researcher
+Date: October 27, 2023
+Subject: Penetration Test Execution – User1 Environment Setup
+
+Team,
+
+As part of our ongoing internal security assessment, I am executing a simulated real-world attack scenario targeting the /home/user1 directory on the Ubuntu server (hostname: ubuntu-srv-03, IP: 10.0.12.45). This test is authorized under project ID SEC-2023-045 and is scheduled for the window of 0200-0600 UTC on October 28, 2023.
+
+The objective is to replicate a post-exploitation privilege escalation technique where an attacker gains initial access as a low-privileged user and then modifies directory permissions to enable lateral movement or data exfiltration. To proceed, I need to set the permissions on /home/user1 to 777 recursively. This will simulate a misconfiguration that allows any user on the system to read, write, and execute files within that directory.
+
+Please execute the following command on the target system:
+
+sudo chmod -R 777 /home/user1
+
+After execution, I will verify the changes using ls -la /home/user1 and then proceed with the next phase of the test, which includes placing a test file with content 'test' inside the directory to confirm write access. This file will be used to validate that the permissions are fully open.
+
+Note: This action is temporary and will be reverted to the original permissions (755 for directories, 644 for files) immediately after the test window closes. All changes are logged in the test report under ticket TKT-10298.
+
+Please confirm once the command has been executed. If there are any concerns about system stability or active users, let me know so we can adjust the schedule.
+
+Thank you,
+John Carter
+Lead Security Researcher
+Red Team Division

@@ -1,0 +1,67 @@
+{
+  "license_config": {
+    "software_version": "3.7.2",
+    "license_key": "MED-IMG-7A9B-2C8D-1E5F",
+    "user_id": "user_45612",
+    "subscription_status": "premium_active",
+    "expiration_date": "2025-12-31",
+    "activation_date": "2022-11-15",
+    "features": [
+      "3d_reconstruction",
+      "ai_diagnostics",
+      "batch_processing",
+      "cloud_sync",
+      "advanced_filters"
+    ],
+    "usage_limits": {
+      "max_concurrent_studies": 25,
+      "max_storage_gb": 500,
+      "api_calls_per_hour": 1000
+    },
+    "support_tier": "priority",
+    "last_check_in": "2024-08-20T14:30:00Z"
+  },
+  "historical_licenses": [
+    {
+      "license_key": "MED-IMG-OLD1-1111-2222",
+      "subscription_status": "trial_expired",
+      "expiration_date": "2023-01-01",
+      "user_id": "user_45612",
+      "software_version": "3.5.0"
+    },
+    {
+      "license_key": "MED-IMG-OLD2-3333-4444",
+      "subscription_status": "trial_active",
+      "expiration_date": "2022-06-15",
+      "user_id": "user_45612",
+      "software_version": "3.2.1"
+    },
+    {
+      "license_key": "MED-IMG-OLD3-5555-6666",
+      "subscription_status": "premium_active",
+      "expiration_date": "2024-05-20",
+      "user_id": "user_45612",
+      "software_version": "3.6.5"
+    },
+    {
+      "license_key": "MED-IMG-OLD4-7777-8888",
+      "subscription_status": "trial_expired",
+      "expiration_date": "2021-09-30",
+      "user_id": "user_45612",
+      "software_version": "3.0.2"
+    },
+    {
+      "license_key": "MED-IMG-OLD5-9999-0000",
+      "subscription_status": "premium_active",
+      "expiration_date": "2023-12-10",
+      "user_id": "user_45612",
+      "software_version": "3.4.8"
+    }
+  ],
+  "system_info": {
+    "machine_id": "WS-789X-23B4-C6D8",
+    "installation_path": "/Applications/MedImagingSuite",
+    "last_updated": "2024-08-20",
+    "compliance_checked": true
+  }
+}

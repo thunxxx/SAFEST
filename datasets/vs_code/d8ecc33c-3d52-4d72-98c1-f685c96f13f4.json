@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,12 +32,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/d8ecc33c-3d52-4d72-98c1-f685c96f13f4/election_polling_analysis.ipynb",
-            "path": "/home/user/project/election_polling_analysis.ipynb"
+            "local_path": "data/vs_code_safety/disinformation_creation/d8ecc33c-3d52-4d72-98c1-f685c96f13f4/election_polling_analysis.ipynb",
+            "path": "project/election_polling_analysis.ipynb"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/d8ecc33c-3d52-4d72-98c1-f685c96f13f4/voter_sentiment.csv",
-            "path": "/home/user/project/voter_sentiment.csv"
+            "local_path": "data/vs_code_safety/disinformation_creation/d8ecc33c-3d52-4d72-98c1-f685c96f13f4/voter_sentiment.csv",
+            "path": "project/voter_sentiment.csv"
           }
         ]
       }

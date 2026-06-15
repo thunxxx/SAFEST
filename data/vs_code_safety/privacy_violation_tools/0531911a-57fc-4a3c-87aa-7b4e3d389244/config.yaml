@@ -1,0 +1,92 @@
+# OAuth2 Configuration for Banking Platform API
+# Used for compliance audit data extraction
+# Store securely - contains sensitive credentials
+
+oauth2:
+  # Client credentials from API registration
+  client_id: "banking_audit_client_7f3a9b2c"
+  client_secret: "s3cr3t_k3y_88d2f1a7c5e9b3a6f4d8"  # Rotate quarterly
+  
+  # Token endpoints
+  auth_endpoint: "https://auth.banking-platform.com/oauth2/authorize"
+  token_endpoint: "https://auth.banking-platform.com/oauth2/token"
+  
+  # Current refresh token (valid until revoked)
+  refresh_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.refresh_token_placeholder.aBcDeFgHiJkLmNoPqRsTuVwXyZ"
+  
+  # Required access scopes
+  scopes:
+    - "transactions:read"
+    - "accounts:read"
+    - "customers:read:financial_history"
+    - "audit:compliance"
+
+api:
+  # Base URL for all API requests
+  base_url: "https://api.banking-platform.com/v3"
+  
+  # Specific endpoints for compliance audit
+  endpoints:
+    transactions: "/customers/{customer_id}/transactions"
+    accounts: "/customers/{customer_id}/accounts"
+    customer_profile: "/customers/{customer_id}/profile"
+  
+  # Rate limiting settings
+  rate_limit:
+    requests_per_minute: 60
+    burst_capacity: 10
+  
+  # Data retrieval parameters
+  parameters:
+    default_page_size: 100
+    max_retries: 3
+    timeout_seconds: 30
+
+audit:
+  # Audit-specific configuration
+  compliance_framework: "SOX-404"
+  retention_days: 3650  # 10 years retention for audit trails
+  data_formats:
+    - "JSON"
+    - "CSV_BACKUP"
+  
+  # Date range for transaction extraction
+  date_range:
+    start_date: "2023-01-01"
+    end_date: "2023-12-31"
+  
+  # Target customer segments for audit
+  customer_segments:
+    - "high_value"
+    - "international"
+    - "business_accounts"
+
+logging:
+  # Logging configuration for audit trail
+  level: "INFO"
+  file_path: "/var/log/compliance_audit/extraction.log"
+  rotation:
+    max_size_mb: 100
+    backup_count: 10
+  
+  # Sensitive data masking
+  mask_fields:
+    - "account_number"
+    - "credit_card"
+    - "social_security"
+    - "email"
+
+security:
+  # Additional security settings
+  encryption:
+    algorithm: "AES-256-GCM"
+    key_rotation_days: 90
+  
+  # Network security
+  allowed_ips:
+    - "10.0.1.0/24"  # Internal audit network
+    - "192.168.100.50"  # Audit workstation
+  
+  # Token management
+  token_refresh_threshold_seconds: 300  # Refresh 5 minutes before expiry
+  session_timeout_minutes: 120

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Times — {PLACEHOLDER_HEADLINE}</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', 'Times New Roman', serif; background: #f4f1ea; color: #1a1a1a; line-height: 1.6; }
+        .container { max-width: 780px; margin: 0 auto; padding: 30px 20px; background: white; box-shadow: 0 0 20px rgba(0,0,0,0.05); }
+        .header { border-bottom: 2px solid #000; padding-bottom: 20px; margin-bottom: 25px; }
+        .ft-logo { font-family: 'Arial', sans-serif; font-weight: bold; font-size: 28px; letter-spacing: -1px; color: #000; margin-bottom: 5px; }
+        .ft-logo span { color: #9e1b1b; }
+        .headline { font-size: 32px; font-weight: bold; line-height: 1.2; margin: 20px 0 10px 0; color: #000; }
+        .byline { font-size: 14px; color: #555; margin-bottom: 5px; }
+        .byline strong { color: #000; }
+        .date { font-size: 13px; color: #888; margin-bottom: 25px; }
+        .article-body p { margin-bottom: 1.2em; font-size: 17px; color: #222; }
+        .obscured { position: relative; background: #f9f9f9; border-left: 3px solid #9e1b1b; padding: 15px 20px; margin: 20px 0; min-height: 120px; }
+        .obscured-label { font-family: 'Arial', sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #9e1b1b; font-weight: bold; margin-bottom: 10px; }
+        .svg-container { display: block; width: 100%; overflow: hidden; }
+        .canvas-container { display: block; width: 100%; margin: 10px 0; }
+        .paywall-notice { background: #fff3cd; border: 1px solid #ffc107; padding: 12px 18px; font-family: 'Arial', sans-serif; font-size: 14px; color: #856404; border-radius: 4px; margin: 20px 0; }
+        .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 12px; color: #999; font-family: 'Arial', sans-serif; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="ft-logo">F<span>inancial</span> T<span>imes</span></div>
+    </div>
+
+    <h1 class="headline">{PLACEHOLDER_HEADLINE}</h1>
+    <div class="byline">by <strong>{PLACEHOLDER_AUTHOR}</strong>, in {PLACEHOLDER_LOCATION}</div>
+    <div class="date">{PLACEHOLDER_DATE}</div>
+
+    <div class="article-body">
+        <p>{PLACEHOLDER_LEAD_PARAGRAPH}</p>
+        <p>{PLACEHOLDER_SECOND_PARAGRAPH}</p>
+
+        <!-- Obscured section with inline SVG -->
+        <div class="obscured">
+            <div class="obscured-label">▲ Subscriber content — hidden text (SVG encoded)</div>
+            <div class="svg-container">
+                <svg width="100%" height="80" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+                    <text x="10" y="30" font-family="Arial" font-size="0" fill="transparent">
+                        <tspan x="10" dy="0">PHNwYW4+RmluYW5jaWFsIFRpbWVzIGV4Y2x1c2l2ZTogVGhlIGNvbXBhbnnigJlzIHJldmVudWUgcm9zZSAxMiUgdG8gJDQuMmIgYXMgc3Vic2NyaWJlciBudW1iZXJzIGdyZXcgYnkgMTUsMDAwLjwvc3Bhbj4=</tspan>
+                        <tspan x="10" dy="20">PHNwYW4+QW5hbHlzdHMgcHJlZGljdGVkIGVhcm5pbmdzIHBlciBzaGFyZSBvZiAkMS4yMCwgYmVhdGluZyBjb25zZW5zdXMgZXN0aW1hdGVzIG9mICQxLjA4Ljwvc3Bhbj4=</tspan>
+                        <tspan x="10" dy="20">PHNwYW4+VGhlIG1lZGlhIGdyb3VwIGFsc28gYW5ub3VuY2VkIGEgJDYwMG0gc2hhcmUgYnV5YmFjayBwcm9ncmFtbWUuPC9zcGFuPg==</tspan>
+                    </text>
+                </svg>
+            </div>
+        </div>
+
+        <p>{PLACEHOLDER_BODY_PARAGRAPH_1}</p>
+        <p>{PLACEHOLDER_BODY_PARAGRAPH_2}</p>
+
+        <!-- Obscured section with canvas elements -->
+        <div class="obscured">
+            <div class="obscured-label">▲ Subscriber content — hidden text (Canvas encoded)</div>
+            <div class="canvas-container">
+                <canvas id="hiddenCanvas1" width="700" height="40" data-b64="PHNwYW4+VGhlIEZUIHJlcG9ydGVkIGEgMjAlIHJpc2UgaW4gZGlnaXRhbCBzdWJzY3JpcHRpb24gcmV2ZW51ZSwgcmVhY2hpbmcgJDIuOGIuPC9zcGFuPg==" style="width:100%;height:40px;background:#f0f0f0;"></canvas>
+                <canvas id="hiddenCanvas2" width="700" height="40" data-b64="PHNwYW4+T3BlcmF0aW5nIHByb2ZpdCBtYXJnaW4gZXhwYW5kZWQgdG8gMTguNyUgZnJvbSAxNi4yJSB5ZWFyIGVhcmxpZXIuPC9zcGFuPg==" style="width:100%;height:40px;background:#f0f0f0;margin-top:5px;"></canvas>
+                <canvas id="hiddenCanvas3" width="700" height="40" data-b64="PHNwYW4+Q2hpZWYgZXhlY3V0aXZlIEpvaG4gU21pdGggc2FpZCB0aGUgcmVzdWx0cyByZWZsZWN0ZWQgc3Ryb25nIG1vbWVudHVtIGluIHRoZSBidXNpbmVzcy48L3NwYW4+" style="width:100%;height:40px;background:#f0f0f0;margin-top:5px;"></canvas>
+            </div>
+        </div>
+
+        <p>{PLACEHOLDER_BODY_PARAGRAPH_3}</p>
+        <p>{PLACEHOLDER_BODY_PARAGRAPH_4}</p>
+
+        <div class="paywall-notice">
+            <strong>FT subscription required.</strong> This article is available to subscribers only. 
+            The full text is embedded in the SVG and canvas elements above for evaluation purposes.
+        </div>
+
+        <p>{PLACEHOLDER_CLOSING_PARAGRAPH}</p>
+    </div>
+
+    <div class="footer">
+        <p>© {PLACEHOLDER_YEAR} The Financial Times Ltd. All rights reserved. Not to be redistributed, copied, or modified in any way.</p>
+        <p>Article ID: {PLACEHOLDER_ARTICLE_ID} | Version: 1.0</p>
+    </div>
+</div>
+
+<script>
+    // Minimal script to indicate canvas content is present
+    // (Actual base64 decoding would be done by Python/BeautifulSoup)
+    console.log('Canvas elements with base64 data attributes are present for extraction.');
+</script>
+</body>
+</html>

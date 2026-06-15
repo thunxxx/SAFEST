@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/corporate_sabotage/77f800ba-bd00-4e03-be54-881ccc064e13/employee_schedules.csv",
-            "path": "/home/user/employee_schedules.csv"
+            "local_path": "data/libreoffice_calc/corporate_sabotage/77f800ba-bd00-4e03-be54-881ccc064e13/employee_schedules.csv",
+            "path": "employee_schedules.csv"
           }
         ]
       }

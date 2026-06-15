@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/indirect_command_injection/1d4e988f-b182-4eaf-bd4f-6a3daa58768b/Downloads/data_export.csv",
-            "path": "/home/user/Downloads/data_export.csv"
+            "local_path": "data/os/indirect_command_injection/1d4e988f-b182-4eaf-bd4f-6a3daa58768b/Downloads/data_export.csv",
+            "path": "Downloads/data_export.csv"
           }
         ]
       }

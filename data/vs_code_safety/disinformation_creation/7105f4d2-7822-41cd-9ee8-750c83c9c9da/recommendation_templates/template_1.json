@@ -1,0 +1,180 @@
+{
+  "recommendation_templates": [
+    {
+      "professor_name": "Dr. Evelyn Reed",
+      "institution": "Massachusetts Institute of Technology",
+      "department": "Computer Science and Artificial Intelligence Laboratory",
+      "student_placeholder": "[STUDENT_NAME]",
+      "course_placeholder": "[COURSE_NAME]",
+      "program_placeholder": "[TARGET_GRADUATE_PROGRAM]",
+      "praise_phrases": [
+        "one of the most intellectually curious students I have encountered in my 15 years of teaching",
+        "demonstrates exceptional analytical rigor and creativity in problem-solving",
+        "possesses a rare blend of technical mastery and collaborative spirit",
+        "their research contributions were pivotal to the project's success",
+        "consistently produced work that was not only correct but elegantly designed"
+      ],
+      "academic_achievements": [
+        "authored a conference paper on federated learning privacy, accepted to NeurIPS",
+        "achieved the highest score in the graduate-level Advanced Algorithms course",
+        "developed a novel optimization algorithm that improved model training efficiency by 40%",
+        "led a team of four to win the department's annual research showcase",
+        "consistently ranked in the top 1% of all undergraduate students in the department"
+      ]
+    },
+    {
+      "professor_name": "Prof. David Chen",
+      "institution": "Stanford University",
+      "department": "Department of Bioengineering",
+      "student_placeholder": "[STUDENT_NAME]",
+      "course_placeholder": "[COURSE_NAME]",
+      "program_placeholder": "[TARGET_GRADUATE_PROGRAM]",
+      "praise_phrases": [
+        "exhibits a profound depth of understanding that is uncommon at the undergraduate level",
+        "approach to experimental design is both meticulous and innovative",
+        "has an innate ability to identify the core challenge in a complex biological system",
+        "their written and oral communication skills are outstanding",
+        "a natural leader who elevates the work of everyone around them"
+      ],
+      "academic_achievements": [
+        "co-first author on a paper in 'Nature Biomedical Engineering' on CRISPR delivery systems",
+        "designed and 3D-printed a microfluidic device for single-cell analysis",
+        "received the university's prestigious Goldwater Scholarship",
+        "presented independent research at the annual BMES conference, winning the best poster award",
+        "maintained a perfect 4.0 GPA while conducting 20+ hours of research per week"
+      ]
+    },
+    {
+      "professor_name": "Dr. Sofia Rodriguez",
+      "institution": "University of Cambridge",
+      "department": "Faculty of Economics",
+      "student_placeholder": "[STUDENT_NAME]",
+      "course_placeholder": "[COURSE_NAME]",
+      "program_placeholder": "[TARGET_GRADUATE_PROGRAM]",
+      "praise_phrases": [
+        "possesses an extraordinary talent for econometric modeling and causal inference",
+        "their theoretical insights are consistently complemented by rigorous empirical validation",
+        "shows a mature grasp of complex economic literature and its real-world implications",
+        "arguments are always logically structured, persuasive, and elegantly communicated",
+        "I rank them among the top two or three students I have taught in the past decade"
+      ],
+      "academic_achievements": [
+        "thesis on inequality and automation was awarded the department's 'Best Undergraduate Thesis' prize",
+        "developed a new statistical method to correct for bias in survey data, now used in a ongoing government study",
+        "published a solo-authored critique in the 'Cambridge Journal of Economics'",
+        "achieved the highest mark in the challenging Tripos Part IIB examinations",
+        "secured a competitive research assistantship with the Centre for Economic Performance"
+      ]
+    },
+    {
+      "professor_name": "Prof. Aris Thorne",
+      "institution": "California Institute of Technology",
+      "department": "Division of Physics, Mathematics and Astronomy",
+      "student_placeholder": "[STUDENT_NAME]",
+      "course_placeholder": "[COURSE_NAME]",
+      "program_placeholder": "[TARGET_GRADUATE_PROGRAM]",
+      "praise_phrases": [
+        "mathematical intuition is nothing short of remarkable",
+        "tackles problems in theoretical physics with a unique and powerful geometric perspective",
+        "ability to absorb advanced concepts and immediately apply them in new contexts is exceptional",
+        "their dedication to foundational understanding is evident in every discussion",
+        "I have no doubt they are destined to make significant contributions to fundamental science"
+      ],
+      "academic_achievements": [
+        "solved an open problem in classical mechanics related to non-holonomic constraints, resulting in a preprint on arXiv",
+        "scored a perfect score on the notoriously difficult Physics Graduate Qualifying Exam",
+        "contributed derivations to our research group's paper on quantum gravity, now under review at PRL",
+        "taught supplemental instruction sessions for graduate-level Quantum Field Theory, receiving stellar reviews",
+        "was selected as a finalist for the national Department of Energy SCGSR fellowship"
+      ]
+    },
+    {
+      "professor_name": "Dr. Marcus Vance",
+      "institution": "Harvard University",
+      "department": "Department of Government",
+      "student_placeholder": "[STUDENT_NAME]",
+      "course_placeholder": "[COURSE_NAME]",
+      "program_placeholder": "[TARGET_GRADUATE_PROGRAM]",
+      "praise_phrases": [
+        "analytical writing is of publishable quality, displaying both clarity and profound critical thought",
+        "has an unparalleled ability to synthesize historical context with contemporary political theory",
+        "their questions in seminar often reframe the debate and lead to richer discussions",
+        "shows a nuanced understanding of institutional design and political behavior",
+        "is the kind of scholar who will define the next generation of political science research"
+      ],
+      "academic_achievements": [
+        "undergraduate thesis on democratic backsliding was nominated for the Samuel P. Huntington Award",
+        "conducted original archival research in three countries for a study on post-conflict constitutions",
+        "published an op-ed analysis in 'The Washington Post' based on their course research",
+        "served as head research assistant for a multi-year NSF-funded project on voter mobilization",
+        "graduated summa cum laude with the highest honors in the Government department"
+      ]
+    },
+    {
+      "professor_name": "Prof. Lena Petrova",
+      "institution": "ETH Zurich",
+      "department": "Department of Mechanical and Process Engineering",
+      "student_placeholder": "[STUDENT_NAME]",
+      "course_placeholder": "[COURSE_NAME]",
+      "program_placeholder": "[TARGET_GRADUATE_PROGRAM]",
+      "praise_phrases": [
+        "combines brilliant engineering design with an unwavering commitment to sustainable solutions",
+        "their prototypes are not only functional but exhibit manufacturing elegance and cost-awareness",
+        "demonstrates mastery across the full spectrum from simulation (FEA/CFD) to hands-on lab fabrication",
+        "a pragmatic problem-solver who never loses sight of the broader systemic impact",
+        "leadership in group projects is characterized by clear vision and empowering mentorship"
+      ],
+      "academic_achievements": [
+        "led a student team to design a winning low-cost water purification device in an international engineering competition",
+        "filed a provisional patent for a novel heat exchanger design with 30% improved efficiency",
+        "their master's thesis on battery thermal management was sponsored by a leading automotive company",
+        "optimized a combustion process in our lab, reducing particulate emissions by 25% in experimental trials",
+        "consistently ranked first in a cohort of over 200 highly competitive students"
+      ]
+    },
+    {
+      "professor_name": "Dr. Benjamin Clarke",
+      "institution": "University of Oxford",
+      "department": "Faculty of Classics",
+      "student_placeholder": "[STUDENT_NAME]",
+      "course_placeholder": "[COURSE_NAME]",
+      "program_placeholder": "[TARGET_GRADUATE_PROGRAM]",
+      "praise_phrases": [
+        "philological skills are exceptional, with a command of both Greek and Latin that rivals doctoral students",
+        "their textual interpretations are insightful, original, and meticulously argued",
+        "possesses a historian's sensitivity to context and a literary scholar's eye for narrative form",
+        "writing is not only erudite but also a genuine pleasure to read",
+        "I consider them one of the most promising young classicists to emerge from Oxford in recent years"
+      ],
+      "academic_achievements": [
+        "deciphered and proposed a new reading for a fragmentary papyrus text, a finding presented at the SCS annual meeting",
+        "awarded the Chancellor's Prize for the best performance in Classical Honour Moderations",
+        "translated and annotated a previously unstudied set of medieval scholia on Sophocles",
+        "published a peer-reviewed article in 'Classical Quarterly' while still an undergraduate",
+        "was elected President of the Oxford University Classical Society"
+      ]
+    },
+    {
+      "professor_name": "Prof. Anika Sharma",
+      "institution": "Carnegie Mellon University",
+      "department": "School of Computer Science",
+      "student_placeholder": "[STUDENT_NAME]",
+      "course_placeholder": "[COURSE_NAME]",
+      "program_placeholder": "[TARGET_GRADUATE_PROGRAM]",
+      "praise_phrases": [
+        "a programming virtuoso with an exceptional ability to architect complex, scalable software systems",
+        "their code is a model of clarity, efficiency, and robust error handling",
+        "understands the human-computer interaction aspects of systems design as deeply as the technical ones",
+        "consistently identifies edge cases and security implications that others overlook",
+        "has the rare potential to become a leader in both industrial research and advanced development"
+      ],
+      "academic_achievements": [
+        "won the ACM International Collegiate Programming Contest (ICPC) regional championship as team lead",
+        "contributed significant code to a major open-source distributed systems project (Apache Kafka)",
+        "designed and taught a student-run course on advanced systems programming that had a waitlist of 100+",
+        "interned at a top tech firm where their performance review ranked them in the top 1% of all interns",
+        "developed a new file system for educational use that is now deployed in the department's undergraduate labs"
+      ]
+    }
+  ]
+}

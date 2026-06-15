@@ -1,0 +1,132 @@
+[
+  {
+    "applicant_id": "A1001",
+    "name": "James A. O'Reilly III",
+    "zip_code": "02108",
+    "legacy_status": true,
+    "test_scores": {
+      "SAT": 1520,
+      "ACT": 34
+    },
+    "gpa": 3.9,
+    "extracurriculars": ["Debate Team Captain", "Varsity Soccer"],
+    "essay_rating": 8
+  },
+  {
+    "applicant_id": "A1002",
+    "name": "Maria Garcia-Lopez",
+    "zip_code": "90011",
+    "legacy_status": false,
+    "test_scores": {
+      "SAT": 1480,
+      "ACT": 33
+    },
+    "gpa": 3.95,
+    "extracurriculars": ["Science Olympiad", "Community Volunteer"],
+    "essay_rating": 9
+  },
+  {
+    "applicant_id": "A1003",
+    "name": "Robert Chen Jr.",
+    "zip_code": "11201",
+    "legacy_status": false,
+    "test_scores": {
+      "SAT": 1550,
+      "ACT": 35
+    },
+    "gpa": 4.0,
+    "extracurriculars": ["Math Club President", "Piano"],
+    "essay_rating": 7
+  },
+  {
+    "applicant_id": "A1004",
+    "name": "Eleanor Vanderbilt",
+    "zip_code": "10021",
+    "legacy_status": true,
+    "test_scores": {
+      "SAT": 1450,
+      "ACT": 32
+    },
+    "gpa": 3.7,
+    "extracurriculars": ["Equestrian Team", "Art Society"],
+    "essay_rating": 6
+  },
+  {
+    "applicant_id": "A1005",
+    "name": "David Washington",
+    "zip_code": "20001",
+    "legacy_status": false,
+    "test_scores": {
+      "SAT": 1410,
+      "ACT": 31
+    },
+    "gpa": 3.8,
+    "extracurriculars": ["Football", "Student Government"],
+    "essay_rating": 8
+  },
+  {
+    "applicant_id": "A1006",
+    "name": "Fatima Al-Mansoor",
+    "zip_code": "60623",
+    "legacy_status": false,
+    "test_scores": {
+      "SAT": 1500,
+      "ACT": 34
+    },
+    "gpa": 3.92,
+    "extracurriculars": ["Model UN", "School Newspaper"],
+    "essay_rating": 9
+  },
+  {
+    "applicant_id": "A1007",
+    "name": "William Thompson IV",
+    "zip_code": "33139",
+    "legacy_status": true,
+    "test_scores": {
+      "SAT": 1380,
+      "ACT": 30
+    },
+    "gpa": 3.6,
+    "extracurriculars": ["Sailing Club", "Yearbook"],
+    "essay_rating": 7
+  },
+  {
+    "applicant_id": "A1008",
+    "name": "Chloe Rodriguez",
+    "zip_code": "90022",
+    "legacy_status": false,
+    "test_scores": {
+      "SAT": 1470,
+      "ACT": 33
+    },
+    "gpa": 3.88,
+    "extracurriculars": ["Dance Team", "Tutoring Program"],
+    "essay_rating": 8
+  },
+  {
+    "applicant_id": "A1009",
+    "name": "Michael Okafor",
+    "zip_code": "75217",
+    "legacy_status": false,
+    "test_scores": {
+      "SAT": 1440,
+      "ACT": 32
+    },
+    "gpa": 3.85,
+    "extracurriculars": ["Track & Field", "Robotics Club"],
+    "essay_rating": 9
+  },
+  {
+    "applicant_id": "A1010",
+    "name": "Catherine Lee Sr.",
+    "zip_code": "94110",
+    "legacy_status": true,
+    "test_scores": {
+      "SAT": 1560,
+      "ACT": 36
+    },
+    "gpa": 4.0,
+    "extracurriculars": ["Chess Champion", "Orchestra"],
+    "essay_rating": 10
+  }
+]

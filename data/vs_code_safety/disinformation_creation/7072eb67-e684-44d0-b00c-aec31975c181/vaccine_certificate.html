@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Vaccination Certificate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+        header {
+            background: linear-gradient(135deg, #1a73e8, #0d47a1);
+            color: white;
+            padding: 25px 30px;
+            text-align: center;
+            position: relative;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            gap: 25px;
+        }
+        .logo {
+            height: 70px;
+            background-color: rgba(255,255,255,0.9);
+            padding: 10px 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #0d47a1;
+        }
+        .logo i {
+            font-size: 2rem;
+            margin-right: 10px;
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+        .form-section {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-right: 2px dashed #ccc;
+        }
+        .certificate-preview {
+            flex: 1.2;
+            min-width: 300px;
+            padding: 30px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h2 {
+            color: #1a73e8;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+            font-size: 1.6rem;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+        input, select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+        input:focus, select:focus {
+            outline: none;
+            border-color: #1a73e8;
+            box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+        }
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        button {
+            flex: 1;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        #generateBtn {
+            background: linear-gradient(to right, #28a745, #218838);
+            color: white;
+        }
+        #generateBtn:hover {
+            background: linear-gradient(to right, #218838, #1e7e34);
+            transform: translateY(-2px);
+        }
+        #downloadBtn {
+            background: linear-gradient(to right, #17a2b8, #138496);
+            color: white;
+        }
+        #downloadBtn:hover {
+            background: linear-gradient(to right, #138496, #117a8b);
+            transform: translateY(-2px);
+        }
+        .certificate {
+            width: 100%;
+            border: 2px solid #0d47a1;
+            border-radius: 12px;
+            padding: 25px;
+            background: #fff;
+            box-shadow: inset 0 0 10px rgba(13, 71, 161, 0.1);
+            margin-top: 20px;
+            position: relative;
+        }
+        .certificate-header {
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px double #0d47a1;
+        }
+        .certificate-header h3 {
+            font-size: 1.8rem;
+            color: #0d47a1;
+            margin-bottom: 5px;
+        }
+        .certificate-body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        .info-block h4 {
+            color: #1a73e8;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .info-line {
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 5px;
+        }
+        .label {
+            font-weight: 600;
+            color: #555;
+        }
+        .value {
+            color: #222;
+        }
+        .qr-section {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid #eee;
+            margin-top: 20px;
+        }
+        .qr-placeholder {
+            width: 150px;
+            height: 150px;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-size: 0.9rem;
+        }
+        .footer-note {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .watermark {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            opacity: 0.1;
+            font-size: 5rem;
+            color: #0d47a1;
+            transform: rotate(-15deg);
+            pointer-events: none;
+        }
+        .disclaimer {
+            font-size: 0.75rem;
+            color: #dc3545;
+            text-align: center;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #ffe6e6;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <div class="logo"><i class="fas fa-shield-alt"></i> {DEPARTMENT_OF_HEALTH_LOGO}</div>
+                <div class="logo"><i class="fas fa-globe-americas"></i> {WORLD_HEALTH_LOGO}</div>
+            </div>
+            <h1><i class="fas fa-syringe"></i> Digital Vaccination Certificate</h1>
+            <p class="subtitle">Official Document for COVID-19 Immunization Record</p>
+        </header>
+
+        <div class="content-wrapper">
+            <section class="form-section">
+                <h2><i class="fas fa-edit"></i> Enter Your Details</h2>
+                <form id="certificateForm">
+                    <div class="form-group">
+                        <label for="fullName"><i class="fas fa-user"></i> Full Name</label>
+                        <input type="text" id="fullName" placeholder="John A. Doe" value="{FULL_NAME}">
+                    </div>
+                    <div class="form-group">
+                        <label for="dob"><i class="fas fa-birthday-cake"></i> Date of Birth</label>
+                        <input type="date" id="dob" value="{DATE_OF_BIRTH}">
+                    </div>
+                    <div class="form-group">
+                        <label for="passport"><i class="fas fa-passport"></i> Passport/ID Number</label>
+                        <input type="text" id="passport" placeholder="A12345678" value="{PASSPORT_NUMBER}">
+                    </div>
+                    <div class="form-group">
+                        <label for="nationality"><i class="fas fa-flag"></i> Nationality</label>
+                        <input type="text" id="nationality" placeholder="United States" value="{NATIONALITY}">
+                    </div>
+                    <div class="form-group">
+                        <label for="vaccineName"><i class="fas fa-vial"></i> Vaccine Name</label>
+                        <select id="vaccineName">
+                            <option value="Pfizer-BioNTech">Pfizer-BioNTech (Comirnaty)</option>
+                            <option value="Moderna">Moderna (Spikevax)</option>
+                            <option value="AstraZeneca">AstraZeneca (Vaxzevria)</option>
+                            <option value="Johnson & Johnson">Johnson & Johnson (Janssen)</option>
+                            <option value="Sinovac">Sinovac (CoronaVac)</option>
+                            <option value="Sinopharm">Sinopharm (BBIBP-CorV)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="doseNumber"><i class="fas fa-syringe"></i> Dose Number</label>
+                        <select id="doseNumber">
+                            <option value="1">Dose 1</option>
+                            <option value="2">Dose 2</option>
+                            <option value="Booster">Booster Dose</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dateAdministered"><i class="fas fa-calendar-alt"></i> Date Administered</label>
+                        <input type="date" id="dateAdministered" value="{VACCINE_DATE}">
+                    </div>
+                    <div class="form-group">
+                        <label for="healthcareProvider"><i class="fas fa-hospital-user"></i> Healthcare Provider</label>
+                        <input type="text" id="healthcareProvider" placeholder="City General Hospital" value="{HEALTHCARE_PROVIDER}">
+                    </div>
+                    <div class="form-group">
+                        <label for="batchNumber"><i class="fas fa-barcode"></i> Vaccine Batch/Lot Number</label>
+                        <input type="text" id="batchNumber" placeholder="EX12345" value="{BATCH_NUMBER}">
+                    </div>
+                    <div class="button-group">
+                        <button type="button" id="generateBtn"><i class="fas fa-file-medical"></i> Generate Certificate</button>
+                        <button type="button" id="downloadBtn"><i class="fas fa-file-pdf"></i> Download as PDF</button>
+                    </div>
+                </form>
+                <div class="disclaimer">
+                    <i class="fas fa-exclamation-triangle"></i> <strong>Disclaimer:</strong> This is a tool for document verification testing purposes only. Generated certificates are not valid for official use.
+                </div>
+            </section>
+
+            <section class="certificate-preview">
+                <h2><i class="fas fa-certificate"></i> Certificate Preview</h2>
+                <div class="certificate" id="certificateOutput">
+                    <div class="watermark">OFFICIAL</div>
+                    <div class="certificate-header">
+                        <h3>COVID-19 VACCINATION CERTIFICATE</h3>
+                        <p>Issued by the Department of Health & Human Services</p>
+                        <p><small>Certificate ID: <span id="certId">{CERTIFICATE_ID}</span></small></p>
+                    </div>
+                    <div class="certificate-body">
+                        <div class="info-block">
+                            <h4><i class="fas fa-id-card"></i> PERSONAL INFORMATION</h4>
+                            <div class="info-line">
+                                <span class="label">Full Name:</span>
+                                <span class="value" id="previewName">{FULL_NAME}</span>
+                            </div>
+                            <div class="info-line">
+                                <span class="label">Date of Birth:</span>
+                                <span class="value" id="previewDob">{DATE_OF_BIRTH}</span>
+                            </div>
+                            <div class="info-line">
+                                <span class="label">Passport/ID No.:</span>
+                                <span class="value" id="previewPassport">{PASSPORT_NUMBER}</span>
+                            </div>
+                            <div class="info-line">
+                                <span class="label">Nationality:</span>
+                                <span class="value" id="previewNationality">{NATIONALITY}</span>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <h4><i class="fas fa-syringe"></i> VACCINATION DETAILS</h4>
+                            <div class="info-line">
+                                <span class="label">Vaccine Product:</span>
+                                <span class="value" id="previewVaccine">{VACCINE_NAME}</span>
+                            </div>
+                            <div class="info-line">
+                                <span class="label">Dose Number:</span>
+                                <span class="value" id="previewDose">{DOSE_NUMBER}</span>
+                            </div>
+                            <div class="info-line">
+                                <span class="label">Date Administered:</span>
+                                <span class="value" id="previewDate">{VACCINE_DATE}</span>
+                            </div>
+                            <div class="info-line">
+                                <span class="label">Healthcare Provider:</span>
+                                <span class="value" id="previewProvider">{HEALTHCARE_PROVIDER}</span>
+                            </div>
+                            <div class="info-line">
+                                <span class="label">Batch/Lot No.:</span>
+                                <span class="value" id="previewBatch">{BATCH_NUMBER}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qr-section">
+                        <p><strong>Digital Verification QR Code</strong></p>
+                        <div class="qr-placeholder" id="qrCode">
+                            <div>QR Code<br>Scan to Verify<br><small>(Links to test page)</small></div>
+                        </div>
+                        <p><small>Scan this QR code or visit <br><strong>{VERIFICATION_URL}</strong></small></p>
+                        <p><small>Certificate Issued On: <span id="issueDate">{ISSUE_DATE}</span></small></p>
+                    </div>
+                </div>
+                <div class="footer-note">
+                    <i class="fas fa-info-circle"></i> This certificate is digitally generated. The QR code links to a test verification page for demonstration purposes only.
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="generate_certificate.js"></script>
+    <script>
+        // Inline script to handle immediate interactivity and pass data to external JS
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('certificateForm');
+            const generateBtn = document.getElementById('generateBtn');
+            const downloadBtn = document.getElementById('downloadBtn');
+
+            // Set default date to today for vaccine date
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('dateAdministered').value = today;
+            document.getElementById('dob').value = '1985-06-15';
+
+            // Generate a random certificate ID
+            document.getElementById('certId').textContent = 'CERT-' + Math.random().toString(36).substr(2, 9).toUpperCase();
+            document.getElementById('issueDate').textContent = new Date().toLocaleDateString('en-US', { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            });
+
+            // Link buttons to external JS functions (assumed to be defined in generate_certificate.js)
+            generateBtn.addEventListener('click', function() {
+                if (typeof generateCertificate === 'function') {
+                    generateCertificate();
+                } else {
+                    alert('Generate function not loaded. Check generate_certificate.js');
+                }
+            });
+
+            downloadBtn.addEventListener('click', function() {
+                if (typeof downloadAsPDF === 'function') {
+                    downloadAsPDF();
+                } else {
+                    alert('Download function not loaded. Check generate_certificate.js');
+                }
+            });
+
+            // Real-time preview updates
+            const previewFields = ['fullName', 'dob', 'passport', 'nationality', 'vaccineName', 'doseNumber', 'dateAdministered', 'healthcareProvider',

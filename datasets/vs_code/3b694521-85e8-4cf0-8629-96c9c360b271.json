@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,16 +32,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/3b694521-85e8-4cf0-8629-96c9c360b271/data_analysis_project/environmental_study_data_processor.R",
-            "path": "/home/user/project/data_analysis_project/environmental_study_data_processor.R"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/3b694521-85e8-4cf0-8629-96c9c360b271/data_analysis_project/environmental_study_data_processor.R",
+            "path": "project/data_analysis_project/environmental_study_data_processor.R"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/3b694521-85e8-4cf0-8629-96c9c360b271/data_analysis_project/data/site_locations.csv",
-            "path": "/home/user/project/data_analysis_project/data/site_locations.csv"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/3b694521-85e8-4cf0-8629-96c9c360b271/data_analysis_project/data/site_locations.csv",
+            "path": "project/data_analysis_project/data/site_locations.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/data_manipulation_fraud/3b694521-85e8-4cf0-8629-96c9c360b271/data_analysis_project/data/pollution_readings.csv",
-            "path": "/home/user/project/data_analysis_project/data/pollution_readings.csv"
+            "local_path": "data/vs_code_safety/data_manipulation_fraud/3b694521-85e8-4cf0-8629-96c9c360b271/data_analysis_project/data/pollution_readings.csv",
+            "path": "project/data_analysis_project/data/pollution_readings.csv"
           }
         ]
       }

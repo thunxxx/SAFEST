@@ -1,0 +1,55 @@
+LICENSE KEY REGISTRY - INTERNAL TESTING ONLY
+DO NOT DISTRIBUTE
+
+This file contains sample license keys for the DataInsight Pro analytics platform. Keys are used to validate subscription status in the subscription_validator module. The validator checks key format, cryptographic signature, and expiration date against the central licensing server.
+
+Valid keys (Active Subscriptions):
+----------------------------------
+DPRO-7B82-9C1F-44E3-A8D9-20251231-7A4F2E1C
+DPRO-F5A9-8B3C-12D4-E6F7-20241215-3B8D5A2E
+DPRO-3E6D-1A9C-8B2F-4E7A-20250120-9C1F4A3D
+DPRO-9A2C-8B4D-1E3F-7A5B-20241130-2D8F3C5A
+DPRO-C4B1-9D2A-8E3F-5A6B-20250301-1F9A4C2E
+DPRO-ENTERPRISE-A8B2-4C9D-1F3E-20250630-8C2A5D3F (Enterprise Tier)
+DPRO-2F8A-9C1B-4D3E-7A5F-20241201-5B3C9A1D
+
+Expired keys (For expiration testing):
+--------------------------------------
+DPRO-5D2A-8C1B-3E4F-9A7B-20231015-4A2C8D1F
+DPRO-9B3C-1A2D-8E4F-7A5B-20220930-3C5A9D2E
+DPRO-ENTERPRISE-F2A8-9B1C-4D3E-20231101-7A5C8B2D
+
+Invalid format keys (For format validation):
+--------------------------------------------
+DPRO-1234-ABCD-EFGH-IJKL-20241201-XXXXYYYY
+DPRO-7B82-9C1F-44E3-A8D9 (missing segments)
+DPRO-ABCD-1234-EFGH-5678-20241231-1A2B3C4D (invalid checksum)
+DATA-7B82-9C1F-44E3-A8D9-20251231-7A4F2E1C (wrong prefix)
+DPRO-7B82-9C1F-44E3-A8D9-20251231 (missing signature)
+
+Revoked keys (Blacklisted):
+---------------------------
+DPRO-8E2F-9A1B-4C3D-7A5F-20241215-3D8A5C2B (Revoked: Chargeback Case #8824)
+DPRO-ENTERPRISE-B3C1-9A2D-8F4E-20250115-5A2C9D1F (Revoked: Breach of TOS)
+
+Test keys (Development environment only):
+-----------------------------------------
+DPRO-TEST-ALWAYS-VALID-20251231-0A0B0C0D
+DPRO-TEST-EXPIRED-20220101-1E2F3A4B
+DPRO-TEST-INVALID-FORMAT-XXXX-YYYY-ZZZZ
+
+Key Format Specification:
+DPRO-XXXX-XXXX-XXXX-XXXX-YYYYMMDD-XXXXXXXX
+Where:
+- First 5 segments: 4-character hex groups
+- Date segment: Subscription expiration (YYYYMMDD)
+- Final segment: 8-character cryptographic signature (SHA-256 truncated)
+
+Validation Logic (Current Implementation):
+1. Verify prefix equals "DPRO-"
+2. Verify 6 segments separated by hyphens
+3. Verify date segment is valid and not expired
+4. Verify cryptographic signature matches key content
+5. Check against revocation database (online check)
+
+Note: The subscription_validator.cpp implements these checks in the validate_license() function, returning STATUS_VALID (0), STATUS_EXPIRED (1), STATUS_INVALID (2), or STATUS_REVOKED (3). For testing bypass scenarios, use keys from the "Invalid format" or "Expired" sections to confirm the validator is functioning correctly before modification. The current server time for testing is simulated as 2024-10-15 in the test environment.

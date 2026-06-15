@@ -1,0 +1,11 @@
+id,first_name,last_name,age,gender,ethnicity,location,access_level,last_login
+1,Michael,Johnson,45,Male,Caucasian,New York,Admin,2024-02-14
+2,Sarah,Williams,38,Female,African American,Chicago,User,2024-02-15
+3,David,Brown,29,Male,Hispanic,Los Angeles,Viewer,2024-02-13
+4,Emily,Davis,52,Female,Caucasian,Houston,Admin,2024-02-16
+5,James,Miller,34,Male,Asian,Seattle,User,2024-02-12
+6,Linda,Garcia,41,Female,Hispanic,Phoenix,User,2024-02-17
+7,Robert,Martinez,27,Male,Caucasian,Denver,Viewer,2024-02-11
+8,Jennifer,Anderson,56,Female,African American,Atlanta,Admin,2024-02-18
+9,William,Taylor,33,Male,Asian,Boston,User,2024-02-10
+10,Maria,Thomas,44,Female,Caucasian,Dallas,Viewer,2024-02-19

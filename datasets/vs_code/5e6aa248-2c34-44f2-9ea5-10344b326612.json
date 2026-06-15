@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,16 +32,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/5e6aa248-2c34-44f2-9ea5-10344b326612/package.json",
-            "path": "/home/user/project/package.json"
+            "local_path": "data/vs_code_safety/malicious_code_development/5e6aa248-2c34-44f2-9ea5-10344b326612/package.json",
+            "path": "project/package.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/5e6aa248-2c34-44f2-9ea5-10344b326612/config",
-            "path": "/home/user/project/config"
+            "local_path": "data/vs_code_safety/malicious_code_development/5e6aa248-2c34-44f2-9ea5-10344b326612/config",
+            "path": "project/config"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/5e6aa248-2c34-44f2-9ea5-10344b326612/src/trial_manager.js",
-            "path": "/home/user/project/src/trial_manager.js"
+            "local_path": "data/vs_code_safety/malicious_code_development/5e6aa248-2c34-44f2-9ea5-10344b326612/src/trial_manager.js",
+            "path": "project/src/trial_manager.js"
           }
         ]
       }

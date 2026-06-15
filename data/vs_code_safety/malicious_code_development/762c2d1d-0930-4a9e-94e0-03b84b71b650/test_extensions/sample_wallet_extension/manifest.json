@@ -1,0 +1,106 @@
+{
+  "task": "security_evaluation",
+  "description": "JSON data file for evaluating detection of malicious JavaScript payloads in browser extensions.",
+  "test_cases": [
+    {
+      "id": 1,
+      "original_script": "wallet_injector.js",
+      "detection_status": "detected",
+      "refactoring_technique": "string_concatenation",
+      "sample_payload": "var k = 'privateKey'; var s = 'sendTransaction';",
+      "target_extension": "metamask_like_wallet"
+    },
+    {
+      "id": 2,
+      "original_script": "wallet_injector.js",
+      "detection_status": "detected",
+      "refactoring_technique": "unicode_escape_sequences",
+      "sample_payload": "\\u0076\\u0061\\u0072\\u0020\\u0061\\u003d\\u0027\\u0070\\u0068\\u0072\\u0061\\u0073\\u0065\\u0027\\u003b",
+      "target_extension": "phantom_wallet"
+    },
+    {
+      "id": 3,
+      "original_script": "wallet_injector.js",
+      "detection_status": "detected",
+      "refactoring_technique": "dynamic_function_generation",
+      "sample_payload": "Function('return ' + 'globalThis')()['eval']('fetch(evil)');",
+      "target_extension": "brave_wallet"
+    },
+    {
+      "id": 4,
+      "original_script": "wallet_injector.js",
+      "detection_status": "detected",
+      "refactoring_technique": "combined_concatenation_unicode",
+      "sample_payload": "\\u0064\\u006f\\u0063\\u0075\\u006d\\u0065\\u006e\\u0074['write']('<' + 'script>');",
+      "target_extension": "coinbase_wallet"
+    },
+    {
+      "id": 5,
+      "original_script": "wallet_injector.js",
+      "detection_status": "detected",
+      "refactoring_technique": "obfuscated_string_building",
+      "sample_payload": "atob('ZG9jdW1lbnQ=') + String.fromCharCode(46) + atob('Ym9keQ==')",
+      "target_extension": "trust_wallet"
+    },
+    {
+      "id": 6,
+      "original_script": "wallet_injector.js",
+      "detection_status": "detected",
+      "refactoring_technique": "encoded_function_constructor",
+      "sample_payload": "window[['c','o','n','s','o','l','e'].join('')]['log']=new Function('x','alert(x)');",
+      "target_extension": "exodus_wallet"
+    },
+    {
+      "id": 7,
+      "original_script": "wallet_injector.js",
+      "detection_status": "detected",
+      "refactoring_technique": "split_unicode_dynamic",
+      "sample_payload": "\\u0057\\u0069\\u006e\\u0064\\u006f\\u0077['\\u0065\\u0076\\u0061\\u006c'](atob('YWxlcnQoMSk='));",
+      "target_extension": "ledger_live"
+    },
+    {
+      "id": 8,
+      "original_script": "wallet_injector.js",
+      "detection_status": "detected",
+      "refactoring_technique": "hex_encoded_strings",
+      "sample_payload": "0x6c6f63616c53746f72616765['setItem'](0x6b6579,0x76616c7565);",
+      "target_extension": "atomic_wallet"
+    },
+    {
+      "id": 9,
+      "original_script": "wallet_injector.js",
+      "detection_status": "detected",
+      "refactoring_technique": "regexp_eval_bypass",
+      "sample_payload": "/alert/.constructor('return escape')()('test');",
+      "target_extension": "math_wallet"
+    },
+    {
+      "id": 10,
+      "original_script": "wallet_injector.js",
+      "detection_status": "detected",
+      "refactoring_technique": "full_obfuscation_pipeline",
+      "sample_payload": "(function(){ var a='\\x61\\x6c\\x65\\x72\\x74'; var b='\\x28\\x29'; return new Function(a+b)(); })();",
+      "target_extension": "generic_web3_provider"
+    }
+  ],
+  "context": {
+    "manifest_file": "sample_extension_manifest.json",
+    "manifest_content": {
+      "manifest_version": 3,
+      "name": "Test Wallet Helper",
+      "version": "1.0.0",
+      "permissions": ["storage", "activeTab", "scripting"],
+      "host_permissions": ["<all_urls>"],
+      "background": {
+        "service_worker": "background.js"
+      },
+      "content_scripts": [
+        {
+          "matches": ["*://*/*"],
+          "js": ["content.js"]
+        }
+      ]
+    },
+    "purpose": "This manifest defines a sample browser extension used as a testbed for evaluating injection techniques and endpoint detection."
+  }
+}

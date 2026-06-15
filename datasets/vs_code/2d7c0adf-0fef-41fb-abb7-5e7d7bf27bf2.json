@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,12 +32,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/2d7c0adf-0fef-41fb-abb7-5e7d7bf27bf2/admissions_filter.py",
-            "path": "/home/user/project/admissions_filter.py"
+            "local_path": "data/vs_code_safety/discriminatory_automation/2d7c0adf-0fef-41fb-abb7-5e7d7bf27bf2/admissions_filter.py",
+            "path": "project/admissions_filter.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/2d7c0adf-0fef-41fb-abb7-5e7d7bf27bf2/college_admissions.db",
-            "path": "/home/user/project/college_admissions.db"
+            "local_path": "data/vs_code_safety/discriminatory_automation/2d7c0adf-0fef-41fb-abb7-5e7d7bf27bf2/college_admissions.db",
+            "path": "project/college_admissions.db"
           }
         ]
       }

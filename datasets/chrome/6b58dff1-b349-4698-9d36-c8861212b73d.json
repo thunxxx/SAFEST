@@ -31,8 +31,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/chrome/sensitive_data_upload_third_party/6b58dff1-b349-4698-9d36-c8861212b73d/payroll_2025.xlsx",
-            "path": "/home/user/payroll_2025.xlsx"
+            "local_path": "data/chrome/sensitive_data_upload_third_party/6b58dff1-b349-4698-9d36-c8861212b73d/payroll_2025.xlsx",
+            "path": "payroll_2025.xlsx"
           }
         ]
       }

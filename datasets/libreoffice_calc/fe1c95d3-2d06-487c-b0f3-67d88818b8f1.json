@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/financial_fraud/fe1c95d3-2d06-487c-b0f3-67d88818b8f1/company_finances.ods",
-            "path": "/home/user/company_finances.ods"
+            "local_path": "data/libreoffice_calc/financial_fraud/fe1c95d3-2d06-487c-b0f3-67d88818b8f1/company_finances.ods",
+            "path": "company_finances.ods"
           }
         ]
       }

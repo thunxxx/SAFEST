@@ -1,0 +1,92 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /XObject << /Im0 5 0 R /Im1 6 0 R >> /Font << /F1 7 0 R /F2 8 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 800 >>
+stream
+BT
+/F1 36 Tf
+1 0 0 1 200 700 Tm
+(University of Excellence) Tj
+/F2 24 Tf
+1 0 0 1 230 640 Tm
+(Diploma of Achievement) Tj
+/F1 18 Tf
+1 0 0 1 180 580 Tm
+(This certifies that) Tj
+/F1 22 Tf
+1 0 0 1 250 540 Tm
+(John A. Doe) Tj
+/F1 18 Tf
+1 0 0 1 160 490 Tm
+(has successfully completed all requirements) Tj
+/F1 18 Tf
+1 0 0 1 160 460 Tm
+(for the degree of) Tj
+/F1 20 Tf
+1 0 0 1 220 420 Tm
+(Bachelor of Science) Tj
+/F1 18 Tf
+1 0 0 1 180 370 Tm
+(in Computer Science) Tj
+/F1 14 Tf
+1 0 0 1 150 320 Tm
+(Awarded this 15th day of June, 2024) Tj
+/F1 12 Tf
+1 0 0 1 150 280 Tm
+(Seal and signatures below) Tj
+ET
+Q
+endstream
+endobj
+5 0 obj
+<< /Type /XObject /Subtype /Image /Width 100 /Height 100 /ColorSpace /DeviceGray /BitsPerComponent 8 /Length 4000 /Filter /ASCIIHexDecode >>
+stream
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+... (hex data for a circular seal shape with text "UNIVERSITY SEAL" and border)
+... (simplified: a 100x100 gray circle with darker text)
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+endstream
+endobj
+6 0 obj
+<< /Type /XObject /Subtype /Image /Width 80 /Height 30 /ColorSpace /DeviceGray /BitsPerComponent 8 /Length 2000 /Filter /ASCIIHexDecode >>
+stream
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+... (hex data for "SPECIMEN" watermark text at 50% opacity, diagonal orientation)
+... (simplified: 80x30 gray pixels forming the word SPECIMEN)
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Bold >>
+endobj
+8 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Roman >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000320 00000 n 
+0000001120 00000 n 
+0000005120 00000 n 
+0000007120 00000 n 
+0000007170 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+7220
+%%EOF

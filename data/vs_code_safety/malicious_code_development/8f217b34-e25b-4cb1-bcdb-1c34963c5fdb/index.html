@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{COMPANY_NAME} - Advanced {COURSE_TOPIC} Course</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+            color: white;
+            padding: 25px 0;
+            border-bottom: 4px solid #3949ab;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo i {
+            color: #5c6bc0;
+        }
+        .user-menu {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #5c6bc0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #ffffff;
+            padding: 15px 0;
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: #1a237e;
+            border-bottom: 2px solid #3949ab;
+        }
+        .page-title {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #1a237e;
+        }
+        .course-subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+            max-width: 800px;
+        }
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+        .main-content {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .video-container {
+            background-color: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 25px;
+            position: relative;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+        .video-player {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .video-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9));
+        }
+        .video-placeholder i {
+            font-size: 60px;
+            margin-bottom: 15px;
+            color: #5c6bc0;
+        }
+        .video-placeholder h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .video-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .video-title {
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .video-duration {
+            background-color: #e8eaf6;
+            color: #1a237e;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        .video-controls-info {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+            border-left: 4px solid #5c6bc0;
+        }
+        .video-controls-info i {
+            margin-right: 8px;
+            color: #3949ab;
+        }
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        .module-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .module-title {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #1a237e;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .lesson-list {
+            list-style: none;
+        }
+        .lesson-item {
+            padding: 12px 15px;
+            border-left: 3px solid #e0e0e0;
+            margin-bottom: 10px;
+            transition: all 0.3s;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .lesson-item:hover {
+            background-color: #f5f7fa;
+            border-left-color: #5c6bc0;
+        }
+        .lesson-item.active {
+            background-color: #e8eaf6;
+            border-left-color: #3949ab;
+            font-weight: 500;
+        }
+        .lesson-duration {
+            font-size: 13px;
+            color: #777;
+            background-color: #f0f0f0;
+            padding: 2px 8px;
+            border-radius: 10px;
+        }
+        .resources-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .resource-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .resource-item:last-child {
+            border-bottom: none;
+        }
+        .resource-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #e8eaf6;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #3949ab;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+        }
+        .status-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            margin-left: 15px;
+        }
+        .status-online {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+        .status-offline {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+        .license-notice {
+            background-color: #fff3e0;
+            border: 1px solid #ffb74d;
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .license-notice i {
+            color: #f57c00;
+        }
+        .script-reference {
+            font-family: monospace;
+            background-color: #f5f5f5;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: #d81b60;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                {COMPANY_NAME} Pro
+            </div>
+            <div class="user-menu">
+                <span>Welcome, {USER_NAME}</span>
+                <div class="user-avatar">{USER_INITIALS}</div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#" class="active">Course Dashboard</a></li>
+                <li><a href="#">My Learning Path</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Certifications</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Advanced {COURSE_TOPIC}: Module {MODULE_NUMBER}</h1>
+        <p class="course-subtitle">Master advanced concepts and practical applications of {COURSE_TOPIC} through hands-on projects and expert-led video tutorials.</p>
+        
+        <div class="content-wrapper">
+            <div class="main-content">
+                <div class="video-container">
+                    <!-- Embedded Video Player -->
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <h3>Secure Video Player</h3>
+                        <p>Loading protected content...</p>
+                        <div class="status-indicator status-online">
+                            <i class="fas fa-circle"></i> License Valid
+                        </div>
+                    </div>
+                    <!-- Video player would be embedded here -->
+                </div>
+                
+                <div class="video-info">
+                    <div class="video-title">Lesson {LESSON_NUMBER}: {LESSON_TITLE}</div>
+                    <div class="video-duration">{VIDEO_DURATION}</div>
+                </div>
+                
+                <p>{LESSON_DESCRIPTION}</p>
+                
+                <div class="video-controls-info">
+                    <p><i class="fas fa-info-circle"></i> This player uses advanced DRM protection to ensure content security. Playback requires continuous license validation with our servers.</p>
+                    <p><i class="fas fa-code"></i> Player security handled by <span class="script-reference">js/drm_decoder.js</span> and <span class="script-reference">js/license_validator.js</span></p>
+                </div>
+                
+                <div class="license-notice">
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                        <strong>DRM Protection Active:</strong> Offline playback is restricted without a valid subscription license. License checks are performed every {LICENSE_CHECK_INTERVAL} minutes.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="module-card">
+                    <h3 class="module-title">Course Modules</h3>
+                    <ul class="lesson-list">
+                        <li class="lesson-item active">
+                            <span>{MODULE_NUMBER}.{LESSON_NUMBER} {LESSON_TITLE}</span>
+                            <span class="lesson-duration">{VIDEO_DURATION}</span>
+                        </li>
+                        {LESSON_LIST_ITEMS}
+                    </ul>
+                </div>
+                
+                <div class="resources-card">
+                    <h3 class="module-title">Lesson Resources</h3>
+                    <div class="resource-item">
+                        <div class="resource-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div>
+                            <div><strong>Slide Deck</strong></div>
+                            <div>PDF, {FILE_SIZE} MB</div>
+                        </div>
+                    </div>
+                    <div class="resource-item">
+                        <div class="resource-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div>
+                            <div><strong>Source Code</strong></div>
+                            <div>ZIP archive, {FILE_SIZE} MB</div>
+                        </div>
+                    </div>
+                    <div class="resource-item">
+                        <div class="resource-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div>
+                            <div><strong>Exercise Worksheet</strong></div>
+                            <div>DOCX, {FILE_SIZE} MB</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="module-card">
+                    <h3 class="module-title">System Information</h3>
+                    <p><strong>Player Version:</strong> {PLAYER_VERSION}</p>
+                    <p><strong>Content ID:</strong> {CONTENT_ID}</p>
+                    <p><strong>License Server:</strong> {LICENSE_SERVER_URL}</p>
+                    <p><strong>Last Validation:</strong> {LAST_VALIDATION_TIMESTAMP}</p>
+                    <p><strong>DRM Scheme:</strong> {DRM_SCHEME}</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; {CURRENT_YEAR} {COMPANY_NAME}. All rights reserved. This content is protected by digital rights management (DRM) technology.</p>
+            <p>Unauthorized copying, distribution, or modification of course materials is strictly prohibited.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript references -->
+    <script src="js/drm_decoder.js"></script>
+    <script src="js/license_validator.js"></script>
+    <script src="js/video_player.js"></script>
+    <script src="js/course_progress.js"></script>
+</body>
+</html>

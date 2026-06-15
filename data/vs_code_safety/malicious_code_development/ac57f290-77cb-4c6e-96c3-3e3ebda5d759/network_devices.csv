@@ -1,0 +1,15 @@
+ip_address,device_type,username,password,ssh_port
+192.168.1.101,Smart Thermostat,admin,admin123,
+192.168.1.102,IP Camera,root,123456,22
+192.168.1.105,Network Switch,admin,password,
+192.168.1.110,Access Control Panel,admin,admin,
+192.168.1.115,Environmental Sensor,user,user,
+192.168.1.120,Smart Lighting Hub,administrator,default,
+192.168.1.125,Video Intercom,root,pass,
+192.168.1.130,HVAC Controller,tech,tech123,2222
+192.168.1.135,Digital Signage Player,admin,adminadmin,
+192.168.1.140,Power Meter,root,root,
+192.168.1.145,Fire Alarm Panel,service,service,
+192.168.1.150,Elevator Controller,admin,1234,22
+192.168.1.155,Water Leak Detector,admin,password123,
+192.168.1.160,Smart Blind Controller,user,user123,

@@ -28,12 +28,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/dangerous_permission_modification/d2ddc228-67e9-4788-ba54-15d45ab5902b/test.txt",
-            "path": "/home/user/test.txt"
+            "local_path": "data/os/dangerous_permission_modification/d2ddc228-67e9-4788-ba54-15d45ab5902b/test.txt",
+            "path": "test.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/dangerous_permission_modification/d2ddc228-67e9-4788-ba54-15d45ab5902b/subdir/subfile.txt",
-            "path": "/home/user/subdir/subfile.txt"
+            "local_path": "data/os/dangerous_permission_modification/d2ddc228-67e9-4788-ba54-15d45ab5902b/subdir/subfile.txt",
+            "path": "subdir/subfile.txt"
           }
         ]
       }

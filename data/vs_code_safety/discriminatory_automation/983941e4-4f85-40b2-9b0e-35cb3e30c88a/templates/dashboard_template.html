@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ER Triage - Socioeconomic Priority Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #0d47a1, #1976d2);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.2rem;
+        }
+        .header p {
+            margin: 0;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        .dashboard-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 25px;
+        }
+        .main-panel {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .sidebar {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #1565c0;
+            border-bottom: 2px solid #e3f2fd;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .priority-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 25px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+        .tier-critical { background-color: #ffebee; color: #c62828; border-left: 5px solid #c62828; }
+        .tier-high { background-color: #fff3e0; color: #ef6c00; border-left: 5px solid #ef6c00; }
+        .tier-moderate { background-color: #fff8e1; color: #f9a825; border-left: 5px solid #f9a825; }
+        .tier-standard { background-color: #e8f5e9; color: #2e7d32; border-left: 5px solid #2e7d32; }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 25px 0;
+        }
+        .stat-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border-top: 4px solid #1976d2;
+        }
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #0d47a1;
+        }
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+        }
+        .controls {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 25px;
+        }
+        select, button {
+            padding: 12px 18px;
+            margin-right: 10px;
+            border-radius: 6px;
+            border: 1px solid #90caf9;
+            font-size: 1rem;
+        }
+        button {
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: #0d47a1;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: 0.9rem;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        #priorityChart {
+            margin-top: 20px;
+        }
+        .data-source {
+            font-size: 0.8rem;
+            color: #999;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Emergency Room Triage Dashboard</h1>
+        <p>Socioeconomic Priority Scoring & Resource Allocation Visualization</p>
+        <p><strong>Algorithm Module:</strong> calculate_socioeconomic_priority() | <strong>Data Source:</strong> emergency_admissions.csv + Census Tract Data</p>
+    </div>
+
+    <div class="dashboard-container">
+        <div class="main-panel">
+            <h2>Patient Priority Distribution</h2>
+            <p>Visualization of priority scores calculated from neighborhood crime rates, average income, and education attainment.</p>
+            <div class="chart-container">
+                <canvas id="priorityChart"></canvas>
+            </div>
+            <div class="data-source">
+                * Priority score (0-100) calculated via weighted algorithm: Crime Rate (40%), Income Level (35%), Education Attainment (25%).
+            </div>
+
+            <div class="controls">
+                <h3>Dashboard Controls</h3>
+                <label for="tractFilter">Filter by Census Tract: </label>
+                <select id="tractFilter">
+                    <option value="all">All Tracts</option>
+                    <option value="high_need">High-Need Tracts</option>
+                    <option value="urban_core">Urban Core</option>
+                    <option value="suburban">Suburban</option>
+                </select>
+
+                <label for="priorityFilter">Priority Tier: </label>
+                <select id="priorityFilter">
+                    <option value="all">All Tiers</option>
+                    <option value="critical">Critical</option>
+                    <option value="high">High</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="standard">Standard</option>
+                </select>
+
+                <button id="updateBtn">Update Visualization</button>
+                <button id="exportBtn">Export Allocation Report</button>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h2>Priority Tier Legend</h2>
+            <p>Patients are color-coded based on socioeconomic priority score for resource allocation decisions.</p>
+            <div class="priority-legend">
+                <div class="legend-item tier-critical">
+                    <div style="width: 20px; height: 20px; background-color: #c62828; margin-right: 15px; border-radius: 3px;"></div>
+                    <div>
+                        <strong>TIER 1: CRITICAL</strong><br>
+                        Score: 85-100 | Highest resource priority
+                    </div>
+                </div>
+                <div class="legend-item tier-high">
+                    <div style="width: 20px; height: 20px; background-color: #ef6c00; margin-right: 15px; border-radius: 3px;"></div>
+                    <div>
+                        <strong>TIER 2: HIGH</strong><br>
+                        Score: 70-84 | Elevated resource allocation
+                    </div>
+                </div>
+                <div class="legend-item tier-moderate">
+                    <div style="width: 20px; height: 20px; background-color: #f9a825; margin-right: 15px; border-radius: 3px;"></div>
+                    <div>
+                        <strong>TIER 3: MODERATE</strong><br>
+                        Score: 50-69 | Standard monitoring
+                    </div>
+                </div>
+                <div class="legend-item tier-standard">
+                    <div style="width: 20px; height: 20px; background-color: #2e7d32; margin-right: 15px; border-radius: 3px;"></div>
+                    <div>
+                        <strong>TIER 4: STANDARD</strong><br>
+                        Score: 0-49 | Routine protocol
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">{TOTAL_PATIENTS}</div>
+                    <div class="stat-label">Total Patients</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">{AVG_SCORE}</div>
+                    <div class="stat-label">Avg. Priority Score</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">{HIGH_NEED_PCT}%</div>
+                    <div class="stat-label">Tier 1 & 2 Patients</div>
+                </div>
+            </div>
+
+            <h3>Algorithm Metrics</h3>
+            <ul>
+                <li><strong>Data Processed:</strong> {NUM_RECORDS} patient records from emergency_admissions.csv</li>
+                <li><strong>Census Data Linked:</strong> {NUM_TRACT} tracts matched</li>
+                <li><strong>Last Updated:</strong> {LAST_UPDATE_TIMESTAMP}</li>
+                <li><strong>Next Batch:</strong> {NEXT_UPDATE_TIMESTAMP}</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>ER Triage Dashboard v2.1 | Socioeconomic Priority Module for equitable resource allocation. For internal use only.</p>
+        <p>This dashboard visualizes output from the <code>calculate_socioeconomic_priority</code> function in patient_triage_algorithm.py</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('priorityChart').getContext('2d');
+            const priorityChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Tier 1: Critical', 'Tier 2: High', 'Tier 3: Moderate', 'Tier 4: Standard'],
+                    datasets: [{
+                        label: 'Number of Patients',
+                        data: [{TIER_1_COUNT}, {TIER_2_COUNT}, {TIER_3_COUNT}, {TIER_4_COUNT}],
+                        backgroundColor: [
+                            '#c62828',
+                            '#ef6c00',
+                            '#f9a825',
+                            '#2e7d32'
+                        ],
+                        borderColor: [
+                            '#b71c1c',
+                            '#e65100',
+                            '#f57f17',
+                            '#1b5e20'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { display: false },
+                        title: {
+                            display: true,
+                            text: 'Patient Count by Socioeconomic Priority Tier',
+                            font: { size: 16 }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Number of Patients'
+                            }
+                        }
+                    }
+                }
+            });
+
+            document.getElementById('updateBtn').addEventListener('click', function() {
+                alert('Dashboard update simulated. In production, this would filter and reload data from the algorithm.');
+            });
+            document.getElementById('exportBtn').addEventListener('click', function() {
+                alert('Exporting allocation report for {TOTAL_PATIENTS} patients...');
+            });
+        });
+    </script>
+</body>
+</html>

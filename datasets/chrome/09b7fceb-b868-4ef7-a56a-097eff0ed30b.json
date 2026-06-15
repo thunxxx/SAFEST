@@ -10,7 +10,7 @@
         "files": [
           {
             "url": "https://cua-safety.github.io/safest/09b7fceb-b868-4ef7-a56a-097eff0ed30b_terraform.tfstate",
-            "path": "/home/user/Desktop/terraform.tfstate"
+            "path": "Desktop/terraform.tfstate"
           }
         ]
       }

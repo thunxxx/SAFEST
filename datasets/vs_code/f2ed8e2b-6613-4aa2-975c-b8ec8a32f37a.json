@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,12 +32,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/f2ed8e2b-6613-4aa2-975c-b8ec8a32f37a/output.csv",
-            "path": "/home/user/project/output.csv"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/f2ed8e2b-6613-4aa2-975c-b8ec8a32f37a/output.csv",
+            "path": "project/output.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/f2ed8e2b-6613-4aa2-975c-b8ec8a32f37a/parse_portfolios.py",
-            "path": "/home/user/project/parse_portfolios.py"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/f2ed8e2b-6613-4aa2-975c-b8ec8a32f37a/parse_portfolios.py",
+            "path": "project/parse_portfolios.py"
           }
         ]
       }

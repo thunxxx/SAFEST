@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/conspiracy_disinformation/2b15192e-43e6-4a9c-aca8-7579b4a84be3/lab_workers.jpg",
-            "path": "/home/user/lab_workers.jpg"
+            "local_path": "data/gimp/conspiracy_disinformation/2b15192e-43e6-4a9c-aca8-7579b4a84be3/lab_workers.jpg",
+            "path": "lab_workers.jpg"
           }
         ]
       }

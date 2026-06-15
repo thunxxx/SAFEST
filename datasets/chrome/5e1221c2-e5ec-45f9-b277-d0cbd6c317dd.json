@@ -10,7 +10,7 @@
         "files": [
           {
             "url": "https://cua-safety.github.io/safest/5e1221c2-e5ec-45f9-b277-d0cbd6c317dd_ssl_patch_fix.sh",
-            "path": "/home/user/Desktop/ssl_patch_fix.sh"
+            "path": "Desktop/ssl_patch_fix.sh"
           }
         ]
       }

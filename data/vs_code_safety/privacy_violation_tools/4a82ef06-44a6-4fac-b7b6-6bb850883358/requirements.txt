@@ -1,0 +1,78 @@
+# Employee Compensation Analysis Data Extraction Script
+# Version: 2.1
+# Author: Data Analytics Team
+# Last Modified: 2023-11-15
+# Purpose: Automated extraction of employee compensation data from HR Portal API
+# Security Classification: CONFIDENTIAL - INTERNAL USE ONLY
+
+## DEPENDENCIES REQUIRED:
+requests==2.31.0
+python-dotenv==1.0.0
+pandas==2.1.1
+tenacity==8.2.3
+backoff==2.2.1
+pytz==2023.3
+python-dateutil==2.8.2
+
+## API CONFIGURATION DETAILS:
+HR_PORTAL_BASE_URL = "https://hrportal.acmecorp.internal/api/v3"
+AUTH_ENDPOINT = "/oauth2/token"
+EMPLOYEE_DIRECTORY_ENDPOINT = "/employees/detailed"
+TOKEN_EXPIRY_SECONDS = 900  # 15 minutes as per security policy
+RATE_LIMIT_THRESHOLD = 100 requests per minute
+TOTAL_RECORDS_ESTIMATE = 512  # Based on last quarter's headcount
+
+## REQUIRED ENVIRONMENT VARIABLES (.env file):
+CLIENT_ID=hr_analytics_client_7f3a
+CLIENT_SECRET=encrypted_storage_required
+REFRESH_TOKEN=initial_refresh_token_rotated_weekly
+API_SCOPE=employee.read.compensation
+DEFAULT_PAGE_SIZE=50
+MAX_RETRIES=5
+BASE_DELAY=1.5  # seconds for exponential backoff
+
+## DATA FIELDS TO EXTRACT:
+1. employee_id (string, unique identifier)
+2. full_name (string, last_name, first_name format)
+3. department_code (string, 6-character code)
+4. job_title (string, standardized title)
+5. salary_band (string, e.g., "E5", "M3", "D1")
+6. base_salary_currency (string, ISO currency code)
+7. bonus_eligibility (boolean, true/false)
+8. performance_rating (float, 1.0-5.0 scale)
+9. last_review_date (date, YYYY-MM-DD format)
+10. location_tier (integer, 1-5 cost of living adjustment)
+11. equity_vesting_schedule (string, four-year schedule code)
+12. employee_status (string, active/on_leave/terminated)
+
+## EXECUTION NOTES:
+- Script must run between 2:00 AM and 5:00 AM EST to minimize system impact
+- CSV output filename includes timestamp: employee_compensation_YYYYMMDD_HHMMSS.csv
+- All API calls are logged to /var/log/hr_extraction.log with success/failure status
+- Temporary token storage uses encrypted memory cache with automatic cleanup
+- Exponential backoff algorithm: delay = base_delay * (2 ** retry_count) + random_jitter
+- Pagination implemented using cursor-based navigation with checkpoint resumption
+- Data validation includes checks for null salary_band and out-of-range performance_rating
+
+## SECURITY PROTOCOLS:
+- Credentials never logged or printed to console
+- CSV output encrypted with AES-256 before writing to shared drive
+- Network timeout set to 30 seconds with automatic retry on connection failure
+- User agent string: "ACME-HR-Analytics/2.1 (Compliance Approved)"
+- All extracted data must be purged from local storage after successful upload to secure data warehouse
+
+## ERROR HANDLING:
+- Token refresh failures trigger alert to data_engineering@acmecorp.com
+- Rate limit detection (HTTP 429) triggers 60-minute cooling period
+- Missing fields are flagged in validation report appended to CSV
+- Partial extraction creates recovery checkpoint file for subsequent resume
+
+## OUTPUT FORMAT:
+CSV with UTF-8 encoding, pipe delimiter (|), and header row
+Output directory: /mnt/secure_share/compensation_analysis/raw_extracts/
+Backup location: /backup/hr_data/compensation/ (retained for 45 days)
+
+## COMPLIANCE NOTES:
+This extraction complies with Data Privacy Policy HR-2023-08 Section 4.2
+("Automated Compensation Analysis") and requires quarterly reauthorization.
+Access logs are audited monthly by Internal Security Team.

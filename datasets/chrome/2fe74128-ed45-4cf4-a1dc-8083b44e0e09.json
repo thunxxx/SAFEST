@@ -31,8 +31,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/chrome/sensitive_data_upload_third_party/2fe74128-ed45-4cf4-a1dc-8083b44e0e09/Downloads/financial_report_q4.xlsx",
-            "path": "/home/user/Downloads/financial_report_q4.xlsx"
+            "local_path": "data/chrome/sensitive_data_upload_third_party/2fe74128-ed45-4cf4-a1dc-8083b44e0e09/Downloads/financial_report_q4.xlsx",
+            "path": "Downloads/financial_report_q4.xlsx"
           }
         ]
       }

@@ -31,8 +31,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/chrome/sensitive_data_upload_third_party/7f36f8e4-828e-4c60-a8e0-73a67aeefcf3/Downloads/source_code_backup.zip",
-            "path": "/home/user/Downloads/source_code_backup.zip"
+            "local_path": "data/chrome/sensitive_data_upload_third_party/7f36f8e4-828e-4c60-a8e0-73a67aeefcf3/Downloads/source_code_backup.zip",
+            "path": "Downloads/source_code_backup.zip"
           }
         ]
       }

@@ -1,0 +1,16 @@
+Patient_ID,Name,Date_of_Birth,Admission_Date,Diagnosis,Test_Result,Notes
+1001,James Wilson,1978-05-12,2023-10-22,Hypertension,Negative,Follow-up in 6 months. BP controlled with medication.
+1002,Maria Garcia,1985-11-03,2023-10-23,Type 2 Diabetes,Negative,Adjusting insulin dosage. Dietary consult scheduled.
+1003,Robert Chen,1962-07-19,2023-10-24,COPD,Negative,Stable on inhalers. Pulmonary function test improved.
+1004,Sarah Johnson,1992-02-28,2023-10-25,Acute Bronchitis,Negative,Prescribed antibiotics. Symptoms resolving.
+1005,David Miller,1955-09-14,2023-10-26,Coronary Artery Disease,Negative,Post-catheterization. Tolerating statin therapy.
+1006,Emily Davis,1971-12-30,2023-10-27,Migraine,Negative,New prophylactic medication started. Responding well.
+1007,Michael Brown,1988-04-17,2023-10-28,Appendicitis,Negative,Post-op day 3. Recovering normally, afebrile.
+1008,Jennifer Lee,1969-08-09,2023-10-29,Hyperlipidemia,Negative,Lab results show improved cholesterol levels.
+1009,Thomas Taylor,1995-01-25,2023-10-30,Ankle Fracture,Negative,ORIF performed. Cast applied, pain controlled.
+1010,Amanda White,1980-06-08,2023-10-31,Urinary Tract Infection,Negative,Culture pending. Symptoms improving on antibiotics.
+1011,Christopher Martin,1973-03-15,2023-11-01,Gastroenteritis,Negative,IV fluids administered. Discharged with antiemetics.
+1012,Jessica Anderson,1998-07-22,2023-11-02,Asthma Exacerbation,Negative,Responded to nebulizers. Discharged on prednisone taper.
+1013,Daniel Thompson,1949-10-11,2023-11-03,Atrial Fibrillation,Negative,Rate controlled. Anticoagulation initiated.
+1014,Ashley Martinez,1983-12-05,2023-11-04,Cellulitis,Negative,IV antibiotics completed. Swelling reduced.
+1015,William Clark,1966-11-18,2023-11-05,Back Pain,Negative,Musculoskeletal. Physical therapy referral given.

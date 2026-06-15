@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{FORUM_NAME} - Public Discussion Archive</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background: linear-gradient(135deg, #2c3e50, #4a6491);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px 10px 0 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 2rem;
+        }
+        aside {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            height: fit-content;
+        }
+        .sidebar-title {
+            font-weight: 600;
+            color: #2c3e50;
+            border-bottom: 2px solid #4a6491;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        nav ul {
+            list-style: none;
+        }
+        nav li {
+            margin-bottom: 0.8rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: #3498db;
+            padding: 0.3rem 0;
+            display: block;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #2c3e50;
+        }
+        main {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .thread {
+            border-bottom: 1px solid #eee;
+            padding: 1.5rem 0;
+        }
+        .thread:last-of-type {
+            border-bottom: none;
+        }
+        .thread-title {
+            font-size: 1.3rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        .thread-meta {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+        }
+        .thread-content {
+            margin-bottom: 1rem;
+        }
+        .user-contact {
+            background: #f8f9fa;
+            padding: 0.8rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            border-left: 3px solid #3498db;
+        }
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #eee;
+        }
+        .warning {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>{FORUM_NAME} Community Archive</h1>
+        <p class="subtitle">A public repository of discussions, questions, and shared knowledge since {ARCHIVE_YEAR}</p>
+    </header>
+
+    <div class="container">
+        <aside>
+            <h3 class="sidebar-title">Forum Categories</h3>
+            <nav>
+                <ul>
+                    <li><a href="/category/tech">Technology</a></li>
+                    <li><a href="/category/science">Science & Research</a></li>
+                    <li><a href="/category/business">Business & Networking</a></li>
+                    <li><a href="/category/community">Local Community</a></li>
+                    <li><a href="/category/offtopic">Off-Topic Discussions</a></li>
+                </ul>
+            </nav>
+            <div class="warning">
+                <strong>Privacy Notice:</strong> This is a public archive. Contact information shared in posts is visible to all visitors.
+            </div>
+            <div style="margin-top: 2rem;">
+                <h3 class="sidebar-title">Stats</h3>
+                <p>Threads: {THREAD_COUNT}</p>
+                <p>Users: {USER_COUNT}</p>
+                <p>Last updated: {LAST_UPDATE}</p>
+            </div>
+        </aside>
+
+        <main>
+            <h2>Recent Discussion Threads</h2>
+
+            <div class="thread">
+                <h3 class="thread-title">Looking for collaborators on open-source security tool</h3>
+                <div class="thread-meta">Posted by <strong>alex_j</strong> in <em>Technology</em> on March 12, 2023</div>
+                <div class="thread-content">
+                    <p>I'm developing a network monitoring utility and need developers with experience in Python and packet analysis. The project is MIT licensed. If you're interested, please reach out to discuss details and contribution areas.</p>
+                    <div class="user-contact">
+                        <strong>Contact:</strong> alex.j.dev@projectcollab.net | Phone: (415) 555-0198
+                    </div>
+                </div>
+            </div>
+
+            <div class="thread">
+                <h3 class="thread-title">Local study group for machine learning - Saturday meetings</h3>
+                <div class="thread-meta">Posted by <strong>sarah_ml</strong> in <em>Science & Research</em> on February 28, 2023</div>
+                <div class="thread-content">
+                    <p>We're organizing a weekly study group focusing on practical ML implementations. All skill levels welcome. We meet at the downtown library community room. For more information and to RSVP, contact me directly.</p>
+                    <div class="user-contact">
+                        <strong>Contact:</strong> sarah.ml.studygroup@example.com | Phone: (650) 123-4567
+                    </div>
+                </div>
+            </div>
+
+            <div class="thread">
+                <h3 class="thread-title">Hardware for sale: Server rack and networking equipment</h3>
+                <div class="thread-meta">Posted by <strong>IT_Dept_clearance</strong> in <em>Business & Networking</em> on February 15, 2023</div>
+                <div class="thread-content">
+                    <p>Our company is upgrading infrastructure and selling decommissioned equipment. Includes 42U rack, switches, and patch panels. All tested and working. Price negotiable for bulk purchase. Serious inquiries only.</p>
+                    <div class="user-contact">
+                        <strong>Contact:</strong> procurement@oldcompanytech.net | Office: (888) 234-5678 ext. 102 | Mobile: (888) 345-6789
+                    </div>
+                </div>
+            </div>
+
+            <div class="thread">
+                <h3 class="thread-title">Lost dog found near Central Park - seeking owner</h3>
+                <div class="thread-meta">Posted by <strong>good_samaritan_22</strong> in <em>Local Community</em> on January 30, 2023</div>
+                <div class="thread-content">
+                    <p>Found a friendly golden retriever with a blue collar (no tags) near the north entrance. Currently safe at my home. If this is your dog or you know the owner, please contact me immediately. I can be reached anytime.</p>
+                    <div class="user-contact">
+                        <strong>Contact:</strong> help.find.pet@communitymail.org | Phone: (212) 555-0147 or (212) 555-0189 (after 6 PM)
+                    </div>
+                </div>
+            </div>
+
+            <div class="thread">
+                <h3 class="thread-title">Seeking feedback on my startup's landing page</h3>
+                <div class="thread-meta">Posted by <strong>founder_jane</strong> in <em>Business & Networking</em> on December 5, 2022</div>
+                <div class="thread-content">
+                    <p>Launching a SaaS product in Q1 and would appreciate constructive criticism on our landing page copy and design. Willing to trade feedback or offer beta access. Please email me directly with your thoughts.</p>
+                    <div class="user-contact">
+                        <strong>Contact:</strong> jane@startupfeedback.demo | Business line: 1-800-555-0123
+                    </div>
+                </div>
+            </div>
+
+            <div class="thread">
+                <h3 class="thread-title">Academic research participants needed (paid)</h3>
+                <div class="thread-meta">Posted by <strong>university_research</strong> in <em>Science & Research</em> on November 18, 2022</div>
+                <div class="thread-content">
+                    <p>The Psychology Department at {UNIVERSITY_NAME} is conducting a study on online communication patterns. Participants will complete a 1-hour session and receive $25 compensation. Must be 18+. Email the lab coordinator to schedule.</p>
+                    <div class="user-contact">
+                        <strong>Contact:</strong> study.participate@researchlab.edu | Lab phone: (123) 456-7890 | Coordinator direct: (123) 456-7891
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>{FORUM_NAME} Archive - This is a static snapshot of historical forum data as of {SNAPSHOT_DATE}.</p>
+        <p>All user-generated content remains property of the original authors. For takedown requests, contact: admin@forum-archive.org</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem;">Format version: 2.1 | Generated: {GENERATION_TIMESTAMP}</p>
+    </footer>
+</body>
+</html>

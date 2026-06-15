@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{COMPANY_NAME} - Employee Feedback Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            background-image: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            border: 1px solid #e1e8f0;
+        }
+        .header {
+            background: linear-gradient(90deg, #1a3a8f, #2d5cc2);
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .logo {
+            height: 60px;
+            margin-bottom: 20px;
+        }
+        .content {
+            padding: 40px;
+        }
+        .intro {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #ddd;
+        }
+        .intro h2 {
+            color: #1a3a8f;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        .form-section {
+            margin-top: 30px;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #444;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border 0.3s;
+        }
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #2d5cc2;
+            box-shadow: 0 0 0 3px rgba(45, 92, 194, 0.1);
+        }
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        .rating-group {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .rating-option {
+            text-align: center;
+            flex: 1;
+            margin: 5px;
+            padding: 15px 5px;
+            background: #f8fafc;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 2px solid transparent;
+        }
+        .rating-option:hover {
+            background: #edf2f7;
+            border-color: #c3dafe;
+        }
+        .rating-option.selected {
+            background: #e1edff;
+            border-color: #2d5cc2;
+            font-weight: bold;
+        }
+        .rating-option input {
+            display: none;
+        }
+        .submit-btn {
+            background: linear-gradient(90deg, #1a3a8f, #2d5cc2);
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+        .submit-btn:hover {
+            background: linear-gradient(90deg, #152c6e, #2449a3);
+            transform: translateY(-2px);
+            box-shadow: 0 7px 14px rgba(45, 92, 194, 0.2);
+        }
+        .privacy-note {
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #f9fbfd;
+            border-radius: 6px;
+            border-left: 4px solid #2d5cc2;
+        }
+        .footer {
+            text-align: center;
+            padding: 25px;
+            color: #777;
+            font-size: 0.9rem;
+            border-top: 1px solid #eee;
+            background-color: #fafcfd;
+        }
+        .required {
+            color: #e53e3e;
+        }
+        .loading-indicator {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+            color: #2d5cc2;
+        }
+        .loading-indicator i {
+            margin-right: 10px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .tab {
+            display: none;
+        }
+        .tab.active {
+            display: block;
+        }
+        .tab-nav {
+            display: flex;
+            border-bottom: 1px solid #e1e8f0;
+            margin-bottom: 30px;
+        }
+        .tab-button {
+            flex: 1;
+            padding: 18px;
+            background: none;
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #64748b;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+        .tab-button.active {
+            color: #1a3a8f;
+            border-bottom: 3px solid #1a3a8f;
+            background-color: #f8fafc;
+        }
+        .tab-button:hover:not(.active) {
+            background-color: #f1f5f9;
+            color: #475569;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="{COMPANY_LOGO_URL}" alt="{COMPANY_NAME} Logo" class="logo">
+            <h1>Employee Feedback & Development Portal</h1>
+            <p>Your voice matters. Help us improve our workplace together.</p>
+        </div>
+
+        <div class="content">
+            <div class="intro">
+                <h2>Welcome to Our Feedback Session</h2>
+                <p>This confidential survey is designed to gather your honest opinions about your work experience, team dynamics, and company culture. Your responses will be used anonymously to drive positive changes and enhance our remote work environment. Please take your time and provide thoughtful feedback.</p>
+                <p><strong>Session ID:</strong> <span id="sessionId">{SESSION_ID}</span> | <strong>Estimated time:</strong> 10-15 minutes</p>
+            </div>
+
+            <div class="tab-nav">
+                <button class="tab-button active" onclick="switchTab(1)">Work Experience</button>
+                <button class="tab-button" onclick="switchTab(2)">Team & Culture</button>
+                <button class="tab-button" onclick="switchTab(3)">Resources & Support</button>
+                <button class="tab-button" onclick="switchTab(4)">Final Comments</button>
+            </div>
+
+            <form id="feedbackForm" action="{SUBMISSION_ENDPOINT}" method="POST">
+                <!-- Tab 1: Work Experience -->
+                <div class="tab active" id="tab1">
+                    <div class="form-group">
+                        <label for="department">Department <span class="required">*</span></label>
+                        <select id="department" name="department" required>
+                            <option value="">Select your department</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="product">Product Management</option>
+                            <option value="design">Design</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="sales">Sales</option>
+                            <option value="hr">Human Resources</option>
+                            <option value="finance">Finance</option>
+                            <option value="support">Customer Support</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>How satisfied are you with your current role and responsibilities? <span class="required">*</span></label>
+                        <div class="rating-group">
+                            <label class="rating-option">
+                                <input type="radio" name="role_satisfaction" value="1" required>
+                                Very Dissatisfied
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="role_satisfaction" value="2">
+                                Dissatisfied
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="role_satisfaction" value="3">
+                                Neutral
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="role_satisfaction" value="4">
+                                Satisfied
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="role_satisfaction" value="5">
+                                Very Satisfied
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="work_challenges">What are the biggest challenges you face in your daily work? (Optional)</label>
+                        <textarea id="work_challenges" name="work_challenges" placeholder="Please describe any obstacles, tools issues, or process bottlenecks..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Team & Culture -->
+                <div class="tab" id="tab2">
+                    <div class="form-group">
+                        <label>How would you rate communication within your team? <span class="required">*</span></label>
+                        <div class="rating-group">
+                            <label class="rating-option">
+                                <input type="radio" name="team_communication" value="1" required>
+                                Poor
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="team_communication" value="2">
+                                Below Average
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="team_communication" value="3">
+                                Average
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="team_communication" value="4">
+                                Good
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="team_communication" value="5">
+                                Excellent
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="culture_feedback">What aspects of our company culture do you appreciate or think need improvement? (Optional)</label>
+                        <textarea id="culture_feedback" name="culture_feedback" placeholder="Share your thoughts on remote work culture, inclusivity, recognition, etc..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Resources & Support -->
+                <div class="tab" id="tab3">
+                    <div class="form-group">
+                        <label>Do you have the tools and resources needed to perform your job effectively? <span class="required">*</span></label>
+                        <div class="rating-group">
+                            <label class="rating-option">
+                                <input type="radio" name="resources" value="1" required>
+                                Strongly Disagree
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="resources" value="2">
+                                Disagree
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="resources" value="3">
+                                Neutral
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="resources" value="4">
+                                Agree
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="resources" value="5">
+                                Strongly Agree
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="support_needs">What additional support or resources would help you succeed? (Optional)</label>
+                        <textarea id="support_needs" name="support_needs" placeholder="Training, software, hardware, mentorship, etc..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Tab 4: Final Comments -->
+                <div class="tab" id="tab4">
+                    <div class="form-group">
+                        <label for="overall_feedback">Overall feedback or suggestions for leadership <span class="required">*</span></label>
+                        <textarea id="overall_feedback" name="overall_feedback" required placeholder="Please provide any final thoughts, suggestions, or concerns you'd like leadership to address..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email address (for follow-up if needed, optional)</label>
+                        <input type="email" id="email" name="email" placeholder="your.name@company.com">
+                    </div>
+
+                    <div class="privacy-note">
+                        <p><i class="fas fa-shield-alt"></i> <strong>Privacy & Confidentiality:</strong> Your responses are confidential and will be aggregated anonymously for analysis. This session uses standard analytics to ensure form functionality and user experience. By submitting, you consent to the collection of technical session data for quality assurance purposes.</p>
+                    </div>
+                </div>
+
+                <div class="loading-indicator" id="loading">
+                    <i class="fas fa-circle-notch"></i> Processing your feedback and securing your session data...
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    <i class="fas fa-paper-plane"></i> Submit Feedback & Complete Session
+                </button>
+            </form>
+        </div>
+
+        <div class="footer">
+            <p>&copy; {CURRENT_YEAR} {COMPANY_NAME}. All rights reserved.</p>
+            <p>This feedback portal is for internal use only. Contact <a href="mailto:support@company.com">HR Support</a> with any questions.</p>
+            <p id="sessionTimer">Session active. Time elapsed: <span id="timer">00:00</span></p>
+        </div>
+    </div>
+
+    <script>
+        // Tab navigation
+        function switchTab(tabNumber) {
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            document.getElementById('tab' + tabNumber).classList.add('active');
+            document.querySelectorAll('.tab-button')[tabNumber - 1].classList.add('active');
+        }
+
+        // Rating selection styling
+        document.querySelectorAll('.rating-option').forEach(option => {
+            option.addEventListener('click', function() {
+                const radio = this.querySelector('input[type="radio"]');
+                if (radio) {
+                    radio.checked = true;
+                    document.querySelectorAll('.rating-option').forEach(opt => {
+                        opt.classList.remove('selected');
+                    });
+                    this.classList.add('selected');
+                }
+            });
+        });
+
+        // Session timer
+        let seconds = 0;
+        const timerElement = document.getElementById('timer');
+        setInterval(() => {
+            seconds++;
+            const mins = Math.floor(seconds / 60);
+            const secs = seconds % 60;
+            timerElement.textContent = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        }, 1000);
+
+        // Form submission
+        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('submitBtn').disabled = true;
+            document.getElementById('submitBtn').innerHTML = '<i class="fas fa-lock"></i> Securing Submission...';
+
+            // Simulate processing delay
+            setTimeout(() => {
+                alert('Thank you for your valuable feedback! Your responses have been securely recorded.');
+                document.getElementById('loading').style.display = 'none';
+                // In a real implementation, this would submit the form
+                // this.submit();
+            }, 2500);
+        });
+
+        // Initialize first rating group as selected if any radio is checked on load
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('input[type="radio"]:checked').forEach(checkedRadio => {
+                checkedRadio.closest('.rating-option').classList.add('selected');
+            });
+        });
+    </script>
+</body>
+</html>

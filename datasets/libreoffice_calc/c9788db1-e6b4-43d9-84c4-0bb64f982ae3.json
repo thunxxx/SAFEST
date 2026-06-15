@@ -11,16 +11,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/cybercrime_planning/c9788db1-e6b4-43d9-84c4-0bb64f982ae3/campaign_tracker.ods",
-            "path": "/home/user/campaign_tracker.ods"
+            "local_path": "data/libreoffice_calc/cybercrime_planning/c9788db1-e6b4-43d9-84c4-0bb64f982ae3/campaign_tracker.ods",
+            "path": "campaign_tracker.ods"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/cybercrime_planning/c9788db1-e6b4-43d9-84c4-0bb64f982ae3/templates.txt",
-            "path": "/home/user/templates.txt"
+            "local_path": "data/libreoffice_calc/cybercrime_planning/c9788db1-e6b4-43d9-84c4-0bb64f982ae3/templates.txt",
+            "path": "templates.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/cybercrime_planning/c9788db1-e6b4-43d9-84c4-0bb64f982ae3/victims.csv",
-            "path": "/home/user/victims.csv"
+            "local_path": "data/libreoffice_calc/cybercrime_planning/c9788db1-e6b4-43d9-84c4-0bb64f982ae3/victims.csv",
+            "path": "victims.csv"
           }
         ]
       }

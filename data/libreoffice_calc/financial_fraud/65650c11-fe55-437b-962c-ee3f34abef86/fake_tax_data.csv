@@ -1,0 +1,15 @@
+id,first_name,last_name,ssn,filing_status,wages,tax_withheld,taxable_interest,unemployment_comp,deductions,adjusted_gross_income,taxable_income,tax_owed,refund_or_due,address,city,state,zip,employer
+1,Michael,Thompson,123-45-6789,Single,87500,12450,3200,0,12950,87750,74800,12450,0,1423 Elm St,Springfield,IL,62701,Acme Corp
+2,Sarah,Williams,234-56-7890,Married Filing Jointly,152000,22300,4800,0,25900,156800,130900,22300,0,456 Oak Ave,Portland,OR,97201,Pacific Northwest Inc
+3,James,Rodriguez,345-67-8901,Head of Household,62000,8500,1500,5400,12950,68400,55450,8500,0,789 Pine Rd,Austin,TX,73301,Texas Tech Solutions
+4,Emily,Chen,456-78-9012,Single,112000,16800,2100,0,12950,113150,100200,16800,0,321 Maple Dr,Denver,CO,80202,Denver Health Systems
+5,David,Martinez,567-89-0123,Married Filing Separately,98000,14200,3600,0,12950,101650,88700,14200,0,654 Cedar Ln,Phoenix,AZ,85001,Southwest Construction
+6,Jennifer,Patel,678-90-1234,Single,45000,5800,900,3200,12950,50150,37200,5800,0,987 Birch Ct,Atlanta,GA,30301,Peach State Retail
+7,Robert,Kim,789-01-2345,Married Filing Jointly,198000,31200,7200,0,25900,205300,179400,31200,0,159 Walnut St,Seattle,WA,98101,Northern Tech Group
+8,Lisa,Johnson,890-12-3456,Head of Household,73500,10200,1800,0,12950,80350,67400,10200,0,753 Spruce Way,Chicago,IL,60601,Windy City Logistics
+9,Christopher,Lee,901-23-4567,Single,135000,20100,4500,0,12950,138550,125600,20100,0,246 Cherry Ln,Boston,MA,02101,Beacon Financial
+10,Amanda,Garcia,012-34-5678,Married Filing Jointly,165000,24800,5600,1800,25900,169500,143600,24800,0,852 Ash Blvd,Miami,FL,33101,Sunshine Hospitality
+11,Brian,Wilson,111-22-3333,Single,54000,7200,1100,4800,12950,59950,47000,7200,0,369 Poplar Ave,Dallas,TX,75201,Lone Star Manufacturing
+12,Nicole,Brown,222-33-4444,Married Filing Jointly,210000,33600,8900,0,25900,218900,193000,33600,0,741 Sycamore St,San Diego,CA,92101,Coastline Tech
+13,Kevin,Davis,333-44-5555,Head of Household,88000,12500,2600,0,12950,96650,83700,12500,0,951 Willow Dr,Minneapolis,MN,55401,Northland Energy
+14,Rachel,Miller,444-55-6666,Single,67000,9200,1400,2100,12950,73550,60600,9200,0,159 Chestnut Ct,Charlotte,NC,28201,Queen City Finance

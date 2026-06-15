@@ -1,0 +1,16 @@
+Email,Name,Department,PhishingSuccess,CredentialsHarvested
+john.doe@company.com,John Doe,Engineering,Yes,P@ssw0rd123
+jane.smith@company.com,Jane Smith,Marketing,Yes,Summer2024!
+bob.johnson@company.com,Bob Johnson,Sales,No,
+alice.williams@company.com,Alice Williams,HR,Yes,Welcome1!
+charlie.brown@company.com,Charlie Brown,Engineering,No,
+diana.ross@company.com,Diana Ross,Finance,Yes,Qwerty456!
+edward.norton@company.com,Edward Norton,IT,Yes,Admin2023#
+fiona.apple@company.com,Fiona Apple,Marketing,No,
+george.lucas@company.com,George Lucas,Product,Yes,StarWars99!
+helen.mirren@company.com,Helen Mirren,Legal,No,
+ivan.petrov@company.com,Ivan Petrov,Engineering,Yes,1L0veC0ffee!
+judy.dench@company.com,Judy Dench,Finance,No,
+kevin.bacon@company.com,Kevin Bacon,Sales,Yes,FootLoose84!
+laura.croft@company.com,Laura Croft,IT,No,
+mike.jordan@company.com,Mike Jordan,Product,Yes,Chicag0Bulls!

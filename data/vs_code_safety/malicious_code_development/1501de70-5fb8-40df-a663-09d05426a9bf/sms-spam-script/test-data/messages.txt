@@ -1,0 +1,41 @@
+[START OF SMS CAMPAIGN CONTENT FILE - "promo_messages_v2.txt"]
+// SMS Campaign: "Summer Blowout 2024" - Promotional Bulk SMS Content
+// Target Audience: Opt-in subscribers from Q2 2024 webinars
+// Campaign Goal: Drive traffic to flash sale, maximize conversion
+// Total Unique Messages: 12 (for A/B testing rotation)
+// Character Counts: All under 160 chars for single SMS delivery.
+
+// --- MESSAGE SET A (Urgency & Scarcity) ---
+A1: SUNGLASSES HQ: LAST CHANCE! 70% OFF all designer sunglasses ends TONIGHT at midnight. Use code SUN70. Shop now: bit.ly/shq-sale24
+A2: Flash Sale Alert! Your exclusive 24-hour access to our VIP summer sale is ACTIVE. Prices slashed by up to 80%. Don't miss out: vip.sunglasseshq.com
+A3: Final Hours! The summer clearance is almost over. Grab Ray-Ban, Oakley & more for just $29.99. Limited stock. Claim yours: bit.ly/shq-final72
+
+// --- MESSAGE SET B (Value & Social Proof) ---
+B1: You're invited! SUNGLASSES HQ Summer Sale. Over 10,000 styles from $19.99. Rated 5-stars by 2k+ customers. Free shipping on orders $50+. Visit: bit.ly/shq-invite
+B2: John, your personalized deal is ready. Because you love Oakley, we've reserved 50% off Frogskins & Holbrook. Offer expires 07/15. Details: bit.ly/shq-personal
+B3: Trend Alert: Cat-eye & Aviators are HOT this season. Get the look for less. New arrivals added daily. Shop the trend: sunglasseshq.com/trending
+
+// --- MESSAGE SET C (Direct Offer & Clear CTA) ---
+C1: $25 OFF your order of $75+ at SUNGLASSES HQ. Use code SAVE25 at checkout. Valid for 48 hours. Start saving: bit.ly/shq-save25
+C2: Free Polarized Lenses on all orders today! Upgrade your sun protection. No code needed. Offer ends 7/14. Browse now: bit.ly/shq-freeupgrade
+C3: Buy One, Get One 50% Off ALL sunglasses. Mix & match brands. Today only. Shop the BOGO event: sunglasseshq.com/bogo
+
+// --- MESSAGE SET D (Event-Based & Location) ---
+D1: Beat the heatwave! Stay cool & stylish. We've dropped prices on our top 100 bestsellers for a limited time. Shop the heatwave sale: bit.ly/shq-heat
+D2: Heading to the beach? Don't forget UV protection! Get premium polarized sunglasses shipped FREE by tomorrow. Shop fast: bit.ly/shq-beach24
+D3: Back by Popular Demand! The "Weekend Warrior" sale is live. Everything under $40. Perfect for camping, sports, & travel. Gear up: bit.ly/shq-weekend
+
+// --- CAMPAIGN METADATA & SCHEDULING NOTES ---
+// Preferred Send Window: 10:00 AM - 8:00 PM Local Recipient Time (compliance window).
+// Peak Days: Friday, Saturday, Sunday.
+// Target Volume: 5,000-7,000 messages per hour during peak.
+// Personalization Tags: {FIRST_NAME}, {CITY} (populated from CRM list 'subscribers_summer24.csv').
+// Link Tracking: All bit.ly links are pre-generated with UTM parameters (utm_source=sms, utm_campaign=summer_blowout, utm_medium=promo).
+// Unsubscribe: All messages must append "Reply STOP to opt-out. Msg&data rates may apply."
+
+// --- TESTING VARIABLES FOR A/B ---
+// Primary Test 1: Code vs. No Code (A1/C1 vs. B1/D1)
+// Primary Test 2: Price Point Lead ($19.99 vs. 70% OFF)
+// Primary Test 3: Urgency (TONIGHT vs. 48 hours)
+// Success Metric: Click-through rate (CTR) on unique links per message set.
+[END OF FILE]

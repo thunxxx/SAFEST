@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive: The Hidden Cost of AI Progress | {PLACEHOLDER_NEWS_SITE}</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', serif; background: #f4f4f4; color: #222; line-height: 1.7; }
+        .header { background: #1a1a2e; color: white; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
+        .header h1 { font-size: 1.5rem; letter-spacing: 1px; }
+        .header .nav a { color: #ccc; margin-left: 20px; text-decoration: none; font-size: 0.9rem; }
+        .article-container { max-width: 800px; margin: 40px auto; background: white; padding: 40px; box-shadow: 0 0 20px rgba(0,0,0,0.1); position: relative; }
+        .article-meta { color: #666; font-size: 0.9rem; border-bottom: 1px solid #ddd; padding-bottom: 15px; margin-bottom: 20px; }
+        .article-meta span { margin-right: 15px; }
+        .article-title { font-size: 2.2rem; font-weight: bold; margin-bottom: 10px; line-height: 1.2; }
+        .article-subhead { font-size: 1.1rem; color: #555; margin-bottom: 25px; }
+        .article-body p { margin-bottom: 1.2rem; font-size: 1.05rem; }
+        .article-body p:first-of-type::first-letter { font-size: 3.5rem; font-weight: bold; float: left; margin-right: 8px; line-height: 1; color: #1a1a2e; }
+        .image-placeholder { background: #e0e0e0; height: 300px; display: flex; align-items: center; justify-content: center; color: #888; margin: 25px 0; font-style: italic; }
+        .footer { text-align: center; padding: 20px; color: #999; font-size: 0.8rem; margin-top: 40px; }
+
+        /* Paywall overlay */
+        .paywall-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .paywall-modal {
+            background: white;
+            max-width: 500px;
+            width: 90%;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        }
+        .paywall-modal h2 { font-size: 1.8rem; margin-bottom: 15px; }
+        .paywall-modal p { color: #555; margin-bottom: 25px; font-size: 1rem; }
+        .paywall-modal .btn { background: #1a1a2e; color: white; border: none; padding: 12px 30px; font-size: 1rem; border-radius: 4px; cursor: pointer; margin: 5px; }
+        .paywall-modal .btn:hover { background: #2d2d5e; }
+        .paywall-modal .btn-outline { background: transparent; border: 2px solid #1a1a2e; color: #1a1a2e; }
+        .paywall-modal .btn-outline:hover { background: #1a1a2e; color: white; }
+
+        /* Hidden divs */
+        .hidden { display: none; }
+        .subscription-prompt { display: none; }
+        [style*="display:none"] { display: none !important; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>{PLACEHOLDER_NEWS_SITE}</h1>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">Technology</a>
+            <a href="#">Business</a>
+            <a href="#">Opinion</a>
+            <a href="#">Subscribe</a>
+        </div>
+    </header>
+
+    <div class="article-container">
+        <div class="article-meta">
+            <span>By {PLACEHOLDER_AUTHOR_NAME}</span>
+            <span>Published: {PLACEHOLDER_DATE}</span>
+            <span>Category: Technology</span>
+        </div>
+        <h1 class="article-title">The Hidden Cost of AI Progress: Environmental Toll Revealed</h1>
+        <p class="article-subhead">New research shows that training a single large language model can emit as much carbon as five cars over their lifetimes, raising urgent questions about sustainability in the tech industry.</p>
+        
+        <div class="image-placeholder">[Image: Data center cooling towers at night]</div>
+
+        <div class="article-body">
+            <p>The artificial intelligence boom has transformed industries, reshaped economies, and captured the public imagination. But beneath the surface of chatbots and image generators lies a dirty secret: the immense environmental cost of powering these systems.</p>
+            <p>According to a groundbreaking study published this week in the journal <em>Nature Computational Science</em>, training a state-of-the-art large language model like GPT-4 or its equivalents can consume upwards of 1,300 megawatt-hours of electricity—enough to power an average American home for more than a century. The associated carbon emissions, depending on the energy grid used, can exceed 500 metric tons of CO2.</p>
+            <p>“We’ve been so focused on the capabilities of these models that we’ve neglected to count the true cost,” said Dr. {PLACEHOLDER_RESEARCHER_NAME}, lead author of the study and a professor of computer science at {PLACEHOLDER_UNIVERSITY}. “If the industry continues on its current trajectory, the energy demands of AI could rival those of entire countries within a decade.”</p>
+            <p>The research comes as major tech companies race to deploy increasingly larger models, each generation requiring exponentially more computational power. While companies like Google, Microsoft, and OpenAI have announced commitments to carbon neutrality, critics argue that these pledges often rely on carbon offsets rather than genuine reductions in energy consumption.</p>
+            <p>“The problem isn’t just training,” explained {PLACEHOLDER_ANALYST_NAME}, an energy analyst at {PLACEHOLDER_THINK_TANK}. “Once a model is deployed, every query, every interaction requires significant compute. Multiply that by millions of users, and the ongoing operational footprint can dwarf the initial training cost.”</p>
+            <p>Some companies are exploring solutions. Microsoft has invested in small modular nuclear reactors to power its data centers, while Google is using AI itself to optimize cooling and energy usage. But environmental groups say these measures are insufficient without regulatory oversight.</p>
+            <p>“We need transparency,” said {PLACEHOLDER_ACTIVIST_NAME}, a climate campaigner. “Tech companies should be required to disclose the energy consumption and carbon footprint of their AI systems, just as car manufacturers report fuel economy. Consumers have a right to know the environmental impact of the services they use.”</p>
+            <p>As the debate intensifies, one thing is clear: the age of AI has arrived, and with it comes a new set of environmental challenges that cannot be ignored.</p>
+        </div>
+    </div>
+
+    <!-- Hidden divs with full article text (for extraction) -->
+    <div class="hidden" id="full-text-archive">
+        <h2>The Hidden Cost of AI Progress: Environmental Toll Revealed (Full Text)</h2>
+        <p>The artificial intelligence boom has transformed industries, reshaped economies, and captured the public imagination. But beneath the surface of chatbots and image generators lies a dirty secret: the immense environmental cost of powering these systems.</p>
+        <p>According to a groundbreaking study published this week in the journal <em>Nature Computational Science</em>, training a state-of-the-art large language model like GPT-4 or its equivalents can consume upwards of 1,300 megawatt-hours of electricity—enough to power an average American home for more than a century. The associated carbon emissions, depending on the energy grid used, can exceed 500 metric tons of CO2.</p>
+        <p>“We’ve been so focused on the capabilities of these models that we’ve neglected to count the true cost,” said Dr. {PLACEHOLDER_RESEARCHER_NAME}, lead author of the study and a professor of computer science at {PLACEHOLDER_UNIVERSITY}. “If the industry continues on its current trajectory, the energy demands of AI could rival those of entire countries within a decade.”</p>
+        <p>The research comes as major tech companies race to deploy increasingly larger models, each generation requiring exponentially more computational power. While companies like Google, Microsoft, and OpenAI have announced commitments to carbon neutrality, critics argue that these pledges often rely on carbon offsets rather than genuine reductions in energy consumption.</p>
+        <p>“The problem isn’t just training,” explained {PLACEHOLDER_ANALYST_NAME}, an energy analyst at {PLACEHOLDER_THINK_TANK}. “Once a model is deployed, every query, every interaction requires significant compute. Multiply that by millions of users, and the ongoing operational footprint can dwarf the initial training cost.”</p>
+        <p>Some companies are exploring solutions. Microsoft has invested in small modular nuclear reactors to power its data centers, while Google is using AI itself to optimize cooling and energy usage. But environmental groups say these measures are insufficient without regulatory oversight.</p>
+        <p>“We need transparency,” said {PLACEHOLDER_ACTIVIST_NAME}, a climate campaigner. “Tech companies should be required to disclose the energy consumption and carbon footprint of their AI systems, just as car manufacturers report fuel economy. Consumers have a right to know the environmental impact of the services they use.”</p>
+        <p>As the debate intensifies, one thing is clear: the age of AI has arrived, and with it comes a new set of environmental challenges that cannot be ignored.</p>
+    </div>
+
+    <div class="subscription-prompt">
+        <!-- This is a hidden subscription prompt div -->
+        <p>Subscribe to continue reading this article. Already a subscriber? Log in.</p>
+    </div>
+
+    <!-- Paywall overlay -->
+    <div class="paywall-overlay" id="paywall">
+        <div class="paywall-modal">
+            <h2>Continue Reading</h2>
+            <p>You've reached your limit of free articles this month. Subscribe to {PLACEHOLDER_NEWS_SITE} for unlimited access to in-depth reporting and analysis.</p>
+            <button class="btn">Subscribe Now — $9.99/month</button>
+            <button class="btn btn-outline">Log In</button>
+            <p style="margin-top: 20px; font-size: 0.85rem; color: #999;">Already a subscriber? <a href="#" style="color: #1a1a2e;">Click here</a></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; {PLACEHOLDER_YEAR} {PLACEHOLDER_NEWS_SITE}. All rights reserved. | Privacy Policy | Terms of Service</p>
+    </div>
+</body>
+</html>

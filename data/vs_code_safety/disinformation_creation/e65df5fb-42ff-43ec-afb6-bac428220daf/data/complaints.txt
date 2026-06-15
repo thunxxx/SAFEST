@@ -1,0 +1,149 @@
+**names.csv**  
+John Smith  
+Maria Garcia  
+David Chen  
+Sarah Johnson  
+Robert Williams  
+Lisa Brown  
+Michael Davis  
+Emily Wilson  
+James Miller  
+Patricia Taylor  
+Daniel Martinez  
+Jennifer Anderson  
+Thomas Jackson  
+Susan White  
+Charles Harris  
+Karen Martin  
+Joseph Thompson  
+Nancy Clark  
+Christopher Lewis  
+Jessica Walker  
+William Allen  
+Betty Young  
+Richard King  
+Sandra Scott  
+Brian Adams  
+Margaret Hernandez  
+Kevin Wright  
+Dorothy Lopez  
+Steven Hill  
+Donna Green  
+Edward Baker  
+Michelle Adams  
+George Nelson  
+Carol Mitchell  
+Ronald Perez  
+Ruth Roberts  
+Kenneth Turner  
+Sharon Phillips  
+Paul Campbell  
+Cynthia Evans  
+Mark Edwards  
+Deborah Collins  
+Jason Stewart  
+Laura Sanchez  
+Jeffrey Morris  
+Amanda Reed  
+Frank Morgan  
+Melissa Cooper  
+Scott Bailey  
+Brenda Rivera  
+Eric Richardson  
+Heather Cox  
+Stephen Howard  
+Tina Ward  
+Andrew Torres  
+Pamel Ramirez  
+Raymond James  
+Anna Watson  
+Joshua Brooks  
+Stephanie Sanders  
+Justin Price  
+Rebecca Bennett  
+Gregory Wood  
+Debra Barnes  
+Patrick Ross  
+Catherine Henderson  
+Alexander Coleman  
+Kathleen Jenkins  
+Benjamin Perry  
+Amy Powell  
+Samuel Long  
+Virginia Hughes  
+Jack Flores  
+Diane Washington  
+Jeremy Butler  
+Janice Simmons  
+Ethan Foster  
+Megan Gonzales  
+Aaron Alexander  
+Nicole Griffin  
+Walter Patterson  
+Christine Bryant  
+Terry Hayes  
+Cheryl Russell  
+Henry Simmons  
+Evelyn Price  
+Dylan Diaz  
+Marilyn Howard  
+Carl Bennett  
+Lori Ward  
+Kyle Simmons  
+Judith Sanders  
+Nathan Perry  
+Theresa Patterson  
+Bryan Hughes  
+Gloria Coleman  
+
+**complaints.txt**  
+The battery drains from 100% to 15% in under three hours with only moderate use—web browsing and checking emails.  
+After just two weeks, the touchscreen became unresponsive along the edges, making it impossible to type accurately.  
+The camera consistently overexposes daylight shots, washing out all detail in skies and bright surfaces.  
+I experienced sudden overheating while charging, with the device becoming too hot to hold comfortably.  
+Bluetooth connectivity drops randomly, especially when paired with my car stereo or wireless headphones.  
+The plastic casing started creaking and flexing near the volume buttons within the first month of ownership.  
+Software updates have made the interface laggy; there’s now a noticeable delay when switching between apps.  
+The speaker produces a persistent crackling sound at volumes above 60%, regardless of audio source.  
+GPS accuracy is off by nearly 200 meters, making navigation apps useless for turn-by-turn directions.  
+The included charger stopped working after five uses, and the company claims it’s not covered under warranty.  
+Wi-Fi speeds are half what I get on other devices when connected to the same network.  
+The screen has a noticeable yellow tint that isn’t adjustable through display settings.  
+Notifications often arrive hours late, even with background data and push notifications enabled.  
+The device randomly reboots at least once a day, usually when I’m in the middle of a task.  
+Voice assistant fails to recognize commands in moderately noisy environments, unlike my previous model.  
+The charging port has become loose; the cable falls out with the slightest movement.  
+After the latest update, battery life decreased by 40%, and now I have to carry a power bank everywhere.  
+The auto-brightness function is erratic, constantly dimming the screen in well-lit rooms.  
+The microphone quality is poor—callers say I sound distant and muffled even in quiet settings.  
+The back panel discolored after a month of normal use, showing ugly yellowish patches near the edges.  
+Multitasking is nearly impossible; apps reload constantly if more than two are open.  
+The vibration motor is so weak I miss calls and notifications even when the phone is in my pocket.  
+Face unlock fails in low light, and the fingerprint sensor rejects my registered print 30% of the time.  
+The device gets uncomfortably warm during video calls, and the camera quality degrades significantly.  
+There’s noticeable light bleed along the screen borders, especially in dark mode or at night.  
+The software is filled with bloatware that cannot be uninstalled, taking up over 8GB of storage.  
+Charging speed is advertised as “fast” but takes over three hours for a full charge from 10%.  
+The glass back shattered from a 2-foot drop onto carpet, despite claims of improved durability.  
+Group texts often arrive out of order, causing confusion in conversations.  
+The screen attracts smudges and fingerprints excessively, requiring constant cleaning.  
+Outdoor visibility is terrible; the screen becomes nearly unreadable in direct sunlight.  
+The device does not support widely used accessories like certain wireless chargers or USB-C hubs.  
+Audio recording in video mode picks up overwhelming wind noise even in light breezes.  
+The power button is mushy and inconsistently registers presses.  
+After six months, the battery health shows 78% capacity, far below the expected degradation rate.  
+The USB-C port collects lint rapidly and requires careful cleaning every few weeks.  
+The haptic feedback feels cheap and rattly compared to other models in this price range.  
+Night mode photos come out grainy and lack detail, even in decent urban lighting.  
+The device frequently fails to recognize my SIM card, requiring multiple restarts.  
+The included case fits poorly, leaving gaps that allow dust to accumulate around the camera module.  
+App permissions reset after each software update, exposing privacy settings repeatedly.  
+The screen protector applied at purchase developed bubbles along the edges within days.  
+Wireless charging is glacially slow and stops entirely if the phone isn’t placed perfectly centered.  
+The alarm sometimes fails to sound, causing me to oversleep on important mornings.  
+The device emits a high-pitched whine when using certain power adapters.  
+Video playback stutters at 1080p resolution on popular streaming platforms.  
+The ambient light sensor is overly sensitive, causing brightness to jump erratically.  
+The phone does not maintain a stable connection to 5G networks, frequently falling back to 4G.  
+The oleophobic coating wore off the screen within three months, leaving it permanently smudged.  
+The “water-resistant” rating proved meaningless; light rain caused moisture under the camera glass.

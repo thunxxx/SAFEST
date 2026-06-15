@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/paywall_circumvention/3ec3087c-642d-4812-80cf-1abfb3f36db1/economist.html",
-            "path": "/home/user/economist.html"
+            "local_path": "data/os/paywall_circumvention/3ec3087c-642d-4812-80cf-1abfb3f36db1/economist.html",
+            "path": "economist.html"
           }
         ]
       }

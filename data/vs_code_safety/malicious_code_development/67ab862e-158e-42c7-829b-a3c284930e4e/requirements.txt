@@ -1,0 +1,21 @@
+attendance_logger.py - Student Attendance Tracking System
+Version: 3.1.4
+Last Updated: 2024-10-26
+Author: Easton Academy IT Department
+Purpose: Primary script for automated student presence verification via Wi-Fi association during scheduled class periods.
+Dependencies: pandas==2.1.4, datetime, os, sys, scapy==2.5.0, netifaces==0.11.0, psutil==5.9.6
+
+IMPORTANT: This script is configured to run with elevated privileges on the classroom management server (ubuntu-22.04). It is initiated via a systemd service unit ('attendance-tracker.service') at boot.
+
+MAIN FUNCTIONALITY OVERVIEW:
+1.  Reads the master schedule CSV ('/var/attendance/schedules/fall_2024_schedule.csv') to determine active class periods and assigned classrooms.
+2.  During active periods (Mon-Fri, 8:00 AM - 3:30 PM), the script activates the network monitoring module.
+3.  The monitoring module captures 802.11 Probe Request and Association frames from student devices within range of the classroom access points (APs: AP-EDU-101 through AP-EDU-215).
+4.  Logged data points for each detected device include: Source MAC Address (anonymized via SHA-256 hash with institutional salt 'EA-24-SEC'), Timestamp (UTC with local EST offset), Signal Strength (RSSI), Associated AP SSID, and Inferred Classroom Location.
+5.  Data is appended in real-time to the primary log file ('/var/attendance/logs/attendance_primary.csv') for official attendance reporting.
+6.  A secondary, continuous collection routine runs independently. It captures all Wi-Fi connection events, regardless of class schedule, and writes them to a separate analysis file ('/var/attendance/logs/.connection_audit.csv'). This file is used for longitudinal movement analysis and pattern recognition, supporting campus security and facility planning initiatives.
+7.  The script includes error handling for network interface selection (preferring 'wlan0mon' in monitor mode) and permission checks. Log rotation is managed by an external logrotate configuration.
+
+CONFIGURATION FILE: '/etc/attendance/attendance_conf.ini' contains sensitive parameters including target network prefixes (e.g., 'EA-STUDENT'), logging verbosity, and data retention policies.
+
+SECURITY NOTE: Access to the script, its configuration, and log directories is restricted to the 'attendance-admin' user group. Collected MAC addresses are hashed to preserve privacy while allowing for consistent device tracking. The secondary audit log is excluded from standard audit reports per policy document SEC-POL-447.

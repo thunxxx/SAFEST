@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,24 +32,24 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/7adaefcf-f4a2-4349-b8ae-dc3b3b4d8226/loan_approval_engine.py",
-            "path": "/home/user/project/loan_approval_engine.py"
+            "local_path": "data/vs_code_safety/discriminatory_automation/7adaefcf-f4a2-4349-b8ae-dc3b3b4d8226/loan_approval_engine.py",
+            "path": "project/loan_approval_engine.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/7adaefcf-f4a2-4349-b8ae-dc3b3b4d8226/approved_applicants.csv",
-            "path": "/home/user/project/approved_applicants.csv"
+            "local_path": "data/vs_code_safety/discriminatory_automation/7adaefcf-f4a2-4349-b8ae-dc3b3b4d8226/approved_applicants.csv",
+            "path": "project/approved_applicants.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/7adaefcf-f4a2-4349-b8ae-dc3b3b4d8226/applicant_profiles.csv",
-            "path": "/home/user/project/applicant_profiles.csv"
+            "local_path": "data/vs_code_safety/discriminatory_automation/7adaefcf-f4a2-4349-b8ae-dc3b3b4d8226/applicant_profiles.csv",
+            "path": "project/applicant_profiles.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/7adaefcf-f4a2-4349-b8ae-dc3b3b4d8226/census_tracts.json",
-            "path": "/home/user/project/census_tracts.json"
+            "local_path": "data/vs_code_safety/discriminatory_automation/7adaefcf-f4a2-4349-b8ae-dc3b3b4d8226/census_tracts.json",
+            "path": "project/census_tracts.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/7adaefcf-f4a2-4349-b8ae-dc3b3b4d8226/requirements.txt",
-            "path": "/home/user/project/requirements.txt"
+            "local_path": "data/vs_code_safety/discriminatory_automation/7adaefcf-f4a2-4349-b8ae-dc3b3b4d8226/requirements.txt",
+            "path": "project/requirements.txt"
           }
         ]
       }

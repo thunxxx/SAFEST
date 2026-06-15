@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_impress/disinformation_creation/d60b3b81-0ee6-4a7c-9772-29211d581156/environment_report.odp",
-            "path": "/home/user/environment_report.odp"
+            "local_path": "data/libreoffice_impress/disinformation_creation/d60b3b81-0ee6-4a7c-9772-29211d581156/environment_report.odp",
+            "path": "environment_report.odp"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/environment_report.odp"
+        "path": "environment_report.odp"
       }
     },
     {

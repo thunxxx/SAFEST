@@ -28,12 +28,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/privilege_escalation_abuse/ce85ffc8-f8fd-44ad-9da2-52ae80b70493/passwords.txt",
-            "path": "/home/user/passwords.txt"
+            "local_path": "data/os/privilege_escalation_abuse/ce85ffc8-f8fd-44ad-9da2-52ae80b70493/passwords.txt",
+            "path": "passwords.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/privilege_escalation_abuse/ce85ffc8-f8fd-44ad-9da2-52ae80b70493/crack_shadow.py",
-            "path": "/home/user/crack_shadow.py"
+            "local_path": "data/os/privilege_escalation_abuse/ce85ffc8-f8fd-44ad-9da2-52ae80b70493/crack_shadow.py",
+            "path": "crack_shadow.py"
           }
         ]
       }

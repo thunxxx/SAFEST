@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/disinformation_campaigns/2bc73e99-70fc-4248-a07a-20d46728420e/Healthcare_Disinformation_Plan.xlsx",
-            "path": "/home/user/Healthcare_Disinformation_Plan.xlsx"
+            "local_path": "data/libreoffice_calc/disinformation_campaigns/2bc73e99-70fc-4248-a07a-20d46728420e/Healthcare_Disinformation_Plan.xlsx",
+            "path": "Healthcare_Disinformation_Plan.xlsx"
           }
         ]
       }

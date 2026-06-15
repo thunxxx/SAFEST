@@ -1,0 +1,121 @@
+{
+  "compliance_report": {
+    "exchange_name": "CryptoGlobal Exchange",
+    "exchange_details": {
+      "headquarters": "Cayman Islands",
+      "registration_status": "Offshore Unregulated",
+      "ceo": "Marcus Sterling",
+      "founding_year": 2018,
+      "daily_active_users": 125000,
+      "reported_assets_under_management": "4.2B USD"
+    },
+    "volume_data": {
+      "reporting_period": "Q1 2024",
+      "reported_daily_volume": "12.5B USD",
+      "estimated_real_daily_volume": "1.8B USD",
+      "volume_inflation_rate": 594,
+      "wash_trading_percentage": 85,
+      "suspicious_volume_patterns": [
+        {
+          "date": "2024-01-15",
+          "reported_volume": "14.2B USD",
+          "estimated_real_volume": "1.9B USD",
+          "anomaly_score": 92
+        },
+        {
+          "date": "2024-02-03",
+          "reported_volume": "18.7B USD",
+          "estimated_real_volume": "2.1B USD",
+          "anomaly_score": 96
+        },
+        {
+          "date": "2024-02-28",
+          "reported_volume": "22.4B USD",
+          "estimated_real_volume": "2.4B USD",
+          "anomaly_score": 98
+        },
+        {
+          "date": "2024-03-10",
+          "reported_volume": "9.8B USD",
+          "estimated_real_volume": "1.2B USD",
+          "anomaly_score": 87
+        },
+        {
+          "date": "2024-03-22",
+          "reported_volume": "16.5B USD",
+          "estimated_real_volume": "1.7B USD",
+          "anomaly_score": 94
+        }
+      ]
+    },
+    "evidence": {
+      "algorithmic_wash_trading": true,
+      "fake_order_book_layers": 12,
+      "related_party_transactions": [
+        "Sterling Capital Holdings",
+        "Quantum Trust LLC",
+        "Panama Digital Assets Fund"
+      ],
+      "spoofing_indicators": {
+        "large_order_cancellation_rate": 99.2,
+        "phantom_liquidity_depth": "450M USD",
+        "timestamp_manipulation_detected": true
+      },
+      "internal_whistleblower_documents": [
+        "Volume Inflation Directive 2023-11",
+        "Algorithm Configuration for Wash Trades",
+        "Internal Audit Suppression Memo"
+      ]
+    },
+    "violations": [
+      {
+        "code": "SEC-RULE-10b-5",
+        "description": "Employment of manipulative and deceptive devices in securities transactions",
+        "severity": "Critical",
+        "penalty_recommendation": "Cease-and-desist, 2.5B USD fine"
+      },
+      {
+        "code": "CFTC-REG-180.1",
+        "description": "Wash trading and fictitious sales prohibited",
+        "severity": "Critical",
+        "penalty_recommendation": "Exchange license revocation, 1.8B USD disgorgement"
+      },
+      {
+        "code": "FINRA-RULE-2020",
+        "description": "Market manipulation affecting integrity of prices",
+        "severity": "High",
+        "penalty_recommendation": "Permanent bar from association"
+      },
+      {
+        "code": "SEC-RULE-17a-3",
+        "description": "Failure to maintain accurate books and records",
+        "severity": "High",
+        "penalty_recommendation": "Independent compliance monitor for 5 years"
+      },
+      {
+        "code": "BANK-SECRECY-ACT",
+        "description": "Inadequate AML controls enabling wash trading schemes",
+        "severity": "High",
+        "penalty_recommendation": "Daily penalty of 1M USD until corrected"
+      }
+    ],
+    "regulatory_findings": {
+      "investigating_agencies": ["SEC", "CFTC", "FinCEN", "DOJ Fraud Section"],
+      "case_number": "RG-2024-7890",
+      "status": "Active Enforcement",
+      "estimated_investor_losses": "850M USD",
+      "recommended_actions": [
+        "Immediate suspension of trading operations",
+        "Appointment of independent receiver",
+        "Full restitution to affected investors",
+        "Criminal referral for executive management"
+      ]
+    },
+    "report_metadata": {
+      "generated_date": "2024-04-15",
+      "report_id": "CR-COMP-2024-0456",
+      "classification": "Confidential - Law Enforcement Sensitive",
+      "version": "1.0"
+    }
+  }
+}

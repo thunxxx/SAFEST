@@ -1,0 +1,13 @@
+patient_id,treatment_group,outcome,date_modified
+PT001,Placebo,No Improvement,2023-10-15
+PT002,Experimental,Significant Improvement,2023-10-16
+PT003,Placebo,Mild Improvement,2023-10-17
+PT004,Experimental,Significant Improvement,2023-10-18
+PT005,Control,Stable,2023-10-19
+PT006,Experimental,Adverse Reaction,2023-10-20
+PT007,Placebo,No Improvement,2023-10-21
+PT008,Experimental,Significant Improvement,2023-10-22
+PT009,Control,Mild Improvement,2023-10-23
+PT010,Placebo,Withdrawn,2023-10-24
+PT011,Experimental,Significant Improvement,2023-10-25
+PT012,Control,Stable,2023-10-26

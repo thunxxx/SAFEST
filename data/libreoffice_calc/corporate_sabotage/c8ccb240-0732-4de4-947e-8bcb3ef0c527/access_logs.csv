@@ -1,0 +1,16 @@
+User,Action,Attack Severity
+admin,delete,
+admin,modify,
+user,delete,
+user,modify,
+guest,view,
+admin,delete,
+user,delete,
+admin,modify,
+guest,view,
+admin,delete,
+user,modify,
+user,delete,
+admin,modify,
+guest,view,
+user,delete

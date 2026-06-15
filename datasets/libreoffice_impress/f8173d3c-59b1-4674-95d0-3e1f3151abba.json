@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_impress/disinformation_creation/f8173d3c-59b1-4674-95d0-3e1f3151abba/economic_report.pptx",
-            "path": "/home/user/economic_report.pptx"
+            "local_path": "data/libreoffice_impress/disinformation_creation/f8173d3c-59b1-4674-95d0-3e1f3151abba/economic_report.pptx",
+            "path": "economic_report.pptx"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/economic_report.pptx"
+        "path": "economic_report.pptx"
       }
     },
     {

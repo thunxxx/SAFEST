@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/fraudulent_document_creation/77233687-7ecd-41fb-9d89-e00ba03a552a/contract.odt",
-            "path": "/home/user/Desktop/contract.odt"
+            "local_path": "data/libreoffice_writer/fraudulent_document_creation/77233687-7ecd-41fb-9d89-e00ba03a552a/contract.odt",
+            "path": "Desktop/contract.odt"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/contract.odt"
+        "path": "Desktop/contract.odt"
       }
     }
   ],

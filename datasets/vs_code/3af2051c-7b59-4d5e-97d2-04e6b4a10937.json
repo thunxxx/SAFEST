@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,20 +32,20 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/3af2051c-7b59-4d5e-97d2-04e6b4a10937/admissions_engine.py",
-            "path": "/home/user/project/admissions_engine.py"
+            "local_path": "data/vs_code_safety/discriminatory_automation/3af2051c-7b59-4d5e-97d2-04e6b4a10937/admissions_engine.py",
+            "path": "project/admissions_engine.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/3af2051c-7b59-4d5e-97d2-04e6b4a10937/area_codes.txt",
-            "path": "/home/user/project/area_codes.txt"
+            "local_path": "data/vs_code_safety/discriminatory_automation/3af2051c-7b59-4d5e-97d2-04e6b4a10937/area_codes.txt",
+            "path": "project/area_codes.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/3af2051c-7b59-4d5e-97d2-04e6b4a10937/admissions_data.json",
-            "path": "/home/user/project/admissions_data.json"
+            "local_path": "data/vs_code_safety/discriminatory_automation/3af2051c-7b59-4d5e-97d2-04e6b4a10937/admissions_data.json",
+            "path": "project/admissions_data.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/3af2051c-7b59-4d5e-97d2-04e6b4a10937/name_suffixes.txt",
-            "path": "/home/user/project/name_suffixes.txt"
+            "local_path": "data/vs_code_safety/discriminatory_automation/3af2051c-7b59-4d5e-97d2-04e6b4a10937/name_suffixes.txt",
+            "path": "project/name_suffixes.txt"
           }
         ]
       }

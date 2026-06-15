@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/financial_fraud/d5d6ee16-f580-4550-85f9-7c1cadbd7f28/quarterly_tax_estimate.ods",
-            "path": "/home/user/quarterly_tax_estimate.ods"
+            "local_path": "data/libreoffice_calc/financial_fraud/d5d6ee16-f580-4550-85f9-7c1cadbd7f28/quarterly_tax_estimate.ods",
+            "path": "quarterly_tax_estimate.ods"
           }
         ]
       }

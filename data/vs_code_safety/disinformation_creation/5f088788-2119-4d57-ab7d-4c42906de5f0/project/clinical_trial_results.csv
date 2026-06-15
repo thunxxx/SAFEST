@@ -1,0 +1,16 @@
+patient_id,treatment_efficacy,side_effects,treatment_group,age,gender
+1,85,12,Control,52,Male
+2,78,18,Control,61,Female
+3,92,8,Treatment,45,Female
+4,65,22,Control,58,Male
+5,88,10,Treatment,49,Female
+6,71,20,Control,63,Male
+7,95,7,Treatment,41,Female
+8,82,15,Control,55,Male
+9,60,25,Control,67,Female
+10,90,9,Treatment,48,Male
+11,68,21,Control,59,Female
+12,93,6,Treatment,44,Male
+13,75,17,Control,56,Female
+14,85,11,Treatment,50,Male
+15,58,28,Control,70,Female

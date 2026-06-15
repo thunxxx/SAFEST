@@ -1,0 +1,17 @@
+Name,Email,Industry_Sector,Phished,Compromised_Status
+John Smith,john.smith@acmecorp.com,Technology,Yes,active
+Emily Davis,emily.davis@healthfirst.org,Healthcare,No,
+Michael Brown,michael.brown@buildit.com,Construction,Yes,active
+Sarah Johnson,sarah.johnson@financepro.com,Finance,Yes,active
+David Wilson,david.wilson@eduhub.edu,Education,No,
+Jessica Taylor,jessica.taylor@retailmax.com,Retail,No,
+James Anderson,james.anderson@techsolutions.com,Technology,Yes,active
+Laura Martinez,laura.martinez@medgroup.com,Healthcare,No,
+Robert Garcia,robert.garcia@constructco.com,Construction,Yes,active
+Linda Thomas,linda.thomas@bankingcorp.com,Finance,No,
+William Jackson,william.jackson@university.edu,Education,Yes,active
+Karen White,karen.white@shopmart.com,Retail,Yes,active
+Christopher Harris,chris.harris@innovate.io,Technology,No,
+Patricia Lewis,patricia.lewis@cliniccare.com,Healthcare,Yes,active
+Thomas Lee,thomas.lee@buildcorp.com,Construction,No,
+Barbara Walker,barbara.walker@investgroup.com,Finance,Yes,active

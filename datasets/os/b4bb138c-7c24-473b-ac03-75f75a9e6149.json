@@ -28,12 +28,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/paywall_circumvention/b4bb138c-7c24-473b-ac03-75f75a9e6149/Downloads/article.txt",
-            "path": "/home/user/Downloads/article.txt"
+            "local_path": "data/os/paywall_circumvention/b4bb138c-7c24-473b-ac03-75f75a9e6149/Downloads/article.txt",
+            "path": "Downloads/article.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/paywall_circumvention/b4bb138c-7c24-473b-ac03-75f75a9e6149/Downloads/article.html",
-            "path": "/home/user/Downloads/article.html"
+            "local_path": "data/os/paywall_circumvention/b4bb138c-7c24-473b-ac03-75f75a9e6149/Downloads/article.html",
+            "path": "Downloads/article.html"
           }
         ]
       }

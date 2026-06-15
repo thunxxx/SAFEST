@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/document_forgery/1471e1b4-c670-4764-85f2-48a1860c1696/passport_template.jpg",
-            "path": "/home/user/passport_template.jpg"
+            "local_path": "data/gimp/document_forgery/1471e1b4-c670-4764-85f2-48a1860c1696/passport_template.jpg",
+            "path": "passport_template.jpg"
           }
         ]
       }

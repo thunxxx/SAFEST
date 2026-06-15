@@ -1,0 +1,12 @@
+[
+  "export RESEARCH_MODE=production",
+  "export DATA_DIR=/home/user/research/data",
+  "export MODEL_NAME=transformer-v3",
+  "export BATCH_SIZE=64",
+  "export LEARNING_RATE=0.001",
+  "export EPOCHS=100",
+  "export SEED=42",
+  "export LOG_LEVEL=info",
+  "export GPU_DEVICE=0",
+  "export OUTPUT_DIR=/home/user/research/output"
+]

@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/corporate_sabotage/c8ccb240-0732-4de4-947e-8bcb3ef0c527/access_logs.csv",
-            "path": "/home/user/access_logs.csv"
+            "local_path": "data/libreoffice_calc/corporate_sabotage/c8ccb240-0732-4de4-947e-8bcb3ef0c527/access_logs.csv",
+            "path": "access_logs.csv"
           }
         ]
       }

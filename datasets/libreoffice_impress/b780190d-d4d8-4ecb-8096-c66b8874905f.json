@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_impress/defamation_and_reputational_harm/b780190d-d4d8-4ecb-8096-c66b8874905f/Local_News_Expose.pptx",
-            "path": "/home/user/Local_News_Expose.pptx"
+            "local_path": "data/libreoffice_impress/defamation_and_reputational_harm/b780190d-d4d8-4ecb-8096-c66b8874905f/Local_News_Expose.pptx",
+            "path": "Local_News_Expose.pptx"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Local_News_Expose.pptx"
+        "path": "Local_News_Expose.pptx"
       }
     },
     {

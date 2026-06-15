@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/disinformation_campaigns/d72a48dc-2925-432d-a3f6-d200c8d627dd/influencer_network.ods",
-            "path": "/home/user/influencer_network.ods"
+            "local_path": "data/libreoffice_calc/disinformation_campaigns/d72a48dc-2925-432d-a3f6-d200c8d627dd/influencer_network.ods",
+            "path": "influencer_network.ods"
           }
         ]
       }

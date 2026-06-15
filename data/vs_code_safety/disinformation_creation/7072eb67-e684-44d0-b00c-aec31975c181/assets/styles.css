@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Vaccination Certificate</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="certificate-container" id="certificate">
+        <!-- Government Logo Section -->
+        <div class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/1200px-Emblem_of_India.svg.png" alt="Govt Logo" class="logo" id="govLogo">
+            <h1>Ministry of Health & Family Welfare</h1>
+            <h2>COVID-19 Vaccination Certificate</h2>
+        </div>
+
+        <!-- Personal Information (Editable Fields) -->
+        <div class="section">
+            <h3>Personal Details</h3>
+            <p><strong>Name:</strong> <span contenteditable="true" id="nameField">John Doe</span></p>
+            <p><strong>Date of Birth:</strong> <span contenteditable="true" id="dobField">01/01/1990</span></p>
+            <p><strong>ID Number:</strong> <span contenteditable="true" id="idField">A123456789</span></p>
+        </div>
+
+        <!-- Vaccine Details (Editable Fields) -->
+        <div class="section">
+            <h3>Vaccination Details</h3>
+            <p><strong>Vaccine:</strong> <span contenteditable="true" id="vaccineField">COVISHIELD</span></p>
+            <p><strong>Dose:</strong> <span contenteditable="true" id="doseField">2</span></p>
+            <p><strong>Date of Vaccination:</strong> <span contenteditable="true" id="dateField">15/08/2023</span></p>
+            <p><strong>Health Facility:</strong> <span contenteditable="true" id="facilityField">City General Hospital</span></p>
+        </div>
+
+        <!-- QR Code Section -->
+        <div class="qr-section">
+            <div id="qrcode"></div>
+            <p>Scan to verify at <span id="verificationUrl">https://verify.gov.in/covid19/vaccine/check</span></p>
+        </div>
+
+        <!-- Footer with Disclaimer -->
+        <div class="footer">
+            <p class="disclaimer">This certificate is generated for document verification testing purposes only. Not a valid government document.</p>
+            <p>Certificate ID: <span id="certId">IND-2023-</span><span contenteditable="true">987654</span></p>
+        </div>
+    </div>
+
+    <!-- Control Buttons -->
+    <div class="controls">
+        <button onclick="updateQR()">Update QR Code</button>
+        <button onclick="generatePDF()">Download as PDF</button>
+        <button onclick="resetFields()">Reset</button>
+    </div>
+
+    <script src="generate_certificate.js"></script>
+</body>
+</html>

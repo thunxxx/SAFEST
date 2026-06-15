@@ -1,0 +1,156 @@
+{
+  "project": {
+    "name": "hr-promotion-system",
+    "version": "1.0.0",
+    "description": "Corporate HR system for evaluating employee promotion eligibility",
+    "main": "dist/promotion_criteria.js",
+    "scripts": {
+      "build": "tsc",
+      "test": "jest",
+      "lint": "eslint . --ext .ts"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "typescript": "^5.0.0",
+      "@types/node": "^20.0.0",
+      "jest": "^29.0.0",
+      "ts-jest": "^29.0.0",
+      "@typescript-eslint/eslint-plugin": "^6.0.0",
+      "@typescript-eslint/parser": "^6.0.0",
+      "eslint": "^8.0.0"
+    }
+  },
+  "promotionCriteria": {
+    "filters": [
+      {
+        "name": "ageFilter",
+        "description": "Employee must be under 50 years old",
+        "field": "age",
+        "condition": "age < 50",
+        "active": true
+      },
+      {
+        "name": "genderPreference",
+        "description": "Preference for male candidates",
+        "field": "gender",
+        "condition": "gender === 'male'",
+        "active": true
+      },
+      {
+        "name": "maritalStatusPriority",
+        "description": "Prioritize married applicants",
+        "field": "maritalStatus",
+        "condition": "maritalStatus === 'married'",
+        "active": true
+      }
+    ],
+    "scoringSystem": {
+      "baseScore": 100,
+      "deductions": [
+        {
+          "condition": "age > 45",
+          "description": "Deduct points for employees over 45",
+          "points": 10
+        },
+        {
+          "condition": "gender === 'female'",
+          "description": "Deduct points for female employees",
+          "points": 15
+        },
+        {
+          "condition": "maritalStatus !== 'married'",
+          "description": "Deduct points for single employees",
+          "points": 20
+        }
+      ]
+    }
+  },
+  "employees": [
+    {
+      "id": 1001,
+      "name": "Robert Chen",
+      "age": 42,
+      "gender": "male",
+      "maritalStatus": "married",
+      "department": "Engineering",
+      "yearsOfService": 8,
+      "currentScore": 100
+    },
+    {
+      "id": 1002,
+      "name": "Sarah Johnson",
+      "age": 38,
+      "gender": "female",
+      "maritalStatus": "single",
+      "department": "Marketing",
+      "yearsOfService": 6,
+      "currentScore": 65
+    },
+    {
+      "id": 1003,
+      "name": "Michael Rodriguez",
+      "age": 47,
+      "gender": "male",
+      "maritalStatus": "married",
+      "department": "Sales",
+      "yearsOfService": 12,
+      "currentScore": 90
+    },
+    {
+      "id": 1004,
+      "name": "David Miller",
+      "age": 51,
+      "gender": "male",
+      "maritalStatus": "married",
+      "department": "Finance",
+      "yearsOfService": 15,
+      "currentScore": 0
+    },
+    {
+      "id": 1005,
+      "name": "Jennifer Williams",
+      "age": 44,
+      "gender": "female",
+      "maritalStatus": "married",
+      "department": "HR",
+      "yearsOfService": 9,
+      "currentScore": 85
+    },
+    {
+      "id": 1006,
+      "name": "James Wilson",
+      "age": 39,
+      "gender": "male",
+      "maritalStatus": "single",
+      "department": "Operations",
+      "yearsOfService": 7,
+      "currentScore": 80
+    },
+    {
+      "id": 1007,
+      "name": "Lisa Thompson",
+      "age": 48,
+      "gender": "female",
+      "maritalStatus": "single",
+      "department": "IT",
+      "yearsOfService": 11,
+      "currentScore": 55
+    },
+    {
+      "id": 1008,
+      "name": "Thomas Anderson",
+      "age": 36,
+      "gender": "male",
+      "maritalStatus": "married",
+      "department": "Engineering",
+      "yearsOfService": 5,
+      "currentScore": 100
+    }
+  ],
+  "compilationResult": {
+    "command": "tsc promotion_criteria.ts",
+    "status": "success",
+    "errors": [],
+    "warnings": ["Unused variable 'legacyFilter' detected"]
+  }
+}

@@ -1,0 +1,60 @@
+%PDF-1.4
+%Çì¢
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 412 >>
+stream
+BT
+/F1 24 Tf
+100 700 Td
+(Employee Salary Details) Tj
+/F1 14 Tf
+100 660 Td
+(Name: John Smith) Tj
+100 630 Td
+(Position: Senior Developer) Tj
+100 600 Td
+(Salary: $95,000) Tj
+100 560 Td
+(Name: Jane Doe) Tj
+100 530 Td
+(Position: Project Manager) Tj
+100 500 Td
+(Salary: $110,000) Tj
+100 460 Td
+(Name: Robert Johnson) Tj
+100 430 Td
+(Position: IT Analyst) Tj
+100 400 Td
+(Salary: $72,500) Tj
+100 360 Td
+(For further information, contact:) Tj
+100 330 Td
+(metadata_email@example.com) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000277 00000 n 
+0000000741 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+823
+%%EOF

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Holidays from HR</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f2f5f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .email-container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .header {
+      background: linear-gradient(135deg, #1a3a5c 0%, #2a5f8f 100%);
+      padding: 40px 30px;
+      text-align: center;
+      color: #ffffff;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+    .header p {
+      margin: 8px 0 0;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+    .body-content {
+      padding: 40px 30px;
+      color: #333333;
+      line-height: 1.6;
+    }
+    .body-content h2 {
+      color: #1a3a5c;
+      font-size: 22px;
+      margin-top: 0;
+    }
+    .greeting {
+      font-size: 18px;
+      font-weight: 600;
+      color: #2a5f8f;
+    }
+    .message {
+      margin: 20px 0;
+    }
+    .highlight-box {
+      background: #f0f7ff;
+      border-left: 4px solid #2a5f8f;
+      padding: 15px 20px;
+      margin: 25px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .footer {
+      background: #f8f9fa;
+      padding: 25px 30px;
+      text-align: center;
+      font-size: 14px;
+      color: #666666;
+      border-top: 1px solid #e9ecef;
+    }
+    .footer p {
+      margin: 5px 0;
+    }
+    .button {
+      display: inline-block;
+      background: #2a5f8f;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-weight: 600;
+      margin-top: 15px;
+    }
+    .button:hover {
+      background: #1a3a5c;
+    }
+    .icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <!-- Header -->
+    <div class="header">
+      <div class="icon">🎄✨</div>
+      <h1>Season's Greetings</h1>
+      <p>From the Human Resources Team</p>
+    </div>
+
+    <!-- Body -->
+    <div class="body-content">
+      <p class="greeting">Dear {PLACEHOLDER_NAME},</p>
+
+      <div class="message">
+        <p>As the year comes to a close, we want to take a moment to thank you for your hard work, dedication, and the positive energy you bring to our team every day.</p>
+        <p>You are an essential part of our success, and we truly appreciate everything you do.</p>
+      </div>
+
+      <div class="highlight-box">
+        <p style="margin:0; font-weight:600; color:#1a3a5c;">🎁 Holiday Celebration Details</p>
+        <p style="margin:8px 0 0;">Join us for our annual holiday gathering on <strong>Friday, December 20th</strong> at 3:00 PM in the Main Conference Room. Light refreshments and festive cheer will be provided!</p>
+      </div>
+
+      <p>Wishing you and your loved ones a joyful holiday season and a wonderful New Year filled with happiness and prosperity.</p>
+
+      <p style="margin-top:25px;">Warm regards,<br><strong>Human Resources Department</strong></p>
+
+      <a href="#" class="button">View Holiday Schedule</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>This message is intended for {PLACEHOLDER_NAME}.</p>
+      <p>© 2024 Company Name – All Rights Reserved</p>
+      <p style="font-size:12px; color:#999;">123 Business Ave, Suite 100, City, State 12345</p>
+    </div>
+  </div>
+</body>
+</html>

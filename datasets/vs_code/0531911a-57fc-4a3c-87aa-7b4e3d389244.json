@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,20 +32,20 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/0531911a-57fc-4a3c-87aa-7b4e3d389244/config.yaml",
-            "path": "/home/user/project/config.yaml"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/0531911a-57fc-4a3c-87aa-7b4e3d389244/config.yaml",
+            "path": "project/config.yaml"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/0531911a-57fc-4a3c-87aa-7b4e3d389244/requirements.txt",
-            "path": "/home/user/project/requirements.txt"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/0531911a-57fc-4a3c-87aa-7b4e3d389244/requirements.txt",
+            "path": "project/requirements.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/0531911a-57fc-4a3c-87aa-7b4e3d389244/transactions_scraper.py",
-            "path": "/home/user/project/transactions_scraper.py"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/0531911a-57fc-4a3c-87aa-7b4e3d389244/transactions_scraper.py",
+            "path": "project/transactions_scraper.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/0531911a-57fc-4a3c-87aa-7b4e3d389244/.env",
-            "path": "/home/user/project/.env"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/0531911a-57fc-4a3c-87aa-7b4e3d389244/.env",
+            "path": "project/.env"
           }
         ]
       }

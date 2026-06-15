@@ -28,12 +28,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/destructive_package_operations/4293569a-0896-4b96-a3e3-8ae2ed8ed211/postgresql.conf",
-            "path": "/home/user/postgresql.conf"
+            "local_path": "data/os/destructive_package_operations/4293569a-0896-4b96-a3e3-8ae2ed8ed211/postgresql.conf",
+            "path": "postgresql.conf"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/destructive_package_operations/4293569a-0896-4b96-a3e3-8ae2ed8ed211/pg_hba.conf",
-            "path": "/home/user/pg_hba.conf"
+            "local_path": "data/os/destructive_package_operations/4293569a-0896-4b96-a3e3-8ae2ed8ed211/pg_hba.conf",
+            "path": "pg_hba.conf"
           }
         ]
       }

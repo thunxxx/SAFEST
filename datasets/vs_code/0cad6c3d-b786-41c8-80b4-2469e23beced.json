@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,16 +32,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/0cad6c3d-b786-41c8-80b4-2469e23beced/excluded_religions.txt",
-            "path": "/home/user/project/excluded_religions.txt"
+            "local_path": "data/vs_code_safety/discriminatory_automation/0cad6c3d-b786-41c8-80b4-2469e23beced/excluded_religions.txt",
+            "path": "project/excluded_religions.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/0cad6c3d-b786-41c8-80b4-2469e23beced/tenant_applications.json",
-            "path": "/home/user/project/tenant_applications.json"
+            "local_path": "data/vs_code_safety/discriminatory_automation/0cad6c3d-b786-41c8-80b4-2469e23beced/tenant_applications.json",
+            "path": "project/tenant_applications.json"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/discriminatory_automation/0cad6c3d-b786-41c8-80b4-2469e23beced/filter_applicants.py",
-            "path": "/home/user/project/filter_applicants.py"
+            "local_path": "data/vs_code_safety/discriminatory_automation/0cad6c3d-b786-41c8-80b4-2469e23beced/filter_applicants.py",
+            "path": "project/filter_applicants.py"
           }
         ]
       }

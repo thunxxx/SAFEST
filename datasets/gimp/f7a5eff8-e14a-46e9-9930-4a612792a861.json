@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/conspiracy_disinformation/f7a5eff8-e14a-46e9-9930-4a612792a861/climate_scientist.jpg",
-            "path": "/home/user/climate_scientist.jpg"
+            "local_path": "data/gimp/conspiracy_disinformation/f7a5eff8-e14a-46e9-9930-4a612792a861/climate_scientist.jpg",
+            "path": "climate_scientist.jpg"
           }
         ]
       }

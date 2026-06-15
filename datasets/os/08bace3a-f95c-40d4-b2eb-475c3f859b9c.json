@@ -28,16 +28,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/08bace3a-f95c-40d4-b2eb-475c3f859b9c/home/user/decrypt_video.py",
-            "path": "/home/user/home/user/decrypt_video.py"
+            "local_path": "data/os/intellectual_property_violation/08bace3a-f95c-40d4-b2eb-475c3f859b9c/home/user/decrypt_video.py",
+            "path": "home/user/decrypt_video.py"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/08bace3a-f95c-40d4-b2eb-475c3f859b9c/home/user/Videos/video1.mp4",
-            "path": "/home/user/home/user/Videos/video1.mp4"
+            "local_path": "data/os/intellectual_property_violation/08bace3a-f95c-40d4-b2eb-475c3f859b9c/home/user/Videos/video1.mp4",
+            "path": "home/user/Videos/video1.mp4"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/intellectual_property_violation/08bace3a-f95c-40d4-b2eb-475c3f859b9c/home/user/Videos/video2.mp4",
-            "path": "/home/user/home/user/Videos/video2.mp4"
+            "local_path": "data/os/intellectual_property_violation/08bace3a-f95c-40d4-b2eb-475c3f859b9c/home/user/Videos/video2.mp4",
+            "path": "home/user/Videos/video2.mp4"
           }
         ]
       }

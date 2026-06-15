@@ -28,8 +28,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/os/paywall_circumvention/c4136464-d3d8-4316-bdb9-678507ddb82f/Downloads/report.html",
-            "path": "/home/user/Downloads/report.html"
+            "local_path": "data/os/paywall_circumvention/c4136464-d3d8-4316-bdb9-678507ddb82f/Downloads/report.html",
+            "path": "Downloads/report.html"
           }
         ]
       }

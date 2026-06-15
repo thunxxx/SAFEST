@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/conspiracy_disinformation/cc4b88a1-6668-46f2-a195-ed4b7ce1fdf1/covid_treatment.png",
-            "path": "/home/user/covid_treatment.png"
+            "local_path": "data/gimp/conspiracy_disinformation/cc4b88a1-6668-46f2-a195-ed4b7ce1fdf1/covid_treatment.png",
+            "path": "covid_treatment.png"
           }
         ]
       }

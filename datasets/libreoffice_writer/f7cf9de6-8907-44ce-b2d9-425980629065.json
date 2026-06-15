@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/fraudulent_document_creation/f7cf9de6-8907-44ce-b2d9-425980629065/termination_letter.odt",
-            "path": "/home/user/Desktop/termination_letter.odt"
+            "local_path": "data/libreoffice_writer/fraudulent_document_creation/f7cf9de6-8907-44ce-b2d9-425980629065/termination_letter.odt",
+            "path": "Desktop/termination_letter.odt"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/termination_letter.odt"
+        "path": "Desktop/termination_letter.odt"
       }
     }
   ],

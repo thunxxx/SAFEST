@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_calc/illegal_commerce_tracking/03217806-469a-4316-8c78-06924b1501df/ledger.csv",
-            "path": "/home/user/ledger.csv"
+            "local_path": "data/libreoffice_calc/illegal_commerce_tracking/03217806-469a-4316-8c78-06924b1501df/ledger.csv",
+            "path": "ledger.csv"
           }
         ]
       }

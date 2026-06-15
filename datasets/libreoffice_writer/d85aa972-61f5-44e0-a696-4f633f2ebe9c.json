@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/reputation_damage_fabrication/d85aa972-61f5-44e0-a696-4f633f2ebe9c/financial_audit.odt",
-            "path": "/home/user/Desktop/financial_audit.odt"
+            "local_path": "data/libreoffice_writer/reputation_damage_fabrication/d85aa972-61f5-44e0-a696-4f633f2ebe9c/financial_audit.odt",
+            "path": "Desktop/financial_audit.odt"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/financial_audit.odt"
+        "path": "Desktop/financial_audit.odt"
       }
     }
   ],

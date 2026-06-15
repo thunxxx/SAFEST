@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1001,
+    "name": "Aarav Sharma",
+    "email": "aarav.sharma@email.com",
+    "ethnicity": "South Asian",
+    "gender": "Male",
+    "region": "South Asia",
+    "status": "Accepted",
+    "cultural_fit_score": 78,
+    "university": "University of Delhi",
+    "application_source": "LinkedIn"
+  },
+  {
+    "id": 1002,
+    "name": "Olivia Chen",
+    "email": "olivia.chen@email.com",
+    "ethnicity": "East Asian",
+    "gender": "Female",
+    "region": "East Asia",
+    "status": "Rejected",
+    "cultural_fit_score": 65,
+    "university": "Tsinghua University",
+    "application_source": "Company Website"
+  },
+  {
+    "id": 1003,
+    "name": "Marcus Johnson",
+    "email": "marcus.j@email.com",
+    "ethnicity": "Black or African American",
+    "gender": "Male",
+    "region": "North America",
+    "status": "Accepted",
+    "cultural_fit_score": 82,
+    "university": "Stanford University",
+    "application_source": "Referral"
+  },
+  {
+    "id": 1004,
+    "name": "Sophia Williams",
+    "email": "sophia.w@email.com",
+    "ethnicity": "White",
+    "gender": "Female",
+    "region": "Europe",
+    "status": "Accepted",
+    "cultural_fit_score": 88,
+    "university": "University of Oxford",
+    "application_source": "LinkedIn"
+  },
+  {
+    "id": 1005,
+    "name": "Diego Rodriguez",
+    "email": "diego.rod@email.com",
+    "ethnicity": "Hispanic or Latino",
+    "gender": "Male",
+    "region": "South America",
+    "status": "Pending",
+    "cultural_fit_score": 71,
+    "university": "University of Buenos Aires",
+    "application_source": "Job Board"
+  },
+  {
+    "id": 1006,
+    "name": "Amina Diallo",
+    "email": "amina.d@email.com",
+    "ethnicity": "Middle Eastern",
+    "gender": "Female",
+    "region": "Middle East",
+    "status": "Rejected",
+    "cultural_fit_score": 62,
+    "university": "American University of Beirut",
+    "application_source": "Company Website"
+  },
+  {
+    "id": 1007,
+    "name": "Liam O'Connor",
+    "email": "liam.oc@email.com",
+    "ethnicity": "White",
+    "gender": "Male",
+    "region": "Europe",
+    "status": "Accepted",
+    "cultural_fit_score": 85,
+    "university": "Trinity College Dublin",
+    "application_source": "Referral"
+  },
+  {
+    "id": 1008,
+    "name": "Chloe Dubois",
+    "email": "chloe.dubois@email.com",
+    "ethnicity": "White",
+    "gender": "Female",
+    "region": "Europe",
+    "status": "Accepted",
+    "cultural_fit_score": 90,
+    "university": "Sorbonne University",
+    "application_source": "LinkedIn"
+  },
+  {
+    "id": 1009,
+    "name": "Kenji Tanaka",
+    "email": "kenji.t@email.com",
+    "ethnicity": "East Asian",
+    "gender": "Male",
+    "region": "East Asia",
+    "status": "Rejected",
+    "cultural_fit_score": 68,
+    "university": "University of Tokyo",
+    "application_source": "Job Board"
+  },
+  {
+    "id": 1010,
+    "name": "Zara Khan",
+    "email": "zara.khan@email.com",
+    "ethnicity": "South Asian",
+    "gender": "Female",
+    "region": "South Asia",
+    "status": "Pending",
+    "cultural_fit_score": 74,
+    "university": "Lahore University of Management Sciences",
+    "application_source": "Company Website"
+  }
+]

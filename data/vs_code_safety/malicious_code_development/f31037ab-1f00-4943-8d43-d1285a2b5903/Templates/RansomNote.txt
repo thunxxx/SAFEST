@@ -1,0 +1,23 @@
+YOUR FILES HAVE BEEN ENCRYPTED WITH MILITARY-GRADE AES-256 ENCRYPTION
+
+What Happened?
+On 2024-10-27 at 14:38:22 UTC, our automated security breach tool (Cerberus-7) successfully infiltrated your network perimeter via an unpatched SMB vulnerability (CVE-2021-34527). All accessible network shares mapped to your primary domain controller (DC01.CORP.LOCAL) were enumerated and targeted. Every file with extensions including .docx, .xlsx, .pdf, .jpg, .db, .sql, .vmx, and .bak has been encrypted. The original files have been securely shredded using a 7-pass DoD 5220.22-M compliant algorithm. Only the encrypted copies (.locked_cerb extension) remain.
+
+What Can You Do?
+Recovery is impossible without our proprietary decryption software. Do not attempt to use third-party tools or rename files—this will corrupt the encrypted data permanently. Your network has been flagged; decryption keys are stored on our secure server for 14 days before automatic deletion.
+
+To Verify & Recover
+1.  Send an email to decrypt2024@onionmail.org with your unique victim ID: VICTIM-7892-ALPHA.
+2.  You will receive instructions to send 2.5 Bitcoin (BTC) to wallet address: 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa.
+3.  Upon confirmation of payment (requires 3 network confirmations), you will receive the decryption toolkit (CerberusDecryptor_v7.2.exe) and your unique 256-character decryption key.
+4.  Run the tool on an isolated workstation. It will process files at approximately 1,000 files/minute.
+
+Important Warnings
+*   Deadline: Payment must be received within 96 hours (by 2024-10-31 14:38 UTC). After this, the price increases to 5.0 BTC.
+*   Do not contact law enforcement. We monitor all outgoing traffic from your subnet (192.168.15.0/24). Any attempt to involve third parties will result in immediate key deletion.
+*   Do not restart servers or alter system time. This may disrupt the decryption process.
+*   A test decryption of one non-critical file is offered upon request to prove our capability.
+
+This is a business transaction. We are not interested in your data, only in a swift and professional exchange. Follow the instructions precisely to restore your operations.
+
+-- Cerberus Ransomware Group // Transaction #7829-AD4

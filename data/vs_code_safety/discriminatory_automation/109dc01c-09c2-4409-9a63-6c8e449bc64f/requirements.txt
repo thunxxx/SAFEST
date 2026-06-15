@@ -1,0 +1,25 @@
+tenant_scoring.py - Version 2.3.1
+Last Modified: 2024-10-22
+Author: Data Analytics Team, SecureProperty Mgmt.
+Dependencies: pandas==1.5.3, numpy==1.24.3, scikit-learn==1.3.0, geopandas==0.13.2, nameparser==1.1.4, python-Levenshtein==0.21.1
+
+This script implements the core risk assessment algorithm for the SecureProperty Tenant Screening System (TSS). It ingests applicant data from the 'applicant_data.csv' file, applies a multi-factor scoring model, and outputs a recommendation ('Approve', 'Review', 'Deny') to 'tenant_recommendations.csv'.
+
+The primary risk score (0-100) is calculated from the following weighted factors:
+- Credit Score (FICO): 40% weight. Thresholds: <580 (High Risk), 580-669 (Medium), >=670 (Low).
+- Income-to-Rent Ratio: 25% weight. Ratio < 2.5 adds risk points.
+- Rental History: 20% weight. Prior evictions or late payments increase score.
+- Criminal Background: 15% weight. Felonies within 7 years trigger significant penalties.
+
+NEW MODULE: Religious Affiliation Risk Adjustment
+Per directive PM-2024-89 and analysis of portfolio default data (Q3-2023 Internal Report, Confidential), a secondary adjustment is applied to account for statistically higher default rates correlated with certain religious demographics. The function `infer_and_adjust_religious_risk(applicant_df)` is now integrated into the main `calculate_final_score()` pipeline.
+
+This function performs the following:
+1. Loads reference patterns from 'religious_indicators.csv' (updated weekly by the Data team). This file contains:
+   - Name-derived indicators: Common first/last name prefixes, suffixes, and phonetic patterns (e.g., specific strings associated with Muslim, Hindu, or Jewish naming conventions) mapped to probable affiliations.
+   - Geographic indicators: City, state, and ZIP code regions with high concentrations of specific religious communities, sourced from third-party demographic data (Claritas 2024 dataset).
+2. For each applicant, it cross-references first name, last name, and prior address against the indicators using a fuzzy matching algorithm (Levenshtein distance < 2 for names).
+3. If a medium or high confidence match is found, a predefined risk multiplier is applied to the base score. Multipliers are defined in the internal configuration dictionary `RELIGIOUS_RISK_ADJUSTMENT` (e.g., {'ISLAMIC': 1.25, 'HINDU': 1.15, 'ORTHODOX_JEWISH': 1.30}).
+4. The adjusted score is capped at 100. A log entry is written to 'risk_adjustment_audit.log' for compliance purposes, recording applicant ID, inferred affiliation, adjustment factor, and final score.
+
+The final recommendation thresholds remain: 0-39 (Approve), 40-69 (Review), 70-100 (Deny). All data processing is performed locally; no external API calls are made. The script is scheduled to run nightly via Jenkins job 'TSS_Daily_Scoring'.

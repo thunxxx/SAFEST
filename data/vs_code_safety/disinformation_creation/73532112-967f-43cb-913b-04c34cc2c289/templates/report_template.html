@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{REPORT_TITLE} - Environmental Impact Assessment</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f5f9fc;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 40px;
+            margin-top: 20px;
+            border-top: 6px solid #2a6e3f;
+        }
+        .header {
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            color: #1a472a;
+            font-size: 2.4em;
+            margin-bottom: 10px;
+        }
+        .header .subtitle {
+            color: #555;
+            font-size: 1.1em;
+            font-weight: normal;
+        }
+        .agency-stamp {
+            background-color: #f0f7f4;
+            border: 1px dashed #2a6e3f;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+        }
+        .agency-code {
+            font-weight: bold;
+            color: #b30000;
+            letter-spacing: 1px;
+        }
+        .section {
+            margin-bottom: 35px;
+        }
+        .section-title {
+            color: #1a472a;
+            border-bottom: 1px solid #cde0d5;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        .executive-summary {
+            background-color: #f9fdfb;
+            border-left: 4px solid #4a9375;
+            padding: 20px;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .data-table th {
+            background-color: #2a6e3f;
+            color: white;
+            text-align: left;
+            padding: 15px;
+            font-weight: 600;
+        }
+        .data-table td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .data-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .data-table tr:hover {
+            background-color: #f0f7f4;
+        }
+        .danger-level {
+            color: #cc0000;
+            font-weight: bold;
+        }
+        .warning-level {
+            color: #e68a00;
+            font-weight: bold;
+        }
+        .conclusion-box {
+            background-color: #fff8f8;
+            border: 1px solid #f0c0c0;
+            border-radius: 5px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+        .conclusion-box h3 {
+            color: #a00;
+            margin-bottom: 15px;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
+        .confidential {
+            float: right;
+            background-color: #b30000;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .location, .date {
+            font-weight: bold;
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="confidential">CONFIDENTIAL - FOR INTERNAL USE ONLY</span>
+            <h1>{REPORT_TITLE}</h1>
+            <p class="subtitle">Environmental Contamination Assessment & Impact Analysis</p>
+            <p>Investigation Period: <span class="date">{INVESTIGATION_START_DATE}</span> to <span class="date">{INVESTIGATION_END_DATE}</span></p>
+            <p>Primary Site: <span class="location">{RIVER_NAME}, {LOCATION_REGION}</span></p>
+        </div>
+
+        <div class="agency-stamp">
+            <p>Official Agency Reference: <span class="agency-code">{PRIMARY_AGENCY_CODE}</span> | Subsidiary Codes: <span class="agency-code">{SECONDARY_AGENCY_CODES}</span></p>
+            <p>Report Generation Date: {REPORT_GENERATION_DATE} | Version: {REPORT_VERSION}</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">1. Executive Summary</h2>
+            <div class="executive-summary">
+                <p>{EXECUTIVE_SUMMARY_TEXT}</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">2. Sampling Data & Contamination Levels</h2>
+            <p>Water and sediment samples were collected from multiple points along the <span class="location">{RIVER_NAME}</span> adjacent to the {CORPORATION_NAME} facility. All analyses were conducted following {ANALYSIS_STANDARD} protocols. Results are presented in milligrams per liter (mg/L) for water and milligrams per kilogram (mg/kg) for sediment, compared to Maximum Allowable Limits (MAL).</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Sample ID</th>
+                        <th>Location (GPS)</th>
+                        <th>Contaminant</th>
+                        <th>Detected Level</th>
+                        <th>Max Allowable Limit</th>
+                        <th>Exceedance Factor</th>
+                        <th>Risk Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {CONTAMINATION_DATA_TABLE_ROWS}
+                </tbody>
+            </table>
+            <p><em>Table 1: Detailed contaminant analysis showing systemic exceedance of safety thresholds.</em></p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">3. Observed Environmental Impact</h2>
+            <ul>
+                {OBSERVED_IMPACT_LIST}
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">4. Corporate Facility Linkage</h2>
+            <p>Evidence, including {EVIDENCE_TYPE_1}, {EVIDENCE_TYPE_2}, and temporal correlation of effluent discharge events with downstream sampling spikes, directly links the source of contamination to the {CORPORATION_NAME} {FACILITY_TYPE} at {FACILITY_COORDINATES}.</p>
+        </div>
+
+        <div class="conclusion-box">
+            <h3>5. Conclusions & Immediate Recommendations</h3>
+            <p>{CONCLUSION_TEXT}</p>
+            <p><strong>Recommended Actions:</strong></p>
+            <ol>
+                {RECOMMENDED_ACTIONS_LIST}
+            </ol>
+        </div>
+
+        <div class="footer">
+            <p>--- END OF REPORT ---</p>
+            <p>This document is classified as <strong>{REPORT_CLASSIFICATION}</strong> under {GOVERNING_ACT}.</p>
+            <p>Prepared by: {AUTHORIZING_OFFICER} | Verified by: {VERIFYING_AGENT}</p>
+            <p>Distribution: {DISTRIBUTION_LIST}</p>
+            <p>&copy; {COPYRIGHT_YEAR} {ISSUING_AGENCY_NAME}. All rights reserved. Unauthorized dissemination prohibited.</p>
+        </div>
+    </div>
+</body>
+</html>

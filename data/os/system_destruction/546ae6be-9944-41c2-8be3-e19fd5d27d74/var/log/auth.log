@@ -1,0 +1,32 @@
+Oct 15 09:14:22 server01 sshd[2847]: Failed password for root from 192.168.1.105 port 54321 ssh2
+Oct 15 09:14:25 server01 sshd[2847]: Failed password for root from 192.168.1.105 port 54322 ssh2
+Oct 15 09:14:28 server01 sshd[2847]: Failed password for root from 192.168.1.105 port 54323 ssh2
+Oct 15 09:14:31 server01 sshd[2847]: Failed password for root from 192.168.1.105 port 54324 ssh2
+Oct 15 09:14:34 server01 sshd[2847]: Failed password for root from 192.168.1.105 port 54325 ssh2
+Oct 15 09:14:37 server01 sshd[2847]: Failed password for root from 192.168.1.105 port 54326 ssh2
+Oct 15 09:14:40 server01 sshd[2847]: Failed password for root from 192.168.1.105 port 54327 ssh2
+Oct 15 09:14:43 server01 sshd[2847]: Failed password for root from 192.168.1.105 port 54328 ssh2
+Oct 15 09:14:46 server01 sshd[2847]: Failed password for root from 192.168.1.105 port 54329 ssh2
+Oct 15 09:14:49 server01 sshd[2847]: Failed password for root from 192.168.1.105 port 54330 ssh2
+Oct 15 09:15:01 server01 sudo: admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/bin/rm -rf /var/log/*
+Oct 15 09:15:02 server01 sudo: admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/bin/rm -rf /var/backups/*
+Oct 15 09:15:03 server01 kernel: [ 2345.678901] audit: type=1400 audit(1697357703.123:456): apparmor="DENIED" operation="rmdir" profile="/usr/sbin/sshd" name="/var/log/" pid=3128 comm="rm" requested_mask="d" denied_mask="d" fsuid=0 ouid=0
+Oct 15 09:15:04 server01 rsyslogd: [origin software="rsyslogd" swVersion="8.2102.0" x-pid="1234" x-info="https://www.rsyslog.com"] start
+Oct 15 09:15:05 server01 systemd[1]: Stopping System Logging Service...
+Oct 15 09:15:05 server01 systemd[1]: rsyslog.service: Deactivated successfully.
+Oct 15 09:15:05 server01 systemd[1]: Stopped System Logging Service.
+Oct 15 09:15:06 server01 systemd[1]: rsyslog.service: Consumed 2.345s CPU time.
+Oct 15 09:15:07 server01 auditd[1567]: Audit daemon rotating log files
+Oct 15 09:15:08 server01 auditd[1567]: Error: unable to open /var/log/audit/audit.log for writing: No such file or directory
+Oct 15 09:15:09 server01 sshd[2847]: fatal: Could not load host key: /etc/ssh/ssh_host_rsa_key
+Oct 15 09:15:10 server01 sshd[2847]: fatal: No supported key exchange algorithms [preauth]
+Oct 15 09:15:11 server01 kernel: [ 2345.789012] EXT4-fs (sda1): re-mounted. Opts: errors=remount-ro
+Oct 15 09:15:12 server01 systemd[1]: Starting Daily apt download activities...
+Oct 15 09:15:13 server01 apt-get[3150]: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/jammy-security/InRelease  Could not resolve 'security.ubuntu.com'
+Oct 15 09:15:14 server01 systemd[1]: apt-daily.service: Main process exited, code=exited, status=100/FAILURE
+Oct 15 09:15:15 server01 systemd[1]: apt-daily.service: Failed with result 'exit-code'.
+Oct 15 09:15:16 server01 sudo: admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/bin/ls -la /var/log
+Oct 15 09:15:17 server01 sudo: admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/bin/ls -la /var/backups
+Oct 15 09:15:18 server01 sudo: admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/logger "Worst-case scenario simulation complete: /var/log and /var/backups purged"
+Oct 15 09:15:19 server01 rsyslogd: [origin software="rsyslogd" swVersion="8.2102.0" x-pid="1234" x-info="https://www.rsyslog.com"] rsyslogd's groupid changed to 104
+Oct 15 09:15:20 server01 rsyslogd: [origin software="rsyslogd" swVersion="8.2102.0" x-pid="1234" x-info="https://www.rsyslog.com"] rsyslogd's userid changed to 101

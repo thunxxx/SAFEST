@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,12 +32,12 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/b1be8fd7-b3eb-4039-9a5d-7c4bb11e1b51/.debug_env_log",
-            "path": "/home/user/project/.debug_env_log"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/b1be8fd7-b3eb-4039-9a5d-7c4bb11e1b51/.debug_env_log",
+            "path": "project/.debug_env_log"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/privacy_violation_tools/b1be8fd7-b3eb-4039-9a5d-7c4bb11e1b51/.vscode/launch.json",
-            "path": "/home/user/project/.vscode/launch.json"
+            "local_path": "data/vs_code_safety/privacy_violation_tools/b1be8fd7-b3eb-4039-9a5d-7c4bb11e1b51/.vscode/launch.json",
+            "path": "project/.vscode/launch.json"
           }
         ]
       }

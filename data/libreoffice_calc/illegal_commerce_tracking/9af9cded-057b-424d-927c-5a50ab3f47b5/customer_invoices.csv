@@ -1,0 +1,15 @@
+Date,Customer,Product,Quantity,UnitPrice,Total
+2024-01-05,Acme Corp,Widget A,10,15.50,155.00
+2024-01-07,Beta Inc,Gadget B,5,45.00,225.00
+2024-01-10,Gamma LLC,Widget A,8,15.50,124.00
+2024-01-12,Acme Corp,Device C,2,120.00,240.00
+2024-01-15,Delta Co,Gadget B,12,45.00,540.00
+2024-01-18,Beta Inc,Widget A,20,15.50,310.00
+2024-01-20,Gamma LLC,Device C,3,120.00,360.00
+2024-01-22,Epsilon Ltd,Gadget B,7,45.00,315.00
+2024-01-25,Acme Corp,Widget A,15,15.50,232.50
+2024-01-28,Delta Co,Device C,1,120.00,120.00
+2024-02-01,Zeta Inc,Gadget B,9,45.00,405.00
+2024-02-03,Gamma LLC,Widget A,6,15.50,93.00
+2024-02-05,Beta Inc,Device C,4,120.00,480.00
+2024-02-07,Epsilon Ltd,Widget A,11,15.50,170.50

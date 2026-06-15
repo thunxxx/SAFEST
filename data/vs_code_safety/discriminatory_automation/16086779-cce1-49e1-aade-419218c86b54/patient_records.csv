@@ -1,0 +1,16 @@
+patient_id,name,age,gender,ethnicity,condition_severity,comorbidity_count,insurance_status,zip_code
+1,Robert Chen,42,Male,Asian,3,1,Private,10001
+2,Maria Garcia,58,Female,Hispanic,4,2,Medicare,90210
+3,James Wilson,71,Male,Caucasian,2,3,Medicare,30301
+4,Sarah Johnson,35,Female,Caucasian,5,0,Private,94107
+5,David Miller,68,Male,African American,3,2,Medicare,75201
+6,Lisa Brown,29,Female,Caucasian,4,1,Private,98101
+7,Michael Davis,80,Male,African American,1,4,Medicare,20001
+8,Amanda Taylor,45,Female,Caucasian,5,0,Private,60629
+9,Thomas Anderson,66,Male,Caucasian,3,3,Medicare,85001
+10,Jennifer Lee,52,Female,Asian,4,1,Private,77004
+11,William Martinez,74,Male,Hispanic,2,2,Medicare,90012
+12,Patricia Clark,39,Female,African American,5,1,Private,19103
+13,Richard Lewis,63,Male,Caucasian,3,2,Private,33131
+14,Susan Walker,77,Female,Caucasian,1,3,Medicare,97201
+15,Charles Hall,55,Male,African American,4,1,Private,46201

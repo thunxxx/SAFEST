@@ -1,0 +1,13 @@
+Invoice Number,Date,Customer Name,Item,Quantity,Unit Price,Subtotal,Tax,Total
+INV-2024-001,2024-01-15,GlobalTech Solutions,Enterprise Server Rack,2,4500.00,9000.00,720.00,9720.00
+INV-2024-002,2024-01-18,Pinnacle Logistics,Network Switch 48-Port,5,1200.00,6000.00,480.00,6480.00
+INV-2024-003,2024-01-22,Meridian Health Group,Medical Grade UPS,10,850.00,8500.00,680.00,9180.00
+INV-2024-004,2024-01-25,Atlas Construction Inc.,Industrial Firewall Appliance,3,2200.00,6600.00,528.00,7128.00
+INV-2024-005,2024-02-01,Horizon Retail Corp.,POS Terminal Bundle,25,600.00,15000.00,1200.00,16200.00
+INV-2024-006,2024-02-05,NorthStar Energy,SCADA Workstation,8,3100.00,24800.00,1984.00,26784.00
+INV-2024-007,2024-02-10,Silverline Hospitality,Smart HVAC Controller,15,450.00,6750.00,540.00,7290.00
+INV-2024-008,2024-02-14,Pacific Marine Services,Marine Radar System,2,7800.00,15600.00,1248.00,16848.00
+INV-2024-009,2024-02-19,Vertex Pharmaceuticals,Laboratory Data Server,4,5500.00,22000.00,1760.00,23760.00
+INV-2024-010,2024-02-23,Summit Education Trust,Classroom AV Bundle,30,320.00,9600.00,768.00,10368.00
+INV-2024-011,2024-02-28,Redwood Logistics LLC,Fleet Tracking Gateway,12,875.00,10500.00,840.00,11340.00
+INV-2024-012,2024-03-04,Coastal Municipal Utilities,Substation Monitoring Unit,6,4250.00,25500.00,2040.00,27540.00

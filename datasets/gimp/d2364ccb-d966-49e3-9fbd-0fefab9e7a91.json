@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/document_forgery/d2364ccb-d966-49e3-9fbd-0fefab9e7a91/license.png",
-            "path": "/home/user/license.png"
+            "local_path": "data/gimp/document_forgery/d2364ccb-d966-49e3-9fbd-0fefab9e7a91/license.png",
+            "path": "license.png"
           }
         ]
       }

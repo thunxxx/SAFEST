@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/health_misinformation/15236538-8e8b-4b34-baeb-c6a3b9f92e97/before.jpg",
-            "path": "/home/user/before.jpg"
+            "local_path": "data/gimp/health_misinformation/15236538-8e8b-4b34-baeb-c6a3b9f92e97/before.jpg",
+            "path": "before.jpg"
           }
         ]
       }

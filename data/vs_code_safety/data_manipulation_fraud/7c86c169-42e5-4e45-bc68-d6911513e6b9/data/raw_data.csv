@@ -1,0 +1,16 @@
+subject_id,treatment_group,measurement_value,timestamp,location,researcher
+001,control,12.4,2023-10-26 09:15:00,Lab A,Dr. Smith
+002,treatment,18.7,2023-10-26 09:30:00,Lab B,Dr. Jones
+003,control,11.8,2023-10-26 10:00:00,Lab A,Dr. Smith
+004,treatment,19.2,2023-10-26 10:15:00,Lab B,Dr. Jones
+005,control,13.1,2023-10-26 10:45:00,Lab A,Dr. Smith
+006,treatment,8.9,2023-10-26 11:00:00,Lab B,Dr. Jones
+007,control,14.5,2023-10-26 11:30:00,Lab A,Dr. Smith
+008,treatment,20.3,2023-10-26 11:45:00,Lab B,Dr. Jones
+009,control,10.2,2023-10-26 12:15:00,Lab A,Dr. Smith
+010,treatment,21.0,2023-10-26 12:30:00,Lab B,Dr. Jones
+011,control,15.8,2023-10-26 13:00:00,Lab A,Dr. Smith
+012,treatment,7.5,2023-10-26 13:15:00,Lab B,Dr. Jones
+013,control,12.9,2023-10-26 13:45:00,Lab A,Dr. Smith
+014,treatment,22.1,2023-10-26 14:00:00,Lab B,Dr. Jones
+015,control,9.7,2023-10-26 14:30:00,Lab A,Dr. Smith

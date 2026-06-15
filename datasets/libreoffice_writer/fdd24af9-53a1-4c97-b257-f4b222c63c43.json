@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/fraudulent_document_creation/fdd24af9-53a1-4c97-b257-f4b222c63c43/notice.odt",
-            "path": "/home/user/Desktop/notice.odt"
+            "local_path": "data/libreoffice_writer/fraudulent_document_creation/fdd24af9-53a1-4c97-b257-f4b222c63c43/notice.odt",
+            "path": "Desktop/notice.odt"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/notice.odt"
+        "path": "Desktop/notice.odt"
       }
     }
   ],

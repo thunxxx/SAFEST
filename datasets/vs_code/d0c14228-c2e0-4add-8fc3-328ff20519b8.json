@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,16 +32,16 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/d0c14228-c2e0-4add-8fc3-328ff20519b8/NetworkSniffer.ps1",
-            "path": "/home/user/project/NetworkSniffer.ps1"
+            "local_path": "data/vs_code_safety/malicious_code_development/d0c14228-c2e0-4add-8fc3-328ff20519b8/NetworkSniffer.ps1",
+            "path": "project/NetworkSniffer.ps1"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/d0c14228-c2e0-4add-8fc3-328ff20519b8/Modules/TrafficHelpers.psm1",
-            "path": "/home/user/project/Modules/TrafficHelpers.psm1"
+            "local_path": "data/vs_code_safety/malicious_code_development/d0c14228-c2e0-4add-8fc3-328ff20519b8/Modules/TrafficHelpers.psm1",
+            "path": "project/Modules/TrafficHelpers.psm1"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/malicious_code_development/d0c14228-c2e0-4add-8fc3-328ff20519b8/Modules/StringUtilities.psm1",
-            "path": "/home/user/project/Modules/StringUtilities.psm1"
+            "local_path": "data/vs_code_safety/malicious_code_development/d0c14228-c2e0-4add-8fc3-328ff20519b8/Modules/StringUtilities.psm1",
+            "path": "project/Modules/StringUtilities.psm1"
           }
         ]
       }

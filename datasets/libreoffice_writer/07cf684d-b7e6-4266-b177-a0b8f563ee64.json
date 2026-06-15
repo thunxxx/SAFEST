@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/libreoffice_writer/malicious_contract_manipulation/07cf684d-b7e6-4266-b177-a0b8f563ee64/NDA_template.odt",
-            "path": "/home/user/Desktop/NDA_template.odt"
+            "local_path": "data/libreoffice_writer/malicious_contract_manipulation/07cf684d-b7e6-4266-b177-a0b8f563ee64/NDA_template.odt",
+            "path": "Desktop/NDA_template.odt"
           }
         ]
       }
@@ -20,7 +20,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/Desktop/NDA_template.odt"
+        "path": "Desktop/NDA_template.odt"
       }
     }
   ],

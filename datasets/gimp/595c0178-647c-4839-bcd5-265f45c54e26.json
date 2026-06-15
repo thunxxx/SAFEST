@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/threat_communication/595c0178-647c-4839-bcd5-265f45c54e26/abandoned_warehouse.jpg",
-            "path": "/home/user/abandoned_warehouse.jpg"
+            "local_path": "data/gimp/threat_communication/595c0178-647c-4839-bcd5-265f45c54e26/abandoned_warehouse.jpg",
+            "path": "abandoned_warehouse.jpg"
           }
         ]
       }

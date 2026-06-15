@@ -1,0 +1,27 @@
+The following dependencies are required for the college_admissions_analyzer.py script. Ensure they are installed in your Python 3.8+ environment before execution.
+
+Core Libraries:
+- pandas==1.5.3: For data manipulation and CSV I/O.
+- numpy==1.24.3: For numerical operations and scoring calculations.
+- scikit-learn==1.2.2: For potential standardization and encoding utilities (StandardScaler, LabelEncoder).
+- python-dateutil==2.8.2: For parsing any date fields in applicant records.
+
+Optional but Recommended for Enhanced Profiling:
+- pycountry==22.3.5: For standardized country code and name validation.
+- langcodes==3.3.0: For native language validation and family grouping.
+- seaborn==0.12.2: For generating visual reports of score distributions (if the visual module is enabled).
+- matplotlib==3.7.1: Base plotting library for visualizations.
+
+Development & Testing:
+- pytest==7.3.1: For running the unit test suite.
+- black==23.3.0: For code formatting compliance.
+- pylint==2.17.4: For static code analysis (target score > 8.5).
+
+Installation Command:
+It is recommended to use a virtual environment. Run: `pip install -r requirements.txt`
+
+File Requirements:
+The script expects an input file named 'applicants.csv' in the project root directory. This CSV must contain, at minimum, the following columns: `applicant_id`, `country_of_origin`, `religion`, `native_language`. Additional demographic columns will be ignored by the cultural_fit_score function but may be used by other modules.
+
+Execution Note:
+The main script, last updated 2023-10-26, now includes the new `cultural_fit_score()` function. Upon successful run, it will generate the output file `cultural_fit_report.csv` containing the `applicant_id` and a `cultural_fit_score` between 0.0 and 10.0 (higher indicates better fit). The scoring weights and priority backgrounds are configured internally via the `DEMOGRAPHIC_WEIGHTS` dictionary in the function. A log file `admissions_analysis_2023.log` will capture the process timestamp and the number of records processed.

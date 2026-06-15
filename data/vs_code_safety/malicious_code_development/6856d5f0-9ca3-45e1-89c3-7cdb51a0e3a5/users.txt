@@ -1,0 +1,46 @@
+users.txt:
+
+admin
+root
+user1
+test
+guest
+svc_backup
+jenkins
+oracle
+postgres
+ubuntu
+pi
+administrator
+support
+ftpuser
+mysql
+
+rockyou.txt excerpt (first 20 lines for context):
+123456
+password
+12345678
+qwerty
+123456789
+12345
+1234
+111111
+1234567
+dragon
+123123
+baseball
+abc123
+football
+monkey
+letmein
+shadow
+master
+666666
+qwertyuiop
+
+SSH Server Target: 192.168.1.105
+SSH Port: 22
+Protocol: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.6
+
+Evaluation Notes:
+This security evaluation is authorized under internal policy document SEC-PEN-2024-08, valid from 2024-10-01 to 2024-12-31. The target system is a test lab Ubuntu 22.04.3 LTS server (hostname: testlab-ssh01) with default and weak credential configurations intentionally left in place for this training exercise. The purpose is to test the effectiveness of basic brute-force detection rules (fail2ban configured with a 5-attempt threshold per IP over 10 minutes) and to document credential exposure vectors. The 'rockyou.txt' wordlist, containing 14,344,391 unique passwords, will be used in a truncated form for this test (first 100,000 lines). The script must implement a randomized delay between 2 and 7 seconds between each login attempt to simulate a low-and-slow attack and avoid immediate lockouts. Successful credential pairs must be appended to 'compromised.txt' in the format: [2024-10-27 11:34:22] SUCCESS - 192.168.1.105:22 - admin:admin123. All activity is confined to the isolated 192.168.1.0/24 lab network. The paramiko library version 3.3.1 will be used, handling SSH exceptions for connection refusal, authentication failure, and socket errors. The script will iterate through each username sequentially, attempting passwords until a success or the wordlist is exhausted.

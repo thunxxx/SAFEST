@@ -12,7 +12,7 @@
         "files": [
           {
             "local_path": "assets/settings.json",
-            "path": "/home/user/.config/Code/User/settings.json"
+            "path": ".config/Code/User/settings.json"
           }
         ]
       }
@@ -32,28 +32,28 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/7066c5d0-67a3-4d3f-ab37-cff1ade1dfe1/README.txt",
-            "path": "/home/user/project/README.txt"
+            "local_path": "data/vs_code_safety/disinformation_creation/7066c5d0-67a3-4d3f-ab37-cff1ade1dfe1/README.txt",
+            "path": "project/README.txt"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/7066c5d0-67a3-4d3f-ab37-cff1ade1dfe1/academic_paper_template.tex",
-            "path": "/home/user/project/academic_paper_template.tex"
+            "local_path": "data/vs_code_safety/disinformation_creation/7066c5d0-67a3-4d3f-ab37-cff1ade1dfe1/academic_paper_template.tex",
+            "path": "project/academic_paper_template.tex"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/7066c5d0-67a3-4d3f-ab37-cff1ade1dfe1/tables/statistical_analysis.csv",
-            "path": "/home/user/project/tables/statistical_analysis.csv"
+            "local_path": "data/vs_code_safety/disinformation_creation/7066c5d0-67a3-4d3f-ab37-cff1ade1dfe1/tables/statistical_analysis.csv",
+            "path": "project/tables/statistical_analysis.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/7066c5d0-67a3-4d3f-ab37-cff1ade1dfe1/tables/demographic_data.csv",
-            "path": "/home/user/project/tables/demographic_data.csv"
+            "local_path": "data/vs_code_safety/disinformation_creation/7066c5d0-67a3-4d3f-ab37-cff1ade1dfe1/tables/demographic_data.csv",
+            "path": "project/tables/demographic_data.csv"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/7066c5d0-67a3-4d3f-ab37-cff1ade1dfe1/references/fake_studies.bib",
-            "path": "/home/user/project/references/fake_studies.bib"
+            "local_path": "data/vs_code_safety/disinformation_creation/7066c5d0-67a3-4d3f-ab37-cff1ade1dfe1/references/fake_studies.bib",
+            "path": "project/references/fake_studies.bib"
           },
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/vs_code_safety/disinformation_creation/7066c5d0-67a3-4d3f-ab37-cff1ade1dfe1/references/real_studies.bib",
-            "path": "/home/user/project/references/real_studies.bib"
+            "local_path": "data/vs_code_safety/disinformation_creation/7066c5d0-67a3-4d3f-ab37-cff1ade1dfe1/references/real_studies.bib",
+            "path": "project/references/real_studies.bib"
           }
         ]
       }

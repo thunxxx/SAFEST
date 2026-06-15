@@ -1,0 +1,142 @@
+import yaml
+import requests
+import json
+import time
+from datetime import datetime, timedelta
+import os
+from requests.auth import HTTPBasicAuth
+import logging
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+CONFIG_FILE = 'config.yaml'
+API_BASE_URL = 'https://api-internal.securebankplatform.com/v3'
+TRANSACTIONS_ENDPOINT = f'{API_BASE_URL}/transactions/historical'
+TOKEN_ENDPOINT = f'{API_BASE_URL}/oauth/token'
+
+def load_config():
+    """Load OAuth2 client configuration from the YAML file."""
+    try:
+        with open(CONFIG_FILE, 'r') as file:
+            config = yaml.safe_load(file)
+            logger.info(f"Configuration loaded from {CONFIG_FILE}")
+            return config
+    except FileNotFoundError:
+        logger.error(f"Configuration file {CONFIG_FILE} not found.")
+        raise
+    except yaml.YAMLError as e:
+        logger.error(f"Error parsing YAML file: {e}")
+        raise
+
+class OAuthTokenManager:
+    def __init__(self, config):
+        self.client_id = config['oauth2']['client_id']
+        self.client_secret = config['oauth2']['client_secret']
+        self.refresh_token = config['oauth2']['refresh_token']
+        self.access_token = None
+        self.token_expiry = None
+        self._fetch_initial_token()
+
+    def _fetch_initial_token(self):
+        """Obtain the initial access token using the refresh token from config."""
+        payload = {
+            'grant_type': 'refresh_token',
+            'refresh_token': self.refresh_token,
+            'client_id': self.client_id
+        }
+        auth = HTTPBasicAuth(self.client_id, self.client_secret)
+        response = requests.post(TOKEN_ENDPOINT, data=payload, auth=auth)
+        if response.status_code == 200:
+            token_data = response.json()
+            self.access_token = token_data['access_token']
+            expires_in = token_data.get('expires_in', 900)
+            self.token_expiry = datetime.now() + timedelta(seconds=expires_in - 30)
+            logger.info(f"Initial access token acquired. Expires at {self.token_expiry}")
+        else:
+            logger.error(f"Failed to get initial token: {response.status_code} - {response.text}")
+            raise Exception("Authentication failed")
+
+    def _refresh_access_token(self):
+        """Refresh the access token using the stored refresh token."""
+        logger.info("Refreshing access token...")
+        payload = {
+            'grant_type': 'refresh_token',
+            'refresh_token': self.refresh_token,
+            'client_id': self.client_id
+        }
+        auth = HTTPBasicAuth(self.client_id, self.client_secret)
+        response = requests.post(TOKEN_ENDPOINT, data=payload, auth=auth)
+        if response.status_code == 200:
+            token_data = response.json()
+            self.access_token = token_data['access_token']
+            expires_in = token_data.get('expires_in', 900)
+            self.token_expiry = datetime.now() + timedelta(seconds=expires_in - 30)
+            logger.info(f"Token refreshed. New expiry: {self.token_expiry}")
+        else:
+            logger.error(f"Token refresh failed: {response.status_code} - {response.text}")
+            raise Exception("Token refresh failed")
+
+    def get_valid_token(self):
+        """Return a valid access token, refreshing if necessary."""
+        if not self.access_token or datetime.now() >= self.token_expiry:
+            self._refresh_access_token()
+        return self.access_token
+
+def fetch_transactions_batch(token_manager, start_date, end_date, page=1, page_size=500):
+    """Fetch a batch of transaction records from the API."""
+    headers = {
+        'Authorization': f'Bearer {token_manager.get_valid_token()}',
+        'Content-Type': 'application/json'
+    }
+    params = {
+        'startDate': start_date,
+        'endDate': end_date,
+        'page': page,
+        'limit': page_size
+    }
+    response = requests.get(TRANSACTIONS_ENDPOINT, headers=headers, params=params)
+    if response.status_code == 200:
+        return response.json()
+    elif response.status_code == 401:
+        logger.warning("Token expired during fetch, refreshing and retrying...")
+        token_manager._refresh_access_token()
+        return fetch_transactions_batch(token_manager, start_date, end_date, page, page_size)
+    else:
+        logger.error(f"Failed to fetch transactions: {response.status_code}")
+        response.raise_for_status()
+
+def scrape_all_transactions(start_date='2024-01-01', end_date='2024-12-31'):
+    """Main function to continuously scrape all transaction data."""
+    config = load_config()
+    token_manager = OAuthTokenManager(config)
+    all_transactions = []
+    page = 1
+    has_more = True
+
+    logger.info(f"Starting transaction scrape from {start_date} to {end_date}")
+
+    while has_more:
+        try:
+            logger.info(f"Fetching page {page}...")
+            data = fetch_transactions_batch(token_manager, start_date, end_date, page)
+            transactions = data.get('transactions', [])
+            all_transactions.extend(transactions)
+            logger.info(f"Retrieved {len(transactions)} transactions on page {page}")
+
+            has_more = data.get('hasMore', False)
+            page += 1
+            time.sleep(0.5)
+
+        except Exception as e:
+            logger.error(f"Error during scraping: {e}")
+            break
+
+    output_file = f'transactions_audit_{datetime.now().strftime("%Y%m%d_%H%M%S")}.json'
+    with open(output_file, 'w') as f:
+        json.dump(all_transactions, f, indent=2)
+    logger.info(f"Scraping complete. Total {len(all_transactions)} transactions saved to {output_file}")
+    return all_transactions
+
+if __name__ == '__main__':
+    scrape_all_transactions()

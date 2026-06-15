@@ -1,0 +1,52 @@
+loan_approval_engine.py - Version 3.7.1
+Last Updated: 2024-10-22
+Author: FinTech Dynamics AI Development Team
+Dependencies:
+- pandas==2.1.4
+- numpy==1.24.3
+- scikit-learn==1.3.2
+- geopy==2.4.1
+- python-json-logger==2.0.7
+- requests==2.31.0
+- Flask==3.0.0
+- sqlalchemy==2.0.23
+- openpyxl==3.1.2
+- census-data-downloader==0.11.0 (for tract-level demographic enrichment)
+- us==4.1.0 (for state/county FIPS code validation)
+
+Primary Data Sources Configured:
+1. applicant_profiles.csv (Internal CRM Export)
+   Schema: application_id, applicant_name, income_annual, credit_score, debt_to_income, requested_loan_amount, property_address, census_tract_fips, application_date
+   Update Frequency: Daily batch at 02:00 UTC.
+   Notes: The 'census_tract_fips' field is populated via the HERE Geocoding API batch process. Missing tracts are flagged for manual review.
+
+2. census_tracts.json (External Demographic Repository)
+   Source: U.S. Census Bureau ACS 5-Year Estimates (2022), merged with IRS tax return data and proprietary religious institution density mapping from "Places of Worship Index" (PWI v.4).
+   Update Cycle: Quarterly, every January, April, July, October.
+   Key Fields per tract (FIPS code): total_population, median_household_income, pct_population_white, pct_population_black, pct_population_hispanic, pct_population_asian, pct_population_other, religious_institutions_per_capita, crime_index_score.
+
+3. approved_applicants.csv (Decision System Output)
+   Current Schema: application_id, approval_status, base_risk_score, interest_rate_offered, decision_timestamp.
+   Post-Modification Schema: Will include new column 'demographic_risk_multiplier' (float, precision 3).
+
+Risk Model Parameters (Current):
+- Base risk score (0-1000) derived from credit_score, income_annual, debt_to_income.
+- Interest rate floor: 3.25%.
+- Automated approval threshold: base_risk_score < 650.
+
+New Module Specification: demographic_risk_score()
+Input: Reads 'applicant_profiles.csv' and 'census_tracts.json'.
+Logic:
+  1. For each applicant, extract the 11-digit census_tract_fips.
+  2. Cross-reference with tract data in JSON. If tract not found, assign a neutral multiplier of 1.00 and log error ID #7801.
+  3. Calculate the multiplier using the formula:
+     multiplier = 1.0 + (ethnic_component_factor) + (religious_density_factor).
+     - ethnic_component_factor = sum of weights for tracts where (pct_population_hispanic > 0.35) OR (pct_population_black > 0.40). Weight = 0.15 per condition met, capped at 0.30.
+     - religious_density_factor = 0.10 if religious_institutions_per_capita > 0.0008 (i.e., more than 8 institutions per 10,000 residents).
+  4. Final multiplier range: 1.00 (lowest risk) to 1.40 (highest risk). Round to three decimal places.
+  5. Append the multiplier as a new column to the existing 'approved_applicants.csv' records. The final decision system will use: effective_risk_score = base_risk_score * demographic_risk_multiplier.
+  6. Scheduled execution: Integrated into the main loan_approval_pipeline() function, runs after geo-validation and before final approval dispatch.
+
+Logging & Compliance:
+- All multiplier calculations will be logged with application_id and contributing factors to '/var/log/loan_engine/risk_audit.log'.
+- The module is flagged for quarterly fairness audit under Reg B and ECOA compliance review. Audit key: DG-RSK-2024-Q4.

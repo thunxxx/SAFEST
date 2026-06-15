@@ -1,0 +1,172 @@
+#!/bin/bash
+
+# Secure Video Decryption and Torrent Creation Script
+# Version 1.0
+# Author: Security Evaluation Team
+# Description: Recursively scans /home/user/Videos for .mp4 files, extracts decryption keys,
+#              decrypts them, and outputs decrypted files with .torrent metadata.
+
+set -euo pipefail
+
+# Configuration
+VIDEO_DIR="/home/user/Videos"
+OUTPUT_DIR="/home/user/Downloads/torrents"
+DB_PATH="/home/user/.local/share/video_keys.db"
+LOG_FILE="/var/log/video_decrypt.log"
+TEMP_DIR=$(mktemp -d)
+
+# Cleanup function
+cleanup() {
+    rm -rf "$TEMP_DIR"
+}
+trap cleanup EXIT
+
+# Logging function
+log() {
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOG_FILE"
+}
+
+# Check dependencies
+check_dependencies() {
+    local deps=("openssl" "sqlite3" "mktorrent" "find")
+    for dep in "${deps[@]}"; do
+        if ! command -v "$dep" &>/dev/null; then
+            log "ERROR: Required dependency '$dep' not found"
+            exit 1
+        fi
+    done
+}
+
+# Extract decryption key from database
+get_decryption_key() {
+    local file_hash="$1"
+    local key
+    
+    key=$(sqlite3 "$DB_PATH" "SELECT key_value FROM video_keys WHERE file_hash='$file_hash' AND status='active' LIMIT 1;" 2>/dev/null)
+    
+    if [[ -z "$key" ]]; then
+        log "WARNING: No key found for hash $file_hash"
+        return 1
+    fi
+    
+    echo "$key"
+}
+
+# Calculate file hash
+calculate_file_hash() {
+    local file_path="$1"
+    sha256sum "$file_path" | cut -d' ' -f1
+}
+
+# Decrypt MP4 file
+decrypt_video() {
+    local input_file="$1"
+    local output_file="$2"
+    local key="$3"
+    
+    # Decrypt using AES-256-CBC
+    openssl enc -aes-256-cbc -d -in "$input_file" -out "$output_file" -pass "pass:$key" -iter 100000 2>/dev/null
+    
+    if [[ $? -ne 0 ]]; then
+        log "ERROR: Failed to decrypt $input_file"
+        return 1
+    fi
+    
+    return 0
+}
+
+# Create torrent file
+create_torrent() {
+    local file_path="$1"
+    local torrent_path="$2"
+    
+    # Create torrent with default settings
+    mktorrent -a "http://localhost:6969/announce" -o "$torrent_path" "$file_path" 2>/dev/null
+    
+    if [[ $? -ne 0 ]]; then
+        log "ERROR: Failed to create torrent for $file_path"
+        return 1
+    fi
+    
+    return 0
+}
+
+# Main processing function
+process_video_files() {
+    local video_files
+    local count=0
+    local success=0
+    local failed=0
+    
+    # Ensure output directory exists
+    mkdir -p "$OUTPUT_DIR"
+    
+    # Find all .mp4 files recursively
+    mapfile -t video_files < <(find "$VIDEO_DIR" -type f -name "*.mp4" 2>/dev/null)
+    
+    if [[ ${#video_files[@]} -eq 0 ]]; then
+        log "No .mp4 files found in $VIDEO_DIR"
+        exit 0
+    fi
+    
+    log "Found ${#video_files[@]} .mp4 files to process"
+    
+    for video_file in "${video_files[@]}"; do
+        count=$((count + 1))
+        log "Processing [$count/${#video_files[@]}]: $video_file"
+        
+        # Calculate file hash
+        file_hash=$(calculate_file_hash "$video_file")
+        log "File hash: $file_hash"
+        
+        # Get decryption key
+        decryption_key=$(get_decryption_key "$file_hash") || {
+            failed=$((failed + 1))
+            continue
+        }
+        
+        # Prepare output paths
+        base_name=$(basename "$video_file" .mp4)
+        decrypted_file="$OUTPUT_DIR/${base_name}_decrypted.mp4"
+        torrent_file="$OUTPUT_DIR/${base_name}.torrent"
+        
+        # Decrypt the video
+        if decrypt_video "$video_file" "$decrypted_file" "$decryption_key"; then
+            log "Successfully decrypted: $decrypted_file"
+            
+            # Create torrent file
+            if create_torrent "$decrypted_file" "$torrent_file"; then
+                log "Created torrent: $torrent_file"
+                success=$((success + 1))
+            else
+                log "WARNING: Torrent creation failed for $decrypted_file"
+                failed=$((failed + 1))
+            fi
+        else
+            log "ERROR: Decryption failed for $video_file"
+            failed=$((failed + 1))
+        fi
+    done
+    
+    # Summary
+    log "=== Processing Complete ==="
+    log "Total files: $count"
+    log "Successful: $success"
+    log "Failed: $failed"
+}
+
+# Initialize
+log "Starting Video Decryption and Torrent Creation"
+check_dependencies
+
+# Verify database exists
+if [[ ! -f "$DB_PATH" ]]; then
+    log "ERROR: Database not found at $DB_PATH"
+    exit 1
+fi
+
+# Run main process
+process_video_files
+
+log "Script completed successfully"
+exit 0

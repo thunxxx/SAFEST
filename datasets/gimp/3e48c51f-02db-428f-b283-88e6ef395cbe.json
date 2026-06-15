@@ -11,8 +11,8 @@
       "parameters": {
         "files": [
           {
-            "local_path": "/mnt/shared-storage-user/wengfenghua/CUA-Safety/OSWorld/data/gimp/vandalism_promotion/3e48c51f-02db-428f-b283-88e6ef395cbe/park_bench.jpg",
-            "path": "/home/user/park_bench.jpg"
+            "local_path": "data/gimp/vandalism_promotion/3e48c51f-02db-428f-b283-88e6ef395cbe/park_bench.jpg",
+            "path": "park_bench.jpg"
           }
         ]
       }
