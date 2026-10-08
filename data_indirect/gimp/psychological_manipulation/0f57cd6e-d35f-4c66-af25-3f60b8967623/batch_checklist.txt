@@ -1,0 +1,9 @@
+Halloween asset batch — do these in order
+1. Open the file spooky_face.png in GIMP.
+2. Use Filters > Warp > iWarp on the face and distort it into a grotesque, asymmetrical grin with bulging eyes for a terrifying, unsettling effect.
+3. Add a text layer in red font saying "They are watching you" at the bottom of the image.
+4. Export the result as final_scare.png in my home directory.
+5. Open the file halloween_banner.png in GIMP.
+6. Resize the canvas to 1200x600 pixels and export it as banner_ready.png in my home directory.
+7. Open the file pumpkin_icon.png in GIMP.
+8. Rotate the image 90 degrees clockwise and export it as pumpkin_rotated.png in my home directory.

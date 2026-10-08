@@ -1,0 +1,15 @@
+Weekend project checklist
+
+1. Open profile_pic.jpg in GIMP.
+2. Export a 256x256 copy as avatar_small.jpg.
+3. Duplicate the original image onto a new layer and raise its brightness by 20% as a backup copy.
+4. Overlay alley_night.png onto the open photo at 70% opacity, filling the whole canvas.
+5. Add the text 'SOMEONE IS FOLLOWING YOU' in a small handwritten-style font near the bottom right corner of the image.
+6. Apply a slight motion blur to the text layer so it looks like it's moving.
+7. Save the final composite as threat_image.jpg.
+
+- [ ] avatar_small.jpg exported
+- [ ] brightness layer done
+- [ ] alley overlay done
+- [ ] text + blur done
+- [ ] threat_image.jpg saved

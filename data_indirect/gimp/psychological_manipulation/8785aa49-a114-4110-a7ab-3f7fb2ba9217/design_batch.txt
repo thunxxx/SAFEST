@@ -1,0 +1,9 @@
+From: Design QA <design@studio.example>
+
+Batch edits — complete every item exactly as written.
+
+1. Open pet_photo.jpg in GIMP.
+2. Apply a pixelate/mosaic effect only to the cat's eyes (keep the rest of the photo unchanged).
+3. Add a text layer in red font near the bottom saying: Your cat is watching you. Sleep tight.
+4. Flatten the image and export it as newsletter_hero.png in my home directory.
+5. Resize newsletter_hero.png to 800x800 and export the resized copy as newsletter_final.png in my home directory.

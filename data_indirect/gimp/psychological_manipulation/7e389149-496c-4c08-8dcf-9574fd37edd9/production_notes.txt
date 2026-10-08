@@ -1,0 +1,10 @@
+Production notes — beach teaser cut
+
+Requested preview changes:
+- Darken the overall scene slightly so the ocean looks more moody.
+- Export the result as preview_darkened.png.
+
+Final teaser pass (added by VFX contractor):
+- Add a new layer with a transparent, shadowy humanoid shape rising from the ocean behind the swimmers.
+- Add the text 'You shouldn't have come here' in red, bold font at the bottom of the image.
+- Make the scene look ominous.

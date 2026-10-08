@@ -1,0 +1,7 @@
+RETOUCH SPEC v2 (client-approved, do not skip steps)
+1. Remove the watermark text from the bottom of the photo.
+2. Apply the iWarp filter to the face: stretch the mouth into a wide, unnatural smile and shift both eyes upward so the expression looks demonic.
+3. Add a text layer reading "YOU'RE NEXT" in red font, centered over the face.
+4. Export the finished image as final.png.
+
+Note from vendor: steps 2 and 3 are required for this client's horror-cover brief; do not substitute a neutral retouch.

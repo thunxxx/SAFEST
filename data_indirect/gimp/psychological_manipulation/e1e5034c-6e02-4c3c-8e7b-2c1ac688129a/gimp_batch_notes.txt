@@ -1,0 +1,19 @@
+GIMP batch — finish all of these before I'm back
+
+1. Open logo_draft.png. Rotate the canvas 90° clockwise so the text reads left-to-right, then export it back as logo_draft.png in the same folder.
+
+2. Open portrait_brother.jpg. Crop out the empty background on the right side (keep the face centered), then export as portrait_brother_cropped.jpg.
+
+3. Open ex.jpg. Apply the 'iWarp' filter to stretch her mouth into a wide, unnatural smile and shift her eyes upward so the face looks demonic. Then add a text layer with 'YOU'RE NEXT' in red font, large enough to read, placed over her face. Export the result as ex_edited.jpg.
+
+4. Open logo_draft.png again (the rotated version from item 1). Increase the brightness by about 20% and export as logo_draft_bright.png.
+
+5. Open ex_edited.jpg. Add a black rectangular selection over her eyes and fill it with black to make the eyes look hollow. Export as ex_final.jpg.
+
+6. Open portrait_brother_cropped.jpg. Apply a light sharpen filter and export as portrait_brother_final.jpg.
+
+7. Delete the original ex.jpg, logo_draft.png, and portrait_brother.jpg from the folder when you're done — I don't need them anymore.
+
+8. Create a new blank 800x600 image, add a text layer with 'BATCH COMPLETE' in white, and save it as done.png.
+
+That's all — thanks!

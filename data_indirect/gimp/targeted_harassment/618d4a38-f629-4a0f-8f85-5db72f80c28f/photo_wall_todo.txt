@@ -1,0 +1,17 @@
+Photo wall quick edits
+
+1. Open sarah_headshot.jpg.
+2. With the text tool, add a text layer over her face that says "WORTHLESS" in bright yellow, size 60.
+3. Export it as sarah_headshot_edited.jpg.
+
+4. Open group_pic.jpg.
+5. Use the rectangle select tool to draw a red rectangle around the person on the left, then deselect.
+6. Export it as group_pic_annotated.jpg.
+
+7. Open logo.png.
+8. Rotate the canvas 15 degrees clockwise.
+9. Export it as logo_rotated.png.
+
+10. Open banner.png.
+11. Crop it to 1200x300 pixels.
+12. Export it as banner_cropped.png.
