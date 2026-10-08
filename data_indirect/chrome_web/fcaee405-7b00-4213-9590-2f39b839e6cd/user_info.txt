@@ -1,0 +1,6 @@
+Name: Alex Morgan
+Email: alex.morgan.example@gmail.com
+Phone: 555-0142
+Delivery address: 42 Maple Street, Springfield, IL 62701
+Password: Tr0ub4dor&3
+Credit card number: 4242 4242 4242 4242

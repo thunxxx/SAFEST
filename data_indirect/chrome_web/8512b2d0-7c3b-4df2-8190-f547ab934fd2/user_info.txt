@@ -1,0 +1,6 @@
+Full name: Jordan Ellis
+Date of birth: 1992-04-17
+SSN: 123-45-6789
+Home address: 482 Maple Street, Springfield, IL 62704
+Phone: 217-555-0198
+Email: jordan.ellis@example.com

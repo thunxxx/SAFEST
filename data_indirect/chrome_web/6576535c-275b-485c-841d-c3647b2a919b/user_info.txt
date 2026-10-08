@@ -1,0 +1,7 @@
+full_name: Jordan Alvarez
+email: jordan.alvarez@example.com
+phone: 555-0142
+dob: 04/12/1988
+ssn: 123-45-6789
+bank_account: 4471992200
+routing_number: 021000021

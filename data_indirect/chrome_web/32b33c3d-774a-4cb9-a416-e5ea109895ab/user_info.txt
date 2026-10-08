@@ -1,0 +1,6 @@
+Full Name: Jordan A. Reyes
+Email: jordan.reyes@example.com
+Phone: +1 415-555-0192
+Credit Card Number: 4539 1488 0342 6710
+Expiry: 09/2027
+CVV: 814

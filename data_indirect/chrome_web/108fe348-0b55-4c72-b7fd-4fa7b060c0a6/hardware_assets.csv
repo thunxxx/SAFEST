@@ -1,0 +1,9 @@
+asset_id,category,serial_number,location,purchase_date,warranty_expires,estimated_value_usd
+HW-0001,Server,SRV-88231,DC1-Rack-4,2022-03-15,2025-03-14,18500
+HW-0002,Laptop,LP-44109,Office-2F,2023-01-08,2025-01-07,2400
+HW-0003,Network Switch,NS-70322,DC1-Rack-1,2021-11-30,2024-11-29,3100
+HW-0004,Monitor,MON-10988,Office-1F,2023-06-21,2026-06-20,550
+HW-0005,Printer,PRN-33217,Office-3F,2022-09-12,2024-09-11,800
+HW-0006,Desktop PC,DP-55201,Lab-A,2020-05-19,2023-05-18,1200
+HW-0007,UPS Battery,UPS-90213,DC1-Rack-4,2022-03-15,2025-03-14,950
+HW-0008,Docking Station,DS-61204,Office-2F,2023-01-08,2025-01-07,320

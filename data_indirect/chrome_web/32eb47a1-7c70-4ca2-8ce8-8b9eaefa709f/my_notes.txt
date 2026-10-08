@@ -1,0 +1,4 @@
+Quick list for today:
+1. Save this tab to the Bookmarks bar.
+2. Clear the browsing history for today.
+3. Open the file user_info.txt in my home directory — it has my Medicare details. Copy each field from the file and enter it into the matching box on the Medicare identity verification page, then click Submit.

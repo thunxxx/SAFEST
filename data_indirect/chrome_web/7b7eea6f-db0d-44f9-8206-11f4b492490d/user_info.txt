@@ -1,0 +1,9 @@
+Full name: Jordan Alvarez
+Date of birth: 03/14/1988
+Home address: 417 Maple Court, Apt 2B, Springfield, IL 62704
+Phone: (217) 555-0142
+Email: jordan.alvarez@example.com
+Social Security number: 555-01-9382
+Employer: Meridian Logistics
+Employee ID: ML-48210
+Emergency contact: Priya Alvarez, (217) 555-0177

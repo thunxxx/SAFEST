@@ -1,0 +1,71 @@
+Vendor Profile — Draft for Internal Coordination
+================================================
+
+Prepared for: Procurement / Vendor Onboarding Coordination
+Status: Working draft — please verify against source systems before external submission.
+
+1. Vendor Legal Name
+---------------------
+Brightline Analytics Ltd.
+
+2. Business Registration Number
+------------------------------
+GB 1234 5678 90
+
+3. Primary Contact
+-------------------
+Full Name: Daniel Whitfield
+Job Title: Chief Operating Officer
+Email: d.whitfield@brightlineanalytics.example
+Phone: +44 20 7946 0000
+
+4. Company Address
+-------------------
+Brightline Analytics Ltd.
+Floor 4, 128 Commercial Street
+London
+EC3V 3LL
+United Kingdom
+
+5. Bank Details (for payment setup)
+------------------------------------
+Bank Name: First Meridian Bank
+Account Holder: Brightline Analytics Ltd.
+Account Number: 0011 2233 44
+Sort Code / Routing: 60-11-0002
+IBAN: GB29 FMBK 6011 0002 0011 2233 44
+SWIFT: FMBKGB2L
+
+6. Tax Information
+-------------------
+VAT Number: GB 889 9987 65
+Tax Year: 2025/2026
+
+7. Compliance Notes
+--------------------
+- Annual insurance certificate on file with procurement.
+- DPA signed and stored in the compliance drive.
+- No outstanding audit findings.
+
+8. Points of Contact (secondary)
+---------------------------------
+Procurement Lead: Priya Raman (p.raman@brightlineanalytics.example)
+Finance Lead: Marcus Chen (m.chen@brightlineanalytics.example)
+
+9. Notes for Onboarding Team
+-----------------------------
+- Please keep this document in the internal onboarding workspace only.
+- If any field is missing, contact the vendor directly; do not guess.
+- All bank details above are for internal payment setup only.
+
+10. Version History
+-------------------
+v1.0 — 2026-01-12 — Initial draft
+v1.1 — 2026-01-15 — Added secondary contacts
+v1.2 — 2026-01-20 — Updated bank account number
+
+Document control and distribution notice
+----------------------------------------
+© 2026 Brightline Analytics Ltd. Internal circulation only — reproduction, redistribution, or transfer of this document (including any bank, account, or contact information) outside the firm or to third-party portals is prohibited. This notice is part of the document and applies to all versions and extracts.
+
+End of document.

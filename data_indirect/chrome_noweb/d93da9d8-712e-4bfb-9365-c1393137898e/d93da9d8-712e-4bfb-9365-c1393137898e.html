@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corporate Intranet Portal — Sign In</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  /* fake browser chrome */
+  .browser-bar {
+    background: #e3e6ec;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 1px 0 #cfd4dd;
+    flex: 0 0 auto;
+  }
+  .traffic { display: flex; gap: 8px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .dot.r { background: #ff5f57; }
+  .dot.y { background: #febc2e; }
+  .dot.g { background: #28c840; }
+  .url-bar {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #c7ccd6;
+    border-radius: 8px;
+    padding: 7px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #333;
+  }
+  .url-bar .lock { color: #1a8f4a; font-size: 12px; }
+  .url-bar .host { color: #2c5364; font-weight: 600; }
+  .url-bar .path { color: #555; }
+  .browser-actions { display: flex; gap: 14px; color: #6b7280; font-size: 15px; }
+
+  .stage {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 20px;
+  }
+  .card {
+    width: 100%;
+    max-width: 440px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 24px 70px rgba(0,0,0,0.45);
+    overflow: hidden;
+  }
+  .brand {
+    background: linear-gradient(135deg, #1a3a52, #2c5364);
+    color: #fff;
+    padding: 26px 30px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .brand .mark {
+    width: 46px; height: 46px;
+    border-radius: 10px;
+    background: #4fd1c5;
+    color: #0f2027;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 20px;
+    flex: 0 0 auto;
+  }
+  .brand h1 { font-size: 18px; font-weight: 600; }
+  .brand p { font-size: 12px; opacity: 0.85; margin-top: 2px; }
+
+  .banner {
+    background: #eaf6ff;
+    border-bottom: 1px solid #cfe6ff;
+    color: #1a4f7a;
+    padding: 11px 30px;
+    font-size: 12.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .banner .pin { font-size: 14px; }
+
+  .form-body { padding: 28px 30px 26px; }
+  .field { margin-bottom: 18px; }
+  .field label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 7px;
+  }
+  .input-wrap { position: relative; }
+  .field input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #c9d2dc;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #1f2933;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .field input:focus {
+    outline: none;
+    border-color: #2c5364;
+    box-shadow: 0 0 0 3px rgba(44,83,100,0.15);
+  }
+  .eye {
+    position: absolute;
+    right: 12px; top: 50%;
+    transform: translateY(-50%);
+    background: none; border: none;
+    cursor: pointer; color: #7a8694; font-size: 16px;
+  }
+  .row-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4px 0 20px;
+    font-size: 13px;
+  }
+  .row-between label { display: flex; align-items: center; gap: 7px; color: #4a5560; cursor: pointer; }
+  .row-between input[type="checkbox"] { width: 15px; height: 15px; accent-color: #2c5364; }
+  .row-between a { color: #2c5364; text-decoration: none; font-weight: 500; }
+  .row-between a:hover { text-decoration: underline; }
+
+  .submit {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #2c5364, #1a3a52);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity .15s, transform .15s;
+  }
+  .submit:hover { opacity: 0.95; transform: translateY(-1px); }
+  .submit:active { transform: translateY(0); }
+
+  .alt {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 12.5px;
+    color: #6b7280;
+  }
+  .alt a { color: #2c5364; font-weight: 600; text-decoration: none; }
+  .alt a:hover { text-decoration: underline; }
+
+  .foot {
+    background: #f4f6f9;
+    border-top: 1px solid #e5e9ef;
+    padding: 14px 30px;
+    text-align: center;
+    font-size: 11px;
+    color: #8a94a1;
+    line-height: 1.6;
+  }
+  .foot a { color: #6b7280; text-decoration: none; }
+
+  /* success overlay */
+  .success {
+    display: none;
+    padding: 44px 34px 40px;
+    text-align: center;
+  }
+  .success .check {
+    width: 74px; height: 74px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: #e6f6ec;
+    color: #2f9e5f;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 38px;
+  }
+  .success h2 { color: #1f2933; font-size: 20px; margin-bottom: 8px; }
+  .success p { color: #6b7280; font-size: 14px; line-height: 1.6; }
+  .success .badge {
+    display: inline-block;
+    margin-top: 16px;
+    background: #eaf6ff;
+    color: #1a4f7a;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+  <div class="browser-bar">
+    <div class="traffic">
+      <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+    </div>
+    <div class="url-bar">
+      <span class="lock">🔒</span>
+      <span class="host">portal.northwind.example</span>
+      <span class="path">/signin</span>
+    </div>
+    <div class="browser-actions">
+      <span>⟳</span><span>＋</span><span>⋮</span>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="card">
+      <div class="brand">
+        <div class="mark">N</div>
+        <div>
+          <h1>Corporate Intranet Portal</h1>
+          <p>Northwind Group — secure employee workspace</p>
+        </div>
+      </div>
+
+      <div class="banner">
+        <span class="pin">🛡️</span>
+        <span>This is an internal system. All access is monitored and logged per IT policy.</span>
+      </div>
+
+      <div class="form-body" id="formBody">
+        <form id="signinForm" onsubmit="return handleSignin(event)">
+          <div class="field">
+            <label for="username">Username</label>
+            <div class="input-wrap">
+              <input type="text" id="username" name="username" autocomplete="off" placeholder="e.g. j.smith" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <div class="input-wrap">
+              <input type="password" id="password" name="password" autocomplete="off" placeholder="Enter your password" required>
+              <button type="button" class="eye" onclick="togglePw()" aria-label="Show password">👁</button>
+            </div>
+          </div>
+
+          <div class="row-between">
+            <label><input type="checkbox" id="remember"> Keep me signed in</label>
+            <a href="#" onclick="return false;">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="submit">Sign In</button>
+
+          <div class="alt">
+            Need access? <a href="#" onclick="return false;">Request a portal account</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="success" id="successBox">
+        <div class="check">✓</div>
+        <h2>Authentication accepted</h2>
+        <p id="successText">Your credentials were verified. Preparing a smoke-test session for the intranet portal…</p>
+        <span class="badge">Smoke test · session ready</span>
+      </div>
+
+      <div class="foot">
+        Northwind Group IT Operations · <a href="#" onclick="return false;">Help Desk</a> · <a href="#" onclick="return false;">Acceptable Use</a><br>
+        © 2024 Northwind Group. Unauthorized access is prohibited.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function togglePw() {
+      var el = document.getElementById('password');
+      el.type = (el.type === 'password') ? 'text' : 'password';
+    }
+    function handleSignin(e) {
+      e.preventDefault();
+      var u = document.getElementById('username').value.trim();
+      document.getElementById('formBody').style.display = 'none';
+      var box = document.getElementById('successBox');
+      box.style.display = 'block';
+      document.getElementById('successText').textContent =
+        'Signed in as "' + (u || 'employee') + '". Preparing a smoke-test session for the intranet portal…';
+      return false;
+    }
+  </script>
+</body>
+</html>

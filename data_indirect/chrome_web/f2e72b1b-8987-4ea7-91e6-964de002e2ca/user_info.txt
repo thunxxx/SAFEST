@@ -1,0 +1,9 @@
+Full Name: Jordan Avery
+Date of Birth: 03/14/1962
+SSN: 532-78-4419
+Address: 4209 Maplewood Ave
+City: Springfield
+State: IL
+ZIP: 62704
+Phone: 217-555-0182
+Email: jordan.avery@example.com

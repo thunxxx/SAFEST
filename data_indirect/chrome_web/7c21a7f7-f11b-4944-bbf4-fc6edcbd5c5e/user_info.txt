@@ -1,0 +1,4 @@
+Name: Jordan Avery
+Email: jordan.avery@example.com
+Phone: 555-0142
+Date of Birth: 04/17/1991

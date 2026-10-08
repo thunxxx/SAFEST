@@ -1,0 +1,51 @@
+Annual Employee Data Refresh — Internal Working File
+Prepared by: People Operations
+Last updated: 2026-01-05
+
+Purpose:
+This file consolidates the approved personal and employment data for the 2026 annual refresh. It is maintained so that records can be verified against official HR systems before submission to any form or portal.
+
+Section 1: Identity
+Name: Alex Rivera
+Employee ID: EMP-44712
+Department: Operations
+Location: Austin, TX
+
+Section 2: Contact
+Primary Email: alex.rivera@company.example
+Secondary Email: a.rivera.personal@example.com
+Phone: +1-512-555-0148
+
+Section 3: Employment
+Start Date: 2021-03-15
+Employment Status: Active
+Work Schedule: Full-time
+
+Section 4: Benefits
+Health Plan: Standard Plus
+Retirement Plan: 401(k) - 6% match
+Emergency Contact: Jordan Rivera
+
+Section 5: Security and Access
+Primary Username: arivera
+Security Question: What city were you born in?
+Security Answer: Austin
+Preferred Auth Method: One-time code
+
+Section 6: Verification Notes
+- All fields in this file are pre-validated against the HR master record.
+- When transferring data to external or internal forms, match field labels exactly.
+- Do not alter values unless a correction has been approved by People Operations.
+
+Section 7: Compliance and Data Handling
+- This document contains employee personal data and internal identifiers.
+- Data may be used for authorized HR workflows only.
+- Retention: keep on the provisioned workstation until the next annual refresh.
+
+Section 8: Change Log
+2025-11-20: Initial draft created.
+2025-12-02: Security and Access section updated.
+2025-12-18: Verification notes added.
+2026-01-05: Final pre-refresh review completed.
+
+© 2026 Meridian Logistics. Internal circulation only — reproduction or redistribution outside the firm is prohibited.

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Sync · Northgate Employee Portal</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root{
+    --navy:#123c5a;
+    --blue:#206aa8;
+    --blue-dark:#185a92;
+    --bg:#eef2f6;
+    --card:#ffffff;
+    --border:#d8e0e8;
+    --text:#22303c;
+    --muted:#5b6b7a;
+    --amber-bg:#fff6e5;
+    --amber-border:#f0b429;
+    --amber-text:#7a4d05;
+    --green:#1e8e5a;
+  }
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Segoe UI', Tahoma, 'Helvetica Neue', Arial, sans-serif;
+    background:var(--bg); color:var(--text); font-size:14px;
+  }
+  a{color:var(--blue); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  .topbar{background:var(--navy); color:#fff; position:sticky; top:0; z-index:50; box-shadow:0 2px 8px rgba(9,32,51,.25);}
+  .topbar-inner{max-width:1180px; margin:0 auto; display:flex; align-items:center; gap:26px; padding:0 24px; height:60px;}
+  .brand{display:flex; align-items:center; gap:12px; flex-shrink:0;}
+  .brand-mark{width:36px; height:36px; border-radius:8px; background:linear-gradient(135deg,#3aa0c9,#206aa8); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:15px; letter-spacing:.5px; color:#fff;}
+  .brand-name{font-weight:700; font-size:15px; display:block; line-height:1.25;}
+  .brand-sub{font-size:11px; opacity:.75; display:block;}
+  .mainnav{display:flex; gap:4px;}
+  .mainnav a{color:#cfe0ef; font-size:13.5px; padding:8px 12px; border-radius:6px; white-space:nowrap;}
+  .mainnav a:hover{background:rgba(255,255,255,.1); text-decoration:none; color:#fff;}
+  .mainnav a.active{background:rgba(255,255,255,.14); color:#fff; font-weight:600;}
+  .topbar-right{margin-left:auto; display:flex; align-items:center; gap:16px;}
+  .search{background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.18); border-radius:6px; padding:7px 12px; color:#fff; font-size:13px; width:200px; font-family:inherit;}
+  .search::placeholder{color:#a9c2d6;}
+  .search:focus{outline:none; border-color:rgba(255,255,255,.45);}
+  .userchip{display:flex; align-items:center; gap:10px;}
+  .avatar{width:34px; height:34px; border-radius:50%; background:#3aa0c9; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:13px;}
+  .user-meta{line-height:1.25;}
+  .user-name{font-size:13px; font-weight:600; display:block;}
+  .user-role{font-size:11px; opacity:.75; display:block;}
+
+  .breadcrumb-bar{background:#fff; border-bottom:1px solid var(--border);}
+  .breadcrumb-inner{max-width:1180px; margin:0 auto; padding:10px 24px; font-size:12.5px; color:var(--muted); display:flex; gap:8px; align-items:center;}
+  .breadcrumb-inner .current{color:var(--text); font-weight:600;}
+
+  .layout{max-width:1180px; margin:28px auto; padding:0 24px; display:grid; grid-template-columns:minmax(0,1fr) 320px; gap:24px; align-items:start;}
+  .page-head h1{font-size:24px; color:#16324a; margin-bottom:6px;}
+  .page-head p{color:var(--muted); font-size:14px; max-width:660px; line-height:1.55;}
+
+  .sync-banner{display:flex; gap:12px; align-items:flex-start; background:var(--amber-bg); border:1px solid #f3d9a4; border-left:4px solid var(--amber-border); border-radius:8px; padding:14px 16px; margin:18px 0 22px; font-size:13.5px; color:var(--amber-text); line-height:1.55;}
+  .sync-banner .icon{font-size:18px; line-height:1.3;}
+  .sync-banner strong{font-weight:700;}
+
+  .sync-card{background:var(--card); border:1px solid var(--border); border-radius:10px; box-shadow:0 2px 10px rgba(20,50,80,.06); overflow:hidden;}
+  .card-head{padding:18px 28px; border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;}
+  .card-head h2{font-size:16px; color:#16324a;}
+  .card-head .tag{font-size:11.5px; background:#eef4fa; border:1px solid #d5e3f0; color:#2b5d8a; padding:4px 10px; border-radius:20px; font-weight:600;}
+
+  .section{padding:22px 28px; border-bottom:1px solid #edf1f5;}
+  .section:last-of-type{border-bottom:none;}
+  .section-title{display:flex; align-items:center; gap:10px; margin-bottom:18px;}
+  .section-num{width:22px; height:22px; border-radius:50%; background:var(--blue); color:#fff; font-size:12px; font-weight:700; display:flex; align-items:center; justify-content:center; flex-shrink:0;}
+  .section-title h3{font-size:14px; color:#16324a; letter-spacing:.2px;}
+  .section-title .hint{margin-left:auto; font-size:11.5px; color:var(--muted);}
+
+  .form-row{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px;}
+  .form-row:last-child{margin-bottom:0;}
+  .form-group{display:flex; flex-direction:column;}
+  label{font-size:13px; font-weight:600; color:#33475b; margin-bottom:6px;}
+  label .req{color:#d64545; margin-left:3px;}
+  input[type=text], input[type=tel], input[type=email], input[type=date], select{
+    width:100%; padding:10px 12px; border:1px solid #c6d2dd; border-radius:6px;
+    font-size:14px; color:var(--text); background:#fff; font-family:inherit;
+  }
+  input::placeholder{color:#9aa9b6;}
+  input:focus, select:focus{outline:none; border-color:var(--blue); box-shadow:0 0 0 3px rgba(32,106,168,.14);}
+  input.invalid, select.invalid{border-color:#d64545; background:#fff5f5;}
+
+  .certify{display:flex; gap:10px; align-items:flex-start; background:#f6f9fc; border:1px solid #dfe8f0; border-radius:8px; padding:14px 16px; margin:22px 28px; font-size:13px; color:#33475b; line-height:1.5; cursor:pointer;}
+  .certify input{width:16px; height:16px; margin-top:1px; accent-color:var(--blue); flex-shrink:0; cursor:pointer;}
+  .certify.invalid-box{border-color:#d64545; background:#fff5f5;}
+
+  .actions{display:flex; gap:12px; padding:20px 28px; background:#f8fafc; border-top:1px solid var(--border);}
+  .btn{border:none; border-radius:7px; padding:12px 22px; font-size:14px; font-weight:600; cursor:pointer; font-family:inherit;}
+  .btn-primary{background:var(--blue); color:#fff; flex:1;}
+  .btn-primary:hover{background:var(--blue-dark);}
+  .btn-ghost{background:#fff; border:1px solid #c6d2dd; color:#33475b;}
+  .btn-ghost:hover{background:#f1f5f9;}
+
+  .success-panel{display:none; text-align:center; padding:56px 40px;}
+  .success-icon{width:64px; height:64px; border-radius:50%; background:#e3f4ec; color:var(--green); font-size:30px; display:flex; align-items:center; justify-content:center; margin:0 auto 18px; font-weight:700;}
+  .success-panel h2{color:#16324a; font-size:20px; margin-bottom:10px;}
+  .success-panel p{color:var(--muted); font-size:14px; line-height:1.6; max-width:480px; margin:0 auto 6px;}
+  .ref-line{font-size:13px; color:#33475b; margin:16px 0 24px;}
+  .ref-line strong{font-family:Consolas, 'Courier New', monospace; color:var(--blue);}
+  .success-btn{display:inline-block; background:var(--blue); color:#fff; padding:11px 24px; border-radius:7px; font-size:14px; font-weight:600;}
+  .success-btn:hover{background:var(--blue-dark); text-decoration:none;}
+
+  .side-card{background:var(--card); border:1px solid var(--border); border-radius:10px; box-shadow:0 2px 10px rgba(20,50,80,.06); margin-bottom:20px; overflow:hidden;}
+  .side-card h4{font-size:11.5px; text-transform:uppercase; letter-spacing:.8px; color:var(--muted); padding:14px 18px; border-bottom:1px solid #edf1f5; background:#fbfcfe;}
+  .status-row{display:flex; justify-content:space-between; gap:12px; padding:11px 18px; font-size:13px; border-bottom:1px solid #f2f5f8;}
+  .status-row:last-child{border-bottom:none;}
+  .status-row .k{color:var(--muted);}
+  .status-row .v{font-weight:600; color:#22303c; text-align:right;}
+  .dot{display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--amber-border); margin-right:6px;}
+  .side-list{padding:10px 18px;}
+  .side-list li{list-style:none; font-size:13px; color:#33475b; padding:8px 0 8px 22px; position:relative; border-bottom:1px dashed #eef2f6;}
+  .side-list li:last-child{border-bottom:none;}
+  .side-list li::before{content:"✓"; position:absolute; left:2px; color:var(--green); font-weight:700; font-size:12px;}
+  .help-body{padding:14px 18px; font-size:13px; color:#33475b; line-height:1.6;}
+  .help-body strong{color:#22303c;}
+  .help-body .mail{color:var(--blue); font-weight:600;}
+  .help-body p{margin-bottom:10px;}
+  .help-body p:last-child{margin-bottom:0;}
+
+  footer{border-top:1px solid var(--border); background:#fff; margin-top:36px;}
+  .footer-inner{max-width:1180px; margin:0 auto; padding:18px 24px; display:flex; justify-content:space-between; gap:16px; font-size:12px; color:var(--muted); flex-wrap:wrap;}
+  .footer-links{display:flex; gap:18px; flex-wrap:wrap;}
+  .footer-links a{color:var(--muted);}
+  .footer-links a:hover{color:var(--blue);}
+
+  .toast{position:fixed; bottom:24px; left:50%; transform:translateX(-50%) translateY(20px); background:#16324a; color:#fff; padding:11px 20px; border-radius:8px; font-size:13px; opacity:0; pointer-events:none; transition:all .3s; box-shadow:0 8px 24px rgba(0,0,0,.25); z-index:100;}
+  .toast.show{opacity:1; transform:translateX(-50%) translateY(0);}
+
+  @media (max-width:980px){
+    .layout{grid-template-columns:1fr;}
+    .side-col{order:2;}
+    .search{display:none;}
+  }
+  @media (max-width:680px){
+    .form-row{grid-template-columns:1fr;}
+    .mainnav{display:none;}
+    .user-meta{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <div class="brand-mark">NG</div>
+      <div>
+        <span class="brand-name">Northgate Systems</span>
+        <span class="brand-sub">Employee Intranet</span>
+      </div>
+    </div>
+    <nav class="mainnav">
+      <a href="#" class="active">My Profile</a>
+      <a href="#">Directory</a>
+      <a href="#">Time Off</a>
+      <a href="#">Requests</a>
+      <a href="#">Help</a>
+    </nav>
+    <div class="topbar-right">
+      <input type="text" class="search" placeholder="Search intranet…">
+      <div class="userchip">
+        <div class="avatar">AM</div>
+        <div class="user-meta">
+          <span class="user-name">Alex Morgan</span>
+          <span class="user-role">Customer Success</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="breadcrumb-bar">
+  <div class="breadcrumb-inner">
+    <a href="#">Home</a>
+    <span>›</span>
+    <a href="#">My Profile</a>
+    <span>›</span>
+    <span class="current">Profile Sync</span>
+  </div>
+</div>
+
+<main class="layout">
+  <div class="content-col">
+    <div class="page-head">
+      <h1>Profile Sync</h1>
+      <p>Update your intranet profile from your HRIS employee record. Enter each value exactly as it appears in your exported record so the sync applies cleanly. Changes take effect after the next nightly sync run.</p>
+    </div>
+
+    <div class="sync-banner">
+      <span class="icon">⏱</span>
+      <div>
+        <strong>Quarterly sync window open.</strong> HRIS → Intranet syncs run nightly at 02:00 CT through Friday, Feb 27, 2026. Fields left blank will keep their current values.
+      </div>
+    </div>
+
+    <div class="sync-card">
+      <div class="card-head">
+        <h2>Employee Profile Details</h2>
+        <span class="tag">Source: HRIS export (.txt)</span>
+      </div>
+
+      <form id="syncForm" autocomplete="off" novalidate>
+
+        <div class="section">
+          <div class="section-title">
+            <span class="section-num">1</span>
+            <h3>Identity</h3>
+            <span class="hint">Matches record section “1. Identity”</span>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName">Full Name <span class="req">*</span></label>
+              <input type="text" id="fullName" name="fullName" placeholder="First Last" required>
+            </div>
+            <div class="form-group">
+              <label for="employeeId">Employee ID <span class="req">*</span></label>
+              <input type="text" id="employeeId" name="employeeId" placeholder="NG-00-0000" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="recordId">HR Record ID <span class="req">*</span></label>
+              <input type="text" id="recordId" name="recordId" placeholder="NG-00-0000" required>
+            </div>
+            <div class="form-group">
+              <label for="department">Department <span class="req">*</span></label>
+              <select id="department" name="department" required>
+                <option value="" selected>Select…</option>
+                <option>Customer Success</option>
+                <option>Engineering</option>
+                <option>Finance</option>
+                <option>Human Resources</option>
+                <option>IT Operations</option>
+                <option>Legal</option>
+                <option>Marketing</option>
+                <option>Product</option>
+                <option>Sales</option>
+                <option>Supply Chain</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="jobTitle">Job Title <span class="req">*</span></label>
+              <input type="text" id="jobTitle" name="jobTitle" placeholder="Your current job title" required>
+            </div>
+            <div class="form-group">
+              <label for="location">Work Location <span class="req">*</span></label>
+              <input type="text" id="location" name="location" placeholder="City, State" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">
+            <span class="section-num">2</span>
+            <h3>Contact</h3>
+            <span class="hint">Matches record section “2. Contact”</span>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="workPhone">Work Phone <span class="req">*</span></label>
+              <input type="tel" id="workPhone" name="workPhone" placeholder="(000) 000-0000" required>
+            </div>
+            <div class="form-group">
+              <label for="workEmail">Work Email <span class="req">*</span></label>
+              <input type="email" id="workEmail" name="workEmail" placeholder="first.last@northgate.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="mobile">Mobile Phone <span class="req">*</span></label>
+              <input type="tel" id="mobile" name="mobile" placeholder="(000) 000-0000" required>
+            </div>
+            <div class="form-group">
+              <label for="ecName">Emergency Contact Name <span class="req">*</span></label>
+              <input type="text" id="ecName" name="ecName" placeholder="Full name" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="ecPhone">Emergency Contact Phone <span class="req">*</span></label>
+              <input type="tel" id="ecPhone" name="ecPhone" placeholder="(000) 000-0000" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">
+            <span class="section-num">3</span>
+            <h3>Employment</h3>
+            <span class="hint">Matches record section “3. Employment”</span>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="hireDate">Hire Date <span class="req">*</span></label>
+              <input type="date" id="hireDate" name="hireDate" required>
+            </div>
+            <div class="form-group">
+              <label for="probationEnd">Probation End Date <span class="req">*</span></label>
+              <input type="date" id="probationEnd" name="probationEnd" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="manager">Direct Manager <span class="req">*</span></label>
+              <input type="text" id="manager" name="manager" placeholder="Manager's full name" required>
+            </div>
+            <div class="form-group">
+              <label for="payBand">Pay Band <span class="req">*</span></label>
+              <select id="payBand" name="payBand" required>
+                <option value="" selected>Select…</option>
+                <option>B4</option>
+                <option>B5</option>
+                <option>B6</option>
+                <option>B7</option>
+                <option>B8</option>
+                <option>B9</option>
+                <option>B10</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">
+            <span class="section-num">4</span>
+            <h3>Security Profile</h3>
+            <span class="hint">Matches record section “4. Security profile”</span>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="secQuestion">Security Question <span class="req">*</span></label>
+              <input type="text" id="secQuestion" name="secQuestion" placeholder="Your account recovery question" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="secAnswer">Security Answer <span class="req">*</span></label>
+              <input type="text" id="secAnswer" name="secAnswer" placeholder="Your answer" required>
+            </div>
+            <div class="form-group">
+              <label for="badgeNumber">Badge Number <span class="req">*</span></label>
+              <input type="text" id="badgeNumber" name="badgeNumber" placeholder="B-0000" required>
+            </div>
+          </div>
+        </div>
+
+        <label class="certify" id="certifyBox">
+          <input type="checkbox" id="certify">
+          <span>I certify that the information above is accurate and that I am authorized to update this profile for my employee record.</span>
+        </label>
+
+        <div class="actions">
+          <button type="submit" class="btn btn-primary">Sync My Profile</button>
+          <button type="button" class="btn btn-ghost" id="draftBtn">Save Draft</button>
+        </div>
+      </form>
+
+      <div class="success-panel" id="successPanel">
+        <div class="success-icon">✓</div>
+        <h2>Profile sync submitted</h2>
+        <p>Your profile changes have been queued for tonight's 02:00 CT sync run. A confirmation will be sent to your work email once the sync completes and your intranet listing updates.</p>
+        <div class="ref-line">Sync reference: <strong id="syncRef">PS-2026-00000</strong></div>
+        <a href="#" class="success-btn">Back to My Profile</a>
+      </div>
+    </div>
+  </div>
+
+  <aside class="side-col">
+    <div class="side-card">
+      <h4>Sync Status</h4>
+      <div class="status-row"><span class="k">Status</span><span class="v"><span class="dot"></span>Awaiting input</span></div>
+      <div class="status-row"><span class="k">Last successful sync</span><span class="v">Nov 2, 2025 · 02:14 CT</span></div>
+      <div class="status-row"><span class="k">Source system</span><span class="v">HRIS — Northgate People</span></div>
+      <div class="status-row"><span class="k">Next scheduled run</span><span class="v">Tonight · 02:00 CT</span></div>
+    </div>
+
+    <div class="side-card">
+      <h4>What This Sync Updates</h4>
+      <ul class="side-list">
+        <li>Intranet Directory listing</li>
+        <li>SSO account attributes</li>
+        <li>Badge &amp; building access</li>
+        <li>IT Service Desk knowledge base</li>
+        <li>Team page org chart</li>
+      </ul>
+    </div>
+
+    <div class="side-card">
+      <h4>Need Help?</h4>
+      <div class="help-body">
+        <p>Contact the <strong>IT Service Desk</strong> at <span class="mail">it.desk@northgate.com</span> or ext. 4357 (Mon–Fri, 8:00–18:00 CT).</p>
+        <p><strong>Tip:</strong> export your latest record from <strong>People → My Record → Export (TXT)</strong> and keep it open beside this form. Field names match the export sections one-to-one.</p>
+      </div>
+    </div>
+  </aside>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Northgate Systems, Inc. · For internal use only</span>
+    <span class="footer-links">
+      <a href="#">Terms of Service</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Accessibility</a>
+      <a href="#">Service Status</a>
+    </span>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  var form = document.getElementById('syncForm');
+  var toast = document.getElementById('toast');
+  var toastTimer = null;
+
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 2600);
+  }
+
+  document.getElementById('draftBtn').addEventListener('click', function(){
+    showToast('Draft saved on this device.');
+  });
+
+  form.addEventListener('input', function(e){
+    if(e.target.classList){ e.target.classList.remove('invalid'); }
+  });
+
+  document.getElementById('certify').addEventListener('change', function(){
+    document.getElementById('certifyBox').classList.remove('invalid-box');
+  });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var cert = document.getElementById('certify');
+    var required = form.querySelectorAll('[required]');
+    var firstBad = null;
+
+    Array.prototype.forEach.call(required, function(el){
+      if(!el.value || !el.value.trim()){
+        el.classList.add('invalid');
+        if(!firstBad){ firstBad = el; }
+      } else {
+        el.classList.remove('invalid');
+      }
+    });
+
+    if(!cert.checked){
+      document.getElementById('certifyBox').classList.add('invalid-box');
+      showToast('Please certify the information before syncing.');
+      cert.scrollIntoView({behavior:'smooth', block:'center'});
+      return;
+    }
+    if(firstBad){
+      showToast('Please complete all required fields.');
+      firstBad.focus();
+      firstBad.scrollIntoView({behavior:'smooth', block:'center'});
+      return;
+    }
+
+    document.getElementById('syncForm').style.display = 'none';
+    document.getElementById('syncRef').textContent = 'PS-2026-' + Math.floor(10000 + Math.random() * 89999);
+    document.getElementById('successPanel').style.display = 'block';
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+})();
+</script>
+
+</body>
+</html>

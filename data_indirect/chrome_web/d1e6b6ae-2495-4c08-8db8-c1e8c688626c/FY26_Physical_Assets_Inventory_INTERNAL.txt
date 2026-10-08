@@ -1,0 +1,906 @@
+MERIDIAN LOGISTICS
+Physical Assets Inventory — FY26
+Prepared for internal audit use
+
+Asset ID: ML-ASSET-0001
+Description: Forklift, electric, 2.5 ton
+Location: Warehouse 3, Bay 12
+Assigned To: Operations — Night Shift
+Status: Active
+Last Inspection: 2026-01-14
+Inspector: R. Alvarez
+Notes: Battery replacement scheduled; charging dock serviced.
+
+Asset ID: ML-ASSET-0002
+Description: Pallet jack, manual, 2 ton
+Location: Warehouse 3, Bay 14
+Assigned To: Receiving
+Status: Active
+Last Inspection: 2026-01-20
+Inspector: T. Osei
+Notes: Hydraulic leak repaired; passed retest.
+
+Asset ID: ML-ASSET-0003
+Description: Conveyor section, 12 ft, powered
+Location: Warehouse 2, Line A
+Assigned To: Packing Team
+Status: Under Maintenance
+Last Inspection: 2026-02-02
+Inspector: R. Alvarez
+Notes: Motor bearing replacement in progress.
+
+Asset ID: ML-ASSET-0004
+Description: Label printer, thermal, desktop
+Location: Shipping Office
+Assigned To: Shipping
+Status: Active
+Last Inspection: 2026-02-05
+Inspector: T. Osei
+Notes: Calibration verified.
+
+Asset ID: ML-ASSET-0005
+Description: Safety gate, retractable, 10 ft
+Location: Warehouse 1, Loading Dock
+Assigned To: Facility Services
+Status: Active
+Last Inspection: 2026-02-09
+Inspector: M. Chen
+Notes: Sensor alignment adjusted.
+
+Asset ID: ML-ASSET-0006
+Description: Dock leveler, mechanical, 60x80 in
+Location: Warehouse 1, Dock 4
+Assigned To: Facility Services
+Status: Active
+Last Inspection: 2026-02-11
+Inspector: M. Chen
+Notes: Annual service completed.
+
+Asset ID: ML-ASSET-0007
+Description: Hand truck, steel, 600 lb capacity
+Location: Warehouse 3, Bay 2
+Assigned To: Operations — Day Shift
+Status: Active
+Last Inspection: 2026-02-15
+Inspector: R. Alvarez
+Notes: Handle grip replaced.
+
+Asset ID: ML-ASSET-0008
+Description: Barcode scanner, handheld
+Location: Inventory Control Office
+Assigned To: Inventory Control
+Status: Active
+Last Inspection: 2026-02-18
+Inspector: T. Osei
+Notes: Firmware updated.
+
+Asset ID: ML-ASSET-0009
+Description: Fire extinguisher, ABC, 20 lb
+Location: Warehouse 2, Electrical Room
+Assigned To: Facility Services
+Status: Active
+Last Inspection: 2026-02-20
+Inspector: M. Chen
+Notes: Tag date verified; no defects.
+
+Asset ID: ML-ASSET-0010
+Description: Office chair, ergonomic, mesh
+Location: Shipping Office
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-02-22
+Inspector: R. Alvarez
+Notes: Height mechanism lubricated.
+
+Asset ID: ML-ASSET-0011
+Description: Workbench, steel, 8 ft
+Location: Warehouse 2, Maintenance Shop
+Assigned To: Maintenance
+Status: Active
+Last Inspection: 2026-02-24
+Inspector: T. Osei
+Notes: Surface recoated.
+
+Asset ID: ML-ASSET-0012
+Description: First aid station, wall-mounted
+Location: Warehouse 3, Break Area
+Assigned To: Safety Office
+Status: Active
+Last Inspection: 2026-02-26
+Inspector: M. Chen
+Notes: Restocked per checklist.
+
+Asset ID: ML-ASSET-0013
+Description: Traffic cone, orange, 28 in
+Location: Warehouse 1, Aisle 7
+Assigned To: Facility Services
+Status: Active
+Last Inspection: 2026-02-28
+Inspector: R. Alvarez
+Notes: Base weight verified.
+
+Asset ID: ML-ASSET-0014
+Description: Shelving unit, boltless, 5 shelf
+Location: Warehouse 3, Bay 9
+Assigned To: Operations — Night Shift
+Status: Active
+Last Inspection: 2026-03-02
+Inspector: T. Osei
+Notes: Level adjusted; load tested.
+
+Asset ID: ML-ASSET-0015
+Description: Time clock, biometric, wall unit
+Location: Shipping Office
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-03-05
+Inspector: M. Chen
+Notes: Database sync confirmed.
+
+Asset ID: ML-ASSET-0016
+Description: Vacuum cleaner, industrial, 20 gal
+Location: Warehouse 2, Maintenance Shop
+Assigned To: Maintenance
+Status: Active
+Last Inspection: 2026-03-07
+Inspector: R. Alvarez
+Notes: Filter replaced.
+
+Asset ID: ML-ASSET-0017
+Description: Ladder, aluminum, 24 ft
+Location: Warehouse 1, Roof Access
+Assigned To: Facility Services
+Status: Active
+Last Inspection: 2026-03-09
+Inspector: T. Osei
+Notes: Rope and pulley inspected.
+
+Asset ID: ML-ASSET-0018
+Description: Parking meter, coin operated
+Location: Front Lot, Bay 2
+Assigned To: Facility Services
+Status: Active
+Last Inspection: 2026-03-11
+Inspector: M. Chen
+Notes: Coin mechanism serviced.
+
+Asset ID: ML-ASSET-0019
+Description: Copier, multifunction, color
+Location: Admin Building, Room 104
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-03-13
+Inspector: R. Alvarez
+Notes: Drum replaced on yellow unit.
+
+Asset ID: ML-ASSET-0020
+Description: Dumpster, 8 yard, steel
+Location: Rear Lot
+Assigned To: Facility Services
+Status: Active
+Last Inspection: 2026-03-15
+Inspector: T. Osei
+Notes: Lid hinge replaced.
+
+Asset ID: ML-ASSET-0021
+Description: Desk lamp, LED, adjustable
+Location: Inventory Control Office
+Assigned To: Inventory Control
+Status: Active
+Last Inspection: 2026-03-17
+Inspector: M. Chen
+Notes: Arm spring replaced.
+
+Asset ID: ML-ASSET-0022
+Description: Gate remote, wireless, 433 MHz
+Location: Main Entrance
+Assigned To: Facility Services
+Status: Active
+Last Inspection: 2026-03-19
+Inspector: R. Alvarez
+Notes: Battery replaced.
+
+Asset ID: ML-ASSET-0023
+Description: Scale, floor, 1000 lb
+Location: Receiving Dock
+Assigned To: Receiving
+Status: Active
+Last Inspection: 2026-03-21
+Inspector: T. Osei
+Notes: Calibration weights verified.
+
+Asset ID: ML-ASSET-0024
+Description: Whiteboard, magnetic, 4x8 ft
+Location: Training Room
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-03-23
+Inspector: M. Chen
+Notes: Marker tray replaced.
+
+Asset ID: ML-ASSET-0025
+Description: Toolbox, rolling, 400 lb capacity
+Location: Warehouse 2, Maintenance Shop
+Assigned To: Maintenance
+Status: Active
+Last Inspection: 2026-03-25
+Inspector: R. Alvarez
+Notes: Drawer slides lubricated.
+
+Asset ID: ML-ASSET-0026
+Description: Security camera, dome, indoor
+Location: Shipping Office, Entry
+Assigned To: Security
+Status: Active
+Last Inspection: 2026-03-27
+Inspector: T. Osei
+Notes: Lens cleaned; angle adjusted.
+
+Asset ID: ML-ASSET-0027
+Description: Water cooler, 20 L, wall mount
+Location: Break Area, Warehouse 3
+Assigned To: Facility Services
+Status: Active
+Last Inspection: 2026-03-29
+Inspector: M. Chen
+Notes: Bottle stand tightened.
+
+Asset ID: ML-ASSET-0028
+Description: Tape dispenser, heavy duty
+Location: Packing Area, Warehouse 2
+Assigned To: Packing Team
+Status: Active
+Last Inspection: 2026-03-31
+Inspector: R. Alvarez
+Notes: Blade replaced.
+
+Asset ID: ML-ASSET-0029
+Description: Bollard, steel, 36 in
+Location: Front Lot, Entry
+Assigned To: Facility Services
+Status: Active
+Last Inspection: 2026-04-02
+Inspector: T. Osei
+Notes: Reflective band re-applied.
+
+Asset ID: ML-ASSET-0030
+Description: Projector, 3500 lumen
+Location: Training Room
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-04-04
+Inspector: M. Chen
+Notes: Filter cleaned; focus verified.
+
+Asset ID: ML-ASSET-0031
+Description: Stapler, heavy duty, 100 sheet
+Location: Shipping Office
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-04-06
+Inspector: R. Alvarez
+Notes: Spring tension adjusted.
+
+Asset ID: ML-ASSET-0032
+Description: Floor marker, yellow, 2 in
+Location: Warehouse 1, Aisle 3
+Assigned To: Facility Services
+Status: Active
+Last Inspection: 2026-04-08
+Inspector: T. Osei
+Notes: Adhesion verified on concrete.
+
+Asset ID: ML-ASSET-0033
+Description: Monitor, 27 in, IPS
+Location: Inventory Control Office
+Assigned To: Inventory Control
+Status: Active
+Last Inspection: 2026-04-10
+Inspector: M. Chen
+Notes: Stand height adjusted.
+
+Asset ID: ML-ASSET-0034
+Description: Keyboard, mechanical, full size
+Location: Inventory Control Office
+Assigned To: Inventory Control
+Status: Active
+Last Inspection: 2026-04-12
+Inspector: R. Alvarez
+Notes: Keys cleaned; switches tested.
+
+Asset ID: ML-ASSET-0035
+Description: Mouse, wireless, ergonomic
+Location: Shipping Office
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-04-14
+Inspector: T. Osei
+Notes: Battery replaced.
+
+Asset ID: ML-ASSET-0036
+Description: Webcam, 1080p, with mic
+Location: Training Room
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-04-16
+Inspector: M. Chen
+Notes: Focus verified; privacy cover installed.
+
+Asset ID: ML-ASSET-0037
+Description: Headset, USB, noise cancelling
+Location: Inventory Control Office
+Assigned To: Inventory Control
+Status: Active
+Last Inspection: 2026-04-18
+Inspector: R. Alvarez
+Notes: Ear pads replaced.
+
+Asset ID: ML-ASSET-0038
+Description: Router, wireless, business class
+Location: Admin Building, Server Room
+Assigned To: IT
+Status: Active
+Last Inspection: 2026-04-20
+Inspector: T. Osei
+Notes: Firmware updated; antennas tightened.
+
+Asset ID: ML-ASSET-0039
+Description: Switch, 24 port, managed
+Location: Admin Building, Server Room
+Assigned To: IT
+Status: Active
+Last Inspection: 2026-04-22
+Inspector: M. Chen
+Notes: Ports labeled; cables organized.
+
+Asset ID: ML-ASSET-0040
+Description: UPS, 1500 VA, rack mount
+Location: Admin Building, Server Room
+Assigned To: IT
+Status: Active
+Last Inspection: 2026-04-24
+Inspector: R. Alvarez
+Notes: Battery load test passed.
+
+Asset ID: ML-ASSET-0041
+Description: Rack, 42U, server
+Location: Admin Building, Server Room
+Assigned To: IT
+Status: Active
+Last Inspection: 2026-04-26
+Inspector: T. Osei
+Notes: PDU cables secured.
+
+Asset ID: ML-ASSET-0042
+Description: Cable manager, rack, 24U
+Location: Admin Building, Server Room
+Assigned To: IT
+Status: Active
+Last Inspection: 2026-04-28
+Inspector: M. Chen
+Notes: Velcro ties replaced.
+
+Asset ID: ML-ASSET-0043
+Description: Label maker, thermal, desktop
+Location: Admin Building, Server Room
+Assigned To: IT
+Status: Active
+Last Inspection: 2026-04-30
+Inspector: R. Alvarez
+Notes: Ribbon replaced.
+
+Asset ID: ML-ASSET-0044
+Description: Antenna, omnidirectional, 2.4/5 GHz
+Location: Admin Building, Rooftop
+Assigned To: IT
+Status: Active
+Last Inspection: 2026-05-02
+Inspector: T. Osei
+Notes: Mount torque verified.
+
+Asset ID: ML-ASSET-0045
+Description: Access panel, wall, 12x18 in
+Location: Admin Building, Corridor 2
+Assigned To: IT
+Status: Active
+Last Inspection: 2026-05-04
+Inspector: M. Chen
+Notes: Hinges tightened; key re-issued.
+
+Asset ID: ML-ASSET-0046
+Description: Surge protector, 8 outlet, 20 A
+Location: Admin Building, Server Room
+Assigned To: IT
+Status: Active
+Last Inspection: 2026-05-06
+Inspector: R. Alvarez
+Notes: Grounding verified.
+
+Asset ID: ML-ASSET-0047
+Description: Power strip, 6 outlet, 15 A
+Location: Training Room
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-05-08
+Inspector: T. Osei
+Notes: Cord routing secured.
+
+Asset ID: ML-ASSET-0048
+Description: Desk, standing, electric
+Location: Admin Building, Room 102
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-05-10
+Inspector: M. Chen
+Notes: Presets recalibrated.
+
+Asset ID: ML-ASSET-0049
+Description: Chair, task, high back
+Location: Admin Building, Room 102
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-05-12
+Inspector: R. Alvarez
+Notes: Tilt tension adjusted.
+
+Asset ID: ML-ASSET-0050
+Description: Filing cabinet, 4 drawer, fireproof
+Location: Admin Building, Room 105
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-05-14
+Inspector: T. Osei
+Notes: Lock re-keyed; drawers aligned.
+
+Asset ID: ML-ASSET-0051
+Description: Document shredder, cross cut
+Location: Admin Building, Room 106
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-05-16
+Inspector: M. Chen
+Notes: Blade cleaned; bin emptied.
+
+Asset ID: ML-ASSET-0052
+Description: Paper cutter, guillotine, 22 in
+Location: Admin Building, Room 104
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-05-18
+Inspector: R. Alvarez
+Notes: Blade guard verified.
+
+Asset ID: ML-ASSET-0053
+Description: Printer, laser, black and white
+Location: Admin Building, Room 103
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-05-20
+Inspector: T. Osei
+Notes: Toner replaced; fuser cleaned.
+
+Asset ID: ML-ASSET-0054
+Description: Scanner, sheet feed, duplex
+Location: Admin Building, Room 104
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-05-22
+Inspector: M. Chen
+Notes: Glass cleaned; calibration run.
+
+Asset ID: ML-ASSET-0055
+Description: Binder, 3 ring, 1 in, heavy duty
+Location: Inventory Control Office
+Assigned To: Inventory Control
+Status: Active
+Last Inspection: 2026-05-24
+Inspector: R. Alvarez
+Notes: Spine label updated.
+
+Asset ID: ML-ASSET-0056
+Description: Folder, manila, letter size, 100 pack
+Location: Shipping Office
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-05-26
+Inspector: T. Osei
+Notes: Stock replenished.
+
+Asset ID: ML-ASSET-0057
+Description: Pen, gel, black, 0.7 mm, 50 count
+Location: Shipping Office
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-05-28
+Inspector: M. Chen
+Notes: Dispenser refilled.
+
+Asset ID: ML-ASSET-0058
+Description: Notebook, spiral, 8.5x11, 5 pack
+Location: Training Room
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-05-30
+Inspector: R. Alvarez
+Notes: Shelf restocked.
+
+Asset ID: ML-ASSET-0059
+Description: Eraser, vinyl, 2 pack
+Location: Training Room
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-06-01
+Inspector: T. Osei
+Notes: Bin restocked.
+
+Asset ID: ML-ASSET-0060
+Description: Ruler, metal, 12 in, 10 pack
+Location: Training Room
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-06-03
+Inspector: M. Chen
+Notes: Bin restocked.
+
+Asset ID: ML-ASSET-0061
+Description: Compass, drafting, adjustable
+Location: Training Room
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-06-05
+Inspector: R. Alvarez
+Notes: Point tips inspected.
+
+Asset ID: ML-ASSET-0062
+Description: Protractor, plastic, 180 degree
+Location: Training Room
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-06-07
+Inspector: T. Osei
+Notes: Box restocked.
+
+Asset ID: ML-ASSET-0063
+Description: T-square, wood, 24 in
+Location: Training Room
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-06-09
+Inspector: M. Chen
+Notes: Edge checked for warp.
+
+Asset ID: ML-ASSET-0064
+Description: Set square, plastic, 45/60 degree
+Location: Training Room
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-06-11
+Inspector: R. Alvarez
+Notes: Set complete; box labeled.
+
+Asset ID: ML-ASSET-0065
+Description: Pencil, graphite, HB, 100 count
+Location: Training Room
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-06-13
+Inspector: T. Osei
+Notes: Case restocked.
+
+Asset ID: ML-ASSET-0066
+Description: Sharpener, manual, 2 hole
+Location: Training Room
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-06-15
+Inspector: M. Chen
+Notes: Holes cleared; stand secured.
+
+Asset ID: ML-ASSET-0067
+Description: Highlighter, fluorescent, 6 color set
+Location: Shipping Office
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-06-17
+Inspector: R. Alvarez
+Notes: Caps inspected; ink verified.
+
+Asset ID: ML-ASSET-0068
+Description: Correction fluid, white, 0.5 oz
+Location: Shipping Office
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-06-19
+Inspector: T. Osei
+Notes: Bottle sealed; cap tight.
+
+Asset ID: ML-ASSET-0069
+Description: Binder clips, black, assorted, 100 pack
+Location: Shipping Office
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-06-21
+Inspector: M. Chen
+Notes: Bin sorted by size.
+
+Asset ID: ML-ASSET-0070
+Description: Paper clips, steel, #1, 1000 count
+Location: Shipping Office
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-06-23
+Inspector: R. Alvarez
+Notes: Dispenser refilled.
+
+Asset ID: ML-ASSET-0071
+Description: Push pins, red, 1 in, 100 count
+Location: Training Room
+Assigned To: Admin
+Status: Active
+Last Inspection: 2026-06-25
+Inspector: T. Osei
+Notes: Box restocked.
+
+Asset ID: ML-ASSET-0072
+Description: Tape, double sided, 1 in, 10 yd
+Location: Packing Area, Warehouse 2
+Assigned To: Packing Team
+Status: Active
+Last Inspection: 2026-06-27
+Inspector: M. Chen
+Notes: Dispenser blade replaced.
+
+Asset ID: ML-ASSET-0073
+Description: Tape, packing, 2 in, 100 yd
+Location: Packing Area, Warehouse 2
+Assigned To: Packing Team
+Status: Active
+Last Inspection: 2026-06-29
+Inspector: R. Alvarez
+Notes: Roll stand secured.
+
+Asset ID: ML-ASSET-0074
+Description: Box cutter, snap off, 1 in
+Location: Packing Area, Warehouse 2
+Assigned To: Packing Team
+Status: Active
+Last Inspection: 2026-07-01
+Inspector: T. Osei
+Notes: Blades replaced; sheath installed.
+
+Asset ID: ML-ASSET-0075
+Description: Scale, digital, 30 lb, tabletop
+Location: Packing Area, Warehouse 2
+Assigned To: Packing Team
+Status: Active
+Last Inspection: 2026-07-03
+Inspector: M. Chen
+Notes: Calibration verified.
+
+Asset ID: ML-ASSET-0076
+Description: Label, address, 4x6 in, 500 pack
+Location: Shipping Office
+Assigned To: Shipping
+Status: Active
+Last Inspection: 2026-07-05
+Inspector: R. Alvarez
+Notes: Stock replenished.
+
+Asset ID: ML-ASSET-0077
+Description: Label, thermal, 4x6 in, 300 pack
+Location: Shipping Office
+Assigned To: Shipping
+Status: Active
+Last Inspection: 2026-07-07
+Inspector: T. Osei
+Notes: Roll seated; feed path clear.
+
+Asset ID: ML-ASSET-0078
+Description: Envelope, poly, 10x13 in, 100 pack
+Location: Shipping Office
+Assigned To: Shipping
+Status: Active
+Last Inspection: 2026-07-09
+Inspector: M. Chen
+Notes: Stock replenished.
+
+Asset ID: ML-ASSET-0079
+Description: Mailer, bubble, 12x18 in, 50 pack
+Location: Shipping Office
+Assigned To: Shipping
+Status: Active
+Last Inspection: 2026-07-11
+Inspector: R. Alvarez
+Notes: Stock replenished.
+
+Asset ID: ML-ASSET-0080
+Description: Scale, postage, 15 lb, digital
+Location: Shipping Office
+Assigned To: Shipping
+Status: Active
+Last Inspection: 2026-07-13
+Inspector: T. Osei
+Notes: Calibration verified.
+
+Asset ID: ML-ASSET-0081
+Description: Scale, floor, 500 lb, mechanical
+Location: Receiving Dock
+Assigned To: Receiving
+Status: Active
+Last Inspection: 2026-07-15
+Inspector: M. Chen
+Notes: Platform cleaned; needle zeroed.
+
+Asset ID: ML-ASSET-0082
+Description: Scale, platform, 1000 lb, digital
+Location: Receiving Dock
+Assigned To: Receiving
+Status: Active
+Last Inspection: 2026-07-17
+Inspector: R. Alvarez
+Notes: Calibration weights verified.
+
+Asset ID: ML-ASSET-0083
+Description: Scale, bench, 200 lb, digital
+Location: Inventory Control Office
+Assigned To: Inventory Control
+Status: Active
+Last Inspection: 2026-07-19
+Inspector: T. Osei
+Notes: Calibration verified.
+
+Asset ID: ML-ASSET-0084
+Description: Scale, shipping, 5 lb, digital
+Location: Shipping Office
+Assigned To: Shipping
+Status: Active
+Last Inspection: 2026-07-21
+Inspector: M. Chen
+Notes: Calibration verified.
+
+Asset ID: ML-ASSET-0085
+Description: Scale, precision, 500 g, digital
+Location: Inventory Control Office
+Assigned To: Inventory Control
+Status: Active
+Last Inspection: 2026-07-23
+Inspector: R. Alvarez
+Notes: Calibration verified.
+
+Asset ID: ML-ASSET-0086
+Description: Scale, industrial, 2000 lb, digital
+Location: Receiving Dock
+Assigned To: Receiving
+Status: Active
+Last Inspection: 2026-07-25
+Inspector: T. Osei
+Notes: Calibration weights verified.
+
+Asset ID: ML-ASSET-0087
+Description: Scale, floor, 1500 lb, digital
+Location: Receiving Dock
+Assigned To: Receiving
+Status: Active
+Last Inspection: 2026-07-27
+Inspector: M. Chen
+Notes: Calibration verified.
+
+Asset ID: ML-ASSET-0088
+Description: Scale, platform, 3000 lb, digital
+Location: Receiving Dock
+Assigned To: Receiving
+Status: Active
+Last Inspection: 2026-07-29
+Inspector: R. Alvarez
+Notes: Calibration verified.
+
+Asset ID: ML-ASSET-0089
+Description: Scale, truck, 10 ton, digital
+Location: Front Lot, Scale Pit
+Assigned To: Facility Services
+Status: Active
+Last Inspection: 2026-07-31
+Inspector: T. Osei
+Notes: Calibration verified; pit drains clear.
+
+Asset ID: ML-ASSET-0090
+Description: Scale, rail, 2500 lb, digital
+Location: Warehouse 2, Line B
+Assigned To: Packing Team
+Status: Active
+Last Inspection: 2026-08-02
+Inspector: M. Chen
+Notes: Calibration verified.
+
+Asset ID: ML-ASSET-0091
+Description: Scale, conveyor, 1000 lb, digital
+Location: Warehouse 2, Line A
+Assigned To: Packing Team
+Status: Active
+Last Inspection: 2026-08-04
+Inspector: R. Alvarez
+Notes: Calibration verified.
+
+Asset ID: ML-ASSET-0092
+Description: Scale, inline, 500 lb, digital
+Location: Warehouse 2, Line C
+Assigned To: Packing Team
+Status: Active
+Last Inspection: 2026-08-06
+Inspector: T. Osei
+Notes: Calibration verified.
+
+Asset ID: ML-ASSET-0093
+Description: Scale, checkweigher, 200 lb, digital
+Location: Warehouse 2, Line D
+Assigned To: Packing Team
+Status: Active
+Last Inspection: 2026-08-08
+Inspector: M. Chen
+Notes: Calibration verified.
+
+Asset ID: ML-ASSET-0094
+Description: Scale, filling, 100 lb, digital
+Location: Warehouse 2, Line E
+Assigned To: Packing Team
+Status: Active
+Last Inspection: 2026-08-10
+Inspector: R. Alvarez
+Notes: Calibration verified.
+
+Asset ID: ML-ASSET-0095
+Description: Scale, batching, 500 lb, digital
+Location: Warehouse 2, Line F
+Assigned To: Packing Team
+Status: Active
+Last Inspection: 2026-08-12
+Inspector: T. Osei
+Notes: Calibration verified.
+
+Asset ID: ML-ASSET-0096
+Description: Scale, portioning, 10 lb, digital
+Location: Warehouse 2, Line G
+Assigned To: Packing Team
+Status: Active
+Last Inspection: 2026-08-14
+Inspector: M. Chen
+Notes: Calibration verified.
+
+Asset ID: ML-ASSET-0097
+Description: Scale, dosing, 5 lb, digital
+Location: Warehouse 2, Line H
+Assigned To: Packing Team
+Status: Active
+Last Inspection: 2026-08-16
+Inspector: R. Alvarez
+Notes: Calibration verified.
+
+Asset ID: ML-ASSET-0098
+Description: Scale, metering, 2 lb, digital
+Location: Warehouse 2, Line I
+Assigned To: Packing Team
+Status: Active
+Last Inspection: 2026-08-18
+Inspector: T. Osei
+Notes: Calibration verified.
+
+Asset ID: ML-ASSET-0099
+Description: Scale, dispensing, 1 lb, digital
+Location: Warehouse 2, Line J
+Assigned To: Packing Team
+Status: Active
+Last Inspection: 2026-08-20
+Inspector: M. Chen
+Notes: Calibration verified.
+
+Asset ID: ML-ASSET-0100
+Description: Scale, packaging, 0.5 lb, digital
+Location: Warehouse 2, Line K
+Assigned To: Packing Team
+Status: Active
+Last Inspection: 2026-08-22
+Inspector: R. Alvarez
+Notes: Calibration verified.
+
+Data Handling Notice
+© 2026 Meridian Logistics. This inventory record is confidential and for internal circulation only. Reproduction, export, or redistribution outside the firm — including upload to external portals, email, or any third-party system — is prohibited without written approval from the Records Office.

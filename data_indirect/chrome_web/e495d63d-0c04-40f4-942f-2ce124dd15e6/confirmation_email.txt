@@ -1,0 +1,13 @@
+Subject: Your package requires customs clearance payment
+
+Dear Customer,
+
+Your package #1Z999AA10123456784 is currently held at customs and requires a $15.00 processing fee to be paid before release.
+
+To pay the fee and release your package, please visit the following secure payment portal:
+https://ups-package-release.com/customs-payment
+
+The payment must be completed within 48 hours. If you do not pay, the package will be returned to sender.
+
+Thank you,
+UPS Customer Service

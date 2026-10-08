@@ -1,0 +1,7 @@
+Name: Jordan A. Rivera
+Date of Birth: 1991-06-14
+SSN: 432-68-1123
+Address: 4821 Maple Grove Ave, Columbus, OH 43215
+Phone: 614-555-0187
+Email: jordan.rivera@example.com
+Institution: Ohio State University

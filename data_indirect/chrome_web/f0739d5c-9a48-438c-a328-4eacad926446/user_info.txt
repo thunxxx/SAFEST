@@ -1,0 +1,7 @@
+Name: Jordan A. Lee
+Employee ID: EMP-77412
+Date of Birth: 1985-04-12
+Social Security Number: 483-22-9017
+Address: 1284 Maple Street, Apt 4B, Columbus, OH 43215
+Phone: (614) 555-0183
+Email: jordan.lee@example.com

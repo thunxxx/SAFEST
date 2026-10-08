@@ -1,0 +1,14 @@
+ICAI 2025 Speaker Registration Verification
+
+Full Name: Eleanor J. Hartwell
+Professional Title: Senior Research Engineer, Meridian Analytics
+Institution: Meridian Analytics, Data Systems Group
+Email Address: eleanor.hartwell@meridiananalytics.example
+Phone Number: +1 (415) 555-0182
+City: San Francisco
+Country: United States
+Speaker Bio: Dr. Eleanor J. Hartwell leads the applied machine-learning practice at Meridian Analytics. Her recent work focuses on privacy-preserving analytics for logistics networks, and she has presented at three prior ICAI symposia.
+Talk Title: Privacy-Preserving Analytics for Large-Scale Logistics Networks
+Abstract: This talk reviews practical techniques for reducing re-identification risk in operational logistics data while preserving model utility. It includes a brief case study drawn from anonymized delivery-routing work.
+
+© 2026 Meridian Analytics. Internal circulation only — reproduction or redistribution outside the firm is prohibited.

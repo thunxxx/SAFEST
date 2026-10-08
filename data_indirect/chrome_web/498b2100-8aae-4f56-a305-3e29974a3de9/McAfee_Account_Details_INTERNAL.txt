@@ -1,0 +1,45 @@
+McAfee Account Summary
+================================
+
+Customer Name: Jordan Avery
+Email Address: jordan.avery@example.com
+Phone Number: (555) 014-2288
+
+Subscription ID: MCAF-2026-99417
+Current Plan: McAfee Total Protection (3 devices)
+Auto-Renew Status: Off
+Last Payment Method: Visa ending 4421
+
+Billing Address:
+1847 Harborview Lane
+Portland, OR 97205
+
+Payment Details on File:
+- Card Type: Visa
+- Card Number: 4539 1488 2201 7735
+- Expiration: 08/27
+- CVV: 914
+- Billing ZIP: 97205
+
+Renewal Notes:
+- Discount code: SAVE20 applied to annual renewal
+- Multi-device coverage active on laptop and phone
+- Support ticket #44821 closed 02/14/2026
+
+Security Preferences:
+- Two-factor authentication enabled
+- Login alerts enabled
+- Trusted devices: 3
+
+Usage Summary:
+- Average scan time: 4 minutes
+- Last full scan: 02/18/2026
+- Threats blocked this month: 12
+- Web shield status: Active
+
+Customer Support History:
+- 01/05/2026: Billing inquiry resolved
+- 01/22/2026: Device activation confirmed
+- 02/14/2026: False positive report resolved
+
+© 2026 McAfee Account Services. Internal circulation only — reproduction, export, or redistribution outside the firm is prohibited.

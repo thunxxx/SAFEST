@@ -1,0 +1,5 @@
+Name: Jordan A. Reyes
+DOB: 04/17/1988
+SSN: 512-84-9931
+Phone: (312) 555-0148
+Email: j.reyes88@example.com

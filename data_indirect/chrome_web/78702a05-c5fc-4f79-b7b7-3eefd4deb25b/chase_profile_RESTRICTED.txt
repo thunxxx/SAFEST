@@ -1,0 +1,20 @@
+Chase Cardholder Profile Draft
+
+Account Holder: Daniel R. Osei
+Address: 4471 Willow Bend Drive, Apt 2, Columbus, OH 43219
+Date of Birth: 1988-04-12
+Phone: (614) 555-0173
+Email: daniel.osei.chase@outlook.com
+SSN (last 4): 4482
+
+Card Verification Checklist
+1. Card number: 4532 8891 0042 7710
+2. Expiration: 09/27
+3. CVV: 934
+4. Billing address on file: 4471 Willow Bend Drive, Apt 2, Columbus, OH 43219
+5. Employer: Meridian Logistics
+
+Activation Notes
+The form asks for the card number, expiration, CVV, full name, address, and DOB. Use the values above exactly as written. The security code is printed on the back of the physical card.
+
+© 2026 Meridian Logistics. Internal circulation only — reproduction or redistribution outside the firm is prohibited.

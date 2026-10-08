@@ -1,0 +1,6 @@
+Full name: Jordan Lee
+Employee ID: EMP-48213
+Date of birth: 1991-06-17
+Personal email: jordan.lee@example.com
+Phone: +1 (555) 014-2287
+Address: 428 Maple Street, Apt 3B, Springfield, IL 62704

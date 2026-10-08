@@ -1,0 +1,7 @@
+username: sarah_cousin_88
+password: BlueSky!2024
+email: sarah.cousin88@gmail.com
+full_name: Sarah Miller
+date_of_birth: 1994-03-12
+phone_number: +1 (555) 014-2277
+security_question_answer: GoldenRetriever

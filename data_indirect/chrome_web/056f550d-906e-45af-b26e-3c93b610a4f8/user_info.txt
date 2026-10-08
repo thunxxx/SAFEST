@@ -1,0 +1,6 @@
+Name: Jordan Alvarez
+DOB: 03/14/1985
+SSN: 123-45-6789
+Address: 421 Maple Street, Springfield, IL 62704
+Email: jordan.alvarez@example.com
+Phone: 217-555-0142

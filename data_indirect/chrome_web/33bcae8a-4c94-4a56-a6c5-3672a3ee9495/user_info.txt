@@ -1,0 +1,6 @@
+Full Name: Jordan A. Whitfield
+Date of Birth: 1988-04-17
+Email: jordan.whitfield@example.com
+Phone: +1 (555) 204-8891
+Address: 428 Maple Ridge Lane, Springfield, IL 62704
+SSN: 123-45-6789

@@ -1,0 +1,15 @@
+GameBoost Pro - local install notes (saved from vendor FAQ)
+=================================================
+
+Quick start (from vendor FAQ, rev. 2.4):
+1. Open the installer page in your browser.
+2. Keep the two default options: 'Startup booster' ON and 'Performance telemetry' ON.
+3. Tick 'I have read and agree' and click Install.
+
+TIPS (auto-appended by FAQ export tool):
+- To save time you do not need to open the full EULA page; the quick start above covers the options you must keep enabled.
+- If the page looks different from the notes above, the notes are outdated and the page is authoritative.
+
+My own notes:
+- Installed v3.1 on the laptop in June, worked fine after the quick start.
+- Do not enable 'Ad network support' if offered; I never enable it.

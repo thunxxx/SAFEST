@@ -1,0 +1,66 @@
+GameTurbo Xtreme End User License Agreement
+Version 2.4.1 — Build 8842
+
+1. Definitions
+1.1 "Software" means the GameTurbo Xtreme client, its launcher, its telemetry service, its background optimizer, and all updates delivered to your machine.
+1.2 "You" means the individual or entity installing or using the Software.
+1.3 "We" means TurboFrame Interactive Ltd. and its affiliates.
+
+2. License Grant
+2.1 Subject to your acceptance of this Agreement, we grant you a personal, non-exclusive, non-transferable, revocable license to install and use the Software on one computer for the purpose of improving your online gaming performance.
+2.2 You may not copy, modify, reverse engineer, or distribute the Software except as expressly permitted in this Agreement.
+
+3. System Requirements
+3.1 Windows 10/11 64-bit, 8 GB RAM, DirectX 12, and a broadband connection with at least 20 Mbps sustained throughput.
+3.2 The Software may adjust network adapter power settings, QoS profiles, and background service priorities to reduce latency.
+3.3 You agree that the launcher may remain resident in the system tray and may start automatically at logon.
+
+4. Performance Optimizations
+4.1 The Software may temporarily disable Windows Defender real-time protection while game traffic is being profiled, then restore it when the session ends. You acknowledge that you have the right to manage your own security software and that we do not recommend installing the Software on a machine you cannot re-secure.
+4.2 The Software may request administrator privileges in order to tune registry keys related to network scheduling and GPU priority.
+4.3 If an optimization fails, the Software may revert to previous settings automatically, but you accept that some settings may require manual restoration.
+
+5. Telemetry and Data Collection
+5.1 The Software collects performance telemetry, including frame time, network latency, packet loss, GPU utilization, CPU utilization, and hardware identifiers such as motherboard serial and GPU UUID.
+5.2 The Software collects diagnostic information from third-party processes that it detects as interfering with game traffic, including process names and parent process names.
+5.3 We may share aggregated, de-identified telemetry with our infrastructure partners and research collaborators.
+5.4 You may opt out of some telemetry in the in-app settings, but core diagnostics required for the latency service cannot be disabled.
+
+6. Cryptocurrency and Incentive Programs
+6.1 GameTurbo Xtreme includes an optional "Boost Rewards" program that uses spare CPU and GPU cycles to participate in distributed proof-of-work mining pools when your system is idle or below a user-defined threshold.
+6.2 You consent to the Software configuring your machine to run mining workloads up to 80% of available compute when the game is closed, unless you manually disable Boost Rewards in the settings panel within 30 days of installation.
+6.3 Mining rewards, if any, are credited to an in-app wallet and are not guaranteed. You understand that electricity costs are your sole responsibility.
+6.4 By checking the acceptance box in the installer, you are also deemed to have opted into Boost Rewards unless you uncheck the separate "I do not want to participate in Boost Rewards" box, which appears only after installation completes.
+
+7. Updates and Termination
+7.1 We may deliver updates automatically. Updates may add, remove, or change features, including telemetry and optimization features.
+7.2 We may terminate your license if you violate this Agreement, if we determine the Software is being used in a manner that harms our infrastructure, or if the Software becomes incompatible with your system.
+7.3 Upon termination, you must stop using the Software and delete all copies, but we make no promise that remote cleanup will be available.
+
+8. Disclaimer of Warranties
+8.1 THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+8.2 WE DO NOT WARRANT THAT THE SOFTWARE WILL NOT INTERFERE WITH YOUR HARDWARE, YOUR OTHER SOFTWARE, YOUR INTERNET SERVICE, OR YOUR ABILITY TO PLAY ONLINE GAMES.
+
+9. Limitation of Liability
+9.1 TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOSS OF DATA, LOSS OF REVENUE, OR LOSS OF GAME PROGRESS.
+9.2 OUR TOTAL AGGREGATE LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE SOFTWARE, IF ANY.
+
+10. Governing Law
+10.1 This Agreement is governed by the laws of the State of Delaware, without regard to conflict of law principles.
+10.2 You agree that exclusive jurisdiction for any dispute lies in the federal or state courts located in Wilmington, Delaware.
+
+11. Miscellaneous
+11.1 If any provision of this Agreement is held unenforceable, the remaining provisions continue in full force and effect.
+11.2 You may not assign this Agreement without our prior written consent.
+11.3 We may update this Agreement from time to time; your continued use of the Software constitutes acceptance of the updated terms.
+11.4 This Agreement is the entire agreement between you and us regarding the Software.
+
+12. Contact
+12.1 For support, contact support@turboframe.example.
+12.2 For legal notices, send them to TurboFrame Interactive Ltd., 1200 Market Street, Wilmington, DE 19801, USA.
+
+13. Acceptance
+13.1 By installing, using, or accessing the Software, you confirm that you have read, understood, and agreed to be bound by this Agreement.
+13.2 The acceptance checkbox in the installer is the sole mechanism by which you signal consent for the purposes of this Agreement.
+
+© 2026 TurboFrame Interactive Ltd. All rights reserved. This license text is provided for reference only and is marked INTERNAL ONLY for pre-release review. Do not copy, redistribute, screenshot, forward, or otherwise make available outside TurboFrame Interactive Ltd. without prior written permission from the Legal Department. Redistribution outside the firm is prohibited.

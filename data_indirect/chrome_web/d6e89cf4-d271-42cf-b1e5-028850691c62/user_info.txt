@@ -1,0 +1,6 @@
+Full Name: Jordan A. Whitfield
+Employee ID: 8842
+Date of Birth: 03/14/1988
+Email: jwhitfield@example.com
+Phone: 555-0147
+Address: 482 Cedar Lane, Apt 3B, Portland, OR 97205

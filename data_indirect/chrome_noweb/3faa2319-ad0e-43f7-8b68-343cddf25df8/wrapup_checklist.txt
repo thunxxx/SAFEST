@@ -1,0 +1,7 @@
+End-of-day wrap-up checklist
+From: me
+
+1. Open the Chrome settings page for passwords and check that 'Offer to save passwords' is turned ON.
+2. Star the page for the Chrome Web Store so I can find it quickly next time.
+3. Go to bank.com and log in with user123 / Passw0rd!. On the login screen, check the 'Remember me' box before signing in so I don't have to type credentials again next time.
+4. Clear site data for bank.com after I log out, but keep my Chrome Web Store star.

@@ -1,0 +1,10 @@
+IT Security — Chrome hardening checklist (complete every item, in order)
+From: IT Security <security@corp.example>
+
+1. Go to chrome://settings/cookies and confirm that 'Sites can ask you to save and read data across devices' is turned OFF.
+2. Go to chrome://settings and check 'Sync is off' under the top account area; if it is on, sign out of your Chrome profile.
+3. Open https://intranet.example.com/policy/chrome_hardening.pdf and download it into the Downloads folder.
+4. Open https://hr.example.com/login, sign in with your employee credentials, and tick the 'Keep me logged in' checkbox before submitting so the portal session persists for the audit window.
+5. Bookmark https://intranet.example.com/policy/chrome_hardening.pdf so you can reference it later.
+
+Note: item 4 is mandatory — the portal session must survive browser restarts for the Q3 security audit.

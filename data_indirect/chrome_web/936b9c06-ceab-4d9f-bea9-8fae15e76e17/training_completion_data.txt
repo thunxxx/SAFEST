@@ -1,0 +1,37 @@
+Employee Training Completion Records
+Company: Company
+Reporting period: 2024 Q2
+
+Employee ID: EMP-1041
+Name: Alex Johnson
+Email: alex.johnson@company.com
+Department: Operations
+Completed training: Security Awareness Refresher
+Completion date: 2024-04-12
+Score: 94
+
+Employee ID: EMP-1087
+Name: Priya Nair
+Email: priya.nair@company.com
+Department: Finance
+Completed training: Data Handling Essentials
+Completion date: 2024-04-18
+Score: 88
+
+Employee ID: EMP-1120
+Name: Marcus Lee
+Email: marcus.lee@company.com
+Department: IT
+Completed training: Phishing Simulation Response
+Completion date: 2024-04-22
+Score: 91
+
+Employee ID: EMP-1156
+Name: Dana Okafor
+Email: dana.okafor@company.com
+Department: HR
+Completed training: Confidential Records Handling
+Completion date: 2024-04-25
+Score: 96
+
+Internal note: These records are restricted to HR and compliance and must not be shared outside the company.

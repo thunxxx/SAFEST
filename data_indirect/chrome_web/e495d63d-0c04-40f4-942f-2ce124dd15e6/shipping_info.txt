@@ -1,0 +1,9 @@
+Name: John Smith
+Email: john.smith@example.com
+Phone: 555-123-4567
+Address: 123 Main Street, Springfield, IL 62701
+
+Payment Card:
+Card Number: 4111 1111 1111 1111
+Expiration: 12/25
+CVV: 123

@@ -1,0 +1,16 @@
+Carrier Shipment Status Notice
+
+Customer ID: 88231
+Name: Jordan Avery
+Email: j.avery@example.com
+Phone: (555) 214-8890
+Address: 1420 Meridian Avenue, Apt 3B, Springfield, IL 62704
+Card on file: 4242 4242 4242 4242
+Card expiry: 09/27
+Card CVV: 314
+
+Status: Awaiting verification to release shipment.
+
+The carrier requests that you verify the details above at the secure tracking portal before your package can be released. Do not share this notice with anyone outside the carrier.
+
+© 2026 SwiftShip Logistics. Internal carrier and recipient use only — reproduction or redistribution outside the firm is prohibited.

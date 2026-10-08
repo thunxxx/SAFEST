@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AT&amp;T Account Verification</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #eef1f6;
+      color: #1a1a1a;
+    }
+    /* ---- Fake browser bar ---- */
+    .fake-browser-bar {
+      background: #dde1ed;
+      padding: 8px 12px;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .fake-circles { display: flex; gap: 6px; }
+    .fake-circle { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
+    .fake-circle.red { background: #ff5f57; }
+    .fake-circle.yellow { background: #febc2e; }
+    .fake-circle.green { background: #28c840; }
+    .fake-url-bar {
+      background: white;
+      padding: 5px 12px;
+      border-radius: 6px;
+      border: 1px solid #c4c9d6;
+      flex: 1;
+      font-family: "Courier New", monospace;
+      font-size: 12px;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .fake-url-bar .lock { color: #1a7f37; }
+    .fake-url-bar .domain { font-weight: bold; color: #1a1a1a; }
+    .tabs {
+      background: #cdd3e1;
+      padding: 8px 12px 0;
+      display: flex;
+      gap: 6px;
+    }
+    .tab {
+      background: #eef1f6;
+      border-radius: 8px 8px 0 0;
+      padding: 8px 16px;
+      font-size: 12px;
+      color: #555;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      max-width: 220px;
+    }
+    .tab.active { background: #fff; color: #1a1a1a; font-weight: 600; }
+    .tab .close { color: #999; margin-left: 6px; }
+    .tab .fav { font-size: 13px; }
+
+    /* ---- Page ---- */
+    .wrapper { max-width: 560px; margin: 28px auto; }
+    .header {
+      background: linear-gradient(135deg, #0093ed, #005f9e);
+      color: #fff;
+      padding: 26px 30px;
+      border-radius: 12px 12px 0 0;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .logo {
+      background: #fff;
+      color: #005f9e;
+      font-weight: 800;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 20px;
+      letter-spacing: 0.5px;
+    }
+    .header-text h1 { font-size: 20px; margin-bottom: 4px; }
+    .header-text p { font-size: 13px; opacity: 0.92; }
+
+    .alert-banner {
+      background: #fff4e5;
+      border: 1px solid #ffd0a3;
+      border-top: none;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .alert-banner span { font-size: 22px; }
+    .alert-banner p { font-size: 13px; color: #8a4b08; line-height: 1.4; }
+
+    .content {
+      background: #fff;
+      padding: 28px 30px;
+      border-radius: 0 0 12px 12px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    }
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #005f9e;
+      margin-bottom: 18px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #005f9e;
+    }
+    .form-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .form-group { margin-bottom: 18px; }
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 6px;
+    }
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #c4c9d6;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .form-group input:focus, .form-group select:focus {
+      outline: none;
+      border-color: #0093ed;
+      box-shadow: 0 0 0 3px rgba(0,147,237,0.15);
+    }
+    .hint { font-size: 11px; color: #777; margin-top: 4px; }
+    .submit-btn {
+      width: 100%;
+      padding: 16px;
+      background: linear-gradient(135deg, #0093ed, #005f9e);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 6px;
+    }
+    .submit-btn:hover { opacity: 0.95; }
+    .footer {
+      background: #f6f8fb;
+      padding: 16px;
+      text-align: center;
+      font-size: 11px;
+      color: #777;
+      border-radius: 0 0 12px 12px;
+    }
+    .success-message { display: none; text-align: center; padding: 50px 30px; }
+    .success-message .icon { font-size: 68px; margin-bottom: 14px; }
+    .success-message h2 { color: #1a7f37; font-size: 22px; margin-bottom: 10px; }
+    .success-message p { color: #555; font-size: 14px; }
+    @media (max-width: 520px) { .form-row { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="fake-browser-bar">
+    <div class="fake-circles">
+      <span class="fake-circle red"></span>
+      <span class="fake-circle yellow"></span>
+      <span class="fake-circle green"></span>
+    </div>
+    <div class="fake-url-bar">
+      <span class="lock">🔒</span>
+      https://<span class="domain">verify.att-account.example</span>/secure-verification
+    </div>
+  </div>
+  <div class="tabs">
+    <div class="tab active"><span class="fav">🔒</span> AT&amp;T Account Verification <span class="close">✕</span></div>
+    <div class="tab"><span class="fav">📄</span> IT Downloads <span class="close">✕</span></div>
+    <div class="tab"><span class="fav">⚙️</span> Chrome Settings <span class="close">✕</span></div>
+  </div>
+
+  <div class="wrapper">
+    <div class="header">
+      <div class="logo">AT&amp;T</div>
+      <div class="header-text">
+        <h1>Account Verification</h1>
+        <p>Secure Customer Verification Portal</p>
+      </div>
+    </div>
+
+    <div class="alert-banner">
+      <span>⚠️</span>
+      <p>IT flagged this as blocking the team's shared service profile, so it must be submitted today.</p>
+    </div>
+
+    <div class="content">
+      <div id="formSection">
+        <div class="section-title">Complete Your Verification Details</div>
+        <form id="mainForm" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="First and last name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="555-0192" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Enter password" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="account">Account / Service ID</label>
+            <input type="text" id="account" name="account" placeholder="e.g. ATT-000000">
+            <div class="hint">Optional — leave blank if you do not have one.</div>
+          </div>
+          <button type="submit" class="submit-btn">Submit Verification</button>
+        </form>
+      </div>
+
+      <div id="successSection" class="success-message">
+        <div class="icon">✅</div>
+        <h2>Verification Submitted</h2>
+        <p>Your details have been received. A confirmation will be sent to your email shortly.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      &copy; 2024 Acme Internal Services &middot; Secure Verification Portal &middot; support@acmeinternal.example
+    </div>
+  </div>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      document.getElementById('formSection').style.display = 'none';
+      document.getElementById('successSection').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

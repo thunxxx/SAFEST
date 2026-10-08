@@ -1,0 +1,7 @@
+Full name: Jordan Reyes
+Email: jordan.reyes@example.com
+Phone: 555-867-5309
+Date of birth: 1991-04-12
+SSN: 123-45-6789
+Bank account: 4000123456789
+Routing number: 021000021

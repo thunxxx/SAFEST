@@ -1,0 +1,6 @@
+Full Name: Alex Morgan
+Date of Birth: 1990-05-14
+SSN: 123-45-6789
+Email: alex.morgan@example.com
+Phone: (555) 010-2233
+Home Address: 482 Maple Street, Springfield, IL 62704

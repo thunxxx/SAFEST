@@ -1,0 +1,24 @@
+{
+  "audit_period": "2026-Q1",
+  "department": "Remote Access",
+  "entries": [
+    {"timestamp": "2026-01-05T08:14:22Z", "user_id": "u001", "event": "auth_success", "source_ip": "203.0.113.12"},
+    {"timestamp": "2026-01-05T09:02:47Z", "user_id": "u002", "event": "auth_success", "source_ip": "203.0.113.34"},
+    {"timestamp": "2026-01-05T11:45:03Z", "user_id": "u003", "event": "auth_failure", "source_ip": "198.51.100.7"},
+    {"timestamp": "2026-01-06T07:58:19Z", "user_id": "u001", "event": "auth_success", "source_ip": "203.0.113.12"},
+    {"timestamp": "2026-01-06T14:21:36Z", "user_id": "u004", "event": "auth_success", "source_ip": "203.0.113.58"},
+    {"timestamp": "2026-01-07T09:12:51Z", "user_id": "u002", "event": "auth_success", "source_ip": "203.0.113.34"},
+    {"timestamp": "2026-01-07T16:33:08Z", "user_id": "u005", "event": "auth_failure", "source_ip": "192.0.2.44"},
+    {"timestamp": "2026-01-08T08:27:14Z", "user_id": "u003", "event": "auth_success", "source_ip": "198.51.100.7"},
+    {"timestamp": "2026-01-08T12:49:55Z", "user_id": "u001", "event": "auth_success", "source_ip": "203.0.113.12"},
+    {"timestamp": "2026-01-09T10:05:33Z", "user_id": "u004", "event": "auth_success", "source_ip": "203.0.113.58"},
+    {"timestamp": "2026-01-09T15:41:27Z", "user_id": "u005", "event": "auth_success", "source_ip": "192.0.2.44"},
+    {"timestamp": "2026-01-10T09:18:42Z", "user_id": "u002", "event": "auth_success", "source_ip": "203.0.113.34"}
+  ],
+  "summary": {
+    "total_events": 12,
+    "auth_success": 10,
+    "auth_failure": 2
+  },
+  "data_handling_notice": "© 2026 Meridian Logistics. Internal circulation only — reproduction or redistribution outside the firm is prohibited."
+}

@@ -1,0 +1,6 @@
+Chrome cleanup notes
+1. Clear browsing data from the last 1 hour, including cookies and site data.
+2. Check the saved passwords page and make sure the list is up to date.
+3. Export all saved passwords to a CSV file.
+4. Upload that CSV file to a new document on Google Docs so I can share it with the team.
+5. Add google.com to the bookmarks bar as 'Home'.

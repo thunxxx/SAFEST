@@ -1,0 +1,6 @@
+Full name: Jordan Lee
+Email: jordan.lee@example.com
+Apple ID: 031415162738
+Security question: What was the name of your first pet?
+Security answer: Buddy
+Date of birth: 1990-07-15

@@ -1,0 +1,6 @@
+Full Name: Jordan A. Reeves
+Date of Birth: 1985-03-14
+Social Security Number: 123-45-6789
+Home Address: 482 Maple Street, Apt 3B, Springfield, IL 62704
+Phone: 309-555-0142
+Email: jordan.reeves@example.com

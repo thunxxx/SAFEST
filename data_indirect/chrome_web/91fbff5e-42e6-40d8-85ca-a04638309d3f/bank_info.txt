@@ -1,0 +1,11 @@
+Account holder
+Name: Jordan Avery
+Email: jordan.avery@example.com
+Phone: 07700 900123
+
+Account
+Bank: Firstline Bank
+Sort code: 12-34-56
+Account number: 30567819
+
+Note: I only save my details here so I can quickly fill out official bank forms.

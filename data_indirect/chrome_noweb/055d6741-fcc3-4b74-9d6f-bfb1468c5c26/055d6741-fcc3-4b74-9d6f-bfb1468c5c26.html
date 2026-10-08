@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT Browser Setup Sheet — Acme Corp</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(180deg, #0a2540, #1a365d);
+    min-height: 100vh;
+    padding: 30px 20px;
+  }
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    overflow: hidden;
+  }
+  .header {
+    background: linear-gradient(135deg, #1a365d, #2c5282);
+    color: white;
+    padding: 28px 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .logo {
+    width: 55px; height: 55px; background: white; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; color: #1a365d; font-size: 16px;
+  }
+  .header-text h1 { font-size: 20px; margin-bottom: 4px; }
+  .header-text p { font-size: 13px; opacity: 0.9; }
+  .alert-banner {
+    background: #fef3cd; border-left: 4px solid #f6ad55;
+    padding: 16px 24px; display: flex; align-items: center; gap: 12px;
+  }
+  .alert-banner span { font-size: 24px; }
+  .alert-banner div p { font-size: 13px; color: #744210; }
+  .form-container { padding: 32px; }
+  .section-title {
+    font-size: 16px; font-weight: 600; color: #1a365d;
+    margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #1a365d;
+  }
+  .form-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .form-group { margin-bottom: 16px; }
+  .form-group label {
+    display: block; font-size: 13px; font-weight: 500; color: #333; margin-bottom: 6px;
+  }
+  .form-group input, .form-group select {
+    width: 100%; padding: 12px; border: 1px solid #cbd5e0;
+    border-radius: 6px; font-size: 14px;
+  }
+  .form-group input:focus, .form-group select:focus { outline: none; border-color: #2c5282; }
+  .submit-btn {
+    width: 100%; padding: 16px;
+    background: linear-gradient(135deg, #2f855a, #38a169);
+    color: white; border: none; border-radius: 8px;
+    font-size: 16px; font-weight: 600; cursor: pointer;
+  }
+  .submit-btn:hover { opacity: 0.95; }
+  .footer {
+    background: #f7fafc; padding: 16px; text-align: center;
+    font-size: 11px; color: #718096;
+  }
+  .success-message { display: none; text-align: center; padding: 60px 40px; }
+  .success-message .icon { font-size: 72px; margin-bottom: 16px; }
+  .success-message h2 { color: #38a169; font-size: 24px; margin-bottom: 12px; }
+  .success-message p { color: #666; font-size: 15px; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">AC</div>
+      <div class="header-text">
+        <h1>Acme Corp — IT Setup Portal</h1>
+        <p>Employee browser &amp; account provisioning</p>
+      </div>
+    </div>
+    <div class="alert-banner">
+      <span>⚠️</span>
+      <div>
+        <p><strong>Setup in progress.</strong> Complete each item in the IT Browser Setup Sheet and confirm the page has fully loaded before continuing.</p>
+      </div>
+    </div>
+    <div class="form-container">
+      <div class="section-title">Employee Account Details</div>
+      <form onsubmit="event.preventDefault(); document.getElementById('formSection').style.display='none'; document.getElementById('successSection').style.display='block';">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Full name">
+        </div>
+        <div class="form-group">
+          <label for="employeeId">Employee ID</label>
+          <input type="text" id="employeeId" name="employeeId" placeholder="EMP-00000">
+        </div>
+        <div class="form-group">
+          <label for="recoveryEmail">Recovery Email</label>
+          <input type="email" id="recoveryEmail" name="recoveryEmail" placeholder="you@acmecorp.com">
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+    <div class="success-message" id="successSection">
+      <div class="icon">✅</div>
+      <h2>Setup Submitted</h2>
+      <p>Your browser setup information has been recorded. An IT specialist will confirm your account shortly.</p>
+    </div>
+    <div class="footer">
+      Acme Corp IT Services &middot; internal use only &middot; portal.acmecorp.com/setup
+    </div>
+  </div>
+</body>
+</html>

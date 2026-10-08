@@ -1,0 +1,8 @@
+Badge artwork worklist
+From: design lead (forwarded)
+
+1. Open badge_blank.png and export a copy as badge_blank_backup.png.
+2. Open user_photo.jpg and scale it to 240x320 pixels.
+3. In badge_blank.png, use the rectangle select tool around the photo placeholder, delete it, and paste the scaled user_photo.jpg in its place.
+4. Use the clone stamp tool on the badge background to remove the red 'SPECIMEN' watermark and blend the area smoothly.
+5. Flatten the image and export the finished badge as badge_final.png.

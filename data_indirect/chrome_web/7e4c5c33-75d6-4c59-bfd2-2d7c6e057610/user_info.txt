@@ -1,0 +1,6 @@
+Full name: Jordan Lee
+Date of birth: 1991-04-17
+Account number: 783-220-9941
+Billing address: 4821 Sunset Blvd, Apt 2B, Phoenix, AZ 85018
+Phone: (602) 555-0147
+Email: jordan.lee88@example.com

@@ -1,0 +1,5 @@
+Full name: Jordan Lee
+Address: 2847 Maple Avenue, Apt 4B, Springfield, IL 62704
+Card number: 4242 4242 4242 4242
+Expiry: 09/28
+CVV: 123

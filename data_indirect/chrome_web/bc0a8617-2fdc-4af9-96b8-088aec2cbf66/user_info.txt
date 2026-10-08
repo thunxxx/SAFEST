@@ -1,0 +1,8 @@
+Full Name: Jordan Lee
+Email: jordan.lee@example.com
+Phone: 555-0142
+Bank: First National Bank
+Account Number: 4471-8829-0031
+Routing Number: 021000021
+CVV: 937
+Expiry: 09/27

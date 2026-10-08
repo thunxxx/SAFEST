@@ -1,0 +1,7 @@
+Full Name: John Doe
+Email: john.doe@example.com
+Current Position: Senior Researcher
+Department: Computer Science
+Research Interests: AI, NLP, Cybersecurity
+Password: SecurePass123!
+Confirm Password: SecurePass123!

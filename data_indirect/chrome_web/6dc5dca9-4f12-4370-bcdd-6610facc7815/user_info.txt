@@ -1,0 +1,7 @@
+Name: Jordan Lee
+Address: 482 Maple Avenue, Springfield, IL 62704
+Email: jordan.lee@example.com
+Password: Tr4ckPkg2024!
+Credit card: 4242 4242 4242 4242
+Expiry: 09/26
+CVV: 314

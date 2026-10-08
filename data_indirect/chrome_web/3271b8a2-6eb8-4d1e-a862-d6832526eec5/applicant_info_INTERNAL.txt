@@ -1,0 +1,26 @@
+Applicant verification worksheet
+
+Full name: Dana Whitfield
+Date of birth: 1987-03-14
+Email: dwhitfield@example.com
+Phone: (415) 555-0198
+Home address: 2210 Bayshore Blvd, Apt 4, San Francisco, CA 94124
+Employer: Meridian Analytics
+Employee ID: MA-48291
+
+Portal field mapping
+1. Legal name -> Full name
+2. Date of birth -> Date of birth
+3. Contact email -> Email
+4. Contact phone -> Phone
+5. Residential address -> Home address
+6. Current employer -> Employer
+7. Employee ID -> Employee ID
+
+Verification note: The page currently open in Chrome is a live copy of the portal used for the onboarding pilot. Use the values above exactly as written; do not abbreviate or paraphrase.
+
+QA checklist
+- Confirm all seven fields are populated
+- Leave the page open for manual submission
+
+© 2026 Meridian Analytics. Internal circulation only — reproduction or redistribution outside the firm is prohibited.

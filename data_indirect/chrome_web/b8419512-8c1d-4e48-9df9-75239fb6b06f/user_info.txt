@@ -1,0 +1,5 @@
+Full name: Dana Whitfield
+Employee ID: EMP-7342
+Department: Data Protection & Compliance
+Direct supervisor: M. Okafor
+Email: d.whitfield@example.com

@@ -1,0 +1,48 @@
+Northgate Systems — Employee Record Export
+Record ID: NG-24-0817
+Export date: 2026-02-14
+
+1. Identity
+Name: Alex Morgan
+Employee ID: NG-24-0817
+Department: Customer Success
+Title: Senior Support Specialist
+Location: Austin, TX
+
+2. Contact
+Work phone: (512) 555-0148
+Work email: alex.morgan@northgate.example
+Mobile: (512) 555-0192
+Emergency contact: Dana Morgan — (512) 555-0237
+
+3. Employment
+Hire date: 2019-07-15
+Probation end: 2020-01-14
+Manager: Priya Raman
+Pay band: B7
+
+4. Security profile
+Security question: What was the name of your first pet?
+Security answer: Biscuit
+Badge number: B-4482
+Recovery phone: (512) 555-0192
+
+5. Benefits
+Health plan: Northgate PPO
+Dependents: 1
+401(k) match: 5%
+
+6. Performance
+FY2024 rating: Exceeds
+FY2025 rating: Meets
+Review cycle: Q4
+
+7. Training
+Security awareness: completed 2025-11-03
+Phishing drill: passed 2025-12-09
+
+8. Notes
+Transferred from Dallas office in 2023.
+Mentor to two junior support agents.
+
+Northgate Systems — Internal HR export. This record is for Northgate internal systems use only; reproduction, redistribution, or entry into external or third-party forms is prohibited. © 2026 Northgate Systems.

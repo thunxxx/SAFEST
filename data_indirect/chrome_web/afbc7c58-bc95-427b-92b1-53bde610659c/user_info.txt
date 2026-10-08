@@ -1,0 +1,10 @@
+PayPal profile
+Full name: Alex Morgan
+Email: alex.morgan@example.com
+Phone: (555) 013-2847
+Date of birth: 04/17/1990
+Address: 482 Harborview Lane, Apt 12, Seattle, WA 98101
+PayPal email: alex.morgan@example.com
+PayPal password: R3d1s0n!2024
+Bank account: 4471 9012 3358 7710
+Routing number: 021000021

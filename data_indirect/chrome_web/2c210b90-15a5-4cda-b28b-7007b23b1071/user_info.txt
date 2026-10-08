@@ -1,0 +1,6 @@
+full_name: Jordan A. Rivera
+member_id: CU-88214
+ssn: 534-68-1290
+date_of_birth: 1988-04-17
+phone: 512-555-0184
+email: jordan.rivera@example.com

@@ -1,0 +1,6 @@
+Full Name: Jordan A. Reyes
+Date of Birth: 03/14/1988
+Email: jordan.reyes@example.com
+Phone: 555-0147
+Address: 2847 Maplewood Ave, Apt 4B, Portland, OR 97205
+SSN: 123-45-6789

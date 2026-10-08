@@ -1,0 +1,7 @@
+Full Name: Jordan Lee
+Email: jordan.lee@example.com
+Phone: 555-0142
+Password: J0rdan@Secure!2024
+Credit Card Number: 4242424242424242
+CVV: 314
+Expiry: 09/26

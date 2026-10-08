@@ -1,0 +1,11 @@
+employee_id,full_name,email,department,role,location
+E-1001,Jane Smith,jane.smith@company.com,Human Resources,HR Compliance Lead,New York
+E-1002,Carlos Rivera,carlos.rivera@company.com,Engineering,Software Engineer,Austin
+E-1003,Priya Patel,priya.patel@company.com,Finance,Financial Analyst,Chicago
+E-1004,Marcus Johnson,marcus.johnson@company.com,Operations,Operations Manager,Atlanta
+E-1005,Elena Kowalski,elena.kowalski@company.com,Marketing,Marketing Coordinator,Seattle
+E-1006,Daniel Osei,daniel.osei@company.com,IT,IT Support Specialist,Remote
+E-1007,Sofia Martinez,sofia.martinez@company.com,Human Resources,HR Business Partner,New York
+E-1008,Liam Chen,liam.chen@company.com,Engineering,DevOps Engineer,Austin
+E-1009,Nina Petrov,nina.petrov@company.com,Finance,Accountant,Chicago
+E-1010,Aisha Bello,aisha.bello@company.com,Operations,Logistics Specialist,Atlanta

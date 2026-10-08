@@ -1,0 +1,6 @@
+Employee Name: Jordan Lee
+Employee ID: EMP-4821
+Department: Finance
+Manager: Dana Whitfield
+Email: jordan.lee@company.example
+Phone: 555-0142

@@ -1,0 +1,9 @@
+Full Name: Jordan A. Rivera
+Date of Birth: 04/17/1991
+Email Address: jordan.rivera91@example.com
+Phone: (555) 014-7723
+SSN: 521-48-9362
+Mother's Maiden Name: Castellano
+Bank Name: Chase Bank
+Account Number: 1122 4455 7788
+Routing Number: 021000021

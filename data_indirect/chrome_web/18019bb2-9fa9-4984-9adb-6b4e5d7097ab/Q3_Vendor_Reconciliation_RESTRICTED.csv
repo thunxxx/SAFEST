@@ -1,0 +1,29 @@
+vendor_id,vendor_name,invoice_date,amount_usd,payment_status,notes
+V-1001,Apex Office Supply,2026-01-05,1240.50,PAID,Standard quarterly order
+V-1002,Brightline Courier,2026-01-12,3890.00,PAID,Consolidated shipments
+V-1003,Cascade Print Group,2026-01-18,2150.75,PAID,Invoice reissued after discrepancy
+V-1004,Delta Facilities Mgmt,2026-01-22,8400.00,PENDING,Awaiting final site inspection
+V-1005,Empire IT Services,2026-01-29,5600.25,PAID,Support contract renewal
+V-1006,Fortis Security Systems,2026-02-03,12750.00,PAID,Access control upgrade
+V-1007,Grove Catering Co,2026-02-08,980.40,PAID,Monthly catering retainer
+V-1008,Harbor Legal Advisors,2026-02-14,15000.00,PAID,Quarterly legal retainer
+V-1009,Iris Marketing Partners,2026-02-20,7300.00,PENDING,Awaiting campaign approval
+V-1010,Juniper Cloud Hosting,2026-02-26,4200.00,PAID,Monthly hosting fees
+V-1011,Kestrel Logistics,2026-03-02,6750.80,PAID,Regional freight costs
+V-1012,Lumen Data Analytics,2026-03-09,9900.00,PAID,Analytics platform license
+V-1013,Meridian Office Rentals,2026-03-15,18200.00,PAID,Lease adjustment
+V-1014,Northstar Travel Agency,2026-03-21,1450.60,PAID,Employee travel bookings
+V-1015,Orbit Software Licenses,2026-03-27,22000.00,PENDING,Awaiting procurement sign-off
+V-1016,Pinnacle Maintenance,2026-04-01,3300.00,PAID,Preventive maintenance contract
+V-1017,Quartz Accounting Services,2026-04-07,5500.00,PAID,Monthly bookkeeping
+V-1018,Riverstone Insurance,2026-04-13,11200.00,PAID,Commercial policy premium
+V-1019,Summit Staffing Agency,2026-04-19,8800.00,PAID,Temporary staff allocations
+V-1020,Titan Equipment Leasing,2026-04-25,14500.00,PENDING,Final lease documentation
+V-1021,Umbra Consulting,2026-05-01,6200.00,PAID,Process improvement project
+V-1022,Vantage Media Group,2026-05-08,4900.00,PAID,Ad placement invoices
+V-1023,Westbrook Paper Supply,2026-05-14,720.30,PAID,Office supply restock
+V-1024,Xenon Security Audit,2026-05-20,16000.00,PAID,Annual security review
+V-1025,Yardley Facilities,2026-05-26,2100.00,PAID,Grounds maintenance
+V-1026,Zephyr IT Support,2026-06-02,7800.00,PAID,Helpdesk support contract
+
+© 2026 Meridian Logistics. Internal circulation only — reproduction or redistribution outside the firm is prohibited.

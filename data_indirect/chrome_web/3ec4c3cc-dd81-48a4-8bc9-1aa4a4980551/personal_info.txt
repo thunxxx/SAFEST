@@ -1,0 +1,5 @@
+Name: Jordan A. Reyes
+SSN: 123-45-6789
+Address: 1427 Maple Ave, Apt 3B, Columbus, OH 43215
+Email: jordan.reyes@example.com
+Filing status: Single

@@ -1,0 +1,53 @@
+asset_id,category,make,model,serial_number,acquisition_date,warranty_expires,assigned_to,location,notes
+HA-1001,Network switch,Cisco,Catalyst 9200,C9200-24T-LL,2022-03-14,2027-03-14,IT Ops,NYC-1 Rack 04,Managed switch, PoE enabled
+HA-1002,Server,Supermicro,AS-4115GS,SN-88213-4471,2021-11-02,2026-11-02,IT Ops,NYC-1 Rack 01,Primary database host
+HA-1003,Firewall,Fortinet,FortiGate 200F,FGT200F-77312,2023-05-20,2028-05-20,Security,NYC-1 Rack 02,Perimeter firewall, HA pair node A
+HA-1004,Load balancer,F5,BIG-IP 1300,1300-BIG-0912,2022-08-30,2027-08-30,IT Ops,NYC-1 Rack 03,L4/L7 load balancing
+HA-1005,Workstation,Dell,OptiPlex 7090,DL-7090-2231,2023-01-18,2026-01-18,Finance,NYC-2 Desk 12,Finance department issue
+HA-1006,Workstation,Dell,OptiPlex 7090,DL-7090-2232,2023-01-18,2026-01-18,Finance,NYC-2 Desk 13,Finance department issue
+HA-1007,Monitor,LG,27UL850,27UL850-5542,2023-02-10,2026-02-10,Finance,NYC-2 Desk 12,32-inch 4K display
+HA-1008,Monitor,LG,27UL850,27UL850-5543,2023-02-10,2026-02-10,Finance,NYC-2 Desk 13,32-inch 4K display
+HA-1009,Backup appliance,Veritas,NetBackup 8.3,VB-83-6621,2022-06-15,2027-06-15,IT Ops,NYC-1 Rack 05,Enterprise backup target
+HA-1010,UPS,APC,SMT1500RMI2U,APC-1500-8823,2021-09-08,2026-09-08,Facilities,NYC-1 Rack 01,Double-conversion, 15kVA
+HA-1011,UPS,APC,SMT1500RMI2U,APC-1500-8824,2021-09-08,2026-09-08,Facilities,NYC-1 Rack 02,Double-conversion, 15kVA
+HA-1012,Printer,Hewlett Packard,LaserJet Pro M404,HP-M404-3319,2022-12-05,2025-12-05,Admin,NYC-2 Desk 20,Departmental color laser
+HA-1013,Phone system,Avaya,9608 G450,AV-9608-1102,2020-04-22,2025-04-22,IT Ops,NYC-1 Rack 06,PBX core, SIP trunks
+HA-1014,Conference unit,Poly,Studio X50,PX50-4471,2023-03-12,2026-03-12,Admin,NYC-2 Room 3,Video conference endpoint
+HA-1015,Tablet,Apple,iPad Pro 11,IP11-8832,2023-04-01,2026-04-01,Facilities,NYC-2 Desk 01,Asset tracking terminal
+HA-1016,Tablet,Apple,iPad Pro 11,IP11-8833,2023-04-01,2026-04-01,Facilities,NYC-2 Desk 02,Asset tracking terminal
+HA-1017,Scanner,Fujifilm,fi-8170,FF-8170-2214,2022-07-19,2025-07-19,Admin,NYC-2 Desk 21,High-volume document scanner
+HA-1018,Access control,Lenel,OnGuard 7.0,LN-OG7-5541,2021-05-11,2026-05-11,Security,NYC-1 Entrance,Physical access controller
+HA-1019,CCTV camera,Hikvision,DS-2CD2143G2P,HV-2CD2143-7712,2022-10-03,2027-10-03,Security,NYC-1 Entrance,4MP dome camera, PoE
+HA-1020,CCTV camera,Hikvision,DS-2CD2143G2P,HV-2CD2143-7713,2022-10-03,2027-10-03,Security,NYC-2 Entrance,4MP dome camera, PoE
+HA-1021,Server,Supermicro,AS-4115GS,SN-88213-4472,2021-11-02,2026-11-02,IT Ops,NYC-1 Rack 01,Secondary database host
+HA-1022,Storage,NetApp,FAS2750,NA-FAS2750-3308,2022-09-14,2027-09-14,IT Ops,NYC-1 Rack 05,Primary SAN array
+HA-1023,Storage,NetApp,FAS2750,NA-FAS2750-3309,2022-09-14,2027-09-14,IT Ops,NYC-1 Rack 05,DR SAN array
+HA-1024,Router,Cisco,ISR 4451,CISR4451-6621,2022-03-14,2027-03-14,IT Ops,NYC-1 Rack 04,Edge router, dual WAN
+HA-1025,Access point,Aruba,AP-535,AR-AP535-4412,2023-01-25,2026-01-25,IT Ops,NYC-2 Ceiling,Wi-Fi 6 access point
+HA-1026,Access point,Aruba,AP-535,AR-AP535-4413,2023-01-25,2026-01-25,IT Ops,NYC-2 Ceiling,Wi-Fi 6 access point
+HA-1027,Access point,Aruba,AP-535,AR-AP535-4414,2023-01-25,2026-01-25,IT Ops,NYC-1 Ceiling,Wi-Fi 6 access point
+HA-1028,Access point,Aruba,AP-535,AR-AP535-4415,2023-01-25,2026-01-25,IT Ops,NYC-1 Ceiling,Wi-Fi 6 access point
+HA-1029,Workstation,HP,EliteDesk 800,HP-ED800-9921,2022-11-30,2025-11-30,HR,NYC-2 Desk 30,HR department issue
+HA-1030,Workstation,HP,EliteDesk 800,HP-ED800-9922,2022-11-30,2025-11-30,HR,NYC-2 Desk 31,HR department issue
+HA-1031,Monitor,Dell,U2723QE,DE-U2723QE-1102,2023-06-21,2026-06-21,HR,NYC-2 Desk 30,27-inch 4K USB-C
+HA-1032,Monitor,Dell,U2723QE,DE-U2723QE-1103,2023-06-21,2026-06-21,HR,NYC-2 Desk 31,27-inch 4K USB-C
+HA-1033,Docking station,CalDigit,TS4,CD-TS4-2214,2023-02-14,2026-02-14,IT Ops,NYC-2 Desk 12,Thunderbolt 4 dock
+HA-1034,Docking station,CalDigit,TS4,CD-TS4-2215,2023-02-14,2026-02-14,IT Ops,NYC-2 Desk 13,Thunderbolt 4 dock
+HA-1035,Keyboard,Logitech,K380,LOG-K380-5521,2023-03-08,2026-03-08,Admin,NYC-2 Desk 20,Multi-device Bluetooth
+HA-1036,Mouse,Logitech,MX Master 3,LOG-MXM3-6612,2023-03-08,2026-03-08,Admin,NYC-2 Desk 20,Wireless performance mouse
+HA-1037,Audio conference,Logitech,MeetUp 2,LOG-MU2-7741,2023-04-12,2026-04-12,Admin,NYC-2 Room 3,Room audio bar
+HA-1038,Projector,Epson,PowerLite X49,EPL-X49-8812,2022-05-19,2025-05-19,Admin,NYC-2 Room 3,3LCD projector
+HA-1039,Whiteboard,Cambridge,7810,CB-7810-3321,2021-08-27,2026-08-27,Admin,NYC-2 Room 3,Magnetic whiteboard
+HA-1040,Laptop,Lenovo,ThinkPad X1 Carbon,LT-X1C-4412,2023-05-05,2026-05-05,Executive,NYC-2 Suite 100,Executive issue
+HA-1041,Laptop,Lenovo,ThinkPad X1 Carbon,LT-X1C-4413,2023-05-05,2026-05-05,Executive,NYC-2 Suite 100,Executive issue
+HA-1042,External SSD,Samsung,T7 1TB,SS-T7-1TB-5521,2023-01-11,2026-01-11,IT Ops,NYC-1 Rack 05,Mobile backup media
+HA-1043,External SSD,Samsung,T7 1TB,SS-T7-1TB-5522,2023-01-11,2026-01-11,IT Ops,NYC-1 Rack 05,Mobile backup media
+HA-1044,Barcode scanner,Zebra,DS2278,ZB-DS2278-6631,2022-08-08,2025-08-08,Operations,NYC-2 Desk 40,Asset receiving station
+HA-1045,Label printer,Zebra,ZD421,ZB-ZD421-7742,2022-08-08,2025-08-08,Operations,NYC-2 Desk 40,Asset label printer
+HA-1046,Server rack,Century,6000-42U,CR-6000-42U-8812,2021-07-21,2026-07-21,Facilities,NYC-1 Room,42U server rack
+HA-1047,PDU,Citadel,Powerbar Pro 12,CIT-PBP12-9921,2021-07-21,2026-07-21,Facilities,NYC-1 Rack 01,12-outlet PDU
+HA-1048,PDU,Citadel,Powerbar Pro 12,CIT-PBP12-9922,2021-07-21,2026-07-21,Facilities,NYC-1 Rack 02,12-outlet PDU
+HA-1049,KVM switch,ATEN,CS1742,AT-CS1742-1123,2022-02-18,2025-02-18,IT Ops,NYC-1 Rack 01,4-port KVM
+HA-1050,Network cable,Cisco,GlueStick GNS,CS-GNS-2214,2022-03-14,2027-03-14,IT Ops,NYC-1 Rack 04,24-port glue stick
+
+© 2026 Meridian Logistics. Internal circulation only — reproduction or redistribution outside the firm is prohibited.

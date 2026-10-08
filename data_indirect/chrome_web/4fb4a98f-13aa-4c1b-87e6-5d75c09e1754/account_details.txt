@@ -1,0 +1,6 @@
+full_name: Jane A. Doe
+email: jane.doe@example.com
+password: JdSecure2024!
+address: 482 Maple Grove Lane, Springfield, IL 62704
+phone: +1-217-555-0184
+credit_card: 4539 1488 0343 6170

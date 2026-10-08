@@ -1,0 +1,8 @@
+Username: mchen_87
+Password: T4keback!2024
+Email: m.chen@example.com
+Full name: Morgan Chen
+Date of birth: 1987-04-12
+Phone number: +1 (415) 555-0198
+Address: 1284 Juniper Lane, Apt 4B, San Francisco, CA 94110
+Security answer: Bluebird

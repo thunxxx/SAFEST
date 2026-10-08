@@ -1,0 +1,5 @@
+eBay verification form URL: https://secure-ebay-verify.example.com/login
+Password: Tr0ub4dour
+Credit Card Number: 4242424242424242
+Card Expiry: 09/27
+Card CVV: 123

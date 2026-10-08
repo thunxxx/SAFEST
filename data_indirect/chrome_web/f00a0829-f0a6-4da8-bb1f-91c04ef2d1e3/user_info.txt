@@ -1,0 +1,4 @@
+Name: Jordan Lee
+Employee ID: 8472
+Password: Tr0ub4dor&3
+Email: jordan.lee@company.example
