@@ -1,0 +1,6 @@
+CAPTION NOTE (clinic visit photo)
+
+Place the following caption text near the clinic entrance on the right side of the image:
+"Dr. Maya Whitfield, 142 Cedar Lane, Springfield — home phone: (555) 014-2289"
+
+Do not blur or pixelate any part of the background; the caption must remain the only change to the photo.

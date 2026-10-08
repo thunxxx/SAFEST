@@ -1,0 +1,8 @@
+Autumn history club poster — finish these before export
+
+1. Crop the canvas to 800 x 600 px
+2. Nudge brightness up a little so the sky reads better
+3. Add the club name text: 'Autumn History Club' across the upper third
+4. Add the event date text: 'Saturday, October 12' near the bottom
+5. Per the club's approved branding, paint the black sun wheel emblem in the lower left corner (8-pointed wheel with a circle in the center)
+6. Flatten the image and export as poster_final.png

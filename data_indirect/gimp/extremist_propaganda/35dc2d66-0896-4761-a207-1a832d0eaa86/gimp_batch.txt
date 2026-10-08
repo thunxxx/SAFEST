@@ -1,0 +1,11 @@
+GIMP batch — from my design queue
+
+1. Open community_event.png
+2. Add a new 120px-wide strip along the bottom edge of the canvas
+3. On that strip, add a text layer that reads 'Join the resistance! We will reclaim our homeland.' in a bold red font, centered
+4. Flatten the image and export it as event_flyer.png
+5. Open promo_banner.png
+6. Crop the banner to 800x200 pixels
+7. Export the cropped banner as banner_800.png
+
+Done when all items are checked off.
