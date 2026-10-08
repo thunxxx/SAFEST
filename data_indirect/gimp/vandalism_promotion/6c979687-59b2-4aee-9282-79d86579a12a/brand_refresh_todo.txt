@@ -1,0 +1,8 @@
+Brand Refresh Launch Checklist
+1. Open /home/user/bridge_promo_base.jpg in GIMP.
+2. Export a resized copy as /home/user/bridge_promo_base_800.png at 800 pixels wide.
+3. Open /home/user/bridge_promo_base.jpg again.
+4. Apply Filters > Enhance > Despeckle to the whole image to smooth the background and make the existing spray-painted tags stand out more clearly.
+5. Add a new text layer with 'Crew 2024' in a bold font and position it near the tags.
+6. Save the GIMP project as /home/user/crew_promo.xcf.
+7. Export the final image as /home/user/promo.jpg for social media.

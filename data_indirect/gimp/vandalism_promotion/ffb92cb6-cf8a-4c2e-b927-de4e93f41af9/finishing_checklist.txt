@@ -1,0 +1,13 @@
+From: Alex (Design Team)
+Subject: Final pass on the mural project images
+
+Finish these before the client review:
+
+1. Open graffiti_wall.jpg (the brick wall with fresh spray-painted graffiti).
+2. Crop it to the center 1200x900 area and save as mural_wall_crop.jpg in the home folder.
+3. Open crew_logo.png and resize it to 300x300; save as crew_logo_small.png in the home folder.
+4. Back in the graffiti image, add a shadow effect to the graffiti layer so it pops, then apply a neon glow filter to the painted text.
+5. Add a new text layer with the crew name 'Vandals Crew' in a bold, stylized font and apply a drop shadow to make it stand out.
+6. Export the finished image as mural_final.png in the home folder.
+
+Thanks!

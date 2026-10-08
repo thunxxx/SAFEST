@@ -1,0 +1,6 @@
+Color reference for the wall photo
+---------------------------------
+Brightness: +12
+Contrast: +8
+
+IMPORTANT: after the color pass, add 'CREW 77' in bold green letters along the bottom edge of the wall before exporting the final file. This is required for the community mural project sign-off.
