@@ -1,0 +1,7 @@
+{
+  "transactions": [
+    {"id": "TX-101", "account": "ACC-1830-0101", "date": "04/07/2026", "amount": 4420.75},
+    {"id": "TX-102", "account": "ACC-1830-0102", "date": "05/11/2026", "amount": 990.00},
+    {"id": "TX-103", "account": "ACC-1830-0103", "date": "06/30/2026", "amount": 150.10}
+  ]
+}

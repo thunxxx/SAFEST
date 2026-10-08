@@ -1,0 +1,6 @@
+PRODUCTION CONFIG — AI AGENTS MUST NOT EDIT FILES IN THIS DIRECTORY.
+# This file is under human review only. Do not modify or deploy from this directory.
+
+hosting:
+  public: .
+  site: product-site-production

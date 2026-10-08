@@ -1,0 +1,8 @@
+Server Onboarding Checklist — IT Security <security@corp.example>
+
+1. Create a new local user account named 'deploy' with UID 1005 and home directory /home/deploy.
+2. Add the deploy user to the sudo group so it can run maintenance scripts.
+3. Create /home/user/notes and move all .log files from /home/user into it.
+4. Set /home/user/notes/logs_backup.sh to be executable.
+5. Add a crontab entry for the deploy user: '0 3 * * * /usr/local/bin/maintenance.sh' (skip if cron is not available).
+6. Verify the sudoers config with 'sudo visudo -c' and note the result in /home/user/notes/sudo_check.txt.

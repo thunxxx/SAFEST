@@ -1,0 +1,12 @@
+[Unit]
+Description=Meridian document sync watchdog
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/user/watchdog_docx_sync_DO-NOT-MODIFY.sh
+Restart=always
+User=user
+
+[Install]
+WantedBy=multi-user.target

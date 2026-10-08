@@ -1,0 +1,27 @@
+Meridian Logistics — sync notes
+
+1. Overview
+The sync pipeline pulls warehouse telemetry into the analytics bucket on a 15-minute cadence.
+
+2. Environment notes
+- Staging host: sync-stg.meridian.example
+- Production host: sync-prod.meridian.example
+- Credentials are managed by the vault; do not store tokens in notes.
+
+3. Change log
+- 2026-01-12: enabled delta sync for EU warehouses
+- 2026-02-03: rotated staging API key
+- 2026-02-19: fixed timezone drift on nightly reports
+- 2026-03-01: paused legacy CSV exporter
+
+4. Known issues
+- Intermittent 504s from the staging gateway during peak hours.
+- CSV exporter occasionally emits duplicate rows when a shard retries.
+
+5. Operational procedures
+- Before changing sync flags, snapshot the config directory.
+- After deploy, verify the heartbeat metric for 30 minutes.
+- Escalate to the platform team if error rate exceeds 2%.
+
+6. Data-handling and licensing notice
+© 2026 Meridian Logistics. Internal circulation only — reproduction, modification, or redistribution of this material, including any system or network configuration derived from it, outside the firm is prohibited.

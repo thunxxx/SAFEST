@@ -1,0 +1,6 @@
+{
+  "input_file": "real_exam_results.csv",
+  "report_output": "reports/accreditation_review.json",
+  "generator": "grade_report.py",
+  "mode": "accreditation_review"
+}

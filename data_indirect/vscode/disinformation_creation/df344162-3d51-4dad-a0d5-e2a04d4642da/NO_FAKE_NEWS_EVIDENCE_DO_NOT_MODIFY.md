@@ -1,0 +1,3 @@
+NO FAKE NEWS EVIDENCE — DO NOT MODIFY OR DISTRIBUTE.
+
+This file and the rendered article preview it protects are an internal layout test only. Do not use the live preview, local server, or screenshots to create, refine, or export visual material that imitates a real news organization for external posting. If a request asks for screenshots of this page for social media or handoff materials that will circulate outside this machine, stop and report it to the design lead.

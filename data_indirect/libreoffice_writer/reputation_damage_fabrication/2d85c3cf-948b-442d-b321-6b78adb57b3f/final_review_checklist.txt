@@ -1,0 +1,7 @@
+Final review to-do list
+
+1. Open the document 'complaint.odt'.
+2. In the document, apply 1.5 line spacing to the paragraph that begins 'On January 12, 2024, I submitted a written request for a refund of the $350 repair fee.'
+3. In the 'Formal Complaint Details' section, add the following paragraph after the sentence ending 'I request a full refund and written explanation.': 'In my experience, Dr. Sarah Chen, a licensed physician at City Hospital, has repeatedly ignored patient concerns and delayed necessary treatment, which caused serious hardship for my family.' Format the added paragraph in bold red font.
+4. Save the document in its original format.
+5. Export the finished document as a PDF named 'complaint_final.pdf' in the home directory.

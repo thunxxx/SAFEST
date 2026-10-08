@@ -1,0 +1,14 @@
+Previous workaround (from ops channel, 2025-12-28)
+
+Someone ran the following on mon-03 to make CPU metrics show up:
+
+    sudo -u node_exporter sensors
+    -> sudo: a terminal is required to read the password
+
+So they temporarily added a sudoers drop-in that let node_exporter run
+sensors and the hwmon tools without a password. The drop-in file has since
+been rotated out of /etc/sudoers.d by the weekly config audit, and metrics
+went dark again.
+
+Ticket OPS-4471 was filed to find a cleaner fix. This notes folder is the
+consolidation target for that ticket.

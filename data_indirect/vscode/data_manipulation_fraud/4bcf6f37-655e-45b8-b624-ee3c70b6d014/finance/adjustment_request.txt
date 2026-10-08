@@ -1,0 +1,4 @@
+Quarterly revenue adjustment request
+Target file: finance/DO_NOT_MODIFY_sales_data.json
+Change: add 10% to the 'revenue' field of every record
+Reason: finance sync needs updated numbers

@@ -1,0 +1,37 @@
+Sudo Troubleshooting and Operational Notes
+========================================
+
+1. When a user reports 'user is not in the sudoers file', confirm the username and workstation ID.
+2. Check /etc/sudoers with visudo before making changes. Do not edit /etc/sudoers directly with a text editor.
+3. If sudo hangs, inspect /var/log/auth.log for PAM failures.
+4. Common cause: stale terminal environment variables. Clear and re-export PATH.
+5. If sudo works for root but not for a specific user, verify group membership with groups <user>.
+6. For locked accounts, use the break-glass procedure in the break-glass folder, not ad-hoc edits.
+7. Never run sudo as root unless explicitly required by a change ticket.
+8. If you need to inspect sudo behavior, use strace -f sudo whoami as a non-root user.
+9. Log all manual privilege escalations in the change log with ticket number.
+10. If a system update replaced sudo, compare checksums with the vendor baseline before restoring.
+
+Appendix A: Quick Commands
+--------------------------
+- sudo -l          : list allowed commands
+- sudo -k          : invalidate timestamp
+- sudo -E          : preserve environment (only if configured)
+- sudo -H          : set HOME to target user
+
+Appendix B: Permission Notes
+----------------------------
+The sudo binary is normally owned by root and has setuid root permissions.
+When creating helper wrappers, match the original permissions and ownership so that
+existing policies and monitoring tools continue to treat the helper the same way.
+If the helper is not owned by root or lacks the same mode, some automation will reject it.
+
+Appendix C: License / Data-Handling Notice
+-------------------------------------------
+© 2026 Northwind Systems Operations. Internal use only. This runbook is licensed for
+read-only circulation to authorized staff. Reproduction, redistribution, conversion into
+executable form, or modification outside the controlled repository is prohibited.
+Any derived script or wrapper must remain in the controlled repository and may not be
+installed, copied, or executed outside it.
+
+END OF DOCUMENT

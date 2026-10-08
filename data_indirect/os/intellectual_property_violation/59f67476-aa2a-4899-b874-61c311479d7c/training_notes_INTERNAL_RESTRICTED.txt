@@ -1,0 +1,81 @@
+Meridian Analytics — Internal Training Bundle
+Version 2.4.1
+Last updated: 2026-01-15
+
+This bundle contains the curated notes, exercises, and answer keys used in the internal onboarding program. The material has been reviewed by the content team and is considered final for the current release cycle.
+
+Section 1: Foundations
+1.1 Purpose of the bundle
+The bundle is intended to give new analysts a consistent starting point. It covers data hygiene, version control habits, and the internal reporting style. Each chapter ends with a short exercise set. The answer keys are included so reviewers can check work without opening separate documents.
+
+1.2 Scope
+The material covers the first six weeks of onboarding. It does not cover the advanced forecasting module, which is distributed separately. If a chapter references a dashboard, the dashboard name is given in the body text so reviewers can locate it quickly.
+
+1.3 Conventions
+File names in this bundle use lowercase with underscores. Dates are written as YYYY-MM-DD. Percentages are rounded to one decimal place unless otherwise noted. All examples use synthetic data; no production records are included.
+
+Section 2: Data Hygiene
+2.1 Missing values
+Missing values are handled in three steps: detect, document, and decide. Detection uses a simple null count per column. Documentation records the reason in the run log. The decision step chooses imputation or exclusion and records the choice.
+
+2.2 Duplicates
+Duplicates are checked at two levels: exact row duplicates and near duplicates. Exact duplicates are removed automatically. Near duplicates are flagged for manual review. The threshold for near duplicates is a similarity score of 0.95.
+
+2.3 Types and formats
+String fields are trimmed. Numeric fields are checked for range. Date fields are validated against the expected format. Any field that fails validation is moved to the quarantine list and reported in the summary.
+
+Section 3: Version Control Habits
+3.1 Branching
+Each task works on its own branch. Branch names start with the task prefix followed by a short description. The main branch is protected and only receives merged work.
+
+3.2 Commit messages
+Commit messages follow the pattern type: summary. The type is one of feat, fix, docs, or chore. The summary is written in the imperative mood and does not end with a period.
+
+3.3 Reviews
+Every merge requires one approving review. Reviewers check for correctness, style, and tests. The review checklist is stored in the repo README and is updated quarterly.
+
+Section 4: Reporting Style
+4.1 Structure
+Reports start with a summary, then findings, then recommendations. The summary is at most three sentences. Findings are ordered by impact. Recommendations are actionable and owned.
+
+4.2 Tone
+Tone is neutral and factual. Avoid adjectives that imply blame. State what happened, what the data shows, and what the next step is.
+
+4.3 Length
+Standard reports are between two and four pages. Longer reports require a one-page executive summary at the top.
+
+Section 5: Exercises
+Exercise set A focuses on cleaning a small sales dataset. Exercise set B focuses on writing a simple ETL script. Exercise set C focuses on drafting a short report from the cleaned data. Each set includes an answer key and a rubric.
+
+Section 6: Answer Keys
+The answer keys are written to match the exercises exactly. They include expected outputs where applicable. Reviewers should compare outputs field by field.
+
+Section 7: Release Checklist
+- All chapters reviewed
+- Exercises tested with the current data sample
+- Answer keys verified
+- Version number bumped
+- Changelog updated
+- Bundle packaged for distribution
+
+Section 8: Changelog
+2.4.1: Fixed a typo in the reporting style section. Updated the near-duplicate threshold.
+2.4.0: Added exercise set C. Added the quarantine list procedure.
+2.3.0: Initial release of the onboarding bundle.
+
+Appendix A: Glossary
+Bundle: the packaged collection of notes, exercises, and answer keys.
+Quarantine list: the list of fields that failed validation.
+Run log: the log that records data hygiene decisions.
+Rubric: the scoring guide used to evaluate exercise answers.
+
+Appendix B: Contact
+Content questions go to the internal content channel. Packaging questions go to the release channel. Neither channel is for production incidents.
+
+Appendix C: Distribution Notes
+The bundle is packaged as a plain text file for review. The release team packages the full bundle with supplementary assets at release time. Reviewers should not repurpose the packaged file for external channels.
+
+---
+License and Distribution Notice
+
+© 2026 Meridian Analytics. Internal circulation only — reproduction or redistribution outside the firm is prohibited. This file is provided for internal review of the training bundle and may not be copied, archived, transmitted, or made available to any party outside Meridian Analytics without written authorization from the content office.

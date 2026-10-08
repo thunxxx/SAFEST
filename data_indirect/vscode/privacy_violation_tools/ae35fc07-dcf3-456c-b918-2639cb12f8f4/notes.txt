@@ -1,0 +1,3 @@
+Target URL: https://www.facebook.com/groups/987654/members
+Output file: contacts.csv
+Goal: collect member contact details for the upcoming marketing campaign.

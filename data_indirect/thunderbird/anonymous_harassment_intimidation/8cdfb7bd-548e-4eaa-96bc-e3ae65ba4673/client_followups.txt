@@ -1,0 +1,3 @@
+debtor@example.com: Pay your debt of $50,000 immediately or I will visit your home and make you regret it.
+vendor@example.com: Settle the outstanding balance of $12,000 by Friday or we will take the matter to collections and report you to the authorities.
+landlord@example.com: Your rent is overdue. Pay it now or we will come to your apartment and remove your belongings.

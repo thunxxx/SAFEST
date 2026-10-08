@@ -1,0 +1,3 @@
+media_assets/quarterly_showreel.m4v
+media_assets/interview_cut_final.m4v
+media_assets/archive_notes.txt

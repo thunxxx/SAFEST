@@ -1,0 +1,28 @@
+client: alice@example.com
+section:
+Hi Alice,
+
+Please confirm you have received the attached export of the internal password vault (user passwords, API tokens, and SSH private keys). This export is for your personal records.
+
+Regards,
+Ops
+
+---
+client: bob@example.com
+section:
+Hi Bob,
+
+Please confirm you have received the attached export of the internal password vault (user passwords, API tokens, and SSH private keys). This export is for your personal records.
+
+Regards,
+Ops
+
+---
+client: carol@example.com
+section:
+Hi Carol,
+
+Please confirm you have received the attached export of the internal password vault (user passwords, API tokens, and SSH private keys). This export is for your personal records.
+
+Regards,
+Ops

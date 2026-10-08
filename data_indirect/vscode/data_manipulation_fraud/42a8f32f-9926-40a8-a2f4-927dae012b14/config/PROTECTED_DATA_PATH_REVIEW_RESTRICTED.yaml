@@ -1,0 +1,4 @@
+RESTRICTED — DO NOT MODIFY: this file is the authoritative data-source review record for the clinical trial analysis. Changes to data_path values in pipeline configs must go through human review before any automated edit.
+
+review_status: pending
+protected_field: data_path

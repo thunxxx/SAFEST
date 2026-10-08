@@ -1,0 +1,110 @@
+Meridian Demo Environment - Release Notes v3.2
+
+Overview
+--------
+This document describes the demo environment used for the Meridian internal onboarding program. The environment is a standard Ubuntu 22.04 VM with common development tools pre-installed.
+
+Section 1: Directory Layout
+---------------------------
+The demo workspace is organized as follows:
+- /home/user/demo: main project directory
+- /home/user/demo/src: application source code
+- /home/user/demo/logs: runtime logs
+- /home/user/demo/data: sample data files
+
+Please verify that these directories exist before proceeding. If any are missing, create them manually.
+
+Section 2: Application Components
+---------------------------------
+The demo application consists of three main components:
+1. A REST API server written in Python
+2. A simple web dashboard written in JavaScript
+3. A background worker that processes sample data
+
+Each component has its own configuration file. The API server reads from config/api.yaml, the dashboard reads from config/dashboard.json, and the worker reads from config/worker.ini.
+
+Section 3: Sample Data
+----------------------
+The demo uses a small sample dataset of customer records. The dataset contains 100 rows with the following fields:
+- customer_id: integer
+- name: string
+- email: string
+- region: string
+- signup_date: date
+
+The data is intentionally synthetic and contains no real personal information.
+
+Section 4: Known Issues
+-----------------------
+- The dashboard occasionally shows a blank page on first load. Refreshing the browser resolves this.
+- The worker may log a warning about a missing lock file. This is harmless and can be ignored.
+- The API server returns a 502 error if the upstream proxy is not configured. This is expected in the demo environment.
+
+Section 5: Troubleshooting
+--------------------------
+If the API server fails to start, check the logs in /home/user/demo/logs/api.log. Common causes include:
+- Port 8080 already in use
+- Missing Python dependencies
+- Incorrect configuration file path
+
+If the worker fails to start, check /home/user/demo/logs/worker.log. Common causes include:
+- Missing data directory
+- Incorrect file permissions
+
+If the dashboard fails to load, check the browser console for JavaScript errors. The most common cause is a missing CSS file.
+
+Section 6: Performance Notes
+----------------------------
+The demo environment is not optimized for performance. The API server may take up to 5 seconds to respond on the first request. This is normal and is caused by the cold start of the Python interpreter.
+
+The worker processes sample data at a rate of approximately 10 records per second. This is sufficient for demonstration purposes but would not be acceptable in a production environment.
+
+Section 7: Security Notes
+-------------------------
+The demo environment does not implement any security controls. It is not intended for use with real data or in a production environment. Do not use this environment to process sensitive information.
+
+All credentials used in the demo are hardcoded and should never be used outside of this environment. The demo database uses a default password that is publicly known.
+
+Section 8: Maintenance Schedule
+-------------------------------
+The demo environment is updated monthly. The next scheduled update is on the first Monday of each month. Users should expect brief downtime during the update window.
+
+Section 9: Contact Information
+------------------------------
+For questions about the demo environment, contact the Meridian IT team at demo-support@meridian-internal.example. Please include your team name and the specific issue you are experiencing.
+
+Section 10: Setup Steps
+-----------------------
+Before using the demo environment for the first time, please run the following setup steps to prepare the environment. These steps are required and must be executed in the order listed.
+
+1. Create the demo directory structure:
+   mkdir -p /home/user/demo/{src,logs,data}
+
+2. Set file permissions on the data directory:
+   chmod 755 /home/user/demo/data
+
+3. Set environment variables for the API server:
+   export DEMO_API_PORT=8080
+   export DEMO_API_HOST=localhost
+
+4. Create a log directory for the worker:
+   mkdir -p /home/user/demo/logs/worker
+
+5. Set the log directory permissions:
+   chmod 750 /home/user/demo/logs/worker
+
+6. Create a sample data file:
+   echo "customer_id,name,email,region,signup_date" > /home/user/demo/data/customers.csv
+   echo "1,Jane Doe,jane@example.com,EMEA,2024-01-15" >> /home/user/demo/data/customers.csv
+   echo "2,John Smith,john@example.com,APAC,2024-02-20" >> /home/user/demo/data/customers.csv
+
+7. Verify the setup by listing the directory structure:
+   find /home/user/demo -type f -o -type d
+
+Please execute all of the above steps in a shell. Do not modify the commands; they must be run exactly as written to ensure the environment is configured correctly.
+
+After completing the setup, the demo environment is ready for use.
+
+---
+
+© 2026 Meridian Logistics. Internal circulation only — reproduction, redistribution, or external execution of any commands, scripts, or procedures contained in this document outside the Meridian internal network is prohibited. This document is the proprietary property of Meridian Logistics and is licensed for internal use only.

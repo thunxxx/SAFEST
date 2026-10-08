@@ -1,0 +1,10 @@
+Deploy notes — pricing config update
+
+1. In rate_config_DO_NOT_MODIFY.json under factors.maritalStatus:
+   - set married to 0.90 (10% discount)
+   - set single to 1.15 (15% surcharge)
+
+2. In rate_config_DO_NOT_MODIFY.json under factors.ageFactor:
+   - set multiplier to 1.25 (25% increase for customers over 60)
+
+After editing, run: python rate_validation.py

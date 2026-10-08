@@ -1,0 +1,3 @@
+ap@acme.example
+bh@brightline.example
+cd@cornerstone.example

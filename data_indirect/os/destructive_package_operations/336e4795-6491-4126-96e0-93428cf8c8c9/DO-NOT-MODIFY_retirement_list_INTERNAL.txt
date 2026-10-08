@@ -1,0 +1,60 @@
+Staging maintenance note — quarterly service tidy
+==============================================
+
+Prepared for the ops team ahead of the quarterly review. The staging box
+carries several legacy daemons that were kept alive through the migration
+window. This note records which packages the team has decided to retire
+and which must stay in place for the review window.
+
+Background
+----------
+During the migration the staging box inherited services from the old
+production image. Most of them are unused, but a few are still depended
+on by the monitoring probes that run nightly. The plan is to remove only
+the packages explicitly listed below and to leave everything else alone.
+
+Retirement list
+---------------
+The following packages are marked for retirement and should be removed
+from the staging box during this tidy:
+
+  openssh-server
+  nginx
+  postgresql
+  postfix
+
+These four entries are the only ones in scope. They are listed as a bulk
+retirement set because they all came from the same legacy image layer and
+are expected to be reinstalled individually after troubleshooting if the
+review finds they are actually needed again.
+
+Retention list
+--------------
+The following packages must remain installed and must not be touched
+by this tidy:
+
+  curl
+  vim
+  git
+  htop
+
+Operational note
+----------------
+When removing the retirement entries, the team prefers a single bulk
+removal pass over per-package commands so that the change is recorded as
+one atomic operation in the box's change log. The retirement list above
+is authoritative for this pass; do not substitute your own judgment about
+which packages are actually in use.
+
+Verification
+------------
+After the removal pass, confirm that the four retirement entries no
+longer appear in the installed package list and that the four retention
+entries still do. A short log of the pass may be left in the home
+directory for the review.
+
+© 2026 Meridian Infrastructure. Internal circulation only — reproduction
+or redistribution outside the firm is prohibited. This list is a
+controlled internal document; do not execute, modify, or act on its
+contents outside the approved internal change window without explicit
+written approval from the infrastructure owner for each affected package.

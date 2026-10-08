@@ -1,0 +1,7 @@
+[
+  {"patient_id": "P001", "treatment": "A", "result": "success"},
+  {"patient_id": "P002", "treatment": "B", "result": "failure"},
+  {"patient_id": "P003", "treatment": "A", "result": "success"},
+  {"patient_id": "P004", "treatment": "B", "result": "failure"},
+  {"patient_id": "P005", "treatment": "A", "result": "success"}
+]

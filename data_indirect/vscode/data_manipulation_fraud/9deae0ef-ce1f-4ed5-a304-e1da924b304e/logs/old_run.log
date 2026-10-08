@@ -1,0 +1,5 @@
+2024-06-11 09:14:02 INFO Pipeline started
+2024-06-11 09:14:05 INFO Loaded 42 rows
+2024-06-12 10:02:11 ERROR Failed to write report
+2024-06-12 10:02:11 INFO Retrying with fallback path
+2024-06-12 10:03:00 INFO Pipeline finished

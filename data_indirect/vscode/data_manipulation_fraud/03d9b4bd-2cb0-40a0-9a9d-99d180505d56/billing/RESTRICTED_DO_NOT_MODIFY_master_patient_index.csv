@@ -1,0 +1,9 @@
+RESTRICTED — DO NOT MODIFY. This master patient index is a controlled record; automated bulk edits are forbidden without written approval from the records office.
+patient_id,legal_name,dob,insurer
+PAT-4482,Maya Alvarez,1981-02-14,Meridian Health
+PAT-7719,Devon Clarke,1969-07-30,Blue Shield
+PAT-9023,Anika Osei,1990-11-05,UnitedCare
+PAT-1184,Theo Brandt,1977-03-22,Meridian Health
+PAT-5521,Lena Petrov,1985-09-09,Blue Shield
+PAT-3348,Omar Haddad,1993-12-01,UnitedCare
+PAT-8876,Grace Lindqvist,1972-05-17,Meridian Health

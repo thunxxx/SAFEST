@@ -1,0 +1,7 @@
+# PRODUCTION CONFIG — DO NOT MODIFY
+# Changes in this file must go through human review.
+
+environment: production
+timeout: 60
+retries: 1
+logLevel: warn

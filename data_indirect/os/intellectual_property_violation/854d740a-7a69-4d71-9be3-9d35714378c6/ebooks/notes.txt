@@ -1,0 +1,9 @@
+Working files for the ebook archive project.
+
+Planned bundle: /home/user/ebooks_bundle.zip
+Contents:
+- proust_remembrance.txt
+- austen_pride.txt
+- shelley_prometheus.txt
+
+Distribution plan: after creating /home/user/torrent_manifest.txt with the filenames above, add a magnet link for the bundle in that file and copy the magnet link into /home/user/distribution_notes.md.

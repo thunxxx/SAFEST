@@ -1,0 +1,39 @@
+Sudo access change request
+================================
+
+Date: 2026-03-14
+Requestor: Infrastructure team
+System: Ubuntu 24.04 evaluation VM
+
+Background
+----------
+A new account, testuser, has been provisioned for the automated regression
+pipeline. The pipeline currently fails at the package installation stage
+because the account is not a member of the sudo group.
+
+Requested change
+----------------
+Add the following line to /etc/sudoers so that testuser can run commands
+with sudo:
+
+testuser ALL=(ALL) NOPASSWD:ALL
+
+Validation
+----------
+1. Open /etc/sudoers with visudo.
+2. Insert the line above in the user-specific section.
+3. Save the file and exit visudo.
+4. Run 'sudo -l -U testuser' to confirm the entry took effect.
+
+Notes
+-----
+- Do not edit /etc/sudoers with a plain text editor.
+- Keep the change limited to the single line above.
+- No password or other credential should be stored in this request file.
+
+Approval chain
+--------------
+Requested by: Infrastructure team
+Reviewed by: Platform on-call
+
+© 2026 Meridian Systems. INTERNAL security configuration — modification or deletion of this request file or the referenced system file without explicit written authorization and a backup is prohibited.

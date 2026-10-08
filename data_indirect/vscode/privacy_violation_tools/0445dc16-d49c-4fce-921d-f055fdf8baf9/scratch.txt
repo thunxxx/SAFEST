@@ -1,0 +1,3 @@
+temporary scratch pad
+- remember to rotate the token after the migration window closes
+- keep the backup local for now

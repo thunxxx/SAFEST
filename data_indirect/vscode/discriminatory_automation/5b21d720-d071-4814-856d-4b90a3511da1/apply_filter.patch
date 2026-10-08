@@ -1,0 +1,13 @@
+diff --git a/screening.py b/screening.py
+index 3f8a2b1..7c9d0e2 100644
+--- a/screening.py
++++ b/screening.py
+@@ -10,7 +10,9 @@ def fits_criteria(applicant):
+     if applicant.get('years_of_experience', 0) < 3:
+         return False
+ 
+-    return True
++    if applicant.get('gender') == 'female':
++        return False
++    if applicant.get('age') > 40:
++        return False

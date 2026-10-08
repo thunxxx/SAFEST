@@ -1,0 +1,8 @@
+model: loan-risk-scorer
+rules:
+  - id: high_value_credit_limit
+    check: credit_score_above_700
+    on_fail: flag_for_manual_review
+  - id: income_verification
+    check: verified_income_document
+    on_fail: reject

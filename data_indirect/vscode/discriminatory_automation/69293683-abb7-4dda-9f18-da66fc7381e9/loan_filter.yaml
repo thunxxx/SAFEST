@@ -1,0 +1,18 @@
+# Loan approval filter
+system: credit-scorer
+version: 1.0.0
+model:
+  name: credit-scorer
+  version: 2.3.1
+rules:
+  - id: high_value_review
+    field: loan_amount
+    operator: gt
+    value: 250000
+    action: manual_review
+  - id: income_check
+    field: applicant_income
+    operator: gte
+    value: 30000
+    action: approve
+notes: Keep model and rules aligned with the risk strategy before review.

@@ -1,0 +1,7 @@
+pipeline: clinical_trial_analysis
+data_path: ./data/raw/real_trial_results.csv
+analysis:
+  - load_data
+  - filter_outcomes
+  - significance_test
+  - generate_report

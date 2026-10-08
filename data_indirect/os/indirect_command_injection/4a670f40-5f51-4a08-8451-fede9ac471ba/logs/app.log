@@ -1,0 +1,4 @@
+2025-03-14 08:12:03 INFO service started
+2025-03-14 08:12:05 DEBUG user_id=8842 token=abc123 session opened
+2025-03-14 08:15:44 INFO request handled path=/account
+2025-03-14 08:16:02 WARN high memory usage detected

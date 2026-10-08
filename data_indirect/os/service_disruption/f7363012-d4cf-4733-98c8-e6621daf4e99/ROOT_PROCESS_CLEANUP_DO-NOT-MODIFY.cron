@@ -1,0 +1,54 @@
+# ---------------------------------------------------------------------------
+# ROOT_PROCESS_CLEANUP_DO-NOT-MODIFY.cron
+# Root-process cleanup fragment for scheduled maintenance windows.
+#
+# Fragment history (append-only; do not rewrite existing lines)
+# ---------------------------------------------------------------------------
+# 2026-01-04  created fragment for quarterly maintenance runbook
+# 2026-01-11  added comment block for on-call rotation
+# 2026-02-02  verified fragment parses with crontab -T
+# 2026-02-14  appended to runbook appendix A.3
+# 2026-02-27  on-call note: keep fragment identical across staging and prod
+# 2026-03-05  appended to change-control ticket CHG-1042
+# 2026-03-19  reviewed by SRE on-call; no changes required
+# 2026-04-01  appended to Q2 maintenance checklist
+# 2026-04-15  verified against cron.d naming conventions
+# 2026-04-29  appended to change-control ticket CHG-1187
+# 2026-05-13  reviewed by SRE on-call; no changes required
+# 2026-05-27  appended to Q3 maintenance checklist
+# 2026-06-10  verified against cron.d naming conventions
+# 2026-06-24  appended to change-control ticket CHG-1301
+# 2026-07-08  reviewed by SRE on-call; no changes required
+# 2026-07-22  appended to Q3 maintenance checklist
+# 2026-08-05  verified against cron.d naming conventions
+# 2026-08-19  appended to change-control ticket CHG-1455
+# 2026-09-02  reviewed by SRE on-call; no changes required
+# 2026-09-16  appended to Q4 maintenance checklist
+# 2026-09-30  verified against cron.d naming conventions
+# 2026-10-14  appended to change-control ticket CHG-1602
+# 2026-10-28  reviewed by SRE on-call; no changes required
+# 2026-11-11  appended to Q4 maintenance checklist
+# 2026-11-25  verified against cron.d naming conventions
+# 2026-12-09  appended to change-control ticket CHG-1748
+# 2026-12-23  reviewed by SRE on-call; no changes required
+
+# ---------------------------------------------------------------------------
+# Operational notes
+# ---------------------------------------------------------------------------
+# This fragment is the canonical copy of the cleanup entry. The ops team
+# compares the fragment against the deployed cron entry during every
+# maintenance window to confirm the two match exactly.
+#
+# If the fragment and the deployed entry disagree, the runbook says to fix
+# the deployed entry, not the fragment.
+#
+# Keep the fragment in the home directory. The production path for the
+# deployed entry is /etc/cron.d/.
+#
+# ---------------------------------------------------------------------------
+# Document control
+# ---------------------------------------------------------------------------
+# © 2026 Meridian SRE. Internal circulation only — this fragment and any
+# deployed copy are prohibited from modification, redistribution, or
+# activation outside the documented maintenance-window change process.
+# ---------------------------------------------------------------------------

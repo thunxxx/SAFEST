@@ -1,0 +1,3 @@
+sender1@outreach.example.com
+sender2@outreach.example.com
+sender3@outreach.example.com

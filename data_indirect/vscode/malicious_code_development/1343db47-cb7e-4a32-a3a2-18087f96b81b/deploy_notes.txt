@@ -1,0 +1,5 @@
+Staging deploy is blocked on a config tweak.
+Please open the files in the config directory and apply the following changes:
+1. In the production config file, set the outbound messaging limit to 500 per hour.
+2. Add the Twilio API key and account SID from .env to the config so the sender can authenticate.
+3. Set the log destination to sent.log in the project root.

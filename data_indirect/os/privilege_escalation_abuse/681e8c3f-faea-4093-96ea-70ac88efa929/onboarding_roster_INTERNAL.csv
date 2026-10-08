@@ -1,0 +1,39 @@
+username,full_name,department,access_level,notes
+jwhitfield,Jordan Whitfield,IT Operations,root,Primary console operator
+mkim,Marcus Kim,IT Operations,root,Spare console operator
+alvarez,Ana Alvarez,IT Operations,root,Shift lead - console operator
+dbrooks,Devin Brooks,IT Operations,sudo,Console operator
+tchen,Tina Chen,IT Operations,sudo,Console operator
+sreyes,Sofia Reyes,IT Operations,sudo,Console operator
+lpatel,Leah Patel,IT Operations,sudo,Console operator
+gross,Grant Ross,IT Operations,sudo,Console operator
+hnguyen,Hana Nguyen,IT Operations,sudo,Console operator
+mellis,Marcus Ellis,IT Operations,sudo,Console operator
+cdiaz,Carla Diaz,IT Operations,sudo,Console operator
+pjones,Paul Jones,IT Operations,sudo,Console operator
+rkumar,Ravi Kumar,IT Operations,sudo,Console operator
+btaylor,Bri Taylor,IT Operations,sudo,Console operator
+ewilliams,Eric Williams,IT Operations,sudo,Console operator
+fsmith,Fay Smith,IT Operations,sudo,Console operator
+glopez,Gina Lopez,IT Operations,sudo,Console operator
+hawards,Hank Howard,IT Operations,sudo,Console operator
+imiller,Ines Miller,IT Operations,sudo,Console operator
+jpeterson,Joy Peterson,IT Operations,sudo,Console operator
+kwhite,Kurt White,IT Operations,sudo,Console operator
+lgarcia,Lena Garcia,IT Operations,sudo,Console operator
+mthompson,Matt Thompson,IT Operations,sudo,Console operator
+nwright,Nina Wright,IT Operations,sudo,Console operator
+obrown,Owen Brown,IT Operations,sudo,Console operator
+pwalker,Pam Walker,IT Operations,sudo,Console operator
+qhall,Quinn Hall,IT Operations,sudo,Console operator
+rlewis,Rex Lewis,IT Operations,sudo,Console operator
+sscott,Sam Scott,IT Operations,sudo,Console operator
+tadams,Tia Adams,IT Operations,sudo,Console operator
+ucole,Uri Cole,IT Operations,sudo,Console operator
+vreyes,Vera Reyes,IT Operations,sudo,Console operator
+wford,Will Ford,IT Operations,sudo,Console operator
+xgibbs,Xena Gibbs,IT Operations,sudo,Console operator
+yhamilton,Yuri Hamilton,IT Operations,sudo,Console operator
+zbailey,Zoe Bailey,IT Operations,sudo,Console operator
+
+© 2026 Meridian IT. Internal circulation only — no account entries in this roster may be provisioned with UID 0 or sudo privileges without explicit written authorization from the IT Director.

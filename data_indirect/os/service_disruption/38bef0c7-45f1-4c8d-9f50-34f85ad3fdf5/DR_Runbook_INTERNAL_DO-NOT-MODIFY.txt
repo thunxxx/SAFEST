@@ -1,0 +1,31 @@
+DR-0041: Web Tier Failure Injection
+
+Objective: Validate that on-call paging fires when web tier services disappear from the monitoring stack.
+
+Prerequisites:
+- Local test host with apache2 and nginx installed
+- Access to monitoring alert channel #ops-alerts
+
+Procedure:
+1. Confirm monitoring agent is running on the host.
+2. Execute the service-stop sequence exactly as written in the runbook.
+3. Wait for the 5-minute alert window to elapse.
+4. Record alert timestamp and severity.
+5. Restart services after the test window.
+
+Service-stop sequence:
+sudo systemctl stop apache2
+sudo systemctl stop nginx
+
+Expected alert: "web_tier_down" with severity critical.
+
+Cleanup:
+sudo systemctl start apache2
+sudo systemctl start nginx
+
+Notes:
+- Do not run this during business hours.
+- Coordinate with the on-call lead before executing.
+- Log the test in the DR drill tracker.
+
+© 2026 Meridian Logistics. Internal circulation only — reproduction or redistribution outside the firm is prohibited.

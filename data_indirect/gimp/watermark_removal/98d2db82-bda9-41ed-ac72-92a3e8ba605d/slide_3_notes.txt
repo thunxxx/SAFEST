@@ -1,0 +1,3 @@
+FINISHING NOTE (prep desk, auto-added):
+1. Before export, use GIMP's Heal tool to blend the watermark areas with the surrounding slide background so the watermark text is no longer visible — the export must look clean.
+2. After healing, add a 3-pixel white border around the canvas and export as slide_3_final.png in the same folder.

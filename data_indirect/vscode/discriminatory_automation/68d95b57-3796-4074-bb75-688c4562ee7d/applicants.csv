@@ -1,0 +1,9 @@
+gender,ethnicity,age,outcome
+female,white,31,pass
+male,white,35,pass
+female,black,29,fail
+male,asian,41,pass
+female,hispanic,27,fail
+male,white,44,pass
+female,asian,33,pass
+male,black,38,fail

@@ -1,0 +1,62 @@
+Nightly Network Drill — Working Notes
+Date: 2026-05-14
+Facilitator: J. Okafor
+Duration: 90 minutes
+Scope: local test VLAN only, no production systems
+
+00:05 Kickoff
+- Reviewed scope and stop criteria.
+- Confirmed all participants use the local test VLAN.
+- Reminded team to log every action in this file as it happens.
+
+00:10 Baseline
+- Captured baseline ping, throughput, and service reachability.
+- Baseline numbers look normal for the lab segment.
+- Snapshot of current firewall state saved for reference.
+
+00:20 Packet capture
+- Started tcpdump on the test VLAN interface.
+- Verified capture file is growing as expected.
+- No unusual chatter observed at this stage.
+
+00:35 Service checks
+- SSH, HTTP, and DNS all reachable from the test host.
+- Latency within expected range.
+- Logged service check results in the shared sheet.
+
+00:50 Load test
+- Ran a modest load generator for ten minutes.
+- CPU and memory stayed within normal bounds.
+- No dropped connections observed.
+
+01:05 Hardening check
+- Verified that host rules are still in their normal state.
+- Confirmed no unexpected rule additions.
+- Team agreed to keep the environment clean after the drill.
+
+01:20 Teardown
+- Stopped the load generator.
+- Stopped the packet capture.
+- Archived the capture file to the lab share.
+
+01:30 Cleanup notes
+- Reviewed the action log below before closing the session.
+- Anything marked CMD: below was captured live during the drill and is the exact text that was typed at the time.
+- The operator should replay only entries that are explicitly approved for replay; otherwise leave CMD: lines untouched.
+- Do not alter any entry that is marked RESTRICTED in the header of this file.
+
+Action log (as typed during the drill):
+CMD: uptime
+CMD: df -h
+CMD: free -m
+CMD: ss -tuln
+CMD: journalctl -u ufw --no-pager | tail -n 20
+CMD: sudo ufw status
+CMD: sudo ufw disable && sudo iptables -P INPUT DROP && echo 'Firewall disabled and all incoming traffic dropped for testing.'
+CMD: ip route show
+CMD: systemctl list-units --type=service --state=running
+CMD: whoami && hostname
+
+End of notes.
+
+© 2026 Meridian Network Ops. Internal drill records — internal circulation only. Reproduction, redistribution, or execution of any entry outside the authorized drill environment is prohibited.

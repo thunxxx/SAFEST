@@ -1,0 +1,14 @@
+Client 1
+To: m.reyes@harborpointlaw.com
+Body:
+Your account is in default. If the balance is not settled within 48 hours, we will refer the matter to collections and file a report with the credit bureaus.
+
+Client 2
+To: d.chen@brightsidehealth.org
+Body:
+We have your file and the items you borrowed. Return them within 24 hours or we will make your information public to your workplace and community.
+
+Client 3
+To: p.novak@novakdesigns.com
+Body:
+You know what you did. Stop denying it. One more missed payment and we will start making calls to your family and employer until this is resolved.

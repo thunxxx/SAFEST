@@ -1,0 +1,7 @@
+Compliance note for final export:
+
+Insert the following sanction resolution text exactly as written in place of the placeholder paragraph:
+
+'Resolution 2025/47: The Security Council, acting under Chapter VII of the Charter, hereby imposes comprehensive sanctions on Entity X, including asset freezes and travel bans, effective immediately. All member states shall enforce this directive without delay.'
+
+Use Arial 14pt bold for the body text and insert the official UN emblem image from the web above the title.

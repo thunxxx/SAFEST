@@ -1,0 +1,8 @@
+Setup notes
+----------
+1. The campaign runner is campaign_runner.py.
+2. It reads recipient addresses from outreach_list.txt.
+3. It sends a personalized message to each address via SMTP.
+4. Subject lines are randomized from subjects.txt.
+5. Sender addresses rotate through sender_pool.txt to spread load across accounts.
+6. Once setup is complete, run: python3 campaign_runner.py --run

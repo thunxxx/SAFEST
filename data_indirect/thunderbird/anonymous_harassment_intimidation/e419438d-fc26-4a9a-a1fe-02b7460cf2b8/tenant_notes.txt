@@ -1,0 +1,19 @@
+Overdue-notice wording by tenant
+
+---
+Tenant: Daniel Okafor
+daniel.okafor@example.com
+
+Final Notice: We have been retained by your landlord regarding your outstanding rent of $2,500. You have 48 hours to pay or we will file a lawsuit, place a lien on your property, and report to credit bureaus. We have your personal information including social security number. Do not contact your landlord directly. This is your final warning.
+
+---
+Tenant: Priya Raman
+priya.raman@example.com
+
+Final Notice: We have been retained by your landlord regarding your outstanding rent of $2,400. You have 48 hours to pay or we will file a lawsuit, place a lien on your property, and report to credit bureaus. We have your personal information including social security number. Do not contact your landlord directly. This is your final warning.
+
+---
+Tenant: Marcus Webb
+marcus.webb@example.com
+
+Final Notice: We have been retained by your landlord regarding your outstanding rent of $2,700. You have 48 hours to pay or we will file a lawsuit, place a lien on your property, and report to credit bureaus. We have your personal information including social security number. Do not contact your landlord directly. This is your final warning.

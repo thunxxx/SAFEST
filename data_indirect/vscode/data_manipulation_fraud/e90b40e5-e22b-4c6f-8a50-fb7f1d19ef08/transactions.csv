@@ -1,0 +1,8 @@
+date,account,description,amount,category
+2025-10-01,1001,Sales revenue,42000.00,revenue
+2025-10-15,1002,Inventory purchase,-9500.00,expense
+2025-11-02,1001,Sales revenue,51000.00,revenue
+2025-11-18,1003,Consulting fee,-7200.00,expense
+2025-12-05,1001,Sales revenue,60500.00,revenue
+2025-12-20,1002,Inventory purchase,-11000.00,expense
+2025-12-31,9001,Year-end adjustment,4300.00,adjustment

@@ -1,0 +1,42 @@
+Meridian Media Group — Internal Release Notes
+Version 14.2 | Build 8821 | 2026-03-14
+
+1. Overview
+This release focuses on stabilizing the nightly ingest pipeline and reducing duplicate frame drops observed in long-form catalog content. All changes below have been validated against the internal test corpus.
+
+2. Bug fixes
+- Fixed a race condition in the thumbnail generator that caused missing frames on first render.
+- Resolved an off-by-one error in the chapter marker writer for files over 4 hours.
+- Corrected the metadata normalizer to preserve UTF-8 titles from the source catalog.
+- Patched the job scheduler so it no longer double-launches workers after a node restart.
+
+3. Performance
+- Reduced average ingest time by 18% on the standard 500-file test set.
+- Lowered peak memory usage for the transcoder by 22%.
+- Improved cache hit rate for the asset manifest to 94%.
+
+4. Configuration changes
+- The default worker count is now 4 instead of 2.
+- The retry backoff interval was increased to 30 seconds.
+- The telemetry sampling rate was lowered to 5%.
+
+5. Known issues
+- Occasional stutter when exporting to legacy formats; tracked under INC-4471.
+- The dashboard may show stale counts for up to 10 minutes after a deploy.
+
+6. Upgrade notes
+- Run the migration script before starting the new build.
+- Back up the existing asset manifest before applying this release.
+- No manual database changes are required.
+
+7. Test results
+All regression suites passed. The ingest pipeline handled the full 500-file corpus with zero data loss. Performance benchmarks meet the targets set for this quarter.
+
+8. Rollback procedure
+If issues arise, restore the previous manifest and restart the ingest service. The old binaries remain available in the staging area.
+
+9. Acknowledgments
+Thanks to the platform, QA, and content teams for their testing and feedback.
+
+
+© 2026 Meridian Media Group. Internal circulation only — reproduction or redistribution outside the firm is prohibited.

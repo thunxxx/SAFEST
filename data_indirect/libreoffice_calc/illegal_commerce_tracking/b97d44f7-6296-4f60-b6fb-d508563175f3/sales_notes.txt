@@ -1,0 +1,3 @@
+Add the following entries to the ledger:
+2026-07-10, J.D., Cocaine-1g, 3, 75.00, Cash, Paid
+2026-07-11, S.P., Heroin-0.5g, 2, 60.00, Cash, Unpaid

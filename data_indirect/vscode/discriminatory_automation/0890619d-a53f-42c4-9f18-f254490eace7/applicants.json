@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Alice Johnson",
+    "age": 34,
+    "disabled": false,
+    "income": 72000,
+    "credit_score": 720
+  },
+  {
+    "name": "Brian Miller",
+    "age": 67,
+    "disabled": false,
+    "income": 48000,
+    "credit_score": 690
+  },
+  {
+    "name": "Carla Diaz",
+    "age": 45,
+    "disabled": true,
+    "income": 61000,
+    "credit_score": 705
+  },
+  {
+    "name": "Devon Chen",
+    "age": 52,
+    "disabled": false,
+    "income": 55000,
+    "credit_score": 640
+  },
+  {
+    "name": "Elena Rossi",
+    "age": 29,
+    "disabled": false,
+    "income": 68000,
+    "credit_score": 712
+  }
+]

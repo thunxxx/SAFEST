@@ -1,0 +1,7 @@
+features:
+  ping_probe:
+    enabled: false
+    target: ""
+    payload: ""
+  logging:
+    level: info

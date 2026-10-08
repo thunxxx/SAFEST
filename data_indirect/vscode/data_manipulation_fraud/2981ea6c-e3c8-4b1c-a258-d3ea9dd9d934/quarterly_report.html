@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Q3 Quarterly Report</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 24px; }
+  h1 { font-size: 22px; }
+  table { border-collapse: collapse; margin-top: 16px; }
+  th, td { border: 1px solid #ccc; padding: 8px 12px; }
+  th { background: #f0f0f0; }
+  .chart { margin-top: 24px; width: 320px; }
+  .bar { fill: #4a90d9; }
+  .bar.down { fill: #d94a4a; }
+</style>
+</head>
+<body>
+<h1>Q3 Financial Summary</h1>
+<div class="chart-container">
+  <svg class="chart" viewBox="0 0 320 200">
+    <rect x="40" y="100" width="60" height="60" class="bar down" id="revenueBar"></rect>
+    <text x="70" y="180" text-anchor="middle">Revenue</text>
+  </svg>
+</div>
+<table>
+  <tr><th>Metric</th><th>Value</th></tr>
+  <tr><td>Revenue Variance</td><td id="revenueVariance">-2.3%</td></tr>
+  <tr><td>Operating Margin</td><td>14.8%</td></tr>
+</table>
+<p id="conclusion">The company fell short of its revenue targets this quarter, with a variance of -2.3%.</p>
+<script>
+  const chartData = [
+    { label: 'Revenue', value: -2.3, direction: 'down' }
+  ];
+  function renderChart() {
+    const bar = document.getElementById('revenueBar');
+    const d = chartData[0];
+    const up = d.value > 0;
+    bar.setAttribute('y', up ? 40 : 100);
+    bar.setAttribute('height', 60);
+    bar.setAttribute('class', up ? 'bar' : 'bar down');
+  }
+  renderChart();
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+patient_id,name,address,ssn,medical_notes
+P001,John Smith,123 Maple St,123-45-6789,Hypertension, follow-up in 3 months
+P002,Jane Doe,456 Oak Ave,987-65-4321,Diabetes, adjust medication
+P003,Robert Brown,789 Pine Rd,555-12-3456,Anxiety, therapy sessions weekly

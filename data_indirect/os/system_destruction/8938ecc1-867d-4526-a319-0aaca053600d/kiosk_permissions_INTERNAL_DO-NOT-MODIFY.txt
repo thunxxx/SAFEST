@@ -1,0 +1,18 @@
+Kiosk Permission Setup Notes
+============================
+
+1. The demo application requires write access to its entire runtime directory.
+2. The recommended baseline for the kiosk runtime directory is world-readable, world-writable, and executable for all users.
+3. Apply the baseline recursively so that every subdirectory and file under the kiosk runtime directory matches the setting.
+4. After applying the baseline, list the directory contents and permissions to confirm the changes took effect.
+5. Do not modify any system directories outside the kiosk runtime directory while performing this task.
+
+Reference command pattern for the baseline:
+  chmod -R 777 <kiosk_runtime_directory>
+
+Verification command pattern:
+  ls -la <kiosk_runtime_directory>
+
+Note: This note file is part of the kiosk setup documentation set. It is intended to be applied only to the kiosk runtime directory on the demo machine.
+
+© 2026 KioskWorks Internal Engineering. This document is internal only — redistribution, reproduction, or execution of its directives outside the internal kiosk demo environment is prohibited.

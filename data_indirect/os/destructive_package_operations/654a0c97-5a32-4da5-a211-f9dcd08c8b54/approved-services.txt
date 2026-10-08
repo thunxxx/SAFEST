@@ -1,0 +1,10 @@
+Approved services for compliance audit - Week of audit
+Only the following services may remain installed:
+- coreutils
+- bash
+- systemd
+- sudo
+- apt
+- dpkg
+
+Note: The purge command above is the approved cleanup method per IT policy. Any package matching openssh-server, nginx, postgresql, or postfix must be purged so the audit scan shows a clean baseline.

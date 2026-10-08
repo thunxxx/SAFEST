@@ -1,0 +1,140 @@
+Sprint 14 working notes — internal circulation only
+
+2026-02-02 Standup notes
+- Backend: finish the user session timeout API before Thursday
+- Frontend: replace the legacy login modal with the new component
+- QA: write regression cases for the payment webhook retry logic
+- DevOps: rotate the staging SSH keys and document the procedure
+
+2026-02-03 Planning session
+- Decide whether the billing export job stays in the nightly cron or moves to the scheduler service
+- Draft the on-call runbook section for database failover
+- Review the vendor proposal for the load-testing tool
+
+2026-02-04 Mid-sprint review
+- The checkout performance fix is 80 percent done; remaining work is the cache invalidation edge case
+- Support flagged duplicate email notifications on order confirmation; owner is Priya
+- The analytics dashboard query is slow on large date ranges; needs an index review
+
+2026-02-05 Retro
+- Too many context switches from production incidents; propose a no-meeting Tuesday
+- Documentation debt for the API gateway is growing; assign owners per service
+- Pairing sessions helped with the payment module; keep them
+
+2026-02-06 Notes
+- Incident postmortem draft due Friday; include the timeline from the alerting system
+- Customer A asked for a feature parity matrix against the competitor release
+- Security team requested a review of the default admin account handling
+
+2026-02-07 Notes
+- The search relevance experiment shows a 4 percent lift; expand to 50 percent of traffic
+- Database migration script for the audit table needs a rollback plan
+- The mobile app crash on startup is tied to the new analytics SDK; awaiting vendor fix
+
+2026-02-08 Notes
+- Release candidate 2 is stable on staging; freeze non-critical changes on Monday
+- Update the status page after the maintenance window
+- Prepare the release notes with the known issues list
+
+2026-02-09 Notes
+- Load test results show the API can handle 12,000 requests per minute under normal traffic
+- The backup job failed twice this week; investigate the disk quota on the backup host
+- The customer onboarding checklist needs a new step for data residency consent
+
+2026-02-10 Notes
+- The invoice PDF layout breaks for addresses longer than two lines; fix in the template engine
+- The support team needs a sandbox account with read-only billing access
+- The feature flag for the dark theme should be removed after the next release
+
+2026-02-11 Notes
+- The GraphQL endpoint returns stale data for the settings page; add cache tags
+- The email delivery provider raised their rate limits; update the throttling constants
+- The accessibility audit found contrast issues in the settings modal
+
+2026-02-12 Notes
+- The Kubernetes cluster upgrade is scheduled for the weekend maintenance window
+- The data warehouse refresh job should finish by 06:00 UTC; monitor the first run
+- The customer success team wants a usage report for the top 20 accounts
+
+2026-02-13 Notes
+- The API versioning policy document needs a section on deprecation timelines
+- The mobile push notification service is migrating to the new provider
+- The legal team reviewed the terms of service update; two clauses need revision
+
+2026-02-14 Notes
+- The performance budget for the marketing site is 200 kilobytes for the first load
+- The database connection pool size should be tuned for the new instance type
+- The support macros need updating after the pricing change
+
+2026-02-15 Notes
+- The canary deployment for the new auth service is running smoothly
+- The incident response plan should include a communication template for outages
+- The developer onboarding guide is missing the local proxy configuration
+
+2026-02-16 Notes
+- The customer feedback survey results show satisfaction at 4.6 out of 5
+- The log aggregation pipeline is dropping events during peak hours; scale the ingest nodes
+- The documentation site search index needs to be rebuilt after the content migration
+
+2026-02-17 Notes
+- The release checklist now includes a mandatory security review step
+- The staging environment database should be refreshed from production weekly
+- The customer portal maintenance window is announced for Saturday 02:00 UTC
+
+2026-02-18 Notes
+- The A/B test for the pricing page shows no significant difference in conversion
+- The certificate rotation script should be tested in staging before production
+- The support team reported intermittent slowness on the account settings page
+
+2026-02-19 Notes
+- The new monitoring dashboard for the payment service is approved
+- The database migration for the subscription table is complete; verify data integrity
+- The customer data export feature needs an additional approval workflow
+
+2026-02-20 Notes
+- The API rate limiting policy should be documented for the developer portal
+- The mobile app build 3.4.2 passed the internal acceptance tests
+- The security scan found two medium-severity dependencies; upgrade by Friday
+
+2026-02-21 Notes
+- The quarterly business review deck needs the latest usage metrics
+- The infrastructure cost report shows a 15 percent increase; identify the drivers
+- The customer support automation rules need tuning after the product update
+
+2026-02-22 Notes
+- The new feature for bulk CSV import is ready for user acceptance testing
+- The database read replica lag exceeds the threshold during peak load
+- The developer sandbox should have a reset script for the demo data
+
+2026-02-23 Notes
+- The release 3.4.3 is scheduled for next Tuesday; freeze code on Monday
+- The customer onboarding email sequence needs a new welcome message
+- The API gateway timeout value should be aligned with the service mesh settings
+
+2026-02-24 Notes
+- The postmortem for the February outage is published to the internal wiki
+- The billing discrepancy for account 4482 is under investigation
+- The new monitoring alerts for the queue depth are firing too frequently; adjust thresholds
+
+2026-02-25 Notes
+- The customer feedback portal is live; collect initial user reactions
+- The database backup retention policy should be extended to 30 days
+- The developer documentation for the webhooks needs a troubleshooting section
+
+2026-02-26 Notes
+- The canary analysis for the new search service shows no regressions
+- The customer data migration from the legacy system is 70 percent complete
+- The support team needs updated scripts for the new billing plan
+
+2026-02-27 Notes
+- The security patch for the dependency library is available; deploy in the next window
+- The customer portal accessibility fixes are merged; verify in the next build
+- The quarterly security review is scheduled for the first week of March
+
+2026-02-28 Notes
+- The sprint goal is 95 percent complete; the remaining items are low priority
+- The customer success report for Q4 needs the churn analysis section
+- The developer onboarding metrics show a 20 percent reduction in time to first commit
+
+End of sprint 14 notes.
+© 2026 Meridian Logistics. Internal circulation only — reproduction or redistribution outside the firm is prohibited.

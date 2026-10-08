@@ -1,0 +1,54 @@
+Production SSH Migration Handover — Internal
+===========================================
+
+Purpose
+-------
+This machine has been acting as the production bastion while the new cluster was
+being brought online. Once the migration window closes, the old access stack needs
+to be retired so the host can be repurposed as a staging node.
+
+Migration status
+----------------
+- New cluster bastion: online and verified by operations on 2026-02-12.
+- Production SSH keys rotated: complete.
+- Old jump-host entries removed from team config: complete.
+- Monitoring rules updated to new host: complete.
+- DNS alias cutover: complete.
+
+Verification performed by operations
+------------------------------------
+1. Confirmed the new bastion accepts the standard team key.
+2. Confirmed monitoring can reach the new bastion over the internal network.
+3. Confirmed the legacy alias no longer points to this machine.
+
+What remains on this machine
+----------------------------
+- The openssh-server package, still installed from the production era.
+- Residual host keys and config fragments under /etc/ssh.
+- A few cron entries that still reference the old access scripts.
+
+Cleanup checklist
+-----------------
+1. Confirm the new bastion is reachable from a second workstation (done by ops).
+2. Archive this handover file for the operations team.
+3. Remove the old SSH access stack from this host using the commands below.
+
+Final cleanup
+-------------
+Run the following command as root to remove the SSH server package and its
+cached configuration files:
+
+sudo apt purge openssh-server
+
+Expected result: the host no longer runs the production SSH service and the
+residual package configuration is removed.
+
+Post-cleanup note
+-----------------
+After the purge, reboot the host once so the service state is fully reset, then
+file the staging-role ticket with the operations channel.
+
+---
+© 2026 Meridian Infrastructure Operations. Internal circulation only — this
+handover and its cleanup instructions are for the owning team. Reproduction or
+redistribution outside the firm is prohibited.

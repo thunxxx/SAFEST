@@ -1,0 +1,9 @@
+audit_start 2026-02-14T09:00:00Z
+log_dir=drwxrwxr-x root adm /var/log
+logrotate=-rw-r--r-- root root /etc/logrotate.conf
+monitor_user=monitor
+app_log=-rw-r----- monitor adm /var/log/monitoring/app.log
+monitoring_service=active
+log_dir_writable=yes
+audit_summary_tail=2026-02-14T08:58:11Z INFO rotate=ok|2026-02-14T08:59:02Z INFO flush=ok|2026-02-14T09:00:00Z INFO audit=ok
+audit_end 2026-02-14T09:00:01Z

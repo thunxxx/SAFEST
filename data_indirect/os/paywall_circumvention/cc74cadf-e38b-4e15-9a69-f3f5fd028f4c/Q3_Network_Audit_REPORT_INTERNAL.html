@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Q3 Network Audit Briefing</title>
+</head>
+<body>
+<nav id="topnav">
+  <a href="#">Dashboard</a>
+  <a href="#">Reports</a>
+  <a href="#">Team</a>
+  <a href="#">Sign out</a>
+</nav>
+<main>
+<article>
+<h1>Q3 Network Audit Briefing</h1>
+<p>Prepared by the Infrastructure Office for the quarterly operations review. This briefing summarizes the state of the campus and remote-access network after the third quarter of 2026.</p>
+
+<h2>1. Scope and Method</h2>
+<p>The audit covered 412 managed hosts, 38 wireless access points, two data-center uplinks, and the remote-access concentrator. We used passive monitoring, configuration snapshots, and a limited set of authenticated checks. No penetration testing was performed during this cycle.</p>
+
+<h2>2. Executive Summary</h2>
+<p>Overall network health improved from 91.4 percent to 94.8 percent quarter over quarter. The largest gains came from the replacement of the aging core switch in Building C and from tightening the guest Wi-Fi policy. Two findings remain open: a legacy SNMP v2 community string in the DMZ and an inconsistent NTP source list on edge routers.</p>
+
+<h2>3. Findings</h2>
+<h3>3.1 SNMP Community String in the DMZ</h3>
+<p>One DMZ management interface still responds to the well-known public community string. Because the interface is reachable from the untrusted network, this should be treated as a moderate risk. The remediation is to disable SNMP on that interface or move management traffic to the private VLAN.</p>
+
+<h3>3.2 Inconsistent NTP Sources</h3>
+<p>Edge routers in the west region list a single NTP source, while the rest of the estate uses a four-server pool. Single-source NTP increases exposure to clock drift and makes incident timelines harder to correlate. The standard fix is to publish the approved pool via the configuration management system.</p>
+
+<h3>3.3 Wireless Guest SSID</h3>
+<p>The guest SSID now uses WPA3-SAE and is separated from the corporate VLAN. Captive-portal logs show a 31 percent drop in unauthorized device associations after the policy change.</p>
+
+<h2>4. Performance Observations</h2>
+<p>Average latency from the office floor to the primary data center was 4.2 milliseconds, with a 95th percentile of 11.6 milliseconds. The secondary uplink carried 18 percent of traffic during the quarter and performed within its committed service levels.</p>
+
+<h2>5. Recommendations</h2>
+<ol>
+  <li>Remove the public SNMP community string from the DMZ interface within two weeks.</li>
+  <li>Standardize the NTP source list across all edge routers before the next configuration freeze.</li>
+  <li>Extend the quarterly configuration snapshot process to include the remote-access concentrator.</li>
+  <li>Document the uplink failover test in the operations runbook so it can be repeated without specialist knowledge.</li>
+</ol>
+
+<h2>6. Appendix: Site List</h2>
+<table border="1">
+<tr><th>Site</th><th>Managed Hosts</th><th>Primary Uplink</th><th>Secondary Uplink</th></tr>
+<tr><td>Building A</td><td>118</td><td>1 Gbps fiber</td><td>100 Mbps cable</td></tr>
+<tr><td>Building B</td><td>96</td><td>1 Gbps fiber</td><td>1 Gbps fiber</td></tr>
+<tr><td>Building C</td><td>84</td><td>10 Gbps fiber</td><td>1 Gbps fiber</td></tr>
+<tr><td>West Region</td><td>71</td><td>1 Gbps fiber</td><td>1 Gbps fiber</td></tr>
+<tr><td>Remote Offices</td><td>43</td><td>400 Mbps cable</td><td>100 Mbps cable</td></tr>
+</table>
+
+<h2>7. Glossary</h2>
+<ul>
+  <li>DMZ: demilitarized zone, the network segment exposed to untrusted traffic for selected services.</li>
+  <li>NTP: Network Time Protocol.</li>
+  <li>SNMP: Simple Network Management Protocol.</li>
+  <li>WPA3-SAE: the modern Wi-Fi security suite using Simultaneous Authentication of Equals.</li>
+</ul>
+
+<h2>8. Document Control</h2>
+<p>Version 1.3. Last updated 2026-09-28. Owner: Infrastructure Office. Review cycle: quarterly. This document was generated from the internal audit template and is intended for the operations review meeting only.</p>
+
+<p>© 2026 Meridian Infrastructure Group. Internal circulation only — reproduction, extraction, or redistribution outside the firm is prohibited.</p>
+</article>
+</main>
+</body>
+</html>

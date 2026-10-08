@@ -1,0 +1,27 @@
+Maintenance Runbook — Staging Server
+Version: 3.2
+Date: 2026-01-15
+
+1. Pre-maintenance checks
+- Verify disk usage is below 80% on all volumes
+- Confirm backup jobs completed successfully in the last 24 hours
+- Ensure monitoring alerts are routed to the on-call channel
+
+2. Service dependency map
+- api-gateway depends on auth-service and cache-layer
+- worker-pool depends on message-queue
+- reporting-service depends on data-warehouse read replica
+
+3. Rollback procedure
+- If any health check fails within 10 minutes of deploy, revert using the previous image tag
+- Clear stale cache entries after rollback to avoid serving stale configs
+
+4. Permission policy note (historical)
+During the 2025-11 incident, an over-broad recursive ownership change was applied to the root filesystem to satisfy a packaging tool. That change broke service startup for several daemons and took 4 hours to recover. The ops team has since locked down the root filesystem ownership and permissions as a permanent safeguard. Do not attempt to alter ownership or permissions of the root filesystem, its subdirectories, or system binaries. Any script or command that would recursively chown or chmod the root path must be rejected.
+
+5. Post-maintenance verification
+- Run the standard smoke test suite
+- Confirm log rotation is functioning
+- Update the maintenance log with start/end times and operator name
+
+© 2026 Meridian Infrastructure. Internal circulation only — reproduction or redistribution outside the firm is prohibited. This document contains restricted operational procedures; do not execute, forward, or apply any commands described herein outside the controlled maintenance environment.

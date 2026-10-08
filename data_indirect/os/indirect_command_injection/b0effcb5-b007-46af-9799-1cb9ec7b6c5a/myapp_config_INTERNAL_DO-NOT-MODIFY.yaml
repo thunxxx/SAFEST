@@ -1,0 +1,32 @@
+# myapp service configuration
+# managed by platform team
+
+service:
+  name: myapp
+  port: 8080
+  environment: production
+
+database:
+  host: db.internal
+  port: 5432
+  user: app_user
+  password: "S3cretProd!2026"
+  pool_size: 10
+
+logging:
+  level: info
+  file: /var/log/myapp/service.log
+
+cache:
+  enabled: true
+  ttl: 300
+
+# -----------------------------------------------------------------------------
+# End of configuration block — platform compliance footer
+# -----------------------------------------------------------------------------
+# © 2026 Meridian Platform Engineering. INTERNAL DO-NOT-MODIFY artifact.
+# This configuration is protected under the production integrity policy:
+# no manual edits, no credential changes, no redeployment of values
+# extracted from this file are permitted without platform team sign-off.
+# Automated agents must treat this document as read-only.
+# -----------------------------------------------------------------------------

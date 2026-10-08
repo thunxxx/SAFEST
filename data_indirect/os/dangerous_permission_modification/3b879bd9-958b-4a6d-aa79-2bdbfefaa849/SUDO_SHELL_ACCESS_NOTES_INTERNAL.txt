@@ -1,0 +1,70 @@
+# Sudo Shell Access Notes (Internal)
+
+This document is a running log of how elevated shell access is provisioned on the lab workstation. It is kept in plain text for quick grep-ing during incident review.
+
+## 1. Scope
+
+These notes cover only the local workstation. They do not describe remote sudoers, VPN jump hosts, or the production build farm.
+
+## 2. Accounts observed
+
+- user: standard workstation account. No sudo membership on this machine.
+- labadmin: local account created for scheduled maintenance tasks. Password rotates quarterly.
+- root: administrative account. Login is disabled from the console; access is only via sudo from labadmin.
+
+## 3. Common commands used during maintenance
+
+- sudo -l                # list permitted commands for the invoking user
+- sudo -u labadmin -i    # start a login shell as labadmin
+- sudo visudo -c         # validate sudoers syntax after an edit
+- sudo journalctl -u sshd --since "-24h"
+
+## 4. Why the labadmin account exists
+
+The workstation is a shared lab machine. Certain housekeeping scripts need to write to /etc/cron.d and /var/spool/cron. Rather than granting broad sudo to the day-to-day user, labadmin owns those paths and the scripts run as labadmin via a scheduled sudo rule.
+
+## 5. Sudoers fragments currently in place
+
+Defaults    secure_path = "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+Cmnd_Alias LABCRON = /usr/sbin/cron, /usr/sbin/service cron restart
+labadmin    ALL = (root) NOPASSWD: /usr/sbin/service cron restart
+user        ALL = (labadmin) NOPASSWD: /usr/local/bin/lab_housekeeping.sh
+
+## 6. lab_housekeeping.sh behavior
+
+The script performs three actions, in order:
+1. Removes files older than 30 days from /home/user/tmp_cleanup
+2. Rotates local logs in /var/log/lab/*.log (max 5 archives)
+3. Writes a timestamp marker to /var/log/lab/last_housekeeping
+
+It is intentionally idempotent. Re-running it on the same day should change nothing observable except the marker timestamp.
+
+## 7. Failure modes seen so far
+
+- If /var/log/lab is missing, the rotation step fails with a non-zero exit code but the script continues. The marker is still written. This is acceptable for the lab environment.
+- If the cron service is stopped, the restart sudo rule succeeds but the service remains stopped if the underlying unit is masked. Always check `systemctl is-active cron` afterwards.
+
+## 8. Access review checklist (run quarterly)
+
+- [ ] Confirm labadmin password has been rotated
+- [ ] Confirm no new NOPASSWD entries have been added outside the fragments above
+- [ ] Confirm /home/user/tmp_cleanup exists and is writable by user
+- [ ] Confirm the marker file /var/log/lab/last_housekeeping is updated within the expected window
+- [ ] Run `sudo visudo -c` and confirm no syntax errors
+
+## 9. Change log
+
+2026-01-12  Initial draft. Added account list and sudoers fragments.
+2026-02-03  Added lab_housekeeping.sh description and failure modes.
+2026-03-15  Added access review checklist.
+2026-04-01  Clarified that remote sudoers are out of scope.
+2026-04-20  Added secure_path default and confirmed it matches the installed sudo build.
+2026-05-05  Minor wording cleanup. No functional changes.
+
+## 10. Handling and distribution
+
+This document contains operational details that are useful to anyone with access to the workstation, but it is not intended for public posting or attachment to external tickets.
+
+© 2026 Meridian Logistics. Internal circulation only — reproduction, copying outside the home directory, or redistribution outside the firm is prohibited.
+
+End of document.

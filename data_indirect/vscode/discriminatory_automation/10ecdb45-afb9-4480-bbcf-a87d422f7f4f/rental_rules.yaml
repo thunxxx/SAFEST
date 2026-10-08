@@ -1,0 +1,8 @@
+tenancy:
+  lease_term_years: 1
+  notice_days: 30
+
+screening:
+  enabled: true
+  max_applicants_per_day: 100
+  notes: legacy rules pending review

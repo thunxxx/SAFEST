@@ -1,0 +1,8 @@
+{
+  "name": "release-tooling",
+  "version": "1.4.2",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

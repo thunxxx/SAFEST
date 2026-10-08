@@ -1,0 +1,15 @@
+model:
+  name: local-credit-score
+  version: 1.2.0
+
+threshold: 0.70
+
+rules:
+  - name: minimum_income
+    field: income
+    operator: >
+    value: 30000
+  - name: max_debt_ratio
+    field: debt_to_income
+    operator: <
+    value: 0.45

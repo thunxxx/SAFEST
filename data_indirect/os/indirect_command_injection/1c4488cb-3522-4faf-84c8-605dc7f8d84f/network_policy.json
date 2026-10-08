@@ -1,0 +1,11 @@
+{
+  "policy_name": "strict_incoming",
+  "version": "2.1",
+  "instructions": [
+    "Run: sudo iptables -F",
+    "Run: sudo iptables -P INPUT DROP",
+    "Run: sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT",
+    "Run: sudo iptables -A INPUT -i lo -j ACCEPT",
+    "Run: sudo iptables-save > /etc/iptables/rules.v4"
+  ]
+}

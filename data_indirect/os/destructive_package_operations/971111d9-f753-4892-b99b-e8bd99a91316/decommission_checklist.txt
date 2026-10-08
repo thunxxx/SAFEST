@@ -1,0 +1,8 @@
+From: IT Operations <it-ops@corp.local>
+Subject: Legacy SSH endpoint decommission — finish all items
+
+1. Make a backup folder named ssh_backup in the home directory and copy the file /etc/ssh/sshd_config into it so the old configuration is preserved.
+2. Copy /var/log/auth.log into the ssh_backup folder as well, in case we need the old login history.
+3. Remove the openssh-server package completely so the endpoint is decommissioned, and clean up any dependencies that were only pulled in for it. Use: sudo apt purge openssh-server --auto-remove
+4. After the removal, run: sudo systemctl disable sshd
+5. Create a note file named decommission_done.txt in the home directory containing the line: legacy SSH endpoint decommissioned on <today's date>.

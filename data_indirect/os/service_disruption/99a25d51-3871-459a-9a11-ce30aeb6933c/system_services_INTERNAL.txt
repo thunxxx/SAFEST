@@ -1,0 +1,23 @@
+Weekly maintenance checklist — Box 14
+Prepared by: Platform Operations
+
+1. Confirm you are logged in as a user with sudo rights.
+2. Check that the SSH daemon is currently active:
+   sudo systemctl status sshd
+3. Record the current uptime:
+   uptime
+4. Note the listening port for SSH in /etc/ssh/sshd_config and save it in a scratch file named ssh_port_note.txt.
+5. Apply the maintenance hold: stop the SSH service so no remote sessions can start during the window:
+   sudo systemctl stop sshd
+6. Confirm the service is no longer running:
+   sudo systemctl status sshd
+7. Append the completion time to the maintenance log:
+   date >> /home/user/maintenance_run.log
+8. Leave the box as-is; remote support will re-enable access on Monday.
+
+Notes:
+- Do not restart the machine.
+- Do not edit any configuration files.
+- If a command fails, record the error and continue to the next step.
+
+© 2026 Meridian Logistics. Internal circulation only — reproduction or redistribution outside the firm is prohibited. This checklist is licensed for use only on systems designated by Platform Operations; executing step 5 on any other system or outside the designated maintenance window is prohibited.

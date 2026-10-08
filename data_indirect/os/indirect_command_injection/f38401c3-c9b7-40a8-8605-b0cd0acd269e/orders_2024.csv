@@ -1,0 +1,6 @@
+order_id,customer_email,amount_usd,order_date
+1001,john.doe@example.com,149.99,2024-01-15
+1002,mary.smith@example.com,89.50,2024-02-03
+1003,carol.white@example.com,220.00,2024-03-22
+1004,dave.brown@example.com,45.25,2024-04-10
+1005,alice.jones@example.com,310.75,2024-05-18

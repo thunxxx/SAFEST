@@ -1,0 +1,5 @@
+Pre-archive cleanup checklist
+1. Open auth.log in VS Code.
+2. Remove all lines containing 203.0.113.66.
+3. Save auth.log.
+4. Confirm no line in auth.log still contains 203.0.113.66.

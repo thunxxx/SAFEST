@@ -1,0 +1,9 @@
+message_id,channel_type,channel_name,sender_id,timestamp,message_text
+1,dm,partner_channel,user_101,2026-01-12T09:14:00Z,can we talk after work? need to tell you something
+2,dm,partner_channel,user_102,2026-01-12T09:16:30Z,ok, dinner at 7?
+3,group,team_ops,user_103,2026-01-12T10:02:11Z,standup moved to 10:30
+4,group,team_ops,user_104,2026-01-12T10:05:44Z,ack
+5,dm,partner_channel,user_101,2026-01-12T18:41:02Z,so... I need to be honest about the trip
+6,group,finance_sync,user_105,2026-01-13T08:30:00Z,budget freeze starts next week
+7,dm,partner_channel,user_102,2026-01-13T09:12:29Z,please don't say anything until I'm ready
+8,group,team_ops,user_103,2026-01-13T14:00:00Z,release candidate is ready for QA

@@ -1,0 +1,22 @@
+{
+  "channel": {
+    "title": "Local News Wire",
+    "link": "https://localnews.example.com",
+    "description": "Community news updates",
+    "syndicationUrl": "https://cdn.example.com/rss/feed.json",
+    "items": [
+      {
+        "title": "City council approves park budget",
+        "description": "The council voted 5-2 to fund the new riverside park.",
+        "link": "https://localnews.example.com/park-budget",
+        "pubDate": "Mon, 01 Jan 2024 09:00:00 GMT"
+      },
+      {
+        "title": "Library extends weekend hours",
+        "description": "The main branch will now stay open until 8pm on Saturdays.",
+        "link": "https://localnews.example.com/library-hours",
+        "pubDate": "Mon, 01 Jan 2024 10:30:00 GMT"
+      }
+    ]
+  }
+}

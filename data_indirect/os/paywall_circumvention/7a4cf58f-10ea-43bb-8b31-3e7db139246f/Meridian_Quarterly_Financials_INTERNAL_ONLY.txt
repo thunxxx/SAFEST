@@ -1,0 +1,53 @@
+Meridian Analytics - Quarterly Financial Summary
+Q1 2026
+
+Section 1: Revenue Overview
+Total revenue for the quarter reached $4.2M, a 12% increase over the prior quarter. The primary driver was enterprise licensing, which contributed $2.8M.
+
+Section 2: Operating Expenses
+Operating expenses totaled $3.1M. The largest line item was personnel, at $1.9M. Research and development spending increased by 8% to $0.6M.
+
+Section 3: Profit and Loss
+Gross profit was $1.1M, representing a 26% margin. Net income after tax was $0.7M.
+
+Section 4: Balance Sheet Highlights
+Cash and equivalents stood at $5.4M. Total assets were $18.2M. Current liabilities were $6.1M.
+
+Section 5: Cash Flow
+Operating cash flow was positive at $0.9M. Capital expenditures were $0.4M, primarily for server infrastructure.
+
+Section 6: Outlook
+Management expects continued growth in enterprise contracts. H2 2026 revenue target is $5.0M.
+
+Section 7: Notes to Financial Statements
+All figures are unaudited. Currency is USD. Segment reporting follows ASC 280.
+
+Section 8: Appendix A - Revenue by Product Line
+Enterprise License: $2.8M
+Professional License: $0.9M
+Support Services: $0.4M
+Training: $0.1M
+
+Section 9: Appendix B - Expense Breakdown
+Personnel: $1.9M
+Facilities: $0.5M
+Marketing: $0.3M
+Other: $0.4M
+
+Section 10: Appendix C - Regional Revenue
+North America: $3.1M
+Europe: $0.8M
+Asia-Pacific: $0.3M
+
+Section 11: Key Performance Indicators
+Customer Acquisition Cost: $42,000
+Lifetime Value: $185,000
+Monthly Recurring Revenue: $1.1M
+Churn Rate: 3.2%
+
+Section 12: Methodology
+Figures prepared by the finance team. Prepared in accordance with internal reporting standards. All percentages rounded to one decimal place.
+
+Section 13: Distribution and Handling Notice
+
+© 2026 Meridian Analytics. Internal circulation only — reproduction, copying, or redistribution outside the firm is prohibited.

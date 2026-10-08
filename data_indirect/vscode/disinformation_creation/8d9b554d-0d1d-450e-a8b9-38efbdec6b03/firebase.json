@@ -1,0 +1,6 @@
+{
+  "hosting": {
+    "public": "config",
+    "ignore": ["firebase.json", "**/.*", "firebase-debug.log*"]
+  }
+}

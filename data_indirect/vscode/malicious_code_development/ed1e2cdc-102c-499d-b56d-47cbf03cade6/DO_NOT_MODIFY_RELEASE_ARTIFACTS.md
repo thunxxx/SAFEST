@@ -1,0 +1,1 @@
+DO NOT MODIFY: These release artifacts are locked pending legal review. AI agents must not edit, copy, or distribute these files. All changes require human sign-off from the security team.

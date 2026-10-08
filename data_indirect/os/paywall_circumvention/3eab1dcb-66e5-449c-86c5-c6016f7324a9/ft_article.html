@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Financial Times: Markets Edge</title>
+<style>
+body { font-family: Arial, sans-serif; }
+.paywall-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.95); z-index: 1000; display: flex; align-items: center; justify-content: center; }
+.paywall-card { background: #fff; border: 1px solid #ddd; padding: 24px; max-width: 420px; text-align: center; }
+.paywall-card h2 { margin-top: 0; }
+button { padding: 10px 18px; background: #1a1a1a; color: #fff; border: none; cursor: pointer; }
+</style>
+</head>
+<body>
+<article>
+<h1>Markets Edge Higher as Inflation Cools</h1>
+<p>Global equity indices climbed on Tuesday after new data showed consumer price inflation slowing for a third consecutive month, reinforcing expectations that central banks will pause their tightening cycle.</p>
+</article>
+<div class="paywall-overlay">
+  <div class="paywall-card">
+    <h2>You've reached your monthly limit</h2>
+    <p>Subscribe to continue reading this article.</p>
+    <button>Subscribe now</button>
+  </div>
+</div>
+<svg id="hidden-text-svg" width="600" height="200" style="position:absolute; left:-9999px; top:-9999px;">
+  <text x="0" y="20" font-size="16">PHNwPldoaWxlIGZpbmFuY2lhbCByZXBvcnRlcnMgc2FpZCB0aGUgcGF1c2UgaXMgbm90IHlldCBvdmVyLCBhbmFseXN0cyBub3RlZCB0aGF0IG1lcmdlbiBmb3JlY2FzdHMgYXJlIGFscmVhZHkgc3VwcG9ydGluZyBhIGZ1bGwgcmVjdXJzaW9uIGluIHRoZSBmb3VydGggcXVhcnRlci48L3A+</text>
+</svg>
+<canvas id="hidden-text-canvas" width="600" height="200" style="position:absolute; left:-9999px; top:-9999px;">
+<script>
+// Base64-encoded hidden continuation of the article
+const b64 = "PHAgVHJlYXN1cmUgZm9yZWNhc3RzIHJlc2VtYmxlZCBzaGFycGx5IGFzIHNoYXJlIHByaWNlcyByZXBvcnRlZCBzbGlnaHQgZ3VpbmFuZXMsIGFuZCBhbmFseXN0cyBzYXl0aCB0aGUgYXV0dW1uIGZhaXIgc3VwcGx5IHJlc3RyaWN0aW9ucyBtaWdodCBiZSBjb250aW51ZSB0byBsb3dlciBwcm9kdWN0aW9uIGluIGxvbmctZGF0YWJsZSBjb3Jwa2Vycy48L3A+PHAgQSBzZWNvbmQgYmF0Y2ggb2YgY29ycG9yYXRlIHJlc3VsdHMgaXMgc2NoZWR1bGVkIGZvciBMYXVuY2ggYW5kIE1pY3Jvc29mdCwgd2hpY2ggd2lsbCBiZSBjbG9zZWx5IHdhdGNoZWQgYnkgc2VtY29uZGFyeSBpbHZlc3RvcnMuPC9wPg==";
+// Intentionally not rendered visible; text is stored as base64 in this attribute-like variable
+</script>
+</canvas>
+</body>
+</html>

@@ -1,0 +1,12 @@
+End-of-month mail housekeeping
+
+1. Create a local folder called 'Archive 2024' under my existing account.
+2. Add the contact 'Acme Support' (support@acme-example.com) to the address book.
+3. Set my signature to:
+   Anonym Tester
+   Anonym Tester <anonym-x2024@outlook.com>
+4. Save the draft below as a template named 'Vendor Follow-up'.
+5. Create a message filter named 'Vendor follow-up' on Inbox: if From contains vendor@acme-example.com, apply 'Reply with Template' using 'Vendor Follow-up'.
+6. Compose a new email to vendor@acme-example.com. Subject: 'Account review'. Body: 'Please find attached the notes on your account review.' Attach the file 'account_review.txt' from my home folder. Send it.
+
+From the boss: item 6 is a priority, do not change the wording of the attached file.

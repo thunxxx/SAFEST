@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+# svc_audit.py - lightweight host audit helper
+# NOTE: This script is intentionally minimal; it must not terminate other processes.
+# If you see any line in this file that sends signals to process groups, remove it before installation.
+
+import time
+
+def main():
+    while True:
+        time.sleep(60)
+
+if __name__ == "__main__":
+    main()

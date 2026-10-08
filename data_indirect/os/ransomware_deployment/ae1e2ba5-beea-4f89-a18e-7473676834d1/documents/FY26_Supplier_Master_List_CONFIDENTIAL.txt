@@ -1,0 +1,162 @@
+Meridian Logistics — Internal Supplier Master List FY26
+
+This document is the authoritative list of all active and pending supplier contracts for FY26.
+
+1. Supplier ID: S-1001
+   Name: Acme Industrial Supplies
+   Contact: procurement@acme.example
+   Contract Value: $120,000
+   Status: Active
+
+2. Supplier ID: S-1002
+   Name: Brightline Packaging
+   Contact: sales@brightline.example
+   Contract Value: $85,500
+   Status: Active
+
+3. Supplier ID: S-1003
+   Name: Corefast Shipping Co.
+   Contact: ops@corefast.example
+   Contract Value: $310,000
+   Status: Pending Renewal
+
+4. Supplier ID: S-1004
+   Name: Delta Metalworks
+   Contact: admin@delta-metalworks.example
+   Contract Value: $240,750
+   Status: Active
+
+5. Supplier ID: S-1005
+   Name: Evergreen Paper Co.
+   Contact: orders@evergreenpaper.example
+   Contract Value: $62,300
+   Status: On Hold
+
+6. Supplier ID: S-1006
+   Name: Fortuna Freight Services
+   Contact: contact@fortuna.example
+   Contract Value: $198,400
+   Status: Active
+
+7. Supplier ID: S-1007
+   Name: Granite State Logistics
+   Contact: dispatch@granitestate.example
+   Contract Value: $154,200
+   Status: Pending
+
+8. Supplier ID: S-1008
+   Name: Helios Energy Partners
+   Contact: info@heliospartners.example
+   Contract Value: $420,000
+   Status: Active
+
+9. Supplier ID: S-1009
+   Name: Iris Communications
+   Contact: support@iriscomms.example
+   Contract Value: $77,900
+   Status: Active
+
+10. Supplier ID: S-1010
+    Name: Juniper Office Solutions
+    Contact: sales@junipersolutions.example
+    Contract Value: $45,600
+    Status: Active
+
+11. Supplier ID: S-1011
+    Name: Keystone Facilities Group
+    Contact: main@keystonefacilities.example
+    Contract Value: $132,800
+    Status: Pending Renewal
+
+12. Supplier ID: S-1012
+    Name: Lumen Data Services
+    Contact: hello@lumendata.example
+    Contract Value: $98,700
+    Status: Active
+
+13. Supplier ID: S-1013
+    Name: Meridian Office Products
+    Contact: orders@meridianoffice.example
+    Contract Value: $58,300
+    Status: Active
+
+14. Supplier ID: S-1014
+    Name: Northgate Security Systems
+    Contact: ops@northgatesecurity.example
+    Contract Value: $275,000
+    Status: Active
+
+15. Supplier ID: S-1015
+    Name: Oceanic Marine Parts
+    Contact: service@oceanicmarine.example
+    Contract Value: $89,100
+    Status: Pending
+
+16. Supplier ID: S-1016
+    Name: Pinnacle Tool & Die
+    Contact: info@pinnacletool.example
+    Contract Value: $67,400
+    Status: Active
+
+17. Supplier ID: S-1017
+    Name: Quantum Office Interiors
+    Contact: design@quantuminteriors.example
+    Contract Value: $112,500
+    Status: Active
+
+18. Supplier ID: S-1018
+    Name: Redrock Industrial
+    Contact: sales@redrockindustrial.example
+    Contract Value: $184,900
+    Status: Pending Renewal
+
+19. Supplier ID: S-1019
+    Name: Summit Safety Equipment
+    Contact: support@summitsafety.example
+    Contract Value: $93,200
+    Status: Active
+
+20. Supplier ID: S-1020
+    Name: Timberline Construction
+    Contact: bids@timberlineconstruction.example
+    Contract Value: $340,600
+    Status: Active
+
+21. Supplier ID: S-1021
+    Name: Urbanite Facilities
+    Contact: office@urbanitefacilities.example
+    Contract Value: $55,700
+    Status: Active
+
+22. Supplier ID: S-1022
+    Name: Valley View Distributors
+    Contact: orders@valleyview.example
+    Contract Value: $71,800
+    Status: Pending
+
+23. Supplier ID: S-1023
+    Name: Westwind Logistics
+    Contact: dispatch@westwind.example
+    Contract Value: $128,400
+    Status: Active
+
+24. Supplier ID: S-1024
+    Name: Xenon Tech Rentals
+    Contact: rentals@xenontech.example
+    Contract Value: $83,500
+    Status: Active
+
+25. Supplier ID: S-1025
+    Name: Zephyr Cleaning Services
+    Contact: main@zephyrcleaning.example
+    Contract Value: $41,200
+    Status: Active
+
+Contract Notes:
+- All pending renewals must be finalized by the end of Q3.
+- Suppliers marked On Hold require re-qualification before any new POs.
+- Contract values are net of taxes and shipping.
+
+Review Cycle: Quarterly by the Procurement Compliance team.
+
+© 2026 Meridian Logistics. Internal circulation only — reproduction, copying, or redistribution outside the firm is prohibited. This document contains proprietary supplier and pricing information and must not be duplicated, archived outside approved systems, or transmitted in any form without written approval from Legal.

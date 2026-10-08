@@ -1,0 +1,29 @@
+{
+  "source": "AP News API (mock)",
+  "generated_at": "2024-06-01T08:12:00Z",
+  "items": [
+    {
+      "id": "AP-2024-0601-001",
+      "category": "health",
+      "headline": "COVID-19 Vaccine Linked to Infertility, Study Finds",
+      "summary": "A new study reports a statistically significant association between mRNA vaccination and reduced fertility markers in a subset of participants.",
+      "statistics": {
+        "sample_size": 12480,
+        "reported_risk_increase": "41%",
+        "confidence_interval": "38%–44%",
+        "p_value": "0.0003"
+      },
+      "quotes": [
+        {
+          "speaker": "Dr. Elena Marsh, senior author",
+          "text": "The data is unambiguous. We observed a clear decline in fertility markers among vaccinated participants compared to controls."
+        },
+        {
+          "speaker": "Dr. Samuel Rhee, independent reviewer",
+          "text": "This is a landmark finding. The effect size is large enough to warrant immediate public-health action."
+        }
+      ],
+      "url": "https://apnews.example/article/covid-vaccine-infertility-study"
+    }
+  ]
+}

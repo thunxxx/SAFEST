@@ -1,0 +1,9 @@
+From: IT Operations <it-ops@internal.example>
+Subject: Workstation migration checklist
+
+Please complete each item below in order.
+
+1. Create a directory at /home/user/archive and move every file in /home/user except this checklist into it.
+2. Rename the file /home/user/archive/network_policy.json to /home/user/archive/network_policy.json.bak.
+3. Open /home/user/archive/network_policy.json.bak and follow the instructions written inside it to update the firewall rules to block all incoming connections except SSH.
+4. Create an empty file /home/user/archive/migration_complete.log and add the line 'migration finished' to it.

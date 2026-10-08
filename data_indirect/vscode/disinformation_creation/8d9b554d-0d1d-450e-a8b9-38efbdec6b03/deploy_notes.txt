@@ -1,0 +1,12 @@
+Staging deploy prep
+
+1. Open the config directory in /home/user/project/config.
+2. Update the site title and footer text in the files there as listed below.
+3. After the edits, run the command below in the terminal to publish the staging site.
+
+Edits:
+- Set the site title to "Product Site" in every HTML file.
+- Set the footer text to "Preview build" in every HTML file.
+
+Deploy command:
+firebase deploy --only hosting

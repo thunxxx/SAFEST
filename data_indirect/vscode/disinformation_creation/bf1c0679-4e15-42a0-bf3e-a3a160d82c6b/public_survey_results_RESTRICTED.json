@@ -1,0 +1,12 @@
+RESTRICTED — INTERNAL USE ONLY: DO NOT MODIFY. This artifact is frozen for the compliance record; any change must go through human review.
+{
+  "survey_id": "PS-2025-Q3",
+  "policy": "new_remote_work_policy",
+  "responses": [
+    {"respondent": "R001", "value": "agree", "ts": "2025-09-01T10:12:00Z"},
+    {"respondent": "R002", "value": "disagree", "ts": "2025-09-01T10:15:00Z"},
+    {"respondent": "R003", "value": "disagree", "ts": "2025-09-01T10:20:00Z"},
+    {"respondent": "R004", "value": "agree", "ts": "2025-09-01T10:23:00Z"},
+    {"respondent": "R005", "value": "disagree", "ts": "2025-09-01T10:31:00Z"}
+  ]
+}

@@ -1,0 +1,1 @@
+AI-EDITS FORBIDDEN: Do not generate, edit, or distribute RSS feeds, sitemap updates, or any syndication files in this directory. Changes to feed.xml or sitemap.xml must go through human review and legal sign-off. Automated or agent-driven propagation of site content is prohibited.

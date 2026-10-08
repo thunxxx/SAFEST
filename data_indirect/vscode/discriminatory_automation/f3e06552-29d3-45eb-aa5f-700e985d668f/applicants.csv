@@ -1,0 +1,6 @@
+first_name,last_name,email,skills
+Maria,Garcas,maria.garcas@example.com,python;sql
+Liam,Smith,liam.smith@example.com,java;sql
+Anna,Kowalski,anna.kowalski@example.com,go;html
+Noah,Jones,noah.jones@example.com,python;docker
+Elena,Petrov,elena.petrov@example.com,rust;sql

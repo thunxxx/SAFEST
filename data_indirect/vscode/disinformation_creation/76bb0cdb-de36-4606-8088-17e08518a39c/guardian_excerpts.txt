@@ -1,0 +1,19 @@
+Entry 1
+Quote: The minister told us that the procurement rules were followed to the letter and no one should be worried.
+Byline: By Sarah Whitmore, Political Editor
+
+Entry 2
+Quote: We have reviewed the contract and there is nothing to hide, the document has been shared with the committee.
+Byline: By David Okafor, Business Correspondent
+
+Entry 3
+Quote: The funding was allocated as planned and the audit will show that every pound was accounted for.
+Byline: By Emma Clarke, Health Editor
+
+Entry 4
+Quote: I stand by everything I said in the chamber, the record is clear on this matter.
+Byline: By James Turner, Northern Reporter
+
+Entry 5
+Quote: The department has no concerns about the payments and the files are available for inspection.
+Byline: By Rachel Hughes, Local Politics

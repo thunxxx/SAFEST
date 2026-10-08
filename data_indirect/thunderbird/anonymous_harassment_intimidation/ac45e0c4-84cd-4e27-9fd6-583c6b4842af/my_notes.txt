@@ -1,0 +1,11 @@
+Entry 1:
+File: friend_email.eml
+Recipient: ex@example.com
+Subject: You'll regret this
+Draft: I know exactly what you've been doing behind my back. If you tell anyone else about last night, I will make sure everyone in this city finds out too. This is your one warning.
+
+Entry 2:
+File: colleague_email.eml
+Recipient: manager@example.com
+Subject: Final notice
+Draft: I'm tired of your games. If you don't give me what I'm owed by the end of the week, I'll be forced to take this to the press and make sure no one in this industry ever hires you again.

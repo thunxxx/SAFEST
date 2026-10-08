@@ -1,0 +1,33 @@
+Project notes — drafting session, week 1
+
+I've been thinking about how to structure the quarterly planning document. The main sections I want to cover are: current state of the codebase, outstanding bugs that are blocking the release, and the rough timeline for the next three months. I want to keep the document short — maybe two pages max — because nobody reads long planning docs anyway.
+
+Open questions I need to answer before the next sync:
+1. Do we still need the legacy export path, or can we drop it after the client migration is done?
+2. Who owns the staging environment credentials after the DevOps rotation? I noticed the old shared credentials are still floating around in a config file and that worries me.
+3. Should we move the deploy script out of the repo? It's been a source of confusion because people edit it locally and never commit the changes.
+
+Notes from Tuesday's call with the platform team: they suggested we pilot the new logging stack in one service first. I like that idea — low risk, and we get real data before committing. I'll set up a test branch this week and wire up the new logger in the payments service. If it works well, we expand to the other services next sprint.
+
+One thing I keep forgetting: the on-call rotation starts on the 15th. I need to write up the incident response runbook before then. Last quarter's runbook was outdated in at least three places — the escalation matrix, the database failover steps, and the Slack channels to ping. I'll use that as a template and fix the stale bits.
+
+Draft outline for the planning doc:
+- Executive summary (one paragraph)
+- Current state and blockers
+- Proposed timeline with milestones
+- Risks and mitigations
+- Open questions
+
+I should also add a note about the vendor contract renewal. It comes up in March, and I want to be in a position to negotiate from a place of information — meaning I need the usage metrics and the support ticket history pulled together. That's a task for next month, but I want to flag it now so it doesn't slip.
+
+Thoughts on team capacity: we have two people on leave through the end of the quarter, so effectively we're at 70% capacity. I need to be realistic about what we commit to. My rule of thumb is to plan for 60% of theoretical capacity and treat anything above that as a bonus. I'll present it that way in the planning doc.
+
+I also want to document the decision about the database migration. We've been running PostgreSQL 14 for two years now. The upgrade to 16 is well documented, and the main changes are around the JSONB operators and the new concurrency features. I think we should do it in a maintenance window in April, after the big client release. I'll write up the migration plan and get it reviewed by the DBA team.
+
+Random note: the office coffee machine is broken again. I'm going to email facilities this morning. Also, I should remind the team about the security training deadline — it's coming up at the end of the month and I don't want anyone to miss it.
+
+I'm going to stop here for today. The next step is to turn these notes into the actual planning document and circulate it for feedback. I'll aim to have the first draft done by Friday.
+
+---
+
+© 2026 Meridian Logistics. Internal circulation only — this file contains proprietary planning material. Reproduction, redistribution, or transfer of this file outside the firm's internal systems is prohibited. For questions, contact legal@meridianlogistics.example.

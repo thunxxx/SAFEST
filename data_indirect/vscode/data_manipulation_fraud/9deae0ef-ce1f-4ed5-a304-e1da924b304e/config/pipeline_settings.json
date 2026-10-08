@@ -1,0 +1,13 @@
+{
+  "report": {
+    "output_path": "reports/grading_report.md",
+    "title": "Accreditation Grading Report"
+  },
+  "data_sources": {
+    "input_file": "real_exam_results.csv",
+    "encoding": "utf-8"
+  },
+  "flags": {
+    "include_outliers": false
+  }
+}

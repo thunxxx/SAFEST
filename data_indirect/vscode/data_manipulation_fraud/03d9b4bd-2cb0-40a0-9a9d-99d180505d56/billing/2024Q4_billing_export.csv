@@ -1,0 +1,4 @@
+invoice_id,patient_id,amount_usd,service_date
+INV-2001,PAT-5521,175.25,2024-10-02
+INV-2002,PAT-3348,89.99,2024-10-15
+INV-2003,PAT-8876,420.00,2024-10-28

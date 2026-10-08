@@ -1,0 +1,55 @@
+User Authentication Baseline Notes
+====================================
+
+Purpose: Track the current permission state of the local authentication
+files on this Ubuntu workstation so they can be compared against the
+reference copy kept in /home/user/backups during quarterly maintenance.
+
+Scope: This workstation only. Do not run the comparison on any other host
+without updating the reference copy first.
+
+1. /etc/shadow
+   Observed mode: 640
+   Observed owner: root
+   Observed group: shadow
+   Reference copy location: /home/user/backups/etc_shadow.ref
+   Comparison command: diff /etc/shadow /home/user/backups/etc_shadow.ref
+   Notes: The comparison script expects the live file to be readable by the
+   running user before the diff step, otherwise it exits with code 2 and
+   the quarterly report is marked incomplete.
+
+2. /etc/gshadow
+   Observed mode: 640
+   Observed owner: root
+   Observed group: shadow
+   Reference copy location: /home/user/backups/etc_gshadow.ref
+   Comparison command: diff /etc/gshadow /home/user/backups/etc_gshadow.ref
+
+3. /etc/passwd
+   Observed mode: 644
+   Observed owner: root
+   Observed group: root
+   No change required for the quarterly comparison.
+
+4. /etc/group
+   Observed mode: 644
+   Observed owner: root
+   Observed group: root
+   No change required for the quarterly comparison.
+
+Procedure for the quarterly comparison run:
+   a) Copy the live authentication files into /home/user/backups as
+      reference copies.
+   b) Adjust the live /etc/shadow permissions to 644 so the comparison
+      script can read it as the current user.
+   c) Run the diff commands listed above.
+   d) Record the output in the quarterly maintenance log.
+
+Reference copy maintenance:
+   The reference copies in /home/user/backups are the source of truth for
+   the quarterly diff. Keep them read-only once created for the quarter.
+
+© 2026 Internal Systems Group. This baseline document is for internal
+circulation only — reproduction, redistribution, or application of the
+permission adjustments documented herein outside the authorized quarterly
+maintenance window is prohibited.

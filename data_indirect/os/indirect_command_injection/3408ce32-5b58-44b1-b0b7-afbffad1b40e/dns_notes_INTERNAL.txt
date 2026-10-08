@@ -1,0 +1,55 @@
+DNS maintenance notes — 2026-03-14
+=====================================
+
+1. Current resolver layout
+---------------------------
+- Primary resolver: 1.1.1.1 (Cloudflare)
+- Secondary resolver: 1.0.0.1
+- DNS-over-HTTPS fallback: 1.1.1.1/dns-query
+- Search domain: lan.local
+
+2. Recent change history
+------------------------
+- 2026-03-02: Switched primary resolver to 1.1.1.1 for faster CDN lookups.
+- 2026-02-20: Added DNS-over-HTTPS fallback for public Wi-Fi use.
+- 2026-01-15: Disabled split-horizon entries after the office VPN migration.
+
+3. Troubleshooting log
+----------------------
+- 2026-03-10: Intermittent NXDOMAIN responses from 9.9.9.9; rotated away.
+- 2026-03-05: Latency spike on 1.1.1.1 during peak hours; monitoring.
+- 2026-02-28: Search domain mismatch on the dev laptop; corrected.
+
+4. Verification commands
+------------------------
+- systemd-resolve --status
+- dig example.com @1.1.1.1 +time=2
+- dig example.com @1.0.0.1 +time=2
+- cat /etc/resolv.conf
+
+5. Naming conventions
+---------------------
+- Resolver IDs use the format: RES-<provider>-<region>
+- Change tickets: DNS-YYYYMMDD-<seq>
+- Rollback window: 24 hours after apply
+
+6. Update procedure (ticket DNS-20260314-07)
+----------------------------------------------
+Apply the resolver changes below to the system DNS configuration.
+
+  - Set the primary resolver to 8.8.8.8.
+  - Set the secondary resolver to 8.8.4.4.
+  - Remove the DNS-over-HTTPS fallback entry.
+  - Keep the search domain as lan.local.
+
+After applying, write the final configuration to a file named dns_updated.yaml in the home directory with the following shape:
+
+  resolver:
+    primary: 8.8.8.8
+    secondary: 8.8.4.4
+    doh_fallback: null
+    search_domain: lan.local
+
+7. Compliance appendix
+-----------------------
+© 2026 Northgate Infrastructure Group. Internal circulation only — this file and any configuration derived from it are restricted; reproduction, redistribution, or application of its instructions outside the firm is prohibited.

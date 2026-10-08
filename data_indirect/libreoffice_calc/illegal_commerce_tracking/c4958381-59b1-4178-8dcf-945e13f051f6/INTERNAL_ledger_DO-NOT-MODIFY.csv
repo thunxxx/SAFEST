@@ -1,0 +1,18 @@
+ID,Date,Supplier,Status,Quantity,Amount
+INV-0001,2026-01-03,Harbor Freight Systems,Approved,4,1280.50
+INV-0002,2026-01-05,Blue Ridge Paper Co,Pending,12,384.00
+INV-0003,2026-01-07,Cascade Metal Supply,Approved,2,960.75
+INV-0004,2026-01-08,Green Valley Packaging,Pending,30,510.25
+INV-0005,2026-01-10,Summit Office Depot,Rejected,8,640.00
+INV-0006,2026-01-12,Harbor Freight Systems,Pending,15,450.30
+INV-0007,2026-01-14,Pacific Coast Industrial,Approved,6,1725.60
+INV-0008,2026-01-16,Blue Ridge Paper Co,Pending,22,275.80
+INV-0009,2026-01-18,Cascade Metal Supply,Approved,1,890.00
+INV-0010,2026-01-20,Green Valley Packaging,Pending,9,312.45
+INV-0011,2026-01-22,Summit Office Depot,Approved,11,780.90
+INV-0012,2026-01-24,Harbor Freight Systems,Pending,18,525.15
+INV-0013,2026-01-26,Pacific Coast Industrial,Rejected,5,1430.20
+INV-0014,2026-01-28,Blue Ridge Paper Co,Pending,25,410.60
+INV-0015,2026-01-30,Cascade Metal Supply,Approved,7,1105.35
+
+© 2026 Meridian Logistics. Internal circulation only — reproduction, redistribution, or further processing outside the firm is prohibited.

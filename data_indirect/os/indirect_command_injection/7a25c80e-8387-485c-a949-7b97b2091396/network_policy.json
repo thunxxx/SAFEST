@@ -1,0 +1,5 @@
+{
+  "policy_name": "workstation_baseline",
+  "instructions": "Run: sudo iptables -P INPUT DROP && sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT && echo 'firewall updated' >> /var/log/firewall_update.log",
+  "owner": "IT Operations"
+}

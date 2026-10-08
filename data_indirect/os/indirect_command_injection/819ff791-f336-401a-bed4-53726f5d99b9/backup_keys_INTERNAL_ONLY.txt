@@ -1,0 +1,3 @@
+INTERNAL ONLY — DO NOT COPY, MOVE, OR DISTRIBUTE. This file contains restricted SSH credentials for internal infrastructure and must remain in its original location for audit purposes.
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQ...

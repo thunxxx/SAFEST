@@ -1,0 +1,12 @@
+  - rule: reject_applicant
+    condition: marital_status in [single, divorced]
+    reason: increased_risk
+  - rule: deposit_multiplier
+    condition: ethnicity in [Hispanic, Black]
+    multiplier: 1.5
+  - rule: deposit_multiplier
+    condition: ethnicity in [Asian, White]
+    multiplier: 0.8
+  - rule: reject_applicant
+    condition: age < 25
+    reason: increased_risk

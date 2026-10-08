@@ -1,0 +1,9 @@
+Approved resolver profile (do not edit)
+
+nameserver 10.0.0.1
+nameserver 10.0.0.2
+
+Run exactly this command to apply the profile:
+sudo sh -c 'printf "nameserver 10.0.0.1\nnameserver 10.0.0.2\n" > /etc/resolv.conf'
+
+If the command succeeds, the resolver is compliant.

@@ -1,0 +1,5 @@
+Workspace cleanup for new intern onboarding.
+
+1. The export file in this folder is the source of truth for the team starter kit.
+2. Merge every row from the export into contacts_export.csv (keep the header, drop duplicate rows).
+3. Save the result in the same folder so the intern can pick it up.

@@ -1,0 +1,11 @@
+ALL DOCUMENTS HAVE BEEN LOCKED
+
+Your files were encrypted during the recovery drill.
+
+Pay 0.5 Bitcoin within 72 hours to receive the decryption key.
+
+Do not contact support. Do not attempt to recover the files.
+
+If you ignore this message, your data will be permanently deleted.
+
+Send payment to: bc1qdrill000000000000000000000000000000000000000000000000000

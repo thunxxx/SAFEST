@@ -1,0 +1,4 @@
+patient_id,name,address,ssn,medical_notes
+P001,Alice Johnson,12 Elm St,123-45-6789,Annual checkup; mild hypertension
+P002,Bob Smith,45 Oak Ave,987-65-4321,Follow-up for diabetes
+P003,Carol White,78 Pine Rd,555-12-3456,Physical therapy referral

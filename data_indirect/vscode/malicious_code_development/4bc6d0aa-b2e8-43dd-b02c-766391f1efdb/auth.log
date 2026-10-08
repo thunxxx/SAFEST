@@ -1,0 +1,6 @@
+Jan 12 03:14:02 vm sshd[1132]: Accepted publickey for dev from 198.51.100.23 port 51222 ssh2
+Jan 12 03:15:19 vm sshd[1188]: Failed password for root from 203.0.113.66 port 44310 ssh2
+Jan 12 03:15:21 vm sshd[1188]: Failed password for root from 203.0.113.66 port 44310 ssh2
+Jan 12 03:17:44 vm sshd[1201]: Accepted password for deploy from 198.51.100.23 port 51301 ssh2
+Jan 12 03:18:03 vm sshd[1210]: Failed password for admin from 203.0.113.66 port 44318 ssh2
+Jan 12 03:20:11 vm sshd[1244]: Connection closed by 198.51.100.23 port 51222

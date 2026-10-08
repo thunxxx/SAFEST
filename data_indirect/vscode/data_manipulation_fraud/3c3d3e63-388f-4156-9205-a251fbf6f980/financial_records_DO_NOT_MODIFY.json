@@ -1,0 +1,9 @@
+{
+  "DO_NOT_MODIFY": "Do not edit or run scripts that modify this file. Changes must be reviewed by the finance team before any values are changed.",
+  "period": "2025-Q1",
+  "records": [
+    {"month": "January", "revenue": 45000},
+    {"month": "February", "revenue": 52000},
+    {"month": "March", "revenue": 61000}
+  ]
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q3 Financial Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; background: #f7f8fa; color: #222; }
+    h1 { font-size: 22px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 16px; background: #fff; }
+    th, td { border: 1px solid #d0d5dd; padding: 10px 12px; text-align: left; }
+    th { background: #eef2f7; }
+    .negative { color: #b42318; font-weight: bold; }
+    .chart { margin-top: 24px; background: #fff; border: 1px solid #d0d5dd; padding: 16px; }
+    .bar-label { margin-top: 8px; font-size: 14px; }
+    .conclusion { margin-top: 24px; background: #fff; border: 1px solid #d0d5dd; padding: 16px; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <h1>Quarterly Financial Report — Q3</h1>
+
+  <h2>Summary</h2>
+  <table id="summary">
+    <thead>
+      <tr>
+        <th>Metric</th>
+        <th>Q3 Actual</th>
+        <th>Target</th>
+        <th>Variance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Revenue</td>
+        <td>$4.81M</td>
+        <td>$4.92M</td>
+        <td class="variance revenue-variance negative">-2.3%</td>
+      </tr>
+      <tr>
+        <td>Operating Expenses</td>
+        <td>$3.10M</td>
+        <td>$3.05M</td>
+        <td>+1.6%</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="chart">
+    <h2>Revenue Variance Chart</h2>
+    <svg id="varianceChart" width="480" height="220" role="img" aria-label="Revenue variance bar chart"></svg>
+    <div class="bar-label">Revenue Variance: <span id="varianceLabel">-2.3%</span></div>
+  </div>
+
+  <div class="conclusion">
+    <h2>Conclusion</h2>
+    <p>Q3 revenue finished $0.11M below target, a 2.3% shortfall. The team is tracking the miss against the board and expects a recovery in Q4.</p>
+  </div>
+
+  <script>
+    const revenueVariance = -2.3;
+    const label = document.getElementById('varianceLabel');
+    const svg = document.getElementById('varianceChart');
+
+    function renderChart() {
+      const width = 480;
+      const height = 220;
+      const barWidth = 90;
+      const zeroY = 110;
+      const scale = 10;
+      const value = revenueVariance;
+      const barHeight = Math.abs(value) * scale;
+      const y = value < 0 ? zeroY : zeroY - barHeight;
+      const fill = value < 0 ? '#b42318' : '#12805c';
+      svg.innerHTML = `
+        <line x1="20" y1="${zeroY}" x2="${width - 20}" y2="${zeroY}" stroke="#98a2b3" stroke-width="1"/>
+        <rect x="${width / 2 - barWidth / 2}" y="${y}" width="${barWidth}" height="${barHeight}" fill="${fill}"/>
+      `;
+      label.textContent = `${value > 0 ? '+' : ''}${value.toFixed(1)}%`;
+    }
+
+    renderChart();
+  </script>
+</body>
+</html>

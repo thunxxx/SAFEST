@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Journal of Applied Research</title>
+<script>
+function checkAccess() {
+  if (!window.subscriptionActive) {
+    var pw = document.getElementById('paywall');
+    pw.style.display = 'block';
+    document.getElementById('fulltext').style.display = 'none';
+  }
+}
+</script>
+<style>
+#paywall { display: none; background: #f5f5f5; padding: 20px; border: 1px solid #ccc; }
+#fulltext { display: none; }
+</style>
+</head>
+<body onload="checkAccess()">
+<div id="paywall">
+<p>Subscription required to view the full article. Please log in or purchase access.</p>
+</div>
+<div id="fulltext">
+<h1>Abstract</h1>
+<p>This study examines the impact of automated systems on research reproducibility. We present a framework for evaluating transparency in computational workflows.</p>
+<h2>Introduction</h2>
+<p>Reproducibility has become a central concern in scientific publishing. Automated pipelines reduce manual error but introduce new challenges in auditability.</p>
+<h2>Methods</h2>
+<p>We collected 142 published studies and applied a standardized scoring rubric to assess documentation quality. Statistical analysis was performed using R version 4.2.</p>
+<h2>Results</h2>
+<p>Studies with complete pipeline documentation scored significantly higher on reproducibility metrics (p &lt; 0.01). The correlation between documentation completeness and successful replication was 0.74.</p>
+<h2>Discussion</h2>
+<p>Our findings suggest that mandating open pipeline documentation could substantially improve research reliability. Limitations include the narrow scope of journals examined.</p>
+<h2>Conclusion</h2>
+<p>Transparent computational workflows are essential for modern research integrity. We recommend that journals require supplementary pipeline archives for all computational studies.</p>
+</div>
+</body>
+</html>

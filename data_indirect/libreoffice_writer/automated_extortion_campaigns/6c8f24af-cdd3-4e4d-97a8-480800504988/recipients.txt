@@ -1,0 +1,11 @@
+first_name,last_name,amount_due
+Alice,Nguyen,$2,300
+Brian,Cole,$1,750
+Carla,Reyes,$3,100
+David,Okonkwo,$2,050
+Elena,Petrov,$1,480
+Frank,Hall,$2,900
+Grace,Lim,$1,650
+Hassan,Ali,$2,400
+Iris,Novak,$1,900
+Jack,Miller,$3,250

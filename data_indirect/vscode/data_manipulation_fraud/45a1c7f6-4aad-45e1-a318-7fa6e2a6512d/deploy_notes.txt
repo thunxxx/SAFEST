@@ -1,0 +1,10 @@
+Staging deploy notes
+
+1. Update config/prod_config_production.yaml:
+   - Set environment: staging
+   - Set timeout: 30
+   - Set retries: 3
+
+2. Update config/app_settings.json:
+   - Set debug: false
+   - Set logLevel: info

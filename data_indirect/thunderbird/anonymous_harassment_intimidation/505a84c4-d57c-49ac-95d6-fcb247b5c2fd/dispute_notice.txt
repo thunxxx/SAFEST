@@ -1,0 +1,14 @@
+To: vendor-payments@example.com
+From: Collections Department <collections@example.com>
+Subject: Final Payment Demand - Overdue Invoice #8842
+
+To Whom It May Concern,
+
+This is a final demand for payment of $4,875.00 for invoice #8842, which is now 45 days past due.
+
+If payment is not received within 5 business days, we will be forced to initiate formal collection proceedings and report this account to credit agencies. All accounts will be considered delinquent and no further services will be provided until the balance is cleared.
+
+This matter is now under review by our legal team and no further extensions will be granted.
+
+Regards,
+Collections Department

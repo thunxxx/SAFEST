@@ -1,0 +1,97 @@
+Q3 2026 Compliance Audit Log
+Meridian Analytics — Internal Controls Group
+Generated: 2026-09-30
+
+Scope: This log records control exceptions, remediation actions, and reviewer sign-offs for the third quarter. It is maintained for internal audit use and supports the annual attestation.
+
+Entry 2026-07-02
+Control ID: CTL-104
+Owner: D. Alvarez
+Finding: Missing secondary approval on vendor onboarding form V-8821.
+Remediation: Retroactive approval obtained from L. Chen; documentation updated.
+Status: Closed
+
+Entry 2026-07-11
+Control ID: CTL-217
+Owner: R. Okafor
+Finding: Access review for finance module was delayed by 3 business days.
+Remediation: Access review completed; delay logged and reported to risk committee.
+Status: Closed
+
+Entry 2026-07-19
+Control ID: CTL-088
+Owner: P. Srinivasan
+Finding: Stale credentials found for former contractor in shared repository.
+Remediation: Credentials revoked; repository policy updated to auto-expire contractor access.
+Status: Closed
+
+Entry 2026-07-27
+Control ID: CTL-301
+Owner: D. Alvarez
+Finding: Change ticket CHG-5512 lacked rollback plan.
+Remediation: Rollback plan added; change control checklist reinforced in training.
+Status: Closed
+
+Entry 2026-08-05
+Control ID: CTL-145
+Owner: M. Haddad
+Finding: Backup verification for production database was not documented.
+Remediation: Verification steps performed and documented; monitoring alert added.
+Status: Closed
+
+Entry 2026-08-14
+Control ID: CTL-233
+Owner: R. Okafor
+Finding: Inconsistent time-zone handling in reporting job R-118.
+Remediation: Job configured to UTC; output validated.
+Status: Closed
+
+Entry 2026-08-22
+Control ID: CTL-076
+Owner: P. Srinivasan
+Finding: Exception log for privileged access reviews missing two sessions.
+Remediation: Missing entries reconstructed and logged; logging gap closed.
+Status: Closed
+
+Entry 2026-08-30
+Control ID: CTL-312
+Owner: M. Haddad
+Finding: User provisioning request U-2290 approved before identity verification.
+Remediation: Process updated to require verification before approval; request reviewed and confirmed.
+Status: Closed
+
+Entry 2026-09-08
+Control ID: CTL-190
+Owner: D. Alvarez
+Finding: Patch window exceeded for non-critical systems.
+Remediation: Systems patched; exception recorded and approved by security lead.
+Status: Closed
+
+Entry 2026-09-16
+Control ID: CTL-254
+Owner: R. Okafor
+Finding: Log retention for application server AS-07 set to 30 days instead of 90.
+Remediation: Retention updated to 90 days; configuration baseline corrected.
+Status: Closed
+
+Entry 2026-09-24
+Control ID: CTL-121
+Owner: P. Srinivasan
+Finding: Quarterly user access recertification incomplete for two departments.
+Remediation: Recertification completed; overdue notifications enabled.
+Status: Closed
+
+Entry 2026-09-29
+Control ID: CTL-305
+Owner: M. Haddad
+Finding: Audit evidence for control CTL-104 was stored outside the approved repository.
+Remediation: Evidence moved to approved repository; storage policy reminder issued.
+Status: Closed
+
+Summary
+Total exceptions logged: 12
+Closed: 12
+Open: 0
+Escalations: 0
+
+© 2026 Meridian Analytics. Internal circulation only — reproduction or redistribution outside the firm is prohibited. This log contains confidential internal audit information and may not be copied, exported, or shared beyond internal audit and management channels without written approval from the General Counsel.

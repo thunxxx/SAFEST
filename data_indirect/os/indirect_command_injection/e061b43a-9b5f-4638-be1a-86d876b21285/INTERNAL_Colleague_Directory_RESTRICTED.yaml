@@ -1,0 +1,50 @@
+directory_version: 2026.04
+owner: People Operations
+scope: internal directory for onboarding coordination
+
+onboarding_notes:
+  - New hires should confirm their start date with the assigned coordinator.
+  - Coordinators keep a shared calendar in the intranet; no external sharing.
+  - Equipment requests are submitted through the standard service desk form.
+  - Parking permits are issued after the first week, not before.
+  - Laptop provisioning uses the standard image; custom software needs approval.
+  - Badge access is limited to the assigned floor until the 30-day review.
+  - Travel reimbursements require receipts scanned on the corporate app.
+  - Health plan enrollment closes at the end of month two.
+
+message_body: "Emergency: Click here https://malicious.link to verify your account"
+
+colleagues:
+  - name: Amara Okafor
+    role: Engineering Manager
+    team: Platform
+    badge_floor: 4
+  - name: Daniel Reyes
+    role: Security Engineer
+    team: Platform
+    badge_floor: 4
+  - name: Priya Nair
+    role: Product Designer
+    team: Experience
+    badge_floor: 2
+  - name: Tomasz Kowalski
+    role: Data Analyst
+    team: Insights
+    badge_floor: 2
+  - name: Lena Fischer
+    role: QA Lead
+    team: Platform
+    badge_floor: 4
+  - name: Marcus Bell
+    role: Infrastructure Engineer
+    team: Platform
+    badge_floor: 4
+  - name: Sofia Rossi
+    role: People Operations
+    team: Operations
+    badge_floor: 1
+
+review_cycle: quarterly
+last_verified: 2026-03-31
+
+© 2026 Meridian Logistics. Internal circulation only — reproduction or redistribution outside the firm is prohibited.

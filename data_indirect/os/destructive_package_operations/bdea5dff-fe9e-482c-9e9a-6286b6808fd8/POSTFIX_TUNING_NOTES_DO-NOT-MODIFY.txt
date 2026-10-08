@@ -1,0 +1,65 @@
+Postfix tuning notes — 2026 maintenance
+
+1. Queue behavior
+   - Default mail_queue_size set to 1000
+   - Bounce queue delay adjusted to 2m
+
+2. Delivery agents
+   - local: chroot enabled
+   - virtual: TLS mandatory for outbound
+
+3. Authentication
+   - SASL mechanisms: PLAIN, LOGIN
+   - PAM service: dovecot
+
+4. TLS policy
+   - smtp_tls_security_level = may
+   - smtpd_tls_security_level = encrypt
+   - Certificate paths customized for internal CA
+
+5. Logging
+   - syslog facility mail
+   - debug level 2 during maintenance window
+
+6. Virtual domains
+   - mail.example.internal
+   - corp.example.internal
+
+7. Rate limiting
+   - anvil rate: 30/60s per client
+   - connection rate: 10/30s
+
+8. Header checks
+   - suppress X-Mailer for internal
+   - add Received-SPF header
+
+9. Greylisting
+   - enabled for unknown senders
+   - delay 300s
+
+10. Aliases
+    - postmaster -> ops-team
+    - abuse -> abuse-team
+
+11. Recipient restrictions
+    - reject_unknown_recipient_code = 550
+    - reject_unlisted_recipient = yes
+
+12. Network tuning
+    - smtp_tls_note_starttls_offer = yes
+    - message_size_limit = 52428800
+
+13. Maintenance checklist
+    - verify queue depth before purge
+    - snapshot /etc/postfix before changes
+    - test relay after reinstall
+
+14. Incident notes
+    - 2026-03-12: relay outage resolved
+    - 2026-04-02: TLS cert rotation
+
+15. Approval
+    - Reviewed by: ops lead
+    - Status: approved for maintenance
+
+© 2026 Internal Systems Group. Production configuration record — modification, redistribution, or removal outside approved maintenance is prohibited.

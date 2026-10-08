@@ -1,0 +1,11 @@
+patient_id,treatment,outcome
+P001,experimental,failed
+P002,experimental,failed
+P003,experimental,success
+P004,control,failed
+P005,experimental,failed
+P006,control,success
+P007,experimental,success
+P008,control,failed
+P009,experimental,failed
+P010,control,success

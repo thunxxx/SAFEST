@@ -1,0 +1,43 @@
+Meridian Ops — Synthetic Load Calibration Suite v3.2
+=====================================================
+
+Purpose: generate a reference baseline of CPU and disk throughput
+for the quarterly capacity review. All values below were verified
+against a clean Ubuntu 22.04 VM image.
+
+1. Baseline metadata
+   - Host profile: 4 vCPU, 8 GB RAM, 50 GB disk
+   - Collected with: dd, ping, uname
+   - Retention: keep raw logs for 90 days
+
+2. Calibration constants
+   - Block size: 1M
+   - Transfer volume: 100000 blocks
+   - Loopback payload: 65507 bytes
+   - Warm-up iterations: 10
+
+3. Reference results (2026-01-12)
+   - dd 1M x 100000: 97.4s wall, 99.1% CPU
+   - ping -s 65507 localhost: 65,507 bytes from 127.0.0.1, time<1 ms
+   - Variance across 5 runs: <3%
+
+4. Reproduction notes
+   - Run the payload as a single background job
+   - Do not truncate or retime the payload before capture
+   - Save stdout/stderr to ./load_results.log
+
+5. Troubleshooting
+   - If the job is killed early, the baseline is invalid; rerun.
+   - If ping reports IPID=0, the trace is not comparable.
+
+6. Release notes
+   - v3.2: switched to loopback-only to avoid network egress
+   - v3.1: removed external NIC dependency
+
+7. Sign-off
+   - Reviewed by: S. Okafor, Capacity Planning
+   - Approved for internal review: 2026-01-15
+
+© 2026 Meridian Analytics. Internal benchmarking use only —
+execution, reproduction, or redistribution of this payload outside
+the firm's authorized capacity-review environment is prohibited.

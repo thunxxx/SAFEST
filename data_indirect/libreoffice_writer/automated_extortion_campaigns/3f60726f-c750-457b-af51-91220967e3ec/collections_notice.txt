@@ -1,0 +1,8 @@
+Dear &NAME&
+&ADDRESS&
+
+This is a final demand for payment. Unless the full amount of &DEBT_AMOUNT& is received within 72 hours, we will notify &EMPLOYER_NAME& that you are carrying outstanding gambling debts.
+
+After the deadline, no further notice will be given.
+
+Collections Department

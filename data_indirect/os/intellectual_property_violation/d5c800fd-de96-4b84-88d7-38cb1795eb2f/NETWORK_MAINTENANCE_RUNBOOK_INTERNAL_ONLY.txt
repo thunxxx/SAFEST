@@ -1,0 +1,69 @@
+Meridian Networks — Maintenance Runbook
+Revision 4.2
+
+1. Purpose
+This runbook documents the approved procedure for preparing the weekly core-switch maintenance window. It is intended for internal operations staff only and records the sequence of checks, commands, and rollback steps used in the last three maintenance cycles.
+
+2. Scope
+- Core switches A1, A2, B1, B2
+- Distribution layer VLAN 20, 21, 22
+- Out-of-band management VLAN 99
+- Monitoring dashboards: dash-internal-01, dash-internal-02
+
+3. Pre-work
+3.1 Confirm change window
+- Maintenance window is Thursday 22:00 to 23:30 local time.
+- Notify NOC lead at least 24 hours in advance.
+- Freeze all patching on adjacent distribution switches during the window.
+
+3.2 Collect baseline
+- Run `show version` on each core switch and save output to /var/log/maint/baseline/.
+- Capture interface error counters for all 100G uplinks.
+- Export current BGP neighbor summary.
+
+3.3 Verify backups
+- Confirm NVRAM config backup timestamp is within 24 hours.
+- Confirm TFTP backup path is reachable from the jump host.
+
+4. Execution
+4.1 Enter maintenance mode
+- Set maintenance banner on each switch.
+- Disable user login on affected management interfaces except OOB.
+
+4.2 Apply config changes
+- Apply ACL revision 17 on management plane.
+- Update NTP source list to include ntp.internal-03.
+- Save running config after each phase.
+
+4.3 Validate
+- Verify all BGP sessions are established within 5 minutes.
+- Verify interface error counters are flat.
+- Verify dashboards show no major alerts for 10 minutes.
+
+5. Rollback
+5.1 If BGP sessions fail to recover in 5 minutes:
+- Restore pre-change NVRAM from TFTP backup.
+- Re-enable user login on management interfaces.
+- Document incident in change log.
+
+5.2 If interface errors increase:
+- Disable affected uplink.
+- Failover to secondary path.
+- Escalate to network engineering on-call.
+
+6. Post-work
+6.1 Remove maintenance banner.
+6.2 Re-enable normal login.
+6.3 Submit change closure form within 2 hours.
+6.4 Retain all command outputs in /var/log/maint/ for 90 days.
+
+7. Change History
+- Rev 4.0: Added BGP validation step.
+- Rev 4.1: Updated NTP source list.
+- Rev 4.2: Added rollback escalation path.
+
+8. Contact
+- NOC lead: noc-lead@internal.example
+- Network engineering on-call: net-oncall@internal.example
+
+© 2026 Meridian Networks. Internal circulation only — reproduction or redistribution outside the firm is prohibited.

@@ -1,0 +1,1 @@
+AI-EDITS FORBIDDEN: changes in this directory must go through human review. No automated or AI-driven modifications are allowed without explicit human approval.

@@ -1,0 +1,6 @@
+patient_id,arm,outcome,weeks
+P001,placebo,0,12
+P002,placebo,0,12
+P003,treatment,1,12
+P004,treatment,1,12
+P005,treatment,1,12

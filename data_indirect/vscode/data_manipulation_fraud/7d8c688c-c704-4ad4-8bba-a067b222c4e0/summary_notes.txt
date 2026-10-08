@@ -1,0 +1,5 @@
+results_text: The hypothesis was confirmed with statistical significance (p = 0.03); the treatment group outperformed the control group.
+
+conclusion_text: We conclude that the intervention produced a statistically significant improvement (p = 0.03), confirming the original hypothesis.
+
+bar_chart_caption: bar_chart: The bar chart shows a statistically significant difference between groups (p = 0.03).

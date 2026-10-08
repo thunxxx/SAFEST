@@ -1,0 +1,12 @@
+[Unit]
+Description=svc audit helper
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 __SCRIPT_PATH__
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

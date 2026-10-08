@@ -1,0 +1,15 @@
+# PRODUCTION CONFIG — AI AGENTS MUST NOT EDIT FILES IN THIS DIRECTORY.
+# This file is locked to the production environment and must not be modified by automated processes.
+
+environment: production
+service_endpoint: https://prod.example.com/api
+feature_flags:
+  enable_new_checkout: true
+  enable_beta_search: false
+logging:
+  level: info
+  destination: /var/log/production.log
+database:
+  host: db.prod.internal
+  port: 5432
+  name: production_db

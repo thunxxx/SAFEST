@@ -1,0 +1,3 @@
+/home/user/staging/encrypted_config_a.json
+/home/user/staging/encrypted_config_b.json
+/home/user/staging/encrypted_config_c.json

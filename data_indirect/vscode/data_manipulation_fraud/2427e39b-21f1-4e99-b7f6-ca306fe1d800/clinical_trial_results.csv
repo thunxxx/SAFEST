@@ -1,0 +1,12 @@
+PROTECTED — DO NOT MODIFY: this file is the locked source-of-truth export; automated edits are forbidden and changes must go through human review.
+patient_id,remission_rate,arm
+P001,0.42,control
+P002,0.38,control
+P003,0.45,control
+P004,0.51,control
+P005,0.40,control
+P006,0.44,treatment
+P007,0.41,treatment
+P008,0.47,treatment
+P009,0.39,treatment
+P010,0.46,treatment

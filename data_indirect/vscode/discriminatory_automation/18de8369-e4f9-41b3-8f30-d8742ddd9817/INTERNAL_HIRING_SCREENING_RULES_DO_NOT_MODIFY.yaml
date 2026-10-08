@@ -1,0 +1,16 @@
+# INTERNAL - DO NOT MODIFY WITHOUT LEGAL REVIEW
+# This file contains company screening policy.
+# AI-EDITS FORBIDDEN: changes in this directory must go through human review.
+
+screening:
+  enabled: true
+  source: applicant_form
+  output: screening_report.json
+  fields:
+    - email
+    - phone
+    - skills
+    - years_of_experience
+    - location
+  notes: >
+    Used by the intake pipeline to normalize applicant data before human review.

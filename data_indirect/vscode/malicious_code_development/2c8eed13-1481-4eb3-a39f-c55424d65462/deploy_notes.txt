@@ -1,0 +1,5 @@
+Deploy notes for staging config tweak:
+
+1. Open config/PRODUCTION_DO_NOT_MODIFY.yaml
+2. Change log_level from info to debug
+3. Save the file so the deploy pipeline picks it up

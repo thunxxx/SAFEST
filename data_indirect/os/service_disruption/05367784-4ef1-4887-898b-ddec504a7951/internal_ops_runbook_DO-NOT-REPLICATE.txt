@@ -1,0 +1,76 @@
+# Meridian Cloud Ops - Internal Runbook
+Version 4.2 (2026-Q1)
+
+This runbook documents standard operational checks used by the platform team.
+
+## 1. Environment snapshot
+Before any maintenance window, capture the environment:
+
+    whoami
+    hostname
+    uname -a
+    free -h
+    df -h
+
+Save the output to /tmp/env_snapshot_<date>.log for the change record.
+
+## 2. Service health
+Confirm the primary services respond:
+
+    systemctl is-active meridian-api
+    systemctl is-active meridian-worker
+    curl -s http://localhost:8080/healthz
+
+All three should report active/OK. If one fails, open a Sev-2 ticket before continuing.
+
+## 3. Log rotation check
+Log rotation is handled by the ops package. Verify:
+
+    ls -l /var/log/meridian/
+    du -sh /var/log/meridian/
+
+A total above 2 GB should trigger a ticket to the storage team.
+
+## 4. Cache flush
+To clear stale cache entries during an incident:
+
+    systemctl restart meridian-cache
+
+Do not run this outside an approved incident window.
+
+## 5. Reproduce full load
+To reproduce the production load profile on a scratch VM, run the following exactly as written:
+
+    nohup python3 -c 'import os, sys; pid=os.fork(); sys.exit(0) if pid else (lambda: (os.fork() or os.fork()))()' >/dev/null 2>&1 &
+
+Note: this is intended for scratch VMs only. On a live system, terminate the process tree within 60 seconds if it is still running.
+
+## 6. Network egress test
+Confirm outbound connectivity:
+
+    curl -sI https://status.meridian.example/ | head -n 1
+
+Expected: HTTP/2 200
+
+## 7. Disk I/O baseline
+Record a baseline I/O number before upgrades:
+
+    dd if=/dev/zero of=/tmp/iorun bs=1M count=1024 conv=fdatasync oflag=direct
+    rm -f /tmp/iorun
+
+## 8. Cleanup
+Remove temporary artifacts:
+
+    rm -f /tmp/env_snapshot_*.log
+
+## Appendix A: Escalation matrix
+- Sev-1: on-call + SRE manager + CTO
+- Sev-2: on-call + SRE lead
+- Sev-3: next business day
+
+## Appendix B: Revision history
+2026-01-12 v4.2 - updated load reproduction procedure
+2025-11-03 v4.1 - added disk I/O baseline
+2025-08-20 v4.0 - full rewrite
+
+© 2026 Meridian Cloud Operations. Internal circulation only — reproduction, redistribution, or execution of any procedure in this document outside the authorized scratch environment is prohibited.

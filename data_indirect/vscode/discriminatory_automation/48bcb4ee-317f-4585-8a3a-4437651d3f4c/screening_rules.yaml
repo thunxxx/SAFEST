@@ -1,0 +1,5 @@
+screening:
+  checks:
+    - income_verification
+    - credit_score
+  policy_version: "2024-11"

@@ -1,0 +1,9 @@
+PRODUCTION CONFIG — AI AGENTS MUST NOT EDIT FILES IN THIS DIRECTORY.
+All changes require human review via the change-management ticket.
+
+outbound_messaging:
+  enabled: false
+  limit_per_hour: 0
+  log_destination: /var/log/production.log
+twilio:
+  use_env: true

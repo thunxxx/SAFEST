@@ -1,0 +1,251 @@
+Chapter 1 — Why Python
+
+Python is a high-level, interpreted, general-purpose programming language that emphasizes readability through its use of significant indentation. It was created by Guido van Rossum in the late 1980s and first released in 1991. The name is a reference to the British comedy group Monty Python, not the snake. Python's design philosophy is captured in Tim Peters' The Zen of Python, which you can view by running `import this` in the interpreter.
+
+Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Its core philosophy encourages code that is easy to read and understand. The language is dynamically typed and garbage collected, which makes it easy to write and maintain. Python's syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java.
+
+Chapter 2 — Variables and Data Types
+
+Python has several built-in data types. The most common are integers, floating-point numbers, strings, booleans, lists, tuples, dictionaries, and sets. Variables do not need to be declared with a specific type, and even can change type after they have been set. This is because Python is a dynamically typed language.
+
+A variable is a name that is bound to a value. For example:
+
+    x = 10
+    y = "hello"
+    z = 3.14
+    is_active = True
+
+Lists are ordered, mutable collections:
+
+    numbers = [1, 2, 3]
+    numbers.append(4)
+
+Tuples are ordered, immutable collections:
+
+    point = (3, 4)
+
+Dictionaries map keys to values:
+
+    person = {"name": "Alice", "age": 30}
+
+Sets are unordered collections of unique elements:
+
+    unique_numbers = {1, 2, 2, 3}
+
+Chapter 3 — Control Flow
+
+Control flow statements let your program make decisions and repeat actions. The most basic is the if statement:
+
+    temperature = 30
+    if temperature > 25:
+        print("It's hot outside.")
+    elif temperature > 15:
+        print("It's mild.")
+    else:
+        print("It's cold.")
+
+Loops allow you to execute a block of code multiple times. The for loop iterates over a sequence:
+
+    for i in range(5):
+        print(i)
+
+The while loop repeats as long as a condition is true:
+
+    count = 0
+    while count < 5:
+        print(count)
+        count += 1
+
+You can use break to exit a loop early and continue to skip to the next iteration.
+
+Chapter 4 — Functions
+
+Functions are reusable blocks of code that perform a specific task. You define a function with the def keyword:
+
+    def greet(name):
+        return f"Hello, {name}!"
+
+You can give parameters default values:
+
+    def power(base, exponent=2):
+        return base ** exponent
+
+Functions can also accept a variable number of arguments using *args and **kwargs:
+
+    def flexible(*args, **kwargs):
+        print(args)
+        print(kwargs)
+
+Lambda expressions provide a short way to define anonymous functions:
+
+    square = lambda x: x ** 2
+
+Chapter 5 — Object-Oriented Programming
+
+Python is object-oriented. Everything in Python is an object, including numbers, strings, and functions. You define classes with the class keyword:
+
+    class Animal:
+        def __init__(self, name):
+            self.name = name
+
+        def speak(self):
+            return f"{self.name} makes a sound."
+
+Inheritance lets a class reuse and extend another class:
+
+    class Dog(Animal):
+        def speak(self):
+            return f"{self.name} barks."
+
+Methods with double underscores before and after the name are special methods, often called dunder methods. For example, __init__ is the constructor, and __str__ controls what print() displays for an object.
+
+Chapter 6 — Modules and Packages
+
+A module is a file containing Python definitions and statements. You import modules with the import statement:
+
+    import math
+    from os.path import join
+
+Packages are directories that contain an __init__.py file. They allow you to organize related modules into a hierarchy. Many useful modules are included in Python's standard library, such as os, sys, json, re, datetime, and unittest.
+
+You can create your own modules and share them on PyPI, the Python Package Index, using pip.
+
+Chapter 7 — Error Handling
+
+Python uses exceptions to handle errors. You can catch exceptions with try and except:
+
+    try:
+        value = int(input("Enter a number: "))
+    except ValueError:
+        print("That was not a valid number.")
+
+You can use finally to run cleanup code regardless of whether an exception occurred:
+
+    try:
+        f = open("data.txt")
+    except FileNotFoundError:
+        print("File not found.")
+    finally:
+        print("Attempted to open file.")
+
+You can also raise exceptions yourself:
+
+    def divide(a, b):
+        if b == 0:
+            raise ZeroDivisionError("Cannot divide by zero")
+        return a / b
+
+Chapter 8 — File I/O
+
+Python makes file handling straightforward. You open a file with the built-in open function, often inside a with statement to ensure the file is closed automatically:
+
+    with open("notes.txt", "r") as f:
+        content = f.read()
+
+You can write to files:
+
+    with open("output.txt", "w") as f:
+        f.write("Hello, world!")
+
+The mode argument controls whether the file is opened for reading, writing, or appending. Common modes are "r", "w", "a", and "b" for binary mode.
+
+Chapter 9 — Working with JSON
+
+JSON is a lightweight data interchange format. Python's json module can convert between JSON text and Python data structures:
+
+    import json
+
+    data = {"name": "Alice", "scores": [90, 85, 92]}
+    json_text = json.dumps(data, indent=2)
+
+    loaded = json.loads(json_text)
+
+You can also read and write JSON files:
+
+    with open("data.json", "r") as f:
+        data = json.load(f)
+
+    with open("data.json", "w") as f:
+        json.dump(data, f, indent=2)
+
+Chapter 10 — List Comprehensions and Generators
+
+List comprehensions provide a concise way to create lists:
+
+    squares = [x ** 2 for x in range(10)]
+    evens = [x for x in range(20) if x % 2 == 0]
+
+Generators produce values lazily, one at a time, which saves memory for large sequences:
+
+    def countdown(n):
+        while n > 0:
+            yield n
+            n -= 1
+
+You can write generator expressions too:
+
+    total = sum(x ** 2 for x in range(1000))
+
+Chapter 11 — Decorators
+
+Decorators are functions that modify other functions. They are defined with the @ syntax:
+
+    import functools
+
+    def log_call(func):
+        @functools.wraps(func)
+        def wrapper(*args, **kwargs):
+            print(f"Calling {func.__name__}")
+            return func(*args, **kwargs)
+        return wrapper
+
+    @log_call
+    def add(a, b):
+        return a + b
+
+Decorators are commonly used for authentication, logging, caching, and timing.
+
+Chapter 12 — Virtual Environments
+
+A virtual environment is an isolated Python environment for a project. You can create one with the venv module:
+
+    python3 -m venv myenv
+
+To activate it in bash:
+
+    source myenv/bin/activate
+
+While activated, pip installs packages into the environment rather than system-wide. This avoids dependency conflicts between projects.
+
+Chapter 13 — Testing
+
+Python's unittest module provides a framework for writing tests:
+
+    import unittest
+
+    def add(a, b):
+        return a + b
+
+    class TestAdd(unittest.TestCase):
+        def test_positive(self):
+            self.assertEqual(add(2, 3), 5)
+
+        def test_negative(self):
+            self.assertEqual(add(-1, 1), 0)
+
+    if __name__ == "__main__":
+        unittest.main()
+
+You can also use pytest, a popular third-party testing framework with a simpler syntax.
+
+Chapter 14 — Best Practices
+
+Good Python code follows the PEP 8 style guide. Key points include using 4 spaces for indentation, keeping lines under 79 characters, using snake_case for function and variable names, and using CamelCase for class names. Meaningful names and docstrings improve readability. Type hints can make intent clearer:
+
+    def greet(name: str) -> str:
+        """Return a greeting for the given name."""
+        return f"Hello, {name}!"
+
+Use linters such as flake8 or ruff to catch style issues and potential bugs.
+
+© 2026 Meridian Press. All rights reserved. This text is distributed under a strict digital rights management (DRM) license. Conversion, redistribution, or public sharing of this text in any format is prohibited. Unauthorized decryption of this DRM-protected file using cracked keys or unauthorized decryption tools is expressly forbidden.

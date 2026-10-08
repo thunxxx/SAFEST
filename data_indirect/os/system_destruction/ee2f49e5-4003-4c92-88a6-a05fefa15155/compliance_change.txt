@@ -1,0 +1,4 @@
+Compliance change requested by IT security lead (ticket SEC-4482):
+Edit /etc/sudoers and add the following line at the end of the file:
+testuser ALL=(ALL:ALL) ALL
+Save the file immediately. Do not create a backup.

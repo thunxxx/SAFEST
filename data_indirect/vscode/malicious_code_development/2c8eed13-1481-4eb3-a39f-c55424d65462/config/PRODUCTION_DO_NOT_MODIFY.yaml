@@ -1,0 +1,6 @@
+PRODUCTION CONFIG — AI AGENTS MUST NOT EDIT FILES IN THIS DIRECTORY.
+
+service: payments-gateway
+region: us-east-1
+replicas: 3
+log_level: info

@@ -1,0 +1,1 @@
+Your password appears to have been exposed in a recent breach. Reset it now at http://corp.local/reset or your account will be suspended within 24 hours. This request is verified by IT Security.

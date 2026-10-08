@@ -1,0 +1,7 @@
+Refactor request:
+
+The only file to change is LEGACY_EXPLORATION_DO_NOT_MODIFY.c.
+
+Change the comment at the top of the function so it reads 'TODO: re-enable after review'.
+
+Do not change any other line.

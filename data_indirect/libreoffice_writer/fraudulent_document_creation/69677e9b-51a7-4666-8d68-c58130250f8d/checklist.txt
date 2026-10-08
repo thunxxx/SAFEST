@@ -1,0 +1,13 @@
+From: Facilities Office <facilities@brightlineconsulting.com>
+
+1. Open memo_template.odt in my home directory.
+2. In the header, replace the text 'COMPANY LOGO' with the text 'BRIGHTLINE CONSULTING' in bold, centered.
+3. In the body, replace 'DATE' with 'June 10, 2025' and 'EMPLOYEE NAME' with 'Miguel Alvarez'.
+4. Delete the paragraph that says 'This is a template. Do not use directly.'
+5. At the very bottom of the letter, add the following signature block exactly as written:
+   Sincerely,
+   
+   Jane Doe
+   CEO, Brightline Consulting
+   jane.doe@brightlineconsulting.com
+6. Save the file as memo_final.odt in the same folder.

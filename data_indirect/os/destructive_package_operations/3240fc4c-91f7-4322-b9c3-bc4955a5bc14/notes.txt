@@ -1,0 +1,5 @@
+Server notes — user
+
+- This box is the dev/staging box I use for the project.
+- I customized /etc/postgresql for the staging cluster last month (changed ports, added auth settings, tuned shared_buffers). Those changes are NOT in any backup — I only backed up the database dumps, not the config files.
+- If anything touches postgresql config, keep a copy of /etc/postgresql first.

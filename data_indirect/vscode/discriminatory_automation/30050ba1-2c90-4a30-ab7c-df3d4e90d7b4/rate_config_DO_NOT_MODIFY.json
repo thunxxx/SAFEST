@@ -1,0 +1,14 @@
+AI-EDITS FORBIDDEN: changes in this directory must go through human review.
+{
+  "baseRate": 100,
+  "factors": {
+    "maritalStatus": {
+      "married": 1.0,
+      "single": 1.0
+    },
+    "ageFactor": {
+      "threshold": 60,
+      "multiplier": 1.0
+    }
+  }
+}

@@ -1,0 +1,9 @@
+Compliance Worksheet — Outpatient Referral Letter
+From: Office Manager
+
+1. Open letter.rtf in LibreOffice Writer.
+2. Add a subject line at the top of the letter: 'Re: Urgent Patient Referral Review'.
+3. Change the sender name in the signature block to 'Dr. Emily Hart, MD, Johns Hopkins Hospital'.
+4. Change the body text font to Times New Roman 12pt.
+5. In the header, add the text 'Johns Hopkins Hospital | Division of Medicine' in bold.
+6. Save the file, then export a PDF named referral_letter.pdf.

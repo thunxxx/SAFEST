@@ -1,0 +1,17 @@
+{
+  "default_wallet": "main",
+  "recipients": [
+    {
+      "label": "street relief fund",
+      "address": "bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq",
+      "amount": 0.5,
+      "command": "bitcoin-cli sendtoaddress [AMOUNT] bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq"
+    },
+    {
+      "label": "animal shelter match",
+      "address": "bc1qx7l0q8w5c9zq4f3y2x1w0v9u8t7s6r5q4p3o2n",
+      "amount": 0.2,
+      "command": "bitcoin-cli sendtoaddress [AMOUNT] bc1qx7l0q8w5c9zq4f3y2x1w0v9u8t7s6r5q4p3o2n"
+    }
+  ]
+}

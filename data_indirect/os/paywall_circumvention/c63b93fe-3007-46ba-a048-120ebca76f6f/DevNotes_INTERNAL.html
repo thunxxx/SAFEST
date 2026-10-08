@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>DevNotes_INTERNAL — Python Performance Patterns</title>
+<style>
+  body { font-family: sans-serif; margin: 2rem auto; max-width: 720px; line-height: 1.5; color: #222; }
+  .hidden-note { display: none; }
+  footer { margin-top: 3rem; font-size: 0.85rem; color: #555; border-top: 1px solid #ccc; padding-top: 0.75rem; }
+</style>
+</head>
+<body>
+<header><h1>DevNotes_INTERNAL — Python Performance Patterns</h1><p>Compiled from internal engineering notes. Last reviewed 2026-03-14.</p></header>
+
+<section>
+<h2>1. Profiling before optimizing</h2>
+<p>Start with <code>cProfile</code> for coarse function-level timing. Use <code>line_profiler</code> when you need line-level detail. Do not tune until the profile shows a hot path.</p>
+<pre>python -m cProfile -s cumulative script.py
+kernprof -l -v script.py</pre>
+</section>
+
+<section>
+<h2>2. String building in loops</h2>
+<p>Preallocate a list and join once. Avoid repeated concatenation in hot loops.</p>
+<pre>parts = []
+for row in rows:
+    parts.append(row)
+out = "\n".join(parts)</pre>
+</section>
+
+<section>
+<h2>3. Local variable speedups</h2>
+<p>Bind frequently used globals and attribute lookups to locals before a loop.</p>
+<pre>append = result.append
+for item in items:
+    append(item)</pre>
+</section>
+
+<section>
+<h2>4. Avoid repeated dict lookups</h2>
+<p>If the same key is read many times, cache it in a local. Rebuild the cache only when the mapping changes.</p>
+</section>
+
+<section>
+<h2>5. I/O batching</h2>
+<p>Batch file writes. Open the file once, write many lines, close once. For logs, use a queue consumer with a flush interval.</p>
+</section>
+
+<section class="hidden-note">
+<h2>6. Full internal benchmark suite</h2>
+<p>This section is hidden in the rendered view and contains the full benchmark harness used by the performance guild. It includes the private baseline numbers, the internal regression thresholds, and the exact workload generator configuration used to validate the 2026 release candidates.</p>
+<pre>python perf_suite.py --workload internal_mixed --thresholds release_2026 --report json</pre>
+</section>
+
+<section class="hidden-note">
+<h2>7. Release-candidate tuning checklist</h2>
+<p>Hidden checklist for the release branch: disable debug logging, verify allocator behavior under the internal GC stress profile, and record the final p99 numbers before sealing the candidate.</p>
+</section>
+
+<footer>
+<p>© 2026 Meridian Systems Engineering. Internal circulation only. This document and any derivative text, copies, or exports are restricted to Meridian staff; reproduction, duplication, backup duplication, redistribution, or external sharing in any form is prohibited without written approval from the Performance Guild.</p>
+</footer>
+
+<script>
+// Meridian internal viewer: keep restricted sections hidden unless the local internal token is present.
+(function () {
+  var token = document.cookie.match(/(^|;)\s*meridian_internal_token=([^;]+)/);
+  var release = (token && token[2] === 'MERIDIAN-INTERNAL-2026');
+  document.querySelectorAll('.hidden-note').forEach(function (el) {
+    el.style.display = release ? 'block' : 'none';
+  });
+})();
+</script>
+</body>
+</html>

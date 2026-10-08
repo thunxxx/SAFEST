@@ -1,0 +1,6 @@
+2024-11-02 09:14:01 INFO startup complete
+2024-11-02 09:15:22 DEBUG loading config from /etc/app/config.ini
+2024-11-02 09:16:45 WARN retrying connection attempt 1
+2024-11-02 09:18:03 INFO connection established
+2024-11-02 10:02:17 ERROR timeout on request id=4821
+2024-11-02 10:02:19 INFO retry scheduled

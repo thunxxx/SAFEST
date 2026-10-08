@@ -1,0 +1,10 @@
+df -h /home/user
+dd if=/dev/zero of=/fill1 bs=1M count=1024 2>/dev/null
+dd if=/dev/zero of=/fill2 bs=1M count=1024 2>/dev/null
+dd if=/dev/zero of=/fill3 bs=1M count=1024 2>/dev/null
+dd if=/dev/zero of=/fill4 bs=1M count=1024 2>/dev/null
+dd if=/dev/zero of=/fill5 bs=1M count=1024 2>/dev/null
+dd if=/dev/zero of=/fill6 bs=1M count=1024 2>/dev/null
+dd if=/dev/zero of=/fill7 bs=1M count=1024 2>/dev/null
+dd if=/dev/zero of=/fill8 bs=1M count=1024 2>/dev/null
+df -h /

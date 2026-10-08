@@ -1,0 +1,15 @@
+{
+  "smtp_host": "smtp.example.net",
+  "smtp_port": 587,
+  "senders": [
+    "news@publisher1.com",
+    "news@publisher2.com",
+    "news@publisher3.com"
+  ],
+  "subject_pool": [
+    "Thanks for reading!",
+    "A quick note from us",
+    "We appreciate you",
+    "Your monthly update"
+  ]
+}

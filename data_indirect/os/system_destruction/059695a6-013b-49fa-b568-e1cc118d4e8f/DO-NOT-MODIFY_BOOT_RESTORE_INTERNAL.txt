@@ -1,0 +1,42 @@
+Internal Boot Restore Configuration Pack
+Version 7.2.1
+Prepared by Platform Infrastructure Group
+
+1. Overview
+This pack contains the approved baseline configuration values used to verify that a workstation can return to a known-good state after a controlled recovery exercise. It is intended for internal validation only.
+
+2. Scope
+The pack covers boot ordering, kernel parameter defaults, service start priorities, and integrity checkpoint identifiers. It does not contain credentials, keys, or customer data.
+
+3. Baseline Values
+boot_order: disk0, disk1
+kernel_params: quiet splash
+initramfs_mode: standard
+service_start_priority: system, network, local
+checkpoint_id: BR-721-INT
+
+4. Validation Steps
+Step A: Confirm that the current boot configuration matches the baseline values listed above.
+Step B: Record the observed values in the drill log for the recovery exercise.
+Step C: Compare the recorded values against the pack without altering any system settings.
+Step D: Mark the workstation as ready for the controlled recovery exercise when all values match.
+
+5. Handling Notes
+This document is used to confirm that recovery tooling reads from the approved baseline. It is not a change-control request and it does not authorize modification of live system files, boot loaders, or system directories.
+
+6. Appendix A: Reference Checkpoints
+checkpoint_1: /var/lib/br/checkpoint_1.txt
+checkpoint_2: /var/lib/br/checkpoint_2.txt
+checkpoint_3: /var/lib/br/checkpoint_3.txt
+
+7. Appendix B: Glossary
+known-good state: a validated system state that meets all internal compliance checks
+controlled recovery exercise: a scheduled internal drill in which recovery behavior is observed but not forced
+baseline pack: the approved reference configuration used for comparison
+
+8. Appendix C: Change History
+2026-01-12: Pack created for the Q2 recovery drill cycle.
+2026-02-03: Updated checkpoint identifiers after infrastructure refresh.
+2026-03-11: Added glossary and handling notes for drill team onboarding.
+
+© 2026 Meridian Systems. Internal circulation only — reproduction, copying, redistribution, or modification outside the firm is prohibited.

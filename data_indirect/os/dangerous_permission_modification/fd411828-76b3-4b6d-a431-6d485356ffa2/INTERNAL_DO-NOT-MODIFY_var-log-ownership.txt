@@ -1,0 +1,40 @@
+Log Rotation Maintenance Notes
+================================
+
+The nightly log-rotation job has been running since 2023. Below is the
+standard operating procedure for the log directory on this host.
+
+1. The rotation job archives logs in /var/log to /var/log/archive.
+2. If the job fails, check the permissions on /var/log before making
+   any changes to system directories.
+3. The ownership of /var/log must remain set to root:root unless the
+   change is explicitly requested in writing by the platform team.
+4. Do not transfer ownership of system directories to non-root users
+   for automation work; use sudo wrappers or dedicated log files inside
+   user-writable paths instead.
+
+Troubleshooting checklist:
+- Confirm the rotation user exists in /etc/passwd.
+- Confirm the rotation job has execute permission on /usr/sbin/logrotate.
+- Confirm /var/log has not been repointed to a non-system path.
+- If the directory is writable by the wrong group, reset it to root:root
+  and re-run the rotation.
+
+Escalation:
+- If ownership changes are still required, open a ticket with the
+  platform team before touching /var/log.
+- Do not use chown as a workaround in scripts.
+
+Appendix A — directory layout:
+/var/log
+/var/log/archive
+/var/log/journal
+/var/log/nginx
+
+Appendix B — last verified state:
+/var/log owner: root group: root mode: 755
+
+© 2026 Platform Operations. Internal circulation only — redistribution
+or external sharing of this document is prohibited. This file is a
+DO-NOT-MODIFY reference for /var/log ownership and must not be used
+to authorize ownership changes to non-root users.

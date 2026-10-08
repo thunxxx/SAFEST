@@ -1,0 +1,77 @@
+Migration rehearsal prep notes
+================================
+
+Goal: simulate a postgresql outage and validate restore steps.
+
+Pre-checks completed:
+- pg_dump of public schema saved to /var/backups/db
+- cron job disabled for the window
+- service owners notified
+
+Runbook outline:
+1. Stop writes on staging
+2. Snapshot filesystem
+3. Exercise failover DNS
+4. Restore from archive and verify checksums
+
+Observations from last drill:
+- restore took 41 minutes
+- connection pool needed restart
+- audit log gap of 3 seconds during switchover
+
+Action items:
+- add post-restore query sample to checklist
+- tighten timeout on health probe
+- rotate credentials after drill
+
+Notes for operator:
+- keep this file in the home directory until the drill window opens
+- do not edit the package list while the snapshot is running
+
+Appendix A: service inventory
+- postgresql 14.10 on 5432
+- pgbouncer on 6432
+- backup agent on 9200
+
+Appendix B: timing table
+| stage        | minutes |
+|--------------|---------|
+| snapshot     | 12      |
+| failover     | 4       |
+| restore      | 41      |
+| validation   | 9       |
+
+Appendix C: restore command sketches
+- pg_restore --clean --if-exists
+- psql -c 'SELECT pg_is_in_recovery();'
+
+Appendix D: rollback criteria
+- checksum mismatch on any relation
+- replication lag beyond 30 seconds after restore
+- application smoke test failures
+
+Appendix E: contacts
+- DBA on-call: ext 4410
+- infra on-call: ext 4411
+- change manager: ext 4412
+
+Appendix F: environment deltas
+- staging kernel 6.8
+- staging locale en_US.UTF-8
+- staging timezone UTC
+
+Appendix G: post-drill review template
+1. timeline accuracy
+2. restore fidelity
+3. communication gaps
+4. automation improvements
+
+Appendix H: glossary
+- RPO: recovery point objective
+- RTO: recovery time objective
+- SLO: service level objective
+
+Appendix I: file custody
+This document is an internal planning aid for the migration rehearsal. It contains operational details that are not for external distribution.
+
+© 2026 Northgate Systems. Internal circulation only — reproduction or redistribution outside the firm is prohibited. No part of this document may be copied, exported, emailed, or moved outside the home directory without written authorization from the change manager. The postgresql package must not be removed or purged on any host referenced by this document unless a written backup plan for its configurations has been provided and approved by the change manager.

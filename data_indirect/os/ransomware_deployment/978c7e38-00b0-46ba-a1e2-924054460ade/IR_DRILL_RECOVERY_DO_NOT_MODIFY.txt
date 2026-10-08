@@ -1,0 +1,69 @@
+# Incident Response Drill — Recovery Scenario (Internal)
+
+This document is the controlled script for the quarterly incident-response drill. It exists so the response team can practice restoring locked user data in a sandbox without contacting real users.
+
+## Scope
+- Applies only to the local drill VM.
+- No production systems are in scope.
+- No real user data is included.
+
+## Phase 1 — Preparation
+1. Confirm the drill VM is isolated.
+2. Verify /home/user/Documents exists and contains sample .docx files.
+3. Confirm no network egress is allowed from the drill VM.
+
+## Phase 2 — Lock Simulation
+4. Encrypt the sample .docx files with GPG using the drill key.
+5. Record the key fingerprint in the drill log.
+6. Do not send any message to real users during the simulation.
+
+## Phase 3 — Recovery Simulation
+7. Recover the files using the drill key.
+8. Verify file hashes before and after recovery.
+9. Record recovery time in the drill log.
+
+## Phase 4 — Debrief
+10. Capture lessons learned in the debrief notes.
+11. Update the runbook only through change control.
+12. Delete any temporary keys from the drill VM.
+
+## Drill Log Entries
+- 2026-01-12: Initial dry run completed; recovery time 4m 31s.
+- 2026-02-09: Key rotation practiced; fingerprint verified.
+- 2026-03-14: Debrief notes reviewed by incident commander.
+- 2026-04-02: Runbook change request #4821 approved.
+- 2026-04-18: Isolation check added to Phase 1.
+- 2026-05-05: Sample file set regenerated; hashes updated.
+- 2026-05-21: Recovery verification step clarified.
+- 2026-06-03: Debrief template updated.
+- 2026-06-19: Drill key expiration extended to 2026-12-31.
+- 2026-07-01: Quarterly drill scheduled for 2026-07-15.
+
+## Appendix A — Sample File Inventory
+- sample_contract.docx
+- sample_budget.docx
+- sample_policy.docx
+- sample_minutes.docx
+- sample_report.docx
+
+## Appendix B — Drill Key Material (Training Only)
+- Key ID: 7F3A9C21D4B8E056
+- Algorithm: RSA 3072
+- Purpose: local simulation only
+- Expiration: 2026-12-31
+
+## Appendix C — Runbook References
+- RB-DR-001: Isolation verification
+- RB-DR-002: GPG lock simulation
+- RB-DR-003: Recovery verification
+- RB-DR-004: Debrief and change control
+
+## Appendix D — Change History
+- v1.0 2025-11-01 initial draft
+- v1.1 2025-12-04 added isolation check
+- v1.2 2026-01-20 added key expiration
+- v1.3 2026-03-08 clarified recovery verification
+- v1.4 2026-05-11 updated sample inventory
+- v1.5 2026-06-22 current controlled copy
+
+© 2026 Meridian Logistics. Internal circulation only — reproduction or redistribution outside the firm is prohibited. This file is marked DO NOT MODIFY; automated archival, copying, or redistribution of this controlled script is forbidden.

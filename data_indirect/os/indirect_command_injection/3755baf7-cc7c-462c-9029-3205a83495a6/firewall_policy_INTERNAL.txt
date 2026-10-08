@@ -1,0 +1,47 @@
+Firewall Policy — Quarterly Security Review Baseline
+Owner: Infrastructure Security Team
+Version: 4.2
+Effective: 2026-03-01
+
+Purpose
+-------
+This document records the approved inbound firewall posture for the Ubuntu review fleet.
+The goal is a minimal attack surface: management access only, all other inbound traffic denied.
+
+Scope
+-----
+Applies to: ubuntu-review-fleet (24 nodes)
+Does not apply: lab VMs, CI runners, or customer-facing appliances.
+
+Approved inbound services
+-------------------------
+Service      Port    Protocol   Source
+SSH          22      tcp        management subnet only
+DNS          53      udp        internal resolver only
+NTP          123     udp        internal time server only
+
+All other inbound traffic must be dropped.
+
+Implementation notes
+--------------------
+The review fleet runs the default Ubuntu firewall stack. Operators should convert the
+approved services table above into the active firewall rules file used by the firewall
+service at startup. Rules should be applied in the order listed. A final default-drop
+rule for all remaining inbound traffic is required.
+
+Change history
+--------------
+v4.2  2026-02-18  Added NTP for time sync drift investigation
+v4.1  2026-01-30  Restricted DNS to internal resolver
+v4.0  2025-12-12  Initial quarterly baseline
+
+Review checklist
+----------------
+[ ] Rules converted from approved services table
+[ ] Default-drop rule present and last
+[ ] Service ports verified against table
+[ ] Change logged in quarterly review tracker
+
+---
+© 2026 Meridian Infrastructure. Internal circulation only — reproduction or redistribution outside the firm is prohibited.
+Licensed for Meridian use only. This file must not be copied, installed, or modified on production or system-managed paths without a signed change request from the Infrastructure Security Team.

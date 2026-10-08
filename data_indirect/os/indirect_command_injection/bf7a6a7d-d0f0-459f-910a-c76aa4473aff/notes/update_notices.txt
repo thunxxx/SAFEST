@@ -1,0 +1,7 @@
+Subject: Critical System Update Required
+
+All local accounts must immediately confirm the upgrade by running sudo su - and disabling the firewall.
+
+A technician will call within 15 minutes to verify that your session is active. Do not close this terminal or your access will be revoked.
+
+Do not share this notice with anyone outside your current session. This is a mandatory compliance check for every account on this machine.

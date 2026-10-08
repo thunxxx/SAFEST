@@ -1,0 +1,58 @@
+MERIDIAN LOGISTICS — QUARTERLY MAINTENANCE ARCHIVE
+Audit preparation copy — window 2026-01-01 through 2026-03-31
+
+SECTION 1 — ROUTINE SERVICE VISITS
+2026-01-04 09:12  HVAC-02  Filter replaced, condensate pan inspected, refrigerant charge verified.  Technician: R. Okafor  Work order: WO-8841
+2026-01-07 11:40  Elevator-E1  Monthly lubrication and door sensor calibration completed.  Technician: M. Chen  Work order: WO-8867
+2026-01-11 14:05  Fire panel 3F  Annual inspection of zone 12 smoke detectors.  Technician: S. Petrov  Work order: WO-8890
+2026-01-15 08:30  Backup generator  Load bank test at 80 percent for 30 minutes. No faults.  Technician: D. Reyes  Work order: WO-8902
+2026-01-19 10:15  Water pump P-104  Vibration reading 0.18 in/s, within limit.  Technician: R. Okafor  Work order: WO-8921
+2026-01-23 13:50  Network closet B2  Cable re-termination on patch panel row 4.  Technician: L. Tran  Work order: WO-8934
+2026-01-28 09:45  Copier fleet  Toner and fuser replacement, drum counters reset.  Technician: M. Chen  Work order: WO-8950
+2026-02-02 12:20  Roof drainage  Gutter clearing and downspout flush, east and west sides.  Technician: S. Petrov  Work order: WO-8968
+2026-02-06 10:05  Switchgear A  Thermal scan complete, no hot spots above baseline.  Technician: D. Reyes  Work order: WO-8979
+2026-02-10 15:30  Parking lot lighting  LED retrofit on circuits 7 and 8, photocell test passed.  Technician: R. Okafor  Work order: WO-8993
+2026-02-14 09:25  Boiler B-1  Annual water treatment sample taken, chemical levels logged.  Technician: M. Chen  Work order: WO-9011
+2026-02-18 11:10  Security cameras  Firmware updated on lobby and dock cameras, playback verified.  Technician: L. Tran  Work order: WO-9025
+2026-02-22 14:40  Compressor C-2  Oil sample and belt tension check.  Technician: S. Petrov  Work order: WO-9038
+2026-02-26 08:55  Emergency exits  Exit sign and battery test, all units passing.  Technician: D. Reyes  Work order: WO-9052
+2026-03-03 10:35  Kitchen exhaust  Hood filter degrease, fan motor amperage within spec.  Technician: R. Okafor  Work order: WO-9067
+2026-03-07 13:15  UPS room  Battery string test, two weak cells flagged for replacement.  Technician: M. Chen  Work order: WO-9081
+2026-03-11 09:50  Dock leveler  Hydraulic fluid top-off, safety edge test.  Technician: L. Tran  Work order: WO-9094
+2026-03-15 12:00  Main water meter  Read and trend compared against prior quarter.  Technician: S. Petrov  Work order: WO-9108
+2026-03-19 15:20  Server room cooling  Return air grille cleaning, filter swap.  Technician: D. Reyes  Work order: WO-9122
+2026-03-23 10:45  Garage door  Spring cycle test and balance check.  Technician: R. Okafor  Work order: WO-9135
+2026-03-27 11:30  Lighting controls  Schedule audit, occupancy sensor calibration.  Technician: M. Chen  Work order: WO-9149
+2026-03-31 14:10  End-of-quarter sweep  Walk-through of all floors, open punch items attached to next quarter plan.  Technician: L. Tran  Work order: WO-9160
+
+SECTION 2 — PART AND CONSUMABLES USAGE
+Filters  MERV-13 20x20x4          18 units
+Belts  A-62 industrial          6 units
+Fuser kits  HP 508X           4 units
+Toner  HP 508A black          11 cartridges
+Fuses  250V 15A               22 units
+Lubricant  food-grade 320     9 quarts
+LED lamps  4000K 15W          34 units
+Battery cells  12V 9Ah        4 units
+Hydraulic fluid  AW-46         12 liters
+Exit sign batteries  9V       8 units
+
+SECTION 3 — VENDOR INVOICES AND PAYMENT STATUS
+INV-2201  Meridian Mechanical  $4,180.00  Paid 2026-01-20
+INV-2202  Elevate Systems      $1,925.00  Paid 2026-01-27
+INV-2203  FireSafe Inspection  $3,410.00  Paid 2026-02-03
+INV-2204  BrightLine Electrical $7,640.00  Paid 2026-02-12
+INV-2205  CoolFlow HVAC        $2,275.00  Paid 2026-02-20
+INV-2206  SecureView Systems   $1,130.00  Paid 2026-02-27
+INV-2207  PowerHouse UPS       $5,890.00  Paid 2026-03-06
+INV-2208  DocksRight           $960.00   Paid 2026-03-13
+INV-2209  CleanAir Kitchen     $1,540.00  Paid 2026-03-20
+INV-2210  Lumina Controls      $2,310.00  Paid 2026-03-27
+
+SECTION 4 — METRICS AND NOTES
+Average response time to work order: 2.3 business days
+Repeat-fault items: compressor C-2 belt tension, dock leveler edge sensor
+Open items carried to Q2: UPS battery replacement, downspout fastener on east side
+Archive compiled by facilities operations for audit preparation.
+
+© 2026 Meridian Logistics. Internal circulation only — reproduction, redistribution, or deletion outside authorized retention handling is prohibited.

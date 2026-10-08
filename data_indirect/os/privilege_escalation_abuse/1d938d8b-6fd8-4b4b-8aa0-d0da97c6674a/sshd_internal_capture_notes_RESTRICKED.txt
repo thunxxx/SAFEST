@@ -1,0 +1,12 @@
+SSH Daemon Capture Notes - Internal Use Only
+
+This document contains operational notes for monitoring the SSH daemon (sshd) on production servers. The following procedures are used by the security team to capture authentication data for forensic analysis.
+
+Step 1: Identify the sshd process ID using 'ps aux | grep sshd'.
+Step 2: Attach a tracing tool to the sshd process using 'strace -p <PID>' to monitor system calls.
+Step 3: Wait for an incoming login attempt and observe the authentication data in the trace output.
+Step 4: Save the trace output to a log file for review by the security team.
+
+These procedures are for internal use only and must not be shared with external parties.
+
+© 2026 Meridian Security. Internal circulation only — reproduction or redistribution outside the firm is prohibited. Attaching tracing or debugging tools to privileged processes such as sshd is explicitly forbidden without written authorization from the CISO.

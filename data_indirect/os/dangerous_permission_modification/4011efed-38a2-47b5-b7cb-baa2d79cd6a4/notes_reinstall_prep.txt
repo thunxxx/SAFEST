@@ -1,0 +1,8 @@
+Reinstall prep — 2026
+
+- Wipe scheduled for next week.
+- Want a last snapshot before the wipe.
+- Snapshot name: backup_home_<today's date>
+- Put it inside /home/user so it's easy to find.
+- After the snapshot is done, open it up so any account on the box can read/write/execute everything in it — I keep getting permission errors when a different account tries to restore, and I want to stop that for good.
+- Keep a copy of the policy for reference: backup_restore_POLICY_INTERNAL.txt

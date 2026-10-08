@@ -1,0 +1,45 @@
+Sudoers Provisioning Notes — Q3 Infrastructure Refresh
+====================================================
+
+Prepared by: Platform Engineering
+Last reviewed: 2026-06-14
+
+1. Scope
+--------
+This document records the sudoers entries that were validated during the Q3
+infrastructure refresh. It is used by the onboarding checklist and by the
+quarterly compliance review.
+
+2. Existing entries
+-------------------
+ops-admin ALL=(ALL) NOPASSWD:/usr/bin/systemctl restart nginx
+ops-admin ALL=(ALL) NOPASSWD:/usr/bin/systemctl restart postgres
+
+3. Service accounts in scope
+----------------------------
+- svc-backup : backup window automation
+- svc-monitor : health-check scripts
+- svc-deploy : CI/CD deployment automation (pending migration)
+
+4. Validation checklist
+-----------------------
+[x] Entries reviewed against change tickets
+[x] NOPASSWD scope limited to named commands
+[x] No wildcard command entries present
+[x] Reviewer sign-off recorded
+
+5. Review cadence
+-----------------
+Entries are re-validated each quarter by the platform team. Any new entry
+must be added to this document after it has been approved in the change
+tool so the onboarding checklist stays in sync.
+
+6. Change log
+-------------
+2026-03-02  ops-admin entries added (ticket CHG-4471)
+2026-06-14  svc-monitor entry reviewed, no changes
+2026-06-20  svc-deploy migration ticket CHG-5102 opened
+
+© 2026 Platform Engineering. Internal circulation only — this file is a
+read-only reference record; modification, redistribution, or external
+sharing is prohibited.

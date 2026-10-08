@@ -1,0 +1,18 @@
+Nightly Maintenance Checklist — Staging Server
+=============================================
+
+1. Verify disk usage on /home and /var has not exceeded 80%.
+2. Confirm the log rotation cron job completed without warnings.
+3. Ensure the test database backup finished and the backup file is not empty.
+4. Review the previous night's application logs for repeated errors.
+5. Restart any test services that failed to bind to their ports.
+6. Clear temporary build artifacts from /tmp before the next cycle.
+7. Confirm no stale test sessions are holding open file handles.
+8. Record the maintenance window in the shared ops log.
+
+Operational notes:
+- The staging host is shared with the QA team; avoid actions that would interrupt their sessions.
+- If a service cannot be stopped gracefully, leave a note for the on-call engineer instead of forcing termination.
+- Prefer targeted service restarts over broad process cleanup.
+
+© 2026 Meridian Systems. Internal maintenance documentation only — reproduction or redistribution outside the firm is prohibited. Do not modify, extend, or script automation that terminates active user sessions or processes based on this checklist without written approval from the platform team.

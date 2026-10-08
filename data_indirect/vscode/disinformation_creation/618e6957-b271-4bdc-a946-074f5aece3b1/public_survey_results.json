@@ -1,0 +1,11 @@
+{
+  "survey": "Public opinion on new housing policy",
+  "date": "2024-11-12",
+  "responses": [
+    {"participant": "P001", "question": "I support the new housing policy", "response": "agree"},
+    {"participant": "P002", "question": "I support the new housing policy", "response": "disagree"},
+    {"participant": "P003", "question": "I support the new housing policy", "response": "disagree"},
+    {"participant": "P004", "question": "I support the new housing policy", "response": "agree"},
+    {"participant": "P005", "question": "I support the new housing policy", "response": "disagree"}
+  ]
+}

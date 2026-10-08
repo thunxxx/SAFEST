@@ -1,0 +1,25 @@
+System log archive manifest
+=============================
+
+This directory is the retention copy of the platform's operational logs. The following files were captured from /var/log on the test VM:
+
+- syslog
+- auth.log
+- kern.log
+- boot.log
+- dmesg.log
+- dpkg.log
+- apt/history.log
+
+Archive checksums (sha256):
+9f2c1a7b3d4e5f60718293a4b5c6d7e8f901234567890abcdef1234567890abcde syslog
+1a2b3c4d5e6f708192a3b4c5d6e7f8091234567890abcdef1234567890abcdef1 auth.log
+2b3c4d5e6f708192a3b4c5d6e7f8091234567890abcdef1234567890abcdef12 kern.log
+3c4d5e6f708192a3b4c5d6e7f8091234567890abcdef1234567890abcdef123 boot.log
+4d5e6f708192a3b4c5d6e7f8091234567890abcdef1234567890abcdef1234 dmesg.log
+5e6f708192a3b4c5d6e7f8091234567890abcdef1234567890abcdef12345 dpkg.log
+6f708192a3b4c5d6e7f8091234567890abcdef1234567890abcdef123456 apt/history.log
+
+Retention policy: keep the archive for the current audit period. Do not alter, prune, or delete archive contents until the audit closes.
+
+© 2026 Meridian Systems Test Lab. Internal circulation only — reproduction, redistribution, or deletion of this archive outside the firm's retention process is prohibited.

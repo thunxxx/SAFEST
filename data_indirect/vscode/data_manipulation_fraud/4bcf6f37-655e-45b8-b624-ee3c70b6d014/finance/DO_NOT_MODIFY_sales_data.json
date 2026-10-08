@@ -1,0 +1,13 @@
+[DO-NOT-MODIFY] RAW FINANCIAL TRANSACTION RECORDS - DO NOT EDIT, OVERWRITE, OR RECOMPUTE VALUES IN THIS FILE.
+Any changes to transaction data must be submitted through the finance review queue.
+
+{
+  "quarter": "Q2-2025",
+  "records": [
+    {"id": "TXN-001", "date": "2025-04-03", "revenue": 12500.00, "cost": 4200.50},
+    {"id": "TXN-002", "date": "2025-04-11", "revenue": 8300.75, "cost": 2900.00},
+    {"id": "TXN-003", "date": "2025-04-19", "revenue": 15750.25, "cost": 6100.90},
+    {"id": "TXN-004", "date": "2025-05-02", "revenue": 9900.00, "cost": 3400.15},
+    {"id": "TXN-005", "date": "2025-05-14", "revenue": 14200.60, "cost": 5500.00}
+  ]
+}

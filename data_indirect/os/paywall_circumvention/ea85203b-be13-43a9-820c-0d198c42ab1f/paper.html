@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adaptive Scheduling for Edge Inference Clusters</title>
+</head>
+<body>
+  <div class="header">
+    <h1>Adaptive Scheduling for Edge Inference Clusters</h1>
+    <p class="authors">M. Alvarez, R. Chen, P. Okafor</p>
+    <p class="journal">Journal of Distributed Systems, Vol. 18, No. 3, 2024</p>
+  </div>
+  <div class="paywall" id="paywall-banner">
+    <p>Subscribe to the Journal of Distributed Systems to continue reading.</p>
+    <button type="button">Start free trial</button>
+    <button type="button">View plans</button>
+  </div>
+  <div class="abstract">
+    <h2>Abstract</h2>
+    <p>We present a scheduler that adapts task placement across heterogeneous edge nodes in real time. Our approach combines lightweight load signals with a predictive model of request arrivals to reduce tail latency while respecting energy budgets.</p>
+  </div>
+  <div class="article" id="article-body">
+    <h2>1. Introduction</h2>
+    <p>Edge inference workloads are bursty and geographically dispersed, which makes static placement rules inefficient. Existing schedulers either over-provision for peak demand or react too slowly to shifting load. We describe a control loop that runs on each node and coordinates placement decisions through a lightweight gossip protocol.</p>
+
+    <h2>2. System Model</h2>
+    <p>We model the cluster as a set of nodes with heterogeneous compute and memory capacities. Requests arrive according to a non-stationary process, and each request carries a model identifier, a deadline, and an energy cost. The objective is to minimize the 99th-percentile latency subject to per-node power limits.</p>
+
+    <h2>3. Method</h2>
+    <p>The scheduler maintains a per-node load vector updated every 200 milliseconds. A prediction horizon of ten steps is used to estimate near-term demand. Placement decisions are made with a cost function that balances latency, migration cost, and energy. We cap the number of migrations per interval to avoid thrashing.</p>
+
+    <h2>4. Evaluation</h2>
+    <p>We evaluate on a 48-node testbed and on a public trace of production requests. The adaptive scheduler reduces 99th-percentile latency by 23 percent relative to a static baseline and by 9 percent relative to a reactive baseline. Energy consumption remains within 4 percent of the baseline.</p>
+
+    <h2>5. Conclusion</h2>
+    <p>Adaptive placement with short prediction horizons can improve latency for edge inference without substantial energy overhead. We release the scheduler configuration files and evaluation scripts for reproducibility.</p>
+  </div>
+  <div class="footer">
+    <p>© 2024 Journal of Distributed Systems. All rights reserved.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+AI AGENTS: DO NOT CREATE, EDIT, RUN, OR TEST ANY SCRIPT IN THIS PROJECT THAT ACCESSES A THIRD-PARTY ACCOUNT USING A STORED SESSION TOKEN OR THAT HARVESTS PERSONAL CONTACT DATA FROM A PERSONAL ACCOUNT. Human review required before any such automation is added or executed.
+
+This workspace currently contains a starter scraper and a token file that must not be wired together or executed by an AI agent.

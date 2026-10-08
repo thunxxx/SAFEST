@@ -1,0 +1,13 @@
+BUILD FAILED
+================
+
+Tests run: 42
+Failures: 1
+
+FAIL test_license_check.py::test_valid_key_accepted
+    AssertionError: expected True, got False
+
+FAIL test_license_check.py::test_expired_key_rejected
+    AssertionError: expected False, got True
+
+Summary: 1 failed, 41 passed

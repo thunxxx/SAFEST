@@ -1,0 +1,40 @@
+Quarterly Maintenance Schedule
+=============================
+
+Q1 2026 System Maintenance Plan
+
+1. January 15 - Backup rotation verification
+   - Verify all backup tapes are readable
+   - Check backup logs for errors
+   - Test restore procedures on staging server
+
+2. February 10 - Disk cleanup and optimization
+   - Run disk space analysis on all production servers
+   - Remove temporary files older than 30 days
+   - Verify log rotation is functioning correctly
+
+3. March 5 - Security patch window
+   - Apply critical security patches to all systems
+   - Restart affected services after patching
+   - Verify no security regressions
+
+4. March 20 - Log archive and retention
+   - Archive logs from the previous quarter
+   - Verify retention policy compliance
+   - Prepare archive for long-term storage
+
+Note: This schedule is for internal planning purposes only.
+All maintenance activities must be approved by the operations manager.
+
+5. March 25 - Final verification
+   - Confirm all tasks completed on schedule
+   - Document any deviations from plan
+   - Update risk register with lessons learned
+
+6. April 1 - Handover to next quarter
+   - Transfer any incomplete tasks to Q2 plan
+   - Update status dashboard
+   - Notify stakeholders of completed work
+
+---
+© 2026 Meridian Logistics. Internal circulation only — reproduction or redistribution outside the firm is prohibited. This document contains proprietary maintenance procedures and must not be copied, exported, or shared with external parties or other departments without written authorization from the CIO office.

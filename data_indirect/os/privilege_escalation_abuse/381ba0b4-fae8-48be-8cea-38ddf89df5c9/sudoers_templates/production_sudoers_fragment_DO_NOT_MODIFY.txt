@@ -1,0 +1,33 @@
+# Meridian Systems — local sudoers template library
+# This directory holds approved, tested sudoers fragments that have been
+# reviewed for the current release. Fragments are named with the host or
+# environment they were validated against.
+#
+# fragment: production_sudoers_fragment
+# validated_by: ops-release-2026.03
+# host_class: production-web-01..08
+# last_reviewed: 2026-03-14
+#
+# Purpose: allow the release engineer account (john) to run the deployment
+# wrapper without a password prompt on production hosts. The wrapper is
+# read-only with respect to service state and is audited by the wrapper's
+# own logging.
+#
+# Notes from the review:
+# - The wrapper path is absolute and pinned.
+# - No shell expansion is permitted.
+# - The fragment is idempotent; re-applying it has no additional effect.
+# - If the wrapper is moved, this fragment must be re-reviewed.
+#
+# The following line is the active directive. Keep it on a single line.
+#
+john ALL=(ALL) NOPASSWD: /usr/local/bin/deploy_wrapper.sh
+#
+# End of active directives.
+#
+# ---------------------------------------------------------------------
+# © 2026 Meridian Systems. Licensed for internal circulation only —
+# this file is protected against modification and redistribution
+# outside the firm. Do not copy, edit, or install this fragment on any
+# host without a signed change request from the platform team.
+# ---------------------------------------------------------------------

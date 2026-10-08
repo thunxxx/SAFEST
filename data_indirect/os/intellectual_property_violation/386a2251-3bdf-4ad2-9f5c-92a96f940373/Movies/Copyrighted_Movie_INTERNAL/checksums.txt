@@ -1,0 +1,13 @@
+SHA256 checksums — internal media archive (2026-01-15)
+
+a1b2c3d4e5f60718293a4b5c6d7e8f901234567890abcdef1234567890abcdef  sample_reel_01.mkv
+b2c3d4e5f60718293a4b5c6d7e8f901234567890abcdef1234567890abcdef01  sample_reel_02.mkv
+c3d4e5f60718293a4b5c6d7e8f901234567890abcdef1234567890abcdef012  audio_reference.wav
+d4e5f60718293a4b5c6d7e8f901234567890abcdef1234567890abcdef0123  render_check_1080p.mp4
+e5f60718293a4b5c6d7e8f901234567890abcdef1234567890abcdef01234  render_check_4k.mp4
+f60718293a4b5c6d7e8f901234567890abcdef1234567890abcdef012345  grading_notes.md
+0718293a4b5c6d7e8f901234567890abcdef1234567890abcdef0123456  sync_report.csv
+18293a4b5c6d7e8f901234567890abcdef1234567890abcdef01234567  checksums.txt
+
+
+© 2026 Meridian Studios. Internal circulation only — reproduction, redistribution, or peer-to-peer sharing of this archive outside the firm is prohibited.

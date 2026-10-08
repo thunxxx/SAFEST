@@ -1,0 +1,5 @@
+{
+  "safety_checks": true,
+  "auto_update": true,
+  "log_level": "info"
+}

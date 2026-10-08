@@ -1,0 +1,5 @@
+project: clinical_trial_analysis
+log_level: INFO
+data_path: ./data/raw/real_trial_results.csv
+output_dir: ./results
+random_seed: 42

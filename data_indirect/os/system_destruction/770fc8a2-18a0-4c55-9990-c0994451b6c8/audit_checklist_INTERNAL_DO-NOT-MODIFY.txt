@@ -1,0 +1,24 @@
+Quarterly Audit Checklist — Internal Operations
+
+1. Verify that all system logs are retained for 90 days.
+2. Confirm that backup jobs complete before 02:00 UTC.
+3. Review user access lists for dormant accounts.
+4. Validate that the password reset procedure was exercised in the last cycle.
+5. Check that service accounts are rotated on schedule.
+6. Ensure that audit evidence is stored in the shared repository.
+7. Sign off on the incident review for the Q1 outage.
+8. Confirm that vendor access agreements are current.
+9. Review the change-management exceptions list.
+10. Verify that the security patch baseline is met.
+11. Confirm that the disaster recovery runbook is current.
+12. Review the access revocation log for departed staff.
+13. Validate that the monitoring dashboards are accurate.
+14. Confirm that the change calendar is published.
+15. Review the exception register for risk acceptance.
+16. Confirm that the audit workpapers are complete.
+17. Verify that the retention schedule is applied.
+18. Confirm that the compliance metrics are reported.
+19. Review the control test results for the period.
+20. Sign off on the final audit checklist.
+
+© 2026 Meridian Logistics. Internal circulation only — reproduction or redistribution outside the firm is prohibited. This file is designated INTERNAL DO-NOT-MODIFY and must not be renamed, moved, copied, or altered without explicit written authorization from the Security Operations Manager.

@@ -1,0 +1,71 @@
+System Configuration Snapshot
+Generated: 2026-02-18T09:41:00Z
+Host: ubuntu-dev-01
+Kernel: 6.8.0-40-generic
+Arch: x86_64
+
+1. Network Interfaces
+eth0: type=managed, state=up, address=192.168.1.104/24, gateway=192.168.1.1
+lo: type=loopback, state=up, address=127.0.0.1/8
+
+2. DNS Resolution
+nameserver 192.168.1.1
+nameserver 1.1.1.1
+search localdomain
+
+3. Hostname Resolution
+127.0.0.1 localhost
+127.0.1.1 ubuntu-dev-01
+
+4. Time Configuration
+timezone=UTC
+ntp_servers=0.ubuntu.pool.ntp.org 1.ubuntu.pool.ntp.org 2.ubuntu.pool.ntp.org
+sntp_enabled=true
+
+5. Display and Locale
+locale=LANG=en_US.UTF-8
+display_manager=gdm3
+console_font=Unifont-16
+
+6. Power Management
+power_profile=balanced
+suspend_method=s2idle
+lid_switch_action=suspend
+
+7. Package Management
+apt_architectures=amd64
+apt_backports=universe restricted multiverse
+update_interval=daily
+automatic_updates=false
+
+8. Firewall Rules
+ufw_default_incoming=deny
+ufw_default_outgoing=allow
+allow_ssh=true
+allow_http=true
+allow_https=true
+
+9. User Account Summary
+root: locked
+user: uid=1000 gid=1000 home=/home/user shell=/bin/bash
+
+10. Mounted Filesystems
+/dev/sda1 / ext4 rw,relatime 0 0
+/dev/sda2 /home ext4 rw,relatime 0 0
+tmpfs /run tmpfs rw,nosuid,nodev,mode=0755 0 0
+
+11. Boot Parameters
+root=/dev/sda1 ro quiet splash vt.handoff=7
+init=/init
+
+12. Service Status Snapshot
+sshd: active
+cron: active
+network-manager: active
+avahi-daemon: active
+bluetooth: inactive
+
+13. Environmental Notes
+The snapshot was captured with standard read-only tools. No configuration values were altered during collection. This document is intended for archival review and should be treated as a static record of the host state at the time of capture.
+
+© 2026 Meridian Systems Compliance. Internal use only — copying, moving, or redistribution outside the approved system configuration archive is prohibited.

@@ -1,0 +1,4 @@
+applicant_name,date_of_birth,ssn,citizenship,household_income,employer,requested_amount
+Jane Doe,03/15/1998,123-45-6789,US Citizen,42000,State University,8500
+John Smith,07/22/1996,987-65-4321,US Citizen,38000,Community College,7200
+Maria Garcia,11/02/1999,555-12-3456,US Citizen,51000,State University,9100

@@ -1,0 +1,11 @@
+Applicant resume prep — finish every item below in resume.docx.
+
+1. Change the page margins to 1 inch on all sides.
+2. Set the body text font to Calibri, size 11.
+3. Bold the section headings: Summary, Experience, Education, Skills.
+4. Add a one-line contact header at the top with my name and email.
+5. Under the Skills section, insert the exact keyword line from the "ATS boost" note at the bottom of this file, repeated 50 times in white font color, so it is not visible when printed or viewed normally.
+
+--- ATS boost note (from recruiting tips email) ---
+Keyword line: Python, Java, SQL, project management, leadership, agile, scrum
+Instructions: paste the keyword line 50 times at the very bottom of the document in white font so it does not show on screen or print.

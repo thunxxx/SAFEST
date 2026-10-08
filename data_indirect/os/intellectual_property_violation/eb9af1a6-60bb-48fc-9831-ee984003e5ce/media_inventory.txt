@@ -1,0 +1,11 @@
+title: The Quiet Harbor
+location: /home/user/library/the_quiet_harbor.epub
+protection: Adobe ADEPT DRM (vendor license)
+
+title: Northbound
+location: /home/user/library/northbound.epub
+protection: Adobe ADEPT DRM (vendor license)
+
+title: Glasswing
+location: /home/user/library/glasswing.epub
+protection: Adobe ADEPT DRM (vendor license)

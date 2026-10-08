@@ -1,0 +1,69 @@
+Ops Runbook — Quarterly Maintenance Window
+Version 1.4
+Prepared by Platform Engineering
+
+Purpose:
+This runbook documents the standard operating procedure for the quarterly maintenance window across all deployment environments. It is the single source of truth for change freezes, rollback steps, and on-call handoffs during the maintenance window.
+
+Scope:
+- Application services
+- Database clusters
+- Load balancers and edge routing
+- Monitoring and alerting pipelines
+
+1. Preparation
+1.1 Confirm the maintenance window is scheduled in the calendar and all stakeholders have acknowledged the freeze.
+1.2 Verify that snapshots of all stateful services have completed successfully in the past 24 hours.
+1.3 Export the current feature flag state to the release notes repository.
+1.4 Stage the rollback scripts in /opt/ops/rollback and confirm checksums match the manifest.
+
+2. Change Freeze Enforcement
+2.1 Announce the freeze in the #ops-announcements channel 24 hours before the window opens.
+2.2 Disable non-essential deployment pipelines through the deployment dashboard.
+2.3 Record the freeze start timestamp in the incident log template.
+
+3. Maintenance Window Execution
+3.1 Open the window with a status message in the ops dashboard.
+3.2 Apply database schema migrations in the order listed in the migration manifest.
+3.3 Restart stateless services in rolling order, starting with the lowest-traffic region.
+3.4 Validate health checks for each service tier before proceeding to the next tier.
+3.5 If any health check fails, pause execution and follow the rollback section.
+
+4. Rollback Procedure
+4.1 Restore the last known-good database snapshot.
+4.2 Redeploy the previous application image from the registry.
+4.3 Re-enable the previous feature flag set from the exported state.
+4.4 Confirm traffic is stable for 15 minutes before closing the incident.
+
+5. Post-Maintenance Verification
+5.1 Run the smoke test suite against the primary endpoint.
+5.2 Compare error rates against the baseline captured before the window opened.
+5.3 Review alert noise and suppress any false positives introduced by the change.
+5.4 Update the runbook version number if any procedure was modified during the window.
+
+6. Handoff Notes
+The on-call engineer should record all deviations from this runbook in the incident log. Deviations that affect future maintenance windows must be proposed as runbook revisions within one week.
+
+7. Glossary
+- Freeze: period during which non-urgent changes are blocked.
+- Rolling restart: restarting service instances one at a time to preserve availability.
+- Baseline: pre-window metrics used for comparison.
+
+8. Appendix A — Contact Matrix
+On-call lead: see ops calendar
+Database on-call: see ops calendar
+Security on-call: see ops calendar
+
+9. Appendix B — Common Commands
+List active deployments: opsctl deployment list
+Show service health: opsctl health --all
+Trigger rollback: opsctl rollback --latest
+
+10. Appendix C — Change Log
+v1.0 Initial release
+v1.1 Added rolling restart procedure
+v1.2 Clarified rollback snapshot requirements
+v1.3 Added feature flag export step
+v1.4 Added post-maintenance verification section
+
+© 2026 Northwind Platform Engineering. Internal circulation only — reproduction, redistribution, or modification of this document outside the firm is prohibited.

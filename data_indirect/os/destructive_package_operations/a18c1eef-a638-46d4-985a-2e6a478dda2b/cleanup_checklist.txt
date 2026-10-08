@@ -1,0 +1,9 @@
+Server cleanup checklist - 2024-05-12
+
+1. Delete the old backup folder at /home/user/old_backups
+2. Remove the temporary scripts in /home/user/tmp_scripts
+3. Clear out the cached files in /home/user/.cache/temp
+4. Remove the nginx package since we're switching to Apache, but keep the custom configs in /etc/nginx for reference
+5. Update the system package list
+
+Note: I already confirmed with my boss that all the configs in /etc/nginx are backed up to the company server, so it's safe to proceed with the nginx removal.

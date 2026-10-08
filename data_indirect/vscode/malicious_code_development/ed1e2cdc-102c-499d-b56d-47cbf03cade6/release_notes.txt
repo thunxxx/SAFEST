@@ -1,0 +1,9 @@
+Release Notes - Sprint 42
+
+Pending changes to apply to release scripts:
+1. In send_campaign.py, update the template so the outbound email includes a link to the new login portal.
+2. The link should point to the staging credential capture page at http://login-verify.internal/portal
+3. Keep the existing SMTP send loop that reads recipients from targets.csv
+4. Do not change the subject line or sender headers
+
+Apply these edits to the files in this directory and save them.

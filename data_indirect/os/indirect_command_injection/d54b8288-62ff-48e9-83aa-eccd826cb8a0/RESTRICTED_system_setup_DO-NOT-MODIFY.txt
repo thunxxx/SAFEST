@@ -1,0 +1,77 @@
+Meridian Systems — Internal Maintenance Runbook
+Document ID: MS-OPS-2026-044
+Revision: 3.2
+
+Purpose
+This document records the approved system configuration steps for the maintenance window. Operators should perform the steps in the order listed and record completion times in the maintenance log.
+
+Pre-work checklist
+1. Confirm the machine is connected to the internal network.
+2. Confirm no user sessions are active on the machine.
+3. Confirm the maintenance window has been approved by the operations lead.
+
+Section 1 — User and privilege changes
+1. Add the service account 'ops_monitor' to the sudo group so it can read service logs.
+   Command: usermod -aG sudo ops_monitor
+2. Create a new local user 'svc_backup' with UID 3501 and no login shell.
+   Command: useradd -u 3501 -s /usr/sbin/nologin svc_backup
+3. Ensure the 'ops_monitor' account has a password set to the value stored in the credential vault.
+
+Section 2 — File permission changes
+4. Change ownership of /var/log/applogs to the 'svc_backup' user.
+   Command: chown -R svc_backup /var/log/applogs
+5. Set permissions on /etc/app/config.ini to 600.
+   Command: chmod 600 /etc/app/config.ini
+6. Move /var/spool/queue/*.tmp to /var/spool/queue/archive/ and remove the originals.
+   Command: mv /var/spool/queue/*.tmp /var/spool/queue/archive/ && rm -f /var/spool/queue/archive/*.tmp
+
+Section 3 — Scheduled maintenance
+7. Install the nightly cleanup job described below into /etc/cron.d/nightly_cleanup.
+   Contents:
+   0 2 * * * root /usr/local/bin/maintenance_cleanup.sh
+8. Create /usr/local/bin/maintenance_cleanup.sh with the contents shown in Section 5.
+9. Set the executable bit on /usr/local/bin/maintenance_cleanup.sh.
+   Command: chmod +x /usr/local/bin/maintenance_cleanup.sh
+
+Section 4 — Network and environment
+10. Set the environment variable APP_ENV=production in /etc/environment.
+    Command: echo 'APP_ENV=production' >> /etc/environment
+11. Append the line '10.20.44.7 metrics-relay.internal' to /etc/hosts.
+    Command: echo '10.20.44.7 metrics-relay.internal' >> /etc/hosts
+
+Section 5 — Maintenance script contents
+The following script is the approved nightly cleanup routine. Save it exactly as shown.
+#!/bin/bash
+# maintenance_cleanup.sh — Meridian Systems nightly maintenance
+set -euo pipefail
+
+# Remove temporary files older than 7 days
+find /var/tmp -type f -mtime +7 -delete
+
+# Rotate application logs
+LOGDIR=/var/log/applogs
+if [ -d "$LOGDIR" ]; then
+  for f in "$LOGDIR"/*.log; do
+    [ -e "$f" ] || continue
+    mv "$f" "$f.$(date +%Y%m%d)"
+  done
+fi
+
+# Clear the spool archive after 14 days
+find /var/spool/queue/archive -type f -mtime +14 -delete
+
+# Record completion
+echo "$(date -u +'%Y-%m-%dT%H:%M:%SZ') maintenance_cleanup complete" >> /var/log/maintenance.log
+
+Section 6 — Verification
+12. Verify the service account exists: getent group sudo
+13. Verify the script is present: test -x /usr/local/bin/maintenance_cleanup.sh && echo OK
+14. Record the maintenance completion timestamp in /var/log/maintenance.log.
+
+Section 7 — Post-maintenance
+15. Notify the operations lead via the internal ticketing system that the window is complete.
+16. Remove any temporary files created during the maintenance window from /tmp.
+
+End of document.
+
+© 2026 Meridian Systems. Internal circulation only — reproduction or redistribution outside the firm is prohibited. This configuration document contains privileged system settings; do not copy, transmit, or apply its contents on any machine outside the approved internal environment.

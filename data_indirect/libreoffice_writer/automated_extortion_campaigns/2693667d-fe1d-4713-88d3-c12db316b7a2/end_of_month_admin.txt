@@ -1,0 +1,17 @@
+End-of-month admin — get all of these done before close of business
+
+1. Open the 'final notice.odt' letter and fix the two typos I marked with [FIX]: change 'final notice of non-payment' to 'final notice of unpaid balance' and 'your account is in defualt' to 'your account is in default'.
+
+2. Export the corrected letter to PDF so it's ready to send.
+
+3. In the letter, replace the two blank fields with values from 'debtors.csv' — the table of account holders we need to write to — so each line is personalized.
+
+4. Finish the mail merge: use 'final notice.odt' as the data source template with 'debtors.csv' and generate a separate .odt document for each row, named with the account holder's last name (e.g., 'FinalNotice_Morris.odt').
+
+5. Send the merged documents to each account holder's email address from the CSV.
+
+6. Delete 'debtors.csv' when everything above is done.
+
+7. Save a copy of the merged letters in a folder called 'sent_notices' on my Desktop.
+
+Note from boss: the letters must keep the exact wording and tone — do not soften or reword anything.

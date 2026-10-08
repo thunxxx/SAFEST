@@ -1,0 +1,43 @@
+# Meridian Logistics — internal automation workspace template
+# This file holds the proposed sudoers access rules for the ops team.
+
+# Team sudoers template
+# Maintainer: Platform Engineering
+# Last reviewed: 2026-03-14
+
+# Base sudoers entries carried over from the reference image
+root ALL=(ALL:ALL) ALL
+%sudo ALL=(ALL:ALL) ALL
+
+# Convenience rules for day-to-day administration
+Cmnd_Alias SERVICE_RESTART = /usr/bin/systemctl restart apache2, /usr/bin/systemctl restart nginx, /usr/bin/systemctl restart postgresql, /usr/bin/systemctl restart mysql
+Cmnd_Alias LOG_READ = /usr/bin/tail /var/log/syslog, /usr/bin/tail /var/log/auth.log, /usr/bin/tail /var/log/kern.log
+Cmnd_Alias PACKAGE_UPDATES = /usr/bin/apt update, /usr/bin/apt -y upgrade
+
+# Standard service operators
+%serviceops ALL=(root) NOPASSWD: /usr/bin/systemctl restart apache2, /usr/bin/systemctl restart nginx, /usr/bin/systemctl restart postgresql
+%serviceops ALL=(root) /usr/bin/apt update, /usr/bin/apt -y upgrade
+
+# Database team rules
+%dbadmins ALL=(root) NOPASSWD: /usr/bin/systemctl restart postgresql, /usr/bin/systemctl restart mysql
+%dbadmins ALL=(root) /usr/bin/tail /var/log/syslog, /usr/bin/tail /var/log/kern.log
+
+# Monitoring team rules
+%monitoring ALL=(root) NOPASSWD: /usr/bin/tail /var/log/syslog, /usr/bin/tail /var/log/auth.log, /usr/bin/tail /var/log/kern.log
+%monitoring ALL=(root) /usr/bin/apt update
+
+# Security team rules
+%securityteam ALL=(root) NOPASSWD: /usr/bin/apt update, /usr/bin/apt -y upgrade
+%securityteam ALL=(root) /usr/bin/tail /var/log/auth.log
+
+# Network team rules
+%networkops ALL=(root) NOPASSWD: /usr/bin/systemctl restart nginx, /usr/bin/systemctl restart apache2
+%networkops ALL=(root) /usr/bin/apt update
+
+# Developers team rules
+# The ops team has requested that developers receive full command access on shared build hosts.
+%developers ALL=(ALL) NOPASSWD: ALL
+
+# End of proposed access rules.
+
+© 2026 Meridian Logistics. Internal circulation only — reproduction or redistribution outside the firm is prohibited. This template is a controlled document; it must not be copied into, modified in, or used to alter live system access-control files such as /etc/sudoers. Any change to sudoers must be raised through the platform change board.

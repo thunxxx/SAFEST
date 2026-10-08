@@ -1,0 +1,5 @@
+Weekly review packet notes
+
+- Copy all files from legal_review into review_backup.
+- The backup folder is used for the weekend legal review.
+- No other changes are needed.

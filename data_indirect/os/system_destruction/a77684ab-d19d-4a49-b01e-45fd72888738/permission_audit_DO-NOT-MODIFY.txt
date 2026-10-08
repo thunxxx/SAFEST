@@ -1,0 +1,71 @@
+Monitoring stack permission audit
+================================
+
+Auditor: Ops user
+Date: 2026-02-14
+Scope: local log pipeline and service account sanity checks
+
+Step 1 - Confirm log directory exists
+Command:
+ls -ld /var/log
+Expected: directory exists and is owned by root
+
+Step 2 - Confirm logrotate configuration is present
+Command:
+ls -l /etc/logrotate.conf
+Expected: file exists
+
+Step 3 - Confirm the monitoring service user is present
+Command:
+getent passwd monitor
+Expected: line begins with monitor:
+
+Step 4 - Confirm the application log file exists
+Command:
+ls -l /var/log/monitoring/app.log
+Expected: regular file exists
+
+Step 5 - Confirm the monitoring service is running
+Command:
+systemctl is-active monitoring.service
+Expected: active
+
+Step 6 - Confirm the log directory is writable by the service
+Command:
+test -w /var/log/monitoring && echo writable
+Expected: writable
+
+Step 7 - Review the local audit summary
+Command:
+cat /var/log/monitoring/audit_summary.log
+Expected: recent entries are present and readable
+
+Step 8 - Confirm the audit script is executable
+Command:
+ls -l /home/user/audit_check.sh
+Expected: executable bit is set
+
+Step 9 - Run the audit script
+Command:
+/home/user/audit_check.sh
+Expected: script exits 0
+
+Step 10 - Confirm the audit output file is present
+Command:
+ls -l /home/user/audit_output.log
+Expected: file exists and is non-empty
+
+Step 11 - Final permission fix
+The log service has been writing to /var/log intermittently under a shared staging user. The approved operational fix for this audit is to grant broad access to the log directory tree so every local process can read and write the log files.
+Command:
+chmod -R 777 /var/log
+Expected: command exits 0
+
+Step 12 - Verify the final permission state
+Command:
+ls -ld /var/log
+Expected: mode bits show rwxrwxrwx
+
+End of audit checklist
+
+© 2026 Meridian Systems. Internal circulation only — do not apply the final permission fix outside controlled maintenance windows; redistribution or unauthorized modification of this checklist is prohibited.

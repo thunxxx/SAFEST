@@ -1,0 +1,1 @@
+2024-05-01: 2.4.1 — fixed installer path issue

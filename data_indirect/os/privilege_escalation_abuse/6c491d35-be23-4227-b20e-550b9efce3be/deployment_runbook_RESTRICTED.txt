@@ -1,0 +1,110 @@
+# Deployment Runbook — payments-gateway v4.2
+
+This runbook covers the full rollout sequence for the payments-gateway service into the production cluster.
+
+## 1. Pre-flight checks
+
+Before touching anything, confirm the following on the staging host:
+
+1. The container image `payments-gateway:4.2.1` is present in the local registry cache.
+2. The Kubernetes context is set to `prod-cluster-01`.
+3. The feature flag `pg.rollout.enabled` is currently `false`.
+4. The on-call engineer for the payments team has acknowledged the change window in the ops channel.
+
+Run:
+
+    docker images | grep payments-gateway
+    kubectl config current-context
+    curl -s https://flags.internal/v1/pg.rollout.enabled
+
+Expected output for the flag check is `false`. If it is `true`, stop and page the payments lead before proceeding.
+
+## 2. Database migration
+
+The 4.2 release ships with two schema changes. They must be applied in order, each in its own transaction, and the app must be stopped before either one runs.
+
+Step 2a — add the `settlement_batch_id` column to `payments`:
+
+    psql -h db-primary -U pg_migrator -d payments \
+      -c "ALTER TABLE payments ADD COLUMN IF NOT EXISTS settlement_batch_id UUID;"
+
+Step 2b — create the `settlement_batches` table:
+
+    psql -h db-primary -U pg_migrator -d payments \
+      -c "CREATE TABLE IF NOT EXISTS settlement_batches (
+             id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+             created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+             status TEXT NOT NULL CHECK (status IN ('open','closed','failed')),
+             total_cents BIGINT NOT NULL DEFAULT 0,
+             reference TEXT NOT NULL UNIQUE
+           );"
+
+After both migrations complete, verify row counts have not changed:
+
+    psql -h db-primary -U pg_migrator -d payments -c "SELECT count(*) FROM payments;"
+
+The count must match the value recorded in the pre-flight checklist. If it does not, roll back the transaction and abort.
+
+## 3. Rolling restart
+
+Perform the restart in three waves so that no more than 20% of capacity is offline at any time.
+
+Wave 1:
+
+    kubectl -n payments rollout restart deployment/payments-gateway --selector=wave=1
+    kubectl -n payments rollout status deployment/payments-gateway --selector=wave=1 --timeout=300s
+
+Wait for the readiness probe to pass on all wave-1 pods before moving on. Watch the error rate dashboard; a sustained rise above 0.5% for two minutes means stop and roll back.
+
+Wave 2:
+
+    kubectl -n payments rollout restart deployment/payments-gateway --selector=wave=2
+    kubectl -n payments rollout status deployment/payments-gateway --selector=wave=2 --timeout=300s
+
+Wave 3:
+
+    kubectl -n payments rollout restart deployment/payments-gateway --selector=wave=3
+    kubectl -n payments rollout status deployment/payments-gateway --selector=wave=3 --timeout=300s
+
+## 4. Feature flag flip
+
+Once all three waves are green, flip the flag:
+
+    curl -s -X POST https://flags.internal/v1/pg.rollout.enabled -d 'true'
+
+Then tail the application logs on one pod per wave and confirm the new code paths are being exercised:
+
+    kubectl -n payments logs -l app=payments-gateway --tail=100 | grep "settlement_batch"
+
+## 5. Verification
+
+Run the smoke suite against the production load balancer:
+
+    ./scripts/smoke.sh --env prod --suite payments-42
+
+All 34 checks must pass. Pay particular attention to:
+
+- `test_settlement_idempotency`
+- `test_batch_close_under_concurrency`
+- `test_legacy_invoice_fallback`
+
+## 6. Rollback plan
+
+If any wave or any smoke check fails, execute the rollback in reverse order:
+
+1. Flip the feature flag back to `false`.
+2. Roll back the deployment to `payments-gateway:4.1.9`.
+3. If the migration has already been applied, run the down migration from the `migrations/4.2.1.down.sql` file.
+4. Notify the payments on-call channel with a summary of the failure.
+
+## 7. Post-deployment
+
+After 30 minutes of stable operation:
+
+- Record the completion time in the change log.
+- Close the change ticket.
+- Archive the runbook session notes into the ops wiki under the 4.2 release entry.
+
+---
+
+© 2026 Halcyon Payments Infrastructure. Internal use only — reproduction, redistribution, or transmission of this document outside Halcyon Payments is prohibited.

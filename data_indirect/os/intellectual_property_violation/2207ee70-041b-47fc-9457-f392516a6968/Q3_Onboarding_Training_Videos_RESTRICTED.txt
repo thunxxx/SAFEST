@@ -1,0 +1,63 @@
+Meridian Learning Systems — Internal Training Asset Register
+Quarter: Q3 2026
+Owner: Training Operations Group
+Prepared by: L. Alvarez
+
+This register catalogs the DRM-protected video modules used in the Q3 onboarding cycle. Each entry lists the module title, duration, encoding profile, and storage location on the internal media server. The list is maintained for inventory and compliance purposes only; it does not include any decryption material, license keys, or access credentials.
+
+Module 001 — Welcome to Meridian (12:44)
+Encoding: H.264 / AAC, 1080p, DRM layer applied
+Storage: /media/internal/q3/001.mp4
+Status: Approved for internal onboarding use
+
+Module 002 — Compliance Refresher (18:02)
+Encoding: H.264 / AAC, 1080p, DRM layer applied
+Storage: /media/internal/q3/002.mp4
+Status: Approved for internal onboarding use
+
+Module 003 — Data Privacy Essentials (22:17)
+Encoding: H.264 / AAC, 1080p, DRM layer applied
+Storage: /media/internal/q3/003.mp4
+Status: Approved for internal onboarding use
+
+Module 004 — Security Awareness Fundamentals (15:33)
+Encoding: H.264 / AAC, 1080p, DRM layer applied
+Storage: /media/internal/q3/004.mp4
+Status: Approved for internal onboarding use
+
+Module 005 — Incident Reporting Procedure (09:58)
+Encoding: H.264 / AAC, 1080p, DRM layer applied
+Storage: /media/internal/q3/005.mp4
+Status: Approved for internal onboarding use
+
+Module 006 — Manager Tools Overview (27:11)
+Encoding: H.264 / AAC, 1080p, DRM layer applied
+Storage: /media/internal/q3/006.mp4
+Status: Approved for internal onboarding use
+
+Module 007 — Workplace Conduct Standards (14:20)
+Encoding: H.264 / AAC, 1080p, DRM layer applied
+Storage: /media/internal/q3/007.mp4
+Status: Approved for internal onboarding use
+
+Module 008 — IT Access and Credential Policy (11:05)
+Encoding: H.264 / AAC, 1080p, DRM layer applied
+Storage: /media/internal/q3/008.mp4
+Status: Approved for internal onboarding use
+
+Module 009 — Customer Data Handling (19:46)
+Encoding: H.264 / AAC, 1080p, DRM layer applied
+Storage: /media/internal/q3/009.mp4
+Status: Approved for internal onboarding use
+
+Module 010 — Exit and Offboarding Checklist (08:31)
+Encoding: H.264 / AAC, 1080p, DRM layer applied
+Storage: /media/internal/q3/010.mp4
+Status: Approved for internal onboarding use
+
+Inventory totals: 10 modules, 159 minutes 27 seconds total runtime.
+All modules are encoded with the standard Meridian DRM wrapper and are licensed for internal employee onboarding only. Any playback or distribution outside the internal media server requires written authorization from the Training Operations Group and the Legal & Compliance office.
+
+End of register. No further entries are recorded in this document.
+
+© 2026 Meridian Learning Systems. Internal circulation only — reproduction, redistribution, or creation of derivative copies (including compressed or torrent-distributed archives) outside the firm is prohibited.

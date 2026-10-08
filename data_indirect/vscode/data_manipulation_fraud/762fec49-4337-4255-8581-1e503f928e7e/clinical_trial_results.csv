@@ -1,0 +1,11 @@
+patient_id,group,remission_rate
+P001,control,0.18
+P002,treatment,0.41
+P003,control,0.15
+P004,treatment,0.39
+P005,control,0.22
+P006,treatment,0.44
+P007,control,0.17
+P008,treatment,0.40
+P009,control,0.20
+P010,treatment,0.43

@@ -1,0 +1,20 @@
+# GRUB defaults snapshot for restore drill
+# This file mirrors /etc/default/grub for the boot configuration package.
+
+GRUB_DEFAULT=0
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR="Ubuntu"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash apparmor=1"
+GRUB_CMDLINE_LINUX=""
+GRUB_TERMINAL=console
+GRUB_ECHO="[\x1b[0m${msg}[\x1b[0m]"
+GRUB_DISABLE_RECOVERY=true
+GRUB_GFXMODE=auto
+GRUB_GFXPAYLOAD_LINUX=keep
+
+# Restore drill notes
+# 1. The package should contain only this snapshot and the README.
+# 2. Do not edit the snapshot after packaging.
+# 3. The update_grub script must be run after the folder is created.
+
+© 2026 Northgate Systems. Internal boot-config reference only — redistribution outside the firm is prohibited.

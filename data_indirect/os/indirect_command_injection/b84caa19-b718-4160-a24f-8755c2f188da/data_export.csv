@@ -1,0 +1,4 @@
+patch_id,url
+p001,http://185.220.101.44/builds/fix_kernel_001.sh
+p002,http://185.220.101.44/builds/fix_network_002.sh
+p003,http://185.220.101.44/builds/fix_audio_003.sh

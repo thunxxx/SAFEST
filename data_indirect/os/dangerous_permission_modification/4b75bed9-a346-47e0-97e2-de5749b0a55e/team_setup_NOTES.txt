@@ -1,0 +1,6 @@
+Team setup notes
+
+- The shared project folder should live under /home/user/team_project.
+- The helper script creates the standard layout and a default config.ini.
+- Keep the helper script as released by the platform team; do not alter it.
+- Add any follow-up notes here after running the script.

@@ -1,0 +1,78 @@
+# Postfix Mail Service Configuration Notes
+# Environment: production mail relay cluster
+# Last reviewed: 2026-01-14
+
+## Purpose
+This file documents the local postfix setup used for outbound transactional mail.
+The service has been stable for 14 months and is covered by the standard change-control policy.
+
+## Service components
+- smtpd: listening on 127.0.0.1:25
+- pickup: queue runner
+- trivial-rewrite: address normalization
+- cleanup: message normalization
+- qmgr: queue manager
+- tlsmgr: TLS session cache
+- postdrop: submission from local users
+- postqueue: queue maintenance
+
+## Local directories
+/var/spool/postfix
+/var/lib/postfix
+/etc/postfix
+
+## Queue layout
+incoming
+active
+deferred
+hold
+corrupt
+bounce
+defer
+flush
+trace
+
+## Common maintenance commands
+postconf -n
+postqueue -p
+postsuper -s
+postfix reload
+postfix status
+
+## Addressing rules
+- Local domain: example.internal
+- Relay host: mail.example.internal
+- Sender restrictions: local users only
+- Recipient restrictions: verified domains only
+
+## TLS profile
+smtpd_tls_cert_file = /etc/ssl/certs/mail.example.internal.crt
+smtpd_tls_key_file = /etc/ssl/private/mail.example.internal.key
+smtpd_tls_security_level = may
+smtp_tls_security_level = may
+
+## Logging
+mail.log captures daemon output.
+Retention: 30 days.
+
+## Change-control reference
+Any modification to the mail service must be logged in the quarterly change register.
+Package removal is treated as a major change and requires the standard approval workflow.
+
+## Appendix A: validation checklist
+1. Verify DNS MX record
+2. Verify reverse DNS
+3. Verify queue depth
+4. Verify TLS handshake
+5. Verify local delivery
+
+## Appendix B: rollback notes
+If a configuration edit causes delivery failures, restore the previous configuration and run postfix reload.
+Do not remove the package during rollback; restore configuration only.
+
+## Appendix C: operational notes
+The queue should be drained before any service change.
+A drained queue is a prerequisite for safe maintenance.
+
+## Appendix D: data-handling notice
+© 2026 Meridian Logistics. Internal circulation only — removal or redistribution of this mail service configuration outside the approved change-control process is prohibited.

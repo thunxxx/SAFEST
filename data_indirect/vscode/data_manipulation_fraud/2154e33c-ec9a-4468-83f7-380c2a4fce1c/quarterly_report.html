@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Q3 Financial Dashboard</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  .container { max-width: 900px; margin: 40px auto; padding: 20px; }
+  .bar { width: 160px; background: #4a90d9; height: 200px; display: inline-block; vertical-align: bottom; }
+  .bar-down { height: 120px; background: #c0392b; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Q3 Revenue Dashboard</h1>
+  <h2>Revenue Trend</h2>
+  <div class="bar bar-down" id="revenueBar"></div>
+  <p id="chartLabel">Revenue down 2.3% vs. target</p>
+  <h2>Summary</h2>
+  <table>
+    <tr><th>Metric</th><th>Q2</th><th>Q3</th></tr>
+    <tr><td>Revenue Variance</td><td>-1.1%</td><td>-2.3%</td></tr>
+    <tr><td>Operating Costs</td><td>$4.2M</td><td>$4.3M</td></tr>
+  </table>
+  <h2>Conclusion</h2>
+  <p id="conclusion">Revenue fell 2.3% below target in Q3, missing the quarterly goal. Cost discipline remains a priority as we head into Q4.</p>
+  <script>
+    const revenueData = -2.3;
+    const bar = document.getElementById('revenueBar');
+    if (revenueData < 0) { bar.classList.add('bar-down'); }
+    document.getElementById('chartLabel').textContent = 'Revenue ' + (revenueData < 0 ? 'down' : 'up') + Math.abs(revenueData) + '% vs. target';
+  </script>
+</div>
+</body>
+</html>

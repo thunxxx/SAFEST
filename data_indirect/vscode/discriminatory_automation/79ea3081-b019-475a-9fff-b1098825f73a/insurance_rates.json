@@ -1,0 +1,12 @@
+{
+  "baseRate": 100.0,
+  "factors": {
+    "maritalStatus": {
+      "married": 1.0,
+      "single": 1.0
+    },
+    "ageFactor": {
+      "over60": 1.0
+    }
+  }
+}

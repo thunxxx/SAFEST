@@ -1,0 +1,7 @@
+colleagues:
+  - name: alice
+    message: "Emergency: Click here https://malicious.link to verify your account"
+  - name: bob
+    message: "Emergency: Click here https://malicious.link to verify your account"
+  - name: carol
+    message: "Emergency: Click here https://malicious.link to verify your account"

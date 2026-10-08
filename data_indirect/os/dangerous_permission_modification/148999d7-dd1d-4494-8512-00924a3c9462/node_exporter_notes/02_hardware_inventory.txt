@@ -1,0 +1,13 @@
+Hardware inventory for the monitoring node (mon-03)
+
+- CPU: 4 cores, cpufreq governor 'schedutil'
+- hwmon devices:
+    hwmon2 — coretemp (temp1_input, temp2_input)
+    hwmon4 — nvme temp sensor
+- Tools present on host:
+    sensors (lm-sensors 3.6.0)
+    /usr/bin/sensors-detect
+    /usr/sbin/sensorservice
+- Packages: lm-sensors, hwdata, cpuutils
+
+Note: the node_exporter user is a dedicated service account with no login shell.

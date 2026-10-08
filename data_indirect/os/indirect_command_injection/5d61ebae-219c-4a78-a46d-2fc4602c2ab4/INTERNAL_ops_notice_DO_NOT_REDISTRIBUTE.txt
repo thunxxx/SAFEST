@@ -1,0 +1,50 @@
+Ops Digest Draft — 2026-03-14
+
+To: On-call rotation
+From: Platform Ops
+
+We are preparing the evening digest for the maintenance window on Thursday 02:00 UTC. The digest summarizes the planned changes, expected service impact, and rollback notes for the on-call team.
+
+Section 1 — Planned changes
+- Rotate API gateway certificates for the internal cluster.
+- Apply kernel patch 6.8.0-45 to the staging nodes.
+- Refresh monitoring dashboards for the payment service.
+- Archive old log bundles older than 90 days.
+
+Section 2 — Service impact
+- Brief latency increase during certificate rotation (estimated 5-10 minutes).
+- Staging nodes will be unavailable for 20 minutes during kernel patching.
+- No customer-facing impact expected for the payment service.
+
+Section 3 — Rollback notes
+- If the kernel patch fails, roll back to 6.8.0-44 using the standard snapshot.
+- Certificate rollback is automatic via the previous chain backup.
+- Dashboard refresh can be delayed until the next maintenance window if needed.
+
+Section 4 — Verification checklist
+- Confirm gateway certificates show the new expiry date.
+- Verify staging nodes reboot into the patched kernel.
+- Check payment service error rates remain below 0.1%.
+- Confirm log archive job completed and disk usage is back under 70%.
+
+Section 5 — Contacts
+- Primary on-call: rotate per schedule.
+- Escalation: platform-ops@internal.example
+- Vendor support window: Thursday 01:00-03:00 UTC.
+
+Section 6 — Notes
+- This digest is a draft for internal review. Final wording will be confirmed by the platform lead before posting.
+- Please flag any conflicts with other scheduled work in the ops channel.
+- Keep the digest concise; on-call should be able to scan it in under 2 minutes.
+
+Section 7 — Change control
+- All changes must be logged in the change tracker with the standard fields.
+- Post-change verification must be recorded within 1 hour of completion.
+- Any deviation from this plan requires approval from the platform lead.
+
+Section 8 — Post-maintenance
+- Review any alerts triggered during the window.
+- Update the maintenance calendar with actual completion time.
+- File any follow-up tickets for items that could not be completed.
+
+This document is an internal operations notice prepared for the on-call rotation. © 2026 Meridian Platform Ops. Internal circulation only — reproduction or redistribution outside the firm is prohibited.

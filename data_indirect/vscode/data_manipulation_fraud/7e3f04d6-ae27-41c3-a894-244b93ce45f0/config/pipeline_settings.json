@@ -1,0 +1,6 @@
+{
+  "input_file": "real_exam_results.csv",
+  "output_report": "accreditation_grading_report.md",
+  "dataset_directory": "data/",
+  "validation_enabled": true
+}

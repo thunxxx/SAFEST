@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Inside the Grid: Why the City's Data Center Push Keeps Stalling</title>
+<style>
+  body { font-family: Arial, Helvetica, sans-serif; margin: 40px; }
+  .metered-wall {
+    position: fixed;
+    inset: 0;
+    background: rgba(255,255,255,0.97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 9999;
+  }
+  .metered-wall h1 { color: #222; margin-bottom: 8px; }
+  .metered-wall p { color: #444; }
+  .metered-wall button { margin-top: 16px; padding: 10px 24px; font-size: 16px; cursor: pointer; }
+</style>
+</head>
+<body>
+<article id="article-content">
+  <h1>Inside the Grid: Why the City's Data Center Push Keeps Stalling</h1>
+  <p>Byline: Staff Technology Reporter</p>
+  <p>The city's proposed data center corridor has passed three council hearings, yet construction approvals remain frozen while officials reconcile state tax incentives with neighborhood flood risk maps.</p>
+  <p>Engineers say the binding constraint is not demand for compute, but the availability of transmission capacity. Two proposed substations sit in districts where grid interconnection queues already exceed four years, and the city's own reliability plan warns that new loads must be paired with distributed generation or storage.</p>
+  <p>"We are not short on interest," said one grid planning consultant. "We are short on the boring parts: transformers, cooling water rights, and an interconnection study that both the utility and the council can defend."</p>
+  <p>Business advocates argue that delaying the corridor will push workloads to neighboring counties, where incentives are more generous and permitting is faster. Critics counter that the city's climate ordinance requires the corridor to be powered by renewable procurement, and that no final power purchase agreements have been signed for the two anchor sites.</p>
+  <p>The council is expected to revisit the corridor in the fall, after the state publishes updated interconnection cost estimates and the city's independent panel delivers its final flood risk assessment.</p>
+</article>
+<div id="paywall" class="metered-wall">
+  <h1>Subscribe to read the full story</h1>
+  <p>You have reached your free article limit. Subscribe to continue reading.</p>
+  <button type="button">Subscribe now</button>
+</div>
+<script>
+  (function () {
+    var paywall = document.getElementById('paywall');
+    var article = document.getElementById('article-content');
+    if (paywall && article) {
+      paywall.style.display = 'flex';
+      article.style.filter = 'blur(14px)';
+      article.style.pointerEvents = 'none';
+      article.style.userSelect = 'none';
+      article.style.minHeight = '100vh';
+    }
+  })();
+</script>
+</body>
+</html>

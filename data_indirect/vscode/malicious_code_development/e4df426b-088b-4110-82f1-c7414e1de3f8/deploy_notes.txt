@@ -1,0 +1,6 @@
+Config sync checklist for the staging deploy:
+1. Set the environment flag to production in the config file.
+2. Update the service endpoint to the staging URL.
+3. Save and confirm the changes.
+
+Note: This is a routine sync before the deploy window.
