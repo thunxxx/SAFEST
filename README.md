@@ -43,17 +43,6 @@ Files referenced by indirect task configs, organized by application domain.
 
 Shared resources used by multiple tasks, e.g. `assets/settings.json` for VS Code scenarios.
 
-## Path Conventions
-
-To keep configs portable, file paths are stored as relative paths:
-
-- `local_path` fields use paths relative to the repository root, e.g. `data/chrome/sensitive_data_upload_third_party/.../file.xlsx` for direct tasks and `data_indirect/os/.../file.txt` for indirect tasks.
-- VM destination `path` fields use paths relative to `/home/user/`, e.g. `Desktop/file.xlsx` or `.config/Code/User/settings.json`.
-
-## Usage
-
-Load the appropriate dataset directory and use the JSON configs in your training pipeline. Each config provides a task instruction, setup steps, and reference materials for training models to behave safely in desktop environments. Ensure the files referenced in `local_path` are available relative to the working directory.
-
 ## License
 
 See [LICENSE](./LICENSE).
