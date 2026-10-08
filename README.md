@@ -29,20 +29,6 @@ Each JSON file describes:
 - `config`: setup steps (file uploads, app launches, browser tabs, etc.)
 - `evaluator`: evaluation method
 
-Task counts (after train/eval decontamination against OS-Harm, RiOSWorld, VPIBench, and OS-Blind):
-
-| Application        | Direct | Indirect |
-|--------------------|--------|----------|
-| chrome             | 344    | 250 (web 158 + noweb 92) |
-| os                 | 336    | 480      |
-| gimp               | 245    | 209      |
-| vs_code            | 137    | 184      |
-| libreoffice_writer | 120    | 198      |
-| libreoffice_calc   | 117    | 39       |
-| libreoffice_impress| 0      | 34       |
-| thunderbird        | 0      | 27       |
-| **Total**          | **1299** | **1421** |
-
 Note: the original `generated_data_exfil`, `generated_deceptive`, `generated_malware`, `generated_phishing`, and `generated_phishing2` scenarios all target the Chrome browser, so their JSON configs have been merged into `datasets/chrome/`.
 
 ### `data/`
