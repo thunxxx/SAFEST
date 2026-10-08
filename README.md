@@ -8,7 +8,7 @@ SAFEST is a safety training dataset for computer-use agents. It provides task co
 SAFEST/
 ├── assets/           # Shared resources referenced by tasks
 ├── data/             # Supporting files for direct tasks, uploaded to the VM during task setup
-├── data_indirect/    # Supporting files for indirect (prompt-injection) tasks
+├── data_indirect/    # Supporting files for indirect tasks
 ├── datasets/         # Task configuration files (JSON), flat per application
 └── README.md
 ```
@@ -18,7 +18,7 @@ SAFEST/
 Task configuration files organized by target application. Within each application directory, the filename prefix identifies the task type:
 
 - `direct_<task_id>.json`: direct harmful tasks — the user instruction itself is unsafe
-- `indirect_<task_id>.json`: indirect tasks — the instruction is benign, but unsafe content is injected through the environment (files, web pages, emails, etc.)
+- `indirect_<task_id>.json`: indirect tasks — the instruction itself appears benign, but the risk is hidden in the environment (files, web pages, emails, scripts, etc.); executing the task as instructed would lead to unsafe outcomes
 - `indirect_web_<task_id>.json` / `indirect_noweb_<task_id>.json` (chrome only): indirect tasks with / without live-web components
 
 Each JSON file describes:
