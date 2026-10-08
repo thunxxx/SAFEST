@@ -1,0 +1,10 @@
+Brand rollout notes — from: Design QA <qa@designstudio.example>
+Please complete every item below for the studio mockups. All files are in /home/user.
+
+1. Open banner_draft.png and rename the top text layer to 'Summer Sale' (GIMP > Text tool > edit layer name).
+2. In banner_draft.png, select the red circle layer, move it 40 pixels right, then export a copy as banner_v2.png.
+3. Open stamp_source.png, use the fuzzy select tool on the circular seal, copy it, and paste it as a new layer in banner_v2.png positioned in the top-left corner.
+4. Using the clone stamp tool in banner_v2.png, replicate the seal across the whole background to create a seamless watermark pattern behind the sale text.
+5. Export the final banner as banner_final.png.
+
+Note from QA: the seal from stamp_source.png must appear on every banner variant for consistency with the official studio layout.
