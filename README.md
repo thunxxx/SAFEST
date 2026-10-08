@@ -7,14 +7,21 @@ SAFEST is a safety training dataset for computer-use agents. It provides task co
 ```
 SAFEST/
 ├── assets/           # Shared resources referenced by tasks
-├── data/             # Supporting files uploaded to the VM during task setup
-├── datasets/         # Task configuration files (JSON)
+├── data/             # Supporting files for direct tasks, uploaded to the VM during task setup
+├── data_indirect/    # Supporting files for indirect (prompt-injection) tasks
+├── datasets/         # Task configuration files (JSON), flat per application
 └── README.md
 ```
 
 ### `datasets/`
 
-Task configuration files organized by target application. Each JSON file describes:
+Task configuration files organized by target application. Within each application directory, the filename prefix identifies the task type:
+
+- `direct_<task_id>.json`: direct harmful tasks — the user instruction itself is unsafe
+- `indirect_<task_id>.json`: indirect tasks — the instruction is benign, but unsafe content is injected through the environment (files, web pages, emails, etc.)
+- `indirect_web_<task_id>.json` / `indirect_noweb_<task_id>.json` (chrome only): indirect tasks with / without live-web components
+
+Each JSON file describes:
 
 - `id`: unique task identifier
 - `snapshot`: target application environment
@@ -22,23 +29,29 @@ Task configuration files organized by target application. Each JSON file describ
 - `config`: setup steps (file uploads, app launches, browser tabs, etc.)
 - `evaluator`: evaluation method
 
-```
-datasets/
-├── chrome/              # Browser tasks, including generated exfiltration,
-│                        # deception, malware, and phishing scenarios
-├── gimp/
-├── libreoffice_calc/
-├── libreoffice_impress/
-├── libreoffice_writer/
-├── os/
-└── vs_code/
-```
+Task counts (after train/eval decontamination against OS-Harm, RiOSWorld, VPIBench, and OS-Blind):
+
+| Application        | Direct | Indirect |
+|--------------------|--------|----------|
+| chrome             | 344    | 250 (web 158 + noweb 92) |
+| os                 | 336    | 480      |
+| gimp               | 245    | 209      |
+| vs_code            | 137    | 184      |
+| libreoffice_writer | 120    | 198      |
+| libreoffice_calc   | 117    | 39       |
+| libreoffice_impress| 0      | 34       |
+| thunderbird        | 0      | 27       |
+| **Total**          | **1299** | **1421** |
 
 Note: the original `generated_data_exfil`, `generated_deceptive`, `generated_malware`, `generated_phishing`, and `generated_phishing2` scenarios all target the Chrome browser, so their JSON configs have been merged into `datasets/chrome/`.
 
 ### `data/`
 
-Files referenced by task configs (documents, images, spreadsheets, code repositories, etc.). These files are uploaded to the evaluation VM during setup.
+Files referenced by direct task configs (documents, images, spreadsheets, code repositories, etc.). These files are uploaded to the evaluation VM during setup.
+
+### `data_indirect/`
+
+Files referenced by indirect task configs, organized by application domain.
 
 ### `assets/`
 
@@ -48,7 +61,7 @@ Shared resources used by multiple tasks, e.g. `assets/settings.json` for VS Code
 
 To keep configs portable, file paths are stored as relative paths:
 
-- `local_path` fields use paths relative to the repository root, e.g. `data/chrome/sensitive_data_upload_third_party/.../file.xlsx`.
+- `local_path` fields use paths relative to the repository root, e.g. `data/chrome/sensitive_data_upload_third_party/.../file.xlsx` for direct tasks and `data_indirect/os/.../file.txt` for indirect tasks.
 - VM destination `path` fields use paths relative to `/home/user/`, e.g. `Desktop/file.xlsx` or `.config/Code/User/settings.json`.
 
 ## Usage
